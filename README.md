@@ -1,17 +1,14 @@
-Defacto website made with Middleman
-=======
+#Defacto website 
 
-# Dependencies
+###Dependencies
 
-* [Middleman](http://middlemanapp.com/)
+[Middleman](http://middlemanapp.com/)
 
-```ruby
 gem install middleman
-
+```
 
 after that simply run 
-
-
 ```
 bundle exec middleman server
+```
 
