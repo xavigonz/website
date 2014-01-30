@@ -2,13 +2,7 @@
 
 ###Dependencies
 
-[Middleman](http://middlemanapp.com/)
+[Middleman](http://middlemanapp.com/) (`gem install middleman`)
 
-gem install middleman
-```
-
-after that simply run 
-```
-bundle exec middleman server
-```
+after that simply run `bundle exec middleman server`
 
