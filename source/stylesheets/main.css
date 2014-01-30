@@ -86,20 +86,20 @@ html, body {
     color:#333;
 }
 .btn {
-    float:left;
-    margin-bottom:10px;
-    padding:15px 40px;
-    display:block;
-    background:#dbb10c;
-    color:#fff;
-    border:2px solid #fff;
-    font-size:1.5em;
-    font-family: Lato-Regular, Verdana, Arial, sans-serif;
-    text-decoration:none;
-    text-transform:uppercase;
+    float: left;
+    margin-bottom: 10px;
+    padding: 15px 40px;
+    display: block;
+    background: #dbb10c;
+    color: #fff;
+    box-shadow: 0 3px 0 #ac8900;
+    font-size: 1.5em;
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
 }
 .btn:hover {
-    background:transparent;
 }
 .secondary {
     padding:13px 25px;
@@ -123,7 +123,6 @@ header {
     max-width:1920px;
     margin:0 auto;
     padding:25px 85px;
-    overflow:hidden;
 }
 .logo {
     float:left;
@@ -175,39 +174,41 @@ nav ul li a.active {
 }
 
 #mood {
-    max-height:603px;
-    background:url('../images/mood.jpg') center no-repeat #571924;
+    max-height:403px;
+    background:url('../images/bg2.jpg') no-repeat #571924;
+    background-size: cover;
     color:#fff;
-    overflow:auto;
+    overflow: hidden;
 }
 .mood-content {
     margin:0 auto;
     max-width:1020px;
     padding:0 8%;
-    padding-top:50px;
+    padding-top:35px;
     overflow:auto;
+    text-shadow: rgba(0, 0, 0, 0.29804) 0px 1px 3px;
 }
 .mood-content h1 {
     margin-left: -8px;
-    font-family: Montserrat-Bold, Verdana, Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-weight:bold;
     font-size:6.250em;
     line-height:1;
 }
 .mood-content .sub-title {
-    font-family: Montserrat-Bold, Verdana, Arial, sans-serif;
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
     font-weight:bold;
     font-size:1.125em;
 }
 .mood-content p {
-    margin:5% 0;
-    font-family: Montserrat-Regular, Verdana, Arial, sans-serif;
+    margin: 35px 0;
+    font-family: 'Open Sans', Verdana, Arial, sans-serif;
     font-weight:normal;
     font-size:1.5em;
     line-height:1.5;
 }
 .mood-content .btn {
-    margin-left:33%;
+    margin: 0 auto;
     margin-bottom:5%;
 }
 #clients {
@@ -217,7 +218,6 @@ nav ul li a.active {
     padding:0 10px;
     text-align:center;
     font-family: OpenSans-Regular, Verdana, Arial, sans-serif;
-    font-size:0.813em;
 }
 #clients p a {
     color:#3887be;
@@ -289,9 +289,8 @@ nav ul li a.active {
 .orange h2 {
     color:#ec766c;
 }
-#slider {
+#solutions {
     position:relative;
-    overflow:hidden;
 }
 .cycle-prev {
     position:absolute;
