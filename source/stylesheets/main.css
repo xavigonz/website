@@ -459,6 +459,9 @@ footer {
     -webkit-appearance: none;
 }
 @media screen and (max-width: 1300px) {
+    header {
+        padding: 25px 85px 100px;
+    }
     nav {
         float:left;
         clear:left;
