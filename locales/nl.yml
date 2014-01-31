@@ -1,5 +1,11 @@
 ---
 nl:
+# main navigation
+  home: "Home"
+  solutions: "Oplossingen"
+  about: "Over ons"
+  blog: "Blog"
+  menu: "Menu"
 # header
   slogan: "Developing people"
   tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software  die gewoon werkt."
