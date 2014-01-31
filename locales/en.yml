@@ -1,5 +1,11 @@
 ---
 en:
+# main navigation
+  home: "Home"
+  solutions: "Solutions"
+  about: "About us"
+  blog: "Blog"
+  menu: "Menu"
 # Header
   slogan: "Developing people"
   tagline: "Defacto helps organisations developing their employees with software that works."
@@ -14,3 +20,21 @@ en:
   government_content: "De overheid is een grote werkgever, waar bij altijd het maatschappelijk doel voorop staat. Zij heeft de moeilijke positie dat ze de verantwoordelijkheid heeft haar geld effectief uit te geven, en daarnaast het goede voorbeeld te geven voor alle werkgevers in Nederland. Met onze software vallen  beide aspecten op hun plek; We helpen medewerkers zich te ontwikkelen en doen dat op een effectieve en kostenbesparende manier."
   business_title: "Bedrijfsleven"
   business_content: ""
+# solutions
+  solutions_title: "Solutions for your organization"
+  solutions_content: ""
+  solutions_call_to_action: "Read more"
+# references
+  others_title: "Wat others  have to say"
+  others_quote: ""
+  others_name: ""
+  case_title: "Case: Municipality of The Hague"
+  case_content: ""
+  case_call_to_action: "Read more"
+# footer (contact section)
+  name: "Name"
+  organization: "Organization"
+  phone: "Phone"
+  email: "E-mail"
+  message: "Message"
+  send: "Send"
