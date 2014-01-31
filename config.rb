@@ -51,6 +51,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
+
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
