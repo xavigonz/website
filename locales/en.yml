@@ -3,6 +3,7 @@ en:
 # Header
   slogan: "Developing people"
   tagline: "Defacto helps organisations developing their employees with software that works."
+  header_call_to_action: "tell me more"
   what_we_do_html: "We develop cutting edge software around education and development. %{href}"
   what_we_do_href: "See our showcase."
 # Markets
