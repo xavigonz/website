@@ -1,0 +1,40 @@
+---
+de:
+# main navigation
+  home: "Home"
+  solutions: "Oplossingen"
+  about: "Over ons"
+  blog: "Blog"
+  menu: "Menu"
+# header
+  slogan: "Developing people"
+  tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software  die gewoon werkt."
+  header_call_to_action: "meer weten?"
+  what_we_do_html: "Wij ontwikkelen innovatieve software in het werkveld van Opleiden & Ontwikkelen. %{href}"
+  what_we_do_href: "Bekijk onze showcase om te zien wat er mogelijk is."
+# markets
+  markets_intro: "Ziekenhuizen, ministeries en grote organisaties in het bedrijfsleven werken met onze innovative software."
+  healthcare_title: "Topzorg"
+  healthcare_content_html: "In de zorg is het niet alleen belangrijk om topkwaliteit te leveren, maar ook dat je kunt aantonen dat je de kwalificaties hebt die daarbij horen. Je moet immers een betrouwbare partij zijn voor je patiënten, maar ook voor zorgverzekeraars en accreditaties. Het kwaliteitspaspoort &trade; helpt je bij het verkrijgen en monitoren van competenties en vaardigheden."
+  government_title: "Overheid"
+  government_content: "De overheid is een grote werkgever, waar bij altijd het maatschappelijk doel voorop staat. Zij heeft de moeilijke positie dat ze de verantwoordelijkheid heeft haar geld effectief uit te geven, en daarnaast het goede voorbeeld te geven voor alle werkgevers in Nederland. Met onze software vallen  beide aspecten op hun plek; We helpen medewerkers zich te ontwikkelen en doen dat op een effectieve en kostenbesparende manier."
+  business_title: "Bedrijfsleven"
+  business_content: "Wij weten onder andere uit eigen ervaring hoe belangrijk het is om met zo weinig mogelijk middelen zo veel mogelijk te bereiken, en om je investeringen terug te verdienen. Met Defacto als partner werk je efficiënt en haal je het meeste uit de mensen waar je nu al mee werkt."
+# solutions
+  solutions_title: "Oplossingen voor uw organisatie"
+  solutions_content: ""
+  solutions_call_to_action: "Lees meer"
+# references
+  others_title: "Wat anderen zeggen"
+  others_quote: ""
+  others_name: ""
+  case_title: "Case: Gemeente Den Haag"
+  case_content: ""
+  case_call_to_action: "Lees Verder"
+# footer (contact section)
+  name: "Naam"
+  organization: "Bedrijf of organisatie"
+  phone: "Telefoon"
+  email: "E-mail"
+  message: "Bericht"
+  send: "Verstuur bericht"
