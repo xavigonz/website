@@ -53,6 +53,8 @@ set :images_dir, 'images'
 
 activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
+activate :livereload
+
 
 # Build-specific configuration
 configure :build do
