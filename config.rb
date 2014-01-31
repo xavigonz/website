@@ -51,7 +51,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-activate :i18n
+activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
 
 # Build-specific configuration
