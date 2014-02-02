@@ -7,5 +7,5 @@
 
 To install other dependencies run `bundle install` from the root of the project
 
-after that simply run `bundle exec middleman server`
+after that simply run `./serve`
 
