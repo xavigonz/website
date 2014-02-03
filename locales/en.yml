@@ -15,21 +15,36 @@ en:
 # Markets
   markets_intro: "Hospitals, government departments and major businesses work with our software."
   healthcare_title: "Healthcare"
-  healthcare_content_html: "In de zorg is het niet alleen belangrijk om topkwaliteit te leveren, maar ook dat je kunt aantonen dat je de kwalificaties hebt die daarbij horen. Je moet immers een betrouwbare partij zijn voor je patiënten, maar ook voor zorgverzekeraars en accreditaties. Het kwaliteitspaspoort &trade; helpt je bij het verkrijgen en monitoren van competenties en vaardigheden."
+  healthcare_content_html: |
+    In de zorg is het niet alleen belangrijk om topkwaliteit te leveren, maar ook dat je kunt aantonen dat je de kwalificaties hebt die daarbij horen.
+    Je moet immers een betrouwbare partij zijn voor je patiënten, maar ook voor zorgverzekeraars en accreditaties.
+    Het kwaliteitspaspoort &trade; helpt je bij het verkrijgen en monitoren van competenties en vaardigheden.
   government_title: "Overheid"
-  government_content: "De overheid is een grote werkgever, waar bij altijd het maatschappelijk doel voorop staat. Zij heeft de moeilijke positie dat ze de verantwoordelijkheid heeft haar geld effectief uit te geven, en daarnaast het goede voorbeeld te geven voor alle werkgevers in Nederland. Met onze software vallen  beide aspecten op hun plek; We helpen medewerkers zich te ontwikkelen en doen dat op een effectieve en kostenbesparende manier."
+  government_content: |
+    De overheid is een grote werkgever, waar bij altijd het maatschappelijk doel voorop staat. Zij heeft de moeilijke positie dat ze de
+    verantwoordelijkheid heeft haar geld effectief uit te geven, en daarnaast het goede voorbeeld te geven voor alle werkgevers in Nederland.
+    Met onze software vallen  beide aspecten op hun plek; We helpen medewerkers zich te ontwikkelen en doen dat op een effectieve en
+    kostenbesparende manier.
   business_title: "Bedrijfsleven"
-  business_content: ""
+  business_content: |
+    Je grootste kapitaal als bedrijf is altijd je personeel. Als je personeel zich ontwikkelt kan je bedrijf groeien.
+    Als je personeel op een plek zit die bij hun kwaliteiten past, haal je maximaal rendement. Defacto helpt je om je personeel op te leiden,
+    te stimuleren zich te ontwikkelen en inzicht te krijgen in hun competenties.
 # solutions
   solutions_title: "Solutions for your organization"
-  solutions_content: ""
+  solutions_content: "Lorem Ipsum"
   solutions_call_to_action: "Read more"
 # references
-  others_title: "Wat others  have to say"
-  others_quote: ""
-  others_name: ""
+  others_title: "What others have to say"
+  others_quote: "Working with Defacto is working on tomorrow."
+  others_name: "Trudy de Vrei"
   case_title: "Case: Municipality of The Hague"
-  case_content: ""
+  case_content: |
+    Hoe ziet een samenwerking met Defacto er in de praktijk uit? Laten we onze samenwerking met de Gemeente Den Haag als voorbeeld nemen.
+    Den Haag is bezig met het project Vakmanschap, een project met als doel om door coaching, opleiding en toetsing tegelijkertijd de vakbekwaamheid en de werktevredenheid van haar werknemers te vergroten.
+    Hiervoor gebruiken ze nagenoeg de gehele functionaliteit van CAPP; CAPP Leren, CAPP Ontwikkelen en het Kwaliteitspaspoort. De samenwerking beviel goed, zowel in het onderling contact, als bij de medewerkers die CAPP nu konden gebruiken om overzicht te krijgen op opleidingsmogelijkheden, competenties bij te houden en hun ontwikkelplan in zicht te houden. ~~
+    Daarom is Den Haag nu een belangrijk ‘launching partner’ voor ons geworden. Zij krijgen de beschikking over onze nieuwste software en kunnen daarbij richting geven aan het ontwikkelproces.
+    Elk bezoek van ons aan Den Haag maakt steeds weer beide partijen enthousiast over de toekomst.
   case_call_to_action: "Read more"
 # footer (contact section)
   name: "Name"
@@ -38,3 +53,70 @@ en:
   email: "E-mail"
   message: "Message"
   send: "Send"
+# ================== ^ Landing page ^ ===============
+# solutions page
+  solutions_page_title: "Oplossingen"
+  solutions_page_intro: "Een greep uit de mogelijkheden:"
+  solutions_page_capp_title: "CAPP Leren & Ontwikkelen"
+  solutions_page_capp_description: |
+    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen en algemene organisatie-eisen.
+    Elke medewerker krijgt een Kwaliteitspaspoort, een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
+    en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
+    Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
+  solutions_page_starter_kit_title: "E-Learning Starter Kit"
+  solutions_page_starter_kit_description: |
+    De productie van e-learningcontent uitbesteden is vaak duur, en je blijft uiteindelijk zitten met een product dat net niet lekker aansluit op wat
+    je binnen je organisatie wilt leren. Het is goedkoper en effectiever om het in eigen hand te nemen.
+    De E-learning Starterkit bevat alles dat je nodig hebt om meteen van start te kunnen: hardware, software en een korte training.
+    Minimaliseer de opstartfase en begin meteen met het maken van je eigen e-learningcontent.
+  solutions_page_360_title: "360&deg;-Feedback"
+  solutions_page_360_description: |
+    Ontwikkeling begint bij zelfkennis. 360° Feedback helpt medewerkers aan deze zelfkennis door vragenlijsten te sturen aan bijvoorbeeld collega’s,
+    managers, ondergeschikten en klanten. Op deze manier breng je snel en gemakkelijk de krachten en zwaktes van een medewerker in beeld en
+    kan je beginnen aan een ontwikkelplan. 360° Feedback is interessant voor organisaties die van hun medewerkers verwachten dat ze aan
+    hun eigen ontwikkeling werken, en die willen dat dat zo weinig mogelijk afleidt van de dagelijkse praktijk.
+    360° Feedback is snel, duidelijk en effectief.
+  solutions_page_jaargesprekken_title: "Jaargesprekken"
+  solutions_page_jaargesprekken_description: |
+    Het is belangrijk om het werk van medewerkers regelmatig te evalueren. Zo weet je zeker of je nog op één lijn zit, het laat de medewerker weten dat
+    zijn werk erkend en gewaardeerd wordt, en het is mogelijkheid voor zowel de werkgever als de medewerker om pijnpunten te bespreken.
+    Het positieve effect ervan zal echter kort duren als het volkomen geïsoleerd van de praktijk plaatsvindt.
+    Met de Jaargesprekken-app geef je context aan het jaargesprek, je verzamelt in de aanloop ernaar toe thema’s die ter sprake moeten worden gebracht,
+    en achteraf kun je duidelijk inzien welke doelen er gesteld zijn.
+  solutions_page_innovation_title: "Research & Development"
+  solutions_page_innovation_description: ""
+# About us page
+  about_us_title: "Over ons"
+  about_us_story: "Op de werkvloer van Defacto is een bonte mix te vinden van jong en oud. Defacto gelooft in jong talent en in het bijzonder in jong talent dat begeleid wordt door mensen met ervaring in het vak. Binnen het team van Defacto staan kennisoverdracht, eigen inbreng en creatief nadenken centraal. Als er nieuwe kansen zijn, worden ze gegrepen, nieuwe mogelijkheden worden onderzocht. Deze kruisbestuiving van verschillende generaties maakt dat Defacto zonder moeite in kan spelen op ontwikkelingen en haar medewerkers hun talent volop kunnen ontplooien."
+  team_intro: "Lorem Ipsum team intro flavor"
+  team_title: "Ons Team"
+# Healthcare page
+  healthcare_page_title: "Topzorg"
+  healthcare_page_description: "Lorem Ipsum"
+# Government page
+  government_page_title: "Overheid"
+  government_page_description: "Lorem Ipsum"
+# Business page
+  business_page_title: "Bedrijfsleven"
+  business_page_description: "Hipster Ipsum"
+# =============
+# CAPP page
+  capp_title: "CAPP"
+  capp_description: "lorem lorem ipsum shoreditch"
+# E-Learning Starter Kit Page
+  starter_kit_title: "E-Learning Starter Kit"
+  starter_kit_description: "Lorem tekst uit productsheet ipsum"
+# 360 page
+  360_title: "360&deg;-Feedback"
+  360_description: "Lorem Ipsum landing page tekst"
+# jaargesprekken page
+  jaargesprekken_title: "Jaargesprekken"
+  jaargesprekken_description: "Lorem Ipsumnieuwe tekst?"
+# Innovatie page
+  innovation_title: "Research & Development"
+  innovation_description: "link naar blog"
+  learning_spaces_title: "Learning Spaces"
+  learning_spaces_tagline: "Lorem Ipsum tag line voor learning spaces"
+  learning_spaces_description: "Lorem Ipsum"
+  arcade_learning_title: "Arcade Learning"
+  arcade_learning_description: "Lorem Ipsum "
