@@ -53,13 +53,16 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
-
 activate :livereload
 
 activate :blog do |blog|
   blog.name = "blog"
+  blog.prefix = "blog"
+  blog.layout = "blog_layout"
 end
+
+activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
+
 
 # Build-specific configuration
 configure :build do
