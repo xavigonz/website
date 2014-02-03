@@ -59,14 +59,7 @@ activate :livereload
 
 activate :blog do |blog|
   blog.name = "blog"
-  blog.prefix = "blog"
 end
-
-activate :blog do |blog|
-  blog.name = "dev"
-  blog.prefix = "dev"
-end
-
 
 # Build-specific configuration
 configure :build do
