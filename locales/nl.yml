@@ -4,6 +4,7 @@ nl:
   home: "Home"
   solutions: "Oplossingen"
   about: "Over ons"
+  references: "Referenties"
   blog: "Blog"
   menu: "Menu"
 # header
@@ -41,8 +42,8 @@ nl:
   case_title: "Case: Gemeente Den Haag"
   case_content: |
     Hoe ziet een samenwerking met Defacto er in de praktijk uit? Laten we onze samenwerking met de gemeente Den Haag als voorbeeld nemen.
-Den Haag is bezig met het project Vakmanschap, een mooi project dat door coaching, opleiding en toetsing tegelijkertijd de vakbekwaamheid en de werktevredenheid van haar werknemers vergroot. Defacto levert de software waarmee dit wordt gerealiseerd. De samenwerking blijkt een schot in de roos, zowel in het onderling contact, als bij de medewerkers die de producten van Defacto nu gebruiken om eenvoudig door relevante opleidingen te bladeren, competenties bij te houden en hun ontwikkeling vorm te geven.
-Den Haag is inmiddels ook een belangrijke launching partner voor Defacto. Zij krijgen de beschikking over onze nieuwste software en geven richting aan het ontwikkelproces door feedback uit de praktijk. Elke ontmoeting maakt beide partijen steeds weer enthousiast over de toekomst.
+    Den Haag is bezig met het project Vakmanschap, een mooi project dat door coaching, opleiding en toetsing tegelijkertijd de vakbekwaamheid en de werktevredenheid van haar werknemers vergroot. Defacto levert de software waarmee dit wordt gerealiseerd. De samenwerking blijkt een schot in de roos, zowel in het onderling contact, als bij de medewerkers die de producten van Defacto nu gebruiken om eenvoudig door relevante opleidingen te bladeren, competenties bij te houden en hun ontwikkeling vorm te geven.
+    Den Haag is inmiddels ook een belangrijke launching partner voor Defacto. Zij krijgen de beschikking over onze nieuwste software en geven richting aan het ontwikkelproces door feedback uit de praktijk. Elke ontmoeting maakt beide partijen steeds weer enthousiast over de toekomst.
   case_call_to_action: "Sluit ook zo’n vriendschap met Defacto"
 # footer (contact section)
   name: "Naam"
