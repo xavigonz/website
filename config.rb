@@ -64,6 +64,7 @@ end
 activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
 set :markdown_engine, :redcarpet
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true
 
 # Build-specific configuration
 configure :build do
