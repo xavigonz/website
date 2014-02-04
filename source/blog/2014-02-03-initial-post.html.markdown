@@ -3,11 +3,6 @@ title: INITIAL POST
 date: 2014-02-03 21:39 UTC
 tags:
 ---
-
-shit is *hard* __just sayin__
-
-# dope
-
 # Style Guidelines: Markdown
 
 This document contains formatting standards for creating readable, consistent
