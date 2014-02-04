@@ -7,7 +7,7 @@ $ ->
     speed = $el.data("speed")
     $window.scroll ->
       yPos = -($window.scrollTop() / speed)
-      coords = "50% " + yPos + "px"
+      coords = "50% " + (yPos - 30) + "px"
       $el.css backgroundPosition: coords
       return
 
