@@ -17,3 +17,5 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Javascript dependencies
 gem "jquery-middleman"
 
+# Markdown engine
+gem "redcarpet"

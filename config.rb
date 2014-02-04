@@ -63,6 +63,7 @@ end
 
 activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
+set :markdown_engine, :redcarpet
 
 # Build-specific configuration
 configure :build do
