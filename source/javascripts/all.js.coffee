@@ -4,14 +4,20 @@
 
 $ ->
   $window = $(window)
-  $("[data-paralax=\"background\"]").each ->
+
+  $("[data-parallax=\"background\"]").each ->
     $el = $(this)
-    speed = $el.data("speed")
+    speed = $el.data("parallax-speed")
+    offset = $el.data("parallax-offset") || 0
+
     $window.scroll ->
       yPos = -($window.scrollTop() / speed)
-      coords = "50% " + (yPos - 30) + "px"
+      coords = "50% " + (yPos + offset) + "px"
       $el.css backgroundPosition: coords
       return
+
+    # Trigger scroll
+    $window.scroll()
 
     return
 
