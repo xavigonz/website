@@ -1,0 +1,796 @@
+
+// ------------------------------------------------------------
+// Layout
+// ------------------------------------------------------------
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  font-family: $body-font;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', $body-font;
+  line-height: 1em;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($link-color, 10%);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: darken($link-color, 10%);
+  }
+}
+
+.center {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*
+Header
+*/
+
+header {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 25px 85px;
+
+  .logo {
+    float: left;
+  }
+
+  nav {
+    margin-top: 6px;
+    font-family: 'Montserrat', $body-font;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        display: inline;
+        margin: 0 20px;
+
+        a {
+          text-decoration: none !important;
+          color: #444;
+
+          &:visited {
+            color: #444;
+          }
+
+          &.active {
+            //color: #bbb;
+            color: $defacto-orange;
+          }
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $defacto-orange;
+          }
+        }
+      }
+    }
+
+    a#pull {
+      display: none;
+    }
+  }
+
+  /* TODO: Think about what color this should be */
+  .phone {
+    float: right;
+
+    a {
+      padding-left: 40px;
+      color: #333;
+      font-weight: 100;
+      font-size: 2em;
+      line-height: 1.1;
+      text-decoration: none;
+      background: url('../images/phone-icon.png') 0px 8px no-repeat;
+    }
+  }
+}
+
+
+/*
+Mood
+*/
+
+#mood {
+  height: 500px;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, .3) 1px 1px 3px;
+  background: #656677 url('../images/bg2.jpg') no-repeat center top;
+  background-size: cover;
+
+  .center {
+    //margin: 0 auto;
+    max-width: 1020px;
+  }
+
+  h1 {
+    margin-left: -8px;
+    //font-weight: bold;
+    font-size: 6em;
+    //line-height: 1;
+  }
+
+  h2 {
+    margin-bottom: 2em;
+    font-size: 2em;
+    line-height: 1.2;
+  }
+
+  // .sub-title {
+  //   font-weight: bold;
+  //   font-size: 1.125em;
+  // }
+
+  // p {
+  //   margin: 35px 0;
+  //   font-size: 1.5em;
+  //   line-height: 1.5;
+  // }
+}
+
+
+/*
+Clients
+*/
+
+#clients {
+  margin: 40px 0 50px 0;
+  text-align: center;
+
+  .logos {
+    margin: 40px 0 0;
+
+    img {
+      margin: 0 35px;
+    }
+  }
+}
+
+
+/*
+Branches
+*/
+
+#branches {
+  overflow: auto;
+
+  .branches-info {
+    padding: 50px 25%;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #484848;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+  .branche-block {
+    float: left;
+    width: 33.33%;
+
+    > div {
+      padding: 45px;
+      border-right: 1px solid #ddd;
+      //border-bottom: 1px solid #ddd;
+
+      &.last {
+        border-right: 0;
+      }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #575757;
+      font-size: 1.5em;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #575757;
+      font-size: 0.938em;
+    }
+  }
+
+  .green, .blue, .orange {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -36px;
+      left: 50%;
+      margin-left: -36px;
+    }
+  }
+  .green {
+    h2, a {
+      color: #6bb6a1 !important;
+    }
+  }
+  .blue {
+    h2, a {
+      color: #6ba1cb !important;
+    }
+  }
+  .orange {
+    h2, a {
+      color: #ec766c !important;
+    }
+  }
+}
+
+
+/*
+Solutions
+*/
+
+#solutions {
+  position: relative;
+
+  .cycle-prev,
+  .cycle-next {
+    position: absolute;
+    left: 0;
+    top: 300px;
+    z-index: 9999;
+  }
+
+  .cycle-next {
+    left: auto;
+    right: 0;
+  }
+
+  #cycle-custom-pager {
+    background: #508375;
+    border-top: 1px solid #fff;
+    text-align: center;
+
+    a {
+      display: inline-block;
+      //margin-right: -3px;
+      padding: 35px 40px;
+      border-left: 1px solid #fff;
+      font-family: 'Montserrat', $body-font;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.250em;
+      text-transform: uppercase;
+
+      &:last-child {
+        border-right: 1px solid #fff;
+      }
+
+      &.cycle-pager-active {
+        background: #355b50;
+      }
+    }
+  }
+
+  .slide {
+    //width: 80%;
+    padding: 0 10%;
+    background: url('../images/slider-back.jpg') repeat;
+    overflow: auto;
+
+    h2 {
+      padding-top: 70px;
+      padding-bottom: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.250em;
+      color: #fff;
+      letter-spacing: 2px;
+    }
+  }
+
+  .slide-text,
+  .slide img {
+    float: left;
+    width: 45%;
+  }
+
+  .right-box {
+    margin-left: 5%;
+  }
+
+  .slide-text {
+    margin-bottom: 20px;
+    padding-top: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 100;
+    border-top: 1px solid #fff;
+
+    p {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+
+/*
+...
+*/
+
+.between-block {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  overflow: auto;
+
+  h2 {
+    letter-spacing: 2px;
+  }
+}
+
+
+/*
+references
+*/
+
+#references, #cases {
+  float: left;
+  width: 50%;
+}
+
+.reference {
+  padding: 75px;
+  border-right: 1px solid #ddd;
+  background: url('../images/quote-left.jpg') 100px 180px no-repeat;
+}
+
+.case {
+  padding: 75px;
+  overflow: auto;
+}
+
+.reference h2,
+.case h2 {
+  color: #996d98;
+  font-size: 2.250em;
+  text-transform: uppercase;
+}
+
+.reference {
+  h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  p {
+    padding-left: 190px;
+    font-size: 0.938em;
+    line-height: 1.8em;
+    font-style: italic;
+    color: #575757;
+  }
+
+  span {
+    font-size: 0.938em;
+    line-height: 1.8em;
+    font-style: italic;
+    color: #c3c3c3;
+  }
+}
+
+.case {
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  p {
+    padding-bottom: 20px;
+    font-size: 0.938em;
+    line-height: 1.8em;
+    color: #575757;
+  }
+}
+
+
+/*
+Footer
+*/
+
+footer {
+  position: relative;
+  clear: left;
+  background: #fbfaf8;
+}
+
+#map-canvas {
+  width: 100%;
+  height: 780px;
+}
+
+.contact-form {
+  position: absolute;
+  top: 170px;
+  left: 160px;
+  width: 350px;
+  padding: 30px;
+  background: #fbfaf8;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(#000, .1);
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 1300px) {
+  header {
+    padding: 25px 85px 100px;
+  }
+  nav {
+    float: left;
+    clear: left;
+    width: 100%;
+    ul {
+      text-align: left;
+    }
+  }
+  .phone a {
+    font-size: 1.8em;
+    background-position: 0px 7px;
+  }
+  #clients .center {
+    max-width: 750px;
+  }
+  .branches-info {
+    padding: 20px 15% 50px;
+    font-size: 1.5em;
+  }
+  .cycle-prev, .cycle-next {
+    top: 200px;
+  }
+  .slide h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .slide-text {
+    padding-top: 20px;
+    font-size: 1em;
+    p {
+      padding-bottom: 20px;
+    }
+  }
+  #cycle-custom-pager a {
+    padding: 25px 30px;
+    font-size: 1em;
+  }
+  .reference {
+    padding: 50px;
+    background-position: 60px 150px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .case {
+    padding: 50px;
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .mood-content {
+    padding-top: 40px;
+    h1 {
+      margin-left: -6px;
+      font-size: 5em;
+    }
+    .sub-title {
+      font-size: 1em;
+    }
+    p {
+      font-size: 1.3em;
+      line-height: 1.4;
+    }
+  }
+  .cycle-prev, .cycle-next {
+    top: 150px;
+  }
+  .slide h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.75em;
+  }
+  .slide-text {
+    padding-top: 10px;
+    font-size: 0.8em;
+    p {
+      padding-bottom: 10px;
+    }
+  }
+  .reference {
+    padding: 40px;
+    background-position: 40px 125px;
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+  .case {
+    padding: 40px;
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .phone a {
+    font-size: 1.5em;
+    background-position: 0px 5px;
+  }
+  .mood-content {
+    h1 {
+      margin-left: -4px;
+      font-size: 4em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.2;
+    }
+    .btn {
+      padding: 5px 12px;
+      font-size: 1.2em;
+    }
+  }
+  .branches-info {
+    padding: 20px 10% 50px;
+    font-size: 1em;
+  }
+  #references, #cases {
+    float: left;
+    width: 100%;
+  }
+  .reference {
+    background-position: 40px 60px;
+    border-bottom: 1px solid #ddd;
+    border-right: 0;
+    h2 {
+      padding-left: 190px;
+      text-align: left;
+    }
+  }
+  .secondary {
+    padding: 5px 12px;
+  }
+  #map-canvas {
+    display: none;
+  }
+  .contact-form {
+    position: inherit;
+    top: auto;
+    left: auto;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 0;
+    box-shadow: none;
+    form {
+      width: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  nav ul li {
+    margin-left: 30px;
+  }
+  .mood-content {
+    h1 {
+      margin-left: -3px;
+      font-size: 3em;
+    }
+    .sub-title {
+      font-size: 0.9em;
+    }
+    p {
+      font-size: 0.9em;
+      line-height: 1;
+    }
+  }
+  #clients {
+    margin: 30px 0 30px 0;
+    .center {
+      max-width: 500px;
+    }
+  }
+  .branche-block {
+    float: left;
+    width: 100%;
+  }
+  .slide h2 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding: 10px 0;
+  }
+  .logo {
+    width: 40%;
+    margin-left: 2%;
+    text-align: left;
+  }
+  nav {
+    float: none;
+    clear: left;
+    ul {
+      display: none;
+      height: auto;
+      text-align: center;
+      li {
+        width: 100%;
+        margin: 0;
+        display: block;
+      }
+    }
+    a#pull {
+      position: relative;
+      width: 100%;
+      padding-left: 5px;
+      display: block;
+      background: #1e1e1c;
+      font-family: 'Montserrat', $body-font;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      &:after {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
+        content: "";
+        background: url('../images/nav-icon.png') no-repeat;
+        display: inline-block;
+      }
+    }
+  }
+  .phone {
+    float: right;
+    width: 40%;
+    margin-right: 2%;
+    text-align: right;
+    line-height: 0.7em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .phone {
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 0.7em;
+  }
+  .mood-content {
+    padding-top: 15px;
+    h1 {
+      margin-left: -2px;
+      font-size: 2em;
+    }
+    .sub-title {
+      font-size: 0.7em;
+    }
+  }
+  #clients .center {
+    max-width: 300px;
+  }
+  .cycle-prev, .cycle-next {
+    display: none;
+  }
+  .slide h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1em;
+  }
+  .slide-text {
+    padding-top: 5px;
+    font-size: 0.6em;
+    p {
+      padding-bottom: 5px;
+    }
+  }
+  #cycle-custom-pager a {
+    padding: 10px 10px;
+    font-size: 0.7em;
+  }
+  .reference {
+    background: 0;
+    h2 {
+      padding-left: 0;
+      font-size: 1.5em;
+    }
+    p {
+      padding-left: 0;
+    }
+  }
+  .case h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .mood-content {
+    h1 {
+      margin-left: 0px;
+      font-size: 1.5em;
+    }
+    .sub-title {
+      font-size: 0.6em;
+    }
+    .btn {
+      padding: 3px 8px;
+      font-size: 0.8em;
+    }
+  }
+  .reference, .case {
+    padding: 5px;
+  }
+  .secondary {
+    padding: 3px 8px;
+  }
+  .contact-form {
+    width: 243px;
+    input, textarea {
+      width: 230px;
+    }
+    input[type="submit"] {
+      width: 252px;
+    }
+  }
+}
