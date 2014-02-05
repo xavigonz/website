@@ -44,6 +44,22 @@ a {
   padding: 0 20px;
 }
 
+.row {
+  display: table;
+  table-layout: fixed;
+
+  .col {
+    display: table-cell;
+    padding: 40px;
+    border-right: 1px solid #ddd;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+
 /*
 Header
 */
@@ -184,10 +200,9 @@ Branches
 */
 
 #branches {
-  overflow: auto;
 
-  .branches-info {
-    padding: 50px 25%;
+  #branches-header {
+    padding: 70px 0;
     background: #f5f5f5;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -197,56 +212,38 @@ Branches
     text-align: center;
   }
 
-  .branche-block {
-    float: left;
-    width: 33.33%;
-
-    > div {
+  #branches-info {
+    .col {
+      position: relative;
+      width: 33.33%;
       padding: 45px;
-      border-right: 1px solid #ddd;
-      //border-bottom: 1px solid #ddd;
 
-      &.last {
-        border-right: 0;
+      > img {
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        margin-left: -36px;
       }
     }
 
-    h2 {
-      margin-bottom: 20px;
-      color: #575757;
-      font-size: 1.5em;
-    }
-
     p {
-      line-height: 1.5;
-      color: #575757;
-      font-size: 0.938em;
-    }
-  }
+      color: #666;
+    }    
 
-  .green, .blue, .orange {
-    position: relative;
-
-    img {
-      position: absolute;
-      top: -36px;
-      left: 50%;
-      margin-left: -36px;
+    .green {
+      h2, a {
+        color: #6bb6a1 !important;
+      }
     }
-  }
-  .green {
-    h2, a {
-      color: #6bb6a1 !important;
+    .blue {
+      h2, a {
+        color: #6ba1cb !important;
+      }
     }
-  }
-  .blue {
-    h2, a {
-      color: #6ba1cb !important;
-    }
-  }
-  .orange {
-    h2, a {
-      color: #ec766c !important;
+    .orange {
+      h2, a {
+        color: #ec766c !important;
+      }
     }
   }
 }
@@ -258,6 +255,7 @@ Solutions
 
 #solutions {
   position: relative;
+  border-top: 1px solid #ddd;
 
   .cycle-prev,
   .cycle-next {
@@ -342,88 +340,59 @@ Solutions
 
 
 /*
-...
+References & Cases
 */
 
-.between-block {
-  width: 100%;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  overflow: auto;
+#references,
+#cases {
+  width: 50%;
+  padding: 75px;
+  color: #575757;
 
   h2 {
-    letter-spacing: 2px;
+    //margin-bottom: 30px;
+    color: #996d98;
+    font-size: 2.250em;
+    text-transform: uppercase;
+  }
+
+  .reference {
+    min-height: 160px;
+    padding-left: 190px;
+    background: url('../images/quote-left.jpg') no-repeat;
+
+    p {
+      font-size: 1.6em;
+      font-style: italic;
+    }
+
+    span {
+      font-size: 1.2em;
+      color: #c3c3c3;
+      font-style: italic;
+    }
+  }
+
+  .case {
+    p {
+      padding-bottom: 30px;
+      color: #575757;
+      //font-size: 0.938em;
+      //line-height: 1.8em;
+    }
   }
 }
 
 
 /*
-references
+Map
 */
-
-#references, #cases {
-  float: left;
-  width: 50%;
-}
-
-.reference {
-  padding: 75px;
-  border-right: 1px solid #ddd;
-  background: url('../images/quote-left.jpg') 100px 180px no-repeat;
-}
-
-.case {
-  padding: 75px;
-  overflow: auto;
-}
-
-.reference h2,
-.case h2 {
-  color: #996d98;
-  font-size: 2.250em;
-  text-transform: uppercase;
-}
-
-.reference {
-  h2 {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  p {
-    padding-left: 190px;
-    font-size: 0.938em;
-    line-height: 1.8em;
-    font-style: italic;
-    color: #575757;
-  }
-
-  span {
-    font-size: 0.938em;
-    line-height: 1.8em;
-    font-style: italic;
-    color: #c3c3c3;
-  }
-}
-
-.case {
-  h2 {
-    margin-bottom: 30px;
-  }
-
-  p {
-    padding-bottom: 20px;
-    font-size: 0.938em;
-    line-height: 1.8em;
-    color: #575757;
-  }
-}
-
 
 #map {
   clear: both;
   position: relative;
   background: #fbfaf8;
+  border-top: 1px solid #ddd;
 
   #map-canvas {
     width: 100%;
