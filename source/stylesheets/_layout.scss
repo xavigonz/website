@@ -58,7 +58,7 @@ a {
 
   &.border .col {
     border-right: 1px solid #ddd;
-    
+
     &:last-child {
       border: 0;
     }
@@ -166,6 +166,7 @@ Mood
   body.healthcare & {
     background: url('../images/mood2.jpg') no-repeat center top;
     background-size: cover;
+    height: 400px;
   }
 
   .center {
