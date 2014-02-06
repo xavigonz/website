@@ -39,7 +39,7 @@ a {
 }
 
 .center {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -138,11 +138,11 @@ Mood
 */
 
 #mood {
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   color: #fff;
   text-align: center;
-  text-shadow: rgba(0, 0, 0, .3) 1px 1px 3px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
   background: #656677 url('../images/mood2.jpg') no-repeat center top;
   background-size: cover;
 
@@ -164,16 +164,14 @@ Mood
     line-height: 1.2;
   }
 
-  // .sub-title {
-  //   font-weight: bold;
-  //   font-size: 1.125em;
-  // }
-
-  // p {
-  //   margin: 35px 0;
-  //   font-size: 1.5em;
-  //   line-height: 1.5;
-  // }
+  .btn-border {
+    padding: 1.3em 2em;
+    font-family: 'Montserrat', $body-font;
+    font-size: 1.1em;
+    //font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
 }
 
 
