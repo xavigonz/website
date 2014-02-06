@@ -1,8 +1,90 @@
 ---
-title: Overheid
+title: Zorg
 ---
 
+<!-- mood zorg -->
+<div id="mood" data-parallax="background" data-parallax-speed="2" data-parallax-offset="-30">
+    <div class="center">
+        <h1>
+          <span>Defacto Zorg</span><br>
+          <span class="since">Since 1987</span>
+        </h1>
+        <h2><%= t(:tagline) %></h2>
+        <a class="btn btn-lg" href="#map-canvas"><%= t(:header_call_to_action) %></a>
+        &nbsp;&nbsp;
+        <a class="btn btn-lg btn-border" href="#map-canvas"><%= t(:header_call_to_action) %></a>
+    </div>
+</div>
+</div>
 
-Overheid
+<!-- referenties zorg -->
+
+<div id="clients" >
+
+    <div class="logos">
+        <img src="images/logos/lumc.png" alt="LUMC logo" title="LUMC">
+        <img src="images/logos/mmc.png" alt="MMC logo" title="MMC">
+        <img src="images/logos/gelre.png" alt="Gelre Ziekenhuizen logo" title="Gelre">
+        <img src="images/logos/zinn.jpg" alt="ZINN logo" title="ZINN">
+
+    </div>
+</div>
+
+<!-- drie belangrijjkste healthcare producten -->
+
+<div id="branches">
+    <div id="branches-header">
+        <p class="center">
+          Een greep uit de mogelijkheden:
+        </p>
+    </div>
+    <div id="branches-info" class="row">
+        <div class="col green">
+            <img src="images/zorg-icon.png" alt="Topzorg icon" title="Topzorg">
+            <h2>CAPP Kwaliteitspaspoort</h2>
+            <p>
+                Lorem Ipsum
+                <a href="CAPP.html">Meer weten?</a>
+            </p>
+        </div>
+        <div class="col blue">
+            <img src="images/overheid-icon.png" alt="Overheid icon" title="Overheid">
+            <h2>E-Learning Starterkit</h2>
+            <p>
+                Lorem Ipsum
+                <a href="elearning-starter-kit.html">Lees verder...</a>
+            </p>
+        </div>
+        <div class="col orange">
+            <img src="images/bedrijfsleven-icon.png" alt="Bedrijfsleven icon" title="Bedrijfsleven">
+            <h2>360&deg;-Feedback</h2>
+            <p>
+                <%= t(:business_content) %>
+                <a href="360.html">Meer...</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- visie & quote -->
+<div class="row" style="background: url('../images/slider-back.jpg') repeat;">
+    <div id="cases" class="col">
+        <div class="case">
+            <h2><%= t(:case_title) %></h2>
+            <p><%= t(:case_content) %></p>
+            <a href="#leesmeer" class="btn secondary purple"><%= t(:case_call_to_action) %></a>
+        </div>
+    </div>
+  </div>
+    <div id="references" class="col">
+        <h2><%= t(:others_title) %></h2>
+        <div class="reference">
+            <p>
+                <img src="images/quote-icon.png" alt="" title="">
+                <%= t(:others_quote) %>
+            </p>
+            <span>- <%= t(:others_name) %></span>
+        </div>
+    </div>
 
 
