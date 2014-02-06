@@ -6,36 +6,6 @@
 // Forms
 // ------------------------------------------------------------
 
-// input {
-//     width: 320px;
-//     margin-bottom: 15px;
-//     padding: 15px 10px;
-//     border-radius: 5px;
-//     border: 1px solid #dbdbd5;
-//     font-size: 0.875em;
-//     color: #6b6b6b;
-// }
-// textarea {
-//     width: 320px;
-//     margin-bottom: 15px;
-//     padding: 15px 10px;
-//     border-radius: 5px;
-//     border: 1px solid #dbdbd5;
-//     font-size: 0.875em;
-//     color: #6b6b6b;
-//     height: 100px;
-// }
-// input[type="submit"] {
-//     width: 340px;
-//     cursor: pointer;
-//     color: #fff;
-//     background: #dbb10c;
-//     border: 0;
-//     font-size: 1.125em;
-//     box-shadow: 0 3px 0 #ac8900;
-//     -webkit-appearance: none;
-// }
-
 input,
 textarea {
     margin-bottom: 15px;
@@ -50,41 +20,6 @@ textarea {
 // ------------------------------------------------------------
 // Buttons
 // ------------------------------------------------------------
-
-// .btn {
-//   margin-bottom: 10px;
-//   padding: 10px 40px;
-//   display: block;
-//   background: #dbb10c;
-//   color: #fff !important;
-//   box-shadow: 0 3px 0 #ac8900;
-//   font-size: 1.5em;
-//   text-decoration: none !important;
-//   text-transform: uppercase;
-//   border-radius: 4px;
-// }
-
-// .secondary {
-//   padding: 13px 25px;
-//   font-size: 0.8em;
-//   border: 0;
-//   border-radius: 5px;
-//   background: #68d3b6;
-//   box-shadow: 0 3px 0 #639d8d;
-
-//   &:hover {
-//     background: #68d3b6;
-//   }
-// }
-
-// .purple {
-//   background: #60325f;
-//   box-shadow: 0 3px 0 #3d223c;
-
-//   &:hover {
-//     background: #60325f;
-//   }
-// }
 
 .btn {
     display: inline-block;
@@ -111,22 +46,22 @@ textarea {
     @include transition(all 0.3s ease);
 
     &:focus {
-        color: inherit;
+        color: #fff;
         outline: thin dotted;
         outline: 5px auto -webkit-focus-ring-color;
         outline-offset: -2px;
     }
     &:hover {
-        color: inherit;
+        color: #fff;
         background: darken($link-color, 10%);
     }
     &:active {
-        color: inherit;
+        color: #fff;
         outline: 0;
         box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
     }
     &:visited {
-        color: inherit;
+        color: #fff;
     }
 }
 
