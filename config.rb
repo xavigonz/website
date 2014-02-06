@@ -55,7 +55,7 @@ set :images_dir, 'images'
 
 activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
-activate :livereload
+activate :livereload, :host => "127.0.0.1"
 
 
 # Build-specific configuration
