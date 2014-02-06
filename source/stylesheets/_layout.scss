@@ -156,8 +156,17 @@ Mood
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  background: #656677 url('../images/mood2.jpg') no-repeat center top;
-  background-size: cover;
+
+
+  body.index & {
+    background: url('../images/mood2.jpg') no-repeat center top;
+    background-size: cover;
+  }
+
+  body.healthcare & {
+    background: url('../images/mood2.jpg') no-repeat center top;
+    background-size: cover;
+  }
 
   .center {
     max-width: 1020px;
