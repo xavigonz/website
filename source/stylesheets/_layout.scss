@@ -39,24 +39,37 @@ a {
 }
 
 .center {
+  position: relative;
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .row {
+  position: relative;
+  width: 100%;
   display: table;
   table-layout: fixed;
 
   .col {
     display: table-cell;
     padding: 40px;
-    border-right: 1px solid #ddd;
+  }
 
+  &.border .col {
+    border-right: 1px solid #ddd;
+    
     &:last-child {
       border: 0;
     }
   }
+}
+
+.border-top {
+  border-bottom: 1px solid #ddd;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd;
 }
 
 
@@ -442,6 +455,7 @@ Map
   }
 }
 
+
 /*
 Footer
 */
@@ -453,6 +467,10 @@ footer {
   background: #fbfaf8;
   border-top: 1px solid #ddd;
 }
+
+
+
+
 
 
 /*
