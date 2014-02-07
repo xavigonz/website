@@ -156,16 +156,15 @@ Mood
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+  background: url('../images/mood2.jpg') no-repeat center top;
+  background-size: cover;
 
-
-  body.index & {
-    background: url('../images/mood2.jpg') no-repeat center top;
-    background-size: cover;
-  }
+  // body.index & {
+  //   background-image: url('../images/mood2.jpg');
+  // }
 
   body.healthcare & {
-    background: url('../images/mood2.jpg') no-repeat center top;
-    background-size: cover;
+    background-image: url('../images/mood2.jpg');
     height: 400px;
   }
 
@@ -285,17 +284,17 @@ Branches
 
     .green {
       h2, a {
-        color: #6bb6a1 !important;
+        color: $green !important;
       }
     }
     .blue {
       h2, a {
-        color: #6ba1cb !important;
+        color: $blue !important;
       }
     }
-    .orange {
+    .red {
       h2, a {
-        color: #ec766c !important;
+        color: $red !important;
       }
     }
   }
