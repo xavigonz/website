@@ -72,6 +72,17 @@ a {
   border-bottom: 1px solid #ddd;
 }
 
+.section-header {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #484848;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  text-align: center;
+}
+
 
 /*
 Header
@@ -254,17 +265,10 @@ Branches
 #branches {
 
   #branches-header {
-    padding: 70px 0;
-    background: #f5f5f5;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    color: #484848;
-    font-size: 1.5em;
-    line-height: 1.6em;
-    text-align: center;
+    padding: 60px 0 70px;
   }
 
-  #branches-info {
+  .row {
     .col {
       position: relative;
       width: 33.33%;
