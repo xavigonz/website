@@ -58,7 +58,7 @@ a {
 
   &.border .col {
     border-right: 1px solid #ddd;
-    
+
     &:last-child {
       border: 0;
     }
@@ -70,6 +70,17 @@ a {
 }
 .border-bottom {
   border-bottom: 1px solid #ddd;
+}
+
+.section-header {
+  padding: 60px 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  color: #484848;
+  font-size: 1.5em;
+  line-height: 1.6em;
+  text-align: center;
 }
 
 
@@ -156,8 +167,17 @@ Mood
   color: #fff;
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-  background: #656677 url('../images/mood2.jpg') no-repeat center top;
+  background: url('../images/mood2.jpg') no-repeat center top;
   background-size: cover;
+
+  // body.index & {
+  //   background-image: url('../images/mood2.jpg');
+  // }
+
+  body.healthcare & {
+    background-image: url('../images/mood-healthcare.jpg');
+    height: 400px;
+  }
 
   .center {
     max-width: 1020px;
@@ -217,14 +237,20 @@ Clients
 */
 
 #clients {
-  margin: 40px 0 50px 0;
+  padding: 40px 0;
   text-align: center;
 
   .logos {
-    margin: 40px 0 0;
-
     img {
       margin: 0 35px;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      filter: url(grayscale.svg); /* Firefox 4+ */
+      filter: gray; /* IE 6-9 */
+
     }
   }
 }
@@ -237,17 +263,10 @@ Branches
 #branches {
 
   #branches-header {
-    padding: 70px 0;
-    background: #f5f5f5;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    color: #484848;
-    font-size: 1.5em;
-    line-height: 1.6em;
-    text-align: center;
+    padding: 60px 0 70px;
   }
 
-  #branches-info {
+  .row {
     .col {
       position: relative;
       width: 33.33%;
@@ -263,21 +282,21 @@ Branches
 
     p {
       color: #666;
-    }    
+    }
 
     .green {
       h2, a {
-        color: #6bb6a1 !important;
+        color: $green !important;
       }
     }
     .blue {
       h2, a {
-        color: #6ba1cb !important;
+        color: $blue !important;
       }
     }
-    .orange {
+    .red {
       h2, a {
-        color: #ec766c !important;
+        color: $red !important;
       }
     }
   }
@@ -415,6 +434,31 @@ References & Cases
       //font-size: 0.938em;
       //line-height: 1.8em;
     }
+  }
+}
+
+
+/*
+Vision
+*/
+
+#vision {
+  padding: 80px 0;
+  color: #fff;
+  text-align: center;
+  background: url('../images/slider-back.jpg') center top;
+
+  h2 {
+    margin: 0 0 40px;
+    font-size: 5em;
+  }
+
+  h3 {
+    margin: 0 0 60px;
+    font-family: $body-font;
+    font-size: 1.6em;
+    line-height: 1.4em;
+    font-weight: 100;
   }
 }
 
