@@ -179,6 +179,11 @@ Mood
     height: 400px;
   }
 
+  body.government & {
+  background-image: url('../images/mood-government.jpg');
+  height: 400px;
+  }
+
   .center {
     max-width: 1020px;
   }
