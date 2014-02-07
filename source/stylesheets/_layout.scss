@@ -442,6 +442,23 @@ References & Cases
 Map
 */
 
+#vision {
+  padding: 40px 0;
+  color: #fff;
+  //text-align: center;
+  background: url('../images/slider-back.jpg') center top;
+
+  h2 {
+    font-size: 5em;
+    margin: .5em;
+  }
+}
+
+
+/*
+Map
+*/
+
 #map {
   clear: both;
   position: relative;
