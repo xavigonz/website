@@ -237,12 +237,10 @@ Clients
 */
 
 #clients {
-  margin: 40px 0 50px 0;
+  padding: 40px 0;
   text-align: center;
 
   .logos {
-    margin: 40px 0 0;
-
     img {
       margin: 0 35px;
       -webkit-filter: grayscale(100%);
