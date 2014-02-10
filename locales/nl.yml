@@ -32,8 +32,12 @@ nl:
     Als je personeel op een plek zit die bij hun kwaliteiten past, haal je maximaal rendement. Defacto helpt je om je personeel op te leiden,
     te stimuleren zich te ontwikkelen en inzicht te krijgen in hun competenties.
 # solutions
-  solutions_title: "Oplossingen voor uw organisatie"
-  solutions_content: "Lorem Ipsum"
+  solutions_title: "CAPP Kwaliteitspaspoort&trade;"
+  solutions_content: |
+    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen en algemene organisatie-eisen.
+    Elke medewerker krijgt een Kwaliteitspaspoort, een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
+    en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
+    Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
   solutions_call_to_action: "Lees meer"
 # references
   others_title: "Wat anderen zeggen"
@@ -86,7 +90,11 @@ nl:
   solutions_page_innovation_description: ""
 # About us page
   about_us_title: "Over ons"
-  about_us_story: "Op de werkvloer van Defacto is een bonte mix te vinden van jong en oud. Defacto gelooft in jong talent en in het bijzonder in jong talent dat begeleid wordt door mensen met ervaring in het vak. Binnen het team van Defacto staan kennisoverdracht, eigen inbreng en creatief nadenken centraal. Als er nieuwe kansen zijn, worden ze gegrepen, nieuwe mogelijkheden worden onderzocht. Deze kruisbestuiving van verschillende generaties maakt dat Defacto zonder moeite in kan spelen op ontwikkelingen en haar medewerkers hun talent volop kunnen ontplooien."
+  about_us_story: |
+    Op de werkvloer van Defacto is een bonte mix te vinden van jong en oud. Defacto gelooft in jong talent en in het bijzonder in jong talent dat
+    begeleid wordt door mensen met ervaring in het vak. Binnen het team van Defacto staan kennisoverdracht, eigen inbreng en creatief nadenken centraal.
+    Als er nieuwe kansen zijn, worden ze gegrepen, nieuwe mogelijkheden worden onderzocht. Deze kruisbestuiving van verschillende generaties maakt dat
+    Defacto zonder moeite in kan spelen op ontwikkelingen en haar medewerkers hun talent volop kunnen ontplooien.
   team_intro: "Lorem Ipsum team intro flavor"
   team_title: "Ons Team"
 # Healthcare page
@@ -112,13 +120,23 @@ nl:
   jaargesprekken_title: "Jaargesprekken"
   jaargesprekken_description: "Lorem Ipsumnieuwe tekst?"
 # Innovatie page
-  innovation_title: "Research & Development"
-  innovation_description: "link naar blog"
+  innovation_tagline: "Lees meer over onze Research & Development activiteiten op ons blog"
+  innovation_title: "Blijven innoveren"
+  innovation_description: |
+    Het digitale landschap is constant in ontwikkeling. Om in dit landschap ontwikkeling aan te kunnen bieden,
+    moet je dus steeds voorop blijven lopen. Wij denken dat we een aardige indruk hebben hoe het elektronische leren in de toekomst vorm krijgt,
+    en ontwikkelen dus ook software die deze vorm kan ondersteunen. Voor organisaties die samen met ons voorop willen lopen hebben we altijd meerdere
+    producten in de pijplijn. Hou <a href="/blog">ons blog</a> in de gaten voor meer nieuws!
   learning_spaces_title: "Learning Spaces"
-  learning_spaces_tagline: "Lorem Ipsum tag line voor learning spaces"
-  learning_spaces_description: "Lorem Ipsum"
+  learning_spaces_tagline: "Maak Kennis met Learning Spaces:"
+  learning_spaces_description: |
+    Learning Spaces, een omgeving waarin kennis niet langer éénrichtingsverkeer is tussen docent en cursist, maar waar elk beetje kennis dat aanwezig is
+    in een organisatie kan worden uitgelicht en benut.
   arcade_learning_title: "Arcade Learning"
-  arcade_learning_description: "Lorem Ipsum "
+  arcade_learning_description: |
+    Met Arcade Learning combineren we de stimulerende principes van gamification met de laagdrempeligheid van mobile learning.
+    ‘Leren door te doen’ blijkt keer op keer de meest efficiënte manier van leren, en ‘doen’ wordt steeds makkelijker te realiseren.
+    De kracht van Arcade Learning is dat het iedereen kan motiveren zich te gaan ontwikkelen.
 
 
 
