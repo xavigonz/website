@@ -284,32 +284,51 @@ Branches
       width: 33.33%;
       padding: 45px;
 
-      a > img, > img {
+      .icon {
         position: absolute;
-        top: -36px;
         left: 50%;
-        margin-left: -36px;
+        top: -37px;
+        margin-left: -37px;
+        width: 74px;
+        height: 74px;
+        text-align: center;
+        border-radius: 50%;
+
+        img {
+          width: 68%;
+          margin-top: 16%;
+        }
+      }
+
+      &.green {
+        .icon {
+          background: $green;
+          img { margin-top: 19%; }
+        }
+        h2, a {
+          color: $green !important;
+        }
+      }
+      &.blue {
+        .icon {
+          background: $blue;
+        }
+        h2, a {
+          color: $blue !important;
+        }
+      }
+      &.red {
+        .icon {
+          background: $red;
+        }
+        h2, a {
+          color: $red !important;
+        }
       }
     }
 
     p {
       color: #666;
-    }
-
-    .green {
-      h2, a {
-        color: $green !important;
-      }
-    }
-    .blue {
-      h2, a {
-        color: $blue !important;
-      }
-    }
-    .red {
-      h2, a {
-        color: $red !important;
-      }
     }
   }
 }
