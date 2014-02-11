@@ -179,6 +179,21 @@ Mood
     height: 400px;
   }
 
+  body.government & {
+  background-image: url('../images/mood-government.jpg');
+  height: 400px;
+  }
+
+  body.business & {
+  background-image: url('../images/mood-business.jpg');
+  height: 400px;
+  }
+
+  body.innovation & {
+    background-image: url('../images/mood-innovation.png');
+    height: 400px;
+  }
+
   .center {
     max-width: 1020px;
   }
@@ -239,18 +254,15 @@ Clients
 #clients {
   padding: 40px 0;
   text-align: center;
+  border-top: 1px solid #ddd;
 
   .logos {
     img {
       margin: 0 35px;
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
+      @include filter (grayscale(100%));
       filter: url(grayscale.svg); /* Firefox 4+ */
       filter: gray; /* IE 6-9 */
-
+      opacity: 0.6;
     }
   }
 }
@@ -272,7 +284,7 @@ Branches
       width: 33.33%;
       padding: 45px;
 
-      > img {
+      a > img, > img {
         position: absolute;
         top: -36px;
         left: 50%;
