@@ -10,7 +10,17 @@
     <nav class="primary-nav">
         <ul>
             <li><%= nav_path(t(:home), "/") %></li>
-            <li><%= nav_path(t(:solutions), "/solutions.html") %></li>
+            <li>
+                <%= nav_path(t(:solutions), "#") %>
+            </li>
+            <li>
+                <%= nav_path(t(:markets), "#") %>
+                <ul>
+                    <li><a href="healthcare.html"><%= t(:healthcare_title) %></a></li>
+                    <li><a href="government.html"><%= t(:government_title) %></a></li>
+                    <li><a href="business.html"><%= t(:business_title) %></a></li>
+                </ul>
+            </li>
             <li><%= nav_path(t(:about), "/about-us.html") %></li>
             <li><%= nav_path(t(:blog), "/blog.html") %></li>
         </ul>

@@ -91,31 +91,37 @@ Header
 header {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 25px 85px;
+  //padding: 25px 85px;
+  padding: 0 85px;
 
   .logo {
     float: left;
+    margin: 20px 40px 0 0;
   }
 
   nav {
-    margin-top: 6px;
+    //margin-top: 6px;
     font-family: 'Montserrat', $body-font;
     font-weight: 700;
     text-transform: uppercase;
 
-    ul {
+    > ul {
       margin: 0;
       padding: 0;
       list-style: none;
-      text-align: center;
+      //text-align: center;
+      @include pie-clearfix;
 
-      li {
-        display: inline;
-        margin: 0 20px;
+      > li {
+        position: relative;
+        float: left;
+        //display: inline-block;
+        //margin: 0 20px;
 
         a {
-          text-decoration: none !important;
+          display: block;
           color: #444;
+          text-decoration: none !important;
 
           &:visited {
             color: #444;
@@ -132,6 +138,42 @@ header {
             color: $defacto-orange;
           }
         }
+
+        > a {
+          padding: 25px;
+          border-left: 1px solid #ddd;
+        }
+
+        &:last-child a {
+          border-right: 1px solid #ddd;
+        }
+      }
+    }
+
+    // Submenu
+    ul li:hover ul { display: block; }
+
+    ul ul {
+      //white-space: nowrap;
+      display: none;
+      background: #fff;
+      position: absolute;
+      z-index: 999;
+      left: 0;
+      top: 100%;
+      margin: 0;
+      padding: 0;
+      padding: 15px 0;
+      list-style: none;
+      border: 1px solid #ddd;
+      
+      li {
+        //float: left;
+        display: block;
+
+        a {
+          padding: 10px 25px;
+        }
       }
     }
 
@@ -143,6 +185,7 @@ header {
   /* TODO: Think about what color this should be */
   .phone {
     float: right;
+    margin: 20px 0 0 40px;
 
     a {
       padding-left: 40px;
