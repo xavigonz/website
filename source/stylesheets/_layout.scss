@@ -293,11 +293,16 @@ Branches
         height: 74px;
         text-align: center;
         border-radius: 50%;
+        background: $link-color;
 
         img {
           width: 68%;
           margin-top: 16%;
         }
+      }
+        
+      h2, a {
+        color: $link-color !important;
       }
 
       &.green {
