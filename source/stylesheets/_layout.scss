@@ -54,6 +54,7 @@ a {
   .col {
     display: table-cell;
     padding: 40px;
+    vertical-align: top;
   }
 
   &.border .col {
@@ -314,6 +315,11 @@ Branches
         font-size: 1.8em;
       }
 
+      p {
+        color: #666;
+        font-size: 1.3em
+      }
+
       &.green {
         .icon {
           background: $green;
@@ -340,10 +346,49 @@ Branches
         }
       }
     }
+  }
+}
 
-    p {
-      color: #666;
-      font-size: 1.3em
+
+/*
+Solutions
+*/
+
+
+#highlights {
+  .row {
+    background: #fbfbfb;
+
+    .col {
+      position: relative;
+      width: 33.33%;
+      padding: 45px;
+
+      p {
+        color: #666;
+        font-size: 1.3em
+      }
+
+      &.image {
+        padding: 0px;
+        overflow: hidden;
+        //vertical-align: bottom;
+
+        div {
+          position: relative;
+
+          img {
+            position: absolute;
+            //bottom: -200px;
+            //top: -200px;
+            margin-top: -10%;
+            //right: -10%;
+            width: 100%;
+            min-width: 500px;
+            max-width: 900px;
+          }
+        } 
+      }
     }
   }
 }
@@ -434,51 +479,6 @@ Solutions
 
     p {
       padding-bottom: 50px;
-    }
-  }
-}
-
-
-/*
-References & Cases
-*/
-
-#references,
-#cases {
-  width: 50%;
-  padding: 75px;
-  color: #575757;
-
-  h2 {
-    //margin-bottom: 30px;
-    color: #996d98;
-    font-size: 2.250em;
-    text-transform: uppercase;
-  }
-
-  .reference {
-    min-height: 160px;
-    padding-left: 190px;
-    background: url('../images/quote-left.jpg') no-repeat;
-
-    p {
-      font-size: 1.6em;
-      font-style: italic;
-    }
-
-    span {
-      font-size: 1.2em;
-      color: #c3c3c3;
-      font-style: italic;
-    }
-  }
-
-  .case {
-    p {
-      padding-bottom: 30px;
-      color: #575757;
-      //font-size: 0.938em;
-      //line-height: 1.8em;
     }
   }
 }
