@@ -259,10 +259,10 @@ Clients
   .logos {
     img {
       margin: 0 35px;
-      @include filter (grayscale(100%));
-      filter: url(grayscale.svg); /* Firefox 4+ */
-      filter: gray; /* IE 6-9 */
       opacity: 0.6;
+      filter: url('grayscale.svg#grayscale'); /* Firefox 4+ */
+      filter: gray; /* IE 6-9 */
+      @include filter (grayscale(100%));
     }
   }
 }
