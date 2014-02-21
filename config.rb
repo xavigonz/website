@@ -53,6 +53,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :relative_links, true
+
 activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
 
 activate :livereload, :host => "127.0.0.1"
@@ -70,8 +72,16 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  # Optional Settings
+  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
+  # deploy.branch   = "custom-branch" # default: gh-pages
+  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
