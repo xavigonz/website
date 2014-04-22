@@ -191,6 +191,11 @@ Mood
   height: 400px;
   }
 
+  body.references & {
+  background-image: url('../images/mood-business.png');
+  height: 400px;
+  }
+
   body.innovation & {
     background-image: url('../images/mood-innovation.png');
     height: 400px;
@@ -689,7 +694,7 @@ Media Queries
       font-size: 1.8em;
     }
     p {
-      font-size: 0.8em;
+      font-size: 1.2em;
     }
   }
   .case {
