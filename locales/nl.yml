@@ -14,28 +14,41 @@ nl:
   what_we_do_html: "Wij ontwikkelen innovatieve software in het werkveld van Opleiden & Ontwikkelen. %{href}"
   what_we_do_href: "Bekijk onze showcase om te zien wat er mogelijk is."
 # markets
-  markets_intro: "Ziekenhuizen, ministeries en grote organisaties in het bedrijfsleven werken met onze innovative software."
-  healthcare_title: "Topzorg"
+  markets_intro: "Ziekenhuizen, ministeries en grote organisaties in het bedrijfsleven werken met onze software."
+  healthcare_title: "Zorg"
   healthcare_content_html: |
-    In de zorg is het niet alleen belangrijk om topkwaliteit te leveren, maar ook dat je kunt aantonen dat je de kwalificaties hebt die daarbij horen.
+    Voldoe aan de hoge kwaliteitseisen en borg vakbevoegdheid met het Kwaliteitspaspoort™.
+    Wij helpen zorginstellingen hun leeractiviteiten te moderniseren en met het implementeren van E-Learning.
   government_title: "Overheid"
   government_content: |
-    Stimuleer medewerkers en biedt kennis op zo’n manier aan dat er maximaal gebruik van wordt gemaakt.
+    Met onze innovatieve leeroplossingen creëren we samen een digitale academie met E-Learning,
+    coaching en een functiespecifiek Opleidingspaspoort.
   business_title: "Bedrijfsleven"
   business_content: |
-    Haal maximaal rendement door de juiste mensen op de juiste plek te krijgen.
-# solutions
-  solutions_title: "CAPP Kwaliteitspaspoort&trade;"
-  solutions_content: |
-    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen en algemene organisatie-eisen.
-    Elke medewerker krijgt een Kwaliteitspaspoort, een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
-    en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
-    Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
+    Verrijk je corporate academy met E-Learning, informeel leren en gamification, gericht op
+    compliance, talentontwikkeling en het delen van kennis.
+# highlights
+  capp_leren_title: "Samen een business case maken over hoeveel je kunt besparen met onze software?"
+  capp_leren_content: |
+    Elke organisatie is anders. Wil je concreet voor je zien wat CAPP en E-Learning jóuw organisatie opleveren?
+  starter_kit_title: "Maak nu je eigen content met de E-Learning Starter Kit"
+  starter_kit_content: |
+    Maak je eigen content met de E-Learning Starterkit. Zo bespaar je geld en sluit je content beter aan bij je behoeften.
+    De E-Learning Starterkit bevat alles dat je nodig hebt om meteen van start te gaan.
+  kpp_title: "Haal je accreditatie met het Kwaliteitspaspoort&trade;"
+  kpp_content: |
+    Volledige compliance met het CAPP Kwaliteitspaspoort. Een persoonsgebonden profiel
+    waarin de bekwaamheden en bevoegdheden in één keer inzichtelijk zijn voor werknemer,
+    werkgever en toezichthoudende instanties.
   solutions_call_to_action: "Lees meer"
 # references
   others_title: "Wat anderen zeggen"
-  others_quote: "Samenwerken met Defacto is werken aan vernieuwing."
-  others_name: "Trudy de Vrei"
+  others_quote: |
+    Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen in het verder
+    toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de patiënt -
+    het steeds beter te doen staat in alles voorop"
+  others_name: "Bruno de Hoogd"
+  others_title: "Directeur HRM, Maxima Medisch Centrum"
   case_title: "Case: Gemeente Den Haag"
   case_content: |
     Hoe ziet een samenwerking met Defacto er in de praktijk uit? Laten we onze samenwerking met de gemeente Den Haag als voorbeeld nemen.
@@ -55,14 +68,15 @@ nl:
   solutions_page_intro: "Een greep uit de mogelijkheden:"
   solutions_page_capp_title: "CAPP Leren & Ontwikkelen"
   solutions_page_capp_description: |
-    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen en algemene organisatie-eisen.
-    Elke medewerker krijgt een Kwaliteitspaspoort, een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
+    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen
+    en algemene organisatie-eisen. Elke medewerker krijgt een Kwaliteitspaspoort,
+    een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
     en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
     Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
   solutions_page_starter_kit_title: "E-Learning Starter Kit"
   solutions_page_starter_kit_description: |
-    De productie van e-learningcontent uitbesteden is vaak duur, en je blijft uiteindelijk zitten met een product dat net niet lekker aansluit op de werkvloer. Het is goedkoper en effectiever om het in eigen hand te nemen.
-    De E-learning Starterkit bevat alles dat je nodig hebt om meteen van start te kunnen. Minimaliseer de opstartfase en begin meteen met het maken van je eigen content.
+    De productie van E-Learningcontent uitbesteden is vaak duur, en je blijft uiteindelijk zitten met een product dat net niet lekker aansluit op de werkvloer. Het is goedkoper en effectiever om het in eigen hand te nemen.
+    De E-Learning Starterkit bevat alles dat je nodig hebt om meteen van start te kunnen. Minimaliseer de opstartfase en begin meteen met het maken van je eigen content.
   solutions_page_360_title: "360&deg;-Feedback"
   solutions_page_360_description: |
     Ontwikkeling begint bij zelfkennis. 360° Feedback helpt medewerkers aan deze zelfkennis door vragenlijsten te sturen aan bijvoorbeeld collega’s,
