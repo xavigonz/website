@@ -12,7 +12,7 @@ $ ->
 
     $window.scroll ->
       yPos = -($window.scrollTop() / speed)
-      coords = "50% " + (yPos + offset) + "px"
+      coords = "" + (yPos + offset)
       $el.css backgroundPosition: coords
       return
 
