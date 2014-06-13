@@ -355,20 +355,23 @@ Solutions
 
 #highlights {
   background: #fbfbfb;
+  text-align: center;
 
   .row {
+    position: relative;
     max-width: 1600px;
+    min-height: 100vh;
     margin: 0 auto;
-    //border-top: 1px solid #ddd;
+    padding: 70px;
 
     .col {
       position: relative;
-      width: 33.33%;
-      padding: 45px 45px;
+      width: 50%;
+      vertical-align: middle;
 
       h1 {
         margin-top: 0;
-        //color: #999;
+        color: #1a64a6;
         font-family: $body-font;
         font-size: 1.8em;
         line-height: 1.3;
@@ -376,30 +379,72 @@ Solutions
       }
 
       p {
-        color: #666;
-        font-size: 1.1em
+        color: #fff;
+        font-size: 1.3em;
       }
 
       &.image {
         padding: 0px;
         overflow: hidden;
-        //vertical-align: bottom;
+        vertical-align: middle;
 
         div {
           position: relative;
 
           img {
-            position: absolute;
-            //bottom: -200px;
-            //top: -200px;
-            margin-top: -10%;
+            margin-top: 0;
             right: 0;
-            width: 100%;
-            //min-width: 500px;
+            width: 70%;
             max-width: 700px;
           }
         }
       }
+    }
+
+    .arrow {
+      @include transform(rotate(45deg));
+      position: absolute;
+      bottom: -50px;
+      background-color: #ecf0f1;
+      width: 100px;
+      height: 100px;
+      z-index: 9999;
+    }
+  }
+
+  #sk {
+    background-color: #a3b6bb;
+    .arrow {
+      background-color: #a3b6bb;
+      left: 22%;
+    }
+  }
+
+  #bc {
+    p {
+      color: #406164;
+    }
+    .arrow {
+      background-color: #fbfbfb;
+      right: 22%;
+    }
+  }
+
+  #kpp {
+    background-color: #ecf0f1;
+    p {
+      color: #6d8082;
+    }
+    .arrow {
+      background-color: #ecf0f1;
+      left: 22%;
+    }
+  }
+
+  #dr {
+    background-color: #fff;
+    p {
+      color: #566566;
     }
   }
 }
@@ -537,7 +582,7 @@ Map
 
   .contact-form {
     position: absolute;
-    top: 75px;
+    top: 35px;
     left: 160px;
     width: 350px;
     padding: 30px;
