@@ -101,8 +101,8 @@ header {
 
   nav {
     margin-top: 6px;
-    font-family: 'Montserrat', $body-font;
-    font-weight: 700;
+    font-family: 'Open sans', $body-font;
+    font-weight: 400;
     text-transform: uppercase;
 
     ul {
@@ -142,7 +142,6 @@ header {
     }
   }
 
-  /* TODO: Think about what color this should be */
   .phone {
     float: right;
 
@@ -150,7 +149,7 @@ header {
       padding-left: 40px;
       color: #333;
       font-weight: 100;
-      font-size: 2em;
+      font-size: 1.7em;
       line-height: 1.1;
       text-decoration: none;
       background: url('../images/phone-icon.png') 0px 8px no-repeat;
@@ -653,7 +652,7 @@ Media Queries
     }
   }
   .phone a {
-    font-size: 1.8em;
+    font-size: 1.3em;
     background-position: 0px 7px;
   }
   #clients .center {
@@ -748,7 +747,7 @@ Media Queries
 
 @media screen and (max-width: 910px) {
   .phone a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     background-position: 0px 5px;
   }
   .mood-content {
