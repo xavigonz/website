@@ -363,7 +363,7 @@ Solutions
 
   .row {
     position: relative;
-    max-width: 1600px;
+    // max-width: 1600px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 70px;
@@ -586,10 +586,9 @@ Map
 
   .contact-form {
     position: absolute;
-    top: 35px;
+    top: 25px;
     left: 160px;
-    width: 350px;
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     background: #fbfaf8;
     border-radius: 5px;
     box-shadow: 0px 2px 10px rgba(#000, .1);

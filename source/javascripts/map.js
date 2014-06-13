@@ -7,7 +7,7 @@ function mapInit() {
   var mapOptions = {
     zoom: 16,
     center: defactoHQ,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeId: google.maps.MapTypeId.SATELLITE,
     scrollwheel: false,
     draggable: true
   };

@@ -41,7 +41,6 @@ textarea {
     line-height: 16px;
     background: $link-color;
 
-    //@include box-shadow(0 3px 0 #2f8cde);
     @include user-select(none);
     @include transition(all 0.3s ease);
 
