@@ -328,27 +328,19 @@ Branches
 
       &.green {
         .icon {
-          background: $green;
+          background: $gray;
           img { margin-top: 19%; }
-        }
-        h2, a {
-          color: $green !important;
         }
       }
       &.blue {
         .icon {
-          background: $blue;
-        }
-        h2, a {
-          color: $blue !important;
+          background: $gray;
         }
       }
+
       &.red {
         .icon {
-          background: $red;
-        }
-        h2, a {
-          color: $red !important;
+          background: $gray;
         }
       }
     }
