@@ -1,2 +1,2 @@
 #!/bin/bash
-bundle exec middleman server
+bundle exec middleman server "$@"
