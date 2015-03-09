@@ -3,35 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="robots" content="noindex, nofollow">
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Defacto" %></title>
-
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
-
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag  "all" %>
   </head>
-
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <%= yield %>
     <%= partial "footer" %>
+
     <script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '126011e0-7d76-412b-92de-ad6fb3ab38e2', f: true }); done = true; } }; })();</script>
-
-
   </body>
 </html>

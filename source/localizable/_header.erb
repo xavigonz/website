@@ -1,20 +1,17 @@
 <header>
-    <a class="logo" href="index.html" title="Defacto">
-        <img src="images/logo.png" alt="Defacto" title="Defacto" width="205" height="34">
-    </a>
+  <%= link_to image_tag('logo.png', :alt => 'Defacto'), '/index.html', :class => 'logo' %>
 
-    <div class="phone">
-        <a href="tel:+31503144832">050 314 48 32</a>
-    </div>
+  <div class="phone">
+    <a href="tel:+31503144832">050 314 48 32</a>
+  </div>
 
-    <nav class="primary-nav">
-        <ul>
-            <li><%= nav_path(t(:home), "/") %></li>
-            <li><%= nav_path(t(:solutions), "/solutions.html") %></li>
-            <li><%= nav_path(t(:references), "/references.html") %></li>
-            <li><%= nav_path(t(:about), "/about-us.html") %></li>
-            <li><%= nav_path(t(:blog), "/blog.html") %></li>
-        </ul>
-        <a href="#" id="pull"><%= t(:menu) %></a>
-    </nav>
+  <nav class="primary-nav">
+    <ul>
+      <li><%= nav_path(t(:home), "/index.html") %></li>
+      <li><%= nav_path(t(:solutions), "/solutions.html") %></li>
+      <li><%= nav_path(t(:references), "/references.html") %></li>
+      <li><%= nav_path(t(:about), "/about-us.html") %></li>
+    </ul>
+    <a href="#" id="pull"><%= t(:menu) %></a>
+  </nav>
 </header>

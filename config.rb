@@ -32,12 +32,6 @@
 # Helpers
 ###
 
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Reload the browser automatically whenever files change
-# activate :livereload
-
 # Methods defined in the helpers block are available in templates
 helpers do
   def nav_path(link_text, url, options = {})
@@ -48,17 +42,20 @@ helpers do
 end
 
 set :css_dir, 'stylesheets'
-
 set :js_dir, 'javascripts'
-
 set :images_dir, 'images'
 
 set :relative_links, true
 
-activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
+# Automatic image dimensions on image_tag helper
+# activate :automatic_image_sizes
 
+# Reload the browser automatically whenever files change
+# activate :livereload
 activate :livereload, :host => "127.0.0.1"
 
+activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
