@@ -34,9 +34,9 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def nav_path(link_text, url, options = {})
+  def nav_link_to(link_text, url, options = {})
     options[:class] ||= ""
-    options[:class] << " active" if url == current_page.url
+    options[:class] << " active" if url_for(url, :relative => false) == url_for(current_page.url, :relative => false)
     link_to(link_text, url, options)
   end
 end

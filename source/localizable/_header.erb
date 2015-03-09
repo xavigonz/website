@@ -7,10 +7,10 @@
 
   <nav class="primary-nav">
     <ul>
-      <li><%= nav_path(t(:home), "/index.html") %></li>
-      <li><%= nav_path(t(:solutions), "/solutions.html") %></li>
-      <li><%= nav_path(t(:references), "/references.html") %></li>
-      <li><%= nav_path(t(:about), "/about-us.html") %></li>
+      <li><%= nav_link_to t(:home), "/index.html" %></li>
+      <li><%= nav_link_to t(:solutions), "/solutions.html" %></li>
+      <li><%= nav_link_to t(:references), "/references.html" %></li>
+      <li><%= nav_link_to t(:about), "/about-us.html" %></li>
     </ul>
     <a href="#" id="pull"><%= t(:menu) %></a>
   </nav>
