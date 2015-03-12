@@ -1,48 +1,44 @@
-<div id="branches">
-    <div class="section-header">
-        <p class="center">
-            <%= t(:markets_intro) %>
-        </p>
-    </div>
-    <div class="row border">
-        <div class="col green">
-            <h2>
-                <a href="healthcare.html" class="icon">
-                    <img src="images/healthcare-icon.png" alt="Topzorg icon" title="Topzorg">
-                </a>
-                <a href="healthcare.html"><%= t(:healthcare_title) %></a>
-            </h2>
-            <p>
-                <%= t(:healthcare_content_html) %>
-                <a href="healthcare.html">Lees verder...</a>
-            </p>
-        </div>
-        <div class="col blue">
-            <h2>
-                <a href="government.html" class="icon">
-                    <img src="images/government-icon.png" alt="Overheid icon" title="Overheid">
-                </a>
-                <a href="government.html"><%= t(:government_title) %></a>
-            </h2>
-            <p>
-                <%= t(:government_content) %>
-                <a href="government.html">Lees verder...</a>
-            </p>
-        </div>
-        <div class="col red">
-            <h2>
-                <a href="business.html" class="icon">
-                    <img src="images/business-icon.png" alt="Bedrijfsleven icon" title="Bedrijfsleven">
-                </a>
-                <a href="business.html"><%= t(:business_title) %></a>
-            </h2>
-            <p>
-                <%= t(:business_content) %>
-                <!--[if IE 8]>IE8 <a href="https://360feedback.typeform.com/to/Draxf8?" target="_blank">meer weten</a>                <![endif-->
+<section id="markets">
+  <div class="wrap">
 
-    <!--[if gt IE 8]><! -->
-<a class="typeform-share link" href="https://360feedback.typeform.com/to/Draxf8?" data-mode="2" target="_blank">Meer weten!</a>
-                <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-</div>
+    <div class="row border">
+      <div class="col green">
+        <h2>
+          <a href="healthcare.html" class="icon">
+            <img src="images/healthcare-icon.png" alt="Topzorg icon" title="Topzorg">
+          </a>
+          <a href="healthcare.html"><%= t(:healthcare_title) %></a>
+        </h2>
+        <p>
+          <%= t(:healthcare_content_html) %>
+          <a href="healthcare.html">Lees verder...</a>
+        </p>
+      </div>
+      <div class="col blue">
+        <h2>
+          <a href="government.html" class="icon">
+            <img src="images/government-icon.png" alt="Overheid icon" title="Overheid">
+          </a>
+          <a href="government.html"><%= t(:government_title) %></a>
+        </h2>
+        <p>
+          <%= t(:government_content) %>
+          <a href="government.html">Lees verder...</a>
+        </p>
+      </div>
+      <div class="col red">
+        <h2>
+          <a href="business.html" class="icon">
+            <img src="images/business-icon.png" alt="Bedrijfsleven icon" title="Bedrijfsleven">
+          </a>
+          <a href="business.html"><%= t(:business_title) %></a>
+        </h2>
+        <p>
+          <%= t(:business_content) %>
+          <a href="government.html">Lees verder...</a>
+        </p>
+      </div>
     </div>
-</div>
+
+  </div>
+</section>

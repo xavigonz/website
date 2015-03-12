@@ -1,0 +1,95 @@
+.hero {
+  ///////////////////////////////////////////////////////////////////////////////////
+  $base-border-radius: 3px !default;
+  $base-accent-color: #477DCA !default;
+  // $large-screen: em(860) !default;
+  //////////////////////////////////////////////////////////////////////////////////
+
+  $hero-background-top: #7F99BE;
+  $hero-background-bottom: #20392B;
+  $hero-color: white;
+  $gradient-angle: 10deg;
+  $hero-image: '../images/hero-home2.png';
+  // $hero-image: 'http://zurb.com/university/assets/university/university-hero-4748b00c8c6825d75d331c3a01144e5d.jpg';
+
+  // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-image: url($hero-image);
+  background-color: #324766;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 1729px 700px;
+
+  // background: url(http://zurb.com/university/assets/university/university-hero-4748b00c8c6825d75d331c3a01144e5d.jpg) no-repeat center top #ff6908;
+  background-attachment: fixed;
+
+  padding-bottom: 3em;
+  width: 100%;
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    button,
+    .button {
+      // @include button(flat, $base-accent-color);
+      // padding: 0.7em 1em;
+      font-size: 1.3em;
+    }
+  }
+
+  .hero-copy {
+    text-align: center;
+
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 0.6em;
+
+      @include media($large-screen) {
+        font-size: 4em;
+      }
+    }
+
+    p {
+      font-weight: 200;
+      line-height: 1.4em;
+      margin: 0 auto 2em auto;
+
+      @include media($large-screen) {
+        font-size: 1.6em;
+        max-width: 80%;
+      }
+    }
+  }
+
+  .since {
+    position: relative;
+    display: inline-block;
+    top: -20px;
+    padding: 0 .8em;
+    font-size: 0.9em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: .3;
+    text-align: center;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      width: 40px;
+      border-bottom: 1px solid #eee;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    }
+    &:after {
+      left: auto;
+      right: 100%;
+    }
+  }
+}

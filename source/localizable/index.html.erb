@@ -1,9 +1,21 @@
 ---
-title: Wij zijn Defacto |
+title: Defacto
 ---
 
-<%= partial "mood" %>
-<%= partial "markets" %>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Developing People</h1>
+      <span class="since">Since 1987</span>
+      <p><%= t(:tagline) %></p>
+    </div>
+    <a class="button" href="#">Lees verder</a>
+  </div>
+</div>
+
+<%= partial "solutions" %>
+<%#= partial "markets" %>
 <%= partial "highlights" %>
 <%= partial "clients" %>
 <%= partial "map" %>
+<%= partial "contact-info" %>

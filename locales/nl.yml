@@ -9,7 +9,7 @@ nl:
   menu: "Menu"
 # header
   slogan: "Developing people"
-  tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software  die gewoon werkt."
+  tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software die gewoon werkt."
   header_call_to_action: "meer weten?"
   what_we_do_html: "Wij ontwikkelen innovatieve software in het werkveld van Opleiden & Ontwikkelen. %{href}"
   what_we_do_href: "Bekijk onze showcase om te zien wat er mogelijk is."

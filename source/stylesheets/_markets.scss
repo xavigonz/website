@@ -1,0 +1,72 @@
+#markets {
+  .row {
+    @include clearfix;
+    padding-bottom: 1em;
+
+    .col {
+      @include span-columns(4);
+      position: relative;
+      padding: 0 20px;
+      text-align: center;
+
+      .icon {
+        background: $blue;
+        position: absolute;
+        display: inline-block;
+        left: 50%;
+        top: -1em;
+        margin-left: -1em;
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        border-radius: 50%;
+
+        display: none;
+
+        img {
+          width: 50%;
+          margin-top: 25%;
+        }
+      }
+
+      h2 {
+        position: relative;
+        margin-top: 0;
+        padding-top: 2em;
+        font-size: 1.8em;
+      }
+
+      p {
+        // color: #666;
+        // font-size: 1.3em
+      }
+
+      // &.green {
+      //   .icon {
+      //     background: $green;
+      //   }
+      //   h2, a {
+      //     color: $green !important;
+      //   }
+      // }
+
+      // &.blue {
+      //   .icon {
+      //     background: $blue;
+      //   }
+      //   h2, a {
+      //     color: $blue !important;
+      //   }
+      // }
+
+      // &.red {
+      //   .icon {
+      //     background: $red;
+      //   }
+      //   h2, a {
+      //     color: $red !important;
+      //   }
+      // }
+    }
+  }
+}
