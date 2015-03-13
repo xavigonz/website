@@ -1,0 +1,71 @@
+.testimonial-list {
+  $arrow-size: 25px;
+  $avatar-size: 50px;
+
+  li {
+    @include clearfix;
+    margin: 1em 0;
+
+    @include media($medium-screen) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+  }
+
+  .quote {
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    color: #888;
+    font-size: 1.1em;
+    font-style: italic;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+    padding: 1.5em;
+    position: relative;
+
+    p {
+      margin: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      @include transform(rotate(45deg));
+      background-color: #fafafa;
+      border: 1px solid #ededed;
+      border-top: none;
+      border-left: none;
+      bottom: -$arrow-size/2;
+      content: "";
+      display: block;
+      height: $arrow-size;
+      left: 60px;
+      position: absolute;
+      width: $arrow-size;
+    }
+  }
+
+  .author {
+    margin: $avatar-size/2 0 0;
+    position: relative;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    height: $avatar-size;
+    width: $avatar-size;
+    margin: 0 $avatar-size/4 0 $avatar-size/2;
+    float: left;
+  }
+
+  .name {
+    margin: 5px 0;
+  }
+
+  .company {
+    color: #999;
+    display: block;
+    font-size: 0.8em;
+  }
+}
