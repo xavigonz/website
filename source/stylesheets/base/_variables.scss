@@ -17,23 +17,20 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$blue: #79c5d6;
+$blue-alt: #73bbcb;
+$orange: #f1b956;
+$green: #80b971;
+$turquoise: #40b383;
+
 $dark-gray: #333;
 $medium-gray: #666;
 $light-gray: #ddd;
 
-// $blue: #6ba1cb;
-$green: #6bb6a1;
-$red: #ec766c;
-
-$orange-light: #dbb10c;
-// $orange-dark:  #d98815;
-$orange-dark:  #ff6908;
-
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $orange-dark;
+$action-color: $orange;
 
 // Border
 $base-border-color: $light-gray;

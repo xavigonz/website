@@ -1,6 +1,11 @@
 .testimonial-list {
+  $quote-background: #fafafa;
+  // $quote-border: 1px solid #ededed;
+  $quote-border: none;
   $arrow-size: 25px;
   $avatar-size: 50px;
+
+  // border-top: 1px solid #ddd;
 
   li {
     @include clearfix;
@@ -13,8 +18,8 @@
   }
 
   .quote {
-    background-color: #fafafa;
-    border: 1px solid #ededed;
+    background-color: $quote-background;
+    border: $quote-border;
     border-radius: 4px;
     color: #888;
     font-size: 1.1em;
@@ -32,8 +37,8 @@
 
     &:before {
       @include transform(rotate(45deg));
-      background-color: #fafafa;
-      border: 1px solid #ededed;
+      background-color: $quote-background;
+      border: $quote-border;
       border-top: none;
       border-left: none;
       bottom: -$arrow-size/2;

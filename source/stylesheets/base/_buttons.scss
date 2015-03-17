@@ -4,7 +4,7 @@ button,
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
-  border-radius: $base-border-radius;
+  // border-radius: $base-border-radius;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -29,5 +29,28 @@ button,
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 2px solid $action-color;
+    color: $action-color;
+  }
+
+  &.big {
+    font-size: 1.3em;
+
+    &.outline {
+      border-width: 3px;
+    }
+  }
+}
+
+.button-white {
+  @extend button;
+
+  &.outline {
+    border-color: #fff;
+    color: #fff;
   }
 }
