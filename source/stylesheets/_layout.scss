@@ -199,9 +199,15 @@ Solutions
       @include omega(4n);
     }
 
+    &:last-of-type {
+      a {
+        color: $green;
+      }
+    }
+
     h3 {
       a {
-        color: $dark-gray;
+        color: $dark-gray !important;
       }
     }
 
@@ -279,6 +285,7 @@ Product highlights
     h2 {
       font-family: 'Montserrat', $base-font-family;
       font-size: 3em;
+      font-weight: 700;
     }
     img {
       max-width: 280px;
@@ -461,14 +468,16 @@ Footer
 */
 
 footer {
-  position: relative;
-  clear: both;
-  text-align: center;
   background: #333;
   color: #666;
+  clear: both;
+  padding-top: 3em;
+  position: relative;
+  text-align: center;
 
   .col {
     @include span-columns(3);
+    text-align: left;
 
     [class^="icon-"],
     [class*=" icon-"] {
@@ -476,9 +485,26 @@ footer {
       font-size: 1.6em;
       vertical-align: middle;
     }
+
+    h6 {
+      border-bottom: 1px solid #444;
+      padding: 0 0 0.6em;
+    }
+
+    // li {
+    //   &:before {
+    //     content: "-";
+    //   }
+    // }
+
+    a {
+      color: #999;
+    }
   }
 
-  #footer-bottom {
-    padding: 20px 0;
+  .copyright {
+    border-top: 1px solid #444;
+    margin-top: 1em;
+    padding: 1em 0;
   }
 }
