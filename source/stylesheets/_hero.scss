@@ -1,20 +1,15 @@
 .hero {
-  ///////////////////////////////////////////////////////////////////////////////////
-  $base-border-radius: 3px !default;
-  $base-accent-color: #477DCA !default;
-  // $large-screen: em(860) !default;
-  //////////////////////////////////////////////////////////////////////////////////
-
   $hero-background-top: #7F99BE;
   $hero-background-bottom: #20392B;
-  $hero-color: white;
-  $gradient-angle: 10deg;
-
-  // $hero-image: '../images/hero-home2.png';
+  $hero-color: #fff;
   $hero-image: '../images/mood3.jpg';
-  // $hero-image: 'http://zurb.com/university/assets/university/university-hero-4748b00c8c6825d75d331c3a01144e5d.jpg';
-  // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+
   background-image: url($hero-image);
+  background-position: 0 -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // background-size: 1729px 700px;
 
   // background-color: #324766; // dark blue
   // background-color: #83ccd3; // light blue
@@ -24,15 +19,7 @@
   // background-color: #95a105; // lime green
   background-color: $orange-alt;
 
-  background-position: 0 -150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  // background-size: 1729px 700px;
-
-  // background: url(http://zurb.com/university/assets/university/university-hero-4748b00c8c6825d75d331c3a01144e5d.jpg) no-repeat center top #ff6908;
-  background-attachment: fixed;
-
-  padding: $header-height 0 3em;
+  padding: $header-height 0 1em;
   width: 100%;
 
   .hero-inner {
@@ -40,13 +27,11 @@
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 4em 2em;
+    padding: 7em 2em;
     text-align: center;
 
     button,
     .button {
-      // @include button(flat, $base-accent-color);
-      // padding: 0.7em 1em;
       font-size: 1.3em;
     }
   }
