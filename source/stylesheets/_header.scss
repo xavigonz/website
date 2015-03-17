@@ -1,0 +1,134 @@
+#header {
+  $header-height: 80px;
+  $desktop-mode: $medium-screen-up;
+
+  @include clearfix;
+  background-color: #fff;
+  // background-color: rgba(#fff, 0.5);
+  height: $header-height;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  .header-wrapper {
+    @include outer-container;
+    padding: 0 1em;
+    position: relative;
+  }
+
+  .logo {
+    float: left;
+    line-height: $header-height - 10px;
+
+    img {
+      display: inline-block;
+      margin-top: 3px;
+      vertical-align: middle;
+    }
+  }
+
+  // Mobile view
+  .header-menu-button {
+    float: right;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-top: 1.2em;
+    outline: none;
+    padding: 8px 10px;
+
+    .bar {
+      background: #fff;
+      border-radius: 1px;
+      display: block;
+      height: 2px;
+      max-height: 2px;
+      width: 22px;
+
+      & + .bar {
+        margin-top: 5px;
+      }
+    }
+
+    @include media ($desktop-mode) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .nav {
+    float: none;
+    z-index: 9999;
+
+    @include media ($desktop-mode) {
+      float: right;
+    }
+  }
+
+  #header-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 1em 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+
+    @include media ($desktop-mode) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    > li {
+      display: block;
+      margin: 0 20px;
+      overflow: hidden;
+      width: 100%;
+      z-index: 9999;
+
+
+      a {
+        color: #444;
+        display: block;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none !important;
+
+        &:visited {
+          color: #444;
+        }
+
+        &.active {
+          color: $orange;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $orange;
+        }
+      }
+
+      @include media ($desktop-mode) {
+        display: inline;
+        line-height: $header-height;
+        margin-left: .5em;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          display: inline;
+        }
+      }
+    }
+  }
+}

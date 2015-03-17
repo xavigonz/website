@@ -1,13 +1,18 @@
-<header>
-  <%= link_to image_tag('logos/defacto.png', :alt => 'Defacto'), '/index.html', :class => 'logo' %>
-
-  <nav class="primary-nav">
-    <ul>
-      <li><%= nav_link_to t(:home), "/index.html" %></li>
-      <li><%= nav_link_to t(:solutions), "/solutions.html" %></li>
-      <li><%= nav_link_to t(:references), "/references.html" %></li>
-      <li><%= nav_link_to t(:about), "/about-us.html" %></li>
-    </ul>
-    <a href="#" id="pull"><%= t(:menu) %></a>
-  </nav>
+<header id="header">
+  <div class="header-wrapper">
+    <div class="logo">
+      <%= link_to image_tag('logos/defacto.svg', :alt => 'Defacto'), '/index.html' %>
+    </div>
+    <button type="button" class="button button-white header-menu-button" id="mobile-menu-toggle">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <ul id="header-menu">
+        <li><%= nav_link_to t(:home), "/index.html" %></li>
+        <li><%= nav_link_to t(:solutions), "/solutions.html" %></li>
+        <li><%= nav_link_to t(:references), "/references.html" %></li>
+        <li><%= nav_link_to t(:about), "/about-us.html" %></li>
+      </ul>
+    </nav>
+  </div>
 </header>
