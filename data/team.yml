@@ -1,0 +1,93 @@
+# Defato team
+
+# Images are located in /source/images/team and are displayed as 100x100px.
+# It will look for #{firstname.downcase}.jpg, so for Matthijs it will check if matthijs.jpg exists.
+# If you need another filename add i.e: image: madeyes.jpg
+# If no image is found or set a placeholder will be used.
+
+- firstname: Albert
+  lastname: Thie
+
+- firstname: Alexander
+  lastname: Jeurissen
+
+- firstname: Bastiaan
+  lastname: Barelds
+
+- firstname: Cathrin
+  lastname: Hörmann
+
+- firstname: Ewoud
+  lastname: Veenhuizen
+
+- firstname: Gerwin
+  lastname: Veenstra
+
+- firstname: Glenn
+  lastname: Geelen
+
+- firstname: Hans
+  lastname: Veeger
+
+- firstname: Hugo
+  lastname: Veeger
+
+- firstname: Isabela
+  lastname: Wojtowicz
+
+- firstname: Jan
+  lastname: Lulof
+
+- firstname: Janine
+  lastname: Veenker
+
+- firstname: Jesse
+  lastname: Terpstra
+
+- firstname: Joep
+  lastname: Lenglet
+
+- firstname: Joost
+  lastname: Bakhuizen
+
+- firstname: Kelly
+  lastname: Brunninkhuis
+
+- firstname: Koos
+  lastname: Akkerman
+
+- firstname: Linda
+  lastname: Buitenkamp
+
+- firstname: Maarten
+  lastname: Jacobs
+
+- firstname: Marcel
+  lastname: Horlings
+
+- firstname: Marian
+  lastname: Joustra
+
+- firstname: Matthijs
+  lastname: Kuiper
+
+- firstname: Milda
+  lastname: Skladaitytė
+
+- firstname: Niels
+  lastname: Vermeulen
+
+- firstname: Peter
+  lastname: Van Delden
+
+- firstname: Pieter
+  lastname: Kaal
+
+- firstname: Rob
+  lastname: Orsel
+
+- firstname: Romke
+  lastname: Bon
+
+- firstname: Tim
+  lastname: Bakker

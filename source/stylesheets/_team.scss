@@ -1,0 +1,42 @@
+#team {
+  background-color: #f6f6f6;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 1em 1em;
+  }
+
+  img,
+  .placeholder {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+  .placeholder {
+    background: #e6e6e6;
+    display: inline-block;
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 0.7em;
+
+    span {
+      display: block;
+    }
+  }
+
+  @include media($medium-screen) {
+    img,
+    .placeholder {
+      height: 100px;
+      width: 100px;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+  }
+}

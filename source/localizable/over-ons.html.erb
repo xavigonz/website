@@ -11,19 +11,7 @@ title: Over ons
 <section>
   <div class="row">
 
-    <div class="sidebar">
-      <h3>Sidebar</h3>
-      <nav>
-        <ul>
-          <li><%= nav_link_to 'Over Defacto', '/about-us.html' %></li>
-          <li><%= nav_link_to 'Het Team', '#' %></li>
-          <li><%= nav_link_to 'Geschiedenis', '#' %></li>
-          <li><%= nav_link_to 'Clients', '#' %></li>
-          <li><%= nav_link_to 'Testimonials', '#' %></li>
-          <li><%= nav_link_to 'Techniek', '#' %></li>
-        </ul>
-      </nav>
-    </div>
+    <%= partial "over-ons/sidebar" %>
 
     <div class="content">
       <h2>Defacto Sinds 1987</h2>
@@ -50,8 +38,8 @@ title: Over ons
   </div>
 </section>
 
-<%= partial "markets" %>
-<%= partial "contact-info" %>
-<%= partial "clients" %>
+<%= partial "over-ons/team" %>
+<%#= partial "markets" %>
+<%#= partial "contact-info" %>
 
 

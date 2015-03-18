@@ -1,0 +1,29 @@
+<section id="team">
+  <ol>
+
+    <%# data.team.each do |t| %>
+    <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |t| %>
+      <li>
+
+        <% if t.image %>
+          <%= image_tag "team/#{t.image}", :alt => t.firstname + " " + t.lastname %>
+
+        <% elsif sitemap.find_resource_by_path("images/team/#{t.firstname.downcase}.jpg") %>
+          <%= image_tag "team/#{t.firstname.downcase}.jpg", :alt => t.firstname + " " + t.lastname %>
+
+        <% else %>
+          <div class="placeholder"></div>
+        <% end %>
+
+        <h5>
+          <span><%= t.firstname %></span>
+          <span><%= t.lastname %></span>
+        </h5>
+      </li>
+    <% end %>
+
+  </ol>
+</section>
+
+
+
