@@ -205,6 +205,11 @@ Product highlights
       font-weight: 700;
     }
   }
+
+  [class^="button"],
+  [class*=" button"] {
+    margin: 0 0.5em;
+  }
 }
 
 
