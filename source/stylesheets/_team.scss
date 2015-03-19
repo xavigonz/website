@@ -1,4 +1,6 @@
 #team {
+  $avatar-size: 60px;
+
   background-color: #f6f6f6;
   text-align: center;
 
@@ -10,18 +12,73 @@
   img,
   .placeholder {
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    display: inline-block;
+    height: $avatar-size;
+    margin-bottom: 8px;
+    vertical-align: top;
+    width: $avatar-size;
   }
 
   .placeholder {
     background: #e6e6e6;
-    display: inline-block;
+    overflow: hidden;
+    position: relative;
+
+    &.no-image {
+      &:before,
+      &:after {
+        background: #d6d6d6;
+        border-radius: 50%;
+        content: '';
+        left: 50%;
+        position: absolute;
+      }
+
+      &:before {
+        top: 21%;
+        height: 40%;
+        margin-left: -20%;
+        width: 40%;
+      }
+
+      &:after {
+        bottom: 0;
+        height: 80%;
+        margin-left: -40%;
+        margin-bottom: -40%;
+        width: 80%;
+      }
+    }
+  }
+
+  li.you {
+    .placeholder {
+      @include transition(background 0.1s linear);
+      background: $blue-alt;
+      color: #fff;
+      font-size: $avatar-size / 3;
+      line-height: $avatar-size;
+    }
+
+    a:hover .placeholder {
+      background: darken($blue-alt, 15%);
+    }
+
+    a {
+      color: $blue-alt;
+      display: block;
+
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($blue-alt, 15%);
+      }
+    }
   }
 
   h5 {
+    font-size: 0.8em;
     font-weight: 700;
-    font-size: 0.7em;
 
     span {
       display: block;
@@ -29,10 +86,17 @@
   }
 
   @include media($medium-screen) {
+    $avatar-size: 80px;
+
     img,
     .placeholder {
-      height: 100px;
-      width: 100px;
+      height: $avatar-size;
+      width: $avatar-size;
+    }
+
+    li.you .placeholder {
+      font-size: $avatar-size / 3;
+      line-height: $avatar-size;
     }
 
     h5 {

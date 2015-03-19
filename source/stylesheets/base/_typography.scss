@@ -45,9 +45,10 @@ p {
 }
 
 a {
+  @include transition(color 0.1s linear);
   color: $action-color;
   text-decoration: none;
-  transition: color 0.1s linear;
+
 
   &:active,
   &:focus,

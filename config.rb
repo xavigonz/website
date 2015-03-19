@@ -39,6 +39,26 @@ helpers do
     options[:class] << " active" if url_for(url, :relative => false) == url_for(current_page.url, :relative => false)
     link_to(link_text, url, options)
   end
+
+  def team_avatar_url(person)
+    return person.avatar if person.avatar
+    avatar = gravatar_for(person.email)
+    return avatar if avatar
+    avatar = "/images/team/#{person.firstname.downcase}.jpg"
+    return avatar if sitemap.find_resource_by_path(avatar)
+    return false
+  end
+
+  def gravatar_for(email)
+    return false unless email
+    hash = Digest::MD5.hexdigest(email.chomp.downcase)
+    url = "http://www.gravatar.com/avatar/#{hash}.png?d=404"
+    uri = URI.parse(url)
+    http = Net::HTTP.new(uri.host, uri.port)
+    request = Net::HTTP::Get.new(uri.request_uri)
+    response = http.request(request)
+    return response.code.to_i == 404 ? false : url
+  end
 end
 
 set :css_dir, 'stylesheets'

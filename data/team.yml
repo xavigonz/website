@@ -1,93 +1,136 @@
-# Defato team
-
-# Images are located in /source/images/team and are displayed as 100x100px.
-# It will look for #{firstname.downcase}.jpg, so for Matthijs it will check if matthijs.jpg exists.
-# If you need another filename add i.e: image: madeyes.jpg
-# If no image is found or set a placeholder will be used.
+# Example:
+#
+# - firstname: Matthijs
+#   lastname: Kuiper
+#   avatar: /images/team/matthijs.jpg   # optional
+#   email: m.kuiper@defacto.nl          # optional (used for gravatar)
+#
+# The avatar will be determined as follows:
+#
+# 1. Use `avatar` propery, ie:
+#    avatar: /images/team/madeyes.jpg
+#    avatar: http://defacto.nl/madeyes.jpg
+#
+# 2. Use `email` propery to get gravater, ie:
+#    email: m.kuiper@defacto.nl
+#
+# 3. Look for `#{firstname.downcase}.jpg` in the images/team/ directory.
+#    So `firstname: Matthijs` will use images/team/matthijs.jpg if it exists.
+#
+# 4. Use a placeholder as fallback.
 
 - firstname: Albert
   lastname: Thie
+  email: a.thie@defacto.nl
 
 - firstname: Alexander
   lastname: Jeurissen
+  email: a.jeurissen@defacto.nl
 
 - firstname: Bastiaan
   lastname: Barelds
+  email: b.barelds@defacto.nl
 
 - firstname: Cathrin
   lastname: Hörmann
+  email: c.hormann@defacto.nl
 
 - firstname: Ewoud
   lastname: Veenhuizen
+  email: e.veenhuizen@defacto.nl
 
 - firstname: Gerwin
   lastname: Veenstra
+  email: g.veenstra@defacto.nl
 
 - firstname: Glenn
   lastname: Geelen
+  email: g.geelen@defacto.nl
 
 - firstname: Hans
   lastname: Veeger
+  email: h.veeger@defacto.nl
 
 - firstname: Hugo
   lastname: Veeger
+  email: hugo.veeger@defacto.nl
 
 - firstname: Isabela
   lastname: Wojtowicz
+  email: i.wojtowicz@defacto.nl
 
 - firstname: Jan
   lastname: Lulof
+  email: j.lulof@defacto.nl
 
 - firstname: Janine
   lastname: Veenker
+  email: j.veenker@defacto.nl
 
 - firstname: Jesse
   lastname: Terpstra
+  email: j.terpstra@defacto.nl
 
 - firstname: Joep
   lastname: Lenglet
+  email: j.lenglet@defacto.nl
 
 - firstname: Joost
   lastname: Bakhuizen
+  email: j.bakhuizen@defacto.nl
 
 - firstname: Kelly
   lastname: Brunninkhuis
+  email: k.brunninkhuis@defacto.nl
 
 - firstname: Koos
   lastname: Akkerman
+  email: k.akkerman@defacto.nl
 
 - firstname: Linda
   lastname: Buitenkamp
+  email: l.buitenkamp@defacto.nl
 
 - firstname: Maarten
   lastname: Jacobs
+  email: m.jacobs@defacto.nl
 
 - firstname: Marcel
   lastname: Horlings
+  email: m.horlings@defacto.nl
 
 - firstname: Marian
   lastname: Joustra
+  email: m.joustra@defacto.nl
 
 - firstname: Matthijs
   lastname: Kuiper
+  email: m.kuiper@defacto.nl
 
 - firstname: Milda
   lastname: Skladaitytė
+  email: milda@defacto.nl
 
 - firstname: Niels
   lastname: Vermeulen
+  email: n.vermeulen@defacto.nl
 
 - firstname: Peter
   lastname: Van Delden
+  email: p.van.delden@defacto.nl
 
 - firstname: Pieter
   lastname: Kaal
+  email: p.kaal@defacto.nl
 
 - firstname: Rob
   lastname: Orsel
+  email: r.orsel@defacto.nl
 
 - firstname: Romke
   lastname: Bon
+  email: r.bon@defacto.nl
 
 - firstname: Tim
   lastname: Bakker
+  email: t.bakker@defacto.nl

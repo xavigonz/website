@@ -1,26 +1,31 @@
 <section id="team">
   <ol>
 
-    <%# data.team.each do |t| %>
-    <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |t| %>
-      <li>
+    <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |person| %>
+      <li class="person">
 
-        <% if t.image %>
-          <%= image_tag "team/#{t.image}", :alt => t.firstname + " " + t.lastname %>
-
-        <% elsif sitemap.find_resource_by_path("images/team/#{t.firstname.downcase}.jpg") %>
-          <%= image_tag "team/#{t.firstname.downcase}.jpg", :alt => t.firstname + " " + t.lastname %>
-
+        <% if href = team_avatar_url(person) %>
+          <%= image_tag href, :alt => person.firstname + " " + person.lastname %>
         <% else %>
-          <div class="placeholder"></div>
+          <div class="placeholder no-image"></div>
         <% end %>
 
         <h5>
-          <span><%= t.firstname %></span>
-          <span><%= t.lastname %></span>
+          <span><%= person.firstname %></span>
+          <span><%= person.lastname %></span>
         </h5>
       </li>
     <% end %>
+
+    <li class="you">
+      <a href="http://jobs.defacto.nl" target="_blank">
+        <div class="placeholder">jij?</div>
+        <h5>
+          <span>Werken bij</span>
+          <span>Defacto</span>
+        </h5>
+      </a>
+    </li>
 
   </ol>
 </section>
