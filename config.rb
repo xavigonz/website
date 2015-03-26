@@ -34,6 +34,11 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
+  # Prevent page_classes from prefixing locales
+  def page_classes(path=current_path.dup, options={})
+    super(path.sub(/^[a-z]{2}\//, ''), options)
+  end
+
   def nav_link_to(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " active" if url_for(url, :relative => false) == url_for(current_page.url, :relative => false)

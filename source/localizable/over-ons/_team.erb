@@ -3,13 +3,11 @@
 
     <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |person| %>
       <li class="person">
-
         <% if href = team_avatar_url(person) %>
           <%= image_tag href, :alt => person.firstname + " " + person.lastname %>
         <% else %>
           <div class="placeholder no-image"></div>
         <% end %>
-
         <h5>
           <span><%= person.firstname %></span>
           <span><%= person.lastname %></span>

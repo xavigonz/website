@@ -5,6 +5,8 @@ button,
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
   border: none;
+  border: 2px solid darken($action-color, 10%);
+  border-width: 0 0 2px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -21,7 +23,7 @@ button,
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: darken($action-color, 10%);
     color: #fff;
   }
 
@@ -32,7 +34,7 @@ button,
 
   &.outline {
     background-color: transparent;
-    border: 2px solid $action-color;
+    border-width: 2px;
     color: $action-color;
   }
 
