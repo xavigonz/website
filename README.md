@@ -1,12 +1,11 @@
 ##Defacto website
 
-
-Start [Middleman](https://middlemanapp.com) server using `./serve` and browse to http://localhost:4567.
+Start [Middleman](https://middlemanapp.com) server using `./serve` and browse to [http://localhost:4567](http://localhost:4567).
 
 ##### Useful links for debugging
 
-http://localhost:4567/__middleman/config/   
-http://localhost:4567/__middleman/sitemap/
+[http://localhost:4567/__middleman/config/](http://localhost:4567/__middleman/config/)   
+[http://localhost:4567/__middleman/sitemap/](http://localhost:4567/__middleman/sitemap/)
 
 ##### Dependencies
 
