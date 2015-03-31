@@ -9,13 +9,13 @@ title: Defacto
       <span class="since">Since 1987</span>
       <p><%= t(:tagline) %></p>
     </div>
-    <a class="button-white outline" href="#">Onze oplossingen</a>
-    <a class="button" href="#">Maak een afspraak</a>
+    <%= link_to "Onze oplossingen", "oplossingen.html", class: "button-white outline" %>
+    <%= link_to "Maak een afspraak", "#", class: "button" %>
   </div>
 </div>
 
-<%= partial "solutions" %>
-<%= partial "product-highlights" %>
+<%= partial "solutions_overview" %>
+<%= partial "product_highlights" %>
 <%= partial "testimonials" %>
 <%#= partial "markets" %>
 <%#= partial "highlights" %>

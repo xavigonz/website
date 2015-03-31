@@ -1,6 +1,6 @@
 #header {
   $header-height: 80px;
-  $desktop-mode: $medium-screen-up;
+  $desktop-mode: $medium-up;
 
   @include clearfix;
   background-color: #fff;

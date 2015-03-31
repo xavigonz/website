@@ -1,11 +1,12 @@
 ---
 de:
 # main navigation
+  menu: "Menü"
   home: "Home"
   solutions: "Lösungen"
   about: "Über uns"
+  references: "Referenzen"
   blog: "Blog"
-  menu: "Menü"
 # header
   slogan: "Developing people"
   tagline: "Defacto entwickelt Software die Sie dabei unterstützt die Entwicklung ihrer Mitarbeiter zum Status Quo zu machen."

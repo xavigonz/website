@@ -6,7 +6,7 @@
 section {
   padding: 2em 0;
 
-  @include media($medium-screen) {
+  @include media($medium-up) {
     padding: 4em 0;
   }
 
@@ -20,7 +20,7 @@ section {
 .row {
   @include outer-container;
   position: relative;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .sidebar {
@@ -57,159 +57,6 @@ section {
 .sub-headline {
   color: $medium-gray;
   font-size: 1.125em;
-}
-
-
-/*
-Solutions
-*/
-
-#solutions {
-  color: $medium-gray;
-  text-align: center;
-
-  a {
-    color: $blue-alt;
-  }
-
-  h1, h2, h3 {
-    color: $dark-gray;
-    a {
-      color: $dark-gray;
-    }
-  }
-
-  img {
-    margin-bottom: 10px;
-    max-height: 120px;
-  }
-
-  .row {
-    @include clearfix;
-    padding-bottom: 1em;
-  }
-
-  .col {
-    position: relative;
-    padding: 0 1em;
-
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include omega(4n);
-    }
-
-    &:last-of-type {
-      a {
-        color: $green;
-      }
-    }
-
-    h3 {
-      a {
-        color: $dark-gray !important;
-      }
-    }
-
-    ul {
-      // background-color: #f9f9f9;
-      // border-top: $base-border;
-      border-radius: $base-border-radius;
-      margin-top: 2em;
-      padding: 0.5em;
-      // text-align: left;
-
-      li {
-        // border-bottom: $base-border;
-        // border-bottom: 2px solid #fff;
-        padding: 0.25em;
-      }
-      a {
-        font-weight: 700;
-      }
-    }
-  }
-}
-
-
-/*
-Product highlights
-*/
-
-#product-highlights {
-  border: none;
-  color: #fff;
-  padding: 0;
-  text-align: center;
-
-  .col {
-    padding-bottom: 4em;
-    padding-top: 4em;
-  }
-
-  @include media($medium-screen) {
-    @include fill-parent();
-    @include row(table);
-
-    .col {
-      @include span-columns(6);
-      padding-bottom: 4em;
-      padding-top: 4em;
-    }
-  }
-
-  .col-capp {
-    @include radial-gradient(circle at 50%,
-        $blue 33%,
-        rgba($blue, 0.5) 33%,
-        rgba($blue, 0.5) 66%,
-        $blue-alt 66%,
-        $fallback: $blue-alt);
-    border-right: 1px solid #fff;
-    // font-family: 'Montserrat', $base-font-family;
-  }
-
-  .col-ls {
-    background-color: $green;
-    background-image: url(../images/learningspaces-pattern.svg);
-    background-position: center;
-  }
-
-  .inner {
-    // background: rgba(#fff, .2);
-    margin: 0 auto;
-
-    @include media($medium-screen) {
-      max-width: 600px;
-      width: 80%;
-    }
-  }
-
-  .headline {
-    h2 {
-      font-family: 'Montserrat', $base-font-family;
-      font-size: 3em;
-      font-weight: 700;
-    }
-    img {
-      max-width: 280px;
-    }
-  }
-
-  .sub-headline {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 1.4em 0 1.6em ;
-
-    a {
-      color: #fff;
-      font-weight: 700;
-    }
-  }
-
-  [class^="button"],
-  [class*=" button"] {
-    margin: 0 0.5em;
-  }
 }
 
 

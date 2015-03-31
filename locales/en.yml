@@ -1,18 +1,19 @@
 ---
 en:
 # main navigation
+  menu: "Menu"
   home: "Home"
   solutions: "Solutions"
   about: "About us"
+  references: "References"
   blog: "Blog"
-  menu: "Menu"
-# Header
+# header
   slogan: "Developing people"
   tagline: "Defacto helps organisations developing their employees with software that works."
   header_call_to_action: "tell me more"
   what_we_do_html: "We develop cutting edge software around education and development. %{href}"
   what_we_do_href: "See our showcase."
-# Markets
+# markets
   markets_intro: "Hospitals, government departments and major businesses work with our software."
   healthcare_title: "Healthcare"
   healthcare_content_html: |

@@ -44,7 +44,7 @@
       font-size: 1.6em;
       margin-bottom: 0.6em;
 
-      @include media($large-screen) {
+      @include media($large-up) {
         font-size: 4em;
       }
     }
@@ -54,7 +54,7 @@
       line-height: 1.4em;
       margin: 0 auto 2em auto;
 
-      @include media($large-screen) {
+      @include media($large-up) {
         font-size: 1.6em;
         max-width: 80%;
       }

@@ -1,4 +1,4 @@
-###
+##
 # Compass
 ###
 
@@ -70,16 +70,16 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-set :relative_links, true
+# set :relative_links, true
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 # activate :livereload
-activate :livereload, :host => "127.0.0.1"
+# activate :livereload, :host => "127.0.0.1"
 
-activate :i18n, :mount_at_root => :nl # Mount dutch at root instead
+activate :i18n, :mount_at_root => :nl
 activate :directory_indexes
 
 # Build-specific configuration

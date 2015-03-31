@@ -1,0 +1,23 @@
+/*
+Solutions
+*/
+
+.oplossingen_index {
+  text-align: center;
+
+  .solition-list {
+    @extend .row;
+
+    li {
+      background-color: $lighter-gray;
+      border-radius: $base-border-radius;
+      padding: 2em;
+      margin-bottom: 2em;
+
+      @include media($medium-up) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
+  }
+}
