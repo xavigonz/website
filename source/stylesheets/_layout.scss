@@ -61,34 +61,11 @@ section {
 
 
 /*
-Clients
-*/
-
-#clients {
-  background-color: #f6f6f6;
-  // border-top: 1px solid #ddd;
-  padding: 40px 0;
-  text-align: center;
-
-  .logos {
-    img {
-      margin: 0 3em;
-      opacity: 0.6;
-      max-height: 50px;
-      filter: url('grayscale.svg#grayscale'); /* Firefox 4+ */
-      filter: gray; /* IE 6-9 */
-      @include filter (grayscale(100%));
-    }
-  }
-}
-
-
-/*
 Highlights
 */
 
 #highlights {
-  background: #fbfbfb;
+  background-color: #fbfbfb;
   padding: 0;
 
   .wrap {
@@ -214,52 +191,5 @@ Contact info
       font-size: 1.6em;
       vertical-align: middle;
     }
-  }
-}
-
-
-/*
-Footer
-*/
-
-footer {
-  background: #333;
-  color: #666;
-  clear: both;
-  padding-top: 3em;
-  position: relative;
-  text-align: center;
-
-  .col {
-    @include span-columns(3);
-    text-align: left;
-
-    [class^="icon-"],
-    [class*=" icon-"] {
-      margin-right: 10px;
-      font-size: 1.6em;
-      vertical-align: middle;
-    }
-
-    h6 {
-      border-bottom: 1px solid #444;
-      padding: 0 0 0.6em;
-    }
-
-    // li {
-    //   &:before {
-    //     content: "-";
-    //   }
-    // }
-
-    a {
-      color: #999;
-    }
-  }
-
-  .copyright {
-    border-top: 1px solid #444;
-    margin-top: 1em;
-    padding: 1em 0;
   }
 }

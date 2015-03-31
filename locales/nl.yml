@@ -66,7 +66,7 @@ nl:
 # solutions page
   solutions_page_title: "Oplossingen"
   solutions_page_intro: "Een greep uit de mogelijkheden:"
-  solutions_page_capp_title: "CAPP Leren & Ontwikkelen"
+  solutions_page_capp_title: "CAPP"
   solutions_page_capp_description: |
     Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen
     en algemene organisatie-eisen. Elke medewerker krijgt een Kwaliteitspaspoort,
@@ -114,7 +114,7 @@ nl:
 # =============
 # CAPP page
   capp_title: "CAPP"
-  capp_description: "lorem lorem ipsum shoreditch"
+  capp_description: "__CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen."
 # E-Learning Starter Kit Page
   starter_kit_title: "E-Learning Starter Kit"
   starter_kit_description: "Lorem tekst uit productsheet ipsum"

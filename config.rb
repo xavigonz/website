@@ -39,6 +39,10 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
+  def markdown(string)
+    Kramdown::Document.new(string).to_html
+  end
+
   def nav_link_to(link_text, url, options = {})
     options[:class] ||= ""
     options[:class] << " active" if url_for(url, :relative => false) == url_for(current_page.url, :relative => false)

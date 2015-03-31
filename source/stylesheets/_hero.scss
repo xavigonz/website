@@ -1,31 +1,16 @@
 .hero {
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
   $hero-color: #fff;
-  $hero-image: '../images/mood3.jpg';
 
-  background-image: url($hero-image);
-  background-position: 0 -150px;
+  background-color: $orange-alt;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  // background-size: 1729px 700px;
-
-  // background-color: #324766; // dark blue
-  // background-color: #83ccd3; // light blue
-  // background-color: #73bbcb; // blue
-  // background-color: #E6EFC2; // light green
-  // background-color: #40b383; // medium green
-  // background-color: #95a105; // lime green
-  background-color: $orange-alt;
-
+  color: $hero-color;
   // padding: $header-height 0 1em;
-  width: 100%;
 
   .hero-inner {
     @include outer-container;
     @include clearfix;
-    color: $hero-color;
     margin: auto;
     padding: 7em 2em;
     text-align: center;
@@ -39,25 +24,26 @@
 
   .hero-copy {
     text-align: center;
+  }
 
-    h1 {
-      font-size: 1.6em;
-      margin-bottom: 0.6em;
+  h1 {
+    // font-family: 'Montserrat', $base-font-family;
+    font-size: 1.6em;
+    margin-bottom: 0.6em;
 
-      @include media($large-up) {
-        font-size: 4em;
-      }
+    @include media($large-up) {
+      font-size: 4em;
     }
+  }
 
-    p {
-      font-weight: 200;
-      line-height: 1.4em;
-      margin: 0 auto 2em auto;
+  p {
+    // font-weight: 200;
+    line-height: 1.4em;
+    margin: 0 auto 2em auto;
 
-      @include media($large-up) {
-        font-size: 1.6em;
-        max-width: 80%;
-      }
+    @include media($large-up) {
+      font-size: 1.6em;
+      max-width: 80%;
     }
   }
 

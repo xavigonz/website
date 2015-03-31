@@ -23,11 +23,11 @@
   .col-capp {
     @include reset-display;
     @include radial-gradient(circle at 50%,
-        $blue 33%,
-        rgba($blue, 0.5) 33%,
-        rgba($blue, 0.5) 66%,
-        $blue-alt 66%,
-        $fallback: $blue-alt);
+      $blue 33%,
+      rgba($blue, 0.5) 33%,
+      rgba($blue, 0.5) 66%,
+      $blue-alt 66%,
+      $fallback: $blue-alt);
     border-right: 1px solid #fff;
     // font-family: 'Montserrat', $base-font-family;
   }
