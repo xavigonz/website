@@ -2,6 +2,8 @@
 
 Start [Middleman](https://middlemanapp.com) server using `./serve` and browse to [http://localhost:4567](http://localhost:4567).
 
+Build using `middleman build`. Deploy using `middleman deploy` to [Github pages](http://dev.defacto.nl/website/).
+
 ##### Useful links for debugging
 
 [http://localhost:4567/__middleman/config/](http://localhost:4567/__middleman/config/)   
