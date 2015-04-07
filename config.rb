@@ -43,7 +43,7 @@ helpers do
     Kramdown::Document.new(string).to_html
   end
 
-  def nav_link_to(link_text, url, options = {})
+  def nav_link_to(link_text, url, options={})
     options[:class] ||= ""
     options[:class] << " active" if url_for(url, :relative => false) == url_for(current_page.url, :relative => false)
     link_to(link_text, url, options)
@@ -68,13 +68,19 @@ helpers do
     response = http.request(request)
     return response.code.to_i == 404 ? false : url
   end
+
+  def local_path(path, options={})
+    return "/#{path}" if I18n.locale == extensions[:i18n].options.mount_at_root
+    lang = options[:language] ? options[:language] : I18n.locale.to_s
+    "/#{lang}/#{path}"
+  end
 end
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-set :relative_links, true
+# set :relative_links, true
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -83,7 +89,7 @@ set :relative_links, true
 # activate :livereload
 # activate :livereload, :host => "127.0.0.1"
 
-activate :i18n, :mount_at_root => :nl
+activate :i18n, :mount_at_root => :nl, :langs => [:nl, :en]
 activate :directory_indexes
 
 # Build-specific configuration

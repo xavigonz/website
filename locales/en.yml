@@ -1,5 +1,10 @@
 ---
 en:
+
+  # paths:
+  #   over-ons: "about-us"
+  #   test: test
+
 # main navigation
   menu: "Menu"
   home: "Home"

@@ -1,5 +1,10 @@
 ---
 nl:
+
+  # paths:
+  #   "over-ons": "over-ons"
+  #   test: test
+
 # main navigation
   menu: "Menu"
   home: "Home"
