@@ -12,6 +12,13 @@ nl:
   about: "Over ons"
   references: "Referenties"
   blog: "Blog"
+
+# LearningSpaces
+  learningspaces:
+    hero:
+      title: LearningSpaces
+      sub: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+
 # header
   slogan: "Developing people"
   tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software die gewoon werkt."

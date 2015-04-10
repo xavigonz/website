@@ -1,0 +1,33 @@
+.learningspaces {
+  .hero {
+    background-attachment: scroll;
+    background-color: $green;
+    background-image: url(../images/learningspaces-pattern.svg);
+    background-position: center;
+
+
+    h1 {
+      // @include media($large-up) {
+      //   font-size: 4em;
+      // }
+    }
+  }
+
+  .capp-steps {
+    .col {
+      @include media($medium-only) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+
+      @include media($large-up) {
+        @include span-columns(4);
+        @include omega(3n);
+      }
+    }
+  }
+
+  .gray {
+    text-align: center;
+  }
+}

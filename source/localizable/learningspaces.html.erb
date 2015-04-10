@@ -1,0 +1,44 @@
+---
+title: LearningSpaces
+---
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1><%= image_tag 'logos/learningspaces-white.png', title: t("learningspaces.hero.title") %></h1>
+      <%= markdown(t("learningspaces.hero.sub")) %>
+    </div>
+    <%= link_to "Bezoek de website", "#", class: "button-white outline" %>
+    <%= link_to "Maak een afspraak", "#", class: "button" %>
+  </div>
+</div>
+
+<section class="capp-steps">
+  <div class="row">
+    <div class="col">
+      <h2>3-2-1 Liftoff!</h2>
+      <p>Geef je corporate university een boost, begin je eigen MOOC of deel kennis met je collega’s - met LearningSpaces ben je in no time op gang.</p>
+    </div>
+    <div class="col">
+      <h2>Verbind en stimuleer</h2>
+      <p>Stimuleer informeel leren en kennisdeling. Met LearningSpaces is iedereen leerling én leraar. Vind en bewaar de verborgen kennis in je organisatie!</p>
+    </div>
+    <div class="col">
+      <h2>Rijke content</h2>
+      <p>Maak je eigen content of embed bestaand materiaal. Upload afbeeldingen en bestanden, creëer toetsen en opdrachten en chat met je collega’s.</p>
+    </div>
+  </div>
+</section>
+
+<section class="gray">
+  <div class="row">
+    <h3>Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?</h2>
+    <p><a class="button" href="#">Vertel me meer</a></p>
+  </div>
+</section>
+
+<%#= partial "markets" %>
+<%#= partial "contact-info" %>
+
+<%= partial "testimonials" %>
+<%= partial "clients" %>
