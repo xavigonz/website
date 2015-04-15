@@ -8,7 +8,38 @@ title: Oplossingen
   </div>
 </section>
 
-<section>
+<%#= partial "product_highlights" %>
+
+<section class="gray">
+  <div class="row">
+    <ul class="solitions-list">
+      <li class="capp">
+        <% link_to "capp.html", class: "col left" do%>
+          <h2>CAPP</h2>
+        <% end %>
+        <div class="col right">
+          <p>
+            <%= link_to "CAPP", "capp.html" %> helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+          </p>
+          <%= link_to "Lees verder", "capp.html", class: "button blue outline" %>
+        </div>
+      </li>
+      <li class="learningspaces">
+        <% link_to "capp.html", class: "col left" do%>
+          <h2><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %></h2>
+        <% end %>
+        <div class="col right">
+          <p>
+            <%= link_to "LearningSpaces", "learningspaces.html" %> is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+          </p>
+          <%= link_to "Lees verder", "learningspaces.html", class: "button green outline" %>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="gray">
   <ul class="solition-list">
     <li>
       <h2><%= t(:solutions_page_capp_title) %></h2>
@@ -28,7 +59,7 @@ title: Oplossingen
     <li>
       <h2><%= t(:solutions_page_360_title) %></h2>
       <p><%= t(:solutions_page_360_description) %></p>
-      <%= link_to t(:solutions_call_to_action), "360.html", class: "button" %>
+      <%= link_to "Bezoek de website", "https://www.360feedback.io", target: "_blank", class: "button" %>
     </li>
     <li>
       <h2><%= t(:solutions_page_jaargesprekken_title) %></h2>

@@ -21,7 +21,7 @@ nl:
 
 # header
   slogan: "Developing people"
-  tagline: "Defacto helpt organisaties bij het ontwikkelen van hun medewerkers met software die gewoon werkt."
+  tagline: "Defacto is een softwarehuis die u helpt bij het ontwikkelen van uw medewerkers."
   header_call_to_action: "meer weten?"
   what_we_do_html: "Wij ontwikkelen innovatieve software in het werkveld van Opleiden & Ontwikkelen. %{href}"
   what_we_do_href: "Bekijk onze showcase om te zien wat er mogelijk is."
@@ -77,7 +77,7 @@ nl:
 # ================== ^ Landing page ^ ===============
 # solutions page
   solutions_page_title: "Oplossingen"
-  solutions_page_intro: "Een greep uit de mogelijkheden:"
+  solutions_page_intro: "Ons jonge en innovatieve team ontwikkelt software waar we trots op zijn. Leer hier onze software kennen."
   solutions_page_capp_title: "CAPP"
   solutions_page_capp_description: |
     Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen
@@ -85,7 +85,7 @@ nl:
     een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
     en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
     Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
-  solutions_page_starter_kit_title: "E-Learning Starter Kit"
+  solutions_page_starter_kit_title: "E-Learning (Starter Kit)"
   solutions_page_starter_kit_description: |
     De productie van E-Learningcontent uitbesteden is vaak duur, en je blijft uiteindelijk zitten met een product dat net niet lekker aansluit op de werkvloer. Het is goedkoper en effectiever om het in eigen hand te nemen.
     De E-Learning Starterkit bevat alles dat je nodig hebt om meteen van start te kunnen. Minimaliseer de opstartfase en begin meteen met het maken van je eigen content.
@@ -96,7 +96,7 @@ nl:
     kan je beginnen aan een ontwikkelplan. 360° Feedback is interessant voor organisaties die van hun medewerkers verwachten dat ze aan
     hun eigen ontwikkeling werken, en die willen dat dat zo weinig mogelijk afleidt van de dagelijkse praktijk.
     360° Feedback is snel, duidelijk en effectief.
-  solutions_page_jaargesprekken_title: "Jaargesprekken"
+  solutions_page_jaargesprekken_title: "Jaargesprekken (Conversations)"
   solutions_page_jaargesprekken_description: |
     Het is belangrijk om het werk van medewerkers regelmatig te evalueren. Zo weet je zeker of je nog op één lijn zit, het laat de medewerker weten dat
     zijn werk erkend en gewaardeerd wordt, en het is mogelijkheid voor zowel de werkgever als de medewerker om pijnpunten te bespreken.
