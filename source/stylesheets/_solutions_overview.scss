@@ -20,16 +20,22 @@
 
   .row {
     @include clearfix;
+    max-width: none;
     padding-bottom: 1em;
   }
 
   .col {
     position: relative;
-    padding: 0 1em;
+    // padding: 0 1em;
 
-    @include media($medium-up) {
+    @include media($medium-only) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($large-up) {
       @include span-columns(3);
-      @include omega(4n);
+      // @include omega(4n);
     }
 
     &:last-of-type {

@@ -5,9 +5,16 @@ title: Defacto
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1>Developing People</h1>
-      <span class="since">Since 1987</span>
-      <p><%= t(:tagline) %></p>
+      <h1>
+        <!-- Developing People -->
+        Leren &amp; ontwikkelen
+        <!-- LEREN &amp; ONTWIKKELEN -->
+      </h1>
+      <span class="since">sinds 1987</span>
+      <p>
+        <%#= t(:tagline) %>
+        Al meer dan 200.000 professionals gebruiken onze software om te leren en zich te ontwikkelen.
+      </p>
     </div>
     <%#= link_to "Onze oplossingen", "oplossingen.html", class: "button white outline" %>
     <%#= link_to "Maak een afspraak", "#", class: "button" %>
@@ -15,7 +22,6 @@ title: Defacto
 </div>
 
 <style>
-
 .cta .row {
   max-width: 60em;
 }
@@ -26,19 +32,37 @@ title: Defacto
 .cta h3 {
   font-size: 1.4em;
 }
-
 </style>
-
-<section class="gray cta">
+<!-- <section class="gray cta">
   <div class="row">
     <div class="col">
       <h3>Ontdek wat we voor uw organisatie kunnen betekenen.</h3>
     </div>
     <div class="col">
       <%= link_to "Onze oplossingen", "oplossingen.html", class: "button outline" %>
-      <%= link_to "Maak een afspraak", "#", class: "button" %>
+      <%= link_to "Maak een afspraak", "#", class: "button " %>
+      <br>
       Of bel met 050 3144832
     </div>
+  </div>
+</section> -->
+
+<section class="gray" style="text-align: center;">
+  <div class="row">
+    <h3>
+      Ontdek wat wij doen voor organisaties in de
+      <%= link_to "zorg", "/zorg.html" %>,
+      <%= link_to "overheid", "/overheid.html" %> en
+      <%= link_to "bedrijfsleven", "/bedrijfsleven.html" %>.
+    </h3>
+    <p>
+      <!-- <%= link_to "Onze oplossingen", "oplossingen.html", class: "button outline" %> -->
+      Maar weten? Bel met 050 3144832 of <%= link_to "Maak een afspraak", "#", class: "button outline" %>
+    </p>
+    <!--
+    <%= link_to "Zorg", "#", class: "button outline" %>
+    <%= link_to "Overheid", "#", class: "button outline" %>
+    <%= link_to "Bedrijfsleven", "#", class: "button outline" %> -->
   </div>
 </section>
 
@@ -46,7 +70,7 @@ title: Defacto
 <%= partial "product_highlights" %>
 <%= partial "testimonials" %>
 <%= partial "clients" %>
-<%#= partial "markets" %>
 <%#= partial "highlights" %>
+<%#= partial "markets" %>
 <%#= partial "map" %>
 <%#= partial "contact-info" %>

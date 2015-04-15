@@ -10,7 +10,7 @@ nl:
   home: "Home"
   solutions: "Oplossingen"
   about: "Over ons"
-  references: "Referenties"
+  contact: "Contact"
   blog: "Blog"
 
 # LearningSpaces
@@ -77,7 +77,7 @@ nl:
 # ================== ^ Landing page ^ ===============
 # solutions page
   solutions_page_title: "Oplossingen"
-  solutions_page_intro: "Ons jonge en innovatieve team ontwikkelt software waar we trots op zijn. Leer hier onze software kennen."
+  solutions_page_intro: "Wij ontwikkelen software waar we trots op zijn."
   solutions_page_capp_title: "CAPP"
   solutions_page_capp_description: |
     Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen

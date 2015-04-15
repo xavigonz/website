@@ -36,7 +36,16 @@ section {
         border: none;
       }
     }
+
     a {
+      display: block;
+      font-weight: 700;
+      padding: 0.5em 0;
+    }
+
+    // temp link placeholder
+    span {
+      color: darken($light-gray, 15);
       display: block;
       font-weight: 700;
       padding: 0.5em 0;
@@ -50,13 +59,37 @@ section {
 
 .headline {
   margin: 0 auto 1em;
-  max-width: 560px;
+  // max-width: 560px;
+  max-width: 712px;
   text-align: center;
 }
 
 .sub-headline {
   color: $medium-gray;
   font-size: 1.125em;
+}
+
+.checklist {
+  li {
+    position: relative;
+    margin: 0 0 0.8em 0;
+    padding: 0 0 0 30px;
+
+    &:before {
+      background-color: $blue;
+      border-radius: 50%;
+      color: #fff;
+      content: '✔';
+      height: 20px;
+      font-size: 13px;
+      left: 0;
+      line-height: 20px;
+      position: absolute;
+      text-align: center;
+      top: 2px;
+      width: 20px;
+    }
+  }
 }
 
 
