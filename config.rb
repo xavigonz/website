@@ -80,7 +80,7 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-# set :relative_links, true
+set :relative_links, true
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
