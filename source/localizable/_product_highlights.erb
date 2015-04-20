@@ -3,25 +3,26 @@
   <div class="col col-capp">
     <div class="inner">
       <div class="headline">
-        <h2>CAPP</h2>
+        <h2><%= link_to "CAPP", "/capp.html" %></h2>
         <p class="sub-headline">
-          <a href="#">CAPP</a> helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+          <%= link_to "CAPP", "/capp.html" %> helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
         </p>
       </div>
-      <%= link_to "Lees verder", "capp.html", class: "button white outline" %>
-      <%= link_to "Demo", "capp.html", class: "button white outline" %>
-      <%= link_to "Productsheets", "capp.html", class: "button white outline" %>
+      <%= link_to "Lees verder", "/capp.html", class: "button white outline" %>
     </div>
   </div>
 
   <div class="col col-ls">
     <div class="inner">
       <div class="headline">
-        <%= image_tag 'logos/learningspaces-white.png', title: 'LearningSpaces' %>
+        <% link_to "/learningspaces.html" do %>
+          <%= image_tag 'logos/learningspaces-white.png', title: 'LearningSpaces' %>
+        <% end %>
         <p class="sub-headline">
-          <a href="#">LearningSpaces</a> is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+          <%= link_to "LearningSpaces", "/learningspaces.html" %> is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
         </p>
       </div>
+      <%= link_to "Lees verder", "/learningspaces.html", class: "button white outline" %>
       <a href="http://www.learningspaces.io" target="_blank" class="button white outline">Bezoek de website</a>
     </div>
   </div>

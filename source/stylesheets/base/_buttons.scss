@@ -25,6 +25,7 @@
 #{$all-button-inputs},
 button,
 .button {
+  @include box-sizing(border-box);
   @include appearance(none);
   @include button($action-color);
   @include transition(all 0.15s ease-out);
@@ -51,15 +52,30 @@ button,
     font-size: 1.3em;
   }
 
-  &.white {
-    @include button(#fff);
-  }
-
   &.blue {
     @include button($blue);
   }
 
   &.green {
     @include button($green);
+  }
+
+  &.white {
+    @include button(#fff);
+    color: lighten($base-font-color, 15);
+
+    &:hover,
+    &:focus {
+      background-color: #fff;
+      color: $base-font-color;
+    }
+
+    &.outline {
+      &:hover,
+      &:focus {
+        border-color: #fff;
+        color: #fff;
+      }
+    }
   }
 }

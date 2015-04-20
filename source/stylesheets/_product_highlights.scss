@@ -20,24 +20,6 @@
     }
   }
 
-  .col-capp {
-    @include reset-display;
-    @include radial-gradient(circle at 50%,
-      $blue 33%,
-      rgba($blue, 0.5) 33%,
-      rgba($blue, 0.5) 66%,
-      $blue-alt 66%,
-      $fallback: $blue-alt);
-    border-right: 1px solid #fff;
-    // font-family: 'Montserrat', $base-font-family;
-  }
-
-  .col-ls {
-    background-color: $green;
-    background-image: url(../images/learningspaces-pattern.svg);
-    background-position: center;
-  }
-
   .inner {
     // background: rgba(#fff, .2);
     margin: 0 auto;
@@ -74,5 +56,29 @@
   [class^="button"],
   [class*=" button"] {
     margin: 0 0.5em;
+  }
+
+  .col-capp,
+  .col-ls {
+    h2 a {
+      color: #fff;
+    }
+  }
+
+  .col-capp {
+    @include reset-display;
+    @include radial-gradient(circle at 50%,
+      $blue 33%,
+      rgba($blue, 0.5) 33%,
+      rgba($blue, 0.5) 66%,
+      $blue-alt 66%,
+      $fallback: $blue-alt);
+    border-right: 1px solid #fff;
+  }
+
+  .col-ls {
+    background-color: $green;
+    background-image: url(../images/learningspaces-pattern.svg);
+    background-position: center;
   }
 }

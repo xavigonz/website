@@ -5,7 +5,8 @@ Solutions
 .oplossingen_index {
   text-align: center;
 
-  .solition-list {
+  // solitions test 1
+  .solitions-list1 {
     @extend .row;
 
     li {
@@ -21,8 +22,8 @@ Solutions
     }
   }
 
-  // alternative
-  .solitions-list {
+  // solitions test 2
+  .solitions-list2 {
     > li {
       background-color: #fff;
       margin-bottom: 2em;
@@ -110,6 +111,36 @@ Solutions
         background-color: $green;
         background-image: url(../images/learningspaces-pattern.svg);
         background-position: center;
+      }
+    }
+  }
+
+  // solitions test 3
+  .solitions-list3 {
+    @include media($medium-up) {
+      @include display(flex);
+      @include flex-wrap(wrap);
+      @include flex-direction(row);
+
+      padding: 5px;
+    }
+
+    li {
+      // background-color: #fff;
+      border-radius: $base-border-radius;
+      padding: 1em;
+
+      @include media($medium-up) {
+        padding: 2em;
+        width: 50%;
+
+        background-color: $lighter-gray;
+        flex: 1 1 auto;
+        margin: 5px;
+      }
+
+      @include media($xlarge-up) {
+        width: 33.3333333%;
       }
     }
   }
