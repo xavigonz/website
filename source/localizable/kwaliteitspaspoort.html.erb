@@ -10,7 +10,25 @@ title: Kwaliteitspaspoort
     </div>
     <%= link_to "Demo", "capp.html", class: "button white outline" %>
     <%= link_to "Productsheets", "capp.html", class: "button white outline" %>
-    <%= link_to "Maak een afspraak", "#", class: "button" %>
+    <div class="modal">
+      <label for="afspraak-maken">
+        <div class="button">Maak een afspraak</div>
+      </label>
+      <input class="modal-state" id="afspraak-maken" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/09c077b6938c" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="text" name="name" placeholder="Naam">
+            <input type="text" name="company" placeholder="Bedrijf of organisatie">
+            <input type="tel" name="phone" placeholder="Telefoon">
+            <input type="email" name="email" placeholder="E-mail">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -38,7 +56,25 @@ title: Kwaliteitspaspoort
 <section class="gray">
   <div class="row">
     <h3>Nu beginnen met het behalen van je accreditaties met het Kwaliteitspaspoort?</h2>
-    <p><a class="button" href="#">Vertel me meer</a></p>
+    <div class="modal">
+      <label for="vertel-me-meer">
+        <div class="button">Vertel me meer</div>
+      </label>
+      <input class="modal-state" id="vertel-me-meer" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/09c077b6938c" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="text" name="name" placeholder="Naam">
+            <input type="text" name="company" placeholder="Bedrijf of organisatie">
+            <input type="tel" name="phone" placeholder="Telefoon">
+            <input type="email" name="email" placeholder="E-mail">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
