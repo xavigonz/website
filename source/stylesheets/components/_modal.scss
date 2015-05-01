@@ -1,0 +1,116 @@
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  $modal-padding: 30px;
+  $modal-background: #fff;
+  $modal-backdrop: rgba(#000, 0.5);
+  $modal-close-color: $medium-gray;
+
+  display: inline;
+
+  > label {
+    display: inline;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .modal-state {
+    display: none;
+
+    &:checked {
+      + .modal-window {
+        opacity: 1;
+        visibility: visible;
+
+        .modal-inner {
+          top: 0.5em;
+        }
+      }
+    }
+  }
+
+  // overlay
+  .modal-window {
+    @include transition(opacity 0.25s ease);
+    @include position(fixed, 0px 0px 0px 0px);
+    background-color: $modal-backdrop;
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    visibility: hidden;
+    z-index: 99999999999;
+
+    @include media($large-up) {
+      padding-top: 10em;
+    }
+  }
+
+  .modal-close {
+    @include position(absolute, 10px 10px null null);
+    @include size(20px);
+    background: $modal-background;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      @include position(absolute, 3px 3px 0 50%);
+      @include size(2px 1em);
+      background: $modal-close-color;
+      content: '';
+      display: block;
+      margin: 0 0 0 -1px;
+    }
+
+    &:after {
+      @include transform(rotate(45deg));
+    }
+
+    &:before {
+      @include transform(rotate(-45deg));
+    }
+
+    &:hover:after,
+    &:hover:before {
+      background: darken($modal-close-color, 10%);
+    }
+  }
+
+  .modal-inner {
+    @include transition(all 0.25s ease);
+    background-color: $modal-background;
+    border-radius: $base-border-radius;
+    box-shadow: 0 2px 0 0 rgba(#000 ,0.1);
+    margin-top: 0;
+    margin: auto;
+    max-height: 95%;
+    overflow: auto;
+    padding: $modal-padding / 2;
+    position: relative;
+    top: 0;
+    width: 95%;
+
+    @include media($medium-up) {
+      max-height: 70%;
+      padding: $modal-padding;
+      width: 60%;
+    }
+
+    @include media($large-up) {
+      width: 50%;
+    }
+
+    .modal-intro {
+      font-weight: 800;
+    }
+
+    .modal-content {
+      color: $base-font-color;
+
+      @include media($medium-up) {
+        @include columns(2 8em);
+      }
+    }
+  }
+}
