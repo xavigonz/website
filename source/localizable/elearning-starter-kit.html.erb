@@ -7,8 +7,26 @@ title: E-Learning starterkit
       <h1>E-Learning Starterkit</h1>
       <p>Op eenvoudige en betaalbare wijze zelf uw lesmateriaal ontwikkelen</p>
     </div>
-    <%= link_to "Productsheets", "capp.html", class: "button white outline" %>
-    <%= link_to "Maak een afspraak", "#", class: "button" %>
+    <div class="modal">
+      <label for="afspraak-maken">
+        <div class="button white outline">Meer weten</div>
+      </label>
+      <input class="modal-state" id="afspraak-maken" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/eb01a315df5e" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="text" name="name" placeholder="Naam">
+            <input type="text" name="company" placeholder="Bedrijf of organisatie">
+            <input type="tel" name="phone" placeholder="Telefoon">
+            <input type="email" name="email" placeholder="E-mail">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -40,37 +58,32 @@ title: E-Learning starterkit
         <div id="cases" class="col">
             <div class="case">
                 <h2>Wat krijgt u?</h2>
-                <ul>
-                  <li>Een laptop, met daarop:</li>
-                  <li>Zeer gebruiksvriendelijke Authoring software</li>
-                  <li>Voorbeeld-modules ter inspiratie</li>
-                  <li>Het boek: ‘Leren en Laten Leren’</li>
-                  <li>High Definition camera</li>
-                  <li>Microfoon</li>
-                  <li>Twee dagen training on the job</li>
-                  <li>Eén jaar helpdesk-support </li>
-                </ul>
+                <p>
+                  <ul>
+                    <li>Een laptop, met daarop:</li>
+                    <li>Zeer gebruiksvriendelijke Authoring software</li>
+                    <li>Voorbeeld-modules ter inspiratie</li>
+                    <li>Het boek: ‘Leren en Laten Leren’</li>
+                    <li>High Definition camera</li>
+                    <li>Microfoon</li>
+                    <li>Twee dagen training on the job</li>
+                    <li>Eén jaar helpdesk-support </li>
+                  </ul>
+                </p>
             </div>
         </div>
       </div>
-              <div class="col">
-                  <h2>Meteen inzetbaar</h2>
-                  <p>
-                    Aan het eind van de tweede trainingsdag bent u volledig opgeleid en in staat om zelfstandig lesmateriaal te ontwikkelen en zijn de eerste lesmodules en afrondende toetsen vaak al opgeleverd.
-                  </p>
-              </div>
+          <div class="col">
+            <h2>Meteen inzetbaar</h2>
+            <p>
+              Aan het eind van de tweede trainingsdag bent u volledig opgeleid en in staat om zelfstandig lesmateriaal te ontwikkelen en zijn de eerste lesmodules en afrondende toetsen vaak al opgeleverd.
+            </p>
+          </div>
           </div>
       </div>
       <div class="section-header">
               <p class="center">
                 Haal op eenvoudige en betaalbare wijze een enorme hoeveelheid kennis en expertise op het gebied van E-learning in huis.
-              </p>
-          </div>
-
-
-          <div class="section-header">
-              <p class="center">
-                <a class="button orange" href="#">Ik wil meer weten</a>
               </p>
           </div>
       <div>
@@ -92,6 +105,24 @@ title: E-Learning starterkit
 <section class="gray">
   <div class="row">
     <h3>Nu beginnen met het zelf maken van E-Learning materiaal?</h2>
-    <p><a class="button" href="#">Vertel me meer</a></p>
+    <div class="modal">
+      <label for="nu-beginnen">
+        <div class="button">Ja, ik wil nu beginnen</div>
+      </label>
+      <input class="modal-state" id="nu-beginnen" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Ik wil zelf E-learning maken</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/eb01a315df5e" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="text" name="name" placeholder="Naam">
+            <input type="text" name="company" placeholder="Bedrijf of organisatie">
+            <input type="tel" name="phone" placeholder="Telefoon">
+            <input type="email" name="email" placeholder="E-mail">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

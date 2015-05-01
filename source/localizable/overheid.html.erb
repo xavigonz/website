@@ -18,9 +18,40 @@ title: Overheid
 
       <p>De overheid is volop in ontwikkeling. Er is sprake van Functiegebouw Rijk, Ambtenaar 2.0 etc. Sinds begin jaren is Defacto ’90 betrokken geweest bij grote en kleine onderdelen van de overheid. Door in gesprek te gaan met overheidsklanten hebben wij samen met ministeries en gemeenten software ontwikkeld die naadloos aansluit bij de vraag van de overheid.</p>
 
+    <section class="gray">
+        <div class="row">
+          <h3>Weten wat Defacto voor jou kan betekenen??</h2>
+          <div class="modal">
+            <label for="meer-weten">
+              <div class="button">Meer weten</div>
+            </label>
+            <input class="modal-state" id="meer-weten" type="checkbox">
+            <div class="modal-window">
+              <div class="modal-inner">
+                <h3>Ik wil meer weten</h3>
+                <form accept-charset="UTF-8" action="https://formkeep.com/f/33c2962fce33" method="POST">
+                  <input type="hidden" name="utf8" value="✓">
+                  <input type="text" name="name" placeholder="Naam">
+                  <input type="text" name="company" placeholder="Bedrijf of organisatie">
+                  <input type="tel" name="phone" placeholder="Telefoon">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
       <h2>Ontwikkelportaal</h2>
 
-      <p>Samen met Gemeente Den Haag ontwikkelde Defacto een portaal om eenvoudig door relevante opleidingen te bladeren, competenties bij te houden en ontwikkeling vorm te geven. <a href="#">Lees hier hoe we met de gemeente Den Haag een portaal voor opleiden en ontwikkelen uitrolden.</a></p>
+      <p>Samen met Gemeente Den Haag ontwikkelde Defacto een portaal om eenvoudig door relevante opleidingen te bladeren, competenties bij te houden en ontwikkeling vorm te geven. Zie hier bijvoorbeeld hoe we met de gemeente Den Haag een portaal voor opleiden en ontwikkelen uitrolden:
+      </p>
+      <p>
+      <%= image_tag 'vakmanschap.png', class: 'screenshot' %>
+      </p>
 
       <h2>Jaargesprekken</h2>
 
@@ -29,7 +60,7 @@ title: Overheid
       <h2>Kwaliteitspaspoort</h2>
 
       <p>Waar sta je, en waar ga je heen? Als ambtenaar sta je nooit stil. Je verwerft competenties en zit vergaderingen voor. Wat je ook doet: Met het Kwaliteitspaspoort geef je je ontwikkeling richting, en maak je voor iedereen inzichtelijk waar je in je ontwikkeling staat!</p>
-      <p><%= link_to "Begin nu met het behalen van je accreditaties", "Kwaliteitspaspoort.html", class: 'button orange' %></p>
+      <p><%= link_to "Lees hier meer over het kwaliteitspaspoort", "kwaliteitspaspoort.html" %></p>
     </div>
 
   </div>
