@@ -10,9 +10,31 @@ title: CAPP
     </div>
     <%= link_to "Demo", "capp.html", class: "button white outline" %>
     <%= link_to "Productsheets", "capp.html", class: "button white outline" %>
-    <%= link_to "Maak een afspraak", "#", class: "button" %>
+
+    <div class="modal">
+      <label for="afspraak-maken">
+        <div class="button">Maak een afspraak</div>
+      </label>
+      <input class="modal-state" id="afspraak-maken" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/5e43c8b3f2c8" method="POST">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="text" name="name" placeholder="Naam">
+          <input type="text" name="company" placeholder="Bedrijf of organisatie">
+          <input type="tel" Naamme="phone" placeholder="Telefoon">
+          <input type="email" name="email" placeholder="E-mail">
+          <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
+
+
 
 <section class="capp-steps">
   <div class="row">
@@ -72,7 +94,27 @@ title: CAPP
 <section class="gray">
   <div class="row">
     <h3>Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?</h2>
-    <p><a class="button" href="#">Vertel me meer</a></p>
+
+    <div class="modal">
+      <label for="business-case">
+        <div class="button">Maak een afspraak</div>
+      </label>
+      <input class="modal-state" id="business-case" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Vertel me meer</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/5e43c8b3f2c8" method="POST">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="text" name="name" placeholder="Naam">
+          <input type="text" name="company" placeholder="Bedrijf of organisatie">
+          <input type="tel" Naamme="phone" placeholder="Telefoon">
+          <input type="email" name="email" placeholder="E-mail">
+          <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
