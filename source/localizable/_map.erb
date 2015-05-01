@@ -1,13 +1,15 @@
 <div id="map">
-    <div id="map-canvas"></div>
+  <div id="map-canvas"></div>
     <div class="contact-form">
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="<%= t(:name) %>">
-            <input type="text" name="company" placeholder="<%= t(:organization) %>">
-            <input type="text" name="phone" placeholder="<%= t(:phone) %>">
-            <input type="text" name="email" placeholder="<%= t(:email) %>">
-            <textarea name="message" placeholder="<%= t(:message) %>"></textarea>
-            <input type="submit" name="submit" value="<%= t(:send) %>" class="btn">
-        </form>
+      <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="text" name="name" placeholder="<%= t(:name) %>">
+        <input type="text" name="company" placeholder="<%= t(:organization) %>">
+        <input type="tel" name="phone" placeholder="<%= t(:phone) %>">
+        <input type="email" name="email" placeholder="<%= t(:email) %>">
+        <textarea name="message" placeholder="<%= t(:message) %>"></textarea>
+        <button type="submit" value="<%= t(:send) %>" class="btn">Submit</button>
+      </form>
     </div>
+  </div>
 </div>
