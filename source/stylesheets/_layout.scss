@@ -55,6 +55,10 @@ section {
 
 .content {
   @include span-columns(8);
+
+  li {
+    list-style-type: disc;
+  }
 }
 
 .headline {

@@ -5,7 +5,7 @@ title: CAPP
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= t("capp_title") %></h1>
+      <h1>Opleiden & Leren met CAPP LMS</h1>
       <%= markdown(t("capp_description")) %>
     </div>
     <%= link_to "Demo", "capp.html", class: "button white outline" %>
@@ -14,51 +14,50 @@ title: CAPP
   </div>
 </div>
 
-<!-- <section class="gray">
-  <div class="row">
-    <h3 style="font-size: 1.6em; line-height: 1.4; font-weight: 400;">
-      Door middel van zelf ontwikkelde software neemt Defacto drempels weg. Zo helpt CAPP Leren uw opleidingsadministratie te stroomlijnen en processen te innoveren. Stimuleert CAPP Ontwikkelen zelfontplooiing en creëert Kwaliteitspaspoort inzicht in de ontwikkeling en kwaliteit van uw medewerkers.
-    </h3>
-  </div>
-</section> -->
-
 <section class="capp-steps">
   <div class="row">
 
     <div class="headline" style="max-width: 1024px; margin-bottom: 4em;">
       <h3 style="font-size: 1.6em; line-height: 1.4; font-weight: 400; color: #888;">
-        Door middel van zelf ontwikkelde software neemt Defacto drempels weg. Zo helpt CAPP Leren uw opleidingsadministratie te stroomlijnen en processen te innoveren. Stimuleert CAPP Ontwikkelen zelfontplooiing en creëert Kwaliteitspaspoort inzicht in de ontwikkeling en kwaliteit van uw medewerkers.
+        De basis van elke moderne digitale leeromgeving.<nr>
+        Uitnodigend, betrouwbaar en super eenvoudig.
       </h3>
     </div>
 
     <div class="col">
       <%= image_tag 'icons/leren-blue.png' %>
       <h2>Leren</h2>
-      <p>CAPP Leren helpt academies processen zoals administratie, E-learning en informatiebehoefte stroomlijnen, automatiseren en vereenvoudigen. We helpen het management aan relevante stuurinformatie zodat er koers bepaald kan worden.</p>
+      <p>Bied uw deelnemers een unieke leerbeleving, met een rijk mix aan leervormen zowel klassikaal als via E-Learning en een eenvoudige leerproces.
+      </p>
       <hr>
       <ul class="checklist">
-        <li>Opleidingsadministratie</li>
-        <li>Leermanagament</li>
-        <li>E-Learning / ELO</li>
+        <li>Opleidingscatalogus</li>
+        <li>Blended learning </li>
+        <li>E-Learning omgeving </li>
+        <li>Digitaal Leerportaal </li>
+        <li>Cursusadministratie</li>
       </ul>
     </div>
 
     <div class="col">
       <%= image_tag 'icons/ontwikkelen-blue.png' %>
       <h2>Ontwikkelen</h2>
-      <p>CAPP Ontwikkelen helpt medewerkers door middel van competentiemanagement, 360 feedback en jaargesprekken inzicht te krijgen in hun persoonlijke groei.</p>
+      <p>Speciaal om uw medewerkers te helpen bij hun persoonlijke en professionele ontwikkeling biedt CAPP Ontwikkelen enkele bijzondere instrumenten:</p>
       <hr>
       <ul class="checklist">
-        <li><a href="#">360 feedback</a></li>
-        <li>Compententies</li>
+        <li>E-Portfolio</li>
+        <li>Compententiemanagement</li>
         <li>Jaargesprekken</li>
       </ul>
     </div>
 
     <div class="col">
-      <%= image_tag 'icons/borging-blue.png' %>
-      <h2>Kwaliteitspaspoort</h2>
-      <p>CAPP Kwaliteitspaspoort borgt de kwaliteit in uw organisatie en maakt ontwikkeling aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.</p>
+      <% link_to "kwaliteitspaspoort.html" do %>
+        <%= image_tag 'icons/borging-blue.png' %>
+        <h2>Kwaliteitspaspoort</h2>
+      <% end %>
+      <p>Een persoonsgebonden profiel waarin de bekwaamheden en bevoegdheden in één keer inzichtelijk zijn voor werknemer, werkgever en toezichthoudende instanties.
+        <%= link_to "Meer over het Kwaliteitspaspoort", "kwaliteitspaspoort.html" %></p>
       <hr>
       <ul class="checklist">
         <li>Managementinformatie</li>
@@ -77,8 +76,6 @@ title: CAPP
   </div>
 </section>
 
-<%#= partial "markets" %>
-<%#= partial "contact-info" %>
 
 <%= partial "testimonials" %>
 <%= partial "clients" %>

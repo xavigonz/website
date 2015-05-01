@@ -1,8 +1,8 @@
 /*
-Solutions
+Diensten
 */
 
-.oplossingen_index {
+.diensten_index {
   text-align: center;
 
   .solitions-list {
@@ -115,17 +115,6 @@ Solutions
           rgba($orange, 0.5) 66%,
           darken($orange, 10%),
           $fallback: $orange);
-      }
-    }
-
-    .kpp {
-      .left {
-        @include radial-gradient(circle at 50%,
-          $medium-gray 33%,
-          rgba($medium-gray, 0.5) 33%,
-          rgba($medium-gray, 0.5) 66%,
-          darken($medium-gray, 10%),
-          $fallback: $medium-gray);
       }
     }
   }

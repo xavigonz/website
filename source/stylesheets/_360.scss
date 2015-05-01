@@ -1,0 +1,16 @@
+
+  .three-sixty-steps {
+    .col {
+      @include media($medium-up) {
+        @include span-columns(4);
+      }
+    }
+
+    img {
+      max-height: 160px;
+    }
+  }
+
+  .gray {
+    text-align: center;
+  }
