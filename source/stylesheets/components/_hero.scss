@@ -54,6 +54,16 @@
     }
   }
 
+  .modal {
+    .modal-inner {
+      button,
+      .button {
+        font-size: 1em;
+        margin: 0;
+      }
+    }
+  }
+
   .since {
     position: relative;
     display: inline-block;

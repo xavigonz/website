@@ -81,7 +81,9 @@
     @include transition(all 0.25s ease);
     background-color: $modal-background;
     border-radius: $base-border-radius;
-    box-shadow: 0 2px 0 0 rgba(#000 ,0.1);
+    box-shadow: 0 2px 0 0 rgba(#000, 0.1);
+    color: $base-font-color;
+    font-size: $base-font-size;
     margin-top: 0;
     margin: auto;
     max-height: 95%;
@@ -99,18 +101,6 @@
 
     @include media($large-up) {
       width: 50%;
-    }
-
-    .modal-intro {
-      font-weight: 800;
-    }
-
-    .modal-content {
-      color: $base-font-color;
-
-      @include media($medium-up) {
-        @include columns(2 8em);
-      }
     }
   }
 }
