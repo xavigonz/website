@@ -13,7 +13,7 @@ title: CAPP
 
     <div class="modal">
       <label for="afspraak-maken">
-        <div class="button">Meer weten</div>
+        <span class="button">Meer weten</span>
       </label>
       <input class="modal-state" id="afspraak-maken" type="checkbox">
       <div class="modal-window">
@@ -23,7 +23,7 @@ title: CAPP
           <input type="hidden" name="utf8" value="✓">
           <input type="text" name="name" placeholder="Naam">
           <input type="text" name="company" placeholder="Bedrijf of organisatie">
-          <input type="tel" Naamme="phone" placeholder="Telefoon">
+          <input type="tel" name="phone" placeholder="Telefoon">
           <input type="email" name="email" placeholder="E-mail">
           <button type="submit" class="btn">Submit</button>
           </form>
@@ -41,13 +41,13 @@ title: CAPP
 
     <div class="headline" style="max-width: 1024px; margin-bottom: 4em;">
       <h3 style="font-size: 1.6em; line-height: 1.4; font-weight: 400; color: #888;">
-        De basis van elke moderne academie of opleidingsafdeling. <hr>
+        De basis van elke moderne academie of opleidingsafdeling.<br>
         Uitnodigend, betrouwbaar en super eenvoudig.
       </h3>
     </div>
 
     <div class="col">
-      <%= image_tag 'icons/leren-blue.png' %>
+      <%= image_tag 'icons/leren-blue.png', alt: 'leren' %>
       <h2>Leren</h2>
       <p>Bied uw deelnemers een unieke leerbeleving, met een rijk mix aan leervormen zowel klassikaal als via E-Learning en een eenvoudige leerproces.
       </p>
@@ -62,7 +62,7 @@ title: CAPP
     </div>
 
     <div class="col">
-      <%= image_tag 'icons/ontwikkelen-blue.png' %>
+      <%= image_tag 'icons/ontwikkelen-blue.png', alt: 'ontwikkelen' %>
       <h2>Ontwikkelen</h2>
       <p>Speciaal om uw medewerkers te helpen bij hun persoonlijke en professionele ontwikkeling biedt CAPP Ontwikkelen enkele bijzondere oplossingen:</p>
       <hr>
@@ -75,7 +75,7 @@ title: CAPP
 
     <div class="col">
       <% link_to "kwaliteitspaspoort.html" do %>
-        <%= image_tag 'icons/borging-blue.png' %>
+        <%= image_tag 'icons/borging-blue.png', alt: 'borging' %>
         <h2>Kwaliteitspaspoort</h2>
       <% end %>
       <p>Een persoonsgebonden profiel waarin de bekwaamheden en bevoegdheden in één keer inzichtelijk zijn voor werknemer, werkgever en toezichthoudende instanties.
@@ -94,11 +94,11 @@ title: CAPP
 
 <section class="gray">
   <div class="row">
-    <h3>Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?</h2>
+    <h2>Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?</h2>
 
     <div class="modal">
       <label for="business-case">
-        <div class="button">Maak een afspraak</div>
+        <span class="button">Maak een afspraak</span>
       </label>
       <input class="modal-state" id="business-case" type="checkbox">
       <div class="modal-window">
@@ -108,7 +108,7 @@ title: CAPP
           <input type="hidden" name="utf8" value="✓">
           <input type="text" name="name" placeholder="Naam">
           <input type="text" name="company" placeholder="Bedrijf of organisatie">
-          <input type="tel" Naamme="phone" placeholder="Telefoon">
+          <input type="tel" name="phone" placeholder="Telefoon">
           <input type="email" name="email" placeholder="E-mail">
           <button type="submit" class="btn">Submit</button>
           </form>

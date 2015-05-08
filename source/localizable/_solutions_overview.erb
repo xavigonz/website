@@ -6,7 +6,8 @@
   <div class="row">
 
     <div class="col">
-      <%= link_to image_tag("icons/leren-blue.png") + ("<h3>Leren</h3>").html_safe, "capp.html" %>
+      <%= link_to image_tag("icons/leren-blue.png", alt: 'leren'), "capp.html" %>
+      <h3><%= link_to "Leren", "capp.html" %></h3>
       <p>
         De stille, krachtige motor van uw academie. Stroomlijn processen en bespaar tijd. Creëer inzicht met
         <%= link_to "CAPP", "capp.html" %> Leren.
@@ -14,21 +15,26 @@
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/ontwikkelen-blue.png") + ("<h3>Ontwikkelen</h3>").html_safe, "capp.html" %>
+      <%= link_to image_tag("icons/ontwikkelen-blue.png", alt: "ontwikkelen"), "capp.html" %>
+      <h3><%= link_to "Ontwikkelen", "capp.html" %></h3>
       <p>
         Geef medewerkers efficiënte tools voor hun ontwikkelprocessen en een overzichtelijk persoonlijk portfolio.
       </p>
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/borging-blue.png") + ("<h3>Kwaliteitspaspoort</h3>").html_safe, "kwaliteitspaspoort.html" %>
+
+      <%= link_to image_tag("icons/borging-blue.png", alt: "borging") %>
+      <h3><%= link_to "Kwaliteitspaspoort", "kwaliteitspaspoort.html" %></h3>
       <p>
         Real-time inzicht in vakbevoegdheid van uzelf, uw team en uw organisatie. Voldoe permanent en zichtbaar aan de (formele) kwaliteitseisen.
       </p>
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/informeel-green.png") + ("<h3>Informeel Leren</h3>").html_safe, "learningspaces.html" %>
+
+      <%= link_to image_tag("icons/informeel-green.png", alt: "informeel leren"), "learningspaces.html" %>
+      <h3><%= link_to "Informeel Leren", "learningspaces.html" %></h3>
       <p>
         <%= link_to "LearningSpaces", "learningspaces.html" %> is een laagdrempelig sociaal leerplatform dat kennisdeling en leren en stimuleert.
       </p>
