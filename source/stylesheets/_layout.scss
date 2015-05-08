@@ -53,8 +53,13 @@ section {
   }
 }
 
-.content {
+.content,
+article {
   @include span-columns(8);
+
+  ul {
+    margin: $base-spacing 0 $base-spacing (2 * $base-spacing);
+  }
 
   li {
     list-style-type: disc;
