@@ -60,6 +60,14 @@ button,
     @include button($green);
   }
 
+  &.red {
+    @include button($red);
+  }
+
+  &.turquoise {
+    @include button($turquoise);
+  }
+
   &.white {
     @include button(#fff);
     color: lighten($base-font-color, 15);

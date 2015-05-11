@@ -1,6 +1,5 @@
 .clients {
   background-color: #f6f6f6;
-  // border-top: 1px solid #ddd;
   padding: 40px 0;
   text-align: center;
 
@@ -9,6 +8,8 @@
       margin: 0 3em;
       max-height: 50px;
       opacity: 0.6;
+
+      @inc
     }
   }
 }

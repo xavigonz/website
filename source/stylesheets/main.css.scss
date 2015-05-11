@@ -5,12 +5,12 @@
 @import "base/grid-settings";
 @import "neat";
 @import "base/base";
+@import "components/base";
 
 @import "fonts";
 @import "layout";
 @import "header";
 @import "footer";
-@import "hero";
 @import "testimonials";
 @import "clients";
 @import "team";
@@ -18,7 +18,10 @@
 @import "product_highlights";
 
 @import "home";
-@import "oplossingen";
+@import "producten";
 @import "capp";
+@import "kpp";
 @import "learningspaces";
+@import "elearning-starter-kit";
 @import "markets";
+@import "360";

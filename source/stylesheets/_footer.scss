@@ -7,7 +7,7 @@ footer {
   text-align: center;
 
   .col {
-    @include span-columns(3);
+    @include span-columns(12);
     text-align: left;
 
     [class^="icon-"],
@@ -22,14 +22,12 @@ footer {
       padding: 0 0 0.6em;
     }
 
-    // li {
-    //   &:before {
-    //     content: "-";
-    //   }
-    // }
-
     a {
       color: #999;
+    }
+
+    @include media($medium-up){
+      @include span-columns(3);
     }
   }
 

@@ -20,9 +20,10 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
-h1 {
-  font-size: 4em;
-}
+// h1 {
+//   font-size: 4em;
+// }
+h1,
 h2 {
   font-size: 2.4em;
 }
@@ -41,7 +42,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: $base-spacing 0;
 }
 
 a {
@@ -60,6 +61,11 @@ a {
   &:focus {
     outline: none;
   }
+}
+
+blockquote {
+  border-left: 5px solid $light-gray;
+  padding: $small-spacing;
 }
 
 hr {

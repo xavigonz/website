@@ -8,7 +8,7 @@ nl:
 # main navigation
   menu: "Menu"
   home: "Home"
-  solutions: "Oplossingen"
+  solutions: "Producten"
   about: "Over ons"
   contact: "Contact"
   blog: "Blog"
@@ -76,7 +76,7 @@ nl:
   send: "Verstuur bericht"
 # ================== ^ Landing page ^ ===============
 # solutions page
-  solutions_page_title: "Oplossingen"
+  solutions_page_title: "Producten"
   solutions_page_intro: "Wij ontwikkelen software waar we trots op zijn."
   solutions_page_capp_title: "CAPP"
   solutions_page_capp_description: |

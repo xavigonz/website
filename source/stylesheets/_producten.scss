@@ -1,0 +1,203 @@
+/*
+Solutions
+*/
+
+.producten_index,
+.diensten_index {
+  text-align: center;
+
+  .solitions-list {
+    > li {
+      background-color: #fff;
+      margin-bottom: 2em;
+
+      @include media($medium-up) {
+        @include fill-parent();
+        @include row(table);
+        min-height: 300px;
+      }
+    }
+
+    .col {
+      @include pad();
+      vertical-align: middle;
+
+      p {
+        font-size: 1.3em;
+
+        &:last-child {
+          margin: 0;
+        }
+
+        a {
+          color: inherit;
+          font-weight: 700;
+        }
+      }
+
+      &.left {
+        background-position: center;
+        color: #fff;
+        display: table;
+        height: 200px;
+        text-align: center;
+        width: 100%;
+
+        @include media($medium-up) {
+          @include span-columns(5);
+          height: auto;
+        }
+
+        h2 {
+          display: table-cell;
+          font-family: 'Montserrat', $base-font-family;
+          font-size: 2em;
+          font-weight: 700;
+          line-height: 1.5;
+          margin: 0;
+          vertical-align: middle;
+
+          @include media($medium-up) {
+            display: block;
+          }
+        }
+
+        img {
+          width: 240px;
+          max-width: 100%;
+          vertical-align: text-top;
+        }
+      }
+
+      &.right {
+        text-align: left;
+
+        @include media($medium-up) {
+          @include span-columns(7);
+          @include reset-display;
+        }
+      }
+    }
+
+    .capp {
+      .left {
+        @include radial-gradient(circle at 50%,
+          $blue 33%,
+          rgba($blue, 0.5) 33%,
+          rgba($blue, 0.5) 66%,
+          $blue-alt 66%,
+          $fallback: $blue-alt);
+
+        h2 {
+          font-size: 3em;
+        }
+      }
+    }
+
+    .kwaliteitspaspoort {
+      $color: lighten($turquoise, 5);
+
+      .left {
+        @include radial-gradient(circle at 50%,
+          lighten($color, 10) 33%,
+          rgba($color, 0.3) 33%,
+          rgba($color, 0.3) 66%,
+          lighten($color, 5) 66%,
+          $fallback: lighten($color, 10));
+
+        h2 {
+          img {
+            width: 250px;
+          }
+        }
+      }
+    }
+
+    .learningspaces {
+      .left {
+        background-color: $green;
+        background-image: url(../images/learningspaces-pattern.svg);
+        background-position: center;
+      }
+    }
+
+    .starterkit {
+      $color: lighten($red, 15);
+
+      .left {
+        background-color: $color;
+        background-size: 150px 150px;
+        background-image:
+          linear-gradient(90deg, rgba(#fff, 0.08) 50%, transparent 50%),
+          linear-gradient(rgba(#fff, 0.08) 50%, transparent 50%);
+      }
+    }
+
+    .three-sixty {
+      $color: $orange;
+
+      .left {
+        @include radial-gradient(circle at 50%,
+          rgba($color, 0.15) 120px,
+          rgba($color, 0.3) 240px,
+          $fallback: #fff);
+
+        h2 {
+          img {
+            width: 140px;
+          }
+        }
+      }
+    }
+
+    .elearning {
+      .left {
+        @include radial-gradient(circle at 50%,
+          $blue 33%,
+          rgba($blue, 0.5) 33%,
+          rgba($blue, 0.5) 66%,
+          $blue-alt 66%,
+          $fallback: $blue-alt);
+      }
+    }
+
+    .implementaties {
+      $color: $orange;
+
+      .left {
+        @include radial-gradient(circle at 50%,
+          lighten($color, 10) 33%,
+          rgba($color, 0.3) 33%,
+          rgba($color, 0.3) 66%,
+          lighten($color, 5) 66%,
+          $fallback: lighten($color, 10));
+      }
+    }
+
+    .hosting {
+      $color: lighten($red, 10);
+
+      .left {
+        @include radial-gradient(circle at 50%,
+          lighten($color, 10) 33%,
+          rgba($color, 0.3) 33%,
+          rgba($color, 0.3) 66%,
+          lighten($color, 5) 66%,
+          $fallback: lighten($color, 10));
+      }
+    }
+
+    .koppelingen {
+      $color: lighten($green, 10);
+
+      .left {
+        @include radial-gradient(circle at 50%,
+          lighten($color, 10) 33%,
+          rgba($color, 0.3) 33%,
+          rgba($color, 0.3) 66%,
+          lighten($color, 5) 66%,
+          $fallback: lighten($color, 10));
+      }
+    }
+  }
+}

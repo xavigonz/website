@@ -6,71 +6,54 @@ title: Defacto
   <div class="hero-inner">
     <div class="hero-copy">
       <h1>
-        <!-- Developing People -->
-        Leren &amp; ontwikkelen
-        <!-- LEREN &amp; ONTWIKKELEN -->
+        Developing People
       </h1>
       <span class="since">sinds 1987</span>
       <p>
         <%#= t(:tagline) %>
-        Al meer dan 200.000 professionals gebruiken onze software om te leren en zich te ontwikkelen.
+        Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen.
       </p>
     </div>
-    <%#= link_to "Onze oplossingen", "oplossingen.html", class: "button white outline" %>
-    <%#= link_to "Maak een afspraak", "#", class: "button" %>
+
   </div>
 </div>
-
-<style>
-.cta .row {
-  max-width: 60em;
-}
-.cta .col {
-  float: left;
-  width: 50%;
-}
-.cta h3 {
-  font-size: 1.4em;
-}
-</style>
-<!-- <section class="gray cta">
-  <div class="row">
-    <div class="col">
-      <h3>Ontdek wat we voor uw organisatie kunnen betekenen.</h3>
-    </div>
-    <div class="col">
-      <%= link_to "Onze oplossingen", "oplossingen.html", class: "button outline" %>
-      <%= link_to "Maak een afspraak", "#", class: "button " %>
-      <br>
-      Of bel met 050 3144832
-    </div>
-  </div>
-</section> -->
 
 <section class="gray" style="text-align: center;">
   <div class="row">
     <h3>
-      Ontdek wat wij doen voor organisaties in de
-      <%= link_to "zorg", "/zorg.html" %>,
-      <%= link_to "overheid", "/overheid.html" %> en
-      <%= link_to "bedrijfsleven", "/bedrijfsleven.html" %>.
+    Maar weten? Bel <%= link_to "050 314 48 32", "tel:+31503144832" %> of
+
+      <%#= Wij werken voor organisaties in de zorg, overheid en bedrijfsleven. %>
+      <%#= link_to "zorg", "/zorg.html" %>
+      <%#= link_to "overheid", "/overheid.html" %>
+      <%#= link_to "bedrijfsleven", "/bedrijfsleven.html" %>
     </h3>
-    <p>
-      <!-- <%= link_to "Onze oplossingen", "oplossingen.html", class: "button outline" %> -->
-      Maar weten? Bel met 050 3144832 of <%= link_to "Maak een afspraak", "#", class: "button outline" %>
-    </p>
-    <!--
-    <%= link_to "Zorg", "#", class: "button outline" %>
-    <%= link_to "Overheid", "#", class: "button outline" %>
-    <%= link_to "Bedrijfsleven", "#", class: "button outline" %> -->
+
+    <div class="modal">
+      <label for="afspraak-maken">
+        <span class="button outline">Maak een afspraak</span>
+      </label>
+      <input class="modal-state" id="afspraak-maken" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="text" name="name" placeholder="Naam">
+            <input type="text" name="company" placeholder="Bedrijf of organisatie">
+            <input type="tel" name="phone" placeholder="Telefoon">
+            <input type="email" name="email" placeholder="E-mail">
+            <textarea name="message" placeholder="Bericht"></textarea>
+            <button type="submit" value="Verstuur bericht" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <%= partial "solutions_overview" %>
 <%= partial "product_highlights" %>
-<%= partial "testimonials" %>
+<%#= partial "testimonials" %>
 <%= partial "clients" %>
-<%#= partial "highlights" %>
-<%#= partial "markets" %>
-<%#= partial "map" %>
-<%#= partial "contact-info" %>
+
