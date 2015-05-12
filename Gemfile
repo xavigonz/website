@@ -1,6 +1,7 @@
 # If you have OpenSSL installed, we recommend updating
 # the following line to use "https"
-source 'http://rubygems.org'
+source "http://rubygems.org"
+source "https://rails-assets.org"
 
 gem "middleman", "~> 3.3.10"
 
@@ -17,3 +18,6 @@ gem "middleman-deploy"
 # gem "bitters"
 gem "bourbon"
 gem "neat"
+
+# Javascript Cookie
+gem "rails-assets-js-cookie"
