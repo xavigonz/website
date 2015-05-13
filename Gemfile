@@ -11,7 +11,7 @@ gem "middleman-livereload", "~> 3.4.2"
 gem "middleman-deploy"
 
 # Javascript dependencies
-gem "jquery-middleman"
+# gem "jquery-middleman"
 
 # Bitters, Bourbon, Neat
 # gem "bitters"
