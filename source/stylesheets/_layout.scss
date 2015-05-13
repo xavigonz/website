@@ -4,7 +4,7 @@
 // ------------------------------------------------------------
 
 section {
-  padding: 2em 0;
+  padding: 3em 0;
 
   @include media($medium-up) {
     padding: 4em 0;
@@ -67,8 +67,7 @@ article {
 }
 
 .headline {
-  margin: 0 auto 1em;
-  // max-width: 560px;
+  margin: 0 auto 3em;
   max-width: 712px;
   text-align: center;
 }
