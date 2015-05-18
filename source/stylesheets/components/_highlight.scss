@@ -1,4 +1,4 @@
-@include keyframes(highlight-slide-in) {
+@include keyframes(highlight-show) {
   0% {
     @include transform(translateY(30%));
     opacity: 0;
@@ -9,7 +9,7 @@
   }
 }
 
-@include keyframes(highlight-slide-out) {
+@include keyframes(highlight-hide) {
   0% {
     @include transform(translateY(0));
     opacity: 1;
@@ -19,15 +19,16 @@
     opacity: 0;
   }
 }
+
+$highlight-padding: 30px;
+$highlight-mobile-mode: max-width 400px;
 
 .highlight {
-  $highlight-padding: 30px;
-
-  @include animation(highlight-slide-in 0.9s cubic-bezier(0.77, 0, 0.175, 1));
   background-color: #fff;
   border-radius: 5px 5px 0 0;
   bottom: 0;
   box-shadow: 0px 0px 60px rgba(#000, 0.2);
+  display: none;
   left: 0;
   max-width: 320px;
   min-height: 200px;
@@ -36,8 +37,18 @@
   width: 100%;
   z-index: 999999998;
 
-  &.closing {
-    @include animation(highlight-slide-out 0.4s ease-in);
+  @include media($highlight-mobile-mode) {
+    max-width: 94%;
+    left: 3%;
+  }
+
+  &.highlight-show {
+    @include animation(highlight-show 0.9s cubic-bezier(0.77, 0, 0.175, 1));
+    display: block;
+  }
+
+  &.highlight-hide {
+    @include animation(highlight-hide 0.4s ease-in);
   }
 
   .close {
@@ -69,12 +80,21 @@
     width: 100%;
   }
 
-  .highlight-header {
+  img {
+    margin: auto;
+  }
+
+  .pre {
+    white-space: nowrap;
+  }
+
+  .highlight-header,
+  .highlight-bottom {
     padding: $highlight-padding;
     position: relative;
 
-    img {
-      margin: auto;
+    @include media($highlight-mobile-mode) {
+      padding: $highlight-padding / 1.5;
     }
   }
 
@@ -86,8 +106,10 @@
 
   .highlight-bottom {
     background-color: $lighter-gray;
-    padding: $highlight-padding;
-    position: relative;
+
+    @include media($highlight-mobile-mode) {
+      padding-top: $highlight-padding;
+    }
 
     &::before {
       position: absolute;
@@ -110,6 +132,17 @@
     .close {
       left: -10px;
       right: auto;
+    }
+  }
+}
+
+// Ebook highlight
+#ebook.highlight {
+  .highlight-header {
+    padding-bottom: $highlight-padding / 2;
+
+    @include media($highlight-mobile-mode) {
+      padding-bottom: $highlight-padding / 4;
     }
   }
 }

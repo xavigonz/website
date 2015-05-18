@@ -1,17 +1,22 @@
 // Make sure Highlight elements (.highlight) have an ID.
 
 $(function () {
-  var cookieExpires = 14;
+  var showScrollTop = 100; // pixels scrolled before showing highlights
+  var showDelay = 400; // ms before showing
+  var cookieExpires = 14; // days the cookie expires after closing highlight
   var cookiePrefix = 'highlight_';
   var cookieValue = 'hidden';
   var cookies = Cookies.get();
+  var $window = $(window);
+  var $body = $('body');
+  var highlightShown;
 
   // console.log(cookies); // show all coockies
   // Cookies.remove('highlight_ebook'); // remove cookie
 
   // Hide hightlight
   function hide ($highlight, stayHidden) {
-    $highlight.addClass('closing');
+    $highlight.addClass('highlight-hide');
 
     setTimeout(function () {
       $highlight.remove();
@@ -30,17 +35,26 @@ $(function () {
     }
   });
 
+  // Show highlight after scroll
+  $window.on('scroll', function () {
+    if (!highlightShown && $window.scrollTop() > showScrollTop) {
+      setTimeout(function () {
+        $('.highlight').addClass('highlight-show');
+        highlightShown = true;
+      }, showDelay);
+    }
+  });
+
   // Close highlight button
-  $('body').on('click', '.highlight .close', function (event) {
+  $body.on('click', '.highlight .close', function (event) {
     event.preventDefault();
 
-    // hide hightlight
     var $highlight = $(this).closest('.highlight');
     hide($highlight, true);
   });
 
   // Ebook form submit
-  $('body').on('submit', '#ebook.highlight form', function (event) {
+  $body.on('submit', '#ebook.highlight form', function (event) {
     event.preventDefault();
 
     var ebookUrl = '/pdf/Handboek Leren en laten Leren.pdf';
