@@ -3,4 +3,12 @@
   .hero {
     background-color: $color;
   }
+
+  .row {
+    input {
+      display: inline-block;
+      height: 44px;
+      max-width: 28em;
+    }
+  }
 }

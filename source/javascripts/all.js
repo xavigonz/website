@@ -1,3 +1,4 @@
+//= require js-cookie
 //= require_tree .
 
 $(function () {
