@@ -3,19 +3,20 @@
 $(function () {
   var showScrollTop = 100; // pixels scrolled before showing highlights
   var showDelay = 400; // ms before showing
-  var cookieExpires = 14; // days the cookie expires after closing highlight
+  var cookieExpiresOnClose = 1 / 24 / 60 * 10; // 10 minutes till the cookie expires after closing
+  var cookieExpiresOnSubmit = 30; // days the cookie expires after submitting
   var cookiePrefix = 'highlight_';
   var cookieValue = 'hidden';
   var cookies = Cookies.get();
   var $window = $(window);
   var $body = $('body');
-  var highlightShown;
+  var highlightsShown;
 
   // console.log(cookies); // show all coockies
   // Cookies.remove('highlight_ebook'); // remove cookie
 
   // Hide hightlight
-  function hide ($highlight, stayHidden) {
+  function hide ($highlight, cookieExpires) {
     $highlight.addClass('highlight-hide');
 
     setTimeout(function () {
@@ -23,7 +24,7 @@ $(function () {
     }, 400);
 
     var id = $highlight[0].id;
-    if (stayHidden && id) {
+    if (cookieExpires && id) {
       Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpires });
     }
   }
@@ -37,10 +38,10 @@ $(function () {
 
   // Show highlight after scroll
   $window.on('scroll', function () {
-    if (!highlightShown && $window.scrollTop() > showScrollTop) {
+    if (!highlightsShown && $window.scrollTop() > showScrollTop) {
       setTimeout(function () {
         $('.highlight').addClass('highlight-show');
-        highlightShown = true;
+        highlightsShown = true;
       }, showDelay);
     }
   });
@@ -50,7 +51,7 @@ $(function () {
     event.preventDefault();
 
     var $highlight = $(this).closest('.highlight');
-    hide($highlight, true);
+    hide($highlight, cookieExpiresOnClose);
   });
 
   // Ebook form submit
@@ -81,6 +82,6 @@ $(function () {
 
     // hide hightlight
     var $highlight = $form.closest('.highlight');
-    hide($highlight, true);
+    hide($highlight, cookieExpiresOnSubmit);
   });
 });
