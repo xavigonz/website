@@ -4,15 +4,17 @@
   </a>
 
   <div class="highlight-header">
-    <h2 class="highlight-title">Download gratis ons <span class="pre">E-Learning</span> Handboek</h2>
-    <%= image_tag "boek.png", alt: "E-Learning Handboek Leren & Laten Leren" %>
+    <label for="ebook-email">
+      <h2 class="highlight-title">Download gratis ons <span class="pre">E-Learning</span> Handboek</h2>
+      <%= image_tag "boek.png", alt: "E-Learning Handboek Leren & Laten Leren" %>
+    </label>
   </div>
 
   <div class="highlight-bottom">
     <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="form" value="ebook download">
-      <input type="email" name="email" placeholder="E-mail" required>
+      <input type="email" name="email" id="ebook-email" placeholder="E-mail" required>
       <button type="submit">Download</button>
     </form>
   </div>
