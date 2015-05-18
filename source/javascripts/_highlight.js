@@ -6,7 +6,7 @@ $(function () {
   var cookieExpiresOnClose = 1 / 24 / 60 * 10; // 10 MINUTES till the cookie expires after closing
   var cookieExpiresOnSubmit = 30; // DAYS the cookie expires after submitting
   var cookiePath = '/';
-  var cookiePrefix = 'highlight_';
+  var cookiePrefix = 'defacto_';
   var cookieValue = 'hidden';
   var cookies = Cookies.get();
   var $window = $(window);
@@ -14,7 +14,7 @@ $(function () {
   var highlightsShown;
 
   // console.log(Cookies.get()); // show all coockies
-  // Cookies.remove('highlight_ebook', { path: '/' }); // remove cookie
+  // Cookies.remove('defacto_highlight-ebook', { path: '/' }); // remove ebook cookie
 
   // Hide hightlight
   function hide ($highlight, cookieExpires) {
@@ -26,7 +26,7 @@ $(function () {
 
     var id = $highlight[0].id;
     if (cookieExpires && id) {
-      Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpires });
+      Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpires, path: cookiePath });
     }
   }
 
@@ -57,7 +57,7 @@ $(function () {
   });
 
   // Ebook form submit
-  $body.on('submit', '#ebook.highlight form', function (event) {
+  $body.on('submit', '#highlight-ebook form', function (event) {
     event.preventDefault();
 
     var ebookUrl = '/pdf/Handboek Leren en laten Leren.pdf';
