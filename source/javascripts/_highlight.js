@@ -3,8 +3,9 @@
 $(function () {
   var showScrollTop = 100; // pixels scrolled before showing highlights
   var showDelay = 400; // ms before showing
-  var cookieExpiresOnClose = 1 / 24 / 60 * 10; // 10 minutes till the cookie expires after closing
-  var cookieExpiresOnSubmit = 30; // days the cookie expires after submitting
+  var cookieExpiresOnClose = 1 / 24 / 60 * 10; // 10 MINUTES till the cookie expires after closing
+  var cookieExpiresOnSubmit = 30; // DAYS the cookie expires after submitting
+  var cookiePath = '/';
   var cookiePrefix = 'highlight_';
   var cookieValue = 'hidden';
   var cookies = Cookies.get();
@@ -12,8 +13,8 @@ $(function () {
   var $body = $('body');
   var highlightsShown;
 
-  // console.log(cookies); // show all coockies
-  // Cookies.remove('highlight_ebook'); // remove cookie
+  // console.log(Cookies.get()); // show all coockies
+  // Cookies.remove('highlight_ebook', { path: '/' }); // remove cookie
 
   // Hide hightlight
   function hide ($highlight, cookieExpires) {
@@ -38,6 +39,7 @@ $(function () {
 
   // Show highlight after scroll
   $window.on('scroll', function () {
+
     if (!highlightsShown && $window.scrollTop() > showScrollTop) {
       setTimeout(function () {
         $('.highlight').addClass('highlight-show');
