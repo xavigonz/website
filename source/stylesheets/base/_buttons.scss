@@ -86,4 +86,9 @@ button,
       }
     }
   }
+
+  &.rounded {
+    border-radius: 5px;
+    vertical-align: top;
+  }
 }
