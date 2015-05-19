@@ -1,3 +1,6 @@
+# Used to build XML files
+require "builder"
+
 ##
 # Compass
 ###
@@ -100,6 +103,7 @@ page "blog/feed.xml", layout: false
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
+  blog.tag_template = "blog/tag.html"
   blog.calendar_template = "blog/calendar.html"
 end
 

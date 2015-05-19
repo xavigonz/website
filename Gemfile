@@ -4,13 +4,12 @@ source "http://rubygems.org"
 source "https://rails-assets.org"
 
 gem "middleman", "~> 3.3.10"
+gem "middleman-blog", "~> 3.5.3"
+gem "nokogiri"
+gem "builder"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.4.2"
-gem "middleman-blog"
-
-# Javascript dependencies
-# gem "jquery-middleman"
+# gem "middleman-livereload", "~> 3.4.2"
 
 # Bitters, Bourbon, Neat
 # gem "bitters"
@@ -19,5 +18,3 @@ gem "neat"
 
 # Javascript Cookie
 gem "rails-assets-js-cookie"
-
-gem "nokogiri"
