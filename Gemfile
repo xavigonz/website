@@ -7,9 +7,7 @@ gem "middleman", "~> 3.3.10"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.4.2"
-
-# Deploy to GitHub Pages
-gem "middleman-deploy"
+gem "middleman-blog"
 
 # Javascript dependencies
 # gem "jquery-middleman"
@@ -21,3 +19,5 @@ gem "neat"
 
 # Javascript Cookie
 gem "rails-assets-js-cookie"
+
+gem "nokogiri"

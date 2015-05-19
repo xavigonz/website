@@ -1,0 +1,25 @@
+---
+title: TEST
+date: 2015-05-19 08:33 UTC
+---
+
+As a prominent player in the Dutch online learning market, we are expected to attend the annual [NEXT-Learning](http://www.nextlearning.nl) Event. So we did:
+
+[LearningSpaces at NEXT Learning](/content/images/2015/05/Screen-Shot-2015-05-12-at-10-48-31.png)
+
+In perspective of previous years it’s safe to say innovation in learning has not been going fast in the Netherlands.
+
+E-Learning is big business but still heavily depends on traditions and establishment. It’s almost painful to see that the most future-focused educational companies still rely on SCORM. This is a 15 year old industry standard, which (should have) reached its decline phase by now. But let's not get into the details and impairments of SCORM.
+
+Most of the talks and products we saw were based on principles that are not exactly new or innovative. You can tell something's wrong when the most influential Dutch E-Learning blogger talks about *"What’s it like to follow a MOOC."*
+
+Wasn't **2012** the [Year of the MOOC](http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html)? Late to the party is an understatement here. Also, if you’re wondering what it is like to follow a MOOC, why not try one?
+
+HR and L&D departments have high hopes on technology, but seem hesitant to implement new ways of learning. Impact-analysis, output-research and other ways of measuring and projecting impact gain priority over actually educating professionals. Hence the succes of *hearing* about what it's like to follow a MOOC, in stead of following a MOOC yourself.
+
+Innovations can certainly help people develop. For example,  they can lower barriers to learning, provide a safe learning environment, and connect people to inspiring minds. But in the end, people need to take responsibility for their own development. I believe in autonomous employees who are capable of **knowing what they need to learn** to perform better at work. This is a shift in culture for most companies.
+
+At NEXT Learning, supply and demand seem to have reached a satisfying equilibrium: suppliers won't try to change the mindsets and behaviour of L&D departments with new ways of learning. In return, they can keep making their trusted thick saucy old-school E-Learning material.
+
+Lets leave everything at peace.
+Lets keep it comfortable.

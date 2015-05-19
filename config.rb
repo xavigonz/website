@@ -39,7 +39,7 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
-  def markdown(string)
+  def markitdown(string)
     Kramdown::Document.new(string).to_html
   end
 
@@ -90,6 +90,16 @@ set :relative_links, true
 # activate :livereload, :host => "127.0.0.1"
 
 activate :i18n, :mount_at_root => :nl, :langs => [:nl, :en]
+
+Time.zone = "CET"
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = "{title}.html"
+  blog.layout = "blog_layout"
+  blog.calendar_template = "blog/calendar.html"
+end
+
 activate :directory_indexes
 
 # Build-specific configuration
@@ -108,12 +118,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-activate :deploy do |deploy|
-  deploy.method = :git
-  # Optional Settings
-  # deploy.remote   = "custom-remote" # remote name or git url, default: origin
-  # deploy.branch   = "custom-branch" # default: gh-pages
-  # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
 end
