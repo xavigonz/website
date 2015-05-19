@@ -1,17 +1,16 @@
-
-
 <% wrap_layout :layout do %>
-<section class="gray">
-  <div class="row">
-    <h1>Defacto Blog</h1>
-  </div>
-</section>
 
-<div class="row">
-  <article>
-    <%= yield %>
-  </article>
-</div>
+  <section class="gray">
+    <div class="row">
+      <h1>Defacto Blog</h1>
+    </div>
+  </section>
+
+  <div class="row">
+    <article>
+      <%= yield %>
+    </article>
+  </div>
 
   <section class="gray">
     <h3>Lees meer</h3>
@@ -21,4 +20,5 @@
       <% end %>
     </ol>
   </section>
+
 <% end %>

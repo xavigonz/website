@@ -25,12 +25,12 @@
 #{$all-button-inputs},
 button,
 .button {
-  @include box-sizing(border-box);
   @include appearance(none);
   @include button($action-color);
   @include transition(all 0.15s ease-out);
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
+  box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;

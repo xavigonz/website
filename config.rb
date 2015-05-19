@@ -93,7 +93,7 @@ activate :i18n, :mount_at_root => :nl, :langs => [:nl, :en]
 
 Time.zone = "CET"
 
-page "blog/*", :layout => :article_layout
+page "blog/*", :layout => :blog_post_layout
 page "blog/index.html", :layout => :blog_layout
 page "blog/feed.xml", layout: false
 

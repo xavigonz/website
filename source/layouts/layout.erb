@@ -8,6 +8,7 @@
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag "all" %>
   </head>
@@ -15,7 +16,10 @@
     <%= partial "header" %>
     <%= yield %>
     <%= partial "footer" %>
-    <%= partial "highlight-ebook" %>
-    <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '126011e0-7d76-412b-92de-ad6fb3ab38e2', f: true });done = true;}};})();</script>
+
+    <% if current_page.url != "/blog/" && !is_blog_article? %>
+      <%= partial "highlight-ebook" %>
+      <script type="text/javascript" data-cfasync="false">(function () { var done = false;var script = document.createElement('script');script.async = true;script.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: '126011e0-7d76-412b-92de-ad6fb3ab38e2', f: true });done = true;}};})();</script>
+    <% end %>
   </body>
 </html>
