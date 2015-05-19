@@ -1,12 +1,9 @@
 .hero {
   $hero-color: #fff;
 
-  background-color: $orange-alt;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: $orange-alt no-repeat center fixed;
   background-size: cover;
   color: $hero-color;
-  // padding: $header-height 0 1em;
 
   .hero-inner {
     @include outer-container;
@@ -44,7 +41,6 @@
   }
 
   p {
-    // font-weight: 200;
     line-height: 1.4em;
     margin: 0 auto 2em auto;
 
