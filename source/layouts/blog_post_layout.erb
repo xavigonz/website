@@ -1,16 +1,36 @@
 <% wrap_layout :layout do %>
 
-  <section class="gray">
-    <div class="row">
-      <h1>Defacto Blog</h1>
-    </div>
-  </section>
+  <% author = data.team.find {|person| person[:firstname] == current_article.data.author } %>
 
-  <div class="row">
-    <article>
-      <%= yield %>
-    </article>
-  </div>
+  <article>
+    <header class="post-header">
+      <div class="row">
+        <div class="col">
+          <h1><%= current_article.title %></h1>
+          <time datetime="<%= current_article.date.strftime('%F') %>"><%= I18n.l(current_article.date, :format => '%e %B %Y', :locale => 'nl') %></time>
+        </div>
+      </div>
+    </header>
+
+    <div class="row post-body">
+      <div class="col">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer class="row post-footer">
+      <div class="col">
+        <div class="author">
+          <% if author && href = team_avatar_url(author) %>
+            <%= image_tag href, :alt => "#{author.firstname} #{author.lastname}" %>
+          <% else %>
+            <div class="placeholder no-image"></div>
+          <% end %>
+          <span class="name"><%= author ? "#{author.firstname} #{author.lastname}" : current_article.data.author %></span>
+        </div>
+      </div>
+    </footer>
+  </article>
 
   <section class="gray">
     <h3>Lees meer</h3>

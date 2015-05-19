@@ -1,6 +1,7 @@
 ---
-title: TEST
+title: LearningSpaces at NEXT Learning
 date: 2015-05-19 08:33 UTC
+author: Hugo
 ---
 
 As a prominent player in the Dutch online learning market, we are expected to attend the annual [NEXT-Learning](http://www.nextlearning.nl) Event. So we did:

@@ -5,11 +5,10 @@ source "https://rails-assets.org"
 
 gem "middleman", "~> 3.3.10"
 gem "middleman-blog", "~> 3.5.3"
+# gem "middleman-livereload", "~> 3.4.2"
+
 gem "nokogiri"
 gem "builder"
-
-# Live-reloading plugin
-# gem "middleman-livereload", "~> 3.4.2"
 
 # Bitters, Bourbon, Neat
 # gem "bitters"

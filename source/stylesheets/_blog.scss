@@ -1,6 +1,27 @@
+.blog {
+  article {
+    float: none;
+    margin: 0;
+    width: 100%;
 
-  .blog {
-    article {
-      display: block;
+    .row {
+      padding: 3em 1em;
+    }
+
+    .col {
+      @include span-columns(12);
+
+      @include media($large-up) {
+        @include span-columns(8);
+        @include shift(2);
+      }
     }
   }
+
+  .post-header {
+    background-color: #fbfbfb;
+  }
+
+  .post-body {}
+  .post-footer {}
+}

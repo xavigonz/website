@@ -53,12 +53,16 @@ section {
   }
 }
 
-.content,
 article {
   @include span-columns(12);
 
   @include media($medium-up) {
     @include span-columns(8);
+    @include shift(2);
+
+    &.sidebar-content {
+      @include shift(0);
+    }
   }
 
   ul {
