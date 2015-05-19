@@ -55,7 +55,11 @@ section {
 
 .content,
 article {
-  @include span-columns(8);
+  @include span-columns(12);
+
+  @include media($medium-up) {
+    @include span-columns(8);
+  }
 
   ul {
     margin: $base-spacing 0 $base-spacing (2 * $base-spacing);
