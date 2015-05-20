@@ -3,7 +3,10 @@
     float: none;
     margin: 0;
     width: 100%;
+  }
 
+  article,
+  .post-related {
     .row {
       padding: 3em 1em;
     }
@@ -18,24 +21,24 @@
     }
   }
 
+  .post-meta {
+    color: #9eabb3;
+    display: block;
+    font-size: 0.9em;
+
+    time {
+      display: inline-block;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+  }
+
   .post-header {
     $background-color: #fcfcfc;
     @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
 
     h1 {
       margin-bottom: 0.3em;
-    }
-
-    .post-meta {
-      color: #9eabb3;
-      display: block;
-      font-size: 0.9em;
-    }
-
-    time {
-      display: inline-block;
-      text-transform: uppercase;
-      white-space: nowrap;
     }
   }
 
@@ -63,10 +66,40 @@
       position: absolute;
       top: -$avatar-size / 2;
       z-index: 2;
+
+      &.no-image {
+        background-color: #fbfbfb;
+      }
     }
 
     .author-name {
       font-weight: 700;
+    }
+  }
+
+  .post-related {
+    padding: 0;
+    text-align: left;
+
+    ol {
+      // border-top: $light-gray 1px solid;
+    }
+
+    li {
+      border-top: $light-gray 1px solid;
+      padding: 1em 0;
+    }
+
+    .post-meta {
+      display: inline-block;
+      white-space: nowrap;
+
+      &::before {
+        content: "–";
+        color: #9eabb3;
+        display: inline;
+        margin: 0 0.5rem;
+      }
     }
   }
 }

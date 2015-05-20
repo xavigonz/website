@@ -34,13 +34,22 @@
     </footer>
   </article>
 
-  <section class="gray">
-    <h3>Lees meer</h3>
-    <ol>
-      <% blog.articles[0...10].each do |article| %>
-        <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-      <% end %>
-    </ol>
+  <section class="gray post-related">
+    <div class="row">
+      <div class="col">
+        <h3>Andere artikelen</h3>
+        <ol>
+          <% (blog.articles - [current_article])[0...10].each do |article| %>
+            <li>
+              <%= link_to article.title, article %>
+              <div class="post-meta">
+                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: "nl") %></time>
+              </div>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
   </section>
 
 <% end %>

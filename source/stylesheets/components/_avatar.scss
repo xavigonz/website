@@ -7,9 +7,9 @@
 .avatar {
   @include avatar-size(60px);
   @include user-select(none);
-  background-color: #e6e6e6;
+  background-color: #fbfbfb;
   border-radius: 50%;
-  color: #c6c6c6;
+  color: #d6d6d6;
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -19,7 +19,7 @@
   &.no-image {
     &:before,
     &:after {
-      background-color: #d6d6d6;
+      background-color: #e6e6e6;
       border-radius: 50%;
       content: '';
       left: 50%;
