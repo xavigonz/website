@@ -125,7 +125,6 @@ For our loading indicator we want the cubes faces to shift between 3 colors by a
     background: #f5f5f5;
   }
 }
-
 ```
 
 Now we can apply the animation to the cubes' faces. We configure the animation by setting its name (color-shift), duration (1.2s) and iteration count (infinite). But we don't want the cube's faces to get the same color on each keyframe. So we use `animation-delay` on the 2nd and 3rd face to delay the animation for these elements:
@@ -155,7 +154,7 @@ The [demo](http://codepen.io/snap/pen/MYwVeP?editors=110) below shows the HTML a
 
 The only thing left to do was getting our loading indicator to show up between page transitions in [Ember.js](http://emberjs.com). Fortunately Ember provides [loading substates](http://emberjs.com/guides/routing/loading-and-error-substates/#toc_code-loading-code-substates) that allows you to do just that. Basicly the only thing we had to do is create a top-level template called `loading` and Ember takes care of the rest:
 
-```javascript
+```html
 <script type="text/x-handlebars" data-template-name="loading">
   <h1>Loading ...</h1>
 </script>
