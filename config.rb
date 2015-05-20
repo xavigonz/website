@@ -43,12 +43,8 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :relative_links, true
 
-# Middleman syntax (https://github.com/middleman/middleman-syntax)
-activate :syntax #, line_numbers: true
-
 set :markdown_engine, :kramdown
 set :markdown, input: 'GFM', auto_ids: false
-
 #set :markdown_engine, :redcarpet
 #set :markdown, fenced_code_blocks: true, smartypants: true
 

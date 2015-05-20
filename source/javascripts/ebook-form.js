@@ -1,5 +1,5 @@
 $(function () {
-  // These values should be identical to the ones in _highlight.js
+  // These values should be identical to the ones in _popup.js
   var cookieExpiresOnSubmit = 30;
   var cookiePath = '/';
   var cookiePrefix = 'defacto_';
@@ -7,19 +7,19 @@ $(function () {
 
   // Hide hightlight
   function hideHighlight () {
-    var $highlight = $('#highlight-ebook');
+    var $popup = $('#popup-ebook');
 
-    if ($highlight.length == 0) {
+    if ($popup.length == 0) {
       return;
     }
 
-    $highlight.addClass('highlight-hide');
+    $popup.addClass('popup-hide');
 
     setTimeout(function () {
-      $highlight.remove();
+      $popup.remove();
     }, 400);
 
-    var id = $highlight[0].id;
+    var id = $popup[0].id;
     if (cookieExpiresOnSubmit && id) {
       Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpiresOnSubmit, path: cookiePath });
     }

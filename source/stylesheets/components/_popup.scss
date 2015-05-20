@@ -1,4 +1,4 @@
-@include keyframes(highlight-show) {
+@include keyframes(popup-show) {
   0% {
     @include transform(translateY(30%));
     opacity: 0;
@@ -9,7 +9,7 @@
   }
 }
 
-@include keyframes(highlight-hide) {
+@include keyframes(popup-hide) {
   0% {
     @include transform(translateY(0));
     opacity: 1;
@@ -20,10 +20,10 @@
   }
 }
 
-$highlight-padding: 30px;
-$highlight-mobile-mode: max-width 400px;
+$popup-padding: 30px;
+$popup-mobile-mode: max-width 400px;
 
-.highlight {
+.popup {
   background-color: #fff;
   border-radius: 5px 5px 0 0;
   bottom: 0;
@@ -37,18 +37,18 @@ $highlight-mobile-mode: max-width 400px;
   width: 100%;
   z-index: 999999998;
 
-  @include media($highlight-mobile-mode) {
+  @include media($popup-mobile-mode) {
     max-width: 94%;
     left: 3%;
   }
 
-  &.highlight-show {
-    @include animation(highlight-show 0.9s cubic-bezier(0.77, 0, 0.175, 1));
+  &.popup-show {
+    @include animation(popup-show 0.9s cubic-bezier(0.77, 0, 0.175, 1));
     display: block;
   }
 
-  &.highlight-hide {
-    @include animation(highlight-hide 0.4s ease-in);
+  &.popup-hide {
+    @include animation(popup-hide 0.4s ease-in);
   }
 
   .close {
@@ -88,27 +88,27 @@ $highlight-mobile-mode: max-width 400px;
     white-space: nowrap;
   }
 
-  .highlight-header,
-  .highlight-bottom {
-    padding: $highlight-padding;
+  .popup-header,
+  .popup-bottom {
+    padding: $popup-padding;
     position: relative;
 
-    @include media($highlight-mobile-mode) {
-      padding: $highlight-padding / 1.5;
+    @include media($popup-mobile-mode) {
+      padding: $popup-padding / 1.5;
     }
   }
 
-  .highlight-title {
+  .popup-title {
     font-size: 1.6em;
     font-weight: 300;
     margin: 0;
   }
 
-  .highlight-bottom {
+  .popup-bottom {
     background-color: $lighter-gray;
 
-    @include media($highlight-mobile-mode) {
-      padding-top: $highlight-padding;
+    @include media($popup-mobile-mode) {
+      padding-top: $popup-padding;
     }
 
     &::before {
@@ -136,13 +136,13 @@ $highlight-mobile-mode: max-width 400px;
   }
 }
 
-// Ebook highlight
-#highlight-ebook {
-  .highlight-header {
-    padding-bottom: $highlight-padding / 2;
+// Ebook popup
+#popup-ebook {
+  .popup-header {
+    padding-bottom: $popup-padding / 2;
 
-    @include media($highlight-mobile-mode) {
-      padding-bottom: $highlight-padding / 4;
+    @include media($popup-mobile-mode) {
+      padding-bottom: $popup-padding / 4;
     }
   }
 }

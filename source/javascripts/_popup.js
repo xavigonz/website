@@ -1,7 +1,7 @@
-// Make sure Highlight elements (.highlight) have an ID.
+// Make sure Popup elements (.popup) have an ID.
 
 $(function () {
-  var showScrollTop = 100; // pixels scrolled before showing highlights
+  var showScrollTop = 100; // pixels scrolled before showing popups
   var showDelay = 400; // ms before showing
   var cookieExpiresOnClose = 1 / 24 / 60 * 10; // 10 MINUTES till the cookie expires after closing
   var cookieExpiresOnSubmit = 30; // DAYS the cookie expires after submitting
@@ -11,53 +11,53 @@ $(function () {
   var cookies = Cookies.get();
   var $window = $(window);
   var $body = $('body');
-  var highlightsShown;
+  var popupsShown;
 
   // console.log(Cookies.get()); // show all coockies
-  // Cookies.remove('defacto_highlight-ebook', { path: '/' }); // remove ebook cookie
+  // Cookies.remove('defacto_popup-ebook', { path: '/' }); // remove ebook cookie
 
   // Hide hightlight
-  function hide ($highlight, cookieExpires) {
-    $highlight.addClass('highlight-hide');
+  function hide ($popup, cookieExpires) {
+    $popup.addClass('popup-hide');
 
     setTimeout(function () {
-      $highlight.remove();
+      $popup.remove();
     }, 400);
 
-    var id = $highlight[0].id;
+    var id = $popup[0].id;
     if (cookieExpires && id) {
       Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpires, path: cookiePath });
     }
   }
 
-  // Remove highlights the user has closed
-  $('.highlight').each(function () {
+  // Remove popups the user has closed
+  $('.popup').each(function () {
     if (this.id && cookies[cookiePrefix + this.id] === cookieValue) {
       $(this).remove();
     }
   });
 
-  // Show highlight after scroll
+  // Show popup after scroll
   $window.on('scroll', function () {
 
-    if (!highlightsShown && $window.scrollTop() > showScrollTop) {
+    if (!popupsShown && $window.scrollTop() > showScrollTop) {
       setTimeout(function () {
-        $('.highlight').addClass('highlight-show');
-        highlightsShown = true;
+        $('.popup').addClass('popup-show');
+        popupsShown = true;
       }, showDelay);
     }
   });
 
-  // Close highlight button
-  $body.on('click', '.highlight .close', function (event) {
+  // Close popup button
+  $body.on('click', '.popup .close', function (event) {
     event.preventDefault();
 
-    var $highlight = $(this).closest('.highlight');
-    hide($highlight, cookieExpiresOnClose);
+    var $popup = $(this).closest('.popup');
+    hide($popup, cookieExpiresOnClose);
   });
 
   // Ebook form submit
-  $body.on('submit', '#highlight-ebook form', function (event) {
+  $body.on('submit', '#popup-ebook form', function (event) {
     event.preventDefault();
 
     var ebookUrl = '/pdf/Handboek Leren en laten Leren.pdf';
@@ -83,7 +83,7 @@ $(function () {
     window.open(ebookUrl, '_blank');
 
     // hide hightlight
-    var $highlight = $form.closest('.highlight');
-    hide($highlight, cookieExpiresOnSubmit);
+    var $popup = $form.closest('.popup');
+    hide($popup, cookieExpiresOnSubmit);
   });
 });
