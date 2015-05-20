@@ -19,9 +19,54 @@
   }
 
   .post-header {
-    background-color: #fbfbfb;
+    $background-color: #fcfcfc;
+    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+
+    h1 {
+      margin-bottom: 0.3em;
+    }
+
+    .post-meta {
+      color: #9eabb3;
+      display: block;
+      font-size: 0.9em;
+    }
+
+    time {
+      display: inline-block;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
   }
 
-  .post-body {}
-  .post-footer {}
+  // .post-body {}
+
+  .post-footer {
+    .author {
+      border-top: #ebf2f6 1px solid;
+      position: relative;
+      padding: 3em 0 0 0;
+      text-align: center;
+    }
+
+    .avatar {
+      $avatar-size: 80px;
+
+      @include avatar-size($avatar-size);
+      background-color: #fff;
+      box-shadow: #e7eef2 0 0 0 1px;
+      box-sizing: border-box;
+      display: block;
+      left: 50%;
+      margin-left: -$avatar-size / 2;
+      padding: 6px;
+      position: absolute;
+      top: -$avatar-size / 2;
+      z-index: 2;
+    }
+
+    .author-name {
+      font-weight: 700;
+    }
+  }
 }
