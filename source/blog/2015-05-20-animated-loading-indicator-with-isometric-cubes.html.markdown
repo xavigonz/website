@@ -3,6 +3,7 @@ title: Animated loading indicator with isometric cubes
 date: 2015-05-20 14:10 CEST
 author: Matthijs
 published: true
+featured: true
 tags:
 ---
 
@@ -11,7 +12,7 @@ Fortunately [LearningSpaces](http://learningspaces.io/) is pretty fast and there
 
 So we can't prevent loading time but we can make it less boring. Show something awesome instead of a simple spinner or loading message. At least tickle the user's senses a bit while waiting. The first thing that came to mind was the __[isometric](http://en.wikipedia.org/wiki/Isometric)__ shape in our logo, consisting of a cube within a cube (or three times the letter "L" surrounding a cube). Perfect for our loading indicator:
 
-![LearningSpaces logo](/content/images/2014/Nov/wireframe-2.png)
+![LearningSpaces logo](http://blog.learningspaces.io/content/images/2014/Nov/wireframe-2.png)
 
 In this post I will explain and demonstrate how we recreated and animated our logo, and how to use it as a loading indicator in Ember.js.
 
