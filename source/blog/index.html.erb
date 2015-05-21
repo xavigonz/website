@@ -29,7 +29,7 @@
 
             <footer class="post-footer">
               <div class="post-meta">
-                <% author = data.team.find {|person| person[:firstname] == article.data.author } %>
+                <% author = blog_author(article) %>
                 <span class="author-name"><%= author ? "#{author.firstname} #{author.lastname}" : article.data.author %></span>
                 <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: "nl") %></time>
               </div>

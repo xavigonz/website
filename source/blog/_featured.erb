@@ -7,7 +7,7 @@
 
 # Get single featured post
 featured = blog.articles.find{ |item| item.metadata[:page]["featured"] rescue false }
-author = data.team.find {|person| person[:firstname] == featured.data.author }
+author = blog_author(featured)
 author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.author
 %>
 

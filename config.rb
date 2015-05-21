@@ -132,4 +132,9 @@ helpers do
     lang = options[:language] ? options[:language] : I18n.locale.to_s
     "/#{lang}/#{path}"
   end
+
+  # Get blog author hash
+  def blog_author(article)
+    data.team.find{ |person| person[:firstname] == article.data.author }
+  end
 end
