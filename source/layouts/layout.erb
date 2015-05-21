@@ -12,9 +12,11 @@
     <%= stylesheet_link_tag "main" %>
     <%= javascript_include_tag "all" %>
   </head>
-  <body class="<%= page_classes %>">
+  <body class="<%= page_classes %> <%= "blog_article" if is_blog_article? %>">
     <%= partial "header" %>
-    <%= yield %>
+    <div id="main" role="main">
+      <%= yield %>
+    </div>
     <%= partial "footer" %>
 
     <% if current_page.url != "/blog/" && !is_blog_article? %>

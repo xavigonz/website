@@ -1,6 +1,8 @@
 <% wrap_layout :layout do %>
-
-  <% author = data.team.find {|person| person[:firstname] == current_article.data.author } %>
+  <%
+  author = data.team.find {|person| person[:firstname] == current_article.data.author }
+  author_name = author ? "#{author.firstname} #{author.lastname}" : current_article.data.author
+  %>
 
   <article>
     <header class="post-header">
@@ -8,6 +10,7 @@
         <div class="col">
           <h1><%= current_article.title %></h1>
           <div class="post-meta">
+            <span class="author-name"><%= author_name %></span>
             <time datetime="<%= current_article.date.strftime('%F') %>"><%= I18n.l(current_article.date, format: "%e %B %Y", locale: "nl") %></time>
           </div>
         </div>
@@ -28,7 +31,7 @@
           <% else %>
             <div class="avatar no-image"></div>
           <% end %>
-          <h4 class="author-name"><%= author ? "#{author.firstname} #{author.lastname}" : current_article.data.author %></h4>
+          <h4 class="author-name"><%= author_name %></h4>
         </div>
       </div>
     </footer>

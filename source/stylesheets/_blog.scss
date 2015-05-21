@@ -1,12 +1,5 @@
 .blog {
-  article {
-    float: none;
-    margin: 0;
-    width: 100%;
-  }
-
-  article,
-  .post-related {
+  #main {
     .row {
       padding: 3em 1em;
     }
@@ -21,6 +14,12 @@
     }
   }
 
+  article {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
   .post-meta {
     color: #9eabb3;
     display: block;
@@ -30,19 +29,15 @@
       display: inline-block;
       text-transform: uppercase;
       white-space: nowrap;
+
+      &::before {
+        content: "–";
+        color: #9eabb3;
+        display: inline;
+        margin: 0 0.5em 0 0.4em;
+      }
     }
   }
-
-  .post-header {
-    $background-color: #fcfcfc;
-    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
-
-    h1 {
-      margin-bottom: 0.3em;
-    }
-  }
-
-  // .post-body {}
 
   .post-footer {
     .author {
@@ -71,19 +66,11 @@
         background-color: #fbfbfb;
       }
     }
-
-    .author-name {
-      font-weight: 700;
-    }
   }
 
   .post-related {
     padding: 0;
     text-align: left;
-
-    ol {
-      // border-top: $light-gray 1px solid;
-    }
 
     li {
       border-top: $light-gray 1px solid;
@@ -93,13 +80,55 @@
     .post-meta {
       display: inline-block;
       white-space: nowrap;
+    }
+  }
+}
 
-      &::before {
-        content: "–";
-        color: #9eabb3;
-        display: inline;
-        margin: 0 0.5rem;
-      }
+.blog_index {
+  article {
+    border-bottom: $lighter-gray 1px solid;
+    padding: 2.4em 0;
+  }
+
+  li:first-child article {
+    padding-top: 0;
+  }
+
+  .blog-header {
+    $background-color: #fcfcfc;
+    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+    padding: 0;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .post-body {
+    margin: 1em 0;
+  }
+
+  .post-header {
+    h2 {
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+  }
+}
+
+.blog_article {
+  .post-header {
+    $background-color: #fcfcfc;
+    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .post-footer {
+    .author-name {
+      font-weight: 700;
     }
   }
 }

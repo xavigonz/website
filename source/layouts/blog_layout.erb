@@ -1,13 +1,13 @@
 <% wrap_layout :layout do %>
 
-  <section class="gray">
+  <section class="blog-header">
     <div class="row">
-      <h1>Defacto Blog</h1>
+      <div class="col">
+        <h1>Defacto Blog</h1>
+      </div>
     </div>
   </section>
 
-  <article>
-    <%= yield %>
-  </article>
+  <%= yield %>
 
 <% end %>
