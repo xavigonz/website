@@ -29,7 +29,7 @@ author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.
     <!-- <footer class="post-footer">
       <div class="author">
         <% if author && href = team_avatar_url(author) %>
-          <%= image_tag href, alt: "#{author.firstname} #{author.lastname}", class: "avatar" %>
+          <%= image_tag href, alt: author_name, class: "avatar" %>
         <% else %>
           <div class="avatar no-image"></div>
         <% end %>
