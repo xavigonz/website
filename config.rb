@@ -133,8 +133,10 @@ helpers do
     "/#{lang}/#{path}"
   end
 
-  # Get blog author hash
+  # Get blog author
   def blog_author(article)
-    data.team.find{ |person| person[:firstname] == article.data.author }
+    author = article.data.author
+    author = author.present? ? author.capitalize : author
+    data.team.find{ |person| person[:firstname] == author }
   end
 end
