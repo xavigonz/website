@@ -201,6 +201,8 @@ Contact info
 */
 
 #contact-info {
+  $desktop-mode: $medium-up;
+
   background: #fbfaf8;
   border-top: $base-border;
   clear: both;
@@ -209,20 +211,16 @@ Contact info
   position: relative;
 
   .row {
-    @include fill-parent();
-    @include row(table);
     padding: 0;
   }
 
   .col {
-    @include span-columns(4);
     @include pad();
-    border-right: $base-border;
+    border-bottom: $base-border;
     font-size: 1.2em;
     vertical-align: middle;
 
     &:last-child {
-      @include reset-display;
       border: none;
     }
 
@@ -231,6 +229,23 @@ Contact info
       margin-right: 10px;
       font-size: 1.6em;
       vertical-align: middle;
+    }
+  }
+
+  @include media ($desktop-mode) {
+    .row {
+      @include fill-parent();
+      @include row(table);
+    }
+
+    .col {
+      @include span-columns(4);
+      border-bottom: none;
+      border-right: $base-border;
+
+      &:last-child {
+        @include reset-display;
+      }
     }
   }
 }
