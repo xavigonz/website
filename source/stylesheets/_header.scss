@@ -1,14 +1,10 @@
 #header {
-  $header-height: 80px;
   $desktop-mode: $medium-up;
 
   @include clearfix;
   background-color: #fff;
-  // background-color: rgba(#fff, 0.5);
   height: $header-height;
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: relative;
   width: 100%;
   z-index: 999;
 
@@ -67,14 +63,15 @@
   }
 
   #header-menu {
+    background: #fff;
     clear: both;
     display: none;
     margin: 0 auto;
     overflow: visible;
     padding: 1em 0;
+    text-align: left;
     width: 100%;
     z-index: 9999;
-    background: #fff;
 
     @include media ($desktop-mode) {
       display: inline;
@@ -87,9 +84,7 @@
       display: block;
       margin: 0 20px;
       overflow: hidden;
-      width: 100%;
       z-index: 9999;
-
 
       a {
         color: #444;
@@ -117,7 +112,6 @@
         display: inline;
         line-height: $header-height;
         margin-left: .5em;
-        text-align: center;
         text-decoration: none;
         width: auto;
 

@@ -3,6 +3,10 @@
 // Layout
 // ------------------------------------------------------------
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 section {
   padding: 3em 0;
 
