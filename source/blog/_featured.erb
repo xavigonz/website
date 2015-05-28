@@ -1,0 +1,40 @@
+<%
+# # Get all featured posts
+# featured = blog.articles.select{ |item| item.metadata[:page]["featured"] rescue false }
+# featured.each_with_index do |article, i|
+#   concat article.title
+# end
+
+# Get single featured post
+featured = blog.articles.find{ |item| item.metadata[:page]["featured"] rescue false }
+author = blog_author(featured)
+author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.author
+%>
+
+<div class="row blog blog-featured">
+  <article>
+    <header class="post-header">
+      <h1><%= link_to featured.title, featured.url %></h1>
+      <div class="post-meta">
+        <span class="author-name"><%= author_name %></span>
+        <time datetime="<%= featured.date.strftime('%F') %>"><%= I18n.l(featured.date, format: "%e %B %Y", locale: "nl") %></time>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <%= Nokogiri::HTML(featured.summary(400)).text %>
+      <%= link_to "lees verder", featured.url, class: "read-more" %>
+    </div>
+
+    <!-- <footer class="post-footer">
+      <div class="author">
+        <% if author && href = team_avatar_url(author) %>
+          <%= image_tag href, alt: author_name, class: "avatar" %>
+        <% else %>
+          <div class="avatar no-image"></div>
+        <% end %>
+        <h4 class="author-name"><%= author_name %></h4>
+      </div>
+    </footer> -->
+  </article>
+</div>

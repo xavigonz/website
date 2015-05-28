@@ -1,0 +1,58 @@
+<% wrap_layout :layout do %>
+  <%
+  author = blog_author(current_article)
+  author_name = author ? "#{author.firstname} #{author.lastname}" : current_article.data.author
+  %>
+
+  <article>
+    <header class="post-header">
+      <div class="row">
+        <div class="col">
+          <h1><%= current_article.title %></h1>
+          <div class="post-meta">
+            <span class="author-name"><%= author_name %></span>
+            <time datetime="<%= current_article.date.strftime('%F') %>"><%= I18n.l(current_article.date, format: "%e %B %Y", locale: "nl") %></time>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="row post-body">
+      <div class="col">
+        <%= yield %>
+      </div>
+    </div>
+
+    <footer class="row post-footer">
+      <div class="col">
+        <div class="author">
+          <% if author && href = team_avatar_url(author) %>
+            <%= image_tag href, alt: author_name, class: "avatar" %>
+          <% else %>
+            <div class="avatar no-image"></div>
+          <% end %>
+          <h4 class="author-name"><%= author_name %></h4>
+        </div>
+      </div>
+    </footer>
+  </article>
+
+  <section class="gray post-related">
+    <div class="row">
+      <div class="col">
+        <h3>Meer artikelen</h3>
+        <ol>
+          <% (blog.articles - [current_article])[0...10].each do |article| %>
+            <li>
+              <%= link_to article.title, article %>
+              <div class="post-meta">
+                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: "nl") %></time>
+              </div>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+<% end %>

@@ -3,6 +3,10 @@
 // Layout
 // ------------------------------------------------------------
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 section {
   padding: 3em 0;
 
@@ -12,8 +16,6 @@ section {
 
   &.gray {
     background-color: #fbfbfb;
-    // border-bottom: $base-border;
-    // border-top: $base-border;
   }
 }
 
@@ -24,7 +26,12 @@ section {
 }
 
 .sidebar {
-  @include span-columns(4);
+  @include span-columns(12);
+
+  @include media($medium-up) {
+    @include span-columns(4);
+  }
+
   background-color: #f9f9f9;
   padding: 1em;
 
@@ -53,9 +60,17 @@ section {
   }
 }
 
-.content,
 article {
-  @include span-columns(8);
+  @include span-columns(12);
+
+  @include media($medium-up) {
+    @include span-columns(8);
+    @include shift(2);
+
+    &.sidebar-content {
+      @include shift(0);
+    }
+  }
 
   ul {
     margin: $base-spacing 0 $base-spacing (2 * $base-spacing);

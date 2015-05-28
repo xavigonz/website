@@ -1,0 +1,53 @@
+---
+#pageable: true
+#per_page: 2
+---
+
+<section class="row">
+  <div class="col">
+
+    <% if paginate && num_pages > 1 %>
+      <p>Page <%= page_number %> of <%= num_pages %></p>
+      <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
+      <% end %>
+    <% end %>
+
+    <ol>
+      <% page_articles.each_with_index do |article, i| %>
+        <li>
+          <article>
+
+            <header class="post-header">
+              <h2><%= link_to article.title, article.url %></h2>
+            </header>
+
+            <div class="post-body">
+              <%#= article.summary(250) %>
+              <%= Nokogiri::HTML(article.summary).text %>
+            </div>
+
+            <footer class="post-footer">
+              <div class="post-meta">
+                <%
+                author = blog_author(article)
+                author_name = author ? "#{author.firstname} #{author.lastname}" : article.data.author
+                %>
+                <span class="author-name"><%= author_name %></span>
+                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: "nl") %></time>
+              </div>
+            </footer>
+
+          </article>
+        </li>
+      <% end %>
+    </ol>
+
+    <% if paginate %>
+      <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>
+
+  </div>
+</section>

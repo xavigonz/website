@@ -2,11 +2,11 @@
   <ol>
 
     <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |person| %>
-      <li class="person">
+      <li>
         <% if href = team_avatar_url(person) %>
-          <%= image_tag href, :alt => person.firstname + " " + person.lastname %>
+          <%= image_tag href, alt: "#{person.firstname} #{person.lastname}", class: "avatar" %>
         <% else %>
-          <div class="placeholder no-image"></div>
+          <div class="avatar no-image"></div>
         <% end %>
         <h5>
           <span><%= person.firstname %></span>
@@ -17,7 +17,7 @@
 
     <li class="you">
       <a href="http://jobs.defacto.nl" target="_blank">
-        <div class="placeholder">jij?</div>
+        <div class="avatar">jij?</div>
         <h5>
           <span>Werken bij</span>
           <span>Defacto</span>
