@@ -1,28 +1,34 @@
 var map;
+var mapLocation = new google.maps.LatLng(53.212124, 6.57214);
 
-function mapInit() {
-  var canvas = document.getElementById('map-canvas');
+function mapInit () {
+  var mapCanvas = document.getElementById('map-canvas');
 
-  if (canvas) {
-    var defactoHQ = new google.maps.LatLng(53.212124, 6.57214);
+  if (mapCanvas) {
     var mapOptions = {
       zoom: 16,
-      center: defactoHQ,
+      center: mapLocation,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       scrollwheel: false,
       draggable: true
     };
 
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    map = new google.maps.Map(mapCanvas, mapOptions);
 
-    var image = '/images/marker-orange.svg';
-    var defactoMarker = new google.maps.Marker({
-      position: defactoHQ,
+    var mapMarker = new google.maps.Marker({
+      position: mapLocation,
       clickable: false,
       map: map,
-      icon: image
+      icon: '/images/marker-orange.svg'
     });
+
+    mapCenter();
+    google.maps.event.addDomListener(window, 'resize', mapCenter);
   }
+}
+
+function mapCenter () {
+  map.setCenter(mapLocation);
 }
 
 google.maps.event.addDomListener(window, 'load', mapInit);

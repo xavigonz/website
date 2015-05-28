@@ -182,30 +182,41 @@ Map
 */
 
 #map {
-  clear: both;
-  position: relative;
+  $desktop-mode: $medium-up;
+
   background: #fbfaf8;
   border-top: $base-border;
+  clear: both;
+  position: relative;
 
   #map-canvas {
+    height: 300px;
     width: 100%;
-    height: 600px;
+
+    @include media ($desktop-mode) {
+      height: 600px;
+    }
   }
 
   .contact-form {
-    position: absolute;
-    top: 75px;
-    left: 160px;
-    width: 350px;
-    padding: 30px;
     background: #fbfaf8;
     border-radius: 5px;
     box-shadow: 0px 2px 10px rgba(#000, .1);
+    display: none;
+    left: 160px;
+    padding: 30px;
+    position: absolute;
+    top: 75px;
+    width: 350px;
 
     input,
     textarea {
       display: block;
       width: 100%;
+    }
+
+    @include media ($desktop-mode) {
+      display: block;
     }
   }
 }
