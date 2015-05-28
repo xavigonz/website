@@ -2,5 +2,8 @@
   "name": "defacto-website",
   "root": "build",
   "clean_urls": false,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "cache_control": {
+    "/**": 31536000
+  }
 }
