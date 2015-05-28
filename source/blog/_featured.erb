@@ -7,8 +7,10 @@
 
 # Get single featured post
 featured = blog.articles.find{ |item| item.metadata[:page]["featured"] rescue false }
-author = blog_author(featured)
-author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.author
+
+if featured
+  author = blog_author(featured)
+  author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.author
 %>
 
 <div class="row blog blog-featured">
@@ -38,3 +40,5 @@ author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.
     </footer> -->
   </article>
 </div>
+
+<% end %>
