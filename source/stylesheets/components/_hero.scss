@@ -15,7 +15,11 @@
     button,
     .button {
       font-size: 1.3em;
-      margin: 0 1em;
+      margin-top: 1em;
+
+      @include media($medium-up) {
+        margin: 1em 1em 0;
+      }
     }
   }
 

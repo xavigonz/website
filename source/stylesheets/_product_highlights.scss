@@ -21,11 +21,12 @@
   }
 
   .inner {
-    // background: rgba(#fff, .2);
     margin: 0 auto;
+    padding: 0 1em;
 
     @include media($medium-up) {
       max-width: 600px;
+      padding: 0;
       width: 80%;
     }
   }
@@ -45,7 +46,7 @@
   .sub-headline {
     color: #fff;
     font-size: 1.5em;
-    margin: 1.4em 0 1.6em ;
+    margin: 1.4em 0;
 
     a {
       color: #fff;
@@ -53,9 +54,9 @@
     }
   }
 
-  [class^="button"],
-  [class*=" button"] {
-    margin: 0 0.5em;
+  .button,
+  button {
+    margin: 0.5em;
   }
 
   .col-capp,
