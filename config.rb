@@ -58,8 +58,8 @@ Time.zone = "CET"
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
-  blog.tag_template = "blog/tag.html"
-  blog.calendar_template = "blog/calendar.html"
+  # blog.tag_template = "blog/tag.html"
+  # blog.calendar_template = "blog/calendar.html"
   blog.paginate = false
   # blog.per_page = 10
 end
