@@ -5,5 +5,16 @@
   "error_page": "error.html",
   "cache_control": {
     "/**": 31536000
+  },
+  "redirects": {
+    "/capp-11": "/capp",
+    "/capp-learning-management": "/capp",
+    "/capp-performance-talent-management": "/capp",
+    "/e-learning-starterkit": "/elearning-starter-kit/",
+    "/news/125/61/Handboek-E-Learning-Leren-en-laten-leren": "/",
+    "/organisatie": "/over-ons/",
+    "/vacatures": "http://jobs.defacto.nl",
+    "/routebeschrijving": "/contact"
   }
 }
+
