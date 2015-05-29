@@ -13,4 +13,26 @@
     // background-position: 0 -100px;
     // background-size: 1729px 700px;
   }
+
+  .cta {
+    color: lighten($medium-gray, 20);
+    padding: 2em 0;
+
+    h3 {
+      display: inline-block;
+      margin: 0.5em 0.2em;
+    }
+
+    .phone {
+      display: inline-block;
+      padding: 0 0.1em;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    .button {
+      margin: 0.5em 0.2em;
+      vertical-align: top;
+    }
+  }
 }
