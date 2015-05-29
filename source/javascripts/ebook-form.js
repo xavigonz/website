@@ -29,7 +29,7 @@ $(function () {
   $('#ebook-download form').on('submit', function (event) {
     event.preventDefault();
 
-    var ebookUrl = '/pdf/Handboek Leren en laten Leren.pdf';
+    var ebookUrl = '/pdf/Handboek_Leren_en_laten_Leren.pdf';
     var $form = $(this);
     var $submit = $form.find('button[type=submit]');
 
