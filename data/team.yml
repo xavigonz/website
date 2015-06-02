@@ -87,6 +87,10 @@
   lastname: Buitenkamp
   email: l.buitenkamp@defacto.nl
 
+- firstname: Lizette
+  lastname: Weening
+  email: l.weening@defacto.nl
+
 - firstname: Maarten
   lastname: Jacobs
   email: m.jacobs@defacto.nl
@@ -126,6 +130,10 @@
 - firstname: Romke
   lastname: Bon
   email: r.bon@defacto.nl
+
+- firstname: Steef
+  lastname: Sinkeler
+  email: steef@defacto.nl
 
 - firstname: Tim
   lastname: Bakker
