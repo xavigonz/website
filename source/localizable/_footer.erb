@@ -7,7 +7,7 @@
         <ul>
           <li><%= link_to "CAPP Leren & Ontwikkelen", "/capp.html" %></li>
           <li><%= link_to "Kwaliteitspaspoort", "/kwaliteitspaspoort.html" %></li>
-          <li><%= link_to "E-Learning Starterkit", "/elearning-starter-kit.html" %></li>
+          <li><%= link_to "E-Learning Starterkit", "/elearning-starterkit.html" %></li>
           <li><%= link_to "LearningSpaces", "/learningspaces.html" %></li>
           <li><%= link_to "360°-Feedback", "/360.html" %></li>
         </ul>
@@ -48,7 +48,7 @@
 
   <div class="copyright">
     <div class="row">
-      &copy; 1987 - <%= Time.now.year %> Defacto
+      <%= t("footer.copyright_html", { year: Time.now.year }) %>
     </div>
   </div>
 </footer>

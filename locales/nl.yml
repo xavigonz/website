@@ -1,159 +1,134 @@
 ---
 nl:
 
-  # paths:
-  #   "over-ons": "over-ons"
-  #   test: test
+  actions:
+    read_more: Lees verder
+    visit_website: Bezoek de website
 
-# main navigation
-  menu: "Menu"
-  home: "Home"
-  solutions: "Producten"
-  about: "Over ons"
-  contact: "Contact"
-  blog: "Blog"
+  header:
+    menu: Menu
+    home: Home
+    products: Producten
+    services: Diensten
+    about: Over ons
+    contact: Contact
+    blog: Blog
 
-# LearningSpaces
+  home:
+    hero:
+      title: Developing People
+      since: sinds 1987
+      text: Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen.
+    cta:
+      text_html: Meer weten? Bel <a href="tel:+31503144832" class="phone">050 314 48 32</a> of
+      button: Maak een afspraak
+      form_title: Maak een afspraak
+      form_submit: Maak een afspraak
+      email_placeholder: E-mail
+    solutions:
+      headline: Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers
+      learn:
+        title: Leren
+        text_html: "De stille, krachtige motor van uw academie. Stroomlijn processen en bespaar tijd. Creëer inzicht met %{link} Leren."
+        keywords:
+          - Opleidingsadministratie
+          - Leermanagament
+          - E-Learning / ELO
+      develop:
+        title: Ontwikkelen
+        text_html: "Geef medewerkers efficiënte tools voor hun ontwikkelprocessen en een overzichtelijk persoonlijk portfolio."
+        keywords:
+          - 360° feedback
+          - Compententies
+          - Jaargesprekken
+      quality:
+        title: Kwaliteitsparpoort
+        text_html: "Real-time inzicht in vakbevoegdheid van uzelf, uw team en uw organisatie. Voldoe permanent en zichtbaar aan de (formele) kwaliteitseisen."
+        keywords:
+          - Kwaliteitmonitor
+          - Accrediteren
+          - Certificeren
+          - Managementinformatie
+      informal:
+        title: Informeel Leren
+        text_html: "%{link} is een laagdrempelig sociaal leerplatform dat kennisdeling en leren en stimuleert."
+        keywords:
+          - Direct aan de slag met Learning Communities
+          - Snel en eenvoudig kennis delen
+          - Kennis produceren en consumeren
+    highlights:
+      capp:
+        text_html: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
+      learningspaces:
+        text_html: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+
+  products:
+    title: Producten waar we trots op zijn.
+    products:
+      capp:
+        name: CAPP
+        desc: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
+      kpp:
+        name: Kwaliteitspaspoort
+        logo: logos/kwaliteitspaspoort.svg
+        desc: "Garandeer kwaliteit binnen uw organisatie door te werken aan bevoegdheden en bekwaamheden van uw medewerkers. Maak uw organisatie toekomstbestendig met het %{link}."
+      ls:
+        name: LearningSpaces
+        logo: logos/learningspaces-white.png
+        desc: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+      esk:
+        name: E-Learning Starterkit
+        desc: "Maak je eigen content met de %{link}. Zo bespaar je geld en sluit je content beter aan bij je behoeften. De E-Learning Starterkit bevat alles wat je nodig hebt om meteen van start te gaan."
+      threesixty:
+        name: 360° Feedback
+        logo: logos/360logo.svg
+        desc: "Maak een efficiëntieslag in je HRD. %{link} maakt het voor medewerkers eenvoudig hun zelfkennis te vergroten en ontwikkeldoelen op te stellen."
+
+  services:
+    title: Diensten waar we trots op zijn.
+    services:
+      elearning:
+        name: E-Learning
+        desc: "Met Defacto als ervaren en technisch onderlegde partner, wordt de %{link} in jouw organisatie onherroepelijk een succes."
+      implementaties:
+        name: Implementaties
+        desc: "Defacto heeft een eigen %{link} ontwikkeld waarin onze projectleider en consultants samen met uw management team de strategie en uitvoering waarborgen."
+        link: implementatiemethodiek
+      hosting:
+        name: "Hosting & Security"
+        desc: "Met 25 jaar ervaring in ICT-implementaties bij grote (overheids) instanties weten wij bij uitstek dat gedegen %{link} van essentieel belang is."
+        link: hosting en informatiebeveiliging
+      koppelingen:
+        name: Koppelingen
+        desc: "Onze software kan %{link} worden met verschillende systemen."
+        link: geintegreerd
+
+  capp:
+    hero:
+      title: "Opleiden & Leren met CAPP LMS"
+      text: __CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+
   learningspaces:
     hero:
-      title: LearningSpaces
-      sub: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+      text: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+      visit_website: Bezoek de website
+      try_free: Probeer gratis
 
-# header
-  slogan: "Developing People"
-  tagline: "Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen."
-  header_call_to_action: "meer weten?"
-  what_we_do_html: "Wij ontwikkelen innovatieve software in het werkveld van Opleiden & Ontwikkelen. %{href}"
-  what_we_do_href: "Bekijk onze showcase om te zien wat er mogelijk is."
-# markets
-  markets_intro: "Ziekenhuizen, ministeries en grote organisaties in het bedrijfsleven werken met onze software."
-  healthcare_title: "Zorg"
-  healthcare_content_html: |
-    Voldoe aan de hoge kwaliteitseisen en borg vakbevoegdheid met het Kwaliteitspaspoort™.
-    Wij helpen zorginstellingen hun leeractiviteiten te moderniseren en met het implementeren van E-Learning.
-  government_title: "Overheid"
-  government_content: |
-    Met onze innovatieve leeroplossingen creëren we samen een digitale academie met E-Learning,
-    coaching en een functiespecifiek Opleidingspaspoort.
-  business_title: "Bedrijfsleven"
-  business_content: |
-    Verrijk je corporate academy met E-Learning, informeel leren en gamification, gericht op
-    compliance, talentontwikkeling en het delen van kennis.
-# highlights
-  capp_leren_title: "Samen een business case maken over hoeveel je kunt besparen met onze software?"
-  capp_leren_content: |
-    Elke organisatie is anders. Wil je concreet voor je zien wat CAPP en E-Learning jóuw organisatie opleveren?
-  starter_kit_title: "Maak nu je eigen content met de E-Learning Starter Kit"
-  starter_kit_content: |
-    Maak je eigen content met de E-Learning Starterkit. Zo bespaar je geld en sluit je content beter aan bij je behoeften.
-    De E-Learning Starterkit bevat alles dat je nodig hebt om meteen van start te gaan.
-  kpp_title: "Haal je accreditatie met het Kwaliteitspaspoort&trade;"
-  kpp_content: |
-    Volledige compliance met het CAPP Kwaliteitspaspoort. Een persoonsgebonden profiel
-    waarin de bekwaamheden en bevoegdheden in één keer inzichtelijk zijn voor werknemer,
-    werkgever en toezichthoudende instanties.
-  solutions_call_to_action: "Lees meer"
-# references
-  others_title: "Wat anderen zeggen"
-  others_quote: |
-    Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen in het verder
-    toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de patiënt -
-    het steeds beter te doen staat in alles voorop"
-  others_name: "Bruno de Hoogd"
-  others_title: "Directeur HRM, Maxima Medisch Centrum"
-  case_title: "Case: Gemeente Den Haag"
-  case_content: |
-    Hoe ziet een samenwerking met Defacto er in de praktijk uit? Laten we onze samenwerking met de gemeente Den Haag als voorbeeld nemen.
-    Den Haag is bezig met het project Vakmanschap, een mooi project dat door coaching, opleiding en toetsing tegelijkertijd de vakbekwaamheid en de werktevredenheid van haar werknemers vergroot. Defacto levert de software waarmee dit wordt gerealiseerd. De samenwerking blijkt een schot in de roos, zowel in het onderling contact, als bij de medewerkers die de producten van Defacto nu gebruiken om eenvoudig door relevante opleidingen te bladeren, competenties bij te houden en hun ontwikkeling vorm te geven.
-    Den Haag is inmiddels ook een belangrijke launching partner voor Defacto. Zij krijgen de beschikking over onze nieuwste software en geven richting aan het ontwikkelproces door feedback uit de praktijk. Elke ontmoeting maakt beide partijen steeds weer enthousiast over de toekomst.
-  case_call_to_action: "Sluit ook zo’n vriendschap met Defacto"
-# footer (contact section)
-  name: "Naam"
-  organization: "Bedrijf of organisatie"
-  phone: "Telefoon"
-  email: "E-mail"
-  message: "Bericht"
-  send: "Verstuur bericht"
-# ================== ^ Landing page ^ ===============
-# solutions page
-  solutions_page_title: "Producten"
-  solutions_page_intro: "Wij ontwikkelen software waar we trots op zijn."
-  solutions_page_capp_title: "CAPP"
-  solutions_page_capp_description: |
-    Met CAPP Kwaliteitspaspoort krijgen zowel werknemers en werkgevers duidelijk zicht op specifieke functie-eisen
-    en algemene organisatie-eisen. Elke medewerker krijgt een Kwaliteitspaspoort,
-    een profiel waarin overzichtelijk wordt weergegeven welke kwalificaties een medewerker heeft behaald,
-    en welke consequenties dat heeft voor de uitoefening van zijn of haar functie.
-    Met het Kwaliteitspaspoort wordt de kwaliteit in uw organisatie aantoonbaar voor medewerkers, leidinggevenden en accrediterende organisaties.
-  solutions_page_starter_kit_title: "E-Learning (Starter Kit)"
-  solutions_page_starter_kit_description: |
-    De productie van E-Learningcontent uitbesteden is vaak duur, en je blijft uiteindelijk zitten met een product dat net niet lekker aansluit op de werkvloer. Het is goedkoper en effectiever om het in eigen hand te nemen.
-    De E-Learning Starterkit bevat alles dat je nodig hebt om meteen van start te kunnen. Minimaliseer de opstartfase en begin meteen met het maken van je eigen content.
-  solutions_page_360_title: "360&deg;-Feedback"
-  solutions_page_360_description: |
-    Ontwikkeling begint bij zelfkennis. 360° Feedback helpt medewerkers aan deze zelfkennis door vragenlijsten te sturen aan bijvoorbeeld collega’s,
-    managers, ondergeschikten en klanten. Op deze manier breng je snel en gemakkelijk de krachten en zwaktes van een medewerker in beeld en
-    kan je beginnen aan een ontwikkelplan. 360° Feedback is interessant voor organisaties die van hun medewerkers verwachten dat ze aan
-    hun eigen ontwikkeling werken, en die willen dat dat zo weinig mogelijk afleidt van de dagelijkse praktijk.
-    360° Feedback is snel, duidelijk en effectief.
-  solutions_page_jaargesprekken_title: "Jaargesprekken (Conversations)"
-  solutions_page_jaargesprekken_description: |
-    Het is belangrijk om het werk van medewerkers regelmatig te evalueren. Zo weet je zeker of je nog op één lijn zit, het laat de medewerker weten dat
-    zijn werk erkend en gewaardeerd wordt, en het is mogelijkheid voor zowel de werkgever als de medewerker om pijnpunten te bespreken.
-    Het positieve effect ervan zal echter kort duren als het volkomen geïsoleerd van de praktijk plaatsvindt.
-    Met de Jaargesprekken-app geef je context aan het jaargesprek, je verzamelt in de aanloop ernaar toe thema’s die ter sprake moeten worden gebracht,
-    en achteraf kun je duidelijk inzien welke doelen er gesteld zijn.
-  solutions_page_innovation_title: "Research & Development"
-  solutions_page_innovation_description: ""
-# About us page
-  about_us_title: "Over ons"
-  about_us_story: |
-    Op de werkvloer van Defacto is een bonte mix te vinden van jong en oud. Defacto gelooft in jong talent en in het bijzonder in jong talent dat
-    begeleid wordt door mensen met ervaring in het vak. Binnen het team van Defacto staan kennisoverdracht, eigen inbreng en creatief nadenken centraal.
-    Als er nieuwe kansen zijn, worden ze gegrepen, nieuwe mogelijkheden worden onderzocht. Deze kruisbestuiving van verschillende generaties maakt dat
-    Defacto zonder moeite in kan spelen op ontwikkelingen en haar medewerkers hun talent volop kunnen ontplooien.
-  team_intro: "Lorem Ipsum team intro flavor"
-  team_title: "Ons Team"
-# Healthcare page
-  healthcare_page_title: "Topzorg"
-  healthcare_page_description: "Lorem Ipsum"
-# Government page
-  government_page_title: "Overheid"
-  government_page_description: "Lorem Ipsum"
-# Business page
-  business_page_title: "Bedrijfsleven"
-  business_page_description: "Hipster Ipsum"
-# =============
-# CAPP page
-  capp_title: "CAPP"
-  capp_description: "__CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen."
-# E-Learning Starter Kit Page
-  starter_kit_title: "E-Learning Starter Kit"
-  starter_kit_description: "Lorem tekst uit productsheet ipsum"
-# 360 page
-  360_title: "360&deg;-Feedback"
-  360_description: "Lorem Ipsum landing page tekst"
-# jaargesprekken page
-  jaargesprekken_title: "Jaargesprekken"
-  jaargesprekken_description: "Lorem Ipsumnieuwe tekst?"
-# Innovatie page
-  innovation_tagline: "Lees meer over onze Research & Development activiteiten op ons blog"
-  innovation_title: "Blijven innoveren"
-  innovation_description: |
-    Het digitale landschap is constant in ontwikkeling. Om in dit landschap ontwikkeling aan te kunnen bieden,
-    moet je dus steeds voorop blijven lopen. Wij denken dat we een aardige indruk hebben hoe het elektronische leren in de toekomst vorm krijgt,
-    en ontwikkelen dus ook software die deze vorm kan ondersteunen. Voor organisaties die samen met ons voorop willen lopen hebben we altijd meerdere
-    producten in de pijplijn. Hou <a href="/blog">ons blog</a> in de gaten voor meer nieuws!
-  learning_spaces_title: "Learning Spaces"
-  learning_spaces_tagline: "Maak Kennis met Learning Spaces:"
-  learning_spaces_description: |
-    Learning Spaces, een omgeving waarin kennis niet langer éénrichtingsverkeer is tussen docent en cursist, maar waar elk beetje kennis dat aanwezig is
-    in een organisatie kan worden uitgelicht en benut.
-  arcade_learning_title: "Arcade Learning"
-  arcade_learning_description: |
-    Met Arcade Learning combineren we de stimulerende principes van gamification met de laagdrempeligheid van mobile learning.
-    ‘Leren door te doen’ blijkt keer op keer de meest efficiënte manier van leren, en ‘doen’ wordt steeds makkelijker te realiseren.
-    De kracht van Arcade Learning is dat het iedereen kan motiveren zich te gaan ontwikkelen.
+  contact:
+    form:
+      name: Naam
+      organization: Bedrijf of organisatie
+      phone: Telefoon
+      email: E-mail
+      message: Bericht
+      submit: Verstuur bericht
 
+  blog:
+    title: Wat ons bezighoudt
+    more_articles: Meer artikelen
 
+  testimonials:
+    title: Wat anderen zeggen
 
+  footer:
+    copyright_html: "&copy; 1987 - %{year} Defacto"

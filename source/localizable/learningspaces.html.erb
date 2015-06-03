@@ -5,12 +5,11 @@ title: LearningSpaces
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= image_tag 'logos/learningspaces-white.png',
-        title: t("learningspaces.hero.title"), alt: 'LearningSpaces' %></h1>
-      <%= markitdown(t("learningspaces.hero.sub")) %>
+      <h1><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %>
+      </h1><%= markitdown t("learningspaces.hero.text") %>
     </div>
-    <%= link_to "Bezoek de website", "http://learningspaces.nl", class: "button white outline" %>
-    <%= link_to "Probeer LearningSpaces gratis", "http://public.learningspaces.nl/accounts/new", class: "button" %>
+    <%= link_to t("learningspaces.hero.try_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
+    <%= link_to t("learningspaces.hero.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
   </div>
 </div>
 
@@ -37,7 +36,6 @@ title: LearningSpaces
     <p><a class="button" href="http://public.learningspaces.nl/accounts/new">Begin nu met LearningSpaces</a></p>
   </div>
 </section>
-
 
 <%#= partial "testimonials" %>
 <%= partial "clients" %>

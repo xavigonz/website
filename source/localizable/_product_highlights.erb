@@ -5,10 +5,10 @@
       <div class="headline">
         <h2><%= link_to "CAPP", "/capp.html" %></h2>
         <p class="sub-headline">
-          <%= link_to "CAPP LMS", "/capp.html" %> zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen.
+          <%= t("home.highlights.capp.text_html", link: link_to("CAPP LMS", "/capp.html")) %>
         </p>
       </div>
-      <%= link_to "Lees verder", "/capp.html", class: "button white outline" %>
+      <%= link_to t("actions.read_more"), "/capp.html", class: "button white outline" %>
     </div>
   </div>
 
@@ -16,14 +16,14 @@
     <div class="inner">
       <div class="headline">
         <% link_to "/learningspaces.html" do %>
-          <%= image_tag 'logos/learningspaces-white.png', title: 'LearningSpaces', alt: 'LearningSpaces' %>
+          <%= image_tag "logos/learningspaces-white.png", title: "LearningSpaces", alt: "LearningSpaces" %>
         <% end %>
         <p class="sub-headline">
-          <%= link_to "LearningSpaces", "/learningspaces.html" %> is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+          <%= t("home.highlights.learningspaces.text_html", link: link_to("LearningSpaces", "/learningspaces.html")) %>
         </p>
       </div>
-      <%= link_to "Lees verder", "/learningspaces.html", class: "button white outline" %>
-      <a href="http://www.learningspaces.nl" target="_blank" class="button white outline">Bezoek de website</a>
+      <%= link_to t("actions.read_more"), "/learningspaces.html", class: "button white outline" %>
+      <%= link_to t("actions.visit_website"), "http://www.learningspaces.nl", target: "_blank", class: "button white outline" %>
     </div>
   </div>
 

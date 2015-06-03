@@ -34,7 +34,7 @@
                 author_name = author ? "#{author.firstname} #{author.lastname}" : article.data.author
                 %>
                 <span class="author-name"><%= author_name %></span>
-                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: "nl") %></time>
+                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
               </div>
             </footer>
 
