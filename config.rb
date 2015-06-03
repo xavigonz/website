@@ -35,7 +35,8 @@
 # activate :livereload
 # activate :livereload, host: "127.0.0.1"
 
-activate :i18n, mount_at_root: :nl, langs: [:nl, :en]
+# activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
+activate :i18n, mount_at_root: :nl, langs: [:nl]
 activate :directory_indexes
 
 set :css_dir, 'stylesheets'
