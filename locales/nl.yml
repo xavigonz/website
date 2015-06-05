@@ -106,13 +106,15 @@ nl:
   capp:
     hero:
       title: "Opleiden & Leren met CAPP LMS"
-      text: __CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+      text_md: __CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
 
   learningspaces:
     hero:
-      text: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+      text_md: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
       visit_website: Bezoek de website
       try_free: Probeer gratis
+
+  about:
 
   contact:
     form:

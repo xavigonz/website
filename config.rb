@@ -98,8 +98,9 @@ helpers do
   end
 
   def markitdown(string)
-    Kramdown::Document.new(string, config[:markdown]).to_html
+    # Kramdown::Document.new(string, config[:markdown]).to_html
     # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
+    Tilt['markdown'].new { string }.render(scope=self)
   end
 
   def nav_link_to(link_text, url, options={})
