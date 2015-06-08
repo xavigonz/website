@@ -19,10 +19,10 @@ title: CAPP LMS
           <label class="modal-close" for="afspraak-maken"></label>
           <h3>Ik wil meer weten over CAPP</h3>
           <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
-          <input type="hidden" name="utf8" value="✓">
-          <input type="hidden" name="form" value="capp">
-          <input type="email" name="email" placeholder="E-mail" required>
-          <button type="submit" class="btn">Vertel me meer</button>
+            <input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="form" value="capp">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <button type="submit" class="btn">Vertel me meer</button>
           </form>
         </div>
       </div>
@@ -31,21 +31,19 @@ title: CAPP LMS
   </div>
 </div>
 
-<section class="capp-steps">
+<section class="solutions-overview">
   <div class="row">
 
-    <div class="headline" style="max-width: 1024px; margin-bottom: 4em;">
-      <h3 style="font-size: 1.6em; line-height: 1.4; font-weight: 400; color: #888;">
-        De basis van elke moderne academie of opleidingsafdeling.<br>
-        Uitnodigend, betrouwbaar en super eenvoudig.
-      </h3>
+    <div class="headline">
+      <h2>
+        De basis van elke moderne academie of opleidingsafdeling. Uitnodigend, betrouwbaar en super eenvoudig.
+      </h2>
     </div>
 
     <div class="col">
-      <%= image_tag 'icons/leren-blue.png', alt: 'leren' %>
-      <h2>Leren</h2>
-      <p>Bied uw deelnemers een unieke leerbeleving, met een rijk mix aan leervormen zowel klassikaal als via E-Learning en een eenvoudige leerproces.
-      </p>
+      <%= image_tag 'icons/leren-blue.png', alt: 'Leren' %>
+      <h3>Leren</h3>
+      <p>Bied uw deelnemers een unieke leerbeleving, met een rijk mix aan leervormen zowel klassikaal als via E-Learning en een eenvoudige leerproces.</p>
       <hr>
       <ul class="checklist">
         <li>Opleidingscatalogus</li>
@@ -57,8 +55,8 @@ title: CAPP LMS
     </div>
 
     <div class="col">
-      <%= image_tag 'icons/ontwikkelen-blue.png', alt: 'ontwikkelen' %>
-      <h2>Ontwikkelen</h2>
+      <%= image_tag 'icons/ontwikkelen-blue.png', alt: 'Ontwikkelen' %>
+      <h3>Ontwikkelen</h3>
       <p>Speciaal om uw medewerkers te helpen bij hun persoonlijke en professionele ontwikkeling biedt CAPP Ontwikkelen enkele bijzondere oplossingen:</p>
       <hr>
       <ul class="checklist">
@@ -70,17 +68,16 @@ title: CAPP LMS
 
     <div class="col">
       <% link_to "kwaliteitspaspoort.html" do %>
-        <%= image_tag 'icons/borging-blue.png', alt: 'borging' %>
-        <h2>Kwaliteitspaspoort</h2>
+        <%= image_tag 'icons/borging-blue.png', alt: 'Borging' %>
+        <h3>Kwaliteitspaspoort</h3>
       <% end %>
       <p>Een persoonsgebonden profiel waarin de bekwaamheden en bevoegdheden in één keer inzichtelijk zijn voor werknemer, werkgever en toezichthoudende instanties.
-        <%= link_to "Meer over het Kwaliteitspaspoort", "kwaliteitspaspoort.html" %></p>
       <hr>
       <ul class="checklist">
-        <li><h4>Kwaliteitsmonitor altijd actueel </h4></li>
-        <li><h4>Accrediteren</h4></li>
-        <li><h4>Certificeren</h4></li>
-        <li><h4>Managementinformatie</h4></li>
+        <li>Kwaliteitsmonitor altijd actueel</li>
+        <li>Accrediteren</li>
+        <li>Certificeren</li>
+        <li>Managementinformatie</li>
       </ul>
     </div>
 
@@ -112,7 +109,6 @@ title: CAPP LMS
 
   </div>
 </section>
-
 
 <%#= partial "testimonials" %>
 <%= partial "clients" %>

@@ -31,37 +31,41 @@
     </div>
   </div>
 
-  <div class="row solutions-overview-keywords">
-    <div class="col">
-      <ul>
-        <% t("home.solutions.learn.keywords").each do |keyword| %>
-          <li><h4><%= keyword %></h4></li>
-        <% end %>
-      </ul>
-    </div>
+  <div class="solutions-overview-keywords">
+    <div class="row">
 
-    <div class="col">
-      <ul>
-        <% t("home.solutions.develop.keywords").each do |keyword| %>
-          <li><h4><%= keyword %></h4></li>
-        <% end %>
-      </ul>
-    </div>
+      <div class="col">
+        <ul class="dividers">
+          <% t("home.solutions.learn.keywords").each do |keyword| %>
+            <li><h4><%= keyword %></h4></li>
+          <% end %>
+        </ul>
+      </div>
 
-    <div class="col">
-      <ul>
-        <% t("home.solutions.quality.keywords").each do |keyword| %>
-          <li><h4><%= keyword %></h4></li>
-        <% end %>
-      </ul>
-    </div>
+      <div class="col">
+        <ul class="dividers">
+          <% t("home.solutions.develop.keywords").each do |keyword| %>
+            <li><h4><%= keyword %></h4></li>
+          <% end %>
+        </ul>
+      </div>
 
-    <div class="col">
-      <ul>
-        <% t("home.solutions.informal.keywords").each do |keyword| %>
-          <li><h4><%= keyword %></h4></li>
-        <% end %>
-      </ul>
+      <div class="col">
+        <ul class="dividers">
+          <% t("home.solutions.quality.keywords").each do |keyword| %>
+            <li><h4><%= keyword %></h4></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <div class="col">
+        <ul class="dividers">
+          <% t("home.solutions.informal.keywords").each do |keyword| %>
+            <li><h4><%= keyword %></h4></li>
+          <% end %>
+        </ul>
+      </div>
+
     </div>
   </div>
 </section>

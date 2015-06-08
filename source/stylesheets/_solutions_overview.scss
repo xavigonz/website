@@ -35,7 +35,7 @@
 
   .row {
     @include clearfix;
-    max-width: none;
+    max-width: 1580px;
     padding-bottom: 1em;
   }
 
@@ -68,30 +68,12 @@
         color: $dark-gray !important;
       }
     }
-  }
 
-  .solutions-overview-keywords {
-    $background-color: #fcfcfc;
-    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
-    display: none;
-    padding-bottom: 2em;
-
-    @include media($xlarge-up) {
-      display: block;
-      padding-bottom: 3em;
-    }
-
-    h4 {
+    ul.checklist {
       display: inline-block;
-      font-weight: inherit;
-      font-size: inherit;
-      margin: 0;
     }
 
-    ul {
-      margin-top: 2em;
-      padding: 0.5em;
-
+    ul.dividers {
       li {
         padding: 0.65em;
         position: relative;
@@ -115,6 +97,31 @@
       a {
         font-weight: 700;
       }
+    }
+  }
+
+  .solutions-overview-keywords {
+    $background-color: #fcfcfc;
+
+    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+    display: none;
+    padding-bottom: 2em;
+
+    @include media($xlarge-up) {
+      display: block;
+      padding-bottom: 3em;
+    }
+
+    h4 {
+      display: inline-block;
+      font-weight: inherit;
+      font-size: inherit;
+      margin: 0;
+    }
+
+    ul {
+      margin-top: 2em;
+      padding: 0.5em;
     }
 
     .col {
