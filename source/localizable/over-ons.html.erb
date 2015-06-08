@@ -4,8 +4,8 @@ title: Over ons
 
 <section class="gray">
   <div class="row">
-    <h1>Wij zijn Defacto</h1>
-    <h3>Leren en ontwikkelen sinds 1987</h3>
+    <h1><%= t("about.heading") %></h1>
+    <h3><%= t("about.heading2") %></h3>
   </div>
 </section>
 
@@ -13,13 +13,7 @@ title: Over ons
   <div class="row">
 
     <article class="sidebar-content">
-      <p>Defacto is ouder dan de meeste van onze medewerkers. We zijn gevestigd in het centrum van Groningen, nabij het centraal station.</p>
-
-      <p>Defacto kent een platte organisatie en hoge mate van transparantie. De verantwoordelijkheid ligt op de werkvloer bij de mensen zelf en wordt door de mensen zelf ook bewaakt.</p>
-
-      <p>We geloven dat het belangrijk is om in een leuke omgeving te kunnen werken. Onze werktijden zijn flexibel, het gaat uiteindelijk om de kwaliteit die je aflevert. En elke vrijdagmiddag verdiepen we ons in nieuwe technieken, producten, etc.</p>
-
-      <p>Ben jij iemand met een persoonlijkheid en steek je je mening niet onder stoelen en banken? Bij Defacto zijn we altijd <%= link_to "op zoek naar mensen", "http://jobs.defacto.nl" %> die ons inspireren.</p>
+      <%= markitdown t("about.text_html_md") %>
     </article>
 
     <%= partial "over-ons/sidebar" %>
