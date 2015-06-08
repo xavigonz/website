@@ -8,8 +8,8 @@ title: LearningSpaces
       <h1><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %>
       </h1><%= markitdown t("learningspaces.hero.text_md") %>
     </div>
-    <%= link_to t("learningspaces.hero.try_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
-    <%= link_to t("learningspaces.hero.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
+    <%= link_to t("actions.try_for_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
+    <%= link_to t("actions.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
   </div>
 </div>
 
@@ -33,7 +33,9 @@ title: LearningSpaces
 <section class="gray">
   <div class="row">
     <h2>Vandaag nog beginnen met een gratis trial van Learningspaces?</h2>
-    <p><a class="button" href="http://public.learningspaces.nl/accounts/new">Begin nu met LearningSpaces</a></p>
+    <p>
+      <%= link_to t("learningspaces.start_now"), "http://public.learningspaces.nl/accounts/new", target: "_blank", class: "button" %>
+    </p>
   </div>
 </section>
 

@@ -4,6 +4,7 @@ nl:
   actions:
     read_more: Lees verder
     visit_website: Bezoek de website
+    try_for_free: Probeer gratis
 
   header:
     menu: Menu
@@ -111,8 +112,7 @@ nl:
   learningspaces:
     hero:
       text_md: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
-      visit_website: Bezoek de website
-      try_free: Probeer gratis
+    start_now: Begin nu met LearningSpaces
 
   about:
     heading: Wij zijn Defacto
