@@ -21,18 +21,19 @@
     h3 {
       display: inline-block;
       margin: 0.5em 0.2em;
+      vertical-align: middle;
     }
 
     .phone {
       display: inline-block;
-      padding: 0 0.1em;
       font-weight: 400;
+      padding: 0 0.1em;
       white-space: nowrap;
     }
 
     .button {
       margin: 0.5em 0.2em;
-      vertical-align: top;
+      vertical-align: middle;
     }
   }
 

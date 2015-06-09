@@ -196,29 +196,7 @@ Map
     width: 100%;
 
     @include media ($desktop-mode) {
-      height: 600px;
-    }
-  }
-
-  .contact-form {
-    background: #fbfaf8;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(#000, .1);
-    display: none;
-    left: 160px;
-    padding: 30px;
-    position: absolute;
-    top: 75px;
-    width: 350px;
-
-    input,
-    textarea {
-      display: block;
-      width: 100%;
-    }
-
-    @include media ($desktop-mode) {
-      display: block;
+      height: 400px;
     }
   }
 }
@@ -231,12 +209,11 @@ Contact info
 .contact-info {
   $desktop-mode: $medium-up;
 
-  background: #fbfaf8;
   border-top: $base-border;
   clear: both;
-  text-align: center;
   padding: 0;
   position: relative;
+  text-align: center;
 
   .row {
     padding: 0;
@@ -254,8 +231,8 @@ Contact info
 
     [class^="icon-"],
     [class*=" icon-"] {
-      margin-right: 10px;
       font-size: 1.6em;
+      margin-right: 10px;
       vertical-align: middle;
     }
   }
@@ -280,4 +257,67 @@ Contact info
 
 .screenshot {
   border: 10px solid rgb(251, 251, 251);
+}
+
+.form-big {
+  @include clearfix;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: -$base-spacing;
+  }
+
+  &.form-inline {
+    max-width: none;
+    text-align: center;
+  }
+
+  input,
+  select[multiple=multiple],
+  textarea {
+    margin-bottom: $base-spacing;
+  }
+
+  button,
+  .button {
+    border-width: 1px;
+    margin-bottom: $base-spacing;
+  }
+
+  @include media ($medium-up) {
+    &.form-inline {
+
+      input,
+      button,
+      .button {
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+      }
+
+      input {
+        display: inline-block;
+        min-width: 250px;
+        width: auto;
+      }
+    }
+
+    .form-name,
+    .form-phone {
+      float: left;
+      width: 48.5%;
+    }
+
+    .form-company,
+    .form-email {
+      float: right;
+      width: 48.5%;
+    }
+  }
+
+  .form-text {}
+  .form-actions {}
 }

@@ -31,14 +31,13 @@ select[multiple=multiple],
 textarea {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.2;
   margin-bottom: $base-spacing / 2;
-  padding: $base-spacing / 3;
+  padding: $base-spacing / 2;
   transition: border-color;
+  vertical-align: baseline;
   width: 100%;
 
   &:hover {
@@ -53,6 +52,7 @@ textarea {
 }
 
 textarea {
+  display: block;
   resize: vertical;
 }
 
