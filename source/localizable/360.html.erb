@@ -6,23 +6,19 @@ title: 360° Feedback
   <div class="hero-inner">
     <div class="hero-copy">
       <h1><%= t("threesixty.hero.title") %></h1>
-      <p>360° Feedback is een gebruiksvriendelijke cloudservice, waarmee je moeiteloos evaluaties kunt uitvoeren.</p>
+      <%= markitdown t("threesixty.hero.text_md") %>
     </div>
     <a href="https://www.360feedback.io/app/register" target="_blank" class="button"><%= t("actions.try_for_free") %></a>
     <a href="https://www.360feedback.io" target="_blank" class="button white outline"><%= t("actions.visit_website") %></a>
   </div>
 </div>
 
-<section class="feature-list three">
-  <div class="row">
-    <%= partial "360/360" %>
-  </div>
-</section>
+<%= partial "360/360" %>
 
 <section class="gray">
   <div class="row">
-    <h2>Kijk in de spiegel met 360° Feedback.</h2>
-    <%= link_to "Probeer gratis", "https://www.360feedback.io/app/register", target: "_blank", class: "button" %>
+    <h3><%= markitdown t("threesixty.cta_bottom.heading_md") %></h3>
+    <%= link_to t("actions.try_for_free"), "https://www.360feedback.io/app/register", target: "_blank", class: "button" %>
   </div>
 </section>
 

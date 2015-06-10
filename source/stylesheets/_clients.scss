@@ -1,5 +1,7 @@
 .clients {
-  background-color: #f6f6f6;
+  $background-color: #fcfcfc;
+
+  @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
   text-align: center;
 
   .logos {

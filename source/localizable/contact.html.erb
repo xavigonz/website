@@ -4,8 +4,8 @@ title: Contact
 
 <section class="gray">
   <div class="row">
-    <h1><%= t("about.heading") %></h1>
-    <h3><%= t("about.heading2") %></h3>
+    <h1><%= t("contact.heading") %></h1>
+    <h3><%= t("contact.heading2") %></h3>
   </div>
 </section>
 
@@ -18,30 +18,30 @@ title: Contact
   </div>
 </section>
 
-<section class="gray">
+<section id="contact-form" class="gray">
   <div class="row">
-    <h2>Kunnen we iets voor je betekenen?</h2>
+    <h2><%= t("contact.form_title") %></h2>
 
-    <form class="form-big" accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+    <form class="form-contact" accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
       <input type="hidden" name="utf8" value="✓">
-      <input type="hidden" name="form" value="contact">
+      <input type="hidden" name="form" value="Contact">
       <div class="form-name">
-        <input type="text" name="name" placeholder="Naam">
+        <input type="text" name="name" placeholder="<%= t("form.name") %>">
       </div>
       <div class="form-company">
-        <input type="text" name="company" placeholder="Bedrijf of organisatie">
+        <input type="text" name="company" placeholder="<%= t("form.organization") %>">
       </div>
       <div class="form-phone">
-        <input type="tel" name="phone" placeholder="Telefoon">
+        <input type="tel" name="phone" placeholder="<%= t("form.phone") %>">
       </div>
       <div class="form-email">
-        <input type="email" name="email" placeholder="E-mailadres">
+        <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
       </div>
       <div class="form-text">
-        <textarea rows="6" name="message" placeholder="Wat kunnen we voor je doen?"></textarea>
+        <textarea rows="6" name="message" placeholder="<%= t("form.message") %>"></textarea>
       </div>
       <div class="form-actions">
-        <button type="submit">Verstuur</button>
+        <button type="submit"><%= t("form.submit") %></button>
       </div>
     </form>
 

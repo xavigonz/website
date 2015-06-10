@@ -1,0 +1,61 @@
+.form-inline {
+  max-width: none;
+  text-align: center;
+
+  @include media ($medium-up) {
+    input,
+    button,
+    .button {
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+    }
+
+    input {
+      display: inline-block;
+      min-width: 250px;
+      width: auto;
+    }
+  }
+}
+
+.form-contact {
+  @include clearfix;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: -$base-spacing;
+  }
+
+  input,
+  select[multiple=multiple],
+  textarea {
+    margin-bottom: $base-spacing;
+  }
+
+  button,
+  .button {
+    border-width: 1px;
+    margin-bottom: $base-spacing;
+  }
+
+  @include media ($medium-up) {
+    .form-name,
+    .form-phone {
+      float: left;
+      width: 48.5%;
+    }
+
+    .form-company,
+    .form-email {
+      float: right;
+      width: 48.5%;
+    }
+  }
+
+  // .form-text {}
+  // .form-actions {}
+}
