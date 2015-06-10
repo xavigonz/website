@@ -5,47 +5,24 @@ title: 360° Feedback
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1>360°-Feedback</h1>
+      <h1><%= t("threesixty.hero.title") %></h1>
+      <p>360° Feedback is een gebruiksvriendelijke cloudservice, waarmee je moeiteloos evaluaties kunt uitvoeren.</p>
     </div>
-    <%= link_to "Probeer 360°-Feedback gratis", "https://www.360feedback.io/app/register", class: "button" %>
+    <a href="https://www.360feedback.io/app/register" target="_blank" class="button"><%= t("actions.try_for_free") %></a>
+    <a href="https://www.360feedback.io" target="_blank" class="button white outline"><%= t("actions.visit_website") %></a>
   </div>
 </div>
 
-<section class="three-sixty-steps">
+<section class="feature-list three">
   <div class="row">
-
-    <div class="headline" style="max-width: 1024px; margin-bottom: 4em;">
-      <h3 style="font-size: 1.6em; line-height: 1.4; font-weight: 400; color: #888;">
-        360° Feedback is een gebruiksvriendelijke cloudservice, waarmee je moeiteloos 360°-evaluaties kan uitvoeren. Ontwikkel jezelf of je organisatie door van alle kanten feedback te krijgen.
-      </h3>
-    </div>
-
-    <div class="col">
-      <%= image_tag 'icons/leren-blue.png', alt: 'leren' %>
-      <h2>Vraag om feedback</h2>
-      <p>Stuur een verzoek om feedback in drie eenvoudige stappen: Kies het onderwerp, selecteer een vragenlijst en stuur een uitnodiging naar collega’s, managers, cliënten of anderen.</p>
-    </div>
-
-    <div class="col">
-      <%= image_tag 'icons/ontwikkelen-blue.png', alt: 'ontwikkelen' %>
-      <h2>Word beoordeeld</h2>
-      <p>De beoordelaars die je geselecteerd hebt krijgen per mail een uitnodiging. Via de uitnodiging komen ze direct uit bij de vragenlijst. Ze hoeven behalve de vragenlijst niks in te vullen, en blijven anoniem.</p>
-    </div>
-
-    <div class="col">
-      <%= image_tag 'icons/borging-blue.png', alt: 'borging' %>
-      <h2>Bekijk de resultaten</h2>
-      <p>De resultaten zijn direct in te zien, in overzichtelijke grafieken. De mogelijkheden tot ontwikkeling springen er meteen uit.</p>
-
-    </div>
-
+    <%= partial "360/360" %>
   </div>
 </section>
 
 <section class="gray">
   <div class="row">
-    <h2>Kijk in de spiegel met 360°-Feedback.</h2>
-    <%= link_to "Probeer 360° Feedback nu - gratis!", "https://www.360feedback.io/app/register", class: "button" %>
+    <h2>Kijk in de spiegel met 360° Feedback.</h2>
+    <%= link_to "Probeer gratis", "https://www.360feedback.io/app/register", target: "_blank", class: "button" %>
   </div>
 </section>
 

@@ -4,38 +4,15 @@ title: Hosting & Security
 
 <section class="gray">
   <div class="row">
-    <h1>Hosting & Security</h1>
+    <h1><%= t("hosting.heading") %></h1>
   </div>
 </section>
 
 <section>
   <div class="row">
-
     <article class="sidebar-content">
-      <ul>
-        <li>Onze software is volledig web based en is altijd en overal bereikbaar.</li>
-        <li>CAPP kan als SAAS-service en lokaal gehost afgenomen worden.</li>
-        <li>CAPP biedt Standaard Single Sign On (SSO integratie)</li>
-        <li>Als old-school softwarebedrijf kennen wij alle ins en outs van de techniek en zijn wij een volwaardige partner voor uw ICT-organisatie. ICT gerelateerde problemen zult u met ons en onze software niet hebben.</li>
-        <li>CAPP voldoet aan de ICT-Beveiligingsrichtlijnen voor web applicaties - Deel 1, Nationaal Cyber Security Centrum, Ministerie van Veiligheid en Justitie.</li>
-        <li>CAPP kent een standaard HR-Importer die koppelingen met alle bekende nationale en internationale HR-systemen eenvoudig kan realiseren. </li>
-        <li>CAPP kent talloze koppelingen met (kwaliteit)registers, toetsingssystemen, e-learning leveranciers.</li>
-
-        <li>CAPP is een open systeem waarin u e-learning materiaal van alle bekende e-learning leveranciers kunt afspelen.</li>
-
-        <li>CAPP is in zowel Nederlands, Engels als Duits te verkrijgen.</li>
-      </ul>
-
-      <hr>
-
-      <h2>Hosting</h2>
-
-      <p>Defacto biedt u de mogelijkheid om CAPP gehost aan te bieden. Op deze manier belast u uw systeembeheer amper, worden updates door Defacto voor u geïnstalleerd en bijgewerkt. Ook indien CAPP gehost wordt aangeboden, is het voor uw medewerkers vanuit uw website zonder apart in te loggen, rechtstreeks in CAPP terecht kunnen.</p>
-
-      <p>De gegevens van uw medewerkers vanuit uw HR systeem worden – indien gewenst - elke nacht in CAPP ingelezen. Daarbij maakt Defacto gebruik van SSH File Transfer Protocol (sFTP). Tijdens de verzending van de data wordt deze (in tegenstelling tot FTP) versleuteld en is daarmee zeer veilig.</p>
+      <%= partial "hosting/hosting" %>
     </article>
-
     <%= partial "diensten/sidebar" %>
-
   </div>
 </section>

@@ -1,7 +1,5 @@
 .capp {
   .hero {
-    // $hero-image: '../images/mood3.jpg';
-
     @include radial-gradient(circle at 50%,
       $blue 33%,
       rgba($blue, 0.5) 33%,
@@ -10,31 +8,11 @@
       $fallback: $blue-alt);
 
     background-attachment: scroll;
-    // background-size: auto;
-    // background-image: url($hero-image);
-    // background-position: 0 -150px;
-    // background-size: 1729px 700px;
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
       margin-bottom: 0.5em;
       font-weight: 700;
-
-      // @include media($large-up) {
-      //   font-size: 4em;
-      // }
-    }
-  }
-
-  .capp-steps {
-    .col {
-      @include media($medium-up) {
-        @include span-columns(4);
-      }
-    }
-
-    img {
-      max-height: 160px;
     }
   }
 

@@ -35,19 +35,20 @@
 # activate :livereload
 # activate :livereload, host: "127.0.0.1"
 
-activate :i18n, mount_at_root: :nl, langs: [:nl, :en]
+# activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
+activate :i18n, mount_at_root: :nl, langs: [:nl]
 activate :directory_indexes
 
-set :css_dir, 'stylesheets'
-set :js_dir, 'javascripts'
-set :images_dir, 'images'
+set :css_dir, "stylesheets"
+set :js_dir, "javascripts"
+set :images_dir, "images"
 set :relative_links, true
 
 # Middleman syntax (https://github.com/middleman/middleman-syntax)
 activate :syntax #, line_numbers: true
 
 set :markdown_engine, :kramdown
-set :markdown, input: 'GFM', auto_ids: false
+set :markdown, input: "GFM", auto_ids: false
 
 #set :markdown_engine, :redcarpet
 #set :markdown, fenced_code_blocks: true, smartypants: true
@@ -97,8 +98,9 @@ helpers do
   end
 
   def markitdown(string)
-    Kramdown::Document.new(string, config[:markdown]).to_html
+    # Kramdown::Document.new(string, config[:markdown]).to_html
     # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
+    Tilt['markdown'].new { string }.render(scope=self)
   end
 
   def nav_link_to(link_text, url, options={})

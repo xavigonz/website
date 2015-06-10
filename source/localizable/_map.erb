@@ -5,12 +5,12 @@
     <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="form" value="contact">
-      <input type="text" name="name" placeholder="<%= t(:name) %>">
-      <input type="text" name="company" placeholder="<%= t(:organization) %>">
-      <input type="tel" name="phone" placeholder="<%= t(:phone) %>">
-      <input type="email" name="email" placeholder="<%= t(:email) %>">
-      <textarea name="message" placeholder="<%= t(:message) %>"></textarea>
-      <button type="submit" value="<%= t(:send) %>" class="btn">Submit</button>
+      <input type="text" name="name" placeholder="<%= t("contact.form.name") %>">
+      <input type="text" name="company" placeholder="<%= t("contact.form.organization") %>">
+      <input type="tel" name="phone" placeholder="<%= t("contact.form.phone") %>">
+      <input type="email" name="email" placeholder="<%= t("contact.form.email") %>">
+      <textarea name="message" placeholder="<%= t("contact.form.message") %>"></textarea>
+      <button type="submit"><%= t("contact.form.submit") %></button>
     </form>
   </div>
 </div>

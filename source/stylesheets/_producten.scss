@@ -58,7 +58,7 @@ Solutions
           vertical-align: middle;
 
           @include media($medium-up) {
-            display: block;
+            display: inline-block;
           }
         }
 
@@ -78,126 +78,128 @@ Solutions
         }
       }
     }
+  }
 
-    .capp {
-      .left {
-        @include radial-gradient(circle at 50%,
-          $blue 33%,
-          rgba($blue, 0.5) 33%,
-          rgba($blue, 0.5) 66%,
-          $blue-alt 66%,
-          $fallback: $blue-alt);
+  .capp {
+    .left {
+      @include radial-gradient(circle at 50%,
+        $blue 33%,
+        rgba($blue, 0.5) 33%,
+        rgba($blue, 0.5) 66%,
+        $blue-alt 66%,
+        $fallback: $blue-alt);
 
-        h2 {
-          font-size: 3em;
+      h2 {
+        font-size: 3em;
+      }
+    }
+  }
+
+  .kwaliteitspaspoort {
+    $color: lighten($turquoise, 5);
+
+    .left {
+      @include radial-gradient(circle at 50%,
+        lighten($color, 10) 33%,
+        rgba($color, 0.3) 33%,
+        rgba($color, 0.3) 66%,
+        lighten($color, 5) 66%,
+        $fallback: lighten($color, 10));
+
+      h2 {
+        img {
+          width: 250px;
         }
       }
     }
+  }
 
-    .kwaliteitspaspoort {
-      $color: lighten($turquoise, 5);
+  .learningspaces {
+    .left {
+      background-color: $green;
+      background-image: url(../images/learningspaces-pattern.svg);
+      background-position: center;
+    }
+  }
 
-      .left {
-        @include radial-gradient(circle at 50%,
-          lighten($color, 10) 33%,
-          rgba($color, 0.3) 33%,
-          rgba($color, 0.3) 66%,
-          lighten($color, 5) 66%,
-          $fallback: lighten($color, 10));
+  .starterkit {
+    $color: lighten($red, 15);
 
-        h2 {
-          img {
-            width: 250px;
-          }
-        }
-      }
+    .left {
+      background-color: $color;
+      background-size: 150px 150px;
+      background-image:
+        linear-gradient(90deg, rgba(#fff, 0.08) 50%, transparent 50%),
+        linear-gradient(rgba(#fff, 0.08) 50%, transparent 50%);
     }
 
-    .learningspaces {
-      .left {
-        background-color: $green;
-        background-image: url(../images/learningspaces-pattern.svg);
-        background-position: center;
+    h2 {
+      max-width: 330px;
+    }
+  }
+
+  .threesixty {
+    $color: $orange;
+
+    .left {
+      @include radial-gradient(circle at 50%,
+        rgba($color, 0.15) 120px,
+        rgba($color, 0.3) 240px,
+        $fallback: #fff);
+
+      img {
+        width: 150px !important;
       }
     }
+  }
 
-    .starterkit {
-      $color: lighten($red, 15);
-
-      .left {
-        background-color: $color;
-        background-size: 150px 150px;
-        background-image:
-          linear-gradient(90deg, rgba(#fff, 0.08) 50%, transparent 50%),
-          linear-gradient(rgba(#fff, 0.08) 50%, transparent 50%);
-      }
+  .elearning {
+    .left {
+      @include radial-gradient(circle at 50%,
+        $blue 33%,
+        rgba($blue, 0.5) 33%,
+        rgba($blue, 0.5) 66%,
+        $blue-alt 66%,
+        $fallback: $blue-alt);
     }
+  }
 
-    .three-sixty {
-      $color: $orange;
+  .implementaties {
+    $color: $orange;
 
-      .left {
-        @include radial-gradient(circle at 50%,
-          rgba($color, 0.15) 120px,
-          rgba($color, 0.3) 240px,
-          $fallback: #fff);
-
-        h2 {
-          img {
-            width: 140px;
-          }
-        }
-      }
+    .left {
+      @include radial-gradient(circle at 50%,
+        lighten($color, 10) 33%,
+        rgba($color, 0.3) 33%,
+        rgba($color, 0.3) 66%,
+        lighten($color, 5) 66%,
+        $fallback: lighten($color, 10));
     }
+  }
 
-    .elearning {
-      .left {
-        @include radial-gradient(circle at 50%,
-          $blue 33%,
-          rgba($blue, 0.5) 33%,
-          rgba($blue, 0.5) 66%,
-          $blue-alt 66%,
-          $fallback: $blue-alt);
-      }
+  .hosting {
+    $color: lighten($red, 10);
+
+    .left {
+      @include radial-gradient(circle at 50%,
+        lighten($color, 10) 33%,
+        rgba($color, 0.3) 33%,
+        rgba($color, 0.3) 66%,
+        lighten($color, 5) 66%,
+        $fallback: lighten($color, 10));
     }
+  }
 
-    .implementaties {
-      $color: $orange;
+  .koppelingen {
+    $color: lighten($green, 10);
 
-      .left {
-        @include radial-gradient(circle at 50%,
-          lighten($color, 10) 33%,
-          rgba($color, 0.3) 33%,
-          rgba($color, 0.3) 66%,
-          lighten($color, 5) 66%,
-          $fallback: lighten($color, 10));
-      }
-    }
-
-    .hosting {
-      $color: lighten($red, 10);
-
-      .left {
-        @include radial-gradient(circle at 50%,
-          lighten($color, 10) 33%,
-          rgba($color, 0.3) 33%,
-          rgba($color, 0.3) 66%,
-          lighten($color, 5) 66%,
-          $fallback: lighten($color, 10));
-      }
-    }
-
-    .koppelingen {
-      $color: lighten($green, 10);
-
-      .left {
-        @include radial-gradient(circle at 50%,
-          lighten($color, 10) 33%,
-          rgba($color, 0.3) 33%,
-          rgba($color, 0.3) 66%,
-          lighten($color, 5) 66%,
-          $fallback: lighten($color, 10));
-      }
+    .left {
+      @include radial-gradient(circle at 50%,
+        lighten($color, 10) 33%,
+        rgba($color, 0.3) 33%,
+        rgba($color, 0.3) 66%,
+        lighten($color, 5) 66%,
+        $fallback: lighten($color, 10));
     }
   }
 }

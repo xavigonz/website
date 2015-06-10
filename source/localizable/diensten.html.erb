@@ -4,57 +4,48 @@ title: Diensten
 
 <section class="gray">
   <div class="row">
-    <h2>Diensten waar we trots op zijn.</h2>
+    <h2><%= t("services.title") %></h2>
     <br>
 
     <ul class="solitions-list">
 
       <li class="elearning">
-        <% link_to "elearning.html", class: "col left" do%>
-          <h2>E-Learning</h2>
+        <% link_to "elearning.html", class: "col left" do %>
+          <h2><%= t("services.services.elearning.name") %></h2>
         <% end %>
         <div class="col right">
-          <p>
-            Met Defacto als ervaren en technisch onderlegde partner, wordt de <%= link_to "E-Learning", "E-Learning.html" %> in jouw organisatie onherroepelijk een succes.
-          </p>
-          <%= link_to "Lees verder", "elearning.html", class: "button blue outline" %>
+          <p><%= t("services.services.elearning.desc", link: link_to(t("services.services.elearning.name"), "elearning.html")) %></p>
+          <%= link_to t("actions.read_more"), "elearning.html", class: "button blue outline" %>
         </div>
       </li>
 
       <li class="implementaties">
-        <% link_to "implementaties.html", class: "col left" do%>
-          <h2>Implementaties</h2>
+        <% link_to "implementaties.html", class: "col left" do %>
+          <h2><%= t("services.services.implementaties.name") %></h2>
         <% end %>
         <div class="col right">
-          <p>
-           Defacto heeft een eigen <%= link_to "implementatiemethodiek", "implementaties.html" %> ontwikkeld waarin onze projectleider en consultants samen met uw management team de strategie en uitvoering waarborgen.
-          </p>
-          <%= link_to "Lees verder", "implementaties.html", class: "button orange outline" %>
+          <p><%= t("services.services.implementaties.desc", link: link_to(t("services.services.implementaties.link"), "implementaties.html")) %></p>
+          <%= link_to t("actions.read_more"), "implementaties.html", class: "button orange outline" %>
         </div>
       </li>
 
       <li class="hosting">
-        <% link_to "hosting.html", class: "col left" do%>
-          <h2>Hosting &amp; Security</h2>
+        <% link_to "hosting.html", class: "col left" do %>
+          <h2><%= t("services.services.hosting.name") %></h2>
         <% end %>
         <div class="col right">
-          <p>
-            Door 25 jaar ervaring met ICT-implementaties bij grote (overheids) instanties weet Defacto bij uitstek dat een <%= link_to "gedegen informatiebeveiliging ", "techniek.html" %>van essentieel belang is.
-          </p>
-          <%= link_to "Lees verder", "hosting.html", class: "button red outline" %>
+          <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "hosting.html")) %></p>
+          <%= link_to t("actions.read_more"), "hosting.html", class: "button red outline" %>
         </div>
       </li>
 
       <li class="koppelingen">
-        <% link_to "koppelingen.html", class: "col left" do%>
-          <h2>Koppelingen</h2>
+        <% link_to "koppelingen.html", class: "col left" do %>
+          <h2><%= t("services.services.koppelingen.name") %></h2>
         <% end %>
         <div class="col right">
-          <p>
-           Onze software kan geintegreerd worden met verschillende systemen.
-
-          </p>
-          <%= link_to "Lees verder", "koppelingen.html", class: "button green outline" %>
+          <p><%= t("services.services.koppelingen.desc", link: link_to(t("services.services.koppelingen.link"), "koppelingen.html")) %></p>
+          <%= link_to t("actions.read_more"), "koppelingen.html", class: "button green outline" %>
         </div>
       </li>
 

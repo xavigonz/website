@@ -1,0 +1,63 @@
+---
+title: CAPP LMS
+---
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1><%= t("capp.hero.title") %></h1>
+      <%= markitdown t("capp.hero.text_md") %>
+    </div>
+
+    <div class="modal">
+      <label for="afspraak-maken">
+        <span class="button">Meer weten?</span>
+      </label>
+      <input class="modal-state" id="afspraak-maken" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <label class="modal-close" for="afspraak-maken"></label>
+          <h3>Ik wil meer weten over CAPP</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+            <input type="hidden" name="utf8" value="✓">
+            <input type="hidden" name="form" value="capp">
+            <input type="email" name="email" placeholder="E-mail" required>
+            <button type="submit" class="btn">Vertel me meer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<%= partial "capp/capp" %>
+
+<section class="gray">
+  <div class="row">
+    <h2>Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?</h2>
+
+    <div class="modal">
+      <label for="business-case">
+        <span class="button">Maak een afspraak</span>
+      </label>
+      <input class="modal-state" id="business-case" type="checkbox">
+      <div class="modal-window">
+        <div class="modal-inner">
+          <label class="modal-close" for="business-case"></label>
+          <h3>Maak een afspraak</h3>
+          <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="hidden" name="form" value="business-case">
+          <input type="email" name="email" placeholder="E-mail" required>
+          <button type="submit" class="btn">Afspraak maken</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<%#= partial "testimonials" %>
+<%= partial "clients" %>
