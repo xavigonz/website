@@ -160,3 +160,7 @@ nl:
 
   footer:
     copyright_html: "&copy; 1987 - %{year} Defacto"
+
+  error:
+    heading: "Sorry, deze pagina bestaat niet."
+    text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."

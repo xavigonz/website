@@ -4,9 +4,9 @@ directory_index: false
 
 <section class="gray">
   <div class="row">
-    <%= image_tag "error.gif", class: "error-image", alt: "Pagina niet gevonden" %>
-    <h1>Sorry, deze pagina bestaat niet.</h1>
+    <%= image_tag "warning.gif", class: "warning-image", alt: "Warning" %>
+    <h1><%= t("error.heading") %></h1>
 
-    <p>Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben.</p>
+    <p><%= markitdown t("error.text_md") %></p>
   </div>
 </section>

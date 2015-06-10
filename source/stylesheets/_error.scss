@@ -5,7 +5,7 @@ body.error {
     @include radial-gradient(#fbfbfb, #dfdfdf, $fallback: #fbfbfb);
   }
 
-  .error-image {
+  .warning-image {
     margin: 0 0 1em;
     opacity: 0.9;
     width: 150px;
