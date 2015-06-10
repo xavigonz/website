@@ -107,42 +107,41 @@ nl:
   capp:
     hero:
       title: "Opleiden & Leren met CAPP LMS"
-      text_md: __CAPP__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+      text_md: __CAPP LMS__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
 
   learningspaces:
     hero:
       text_md: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
     start_now: Begin nu met LearningSpaces
 
+  kwaliteitspaspoort:
+    hero:
+      title: Kwaliteitspaspoort
+      text_md: Volledige compliance met CAPP Kwaliteitspaspoort
+
+  threesixty:
+    hero:
+      title: 360° Feedback
+
+  elearning:
+    heading: "Met Defacto als ervaren en technisch onderlegde partner, wordt de toepassing van E-Learning in jouw organisatie onherroepelijk een succes."
+
+  implementaties:
+    heading: Implementaties hoeven niet ingewikkeld te zijn.
+
+  hosting:
+    heading: "Hosting & Security"
+
+  koppelingen:
+    heading: Gecertificeerde koppelingen
+
   about:
     heading: Wij zijn Defacto
     heading2: Leren en ontwikkelen sinds 1987
-    text_html_md: |
-      Defacto is ouder dan de meeste van onze medewerkers. We zijn gevestigd in het centrum van Groningen, nabij het centraal station.
-
-      Defacto kent een platte organisatie en hoge mate van transparantie. De verantwoordelijkheid ligt op de werkvloer bij de mensen zelf en wordt door de mensen zelf ook bewaakt.
-
-      We geloven dat het belangrijk is om in een leuke omgeving te kunnen werken. Onze werktijden zijn flexibel, het gaat uiteindelijk om de kwaliteit die je aflevert. En elke vrijdagmiddag verdiepen we ons in nieuwe technieken, producten, etc.
-
-      Ben jij iemand met een persoonlijkheid en steek je je mening niet onder stoelen en banken? Bij Defacto zijn we altijd <a href="http://jobs.defacto.nl" target="_blank">op zoek naar mensen</a> die ons inspireren.
 
   contact:
     heading: Aangenaam
-    heading2: We maken graag kennis, bij jullie, of bij ons in Groningen.
-    text_html_md: |
-      Kom gerust een keertje met ons kennismaken of gewoon bijkletsen, de deur staat altijd open. Lunch met ons mee in het souterain met afsluitend een potje tafelvoetbal, of kom vrijdags gezellig mee borrelen onder het genot van een biertje of een wijntje?
-
-      Ons mooie pand is 2 minuten lopen vanaf het Centraal station in Groningen en we hebben genoeg parkeerplekken als je met de auto komt.
-
-      ### Contactgegevens
-
-      Defacto<br>
-      Zuiderpark 3<br>
-      9724 AD Groningen<br>
-
-      T +31 (0)50 3144832<br>
-      F +31 (0)50 3186332<br>
-      <a href="mailto:info@defacto.nl">info@defacto.nl</a>
+    heading2: "We maken graag kennis, bij jullie, of bij ons in Groningen."
 
     form:
       name: Naam

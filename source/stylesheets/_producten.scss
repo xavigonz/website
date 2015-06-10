@@ -58,7 +58,7 @@ Solutions
           vertical-align: middle;
 
           @include media($medium-up) {
-            display: block;
+            display: inline-block;
           }
         }
 
@@ -147,10 +147,8 @@ Solutions
         rgba($color, 0.3) 240px,
         $fallback: #fff);
 
-      h2 {
-        img {
-          width: 140px;
-        }
+      img {
+        width: 150px !important;
       }
     }
   }

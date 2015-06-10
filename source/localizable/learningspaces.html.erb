@@ -5,30 +5,15 @@ title: LearningSpaces
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %>
-      </h1><%= markitdown t("learningspaces.hero.text_md") %>
+      <h1><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %></h1>
+      <%= markitdown t("learningspaces.hero.text_md") %>
     </div>
     <%= link_to t("actions.try_for_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
     <%= link_to t("actions.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
   </div>
 </div>
 
-<section class="capp-steps">
-  <div class="row">
-    <div class="col">
-      <h2>3-2-1 Liftoff!</h2>
-      <p>Geef je corporate university een boost, begin je eigen MOOC of deel kennis met je collega’s - met LearningSpaces ben je in no time op gang.</p>
-    </div>
-    <div class="col">
-      <h2>Verbind en stimuleer</h2>
-      <p>Stimuleer informeel leren en kennisdeling. Met LearningSpaces is iedereen leerling én leraar. Vind en bewaar de verborgen kennis in je organisatie!</p>
-    </div>
-    <div class="col">
-      <h2>Rijke content</h2>
-      <p>Maak je eigen content of embed bestaand materiaal. Upload afbeeldingen en bestanden, creëer toetsen en opdrachten en chat met je collega’s.</p>
-    </div>
-  </div>
-</section>
+<%= partial "learningspaces/learningspaces" %>
 
 <section class="gray">
   <div class="row">

@@ -16,25 +16,6 @@
     }
   }
 
-  .solutions-overview {
-    padding-bottom: 3em;
-
-    .headline {
-      margin-bottom: 4em;
-      max-width: 820px;
-    }
-
-    .col {
-      @include span-columns(12);
-      clear: none;
-
-      @include media($large-up) {
-        @include span-columns(4);
-        clear: none;
-      }
-    }
-  }
-
   .gray {
     text-align: center;
   }
