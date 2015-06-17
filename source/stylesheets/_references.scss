@@ -1,0 +1,35 @@
+.referenties_index {
+  text-align: center;
+
+  .references-list {
+    > li {
+      background-color: #fff;
+      margin-bottom: 2em;
+      height: 150px;
+      line-height: 150px;
+      vertical-align: middle;
+
+      img {
+        display: inline-block;
+        max-height: 130px;
+        max-width: 80%;
+        vertical-align: middle;
+      }
+
+      @include media($medium-only) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+
+      @include media($large-only) {
+        @include span-columns(3);
+        @include omega(4n);
+      }
+
+      @include media($xlarge-up) {
+        @include span-columns(2);
+        @include omega(6n);
+      }
+    }
+  }
+}
