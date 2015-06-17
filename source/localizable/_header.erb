@@ -1,7 +1,8 @@
 <header id="header">
   <div class="header-wrapper">
     <div class="logo">
-      <%= link_to image_tag("logos/defacto.svg", alt: "Defacto"), "/index.html" %>
+      <%= link_to image_tag("logos/defacto.svg", alt: "Defacto",
+         onerror: "this.src='/images/logos/defacto.png'; this.onerror=null;"), "/index.html" %>
     </div>
     <button type="button" class="header-menu-button" id="mobile-menu-toggle">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
