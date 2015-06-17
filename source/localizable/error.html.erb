@@ -4,9 +4,10 @@ directory_index: false
 
 <section class="gray">
   <div class="row">
-    <%= image_tag "warning.gif", class: "warning-image", alt: "Warning" %>
+    <%= image_tag "warning.gif", class: "header-icon" %>
     <h1><%= t("error.heading") %></h1>
-
     <p><%= markitdown t("error.text_md") %></p>
   </div>
 </section>
+
+<%= partial "contact-info" %>

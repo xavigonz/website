@@ -4,11 +4,10 @@ title: Contact
 
 <section class="gray">
   <div class="row">
-    <h1>Dank je!</h1>
-    <h3>Je hoort zo snel mogelijk van ons.</h3>
+    <%= image_tag "smile.gif", class: "header-icon" %>
+    <h1><%= t("thanks.heading") %></h1>
+    <h3><%= markitdown t("thanks.text_md") %></h3>
   </div>
 </section>
 
-
 <%= partial "contact-info" %>
-

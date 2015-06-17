@@ -164,3 +164,7 @@ nl:
   error:
     heading: "Sorry, deze pagina bestaat niet."
     text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
+
+  thanks:
+    heading: Bedankt!
+    text_md: Je hoort zo snel mogelijk van ons.
