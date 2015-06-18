@@ -170,20 +170,19 @@
 
 // Blog featured
 .blog-featured {
-  padding: 5em 1em;
+  padding: 6em 1em 5em;
+  text-align: center;
+
+  .headline {
+    color: $medium-gray;
+  }
 
   article {
-    @include span-columns(12);
-
-    @include media($large-up) {
-      @include span-columns(8);
-      @include shift(2);
-    }
+    margin: 0 auto;
+    max-width: 800px;
   }
 
   .post-header {
-    text-align: center;
-
     h3 {
       margin-bottom: 0.5em;
       font-size: 1.6em;
@@ -192,23 +191,13 @@
   }
 
   .post-body {
+    color: $medium-gray;
+    font-size: 1.3em;
     margin-top: 1em;
+    text-align: left;
   }
 
-  // .post-footer {
-  //   padding-top: 4em;
-
-  //   .author-name {
-  //     display: none;
-  //     // font-weight: 700;
-  //   }
-
-  //   // .avatar {
-  //   //   $avatar-size: 50px;
-  //   //   @include avatar-size($avatar-size);
-  //   //   margin-left: -$avatar-size / 2;
-  //   //   padding: 3px;
-  //   //   top: -$avatar-size / 2;
-  //   // }
-  // }
+  .button {
+    margin-top: 3em;
+  }
 }
