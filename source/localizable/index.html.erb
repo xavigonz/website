@@ -12,32 +12,7 @@ title: Defacto
   </div>
 </div>
 
-<section class="gray cta">
-  <div class="row">
-    <h3><%= t("home.cta.text_html") %></h3>
-
-    <div class="modal">
-      <label for="afspraak-maken">
-        <span class="button outline"><%= t("home.cta.button") %></span>
-      </label>
-      <input class="modal-state" id="afspraak-maken" type="checkbox">
-      <div class="modal-window">
-        <div class="modal-inner">
-          <label class="modal-close" for="afspraak-maken"></label>
-          <h3><%= t("home.cta.form_title") %></h3>
-          <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
-            <input type="hidden" name="utf8" value="✓">
-            <input type="hidden" name="form" value="afspraak">
-            <input type="email" name="email" placeholder="<%= t("home.cta.email_placeholder") %>" required>
-            <button type="submit"><%= t("home.cta.form_submit") %></button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+<%= partial "cta_appointment" %>
 <%= partial "solutions_overview" %>
 <%= partial "product_highlights" %>
 <%#= partial "testimonials" %>

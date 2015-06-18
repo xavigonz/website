@@ -4,31 +4,19 @@ title: E-Learning starterkit
 
 <div class="hero">
   <div class="hero-inner">
-
     <div class="hero-copy">
-      <h1>E-Learning Starterkit</h1>
-      <p>Op eenvoudige en betaalbare wijze zelf uw lesmateriaal ontwikkelen</p>
-    </div>
+      <h1><%= t("elearning_starterkit.hero.title") %></h1>
+      <%= markitdown t("elearning_starterkit.hero.text_md") %>
 
-    <div class="modal">
-      <label for="afspraak-maken">
-        <span class="button white outline">Meer weten</span>
-      </label>
-      <input class="modal-state" id="afspraak-maken" type="checkbox">
-      <div class="modal-window">
-        <div class="modal-inner">
-          <label class="modal-close" for="afspraak-maken"></label>
-          <h3>Maak een afspraak</h3>
-          <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
-            <input type="hidden" name="utf8" value="✓">
-            <input type="hidden" name="form" value="starter-kit">
-            <input type="email" name="email" placeholder="E-mail" required>
-            <button type="submit">Vertel me meer</button>
-          </form>
-        </div>
-      </div>
-    </div>
+      <form class="form-inline" accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="form" value="<%= t("elearning_starterkit.hero.formkeep_title") %>">
+        <input type="text" name="name" placeholder="<%= t("form.name") %>">
+        <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
+        <button type="submit" class="green"><%= t("actions.tell_me_more") %></button>
+      </form>
 
+    </div>
   </div>
 </div>
 
@@ -42,13 +30,18 @@ title: E-Learning starterkit
 
 <section class="gray" id="ebook-download">
   <div class="row">
-    <h3>Download gratis ons E-Learning Handboek</h3>
-    <%= image_tag 'boek.png', alt: 'E-Learning Handboek Leren & Laten Leren' %>
-    <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
+
+    <label for="ebook-email">
+      <h3><%= t("elearning_ebook.heading_html") %></h3>
+      <%= image_tag "boek.png", alt: t("elearning_ebook.image_alt") %>
+    </label>
+
+    <form class="form-inline" accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
       <input type="hidden" name="utf8" value="✓">
-      <input type="hidden" name="form" value="ebook download">
-      <input type="email" name="email" placeholder="E-mail" required>
-      <button type="submit" class="rounded">Download</button>
+      <input type="hidden" name="form" value="<%= t("elearning_ebook.formkeep_title") %>">
+      <input type="email" name="email" id="ebook-email" placeholder="<%= t("form.email") %>" required>
+      <button type="submit"><%= t("actions.download") %></button>
     </form>
+
   </div>
 </section>

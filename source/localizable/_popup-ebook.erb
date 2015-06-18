@@ -4,18 +4,18 @@
   </a>
 
   <div class="popup-header">
-    <label for="ebook-email">
-      <h2 class="popup-title">Download gratis ons <span class="pre">E-Learning</span> Handboek</h2>
-      <%= image_tag "boek.png", alt: "E-Learning Handboek Leren & Laten Leren" %>
+    <label for="popup-ebook-email">
+      <h2 class="popup-title"><%= t("elearning_ebook.heading_html") %></h2>
+      <%= image_tag "boek.png", alt: t("elearning_ebook.image_alt") %>
     </label>
   </div>
 
   <div class="popup-bottom">
     <form accept-charset="UTF-8" action="https://formkeep.com/f/aff54030c202" method="POST">
       <input type="hidden" name="utf8" value="✓">
-      <input type="hidden" name="form" value="ebook download">
-      <input type="email" name="email" id="ebook-email" placeholder="E-mail" required>
-      <button type="submit">Download</button>
+      <input type="hidden" name="form" value="<%= t("elearning_ebook.formkeep_title") %>">
+      <input type="email" name="email" id="popup-ebook-email" placeholder="<%= t("form.email") %>" required>
+      <button type="submit"><%= t("actions.download") %></button>
     </form>
   </div>
 </div>

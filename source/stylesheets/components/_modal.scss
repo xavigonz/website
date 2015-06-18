@@ -93,6 +93,10 @@
     top: 0;
     width: 95%;
 
+    input {
+      border: $base-border;
+    }
+
     @include media($medium-up) {
       max-height: 70%;
       padding: $modal-padding;

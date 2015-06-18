@@ -5,6 +5,17 @@ nl:
     read_more: Lees verder
     visit_website: Bezoek de website
     try_for_free: Probeer gratis
+    tell_me_more: Vertel me meer
+    make_appointment: Maak een afspraak
+    download: Download
+
+  form:
+    name: Naam
+    organization: Bedrijf of organisatie
+    phone: Telefoon
+    email: E-mailadres
+    message: Wat kunnen we voor je betekenen?
+    submit: Verstuur
 
   header:
     menu: Menu
@@ -65,25 +76,6 @@ nl:
 
   products:
     title: Producten waar we trots op zijn.
-    products:
-      capp:
-        name: CAPP
-        desc: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
-      kpp:
-        name: Kwaliteitspaspoort
-        logo: logos/kwaliteitspaspoort.svg
-        desc: "Garandeer kwaliteit binnen uw organisatie door te werken aan bevoegdheden en bekwaamheden van uw medewerkers. Maak uw organisatie toekomstbestendig met het %{link}."
-      ls:
-        name: LearningSpaces
-        logo: logos/learningspaces-white.png
-        desc: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
-      esk:
-        name: E-Learning Starterkit
-        desc: "Maak je eigen content met de %{link}. Zo bespaar je geld en sluit je content beter aan bij je behoeften. De E-Learning Starterkit bevat alles wat je nodig hebt om meteen van start te gaan."
-      threesixty:
-        name: 360° Feedback
-        logo: logos/360logo.svg
-        desc: "Maak een efficiëntieslag in je HRD. %{link} maakt het voor medewerkers eenvoudig hun zelfkennis te vergroten en ontwikkeldoelen op te stellen."
 
   services:
     title: Diensten waar we trots op zijn.
@@ -105,26 +97,67 @@ nl:
         link: geintegreerd
 
   capp:
+    name: CAPP
+    desc: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
     hero:
       title: "Opleiden & Leren met CAPP LMS"
       text_md: __CAPP LMS__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
-
-  learningspaces:
-    hero:
-      text_md: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
-    start_now: Begin nu met LearningSpaces
+      formkeep_title: "CAPP: meer informatie"
+    cta_bottom:
+      heading_md: Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?
+      formkeep_title: "CAPP: afpraak maken"
 
   kwaliteitspaspoort:
+    name: Kwaliteitspaspoort
+    logo: logos/kwaliteitspaspoort.svg
+    desc: "Garandeer kwaliteit binnen uw organisatie door te werken aan bevoegdheden en bekwaamheden van uw medewerkers. Maak uw organisatie toekomstbestendig met het %{link}."
     hero:
       title: Kwaliteitspaspoort
       text_md: Volledige compliance met CAPP Kwaliteitspaspoort
+      formkeep_title: "Kwaliteitspaspoort: meer informatie"
+    cta_bottom:
+      heading_md: Nu beginnen met het behalen van je accreditaties met het Kwaliteitspaspoort?
+      formkeep_title: "Kwaliteitspaspoort: afspraak maken"
+
+  learningspaces:
+    name: LearningSpaces
+    logo: logos/learningspaces-white.png
+    desc: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+    hero:
+      text_md: __LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert.
+    start_now: Begin nu met LearningSpaces
+    cta_bottom:
+      heading_md: Vandaag nog beginnen met een gratis trial?
 
   threesixty:
+    name: 360° Feedback
+    logo: logos/360feedback.svg
+    desc: "Maak een efficiëntieslag in je HRD. %{link} maakt het voor medewerkers eenvoudig hun zelfkennis te vergroten en ontwikkeldoelen op te stellen."
     hero:
       title: 360° Feedback
+      text_md: Moeiteloos evaluaties uitvoeren in een gebruiksvriendelijke cloudservice.
+    cta_bottom:
+      heading_md: Kijk in de spiegel met 360° Feedback.
+
+  elearning_starterkit:
+    name: E-Learning Starterkit
+    desc: "Maak je eigen content met de %{link}. Zo bespaar je geld en sluit je content beter aan bij je behoeften. De E-Learning Starterkit bevat alles wat je nodig hebt om meteen van start te gaan."
+    hero:
+      title: E-Learning Starterkit
+      text_md: Op eenvoudige en betaalbare wijze zelf uw lesmateriaal ontwikkelen
+      formkeep_title: "E-Learning Starterkit"
 
   elearning:
     heading: "Met Defacto als ervaren en technisch onderlegde partner, wordt de toepassing van E-Learning in jouw organisatie onherroepelijk een succes."
+    cta_bottom:
+      heading_md: Weten wat E-Learning voor jouw organisatie kan betekenen?
+      formkeep_title: "E-Learning: meer informatie"
+
+  # for ebook partial and popup
+  elearning_ebook:
+    heading_html: Download gratis ons <span class="pre">E-Learning</span> Handboek
+    image_alt: "E-Learning Handboek Leren & Laten Leren"
+    formkeep_title: E-book download
 
   implementaties:
     heading: Implementaties hoeven niet ingewikkeld te zijn.
@@ -142,14 +175,7 @@ nl:
   contact:
     heading: Aangenaam
     heading2: "We maken graag kennis, bij jullie, of bij ons in Groningen."
-
-    form:
-      name: Naam
-      organization: Bedrijf of organisatie
-      phone: Telefoon
-      email: E-mail
-      message: Bericht
-      submit: Verstuur bericht
+    form_title: Wat kunnen we voor je betekenen?
 
   blog:
     title: Wat ons bezighoudt
@@ -167,7 +193,3 @@ nl:
   error:
     heading: "Sorry, deze pagina bestaat niet."
     text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
-
-  thanks:
-    heading: Bedankt!
-    text_md: Je hoort zo snel mogelijk van ons.
