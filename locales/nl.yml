@@ -158,6 +158,9 @@ nl:
   testimonials:
     title: Wat anderen zeggen
 
+  references:
+    title: Enkele referenties
+
   footer:
     copyright_html: "&copy; 1987 - %{year} Defacto"
 
