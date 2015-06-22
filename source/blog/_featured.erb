@@ -6,7 +6,7 @@
 # end
 
 # Get single featured post
-featured = blog.articles.find{ |item| item.metadata[:page]["featured"] rescue false }
+featured = blog.articles.find { |item| item.metadata[:page]["featured"] rescue false }
 
 if featured
   author = blog_author(featured)
