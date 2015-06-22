@@ -20,13 +20,6 @@
       @include span-columns(3);
     }
 
-    [class^="icon-"],
-    [class*=" icon-"] {
-      margin-right: 10px;
-      font-size: 1.6em;
-      vertical-align: middle;
-    }
-
     h6 {
       border-bottom: 1px solid #444;
       margin-bottom: 5px;
@@ -38,9 +31,28 @@
       display: inline-block;
       padding: 5px 0;
 
+      &:active,
+      &:focus,
+      &:hover {
+        color: lighten(#999, 30%);
+      }
+
       @include media($medium-only) {
         padding: 3px 0;
       }
+    }
+  }
+
+  .social-links {
+    li {
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1.6em;
+      margin-right: 12px;
+      vertical-align: middle;
     }
   }
 
