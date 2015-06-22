@@ -13,21 +13,24 @@ if featured
   author_name = author ? "#{author.firstname} #{author.lastname}" : featured.data.author
 %>
 
-<div class="row blog blog-featured">
-  <article>
-    <header class="post-header">
-      <h3><%= link_to featured.title, featured.url %></h3>
-      <div class="post-meta">
-        <span class="author-name"><%= author_name %></span>
-        <time datetime="<%= featured.date.strftime('%F') %>"><%= I18n.l(featured.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
-      </div>
-    </header>
+  <div class="row blog blog-featured">
+    <article>
+      <header class="post-header">
+        <h3><%= link_to featured.title, featured.url %></h3>
+        <div class="post-meta">
+          <span class="author-name"><%= author_name %></span>
+          <time datetime="<%= featured.date.strftime('%F') %>"><%= I18n.l(featured.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
+        </div>
+      </header>
 
-    <div class="post-body">
-      <%= Nokogiri::HTML(featured.summary(400)).text %>
-      <%= link_to "lees verder", featured.url, class: "read-more" %>
-    </div>
-  </article>
-</div>
+      <div class="post-body">
+        <%= Nokogiri::HTML(featured.summary(400)).text %>
+        <%= link_to "lees verder", featured.url, class: "read-more" %>
+      </div>
+    </article>
+
+    <%#= link_to t("header.blog"), "/blog/" %>
+    <%= link_to "Meer op ons Blog", "/blog/", class: "button blue outline" %>
+  </div>
 
 <% end %>
