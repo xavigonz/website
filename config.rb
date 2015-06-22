@@ -92,6 +92,10 @@ end
 ###
 
 helpers do
+  def page_title(page)
+    page.data.title ? page.data.title + " - Defacto" : t("head.default_title")
+  end
+
   # Prevent page_classes from prefixing locales
   def page_classes(path=current_path.dup, options={})
     super(path.sub(/^[a-z]{2}\//, ''), options)
