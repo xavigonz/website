@@ -35,7 +35,7 @@ $popup-mobile-mode: max-width 400px;
   position: fixed;
   text-align: left;
   width: 100%;
-  z-index: 999999998;
+  z-index: 9999999999;
 
   @include media($popup-mobile-mode) {
     max-width: 94%;
