@@ -1,5 +1,5 @@
 ---
-title: "Wat we hebben geleerd van het open sourcen van ons hobbyproject"
+title: Wat we hebben geleerd van het open sourcen van ons hobbyproject
 date: 2014-08-11 16:25:27
 author: Hugo
 ---
