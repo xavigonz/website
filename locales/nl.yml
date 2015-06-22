@@ -1,6 +1,10 @@
 ---
 nl:
 
+  head:
+    default_title: Defacto
+    default_description: Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers
+
   actions:
     read_more: Lees verder
     visit_website: Bezoek de website
