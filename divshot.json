@@ -15,7 +15,18 @@
     "/organisatie": "/over-ons/",
     "/vacatures": "http://jobs.defacto.nl",
     "/routebeschrijving": "/contact",
-    "/de": "http://de.defacto.nl"
+    "/de": "http://de.defacto.nl",
+    "/de/*": "http://de.defacto.nl",
+    "/news/*": "/blog",
+    "/news/": "/blog",
+    "/mobile/*": "/",
+    "/uploads/*": "/",
+    "/nms/*": "/",
+    "/index.php*": "/",
+    "/dao": "/",
+    "/dao/*": "/",
+    "/summerschool/": "/",
+    "/summerschool/*": "/"
   }
 }
 
