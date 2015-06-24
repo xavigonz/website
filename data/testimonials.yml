@@ -1,12 +1,41 @@
-# Testimonials
+#
+# TESTIMONIALS
+#####################################################################################
+#
+# Example:
+#
+# - name: Martina de Vos
+#   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
+#   avatar: testimonials/martina_de_vos.jpg
+#   featured: true
+#   quote: "This is the full version of the quote"
+#   summary: "This is the short version of the quote (optional)"
 #
 # Usage:
+#
 # <%= partial "testimonials", locals: {
-#   count: 2,
-#   featured: true,
-#   summary: true,
-#   classes: "cols inverted"
+#   count: 2,         # amount of testimonials to show (optional)
+#   featured: true,   # only show featured (optional)
+#   summary: true     # show summary if present, otherwise the full quote (optional)
 # } %>
+#
+#####################################################################################
+
+- name: Martina de Vos
+  company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
+  avatar: testimonials/martina_de_vos.jpg
+  featured: true
+  quote: >
+    We zeggen wat we doen en we doen wat we zeggen, is het motto waaronder Defacto werkt. En dat is helemaal waar gemaakt tijdens
+    ons prima verlopen implementatieproject. Vanuit beide kanten waren er heldere afspraken, korte lijnen, humor als smeerolie en
+    gemotiveerde teams die de intentie hebben elkaar te vinden en te versterken. De spontaan aangeboden extra hulp bij de plotselinge
+    uitval van een collega geeft de betrokkenheid van de Defacto bij zijn klanten zeer goed weer. Hulde, mocht het nog een keer nodig
+    zijn: we doen het zo weer!
+  summary: >
+    We zeggen wat we doen en we doen wat we zeggen, is het motto waaronder Defacto werkt. En dat is helemaal waar gemaakt tijdens
+    ons prima verlopen implementatieproject. Er waren heldere afspraken, korte lijnen, humor als smeerolie en gemotiveerde teams die
+    de intentie hebben elkaar te vinden en te versterken.
+
 
 - name: Marieke van Kernebeek
   company: "Office manager, Phoenix Opleidingen"
@@ -24,19 +53,9 @@
     In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet.
 
 
-- name: Bruno de Hoogd
-  company: "Directeur HRM, Maxima Medisch Centrum"
-  avatar: testimonials/bruno_de_hoogd.jpg
-  quote: >
-    Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen
-    in het verder toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de
-    patiënt - het steeds beter te doen staat in alles voorop.
-
-
 - name: Peter van Overbruggen
-  company: "Zuidzorg"
-  avatar: testimonials/bruno_de_hoogd.jpg
-  featured: true
+  company: "Opleidingsadviseur, ZuidZorg"
+  avatar: testimonials/peter_van_overbruggen.jpg
   quote: >
     <p>Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
     (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
@@ -54,3 +73,12 @@
     Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
     (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
     toegankelijk en makkelijk in de omgang.
+
+
+# - name: Bruno de Hoogd
+#   company: "Directeur HRM, Maxima Medisch Centrum"
+#   avatar: testimonials/bruno_de_hoogd.jpg
+#   quote: >
+#     Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen
+#     in het verder toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de
+#     patiënt - het steeds beter te doen staat in alles voorop.
