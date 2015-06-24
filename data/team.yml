@@ -1,3 +1,7 @@
+#
+# TEAM
+###############################################################################
+#
 # Example:
 #
 # - firstname: Matthijs
@@ -18,6 +22,8 @@
 #    So `firstname: Matthijs` will use images/team/matthijs.jpg if it exists.
 #
 # 4. Use a placeholder as fallback.
+#
+###############################################################################
 
 - firstname: Albert
   lastname: Thie

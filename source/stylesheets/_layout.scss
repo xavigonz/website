@@ -61,14 +61,12 @@ section {
 }
 
 article {
-  @include span-columns(12);
-
   @include media($medium-up) {
-    @include span-columns(8);
-    @include shift(2);
+    margin: 0 auto;
+    max-width: 800px;
 
     &.sidebar-content {
-      @include shift(0);
+      @include span-columns(8);
     }
   }
 

@@ -1,26 +1,47 @@
 .testimonials {
-  background-color: #fff;
+  background-color: $lighter-gray;
+  text-align: center;
 
   &.inverted {
-    background-color: $lighter-gray;
+    background-color: #fff;
+
+    .quote {
+      background-color: $lighter-gray;
+
+      &:before {
+        background-color: $lighter-gray;
+      }
+    }
+  }
+
+  &.cols .testimonial-list {
+    margin: 0;
+    max-width: none;
+
+    li {
+      @include media($large-up) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
   }
 }
 
 .testimonial-list {
-  $quote-background: $lighter-gray;
+  $quote-background: #fff;
   // $quote-border: 1px solid #ededed;
   $quote-border: none;
   $arrow-size: 25px;
   $avatar-size: 50px;
 
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+
   li {
     @include clearfix;
-    margin: 1em 0;
-
-    @include media($medium-up) {
-      @include span-columns(6);
-      @include omega(2n);
-    }
+    margin-bottom: 1em;
+    padding: 1em 0;
   }
 
   .quote {
@@ -28,18 +49,13 @@
     border: $quote-border;
     border-radius: $base-border-radius;
     color: #888;
+    display: block;
     font-size: 1.1em;
     font-style: italic;
     line-height: 1.4em;
     margin-bottom: 15px;
     padding: 1.5em;
     position: relative;
-
-    p {
-      margin: 0;
-      position: relative;
-      z-index: 2;
-    }
 
     &:before {
       @include transform(rotate(45deg));
@@ -56,11 +72,21 @@
       width: $arrow-size;
     }
 
-    .inverted & {
-      background-color: #fff;
-      &:before {
-        background-color: #fff;
+    p {
+      &:first-child {
+        margin-top: 0;
       }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  a.quote {
+    color: #888;
+
+    &:hover {
+      color: #444;
     }
   }
 
