@@ -1,5 +1,6 @@
 .testimonials {
   background-color: #fff;
+  text-align: center;
 
   &.inverted {
     background-color: $lighter-gray;
@@ -13,13 +14,25 @@
   $arrow-size: 25px;
   $avatar-size: 50px;
 
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+
   li {
     @include clearfix;
-    margin: 1em 0;
+    margin-bottom: 1em;
+    padding: 1em 0;
+  }
 
-    @include media($medium-up) {
-      @include span-columns(6);
-      @include omega(2n);
+  &.cols {
+    margin: 0;
+    max-width: none;
+
+    li {
+      @include media($large-up) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
     }
   }
 
