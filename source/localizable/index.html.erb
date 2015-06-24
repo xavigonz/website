@@ -16,6 +16,22 @@ sitemap_priority: 1
 <%= partial "cta_appointment" %>
 <%= partial "solutions_overview" %>
 <%= partial "product_highlights" %>
-<%= partial "testimonials" %>
+
+
+<section class="testimonials cols">
+  <div class="headline">
+    <h2><%= t("testimonials.title") %></h2>
+  </div>
+  <div class="row">
+
+    <%= partial "testimonials", locals: {
+      count: 2,
+      featured: true,
+      summary: true
+    } %>
+
+  </div>
+</section>
+
 <%= partial "blog/featured" %>
 <%= partial "clients" %>

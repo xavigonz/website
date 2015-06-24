@@ -1,0 +1,56 @@
+# Testimonials
+#
+# Usage:
+# <%= partial "testimonials", locals: {
+#   count: 2,
+#   featured: true,
+#   summary: true,
+#   classes: "cols inverted"
+# } %>
+
+- name: Marieke van Kernebeek
+  company: "Office manager, Phoenix Opleidingen"
+  avatar: testimonials/marieke_van_kernebeek.jpg
+  featured: true
+  quote: >
+    Het fijnste aan de samenwerking met de mensen van Defacto is dat we al zo lang zulk intensief contact hebben,
+    dat je weet dat je van elkaar op aan kunt. Door dit vertrouwen is er ook ruimte voor een kritische noot.
+    In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet.
+    Heel prettig is het ook dat de mensen aan de toon van een mailtje of telefoontje al aanvoelen of iets dringend
+    is of niet en ze staan daarmee altijd voor je klaar. Kortom: een hele plezierige samenwerking.
+  summary: >
+    Het fijnste aan de samenwerking met de mensen van Defacto is dat we al zo lang zulk intensief contact hebben,
+    dat je weet dat je van elkaar op aan kunt. Door dit vertrouwen is er ook ruimte voor een kritische noot.
+    In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet.
+
+
+- name: Bruno de Hoogd
+  company: "Directeur HRM, Maxima Medisch Centrum"
+  avatar: testimonials/bruno_de_hoogd.jpg
+  quote: >
+    Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen
+    in het verder toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de
+    patiënt - het steeds beter te doen staat in alles voorop.
+
+
+- name: Peter van Overbruggen
+  company: "Zuidzorg"
+  avatar: testimonials/bruno_de_hoogd.jpg
+  featured: true
+  quote: >
+    <p>Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
+    (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
+    toegankelijk en makkelijk in de omgang. Kortom: een prettige samenwerking.</p>
+    <p>Ook de servicedesk is makkelijk te bereiken. Zij nemen de tijd voor je en proberen altijd duidelijkheid te bieden,
+    ook als iets niet mogelijk is. Onderscheidend vond ik ook dat de mensen altijd probeerden mee te denken over wat specifiek
+    voor onze organisatie van belang is. ZuidZorg heeft hiernaast ook een webshop door Defacto laten ontwikkelen.
+    Deze webshop is een belangrijke aanwinst voor onze cursusadministratie van de cliënten-cursussen. Cliënten krijgen direct
+    duidelijkheid over de planning en de mogelijkheden van de door hun gewenste cursus. Daarnaast levert dit ons enorme tijdwinst op.
+    Daar waar eerst meerdere medewerkers betrokken waren bij de administratieve verwerking, is er nu nog maar één persoon een
+    gedeelte van haar tijd mee bezig. Door de invoering van CAPP als leermanagementsysteem is daarnaast de eigen
+    verantwoordelijkheid van medewerkers vergroot, de inzichtelijkheid voor leidinggevenden geoptimaliseerd en kunnen we meer
+    leeractiviteiten faciliteren voor medewerkers en cliënten.</p>
+  summary: >
+    Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
+    (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
+    toegankelijk en makkelijk in de omgang.

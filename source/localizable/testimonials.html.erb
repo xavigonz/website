@@ -2,40 +2,11 @@
 title: Testimonials
 ---
 
-<section class="testimonials inverted">
-  <div class="row">
+<section class="testimonials">
+  <div class="headline">
     <h2><%= t("testimonials.title") %></h2>
-    <br>
-
-    <ul class="testimonial-list">
-
-      <li>
-        <div class="quote">
-          <p>
-            Het fijnste aan de samenwerking met de mensen van Defacto is dat we al zo lang zulk intensief contact hebben, dat je weet dat je van elkaar op aan kunt. Door dit vertrouwen is er ook ruimte voor een kritische noot. In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet. Heel prettig is het ook dat de mensen aan de toon van een mailtje of telefoontje al aanvoelen of iets dringend is of niet en ze staan daarmee altijd voor je klaar. Kortom: een hele plezierige samenwerking.
-          </p>
-        </div>
-        <div class="author">
-          <%= image_tag "testimonials/marieke_van_kernebeek.jpg", class: "avatar", alt: "Marieke van Kernebeek" %>
-          <div class="name">Marieke van Kernebeek</div>
-          <div class="company">Office manager, Phoenix Opleidingen</div>
-        </div>
-      </li>
-
-      <li>
-        <div class="quote">
-          <p>
-            Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen in het verder toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de patiënt - het steeds beter te doen staat in alles voorop.
-          </p>
-        </div>
-        <div class="author">
-          <%= image_tag "testimonials/bruno_de_hoogd.jpg", class: "avatar", alt: "Bruno de Hoogd" %>
-          <div class="name">Bruno de Hoogd</div>
-          <div class="company">Directeur HRM, Maxima Medisch Centrum</div>
-        </div>
-      </li>
-
-    </ul>
-
+  </div>
+  <div class="row">
+    <%= partial "testimonials" %>
   </div>
 </section>
