@@ -1,15 +1,30 @@
 <!doctype html>
 <html lang="<%= I18n.locale.to_s %>">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><%= page_title current_page %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
-    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <%= partial "google_analytics" %>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "main" %>
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= partial "google_analytics" %>
+<!--
+ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄  
+ █████ █████ █████                                                               
+ █████ █████ █████     ██████▄▄             ▟███▘                              
+ ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌            
+ █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙  
+ ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██ 
+ █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██ 
+ █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛  
+ ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔                                                              
+ 
+ Hi there!
+ The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
+ Come hack with us? http://jobs.defacto.nl/
+-->
   </head>
   <body class="<%= page_classes %> <%= "blog_article" if is_blog_article? %>">
     <%= partial "header" %>
