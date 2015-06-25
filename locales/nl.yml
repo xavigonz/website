@@ -163,6 +163,9 @@ nl:
     title: "Diensten waar we trots op zijn."
   testimonials: 
     title: "Wat anderen zeggen"
+  thanks:
+    heading: Bedankt!
+    text_md: Je hoort zo snel mogelijk van ons.
   threesixty: 
     cta_bottom: 
       heading_md: "Kijk in de spiegel met 360° Feedback."
