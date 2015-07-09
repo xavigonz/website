@@ -35,6 +35,22 @@
 # activate :livereload
 # activate :livereload, host: "127.0.0.1"
 
+# Blog
+Time.zone = "CET"
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = ":title"
+  # blog.tag_template = "blog/tag.html"
+  # blog.calendar_template = "blog/calendar.html"
+  blog.paginate = false
+  # blog.per_page = 10
+end
+
+page "blog/*", layout: :blog_post_layout
+page "blog/index.html", layout: :blog_layout
+page "blog/feed.xml", layout: false
+
 # activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
 activate :i18n, mount_at_root: :nl, langs: [:nl]
 activate :directory_indexes
@@ -52,22 +68,6 @@ set :markdown, input: "GFM", auto_ids: false
 
 #set :markdown_engine, :redcarpet
 #set :markdown, fenced_code_blocks: true, smartypants: true
-
-# Blog
-Time.zone = "CET"
-
-activate :blog do |blog|
-  blog.prefix = "blog"
-  blog.permalink = ":title"
-  # blog.tag_template = "blog/tag.html"
-  # blog.calendar_template = "blog/calendar.html"
-  blog.paginate = false
-  # blog.per_page = 10
-end
-
-page "blog/*", layout: :blog_post_layout
-page "blog/index.html", layout: :blog_layout
-page "blog/feed.xml", layout: false
 
 # Build-specific configuration
 configure :build do
