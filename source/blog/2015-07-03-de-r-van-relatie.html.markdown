@@ -4,11 +4,9 @@ date: 2015-07-03 16:09 CEST
 author: Joep
 ---
 
-‘Het verschil tussen contact en contract is de R van relatie’
+### Het verschil tussen contact en contract is de R van relatie
 
-Een gevleugelde uitspraak die ik op één van mijn eerste dagen bij Defacto al hoorde van Tim, onze senior sales.
-
-Hij heeft helemaal gelijk. Wij begeven ons in een markt waar alleen het leveren van software niet voldoende is. Het installeren van een LMS en het zorgen dat een LMS ook effectief gebruikt wordt in een organisatie zijn twee heel verschillende dingen. Een goede relatie met je klanten om continu gezamenlijk het proces van acceptatie en implementatie te blijven monitoren is daarom essentieel.
+Een gevleugelde uitspraak die ik op één van mijn eerste dagen bij Defacto al hoorde van Tim, onze senior sales. Hij heeft helemaal gelijk. Wij begeven ons in een markt waar alleen het leveren van software niet voldoende is. Het installeren van een LMS en het zorgen dat een LMS ook effectief gebruikt wordt in een organisatie zijn twee heel verschillende dingen. Een goede relatie met je klanten om continu gezamenlijk het proces van acceptatie en implementatie te blijven monitoren is daarom essentieel.
 
 Case in point. Begin dit jaar stonden wij aan de start van een groot implementatietraject van [ons LMS](http://www.defacto.nl/capp) bij de Sint Fransiscus Vlietland Groep (SFVG) in Rotterdam. We hebben tijdens dit project niet alleen ons eigen LMS geïmplementeerd, maar tevens alle opgebouwde opleidingshistorie uit het vorige LMS van SFVG succesvol kunnen overzetten. Uiteindelijk heeft dit geresulteerd in een naadloze overgang, waarin alle medewerkers van het SFVG verder kunnen bouwen op hun eerder behaalde resultaten.
 
@@ -23,3 +21,5 @@ Links en rechts zie je grote software projecten falen, veel geld gaat verloren e
 Voor ons is deze aanpak in ieder geval heel succesvol en zorgt toch voor de kers op de taart. Afgelopen week kregen wij een borrel met catering aangeboden van het SFVG omdat ook zij de implementatie van het LMS als zo prettig hadden ervaren.
 
 Het zijn de kleine dingen in het leven…
+
+![Borrel met catering](/images/blog/borrel-met-catering.jpg)
