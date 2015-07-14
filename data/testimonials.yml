@@ -1,6 +1,11 @@
 #
 # TESTIMONIALS
-#####################################################################################
+#####################################################################################################
+#
+# Note:
+#
+# Testimonials are displayed from top to bottom. So the first in this file will be on top.
+# Same goes for featured testimonials (on homepage): the first two with featured:true will show.
 #
 # Example:
 #
@@ -9,7 +14,7 @@
 #   avatar: testimonials/martina_de_vos.jpg
 #   featured: true
 #   quote: "This is the full version of the quote"
-#   summary: "This is the short version of the quote (optional)"
+#   summary: "This is the short version of the quote (optional, only used when summary:true)"
 #
 # Usage:
 #
@@ -19,7 +24,24 @@
 #   summary: true     # show summary if present, otherwise the full quote (optional)
 # } %>
 #
-#####################################################################################
+#####################################################################################################
+
+- name: Kristel Vissers
+  company: "Opleidingsadviseur, Máxima Medisch Centrum"
+  quote: >
+    <p>Binnen Maxima Medisch Centrum (MMC) was behoefte aan het organiseren van de kwaliteit en scholingen. Samen met Defacto is het
+    leermanagementportaal geimplementeerd, wij noemen dit het Kwaliteitspaspoort.</p>
+    <p>Een groot project dat cultuur en infrastructuur pareert, waarin samengewerkt moet worden tussen verschillende afdelingen zoals
+    academie, HRM, Kwaliteit en veiligheid en waarin 100% inzet is vereist. De rol van Defacto hierin is technisch en inhoudelijk
+    bijdragen aan het behalen van de doelen. Het leermanagementsysteem heeft direct en indirect gezorgd voor beweging in de organisatie
+    en dat leidt tot een absolute win-win situatie.</p>
+    <p>Tijdens het project merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat er speelt in de organisatie
+    en kunnen daarom constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons geholpen de basis op orde te
+    krijgen voor de toekomst. Gezamenlijk hebben wij verschillende lastige uitdagingen kunnen tackelen. Dat zorgt nu voor een sterk
+    uitgangspunt voor continue verbetering, zowel technisch als inhoudelijk. Zo zijn onze medewerkers nu aantoonbaar bekwaam. De
+    hoog-risicovolle apparatuur wordt nu door assessoren op de werkvloer getoetst. Dit scheelt ons veel tijd en biedt enorm veel inzicht.
+    Met behulp van Defacto krijgen nu inspectie, RvB en leidinggevenden eenvoudig (stuur)informatie en zijn onze professionals bewust
+    geworden van hun eigen ontwikkeling en nemen zij hierin nu verantwoordelijkheid.</p>
 
 - name: Martina de Vos
   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
@@ -69,11 +91,6 @@
     gedeelte van haar tijd mee bezig. Door de invoering van CAPP als leermanagementsysteem is daarnaast de eigen
     verantwoordelijkheid van medewerkers vergroot, de inzichtelijkheid voor leidinggevenden geoptimaliseerd en kunnen we meer
     leeractiviteiten faciliteren voor medewerkers en cliënten.</p>
-  summary: >
-    Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
-    (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
-    toegankelijk en makkelijk in de omgang.
-
 
 # - name: Bruno de Hoogd
 #   company: "Directeur HRM, Maxima Medisch Centrum"

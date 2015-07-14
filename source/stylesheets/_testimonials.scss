@@ -96,11 +96,19 @@
   }
 
   .avatar {
+    background-color: #fcfcfc;
     border-radius: 50%;
-    height: $avatar-size;
-    width: $avatar-size;
-    margin: 0 $avatar-size/4 0 $avatar-size/2;
     float: left;
+    height: $avatar-size;
+    margin: 0 $avatar-size/4 0 $avatar-size/2;
+    width: $avatar-size;
+
+    &.no-image {
+      &:before,
+      &:after {
+        background-color: #d6d6d6;
+      }
+    }
   }
 
   .name {

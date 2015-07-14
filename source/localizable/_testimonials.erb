@@ -30,7 +30,15 @@ end
     <li id="<%= quote_id %>">
       <%= quote_html %>
       <div class="author">
-        <%= image_tag testimonial.avatar, alt: testimonial.name, class: "avatar", alt: testimonial.name %>
+
+        <%=
+        if testimonial.avatar
+          image_tag testimonial.avatar, alt: testimonial.name, class: "avatar"
+        else
+          content_tag :div, "", class: "avatar no-image"
+        end
+        %>
+
         <div class="name"><%= testimonial.name %></div>
         <span class="company"><%= testimonial.company %></span>
       </div>
