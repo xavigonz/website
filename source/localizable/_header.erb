@@ -15,6 +15,10 @@
         <li><%= nav_link_to t("header.about"), "/over-ons.html" %></li>
         <li><%= nav_link_to t("header.blog"), "/blog/" %></li>
         <li><%= nav_link_to t("header.contact"), "/contact.html" %></li>
+        <li class="flags">
+          <%= link_to image_tag("flags/de.gif", alt: "Deutsch"), "http://de.defacto.nl", target: "_blank" %>
+          <%= link_to image_tag("flags/en.gif", alt: "English"), "http://en.defacto.nl", target: "_blank" %>
+        </li>
       </ul>
     </nav>
   </div>
