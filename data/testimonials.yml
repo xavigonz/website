@@ -26,22 +26,22 @@
 #
 #####################################################################################################
 
-- name: Kristel Vissers
-  company: "Opleidingsadviseur, Máxima Medisch Centrum"
-  quote: >
-    <p>Binnen Maxima Medisch Centrum (MMC) was behoefte aan het organiseren van de kwaliteit en scholingen. Samen met Defacto is het
-    leermanagementportaal geimplementeerd, wij noemen dit het Kwaliteitspaspoort.</p>
-    <p>Een groot project dat cultuur en infrastructuur pareert, waarin samengewerkt moet worden tussen verschillende afdelingen zoals
-    academie, HRM, Kwaliteit en veiligheid en waarin 100% inzet is vereist. De rol van Defacto hierin is technisch en inhoudelijk
-    bijdragen aan het behalen van de doelen. Het leermanagementsysteem heeft direct en indirect gezorgd voor beweging in de organisatie
-    en dat leidt tot een absolute win-win situatie.</p>
-    <p>Tijdens het project merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat er speelt in de organisatie
-    en kunnen daarom constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons geholpen de basis op orde te
-    krijgen voor de toekomst. Gezamenlijk hebben wij verschillende lastige uitdagingen kunnen tackelen. Dat zorgt nu voor een sterk
-    uitgangspunt voor continue verbetering, zowel technisch als inhoudelijk. Zo zijn onze medewerkers nu aantoonbaar bekwaam. De
-    hoog-risicovolle apparatuur wordt nu door assessoren op de werkvloer getoetst. Dit scheelt ons veel tijd en biedt enorm veel inzicht.
-    Met behulp van Defacto krijgen nu inspectie, RvB en leidinggevenden eenvoudig (stuur)informatie en zijn onze professionals bewust
-    geworden van hun eigen ontwikkeling en nemen zij hierin nu verantwoordelijkheid.</p>
+# - name: Kristel Vissers
+#   company: "Opleidingsadviseur, Máxima Medisch Centrum"
+#   quote: >
+#     <p>Binnen Maxima Medisch Centrum (MMC) was behoefte aan het organiseren van de kwaliteit en scholingen. Samen met Defacto is het
+#     leermanagementportaal geimplementeerd, wij noemen dit het Kwaliteitspaspoort.</p>
+#     <p>Een groot project dat cultuur en infrastructuur pareert, waarin samengewerkt moet worden tussen verschillende afdelingen zoals
+#     academie, HRM, Kwaliteit en veiligheid en waarin 100% inzet is vereist. De rol van Defacto hierin is technisch en inhoudelijk
+#     bijdragen aan het behalen van de doelen. Het leermanagementsysteem heeft direct en indirect gezorgd voor beweging in de organisatie
+#     en dat leidt tot een absolute win-win situatie.</p>
+#     <p>Tijdens het project merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat er speelt in de organisatie
+#     en kunnen daarom constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons geholpen de basis op orde te
+#     krijgen voor de toekomst. Gezamenlijk hebben wij verschillende lastige uitdagingen kunnen tackelen. Dat zorgt nu voor een sterk
+#     uitgangspunt voor continue verbetering, zowel technisch als inhoudelijk. Zo zijn onze medewerkers nu aantoonbaar bekwaam. De
+#     hoog-risicovolle apparatuur wordt nu door assessoren op de werkvloer getoetst. Dit scheelt ons veel tijd en biedt enorm veel inzicht.
+#     Met behulp van Defacto krijgen nu inspectie, RvB en leidinggevenden eenvoudig (stuur)informatie en zijn onze professionals bewust
+#     geworden van hun eigen ontwikkeling en nemen zij hierin nu verantwoordelijkheid.</p>
 
 - name: Martina de Vos
   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
