@@ -1,8 +1,8 @@
 <header id="header">
   <div class="header-wrapper">
     <div class="logo">
-      <%= link_to image_tag("logos/defacto.svg", alt: "Defacto",
-         onerror: "this.src='/images/logos/defacto.png'; this.onerror=null;"), "/index.html" %>
+      <%= locale_link_to image_tag("logos/defacto.svg", alt: "Defacto",
+         onerror: "this.src='/images/logos/defacto.png'; this.onerror=null;"), "/" %>
     </div>
     <button type="button" class="header-menu-button" id="mobile-menu-toggle">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>
@@ -16,7 +16,18 @@
         <li><%= nav_link_to t("header.blog"), "/blog" %></li>
         <li><%= nav_link_to t("header.contact"), "/contact" %></li>
         <li class="flags">
-          <%= link_to image_tag("flags/de.gif", alt: "Deutsch"), "http://de.defacto.nl", target: "_blank" %>
+        <% if I18n.locale != :nl %>
+          <% link_to current_page.url.sub! '/de', '' do %>
+            <%= image_tag("flags/nl.gif", alt: "Nederlands") %>
+          <% end %>
+        <% end %>
+        <% if I18n.locale != :de %>
+          <% link_to "/de#{current_page.url}" do %>
+            <%= image_tag("flags/de.gif", alt: "Deutsch") %>
+          <% end %>
+        <% end %>
+
+
           <%= link_to image_tag("flags/en.gif", alt: "English"), "http://en.defacto.nl", target: "_blank" %>
         </li>
       </ul>

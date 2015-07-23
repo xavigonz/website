@@ -1,9 +1,15 @@
 ---
 nl:
-  url: ""
   about:
+    about_defacto: Over Defacto
+    contact: Contact
     heading: "Wij zijn Defacto"
     heading2: "Leren en ontwikkelen sinds 1987"
+    references: Referenties
+    team:
+      work_with_us: Werken bij
+      you: jij?
+    testimonials: Testimonials
   actions:
     download: Download
     make_appointment: "Maak een afspraak"

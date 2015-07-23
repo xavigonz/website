@@ -10,42 +10,42 @@ title: Diensten
     <ul class="solitions-list">
 
       <li class="elearning">
-        <% locale_link_to "elearning.html", class: "col left" do %>
+        <% locale_link_to "/elearning", class: "col left" do %>
           <h2><%= t("services.services.elearning.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.elearning.desc", link: locale_link_to(t("services.services.elearning.name"), "elearning.html")) %></p>
-          <%= locale_link_to t("actions.read_more"), "elearning.html", class: "button blue outline" %>
+          <p><%= t("services.services.elearning.desc", link: locale_link_to(t("services.services.elearning.name"), "/elearning")) %></p>
+          <%= locale_link_to t("actions.read_more"), "/elearning", class: "button blue outline" %>
         </div>
       </li>
 
       <li class="implementaties">
-        <% locale_link_to "implementaties.html", class: "col left" do %>
+        <% locale_link_to "/implementaties", class: "col left" do %>
           <h2><%= t("services.services.implementaties.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.implementaties.desc", link: locale_link_to(t("services.services.implementaties.link"), "implementaties.html")) %></p>
-          <%= locale_link_to t("actions.read_more"), "implementaties.html", class: "button orange outline" %>
+          <p><%= t("services.services.implementaties.desc", link: locale_link_to(t("services.services.implementaties.link"), "/implementaties")) %></p>
+          <%= locale_link_to t("actions.read_more"), "/implementaties", class: "button orange outline" %>
         </div>
       </li>
 
       <li class="hosting">
-        <% locale_link_to "hosting.html", class: "col left" do %>
+        <% locale_link_to "/hosting", class: "col left" do %>
           <h2><%= t("services.services.hosting.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.hosting.desc", link: locale_link_to(t("services.services.hosting.link"), "hosting.html")) %></p>
-          <%= locale_link_to t("actions.read_more"), "hosting.html", class: "button red outline" %>
+          <p><%= t("services.services.hosting.desc", link: locale_link_to(t("services.services.hosting.link"), "/hosting")) %></p>
+          <%= locale_link_to t("actions.read_more"), "/hosting", class: "button red outline" %>
         </div>
       </li>
 
       <li class="koppelingen">
-        <% locale_link_to "koppelingen.html", class: "col left" do %>
+        <% locale_link_to "/koppelingen", class: "col left" do %>
           <h2><%= t("services.services.koppelingen.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.koppelingen.desc", link: locale_link_to(t("services.services.koppelingen.link"), "koppelingen.html")) %></p>
-          <%= locale_link_to t("actions.read_more"), "koppelingen.html", class: "button green outline" %>
+          <p><%= t("services.services.koppelingen.desc", link: locale_link_to(t("services.services.koppelingen.link"), "/koppelingen")) %></p>
+          <%= locale_link_to t("actions.read_more"), "/koppelingen", class: "button green outline" %>
         </div>
       </li>
 

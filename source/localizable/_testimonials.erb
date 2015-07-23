@@ -17,10 +17,12 @@ end
 
     quote_index = data.testimonials.index(testimonial)
     quote_id = "testimonial-#{quote_index}"
+    link_locale = I18n.locale unless I18n.locale == :nl
+    link_url = link_locale.to_s + "/" + url_for("/testimonials.html##{quote_id}")
 
     if summary
       quote = testimonial.summary? ? testimonial.summary : testimonial.quote
-      quote_html = content_tag(:a, quote, href: url_for("/testimonials.html##{quote_id}"), class: "quote")
+      quote_html = content_tag(:a, quote, href: link_url, class: "quote")
     else
       quote = testimonial.quote
       quote_html = content_tag(:div, quote, class: "quote")
