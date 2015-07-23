@@ -10,52 +10,52 @@ title: Producten
     <ul class="solitions-list">
 
       <li class="capp">
-        <% link_to "capp.html", class: "col left" do %>
+        <% locale_link_to "capp.html", class: "col left" do %>
           <h2><%= t("capp.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("capp.desc", link: link_to(t("capp.name"), "capp.html")) %></p>
-          <%= link_to t("actions.read_more"), "capp.html", class: "button blue outline" %>
+          <p><%= t("capp.desc", link: locale_link_to(t("capp.name"), "capp.html")) %></p>
+          <%= locale_link_to t("actions.read_more"), "capp.html", class: "button blue outline" %>
         </div>
       </li>
 
       <li class="kwaliteitspaspoort">
-        <% link_to "kwaliteitspaspoort.html", class: "col left" do %>
+        <% locale_link_to "kwaliteitspaspoort.html", class: "col left" do %>
           <h2><%= image_tag t("kwaliteitspaspoort.logo"), alt: t("kwaliteitspaspoort.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("kwaliteitspaspoort.desc", link: link_to(t("kwaliteitspaspoort.name"), "kwaliteitspaspoort.html")) %></p>
-          <%= link_to t("actions.read_more"), "kwaliteitspaspoort.html", class: "button turquoise outline" %>
+          <p><%= t("kwaliteitspaspoort.desc", link: locale_link_to(t("kwaliteitspaspoort.name"), "kwaliteitspaspoort.html")) %></p>
+          <%= locale_link_to t("actions.read_more"), "kwaliteitspaspoort.html", class: "button turquoise outline" %>
         </div>
       </li>
 
       <li class="learningspaces">
-        <% link_to "learningspaces.html", class: "col left" do %>
+        <% locale_link_to "learningspaces.html", class: "col left" do %>
           <h2><%= image_tag t("learningspaces.logo"), alt: t("learningspaces.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("learningspaces.desc", link: link_to(t("learningspaces.name"), "learningspaces.html")) %></p>
-          <%= link_to t("actions.read_more"), "learningspaces.html", class: "button green outline" %>
+          <p><%= t("learningspaces.desc", link: locale_link_to(t("learningspaces.name"), "learningspaces.html")) %></p>
+          <%= locale_link_to t("actions.read_more"), "learningspaces.html", class: "button green outline" %>
         </div>
       </li>
 
       <li class="starterkit">
-        <% link_to "elearning-starterkit.html", class: "col left" do %>
+        <% locale_link_to "elearning-starterkit.html", class: "col left" do %>
           <h2><%= t("elearning_starterkit.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("elearning_starterkit.desc", link: link_to(t("elearning_starterkit.name"), "elearning-starterkit.html")) %></p>
-          <%= link_to t("actions.read_more"), "elearning-starterkit.html", class: "button red outline" %>
+          <p><%= t("elearning_starterkit.desc", link: locale_link_to(t("elearning_starterkit.name"), "elearning-starterkit.html")) %></p>
+          <%= locale_link_to t("actions.read_more"), "elearning-starterkit.html", class: "button red outline" %>
         </div>
       </li>
 
       <li class="threesixty">
-        <% link_to "360.html", class: "col left" do %>
+        <% locale_link_to "360.html", class: "col left" do %>
           <h2><%= image_tag t("threesixty.logo"), alt: t("threesixty.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("threesixty.desc", link: link_to(t("threesixty.name"), "360.html")) %></p>
-          <%= link_to t("actions.read_more"), "360.html", class: "button orange outline" %>
+          <p><%= t("threesixty.desc", link: locale_link_to(t("threesixty.name"), "360.html")) %></p>
+          <%= locale_link_to t("actions.read_more"), "360.html", class: "button orange outline" %>
         </div>
       </li>
 

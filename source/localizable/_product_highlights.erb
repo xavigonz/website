@@ -3,26 +3,26 @@
   <div class="col col-capp">
     <div class="inner">
       <div class="headline">
-        <h2><%= link_to "CAPP", "/capp.html" %></h2>
+        <h2><%= locale_link_to "CAPP", "/capp" %></h2>
         <p class="sub-headline">
-          <%= t("home.highlights.capp.text_html", link: link_to("CAPP LMS", "/capp.html")) %>
+          <%= t("home.highlights.capp.text_html", link: locale_link_to("CAPP LMS", "/capp")) %>
         </p>
       </div>
-      <%= link_to t("actions.read_more"), "/capp.html", class: "button white outline" %>
+      <%= locale_link_to t("actions.read_more"), "/capp", class: "button white outline" %>
     </div>
   </div>
 
   <div class="col col-ls">
     <div class="inner">
       <div class="headline">
-        <% link_to "/learningspaces.html" do %>
+        <% locale_link_to "/learningspaces" do %>
           <%= image_tag "logos/learningspaces-white.png", title: "LearningSpaces", alt: "LearningSpaces" %>
         <% end %>
         <p class="sub-headline">
-          <%= t("home.highlights.learningspaces.text_html", link: link_to("LearningSpaces", "/learningspaces.html")) %>
+          <%= t("home.highlights.learningspaces.text_html", link: locale_link_to("LearningSpaces", "/learningspaces")) %>
         </p>
       </div>
-      <%= link_to t("actions.read_more"), "/learningspaces.html", class: "button white outline" %>
+      <%= locale_link_to t("actions.read_more"), "/learningspaces", class: "button white outline" %>
       <%= link_to t("actions.visit_website"), "http://www.learningspaces.nl", target: "_blank", class: "button white outline" %>
     </div>
   </div>

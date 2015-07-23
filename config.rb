@@ -52,7 +52,7 @@ page "blog/index.html", layout: :blog_layout
 page "blog/feed.xml", layout: false
 
 # activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
-activate :i18n, mount_at_root: :nl, langs: [:nl]
+activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 activate :directory_indexes
 
 set :css_dir, "stylesheets"
@@ -107,10 +107,15 @@ helpers do
     Tilt['markdown'].new { string }.render(scope=self)
   end
 
+  def locale_link_to(link_text="", url="", options={})
+    url = "/#{I18n.locale}" + url unless I18n.locale == :nl
+    link_to(link_text, url, options)
+  end
+
   def nav_link_to(link_text, url, options={})
     options[:class] ||= ""
     options[:class] << " active" if url_for(url, relative: false) == url_for(current_page.url, relative: false)
-    link_to(link_text, url, options)
+    locale_link_to(link_text, url, options)
   end
 
   def team_avatar_url(person)

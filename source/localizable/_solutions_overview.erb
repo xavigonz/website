@@ -7,27 +7,27 @@
 
   <div class="row">
     <div class="col">
-      <%= link_to image_tag("icons/leren-blue.png", alt: t("home.solutions.learn.title")), "capp.html" %>
-      <h3><%= link_to t("home.solutions.learn.title"), "capp.html" %></h3>
-      <p><%= t("home.solutions.learn.text_html", link: link_to("CAPP", "capp.html")) %></p>
+      <%= locale_link_to image_tag("icons/leren-blue.png", alt: t("home.solutions.learn.title")), "/capp" %>
+      <h3><%= locale_link_to t("home.solutions.learn.title"), "/capp.html" %></h3>
+      <p><%= t("home.solutions.learn.text_html", link: locale_link_to("CAPP", "/capp.html")) %></p>
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/ontwikkelen-blue.png", alt: t("home.solutions.develop.title")), "capp.html" %>
-      <h3><%= link_to t("home.solutions.develop.title"), "capp.html" %></h3>
+      <%= locale_link_to image_tag("icons/ontwikkelen-blue.png", alt: t("home.solutions.develop.title")), "/capp" %>
+      <h3><%= locale_link_to t("home.solutions.develop.title"), "capp.html" %></h3>
       <p><%= t("home.solutions.develop.text_html") %></p>
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/borging-blue.png", alt: t("home.solutions.quality.title")), "kwaliteitspaspoort.html" %>
-      <h3><%= link_to t("home.solutions.quality.title"), "kwaliteitspaspoort.html" %></h3>
+      <%= locale_link_to image_tag("icons/borging-blue.png", alt: t("home.solutions.quality.title")), "/kwaliteitspaspoort" %>
+      <h3><%= locale_link_to t("home.solutions.quality.title"), "/kwaliteitspaspoort.html" %>wtfff</h3>
       <p><%= t("home.solutions.quality.text_html") %></p>
     </div>
 
     <div class="col">
-      <%= link_to image_tag("icons/informeel-green.png", alt: t("home.solutions.informal.title")), "learningspaces.html" %>
-      <h3><%= link_to t("home.solutions.informal.title"), "learningspaces.html" %></h3>
-      <p><%= t("home.solutions.informal.text_html", link: link_to("LearningSpaces", "learningspaces.html")) %></p>
+      <%= locale_link_to image_tag("icons/informeel-green.png", alt: t("home.solutions.informal.title")), "/learningspaces" %>
+      <h3><%= locale_link_to t("home.solutions.informal.title"), "learningspaces.html" %></h3>
+      <p><%= t("home.solutions.informal.text_html", link: locale_link_to("LearningSpaces", "learningspaces.html")) %></p>
     </div>
   </div>
 
