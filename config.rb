@@ -107,9 +107,14 @@ helpers do
     Tilt['markdown'].new { string }.render(scope=self)
   end
 
-  def locale_link_to(link_text="", url="", options={})
-    url = "/#{I18n.locale}" + url unless I18n.locale == :nl
-    link_to(link_text, url, options)
+  def locale_link_to(*args, &block)
+    if block_given?
+      args[0] = "/#{I18n.locale.to_s}" + args[0] unless I18n.locale == :nl
+      link_to(*args, &block)
+    else
+      args[1] = "/#{I18n.locale.to_s}" + args[1] unless I18n.locale == :nl
+      link_to(*args)
+    end
   end
 
   def nav_link_to(link_text, url, options={})
