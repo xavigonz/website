@@ -51,7 +51,6 @@ page "blog/*", layout: :blog_post_layout
 page "blog/index.html", layout: :blog_layout
 page "blog/feed.xml", layout: false
 
-# activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
 activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 activate :directory_indexes
 
@@ -101,14 +100,33 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
-  def is_default_locale?
-    I18n.locale == extensions[:i18n].options.mount_at_root
+  def is_default_locale?(locale=I18n.locale)
+    locale == extensions[:i18n].options.mount_at_root
   end
 
   def locale_link_to(*args, &block)
     url_arg_index = block_given? ? 0 : 1
-    args[url_arg_index] = "/#{I18n.locale.to_s}" + args[url_arg_index] unless is_default_locale?
+    options_index = block_given? ? 1 : 2
+
+    options = args[options_index] || {}
+    lang = options[:lang] || I18n.locale
+
+    args[url_arg_index] = locale_url_for(args[url_arg_index], { lang: lang })
+
     link_to(*args, &block)
+  end
+
+  def locale_url_for(url, options={})
+    url = url_for(url, relative: false)
+    lang = options[:lang] || I18n.locale
+    prefix = is_default_locale?(lang) ? "" : "/#{lang}"
+    prefix + "/" + clean_locale_url(url)
+  end
+
+  def clean_locale_url(url)
+    parts = url.split("/").select { |p| p && p.size > 0 }
+    parts.shift if langs.map(&:to_s).include?(parts[0])
+    parts.join("/")
   end
 
   def nav_link_to(link_text, url, options={})
