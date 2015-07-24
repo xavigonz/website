@@ -26,22 +26,26 @@
 #
 #####################################################################################################
 
-# - name: Kristel Vissers
-#   company: "Opleidingsadviseur, Máxima Medisch Centrum"
-#   quote: >
-#     <p>Binnen Maxima Medisch Centrum (MMC) was behoefte aan het organiseren van de kwaliteit en scholingen. Samen met Defacto is het
-#     leermanagementportaal geimplementeerd, wij noemen dit het Kwaliteitspaspoort.</p>
-#     <p>Een groot project dat cultuur en infrastructuur pareert, waarin samengewerkt moet worden tussen verschillende afdelingen zoals
-#     academie, HRM, Kwaliteit en veiligheid en waarin 100% inzet is vereist. De rol van Defacto hierin is technisch en inhoudelijk
-#     bijdragen aan het behalen van de doelen. Het leermanagementsysteem heeft direct en indirect gezorgd voor beweging in de organisatie
-#     en dat leidt tot een absolute win-win situatie.</p>
-#     <p>Tijdens het project merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat er speelt in de organisatie
-#     en kunnen daarom constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons geholpen de basis op orde te
-#     krijgen voor de toekomst. Gezamenlijk hebben wij verschillende lastige uitdagingen kunnen tackelen. Dat zorgt nu voor een sterk
-#     uitgangspunt voor continue verbetering, zowel technisch als inhoudelijk. Zo zijn onze medewerkers nu aantoonbaar bekwaam. De
-#     hoog-risicovolle apparatuur wordt nu door assessoren op de werkvloer getoetst. Dit scheelt ons veel tijd en biedt enorm veel inzicht.
-#     Met behulp van Defacto krijgen nu inspectie, RvB en leidinggevenden eenvoudig (stuur)informatie en zijn onze professionals bewust
-#     geworden van hun eigen ontwikkeling en nemen zij hierin nu verantwoordelijkheid.</p>
+- name: Kristel Vissers
+  company: "Projectleider Kwaliteitspaspoort, Máxima Medisch Centrum"
+  quote: >
+    <p>Binnen Máxima Medisch Centrum (MMC) was behoefte aan een systeem waarin de MMC-(zorg)professional gestimuleerd wordt om
+    continu zijn of haar bevoegd- en bekwaamheden bij te houden, zodat de beste zorg met een herkenbaar profiel kan worden geboden.
+    Samen met Defacto is hiervoor het Kwaliteitspaspoort geïmplementeerd.</p>
+    <p>Vooraf aan de implementatie van het Kwaliteitspaspoort is door verschillende afdelingen, waaronder Afdeling HRM en afdeling
+    Kwaliteit & Veiligheid, hard gewerkt om de basis op orde te krijgen. We hebben gekozen voor een duurzame oplossing waarin realtime
+    de actuele personeelsgegevens en het daaraan gekoppelde profiel beschikbaar is.<br>
+    Daarnaast vraagt het Kwaliteitspaspoort een cultuur met als uitgangspunt dat de medewerker zelf de regie neemt over de eigen deskundigheid.
+    Van belang is dat managers en afdelingshoofden een cultuur bekrachtigen waarin men elkaar kan aanspreken en ook aanspreekbaar is op het
+    volgen van protocollen zodat men met elkaar zorg van topkwaliteit biedt.</p>
+    <p>Tijdens de implementatie van het Kwaliteitspaspoort merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat
+    er speelt in de organisatie en kunnen daardoor constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons
+    geholpen om de basis op orde te krijgen. Samen met Defacto werken we aan continue verbetering van het Kwaliteitspaspoort, zowel technisch
+    als functioneel.</p>
+    <p>Zo zijn onze medewerkers nu aantoonbaar bekwaam. Voorbehouden- en risicovolle handelingen worden nu door assessoren op de werkvloer
+    getoetst. Dit is efficiënt en biedt enorm veel inzicht. Met behulp van Defacto beschikken leidinggevenden over (stuur)informatie en
+    zijn onze (zorg)professionals bewust bezig met hun eigen ontwikkeling en nemen zij hierin nu zelf de verantwoordelijkheid.</p>
+
 
 - name: Martina de Vos
   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
