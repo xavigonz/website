@@ -101,26 +101,26 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
-  def markitdown(string)
-    # Kramdown::Document.new(string, config[:markdown]).to_html
-    # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
-    Tilt['markdown'].new { string }.render(scope=self)
+  def is_default_locale?
+    I18n.locale == extensions[:i18n].options.mount_at_root
   end
 
   def locale_link_to(*args, &block)
-    if block_given?
-      args[0] = "/#{I18n.locale.to_s}" + args[0] unless I18n.locale == :nl
-      link_to(*args, &block)
-    else
-      args[1] = "/#{I18n.locale.to_s}" + args[1] unless I18n.locale == :nl
-      link_to(*args)
-    end
+    url_arg_index = block_given? ? 0 : 1
+    args[url_arg_index] = "/#{I18n.locale.to_s}" + args[url_arg_index] unless is_default_locale?
+    link_to(*args, &block)
   end
 
   def nav_link_to(link_text, url, options={})
     options[:class] ||= ""
     options[:class] << " active" if url_for(url, relative: false) == url_for(current_page.url, relative: false)
     locale_link_to(link_text, url, options)
+  end
+
+  def markitdown(string)
+    # Kramdown::Document.new(string, config[:markdown]).to_html
+    # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
+    Tilt['markdown'].new { string }.render(scope=self)
   end
 
   def team_avatar_url(person)
@@ -141,12 +141,6 @@ helpers do
     request = Net::HTTP::Get.new(uri.request_uri)
     response = http.request(request)
     return response.code.to_i == 404 ? false : url
-  end
-
-  def local_path(path, options={})
-    return "/#{path}" if I18n.locale == extensions[:i18n].options.mount_at_root
-    lang = options[:language] ? options[:language] : I18n.locale.to_s
-    "/#{lang}/#{path}"
   end
 
   # Get blog author

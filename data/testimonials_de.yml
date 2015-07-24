@@ -26,23 +26,6 @@
 #
 #####################################################################################################
 
-# - name: Kristel Vissers
-#   company: "Opleidingsadviseur, Máxima Medisch Centrum"
-#   quote: >
-#     <p>Binnen Maxima Medisch Centrum (MMC) was behoefte aan het organiseren van de kwaliteit en scholingen. Samen met Defacto is het
-#     leermanagementportaal geimplementeerd, wij noemen dit het Kwaliteitspaspoort.</p>
-#     <p>Een groot project dat cultuur en infrastructuur pareert, waarin samengewerkt moet worden tussen verschillende afdelingen zoals
-#     academie, HRM, Kwaliteit en veiligheid en waarin 100% inzet is vereist. De rol van Defacto hierin is technisch en inhoudelijk
-#     bijdragen aan het behalen van de doelen. Het leermanagementsysteem heeft direct en indirect gezorgd voor beweging in de organisatie
-#     en dat leidt tot een absolute win-win situatie.</p>
-#     <p>Tijdens het project merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat er speelt in de organisatie
-#     en kunnen daarom constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons geholpen de basis op orde te
-#     krijgen voor de toekomst. Gezamenlijk hebben wij verschillende lastige uitdagingen kunnen tackelen. Dat zorgt nu voor een sterk
-#     uitgangspunt voor continue verbetering, zowel technisch als inhoudelijk. Zo zijn onze medewerkers nu aantoonbaar bekwaam. De
-#     hoog-risicovolle apparatuur wordt nu door assessoren op de werkvloer getoetst. Dit scheelt ons veel tijd en biedt enorm veel inzicht.
-#     Met behulp van Defacto krijgen nu inspectie, RvB en leidinggevenden eenvoudig (stuur)informatie en zijn onze professionals bewust
-#     geworden van hun eigen ontwikkeling en nemen zij hierin nu verantwoordelijkheid.</p>
-
 - name: Martina de Vos
   company: "Fortbildungsbeauftragte, Sint Franciscus Gasthuis"
   avatar: testimonials/martina_de_vos.jpg
@@ -55,9 +38,10 @@
     hat die Beteiligung von Defacto bei seinen Kunden sehr gut wiedergegeben.
     Top! Sollte es nochmal nötig sein: wir sind dabei!
   summary: >
-    We zeggen wat we doen en we doen wat we zeggen, is het motto waaronder Defacto werkt. En dat is helemaal waar gemaakt tijdens
-    ons prima verlopen implementatieproject. Er waren heldere afspraken, korte lijnen, humor als smeerolie en gemotiveerde teams die
-    de intentie hebben elkaar te vinden en te versterken.
+    Wir sagen was wir machen und wir machen was wir sagen, ist das Motto mit dem Defacto arbeitet.
+    Und das ist auch wirklich so, wie wir während unserem prima verlaufenen Implementierungsprojekt erfahren haben.
+    Von beiden Seiten aus, gab es deutliche Absprachen, engen Kontakt, Humor und motivierte Teams mit der Absicht einander zu
+    finden und zu verstärken.
 
 
 - name: Marieke van Kernebeek
@@ -74,7 +58,7 @@
   summary: >
     Das schönste an der Zusammenarbeit mit den Leuten von Defacto ist, dass wir schon so lange so einen intensiven Kontakt haben,
     dass man weiß das man aufeinander zählen kann. Dieses Vertrauen schafft auch Raum für kritische Anmerkungen.
-     In den letzten Jahren haben wir so einen guten Kontakt aufgebaut, dass man das nicht so einfach mal zur Seite schiebt.
+    In den letzten Jahren haben wir so einen guten Kontakt aufgebaut, dass man das nicht so einfach mal zur Seite schiebt.
 
 
 - name: Peter van Overbruggen
@@ -95,12 +79,3 @@
     Hälfte der Zeit mit beschäftigt.
     Durch die Einführung von CAPP als Learning Management System ist auch die Eigenverantwortlichkeit von Mitarbeitern gewachsen,
     die Übersicht für Vorgesetzte optimalisiert und wir können mehr Lernaktivitäten facilitieren für Mitarbeiter und Kunden.</p>
-
-
-# - name: Bruno de Hoogd
-#   company: "Directeur HRM, Maxima Medisch Centrum"
-#   avatar: testimonials/bruno_de_hoogd.jpg
-#   quote: >
-#     Er is een bijzondere prestatie geleverd. Met dit paspoort geeft MMC invulling aan zijn ambities om voorop te lopen
-#     in het verder toetsbaar maken van kwaliteit van zorgprofessionals. De passie en de wil om - in het belang van de
-#     patiënt - het steeds beter te doen staat in alles voorop.
