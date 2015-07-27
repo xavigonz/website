@@ -136,6 +136,19 @@ helpers do
     locale_link_to(link_text, url, options)
   end
 
+  def country_flags
+    flag_titles = { nl: "Nederlands", de: "Deutsch", en: "English" }
+    html = ""
+
+    (langs - [I18n.locale]).each do |lang|
+      url = locale_url_for(current_page.url, { lang: lang })
+      img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
+      html << link_to(img, url, title: flag_titles[lang])
+    end
+
+    html
+  end
+
   def markitdown(string)
     # Kramdown::Document.new(string, config[:markdown]).to_html
     # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)

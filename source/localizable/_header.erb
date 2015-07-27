@@ -16,21 +16,7 @@
         <li><%= nav_link_to t("header.blog"), "/blog" %></li>
         <li><%= nav_link_to t("header.contact"), "/contact.html" %></li>
         <li class="flags">
-          <%
-          flag_titles = {
-            nl: "Nederlands",
-            de: "Deutsch",
-            en: "English"
-          }
-
-          (langs - [I18n.locale]).each do |lang| %>
-            <%=
-            url = locale_url_for(current_page.url, { lang: lang })
-            img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-            link_to(img, url, title: flag_titles[lang])
-            %>
-          <% end %>
-
+          <%= country_flags %>
           <%= link_to image_tag("flags/en.gif", alt: "English"), "http://en.defacto.nl", target: "_blank" %>
         </li>
       </ul>
