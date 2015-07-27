@@ -26,6 +26,33 @@
 #
 #####################################################################################################
 
+- name: Kristel Vissers
+  company: "Projektleiter Qualitätspass, Máxima Medisch Centrum"
+  quote: >
+    <p>Im Máxima Medisch Centrum (MMC) brauchten wir ein System, welches das MMC-(Pflege)Personal stimuliert um kontinuierlich seine oder
+    ihre Kompetenzen und Fähigkeiten einzusehen und weiter zu entwickeln, sodass die beste Pflege mit einem erkennbaren Profil geboten
+    werden kann. Gemeinsam mit Defacto haben wir hierfür den Qualitätspass implementiert.</p>
+    <p>Schon vor der Implementierung des Qualitätspasses ist durch verschiedene Abteilungen, unter anderem der Personalabteilung und der
+    Abteilung Qualität & Sicherheit, viel Vorarbeit geleistet worden in der Erstellung einer Basis. Wir haben uns für eine nachhaltige
+    Lösung entschieden, wobei in Echtzeit die aktuellen Personaldaten und das daran gekoppelte Profil verfügbar sind.<br>
+    Parallel baut der Qualitätspass auf eine Kultur auf, in der die Mitarbeiter selbst die Regie über ihr eigenes Expertenwissen
+    übernehmen. Wichtig ist, dass Vorgesetzte und Abteilungsleiter eine Kultur unterstützen, in der man sich gegenseitig ansprechen kann
+    und ansprechbar ist über das Folgen der Protokolle, sodass man gemeinsam Pflege von Spitzenqualität bietet.</p>
+    <p>Während der Implementierung des Qualitätspasses ist uns aufgefallen, dass Defacto eine enge Beziehung der Zusammenarbeit anstrebt.
+    Sie sind interessiert an der Organisation und deren Prozesse und können daher konstruktiv mit uns mitdenken. Die Zusammenarbeit mit
+    den Menschen von Defacto hat uns geholfen um die Basis des Qualitätspasses zu erstellen. Gemeinsam mit Defacto arbeiten wir an der
+    kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.</p>
+    <p>So sind unsere Mitarbeiter nun nachweislich befähigt. Ärztlich übertragbare und risikovolle Tätigkeiten werden nun durch Assessoren
+    auf dem Arbeitsplatz getestet. Dies ist effizient und bietet enorm viel Einsicht. Mit Hilfe von Defacto verfügen Vorgesetzte über
+    (Leitungs-)Informationen und beschäftigt sich unser (Pflege)Personal bewusst mit seiner eigenen Entwicklung und übernimmt hier nun
+    uch selbst die Verantwortung für.</p>
+  summary: >
+    Während der Implementierung des Qualitätspasses ist uns aufgefallen, dass Defacto eine enge Beziehung der Zusammenarbeit anstrebt.
+    Sie sind interessiert an der Organisation und deren Prozesse und können daher konstruktiv mit uns mitdenken. Die Zusammenarbeit mit
+    den Menschen von Defacto hat uns geholfen um die Basis des Qualitätspasses zu erstellen. Gemeinsam mit Defacto arbeiten wir an der
+    kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.
+
+
 - name: Martina de Vos
   company: "Fortbildungsbeauftragte, Sint Franciscus Gasthuis"
   avatar: testimonials/martina_de_vos.jpg
