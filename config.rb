@@ -131,7 +131,8 @@ helpers do
 
   def nav_link_to(link_text, url, options={})
     options[:class] ||= ""
-    options[:class] << " active" if url_for(url, relative: false) == url_for(current_page.url, relative: false)
+    is_active = locale_url_for(url_for(url, relative: false)) == url_for(current_page.url, relative: false).chomp("/")
+    options[:class] << " active" if is_active
     locale_link_to(link_text, url, options)
   end
 

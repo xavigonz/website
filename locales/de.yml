@@ -68,11 +68,11 @@ de:
   header:
     about: "Über uns"
     blog: "Blog"
-    contact: "Contact"
+    contact: "Kontakt"
     home: "Home"
     menu: "Menu"
     products: "Produkte"
-    services: "Diensten"
+    services: "Service"
   home:
     cta:
       button: "Termin vereinbaren"
