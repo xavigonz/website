@@ -39,7 +39,6 @@ $(function () {
 
   // Show popup after scroll
   $window.on('scroll', function () {
-
     if (!popupsShown && $window.scrollTop() > showScrollTop) {
       setTimeout(function () {
         $('.popup').addClass('popup-show');
