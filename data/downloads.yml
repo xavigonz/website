@@ -1,0 +1,12 @@
+#
+# DOWNLOADS
+#####################################################################################################
+#
+# Download links are validated in config.rb
+#
+#####################################################################################################
+
+ebook:
+  nl: "/pdf/Handboek_Leren_en_laten_Leren.pdf"
+  de: "/pdf/de/Handbuch_Abenteuer_E-Learning.pdf"
+  # en: ""

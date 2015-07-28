@@ -6,7 +6,7 @@ $(function () {
   var cookieValue = 'hidden';
 
   // Hide hightlight
-  function hideHighlight () {
+  function hidePopup () {
     var $popup = $('#popup-ebook');
 
     if ($popup.length == 0) {
@@ -29,7 +29,7 @@ $(function () {
   $('#ebook-download form').on('submit', function (event) {
     event.preventDefault();
 
-    var ebookUrl = '/pdf/Handboek_Leren_en_laten_Leren.pdf';
+    var ebookUrl = downloads.ebook[I18n.locale];
     var $form = $(this);
     var $submit = $form.find('button[type=submit]');
 
@@ -52,6 +52,6 @@ $(function () {
     window.open(ebookUrl, '_blank');
 
     // hide hightlight
-    hideHighlight();
+    hidePopup();
   });
 });

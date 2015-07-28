@@ -1,0 +1,20 @@
+//= require js-cookie
+
+//= require _ebook-form
+//= require _home
+//= require _map
+//= require _menu
+//=# require _modal
+//=# require _parallax
+//= require _popup
+
+// Downloads
+var downloads = JSON.parse('<%= data.downloads.to_json.html_safe %>');
+// console.log(downloads.ebook)
+console.log(downloads.ebook[I18n.locale])
+
+// Say hi in console :)
+if (console && console.log) {
+  console.log(" ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄\n █████ █████ █████\n █████ █████ █████     ██████▄▄             ▟███▘\n ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌\n █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙\n ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██\n █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██\n █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛\n ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔\n\n");
+  console.log("Hi there!\nDid you know the source of this website is online at https://github.com/DefactoSoftware/website ?\nCome hack with us? Visit http://jobs.defacto.nl/");
+}

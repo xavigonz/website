@@ -10,21 +10,21 @@
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= partial "google_analytics" %>
-<!--
- ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄  
- █████ █████ █████                                                               
- █████ █████ █████     ██████▄▄             ▟███▘                              
- ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌            
- █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙  
- ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██ 
- █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██ 
- █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛  
- ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔                                                              
- 
- Hi there!
- The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
- Come hack with us? http://jobs.defacto.nl/
--->
+    <!--
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
+     █████ █████ █████
+     █████ █████ █████     ██████▄▄             ▟███▘
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
+     █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
+     ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
+     ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
+
+     Hi there!
+     The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
+     Come hack with us? http://jobs.defacto.nl/
+    -->
   </head>
   <body class="<%= page_classes %> <%= "blog_article" if is_blog_article? %>">
     <%= partial "header" %>
@@ -33,11 +33,12 @@
     </div>
     <%= partial "footer" %>
 
-    <% if I18n.locale.to_s == "nl" && current_page.url != "/blog/" && !is_blog_article? %>
+    <% if data.downloads.ebook[I18n.locale] && current_page.url != "/blog/" && !is_blog_article? %>
       <%= partial "popup-ebook" %>
     <% end %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script> window.I18n = { locale: '<%= I18n.locale %>' }; </script>
     <%= javascript_include_tag "all" %>
     <script>
       window.intercomSettings = { app_id: 'yb5mzq3j' };

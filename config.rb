@@ -87,6 +87,15 @@ configure :build do
 end
 
 ###
+# Ready callback
+###
+
+ready do
+  # validate data/downloads.yml
+  pp validate_downloads(data.downloads)
+end
+
+###
 # Helpers
 ###
 
@@ -180,5 +189,19 @@ helpers do
     author = article.data.author
     author = author.present? ? author.capitalize : author
     data.team.find{ |person| person[:firstname] == author }
+  end
+
+  # Used to validate data/downloads.yml
+  def validate_downloads(hash)
+    hash.each do |key, value|
+      if value.is_a?(Hash)
+        validate_downloads(value)
+      elsif value.is_a?(String)
+        unless sitemap.find_resource_by_path(value)
+          hash[key] = false
+          puts "\033[31mWARNING: Download link does not exist '#{value}'\033[0m"
+        end
+      end
+    end
   end
 end
