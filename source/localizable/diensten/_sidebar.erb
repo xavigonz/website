@@ -1,11 +1,11 @@
 <div class="sidebar">
-  <h3>Diensten</h3>
+  <h3><%= t("header.services") %></h3>
   <nav>
     <ul>
-      <li><%= nav_link_to "E-Learning", "/elearning" %></li>
-      <li><%= nav_link_to "Implementaties", "/implementaties" %></li>
-      <li><%= nav_link_to "Hosting & Security", "/hosting" %></li>
-      <li><%= nav_link_to "Koppelingen", "/koppelingen" %></li>
+      <li><%= nav_link_to t("services.services.elearning.name"), "/elearning.html" %></li>
+      <li><%= nav_link_to t("services.services.implementaties.name"), "/implementaties.html" %></li>
+      <li><%= nav_link_to t("services.services.hosting.name"), "/hosting.html" %></li>
+      <li><%= nav_link_to t("services.services.koppelingen.name"), "/koppelingen.html" %></li>
     </ul>
   </nav>
 </div>

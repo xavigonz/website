@@ -39,8 +39,8 @@ de:
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
-      heading_md: "Weten wat E-Learning voor jouw organisatie kan betekenen?"
-    heading: "Met Defacto als ervaren en technisch onderlegde partner, wordt de toepassing van E-Learning in jouw organisatie onherroepelijk een succes."
+      heading_md: "Möchten Sie wissen was E-Learning für Ihre Organisation bedeuten kann?"
+    heading: "Mit Defacto als erfahrenem und technisch geschultem Partner wird E-Learning in Ihrer Organisation unwiderruflich zum Erfolg."
   elearning_ebook:
     formkeep_title: "E-book download"
     heading_html: "Unser <span class=\"pre\">E-Learning</span> Buch gratis herunterladen"
@@ -105,7 +105,7 @@ de:
     solutions:
       develop:
         keywords:
-          - "360° feedback"
+          - "360° Feedback"
           - "Kompetenzen"
           - "Jahresgespräche"
         text_html: "Geben Sie Mitarbeitern die richtigen Tools für die Weiterentwicklung und eine Übersicht in das persönliche Portfolio."
@@ -134,11 +134,11 @@ de:
         text_html: "Erhalten Sie eine Übersicht in die Qualifikationen Ihrer Organisation, Ihrem Team und sich selbst. Vergleichen Sie den ‘Soll’ und ’Ist’ Zustand und erfüllen Sie Qualitätsanforderungen."
         title: "Qualitätspass"
   hosting:
-    heading: "Hosting & Security"
+    heading: "Hosting & Sicherheit"
   implementaties:
-    heading: "Implementaties hoeven niet ingewikkeld te zijn."
+    heading: "Implementierungen müssen nicht kompliziert sein."
   koppelingen:
-    heading: "Gecertificeerde koppelingen"
+    heading: "Zertifizierte Schnittstellen"
   kwaliteitspaspoort:
     cta_bottom:
       formkeep_title: "Kwaliteitspaspoort: afspraak maken"
@@ -166,7 +166,7 @@ de:
   services:
     services:
       elearning:
-        desc: "Mit Defacto als erfahrenem und technisch geschultem Partner wird E-Learning in Ihrer Organisation unwiderruflich zum Erfolg."
+        desc: "Mit Defacto als erfahrenem und technisch geschultem Partner wird %{link} in Ihrer Organisation unwiderruflich zum Erfolg."
         name: E-Learning
       hosting:
         desc: "Durch 25 Jahre Erfahrung mit IT-Implementierungen bei großen (behördlichen) Institutionen wissen wir ganz besonders, dass solides %{link} Grundvoraussetzungen sind."

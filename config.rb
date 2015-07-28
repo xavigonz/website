@@ -92,7 +92,7 @@ end
 
 ready do
   # validate data/downloads.yml
-  pp validate_downloads(data.downloads)
+  validate_downloads(data.downloads)
 end
 
 ###
