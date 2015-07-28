@@ -56,7 +56,7 @@ nl:
   footer:
     copyright_html: "© 1987 - %{year} Defacto"
   form:
-    email: E-mailadres
+    email: E-mail
     message: "Wat kunnen we voor je betekenen?"
     name: Naam
     organization: "Bedrijf of organisatie"

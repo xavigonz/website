@@ -7,11 +7,11 @@ de:
     heading2: "Bilden und Entwickeln seit 1987"
     references: "Referenzen"
     team:
-      work_with_us: "Werken bij Defacto"
-      you: "jij?"
-    testimonials: "Testimonials"
+      work_with_us: "Arbeiten bei"
+      you: "Sie?"
+    testimonials: "Empfehlungsschreiben"
   actions:
-    download: "Download"
+    download: "Herunterladen"
     make_appointment: "Termin vereinbaren"
     read_more: "Mehr"
     tell_me_more: "Erzähl mir mehr"
@@ -27,7 +27,7 @@ de:
     desc: "%{link} sorgt dafür das Ihre Mitarbeiter einfach und zielgerichtet lernen und ihre Talente weiterentwickeln."
     hero:
       formkeep_title: "CAPP: meer informatie"
-      text_md: "__CAPP LMS__ unterstützt Sie dabei das Können und Wissen Ihrer Mitarbeitern oder Kunden zu fördern."
+      text_md: "__CAPP LMS__ unterstützt Sie dabei das Können und Wissen Ihrer Mitarbeiter oder Kunden zu fördern."
       title: "Fortbilden und Lernen mit CAPP LMS"
     name: CAPP LMS
   contact:
@@ -44,7 +44,7 @@ de:
     heading_html: "Unser <span class=\"pre\">E-Learning</span> Buch gratis herunterladen"
     image_alt: "Handbuch Abenteuer E-Learning"
   elearning_starterkit:
-    desc: "Erstellen Sie ihre eigenen Module mit dem %{link}. Sparen Sie Geld und passen Sie Ihre Inhalte besser an an Ihrem Bedarf. Das E-Learning Starterkit enthält alles was Sie brauchen um direkt zu starten."
+    desc: "Erstellen Sie Ihre eigenen Module mit dem %{link}. Sparen Sie Geld und passen Sie Ihre Inhalte besser an Ihren Bedarf an. Das E-Learning Starterkit enthält alles was Sie brauchen um direkt zu starten."
     hero:
       formkeep_title: "E-Learning Starterkit"
       text_md: "Einfach und kostengünstig eigene E-Learning Module erstellen."
@@ -56,8 +56,8 @@ de:
   footer:
     copyright_html: "© 1987 - %{year} Defacto"
   form:
-    email: "E-Mail Adresse"
-    message: "Wat kunnen we voor je betekenen?"
+    email: "E-Mail"
+    message: "Wie können wir Ihnen helfen?"
     name: "Name"
     organization: "Betrieb oder Organisation"
     phone: "Telefon"
@@ -111,7 +111,7 @@ de:
           - "Lernplattform"
           - "E-Learning / ELO"
         text_html: "Ein starker Grundstein für Ihre Bildungsakademie. Sparen Sie Zeit durch effiziente Prozesse. Alle Fortbildungen auf einem Blick mit %{link} Bilden."
-        title: "Lernen"
+        title: "Bilden"
       quality:
         keywords:
           - "Qualitätsmonitor"
@@ -153,21 +153,21 @@ de:
   services:
     services:
       elearning:
-        desc: "Met Defacto als ervaren en technisch onderlegde partner, wordt de %{link} in jouw organisatie onherroepelijk een succes."
+        desc: "Mit Defacto als erfahrenem und technisch geschultem Partner wird E-Learning in Ihrer Organisation unwiderruflich zum Erfolg."
         name: E-Learning
       hosting:
-        desc: "Met 25 jaar ervaring in ICT-implementaties bij grote (overheids) instanties weten wij bij uitstek dat gedegen %{link} van essentieel belang is."
-        link: "hosting en informatiebeveiliging"
-        name: "Hosting & Security"
+        desc: "Durch 25 Jahre Erfahrung mit IT-Implementierungen bei großen (behördlichen) Institutionen wissen wir ganz besonders, dass solides %{link} Grundvoraussetzungen sind."
+        link: "Hosting und Informationssicherheit"
+        name: "Hosting & Sicherheit"
       implementaties:
-        desc: "Defacto heeft een eigen %{link} ontwikkeld waarin onze projectleider en consultants samen met uw management team de strategie en uitvoering waarborgen."
-        link: implementatiemethodiek
-        name: Implementaties
+        desc: "Defacto hat eine eigene %{link} entwickelt wobei unsere Projektleiter und Berater gemeinsam mit Ihrem Management Team die Strategie und Ausführung gewährleisten."
+        link: Implementierungsmethodik
+        name: Implementierungen
       koppelingen:
-        desc: "Onze software kan %{link} worden met verschillende systemen."
-        link: geintegreerd
-        name: Koppelingen
-    title: "Diensten waar we trots op zijn."
+        desc: "Unsere Software kann mit verschiedenen Systemen %{link} werden."
+        link: gekoppelt
+        name: Schnittstellen
+    title: "Dienstleistungen auf die wir stolz sind."
   testimonials:
     title: "Was unsere Kunden sagen"
   thanks:
