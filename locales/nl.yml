@@ -34,6 +34,8 @@ nl:
     form_title: "Wat kunnen we voor je betekenen?"
     heading: Aangenaam
     heading2: "We maken graag kennis, bij jullie, of bij ons in Groningen."
+    phone: "050 3144832"
+    phone_link: "+31503144832"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
@@ -54,7 +56,17 @@ nl:
     heading: "Sorry, deze pagina bestaat niet."
     text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
   footer:
+    capp: "CAPP Leren & Ontwikkelen"
+    contact: >
+      <p>
+        Zuiderpark 3<br>
+        9724 AD Groningen
+      </p><p>
+        T&nbsp;&nbsp;<a href="tel:+31503144832" class="phone">050 3144832</a><br>
+        E&nbsp;&nbsp;<a href="mailto:info@defacto.nl">info@defacto.nl</a>
+      </p>
     copyright_html: "© 1987 - %{year} Defacto"
+    jobs: "Werken bij Defacto"
   form:
     email: E-mail
     message: "Wat kunnen we voor je betekenen?"

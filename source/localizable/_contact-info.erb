@@ -2,11 +2,11 @@
   <div class="row">
     <div class="col">
       <span class="icon-location"></span>
-      <span>Zuiderpark 3, 9724 AD Groningen</span>
+      <span>Zuiderpark 3, 9724 AD Groningen <%= "(NL)" unless I18n.locale == :nl %></span>
     </div>
     <div class="col">
       <span class="icon-phone"></span>
-      <a href="tel:+31503144832">+31 (0)50 3144832</a>
+      <%= link_to t("contact.phone"), "tel://#{t("contact.phone_link")}" %>
     </div>
     <div class="col">
       <span class="icon-mail"></span>

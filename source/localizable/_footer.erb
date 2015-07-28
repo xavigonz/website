@@ -1,46 +1,41 @@
 <footer id="footer">
   <div class="row">
     <div class="col">
-      <h6>Producten</h6>
+      <h6><%= t("header.products") %></h6>
       <ul>
-        <li><%= locale_link_to "CAPP Leren & Ontwikkelen", "/capp" %></li>
-        <li><%= locale_link_to "Kwaliteitspaspoort", "/kwaliteitspaspoort" %></li>
-        <li><%= locale_link_to "E-Learning Starterkit", "/elearning-starterkit" %></li>
-        <li><%= locale_link_to "LearningSpaces", "/learningspaces" %></li>
-        <li><%= locale_link_to "360°-Feedback", "/360" %></li>
+        <li><%= locale_link_to t("footer.capp"), "/capp.html" %></li>
+        <li><%= locale_link_to t("kwaliteitspaspoort.name"), "/kwaliteitspaspoort.html" %></li>
+        <li><%= locale_link_to t("elearning_starterkit.name"), "/elearning-starterkit.html" %></li>
+        <li><%= locale_link_to t("learningspaces.name"), "/learningspaces.html" %></li>
+        <li><%= locale_link_to t("threesixty.name"), "/360.html" %></li>
       </ul>
     </div>
 
     <div class="col">
-      <h6>Diensten</h6>
+      <h6><%= t("header.services") %></h6>
       <ul>
-        <li><%= locale_link_to "E-Learning", "/elearning" %></li>
-        <li><%= locale_link_to "Implementaties", "/implementaties" %></li>
-        <li><%= locale_link_to "Hosting & Security", "/hosting" %></li>
-        <li><%= locale_link_to "Koppelingen", "/koppelingen" %></li>
+        <li><%= locale_link_to t("services.services.elearning.name"), "/elearning.html" %></li>
+        <li><%= locale_link_to t("services.services.implementaties.name"), "/implementaties.html" %></li>
+        <li><%= locale_link_to t("services.services.hosting.name"), "/hosting.html" %></li>
+        <li><%= locale_link_to t("services.services.koppelingen.name"), "/koppelingen.html" %></li>
       </ul>
     </div>
 
     <div class="col">
       <h6>Defacto</h6>
       <ul>
-        <li><%= locale_link_to "Over ons", "/over-ons" %></li>
-        <li><%= locale_link_to "Testimonials", "/testimonials" %></li>
-        <li><%= locale_link_to "Referenties", "/referenties" %></li>
-        <li><%= locale_link_to "Blog", "/blog/" %></li>
-        <li><%= locale_link_to "Jobs", "http://jobs.defacto.nl" %></li>
-        <li><%= locale_link_to "Contact", "/contact" %></li>
+        <li><%= locale_link_to t("header.about"), "/over-ons.html" %></li>
+        <li><%= locale_link_to t("about.testimonials"), "/testimonials.html" %></li>
+        <li><%= locale_link_to t("about.references"), "/referenties.html" %></li>
+        <li><%= locale_link_to t("header.blog"), "/blog/" %></li>
+        <li><%= locale_link_to t("footer.jobs"), "http://jobs.defacto.nl" %></li>
+        <li><%= locale_link_to t("header.contact"), "/contact.html" %></li>
       </ul>
     </div>
 
-    <div class="col">
-      <h6>Contact</h6>
-      Zuiderpark 3<br>
-      9724 AD Groningen<br>
-      <br>
-      T +31 (0)50 3144832<br>
-      <a href="mailto:info@defacto.nl">info@defacto.nl</a><br>
-      <br>
+    <div class="col contact">
+      <h6><%= t("header.contact") %></h6>
+      <%= t("footer.contact") %>
       <ul class="social-links">
         <li><a href="https://twitter.com/DefactoSoftware" target="_blank" title="Twitter" class="icon-twitter"></a></li>
         <li><a href="https://www.linkedin.com/company/489640" target="_blank" title="LinkedIn" class="icon-linkedin"></a></li>

@@ -34,6 +34,8 @@ de:
     form_title: "Wie können wir Ihnen helfen?"
     heading: "Freut mich!"
     heading2: "Wir lernen Sie gerne kennen, bei Ihnen, oder bei uns in Groningen."
+    phone: "040 306988472"
+    phone_link: "+4940306988472"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
@@ -51,10 +53,21 @@ de:
       title: "E-Learning Starterkit"
     name: "E-Learning Starterkit"
   error:
-    heading: "Sorry, deze pagina bestaat niet."
-    text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
+    heading: "Sorry, diese Seite existiert nicht."
+    text_md: "Dies bedeutet nicht, dass Sie einen Fehler gemacht haben. Es kann sein, dass wir die Seite umbenannt oder bewegt haben."
   footer:
+    capp: "CAPP Bilden & Entwickeln"
+    contact: >
+      <p>
+        Zuiderpark 3<br>
+        9724 AD Groningen<br>
+        Niederlande
+      </p><p>
+        T&nbsp;&nbsp;<a href="tel:+4940306988472" class="phone">040 306988472</a><br>
+        E&nbsp;&nbsp;<a href="mailto:info@defacto.nl">info@defacto.nl</a>
+      </p>
     copyright_html: "© 1987 - %{year} Defacto"
+    jobs: "Arbeiten bei Defacto"
   form:
     email: "E-Mail"
     message: "Wie können wir Ihnen helfen?"
@@ -79,7 +92,7 @@ de:
       email_placeholder: "E-Mail"
       form_submit: "vereinbaren Sie einen Termin"
       form_title: "vereinbaren Sie einen Termin"
-      text_html: "Mehr info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306 988 472</a> oder"
+      text_html: "Mehr info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306988472</a> oder"
     hero:
       since: "seit 1987"
       text: "Mehr als 200.000 Menschen nutzen unsere Software zum Lernen und ihre Talente weiter zu entwickeln."
