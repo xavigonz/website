@@ -2,7 +2,7 @@
 title: "LearningSpaces: een veilige ruimte om te leren van elkaar."
 date: 2015-06-29 12:35 CEST
 author: Margreet Twijnstra
-featured: true
+featured: false
 ---
 _(Dit blog werd eerder gepubliceerd op de [website van Magreet Twijnstra](http://twijnstra.nu/learningspaces-een-veilige-ruimte-om-te-leren-van-elkaar/))_.
 
