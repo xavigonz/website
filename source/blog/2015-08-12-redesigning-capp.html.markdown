@@ -7,7 +7,7 @@ featured: true
 
 Een jaar geleden heb ik een [360-graden feedback](http://360feedback.io) evaluatie gedaan met als doel te kijken waar ik op dat moment stond en in welk vakgebied ik me zou willen ontwikkelen. In deze feedback ronde werd gehint naar een functie als functioneel ontwerper of __[UX](https://en.wikipedia.org/wiki/User_experience_design)__ (User eXperience) ontwerper. Een half jaar geleden heb ik daar werk van gemaakt door bij [Anne Vroegop](https://twitter.com/annevroegop) een cursus te volgen op het gebied van interaction design.
 
-_Interaction design__ is een kleiner onderdeel van UX design maar zeker niet minder belangrijk voor de ontwikkeling van een product. Na deze cursus volgden veel online trainingen tot ik een paar weken geleden de techniek voor het eerst in de praktijk kon toepassen met het redesign van een van onze producten, __[CAPP](/capp)__.
+_Interaction design_ is een kleiner onderdeel van UX design maar zeker niet minder belangrijk voor de ontwikkeling van een product. Na deze cursus volgden veel online trainingen tot ik een paar weken geleden de techniek voor het eerst in de praktijk kon toepassen met het redesign van een van onze producten, __[CAPP](/capp)__.
 
 ### Paper prototyping
 
