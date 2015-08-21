@@ -100,8 +100,15 @@ end
 ###
 
 helpers do
+  #use frontmatter for I18n titles
   def page_title(page)
-    page.data.title ? page.data.title + " - Defacto" : t("head.default_title")
+    if page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
+      return "#{page.data.title.send(I18n.locale)} - Defacto"
+    elsif page.data.title
+      return "#{page.data.title} - Defacto"
+    else
+      return "Defacto - Developing People"
+    end
   end
 
   # Prevent page_classes from prefixing locales
