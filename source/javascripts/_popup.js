@@ -39,7 +39,6 @@ $(function () {
 
   // Show popup after scroll
   $window.on('scroll', function () {
-
     if (!popupsShown && $window.scrollTop() > showScrollTop) {
       setTimeout(function () {
         $('.popup').addClass('popup-show');
@@ -60,7 +59,7 @@ $(function () {
   $body.on('submit', '#popup-ebook form', function (event) {
     event.preventDefault();
 
-    var ebookUrl = '/pdf/Handboek_Leren_en_laten_Leren.pdf';
+    var ebookUrl = downloads.ebook[I18n.locale];
     var $form = $(this);
     var $submit = $form.find('button[type=submit]');
 

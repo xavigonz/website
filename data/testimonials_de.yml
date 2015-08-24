@@ -1,0 +1,108 @@
+#
+# TESTIMONIALS
+#####################################################################################################
+#
+# Note:
+#
+# Testimonials are displayed from top to bottom. So the first in this file will be on top.
+# Same goes for featured testimonials (on homepage): the first two with featured:true will show.
+#
+# Example:
+#
+# - name: Martina de Vos
+#   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
+#   avatar: testimonials/martina_de_vos.jpg
+#   featured: true
+#   quote: "This is the full version of the quote"
+#   summary: "This is the short version of the quote (optional, only used when summary:true)"
+#
+# Usage:
+#
+# <%= partial "testimonials", locals: {
+#   count: 2,         # amount of testimonials to show (optional)
+#   featured: true,   # only show featured (optional)
+#   summary: true     # show summary if present, otherwise the full quote (optional)
+# } %>
+#
+#####################################################################################################
+
+- name: Kristel Vissers
+  company: "Projektleiter Qualitätspass, Máxima Medisch Centrum"
+  quote: >
+    <p>Im Máxima Medisch Centrum (MMC) brauchten wir ein System, welches das MMC-(Pflege)Personal stimuliert um kontinuierlich seine oder
+    ihre Kompetenzen und Fähigkeiten einzusehen und weiter zu entwickeln, sodass die beste Pflege mit einem erkennbaren Profil geboten
+    werden kann. Gemeinsam mit Defacto haben wir hierfür den Qualitätspass implementiert.</p>
+    <p>Schon vor der Implementierung des Qualitätspasses ist durch verschiedene Abteilungen, unter anderem der Personalabteilung und der
+    Abteilung Qualität & Sicherheit, viel Vorarbeit geleistet worden in der Erstellung einer Basis. Wir haben uns für eine nachhaltige
+    Lösung entschieden, wobei in Echtzeit die aktuellen Personaldaten und das daran gekoppelte Profil verfügbar sind.<br>
+    Parallel baut der Qualitätspass auf eine Kultur auf, in der die Mitarbeiter selbst die Regie über ihr eigenes Expertenwissen
+    übernehmen. Wichtig ist, dass Vorgesetzte und Abteilungsleiter eine Kultur unterstützen, in der man sich gegenseitig ansprechen kann
+    und ansprechbar ist über das Folgen der Protokolle, sodass man gemeinsam Pflege von Spitzenqualität bietet.</p>
+    <p>Während der Implementierung des Qualitätspasses ist uns aufgefallen, dass Defacto eine enge Beziehung der Zusammenarbeit anstrebt.
+    Sie sind interessiert an der Organisation und deren Prozesse und können daher konstruktiv mit uns mitdenken. Die Zusammenarbeit mit
+    den Menschen von Defacto hat uns geholfen um die Basis des Qualitätspasses zu erstellen. Gemeinsam mit Defacto arbeiten wir an der
+    kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.</p>
+    <p>So sind unsere Mitarbeiter nun nachweislich befähigt. Ärztlich übertragbare und risikovolle Tätigkeiten werden nun durch Assessoren
+    auf dem Arbeitsplatz getestet. Dies ist effizient und bietet enorm viel Einsicht. Mit Hilfe von Defacto verfügen Vorgesetzte über
+    (Leitungs-)Informationen und beschäftigt sich unser (Pflege)Personal bewusst mit seiner eigenen Entwicklung und übernimmt hier nun
+    uch selbst die Verantwortung für.</p>
+  summary: >
+    Während der Implementierung des Qualitätspasses ist uns aufgefallen, dass Defacto eine enge Beziehung der Zusammenarbeit anstrebt.
+    Sie sind interessiert an der Organisation und deren Prozesse und können daher konstruktiv mit uns mitdenken. Die Zusammenarbeit mit
+    den Menschen von Defacto hat uns geholfen um die Basis des Qualitätspasses zu erstellen. Gemeinsam mit Defacto arbeiten wir an der
+    kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.
+
+
+- name: Martina de Vos
+  company: "Fortbildungsbeauftragte, Sint Franciscus Gasthuis"
+  avatar: testimonials/martina_de_vos.jpg
+  featured: true
+  quote: >
+    Wir sagen was wir machen und wir machen was wir sagen, ist das Motto mit dem Defacto arbeitet.
+    Und das ist auch wirklich so, wie wir während unserem prima verlaufenen Implementierungsprojekt erfahren haben.
+    Von beiden Seiten aus, gab es deutliche Absprachen, engen Kontakt, Humor und motivierte Teams mit der Absicht einander zu
+    finden und zu verstärken. Die spontan angebotene extra Hilfe bei einem plötzlichen Ausfall eines Kollegen,
+    hat die Beteiligung von Defacto bei seinen Kunden sehr gut wiedergegeben.
+    Top! Sollte es nochmal nötig sein: wir sind dabei!
+  summary: >
+    Wir sagen was wir machen und wir machen was wir sagen, ist das Motto mit dem Defacto arbeitet.
+    Und das ist auch wirklich so, wie wir während unserem prima verlaufenen Implementierungsprojekt erfahren haben.
+    Von beiden Seiten aus, gab es deutliche Absprachen, engen Kontakt, Humor und motivierte Teams mit der Absicht einander zu
+    finden und zu verstärken.
+
+
+- name: Marieke van Kernebeek
+  company: "Office manager, Phoenix Opleidingen"
+  avatar: testimonials/marieke_van_kernebeek.jpg
+  featured: true
+  quote: >
+    Das schönste an der Zusammenarbeit mit den Leuten von Defacto ist, dass wir schon so lange so einen intensiven Kontakt haben,
+    dass man weiß das man aufeinander zählen kann. Dieses Vertrauen schafft auch Raum für kritische Anmerkungen.
+    In den letzten Jahren haben wir so einen guten Kontakt aufgebaut, dass man das nicht so einfach mal zur Seite schiebt.
+    Angenehm ist auch, dass sie an dem Ton der E-Mail oder Telefongespräch bereits merken ob etwas dringend ist oder
+    nicht und immer für dich bereit stehen. Kurzum: eine ganz tolle Zusammenarbeit.
+
+  summary: >
+    Das schönste an der Zusammenarbeit mit den Leuten von Defacto ist, dass wir schon so lange so einen intensiven Kontakt haben,
+    dass man weiß das man aufeinander zählen kann. Dieses Vertrauen schafft auch Raum für kritische Anmerkungen.
+    In den letzten Jahren haben wir so einen guten Kontakt aufgebaut, dass man das nicht so einfach mal zur Seite schiebt.
+
+
+- name: Peter van Overbruggen
+  company: "Fortbildungsbeauftragter, ZuidZorg"
+  avatar: testimonials/peter_van_overbruggen.jpg
+  quote: >
+    <p>Das Projekt mit Defacto ging um die Einführung von CAPP11 in unserer Organisation mit allen drei Teilen
+    (Bilden, Entwickeln, Qualitätspass). Der Kontakt mit den Leuten von Defacto verlief super. Sie richten sich auf Zusammenarbeit,
+    sind zugänglich und einfach mit umzugehen. Kurzum: eine tolle Zusammenarbeit.</p>
+    <p>Auch der Servicedesk ist leicht zu erreichen. Sie nehmen sich Zeit für dich und versuchen immer Deutlichkeit zu bieten,
+    selbst wenn etwas nicht möglich ist. Entscheidend fand ich auch, dass die Leute immer versuchen mit zu denken über Dinge die
+    spezifisch für unsere Organisation wichtig sind.</p>
+    <p>ZuidZorg hat zusätzlich auch einen Webshop von Defacto entwickeln lassen.
+    Dieser Webshop ist eine wichtige Neuanschaffung für unsere Kursverwaltung der Kunden-Kurse.
+    Kunden erhalten direkt Deutlichkeit über ihre Planung und die Möglichkeiten innerhalb ihres gewünschten Kurses.
+    Außerdem bedeutet das für uns enorme Zeiteinsparung.
+    Dort wo erst mehrere Mitarbeiter involviert waren in die administrative Abwicklung, ist jetzt nur noch eine Person die
+    Hälfte der Zeit mit beschäftigt.
+    Durch die Einführung von CAPP als Learning Management System ist auch die Eigenverantwortlichkeit von Mitarbeitern gewachsen,
+    die Übersicht für Vorgesetzte optimalisiert und wir können mehr Lernaktivitäten facilitieren für Mitarbeiter und Kunden.</p>

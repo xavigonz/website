@@ -6,7 +6,7 @@
 # end
 
 # Get single featured post
-featured = blog.articles.find { |item| item.metadata[:page]["featured"] rescue false }
+featured = blog.local_articles.find { |item| item.metadata[:page]["featured"] rescue false }
 
 if featured
   author = blog_author(featured)
@@ -29,8 +29,8 @@ if featured
       </div>
     </article>
 
-    <%#= link_to t("header.blog"), "/blog/" %>
-    <%= link_to "Meer op ons Blog", "/blog/", class: "button blue outline" %>
+    <%#= locale_link_to t("header.blog"), "/blog/" %>
+    <%= link_to t("blog.more_on_our_blog"), "/blog/", class: "button blue outline" %>
   </div>
 
 <% end %>

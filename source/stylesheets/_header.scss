@@ -127,28 +127,29 @@
           padding: 0;
         }
       }
-    }
-  }
 
-  .flags {
-    margin-right: 10px !important;
+      &.flags {
+        margin-right: 10px !important;
 
-    a {
-      @include transition(opacity 0.3s);
-      margin-right: 3px;
-      opacity: 0.75;
+        a {
+          @include transition(opacity 0.3s);
+          display: inline-block;
+          margin-right: 3px;
+          opacity: 0.75;
 
-      &:last-child {
-        margin-right: 0;
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 18px;
+        }
       }
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    img {
-      width: 18px;
     }
   }
 }

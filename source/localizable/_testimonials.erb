@@ -1,5 +1,6 @@
 <%
-testimonials = data.testimonials
+testimonials = data[is_default_locale? ? "testimonials" : "testimonials_" + I18n.locale.to_s]
+testimonials ||= data.testimonials
 
 summary ||= false
 
@@ -15,12 +16,12 @@ end
 <ul class="testimonial-list">
   <% testimonials.each do |testimonial|
 
-    quote_index = data.testimonials.index(testimonial)
+    quote_index = testimonials.index(testimonial)
     quote_id = "testimonial-#{quote_index}"
 
     if summary
       quote = testimonial.summary? ? testimonial.summary : testimonial.quote
-      quote_html = content_tag(:a, quote, href: url_for("/testimonials.html##{quote_id}"), class: "quote")
+      quote_html = locale_link_to(quote, "/testimonials.html##{quote_id}", class: "quote")
     else
       quote = testimonial.quote
       quote_html = content_tag(:div, quote, class: "quote")

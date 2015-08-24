@@ -1,0 +1,25 @@
+---
+title:
+  nl: Wie we zijn
+  de: Ueber Uns
+  en: About Us
+---
+
+<section class="gray">
+  <div class="row">
+    <h1><%= t("about.heading") %></h1>
+    <h3><%= t("about.heading2") %></h3>
+  </div>
+</section>
+
+<section>
+  <div class="row">
+    <article class="sidebar-content">
+      <%= partial "over-ons/over-ons" %>
+    </article>
+    <%= partial "over-ons/sidebar" %>
+  </div>
+</section>
+
+<%= partial "over-ons/team" %>
+<%#= partial "contact-info" %>

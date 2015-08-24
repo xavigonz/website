@@ -140,6 +140,3 @@ DEPENDENCIES
   neat
   nokogiri
   rails-assets-js-cookie
-
-BUNDLED WITH
-   1.10.4

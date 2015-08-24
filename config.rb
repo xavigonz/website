@@ -38,6 +38,8 @@
 # Blog
 Time.zone = "CET"
 
+activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
+
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
@@ -51,8 +53,6 @@ page "blog/*", layout: :blog_post_layout
 page "blog/index.html", layout: :blog_layout
 page "blog/feed.xml", layout: false
 
-# activate :i18n, mount_at_root: :nl, langs: [:nl, :en, :de]
-activate :i18n, mount_at_root: :nl, langs: [:nl]
 activate :directory_indexes
 
 set :css_dir, "stylesheets"
@@ -88,12 +88,28 @@ configure :build do
 end
 
 ###
+# Ready callback
+###
+
+ready do
+  # validate data/downloads.yml
+  validate_downloads(data.downloads)
+end
+
+###
 # Helpers
 ###
 
 helpers do
+  #use frontmatter for I18n titles
   def page_title(page)
-    page.data.title ? page.data.title + " - Defacto" : t("head.default_title")
+    if page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
+      return "#{page.data.title.send(I18n.locale)} - Defacto"
+    elsif page.data.title
+      return "#{page.data.title} - Defacto"
+    else
+      return "Defacto - Developing People"
+    end
   end
 
   # Prevent page_classes from prefixing locales
@@ -101,16 +117,59 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
-  def markitdown(string)
-    # Kramdown::Document.new(string, config[:markdown]).to_html
-    # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
-    Tilt['markdown'].new { string }.render(scope=self)
+  def is_default_locale?(locale=I18n.locale)
+    locale == extensions[:i18n].options.mount_at_root
+  end
+
+  def locale_link_to(*args, &block)
+    url_arg_index = block_given? ? 0 : 1
+    options_index = block_given? ? 1 : 2
+
+    options = args[options_index] || {}
+    lang = options[:lang] || I18n.locale
+
+    args[url_arg_index] = locale_url_for(args[url_arg_index], { lang: lang })
+
+    link_to(*args, &block)
+  end
+
+  def locale_url_for(url, options={})
+    url = url_for(url, relative: false)
+    lang = options[:lang] || I18n.locale
+    prefix = is_default_locale?(lang) ? "" : "/#{lang}"
+    prefix + "/" + clean_locale_url(url)
+  end
+
+  def clean_locale_url(url)
+    parts = url.split("/").select { |p| p && p.size > 0 }
+    parts.shift if langs.map(&:to_s).include?(parts[0])
+    parts.join("/")
   end
 
   def nav_link_to(link_text, url, options={})
     options[:class] ||= ""
-    options[:class] << " active" if url_for(url, relative: false) == url_for(current_page.url, relative: false)
-    link_to(link_text, url, options)
+    is_active = locale_url_for(url_for(url, relative: false)) == url_for(current_page.url, relative: false).chomp("/")
+    options[:class] << " active" if is_active
+    locale_link_to(link_text, url, options)
+  end
+
+  def country_flags
+    flag_titles = { nl: "Nederlands", de: "Deutsch", en: "English" }
+    html = ""
+
+    (langs - [I18n.locale]).each do |lang|
+      url = locale_url_for(current_page.url, { lang: lang })
+      img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
+      html << link_to(img, url, title: flag_titles[lang])
+    end
+
+    html
+  end
+
+  def markitdown(string)
+    # Kramdown::Document.new(string, config[:markdown]).to_html
+    # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
+    Tilt['markdown'].new { string }.render(scope=self)
   end
 
   def team_avatar_url(person)
@@ -133,16 +192,24 @@ helpers do
     return response.code.to_i == 404 ? false : url
   end
 
-  def local_path(path, options={})
-    return "/#{path}" if I18n.locale == extensions[:i18n].options.mount_at_root
-    lang = options[:language] ? options[:language] : I18n.locale.to_s
-    "/#{lang}/#{path}"
-  end
-
   # Get blog author
   def blog_author(article)
     author = article.data.author
     author = author.present? ? author.capitalize : author
     data.team.find{ |person| person[:firstname] == author }
+  end
+
+  # Used to validate data/downloads.yml
+  def validate_downloads(hash)
+    hash.each do |key, value|
+      if value.is_a?(Hash)
+        validate_downloads(value)
+      elsif value.is_a?(String)
+        unless sitemap.find_resource_by_path(value)
+          hash[key] = false
+          puts "\033[31mWARNING: Download link does not exist '#{value}'\033[0m"
+        end
+      end
+    end
   end
 end
