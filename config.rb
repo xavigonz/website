@@ -38,6 +38,8 @@
 # Blog
 Time.zone = "CET"
 
+activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
+
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
@@ -51,7 +53,6 @@ page "blog/*", layout: :blog_post_layout
 page "blog/index.html", layout: :blog_layout
 page "blog/feed.xml", layout: false
 
-activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 activate :directory_indexes
 
 set :css_dir, "stylesheets"
