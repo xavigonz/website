@@ -1,7 +1,7 @@
 ---
 nl:
   links:
-    formkeep_url: https://formkeep.com/f/bfad79e126e9
+    formkeep_url: https://formkeep.com/f/aff54030c202
   about:
     about_defacto: Over Defacto
     contact: Contact
@@ -20,6 +20,7 @@ nl:
     try_for_free: "Probeer gratis"
     visit_website: "Bezoek de website"
   blog:
+    more_on_our_blog: "Meer op ons blog"
     more_articles: "Meer artikelen"
     title: "Wat ons bezighoudt"
   capp:
