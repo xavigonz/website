@@ -2,6 +2,7 @@
 title: Wat we hebben geleerd van het open sourcen van ons hobbyproject
 date: 2014-08-11 16:25:27
 author: Hugo
+lang: nl
 ---
 
 Vorige week hebben we ons interne hobbyproject [Hours](https://github.com/DefactoSoftware/Hours) volledig [open source gemaakt](https://news.ycombinator.com/item?id=8151777). Hours is een eenvoudige time tracking app die we hebben ontwikkeld toen we gek werden van de urenregistratie-tool die we gebruikten.

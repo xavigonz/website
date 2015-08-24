@@ -2,6 +2,7 @@
 title: De R van relatie
 date: 2015-07-03 16:09 CEST
 author: Joep
+lang: nl
 ---
 
 ### Het verschil tussen contact en contract is de R van relatie
