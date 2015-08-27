@@ -2,10 +2,15 @@
 de:
   # Path translations
   paths:
-    producten: "produkte"
-    diensten: "service"
+    producten: produkte
+    diensten: service
     over-ons: "uber-uns"
-    kwaliteitspaspoort: "qualitatspass"
+    contact: kontakt
+    kwaliteitspaspoort: qualitatspass
+    implementaties: implementierungen
+    koppelingen: schnittstellen
+    testimonials: empfehlungsschreiben
+    referenties: referenzen
 
   links:
     formkeep_url: https://formkeep.com/f/bfad79e126e9
