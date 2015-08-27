@@ -112,9 +112,22 @@ helpers do
     end
   end
 
-  # Prevent page_classes from prefixing locales
+  # Localize page_classes
   def page_classes(path=current_path.dup, options={})
-    super(path.sub(/^[a-z]{2}\//, ''), options)
+    # Prevent page classes from being translated
+    unless is_default_locale?
+      default_path = sitemap.resources.select do |resource|
+        resource.proxied_to == current_page.proxied_to &&
+          resource.metadata[:options][:lang] == extensions[:i18n].options.mount_at_root
+      end.first
+      path = default_path.destination_path.dup if default_path
+    end
+    # Create classes from path
+    classes = super(path.sub(/^[a-z]{2}\//, ""), options)
+    # Add class if blog post
+    classes += " blog_article" if is_blog_article?
+    # Prepend language class
+    classes.prepend("#{I18n.locale} ")
   end
 
   # Check if locale is default aka mount_at_root
