@@ -101,7 +101,7 @@ end
 ###
 
 helpers do
-  #use frontmatter for I18n titles
+  # Use frontmatter for I18n titles
   def page_title(page)
     if page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
       return "#{page.data.title.send(I18n.locale)} - Defacto"
@@ -117,61 +117,59 @@ helpers do
     super(path.sub(/^[a-z]{2}\//, ''), options)
   end
 
+  # Check if locale is default aka mount_at_root
   def is_default_locale?(locale=I18n.locale)
     locale == extensions[:i18n].options.mount_at_root
   end
 
+  # Localized link_to
   def locale_link_to(*args, &block)
     url_arg_index = block_given? ? 0 : 1
     options_index = block_given? ? 1 : 2
-
-    options = args[options_index] || {}
-    lang = options[:lang] || I18n.locale
-
-    args[url_arg_index] = locale_url_for(args[url_arg_index], { lang: lang })
-
+    args[options_index] ||= {}
+    options = args[options_index].dup
+    args[url_arg_index] = locale_url_for(args[url_arg_index], options)
     link_to(*args, &block)
   end
 
+  # Localized url_for
   def locale_url_for(url, options={})
-    url = url_for(url, relative: false)
-    lang = options[:lang] || I18n.locale
-    prefix = is_default_locale?(lang) ? "" : "/#{lang}"
-    prefix + "/" + clean_locale_url(url)
+    locale = options[:locale] || ::I18n.locale
+    options[:relative] = false
+    url_parts = url.split("#")
+    url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) || url_parts[0]
+    url = url_parts.join("#")
+    url_for(url, options)
   end
 
-  def clean_locale_url(url)
-    parts = url.split("/").select { |p| p && p.size > 0 }
-    parts.shift if langs.map(&:to_s).include?(parts[0])
-    parts.join("/")
-  end
-
-  def nav_link_to(link_text, url, options={})
+  # Localized link_to with active class if current_page
+  def nav_link_to(text, url, options={})
+    is_active = locale_url_for(url.split("#")[0]) == url_for(current_page.url, relative: false)
     options[:class] ||= ""
-    is_active = locale_url_for(url_for(url, relative: false)) == url_for(current_page.url, relative: false).chomp("/")
     options[:class] << " active" if is_active
-    locale_link_to(link_text, url, options)
+    locale_link_to(text, url, options)
   end
 
+  # Country flags
   def country_flags
     flag_titles = { nl: "Nederlands", de: "Deutsch", en: "English" }
     html = ""
-
     (langs - [I18n.locale]).each do |lang|
-      url = locale_url_for(current_page.url, { lang: lang })
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-      html << link_to(img, url, title: flag_titles[lang])
+      url = current_page.locale_root_path || "/"
+      html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
-
     html
   end
 
+  # String to markdown
   def markitdown(string)
     # Kramdown::Document.new(string, config[:markdown]).to_html
     # Redcarpet::Markdown.new(Redcarpet::Render::HTML, config[:markdown]).render(string)
     Tilt['markdown'].new { string }.render(scope=self)
   end
 
+  # Get avatar url for team members
   def team_avatar_url(person)
     return person.avatar if person.avatar
     avatar = gravatar_for(person.email)
@@ -181,6 +179,7 @@ helpers do
     return false
   end
 
+  # Email to gravatar
   def gravatar_for(email)
     return false unless email
     hash = Digest::MD5.hexdigest(email.chomp.downcase)
