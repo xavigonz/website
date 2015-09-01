@@ -10,6 +10,13 @@ Defacto.ebookForm = {
     event.preventDefault();
     $submit.prop('disabled', 'disabled');
 
+    //Validate
+    if ($emailField.val().indexOf("@") < 1) {
+      $submit.prop('disabled', false);
+      $emailField.addClass('invalid').focus();
+      return;
+    }
+
     // Submit form
     $.ajax({
       type: 'POST',
