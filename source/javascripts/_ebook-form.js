@@ -1,37 +1,14 @@
-$(function () {
-  // These values should be identical to the ones in _popup.js
-  var cookieExpiresOnSubmit = 30;
-  var cookiePath = '/';
-  var cookiePrefix = 'defacto_';
-  var cookieValue = 'hidden';
-
-  // Hide hightlight
-  function hidePopup () {
-    var $popup = $('#popup-ebook');
-
-    if ($popup.length == 0) {
-      return;
-    }
-
-    $popup.addClass('popup-hide');
-
-    setTimeout(function () {
-      $popup.remove();
-    }, 400);
-
-    var id = $popup[0].id;
-    if (cookieExpiresOnSubmit && id) {
-      Cookies.set(cookiePrefix + id, cookieValue, { expires: cookieExpiresOnSubmit, path: cookiePath });
-    }
-  }
-
-  // Ebook form submit
-  $('#ebook-download form').on('submit', function (event) {
-    event.preventDefault();
-
-    var ebookUrl = downloads.ebook[I18n.locale];
+var Defacto = Defacto || {};
+Defacto.ebookForm = {
+  submit: function (event) {
+    var ebookUrl = Defacto.downloads.ebook[I18n.locale];
     var $form = $(this);
     var $submit = $form.find('button[type=submit]');
+    var $formField = $form.find('input[name=form]');
+    var $emailField = $form.find('input[name=email]');
+
+    event.preventDefault();
+    $submit.prop('disabled', 'disabled');
 
     // Submit form
     $.ajax({
@@ -40,10 +17,7 @@ $(function () {
       accept: {
         javascript: 'application/javascript'
       },
-      data: $form.serialize(),
-      beforeSend: function () {
-        $submit.prop('disabled', 'disabled');
-      }
+      data: $form.serialize()
     }).always(function () {
       $submit.prop('disabled', false);
     });
@@ -51,7 +25,18 @@ $(function () {
     // Download ebook
     window.open(ebookUrl, '_blank');
 
+    // Track conversion
+    if (ga) {
+      ga('send', 'pageview', '/bedankt/' + $formField.val());
+    }
+
     // hide hightlight
-    hidePopup();
-  });
-});
+    var $popup = $(Defacto.popup.ebookPopupId);
+    Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnSubmit);
+  },
+
+  init: function () {
+    $('#ebook-download form').on('submit', Defacto.ebookForm.submit);
+  }
+}
+Defacto.ebookForm.init();
