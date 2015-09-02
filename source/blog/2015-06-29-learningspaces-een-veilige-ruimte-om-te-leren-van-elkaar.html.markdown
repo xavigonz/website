@@ -5,8 +5,8 @@ author: Margreet Twijnstra
 featured: false
 lang: nl
 ---
-_(Dit blog werd eerder gepubliceerd op de [website van Magreet Twijnstra](http://twijnstra.nu/learningspaces-een-veilige-ruimte-om-te-leren-van-elkaar/))_.
 
+_(Dit blog werd eerder gepubliceerd op de [website van Magreet Twijnstra](http://twijnstra.nu/learningspaces-een-veilige-ruimte-om-te-leren-van-elkaar/))_.
 
 Op uitnodiging van __Defacto__ vond op 11 juni in dierenpark Amersfoort een informele kennismaking plaats met Learning Spaces: over _Informeel leren en kennis delen in ziekenhuizen_. Een bont gezelschap van zo’n 80 mensen greep de gelegenheid aan, om ervaringen uit te wisselen met leren in de context van de ziekenhuisorganisatie: zowel formeel als informeel en vooral: door welke voorwaarden gefaciliteerd.
 
