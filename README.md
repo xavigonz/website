@@ -14,7 +14,7 @@ Start [Middleman](https://middlemanapp.com) server and browse to [http://localho
 ##### Build
 
 ```
-middleman build
+bundle exec middleman build
 ```
 
 ##### Deploy
