@@ -1,6 +1,11 @@
-##Defacto website
+## Defacto website
+
+The sourcecode for our [website](http://www.defacto.nl). More detailed information can be found at the [Wiki](https://github.com/DefactoSoftware/website/wiki).
+
+##### Server
 
 Start [Middleman](https://middlemanapp.com) server and browse to [http://localhost:4567](http://localhost:4567):
+
 
 ```
 ./serve

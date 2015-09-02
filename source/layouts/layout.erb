@@ -40,10 +40,12 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script> window.I18n = { locale: '<%= I18n.locale %>' }; </script>
     <%= javascript_include_tag "all" %>
+
     <script>
       window.intercomSettings = { app_id: 'yb5mzq3j' };
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/yb5mzq3j';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
+
     <!--[if lte IE 9]>
     <%= javascript_include_tag "jquery.placeholder.min" %>
     <script>
@@ -52,5 +54,20 @@
       });
     </script>
     <![endif]-->
+
+    <!-- Google-code voor remarketingtag -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 1008438803;
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1008438803/?value=0&amp;guid=ON&amp;script=0"/>
+      </div>
+    </noscript>
   </body>
 </html>
