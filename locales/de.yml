@@ -201,6 +201,7 @@ de:
   thanks:
     heading: "Vielen Dank."
     text_md: "Wir melden uns so schnell wie möglich bei Ihnen."
+    back: Zurück zur vorherigen Seite.
   threesixty:
     cta_bottom:
       heading_md: "Guck in den Spiegel mit 360 Feedback."
