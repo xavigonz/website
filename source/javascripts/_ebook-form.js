@@ -2,7 +2,7 @@ var Defacto = Defacto || {};
 
 Defacto.ebookForm = {
   submit: function (event) {
-    var ebookUrl = Defacto.downloads.ebook[I18n.locale];
+    var ebookUrl = Defacto.downloads.ebook[Defacto.I18n.locale];
     var $form = $(this);
     var $submit = $form.find('button[type=submit]');
     var $formField = $form.find('input[name=form]');

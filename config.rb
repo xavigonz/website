@@ -169,7 +169,8 @@ helpers do
     html = ""
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-      url = current_page.locale_root_path || "/"
+      locale_root_path = current_page.locale_root_path
+      url = locale_root_path && locale_root_path != "/error.html" ? locale_root_path : "/"
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html
