@@ -2,6 +2,7 @@
 de:
   # Path translations
   paths:
+    bedankt: danke
     producten: produkte
     diensten: service
     over-ons: "uber-uns"
@@ -11,9 +12,8 @@ de:
     koppelingen: schnittstellen
     testimonials: empfehlungsschreiben
     referenties: referenzen
-
-  links:
-    formkeep_url: https://formkeep.com/f/bfad79e126e9
+  urls:
+    formkeep: https://formkeep.com/f/bfad79e126e9
   about:
     about_defacto: "Über Defacto"
     contact: "Kontakt"

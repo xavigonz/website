@@ -1,7 +1,7 @@
 ---
 nl:
-  links:
-    formkeep_url: https://formkeep.com/f/aff54030c202
+  urls:
+    formkeep: https://formkeep.com/f/aff54030c202
   about:
     about_defacto: Over Defacto
     contact: Contact
