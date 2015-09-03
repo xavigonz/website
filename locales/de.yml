@@ -1,7 +1,19 @@
 ---
 de:
-  links:
-    formkeep_url: https://formkeep.com/f/bfad79e126e9
+  # Path translations
+  paths:
+    bedankt: danke
+    producten: produkte
+    diensten: service
+    over-ons: "uber-uns"
+    contact: kontakt
+    kwaliteitspaspoort: qualitatspass
+    implementaties: implementierungen
+    koppelingen: schnittstellen
+    testimonials: empfehlungsschreiben
+    referenties: referenzen
+  urls:
+    formkeep: https://formkeep.com/f/bfad79e126e9
   about:
     about_defacto: "Über Defacto"
     contact: "Kontakt"
@@ -189,6 +201,7 @@ de:
   thanks:
     heading: "Vielen Dank."
     text_md: "Wir melden uns so schnell wie möglich bei Ihnen."
+    back: Zurück zur vorherigen Seite.
   threesixty:
     cta_bottom:
       heading_md: "Guck in den Spiegel mit 360 Feedback."

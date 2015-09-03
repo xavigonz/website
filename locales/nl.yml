@@ -1,7 +1,7 @@
 ---
 nl:
-  links:
-    formkeep_url: https://formkeep.com/f/aff54030c202
+  urls:
+    formkeep: https://formkeep.com/f/aff54030c202
   about:
     about_defacto: Over Defacto
     contact: Contact
@@ -188,6 +188,7 @@ nl:
   thanks:
     heading: Bedankt!
     text_md: Je hoort zo snel mogelijk van ons.
+    back: Terug naar de vorige pagina.
   threesixty:
     cta_bottom:
       heading_md: "Kijk in de spiegel met 360° Feedback."
