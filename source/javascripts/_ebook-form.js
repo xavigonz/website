@@ -1,4 +1,5 @@
 var Defacto = Defacto || {};
+
 Defacto.ebookForm = {
   submit: function (event) {
     var ebookUrl = Defacto.downloads.ebook[I18n.locale];
@@ -10,7 +11,7 @@ Defacto.ebookForm = {
     event.preventDefault();
     $submit.prop('disabled', 'disabled');
 
-    //Validate
+    // Validate
     if ($emailField.val().indexOf("@") < 1) {
       $submit.prop('disabled', false);
       $emailField.addClass('invalid').focus();
@@ -37,7 +38,7 @@ Defacto.ebookForm = {
       ga('send', 'pageview', '/bedankt/' + $formField.val());
     }
 
-    // hide hightlight
+    // Hide hightlight
     var $popup = $(Defacto.popup.ebookPopupId);
     Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnSubmit);
   },
@@ -45,5 +46,6 @@ Defacto.ebookForm = {
   init: function () {
     $('#ebook-download form').on('submit', Defacto.ebookForm.submit);
   }
-}
+};
+
 Defacto.ebookForm.init();

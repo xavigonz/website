@@ -1,7 +1,7 @@
 // Make sure Popup elements (.popup) have an ID.
 var Defacto = Defacto || {};
-Defacto.popup = {
 
+Defacto.popup = {
   showScrollTop: 100, // pixels scrolled before showing popups
   showDelay: 400, // ms before showing
   cookieExpiresOnClose: 1 / 24 / 60 * 10, // 10 MINUTES till the cookie expires after closing
@@ -33,7 +33,7 @@ Defacto.popup = {
     }
   },
 
-  init: function () { 
+  init: function () {
     // Remove popups the user has closed
     $('.popup').each(function () {
       if (this.id && Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id] === Defacto.popup.cookieValue) {
@@ -57,11 +57,12 @@ Defacto.popup = {
       event.preventDefault();
 
       var $popup = $(this).closest('.popup');
-      hide($popup, Defacto.popup.cookieExpiresOnClose);
+      Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
     });
 
     // Ebook form submit
     this.$body.on('submit', this.ebookPopupId + ' form', Defacto.ebookForm.submit);
   }
 };
+
 Defacto.popup.init();
