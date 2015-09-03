@@ -71,6 +71,18 @@ input[type="file"] {
   width: 100%;
 }
 
+input.invalid {
+  border-color: $red;
+
+  &:hover {
+    border-color: darken($red, 10%);
+  }
+
+  &:focus {
+    border-color: darken($red, 20%);
+  }
+}
+
 select {
   margin-bottom: $base-spacing;
   max-width: 100%;

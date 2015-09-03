@@ -9,9 +9,8 @@
 //= require _popup
 
 // Downloads
-var downloads = JSON.parse('<%= data.downloads.to_json.html_safe %>');
-// console.log(downloads.ebook)
-console.log(downloads.ebook[I18n.locale])
+var Defacto = Defacto || {};
+Defacto.downloads = JSON.parse('<%= data.downloads.to_json.html_safe %>');
 
 // Say hi in console :)
 if (console && console.log) {
