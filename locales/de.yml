@@ -10,7 +10,7 @@ de:
     kwaliteitspaspoort: qualitatspass
     implementaties: implementierungen
     koppelingen: schnittstellen
-    testimonials: empfehlungsschreiben
+    testimonials: kundenreferenzen
     referenties: referenzen
   urls:
     formkeep: https://formkeep.com/f/bfad79e126e9
@@ -23,7 +23,7 @@ de:
     team:
       work_with_us: "Arbeiten bei"
       you: "Sie?"
-    testimonials: "Empfehlungsschreiben"
+    testimonials: "Kundenreferenzen"
   actions:
     download: "Herunterladen"
     make_appointment: "Termin vereinbaren"

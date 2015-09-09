@@ -103,13 +103,10 @@ end
 helpers do
   # Use frontmatter for I18n titles
   def page_title(page)
-    if page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
-      return "#{page.data.title.send(I18n.locale)} - Defacto"
-    elsif page.data.title
-      return "#{page.data.title} - Defacto"
-    else
-      return "Defacto - Developing People"
-    end
+    return "#{page.data.title.send(I18n.locale)} - Defacto" if
+      page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
+    return "#{page.data.title} - Defacto" if page.data.title
+    return "Defacto - Developing People"
   end
 
   # Localize page_classes
