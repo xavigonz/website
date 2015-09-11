@@ -2,7 +2,7 @@
 title: Van prototype tot product
 date: 2015-08-12 10:55 CEST
 author: Glenn
-featured: true
+featured: false
 lang: nl
 ---
 
