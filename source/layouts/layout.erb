@@ -1,43 +1,32 @@
-<!DOCTYPE html>
-<html lang="<%= I18n.locale %>">
+<!doctype html>
+<html lang="<%= I18n.locale.to_s %>">
   <head>
-    <meta charset="utf-8">
-    <!--
-    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
-    █████ █████ █████
-    █████ █████ █████     ██████▄▄             ▟███▘
-    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
-    █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
-    ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
-    █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
-    █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
-    ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
-
-    Hi there!
-    The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
-    Come hack with us? http://jobs.defacto.nl/
-    -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><%= page_title(current_page) %></title>
+    <title><%= page_title current_page %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
-    <link rel="canonical" href="<%= full_url(current_page.url) %>">
-
-    <meta property="og:site_name" content="Defacto - Developing People">
-    <meta property="og:title" content="<%= page_title(current_page, false) %>">
-    <meta property="og:url" content="<%= full_url(current_page.url) %>">
-    <meta property="og:type" content="<%= is_blog_article? ? "article" : "website" %>">
-    <meta property="og:description" content="<%= current_page.data.description ||
-      is_blog_article? ? Nokogiri::HTML(current_page.summary(250)).text : t("head.default_description") %>">
-    <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image || "images/social/defacto-1200x630.png")) %>">
-    <meta property="og:locale" content="<%= full_locale %>">
-
     <%= stylesheet_link_tag "main" %>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <%= partial "google_analytics" %>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-  </head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <%= partial "google_analytics" %>
+    <!--
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
+     █████ █████ █████
+     █████ █████ █████     ██████▄▄             ▟███▘
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
+     █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
+     ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
+     ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
 
+     Hi there!
+     The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
+     Come hack with us? http://jobs.defacto.nl/
+    -->
+  </head>
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <div id="main" role="main">
@@ -50,25 +39,18 @@
     <% end %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    var Defacto = Defacto || {};
-    Defacto.I18n = { locale: "<%= I18n.locale %>" };
-    </script>
+
+    <!--[if lte IE 9]>
+    <%= javascript_include_tag "jquery.placeholder.min" %>
+    <%= javascript_include_tag "lte-ie9" %>
+    <![endif]-->
+
     <%= javascript_include_tag "all" %>
 
     <script>
       window.intercomSettings = { app_id: 'yb5mzq3j' };
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/yb5mzq3j';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
-
-    <!--[if lte IE 9]>
-    <%= javascript_include_tag "vendor/jquery.placeholder.min" %>
-    <script>
-      $(function() {
-        $('input, textarea').placeholder()
-      });
-    </script>
-    <![endif]-->
 
     <!-- Google-code voor remarketingtag -->
     <script type="text/javascript">
