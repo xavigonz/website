@@ -1,6 +1,6 @@
 ---
 title: Throwback Thursday, Samen met FC Groningen het internet op
-date: 2015-09-17 12:00:00
+date: 2015-09-17 10:58 CEST
 author: Gerwin
 lang: nl
 ---
