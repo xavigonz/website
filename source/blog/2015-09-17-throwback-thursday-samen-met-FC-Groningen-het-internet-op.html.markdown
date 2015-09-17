@@ -7,7 +7,7 @@ lang: nl
 
 Eén van de eerste dingen die me opviel toen ik solliciteerde bij Defacto was een folder van de website van [FC Groningen](http://www.fcgroningen.nl) die op de kamer lag waar ik een gesprek had. Een website uit de mid jaren '90! Gaaf! Als Groningen supporter sprak me dat natuurlijk aan. Nu wil je niet meer met zo’n website gezien worden, maar voor die tijd was het toch best aardig (Groningse bescheidenheid). In die jaren speelde Groningen na een succesvolle periode in de onderste regionen van de PTT-Telecompetitie en was Defacto nog met, bijvoorbeeld, hardware bezig. Dat er in die jaren veel veranderd is, lijkt me duidelijk:
 
-![Website folder](/images/blog/robben-selectie-oranje.jpg)
+![Oud nieuws](/images/blog/robben-selectie-oranje.jpg)
 
 Vrijdag 28 augustus 2015 op kantoor... Spanning op een deel van de werkvloer. De loting van de Europa League… Nog een paar uur en we weten wie we gaan tegenkomen. Als Gronings bedrijf zijn we erg trots op het feit dat FC Groningen europa in gaat. Waar ik vorig jaar samen met een collega op de boot naar Engeland zat om door te reizen naar Aberdeen voor een voorronde wedstrijd, gaan we nu gewoon 3 europese wedstrijden krijgen. Ongekend!
 
