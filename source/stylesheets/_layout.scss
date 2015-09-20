@@ -7,18 +7,6 @@
   box-sizing: border-box;
 }
 
-// Sticky footer
-// https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-
-  #main {
-    flex: 1;
-  }
-}
-
 section {
   padding: 3em 0;
 
