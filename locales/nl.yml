@@ -30,7 +30,7 @@ nl:
     desc: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
     hero:
       formkeep_title: "CAPP: meer informatie"
-      text_md: "__CAPP LMS__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen."
+      text_md: "__CAPP LMS Software__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen."
       title: "Opleiden & Leren met CAPP LMS"
     name: CAPP
   contact:
@@ -129,10 +129,9 @@ nl:
         title: Leren
       quality:
         keywords:
-          - Kwaliteitmonitor
-          - Accrediteren
-          - Certificeren
-          - Managementinformatie
+          - Verplichte opleiding en praktijkervaring vastleggen
+          - Bewaken certificering
+          - Kwaliteitsmonitor voor accreditatie van NIAZ, ISO, WFT, Wet BIO, JSI, etc.
         text_html: "Real-time inzicht in vakbevoegdheid van uzelf, uw team en uw organisatie. Voldoe permanent en zichtbaar aan de (formele) kwaliteitseisen."
         title: Kwaliteitspaspoort
   hosting:
@@ -148,7 +147,7 @@ nl:
     desc: "Garandeer kwaliteit binnen uw organisatie door te werken aan bevoegdheden en bekwaamheden van uw medewerkers. Maak uw organisatie toekomstbestendig met het %{link}."
     hero:
       formkeep_title: "Kwaliteitspaspoort: meer informatie"
-      text_md: "Volledige compliance met CAPP Kwaliteitspaspoort"
+      text_md: "Aantoonbaar vakbekwaam met CAPP Kwaliteitspaspoort"
       title: Kwaliteitspaspoort
     logo: logos/kwaliteitspaspoort-white.png
     name: Kwaliteitspaspoort
