@@ -101,11 +101,17 @@ end
 ###
 
 helpers do
+  # Get the full url
+  def full_url(url)
+    URI.join("http://www.defacto.nl", url)
+  end
+
   # Use frontmatter for I18n titles
-  def page_title(page)
-    return "#{page.data.title.send(I18n.locale)} - Defacto" if
+  def page_title(page, appendCompanyName=true)
+    appendTitle = appendCompanyName ? " - Defacto" : ""
+    return page.data.title.send(I18n.locale) + appendTitle if
       page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
-    return "#{page.data.title} - Defacto" if page.data.title
+    return page.data.title + appendTitle if page.data.title
     return "Defacto - Developing People"
   end
 
