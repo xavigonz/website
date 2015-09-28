@@ -23,6 +23,12 @@ nl:
     more_on_our_blog: "Meer op ons blog"
     more_articles: "Meer artikelen"
     title: "Wat ons bezighoudt"
+    share:
+      share_post: "Deel dit artikel:"
+      twitter: Deel op Twitter
+      facebook: Deel op Facebook
+      google_plus: Deel op Google+
+      linkedin: Deel op LinkedIn
   capp:
     cta_bottom:
       formkeep_title: "CAPP: afpraak maken"

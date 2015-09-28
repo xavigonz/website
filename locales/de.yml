@@ -33,8 +33,14 @@ de:
     visit_website: "Besuche die Website"
   blog:
     more_on_our_blog: "Mehr dazu auf unseren Blog"
-    more_articles: "Meer artikelen"
-    title: "Wat ons bezighoudt"
+    more_articles: "Mehr Artikel"
+    title: "Was uns beschäftigt"
+    share:
+      share_post: "Teile diesen Artikel:"
+      twitter: Teile auf Twitter
+      facebook: Teile auf Facebook
+      google_plus: Teile auf Google+
+      linkedin: Teile auf LinkedIn
   capp:
     cta_bottom:
       formkeep_title: "CAPP: afpraak maken"

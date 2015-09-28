@@ -2,47 +2,47 @@
 
 <div class="social-share">
   <div class="title">
-    Share this post:
+    <%= t("blog.share.share_post") %>
   </div>
   <ul>
     <li>
       <a href="https://twitter.com/intent/tweet?text=<%= URI.encode(current_page.title) %>&amp;url=<%= permalink_url %>&amp;via=DefactoSoftware"
          target="_blank"
          rel="nofollow"
-         title="Share on Twitter"
+         title="<%= t("blog.share.twitter") %>"
          class="icon-twitter2"
          data-popup='{"width":550,"height":235}'>
-        <span>Share on Twitter</span>
+        <span><%= t("blog.share.twitter") %></span>
       </a>
     </li>
     <li>
       <a href="http://www.facebook.com/sharer.php?u=<%= permalink_url %>"
          target="_blank"
          rel="nofollow"
-         title="Share on Facebook"
+         title="<%= t("blog.share.facebook") %>"
          class="icon-facebook"
          data-popup='{"width":580,"height":296}'>
-        <span>Share on Facebook</span>
+        <span><%= t("blog.share.facebook") %></span>
       </a>
     </li>
     <li>
       <a href="https://plus.google.com/share?url=<%= permalink_url %>"
          target="_blank"
          rel="nofollow"
-         title="Share on Google+"
+         title="<%= t("blog.share.google_plus") %>"
          class="icon-google-plus"
          data-popup='{"width":490,"height":530}'>
-        <span>Share on Google+</span>
+        <span><%= t("blog.share.google_plus") %></span>
       </a>
     </li>
     <li>
       <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<%= permalink_url %>&amp;title=<%= URI.encode(current_page.title) %>"
          target="_blank"
          rel="nofollow"
-         title="Share on LinkedIn"
+         title="<%= t("blog.share.linkedin") %>"
          class="icon-linkedin2"
          data-popup='{"width":550,"height":500}'>
-        <span>Share on LinkedIn</span>
+        <span><%= t("blog.share.linkedin") %></span>
       </a>
     </li>
   </ul>
