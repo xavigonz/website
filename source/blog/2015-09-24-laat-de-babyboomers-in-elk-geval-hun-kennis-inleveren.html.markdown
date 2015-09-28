@@ -3,7 +3,9 @@ title: Laat de babyboomers in elk geval hun kennis inleveren
 date: 2015-09-24 17:15 CEST
 tags:
 author: Hans
+image: 
 lang: nl
+image: images/social/defacto-200x200.png
 ---
 
 Ik ben een babyboomer. Daar maak je je niet geliefd mee bij de jongere generaties. Maximaal geprofiteerd van maximaal gunstige omstandigheden. Ze hebben de huizen, de salarissen, de banen en in veel gevallen ook unieke kennis. En wat geven ze terug?

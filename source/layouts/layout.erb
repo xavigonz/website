@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= I18n.locale.to_s %>">
   <head>
+    <meta charset="utf-8">
     <!--
     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
     █████ █████ █████
@@ -17,7 +18,6 @@
     Come hack with us? http://jobs.defacto.nl/
     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><%= page_title(current_page) %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
@@ -29,9 +29,7 @@
     <meta property="og:type" content="<%= is_blog_article? ? "article" : "website" %>">
     <meta property="og:description" content="<%= current_page.data.description ||
       is_blog_article? ? Nokogiri::HTML(current_page.summary(250)).text : t("head.default_description") %>">
-    <% if current_page.data.image %>
-      <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image)) %>">
-    <% end %>
+    <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image || "images/social/defacto-1200x630.png")) %>">
 
     <%= stylesheet_link_tag "main" %>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
