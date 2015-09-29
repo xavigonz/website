@@ -18,17 +18,21 @@ Defacto.popup = {
 
   // Hide hightlight
   hide: function ($popup, cookieExpires) {
-    $popup.addClass('popup-hide');
-
-    setTimeout(function () {
-      $popup.remove();
-    }, 400);
+    if ($popup.length === 0) {
+      return;
+    }
 
     var id = $popup[0].id;
     if (cookieExpires && id) {
       Cookies.set(this.cookiePrefix + id, this.cookieValue,
         { expires: this.cookieExpires, path: this.cookiePath });
     }
+
+    $popup.addClass('popup-hide');
+
+    setTimeout(function () {
+      $popup.remove();
+    }, 400);
   },
 
   init: function () {
