@@ -4,8 +4,8 @@ var Defacto = Defacto || {};
 Defacto.popup = {
   showScrollTop: 100, // pixels scrolled before showing popups
   showDelay: 400, // ms before showing
-  cookieExpiresOnClose: 1 / 24 / 60 * 10, // 10 MINUTES till the cookie expires after closing
-  cookieExpiresOnSubmit: 30, // DAYS the cookie expires after submitting
+  cookieExpiresOnClose: 1 / 24 / 60 * 30, // 30 MINUTES till the cookie expires after closing
+  cookieExpiresOnSubmit: 30, // DAYS the cookie expires after closing
   cookiePath: '/',
   cookiePrefix: 'defacto_',
   cookieValue: 'hidden',
@@ -19,7 +19,7 @@ Defacto.popup = {
   // Hide hightlight
   hide: function ($popup, cookieExpires) {
     if ($popup.length === 0) {
-      return;
+      return false;
     }
 
     var id = $popup[0].id;

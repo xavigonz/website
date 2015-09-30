@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   // Placeholder polyfill
   $('input, textarea').placeholder();
 

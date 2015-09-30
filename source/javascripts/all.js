@@ -1,32 +1,11 @@
 //= require js-cookie
 
-//= require _download-form
+//= require _forms
 //= require _home
 //= require _map
 //= require _menu
-//=# require _modal
-//=# require _parallax
 //= require _popup
 //= require _social-share
-
-// Downloads
-var Defacto = Defacto || {};
-Defacto.downloads = JSON.parse('<%= data.downloads.to_json.html_safe %>');
-
-$(function () {
-  // Ebook download form
-  $('#ebook-download form, #popup-ebook form').downloadForm({
-    downloadUrl: Defacto.downloads.ebook[Defacto.I18n.locale],
-    onSubmitSuccess: function (data, textStatus, jqXHR) {
-      Defacto.popup.hide($('#popup-ebook'), Defacto.popup.cookieExpiresOnSubmit);
-    }
-  });
-
-  // CAPP productsheet form
-  $('#form-capp-productsheet').downloadForm({
-    downloadUrl: Defacto.downloads.productsheets.capp[Defacto.I18n.locale]
-  });
-});
 
 // Say hi in console :)
 if (console && console.log) {

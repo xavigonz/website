@@ -193,7 +193,8 @@ nl:
     title: "Wat anderen zeggen"
   thanks:
     heading: Bedankt!
-    text_md: Je hoort zo snel mogelijk van ons.
+    message: Je hoort zo snel mogelijk van ons.
+    message_download: 'De download zou nu automatisch moeten starten...<br>Zo niet, klik dan <a target="_blank">hier</a>.'
     back: Terug naar de vorige pagina.
   threesixty:
     cta_bottom:

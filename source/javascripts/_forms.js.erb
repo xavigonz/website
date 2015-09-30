@@ -1,0 +1,17 @@
+$(function () {
+  // Download forms
+  $('form').on('submit', function (event) {
+    var $form = $(this);
+    var $downloadInput = $form.find('input[name=download]');
+
+    if ($downloadInput.length) {
+      // Open download
+      window.open($downloadInput.val(), '_blank');
+
+      // Hide ebook popup when downloaded
+      if (downloadUrl === '<%= full_url(data.downloads.ebook[I18n.locale]) %>') {
+        Defacto.popup.hide($('#popup-ebook'), Defacto.popup.cookieExpiresOnSubmit);
+      }
+    }
+  });
+});
