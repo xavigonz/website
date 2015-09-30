@@ -1,31 +1,43 @@
-<!doctype html>
-<html lang="<%= I18n.locale.to_s %>">
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <!--
+    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
+    █████ █████ █████
+    █████ █████ █████     ██████▄▄             ▟███▘
+    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
+    █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
+    ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
+    █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
+    █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
+    ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
+
+    Hi there!
+    The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
+    Come hack with us? http://jobs.defacto.nl/
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><%= page_title current_page %></title>
+    <title><%= page_title(current_page) %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
+    <link rel="canonical" href="<%= full_url(current_page.url) %>">
+
+    <meta property="og:site_name" content="Defacto - Developing People">
+    <meta property="og:title" content="<%= page_title(current_page, false) %>">
+    <meta property="og:url" content="<%= full_url(current_page.url) %>">
+    <meta property="og:type" content="<%= is_blog_article? ? "article" : "website" %>">
+    <meta property="og:description" content="<%= current_page.data.description ||
+      is_blog_article? ? Nokogiri::HTML(current_page.summary(250)).text : t("head.default_description") %>">
+    <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image || "images/social/defacto-1200x630.png")) %>">
+    <meta property="og:locale" content="<%= full_locale %>">
+
     <%= stylesheet_link_tag "main" %>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= partial "google_analytics" %>
-    <!--
-     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
-     █████ █████ █████
-     █████ █████ █████     ██████▄▄             ▟███▘
-     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
-     █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
-     ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
-     █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
-     █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
-     ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
-
-     Hi there!
-     The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
-     Come hack with us? http://jobs.defacto.nl/
-    -->
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
+
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <div id="main" role="main">
@@ -50,7 +62,7 @@
     </script>
 
     <!--[if lte IE 9]>
-    <%= javascript_include_tag "jquery.placeholder.min" %>
+    <%= javascript_include_tag "vendor/jquery.placeholder.min" %>
     <script>
       $(function() {
         $('input, textarea').placeholder()
