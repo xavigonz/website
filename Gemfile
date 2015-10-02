@@ -16,5 +16,7 @@ gem "builder" # For feed.xml.builder
 gem "bourbon"
 gem "neat"
 
-# Javascript Cookie
+# Frontend
 gem "rails-assets-js-cookie"
+gem "rails-assets-jquery-placeholder"
+gem "rails-assets-bowser"

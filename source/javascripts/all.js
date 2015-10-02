@@ -1,4 +1,6 @@
 //= require js-cookie
+//= require jquery-placeholder
+//= require bowser
 
 //= require _forms
 //= require _home

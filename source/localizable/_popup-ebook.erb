@@ -14,8 +14,8 @@
     <form accept-charset="UTF-8" action="<%= t("urls.formkeep") %>" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="form" value="<%= t("elearning_ebook.formkeep_title") %>">
-      <input type="hidden" name="download" value="<%= data.downloads.ebook[I18n.locale] %>">
       <input type="email" name="email" id="popup-ebook-email" placeholder="<%= t("form.email") %>" required>
+      <input type="hidden" name="download" value="<%= full_url(data.downloads.ebook[I18n.locale]) %>">
       <button type="submit"><%= t("actions.download") %></button>
     </form>
   </div>

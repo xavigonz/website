@@ -1,5 +1,5 @@
 // Make sure Popup elements (.popup) have an ID.
-var Defacto = Defacto || {};
+window.Defacto = window.Defacto || {};
 
 Defacto.popup = {
   showScrollTop: 100, // pixels scrolled before showing popups

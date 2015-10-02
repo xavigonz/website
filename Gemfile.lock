@@ -103,6 +103,10 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-bowser (1.0.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-jquery-placeholder (2.1.3)
+      rails-assets-jquery (>= 1.6)
     rails-assets-js-cookie (2.0.3)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
@@ -142,6 +146,8 @@ DEPENDENCIES
   middleman-syntax
   neat
   nokogiri
+  rails-assets-bowser
+  rails-assets-jquery-placeholder
   rails-assets-js-cookie
 
 BUNDLED WITH
