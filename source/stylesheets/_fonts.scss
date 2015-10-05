@@ -12,11 +12,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?iesdxk');
-	src:url('../fonts/icomoon.eot?#iefixiesdxk') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?iesdxk') format('truetype'),
-		url('../fonts/icomoon.woff?iesdxk') format('woff'),
-		url('../fonts/icomoon.svg?iesdxk#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?u4h9al');
+	src:url('../fonts/icomoon.eot?#iefix-u4h9al') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?u4h9al') format('truetype'),
+		url('../fonts/icomoon.woff?u4h9al') format('woff'),
+		url('../fonts/icomoon.svg?u4h9al#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -34,6 +34,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pdf:before {
+	content: "\e608";
+}
 .icon-twitter2:before {
 	content: "\e604";
 }

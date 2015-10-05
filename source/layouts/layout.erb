@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html lang="<%= I18n.locale %>">
+<!doctype html>
+<html lang="<%= I18n.locale.to_s %>">
   <head>
     <meta charset="utf-8">
     <!--
-    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
-    █████ █████ █████
-    █████ █████ █████     ██████▄▄             ▟███▘
-    ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
-    █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
-    ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
-    █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
-    █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
-    ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄
+     █████ █████ █████
+     █████ █████ █████     ██████▄▄             ▟███▘
+     ▄▄▄▄▄ ▄▄▄▄▄ ▄▄▄▄▄     ███   ▀██           ▕██                    ██▌
+     █████ █████ █████     ███    ██  ▄██▀██▙ ██████ ▗▟████▙  ▟████▙ █████ ▟█████▙
+     ▀▀▀▀▀ ▀▀▀▀▀ ▀▀▀▀▀     ███    ██  ██▄▄▄██  ▕██     ▁▁▁██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ███    ██  ██▀▔▔▔   ▕██   ██▀▀▀██ ▕██      ██▌  ██▎ ▕██
+     █████ █████ █████     ████████▀  ▀█████▛  ▕██   ▜███▛██  ▜████▛  ▜██▛ ▜█████▛
+     ▔▔▔▔▔ ▔▔▔▔▔ ▔▔▔▔▔
 
-    Hi there!
-    The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
-    Come hack with us? http://jobs.defacto.nl/
+     Hi there!
+     The *real* source of this website can be viewed at https://github.com/DefactoSoftware/website
+     Come hack with us? http://jobs.defacto.nl/
     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title><%= page_title(current_page) %></title>
+    <title><%= page_title current_page %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
     <link rel="canonical" href="<%= full_url(current_page.url) %>">
 
@@ -32,12 +32,12 @@
     <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image || "images/social/defacto-1200x630.png")) %>">
     <meta property="og:locale" content="<%= full_locale %>">
 
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "main" %>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <%= partial "google_analytics" %>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
-
   <body class="<%= page_classes %>">
     <%= partial "header" %>
     <div id="main" role="main">
@@ -49,26 +49,13 @@
       <%= partial "popup-ebook" %>
     <% end %>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>
-    var Defacto = Defacto || {};
-    Defacto.I18n = { locale: "<%= I18n.locale %>" };
-    </script>
     <%= javascript_include_tag "all" %>
 
+    <!-- Intercom -->
     <script>
       window.intercomSettings = { app_id: 'yb5mzq3j' };
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/yb5mzq3j';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
     </script>
-
-    <!--[if lte IE 9]>
-    <%= javascript_include_tag "vendor/jquery.placeholder.min" %>
-    <script>
-      $(function() {
-        $('input, textarea').placeholder()
-      });
-    </script>
-    <![endif]-->
 
     <!-- Google-code voor remarketingtag -->
     <script type="text/javascript">

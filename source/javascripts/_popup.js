@@ -1,36 +1,38 @@
 // Make sure Popup elements (.popup) have an ID.
-var Defacto = Defacto || {};
+window.Defacto = window.Defacto || {};
 
 Defacto.popup = {
   showScrollTop: 100, // pixels scrolled before showing popups
   showDelay: 400, // ms before showing
-  cookieExpiresOnClose: 1 / 24 / 60 * 10, // 10 MINUTES till the cookie expires after closing
-  cookieExpiresOnSubmit: 30, // DAYS the cookie expires after submitting
+  cookieExpiresOnClose: 1 / 24 / 60 * 30, // 30 MINUTES till the cookie expires after closing
+  cookieExpiresOnSubmit: 30, // DAYS the cookie expires after closing
   cookiePath: '/',
   cookiePrefix: 'defacto_',
   cookieValue: 'hidden',
   cookies: Cookies.get(),
   $window: $(window),
-  $body: $('body'),
   popupsShown: false,
-  ebookPopupId: '#popup-ebook',
 
   // console.log(Cookies.get()); // show all coockies
   // Cookies.remove('defacto_popup-ebook', { path: '/' }); // remove ebook cookie
 
   // Hide hightlight
   hide: function ($popup, cookieExpires) {
-    $popup.addClass('popup-hide');
-
-    setTimeout(function () {
-      $popup.remove();
-    }, 400);
+    if ($popup.length === 0) {
+      return false;
+    }
 
     var id = $popup[0].id;
     if (cookieExpires && id) {
       Cookies.set(this.cookiePrefix + id, this.cookieValue,
         { expires: this.cookieExpires, path: this.cookiePath });
     }
+
+    $popup.addClass('popup-hide');
+
+    setTimeout(function () {
+      $popup.remove();
+    }, 400);
   },
 
   init: function () {
@@ -43,8 +45,7 @@ Defacto.popup = {
 
     // Show popup after scroll
     this.$window.on('scroll', function () {
-      if (!Defacto.popup.popupsShown &&
-          Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
+      if (!Defacto.popup.popupsShown && Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
         setTimeout(function () {
           $('.popup').addClass('popup-show');
           Defacto.popup.popupsShown = true;
@@ -53,15 +54,11 @@ Defacto.popup = {
     });
 
     // Close popup button
-    this.$body.on('click', '.popup .close', function (event) {
+    $(document).on('click', '.popup .close', function (event) {
       event.preventDefault();
-
       var $popup = $(this).closest('.popup');
       Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
     });
-
-    // Ebook form submit
-    this.$body.on('submit', this.ebookPopupId + ' form', Defacto.ebookForm.submit);
   }
 };
 

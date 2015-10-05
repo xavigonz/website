@@ -1,0 +1,69 @@
+// // Test input type support
+// function supportsInputType (type) {
+//   var i = document.createElement('input');
+//   i.setAttribute('type', type);
+//   return i.type !== 'text';
+// }
+
+// // Test input attribute support
+// function supportsInputAttribute (attribute) {
+//   return attribute in document.createElement('input');
+// }
+
+$(function () {
+  var $forms = $('form');
+
+  // Placeholder polyfill
+  $('input, textarea').placeholder();
+
+  // Inject hidden browser version input in forms
+  var browser = bowser.name + ' ' + bowser.version;
+  var browserInput = '<input type="hidden" name="browser" value="' + browser + '">';
+  $forms.append(browserInput);
+
+  // Form submit
+  $forms.on('submit', function (event) {
+    var $form = $(this);
+
+    // Form validation
+    var $invalidInputs = $();
+
+    $form.find('input:visible').each(function () {
+      var $input = $(this).removeClass('invalid');
+      var value = $.trim($input.val());
+      // validate required
+      if ($input.attr('required') && value.length < 1) {
+        $invalidInputs = $invalidInputs.add($input);
+        return true;
+      }
+      // validate type
+      switch ($input.attr('type')) {
+        case 'email':
+          if (value.indexOf('@') < 1 || value.length < 5) {
+            $invalidInputs = $invalidInputs.add($input);
+          }
+          break;
+      }
+    });
+
+    // Found invalid fields?
+    if ($invalidInputs.length) {
+      $invalidInputs.addClass('invalid').first().focus();
+
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      return false;
+    }
+
+    // Download forms
+    var $downloadInput = $form.find('input[name=download]');
+    if ($downloadInput.length) {
+      // Open download
+      window.open($downloadInput.val(), '_blank');
+      // Hide ebook popup
+      if (downloadUrl === '<%= full_url(data.downloads.ebook[I18n.locale]) %>') {
+        Defacto.popup.hide($('#popup-ebook'), Defacto.popup.cookieExpiresOnSubmit);
+      }
+    }
+  });
+});
