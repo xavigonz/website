@@ -33,7 +33,7 @@ title: E-Learning starterkit
 
     <label for="ebook-email">
       <h3><%= t("elearning_ebook.heading_html") %></h3>
-      <%= image_tag "boek.png", alt: t("elearning_ebook.image_alt") %>
+      <%= image_tag "book-#{I18n.locale.to_s}.png", alt: t("elearning_ebook.image_alt") %>
     </label>
 
     <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.formkeep") %>" method="POST">
