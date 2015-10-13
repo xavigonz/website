@@ -1,0 +1,64 @@
+---
+title: Seminar
+---
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>Seminar: Medisch Convenant</h1>
+      <%= markitdown "Op **dinsdag 24 november** en **donderdag 26 november** hosten wij.." %>
+        <a href="#" class="button">Meld je aan voor het seminar</a>
+    </div>
+  </div>
+</div>
+<section>
+  <div class="headline">
+    <h2>
+      Iedereen bewust en aantoonbaar bekwaam in het werken met medische apparatuur.
+    </h2>
+  </div>
+</section>
+<section class="product-highlights gray">
+
+  <div class="col description">
+    <div class="inner">
+      <div class="headline">
+        <h2>Hands-on Seminar</h2>
+        <p>
+          Het Convenant Veilig Gebruik...
+        </p>
+      </div>
+      <a class="button" href="#">Meld je aan</a>
+    </div>
+  </div>
+
+  <div class="col description">
+    <div class="inner">
+      <div class="headline">
+        <ul>
+          <li>Dinsdag 24 November</li>
+          <li>Donderdag 26 November</li>
+        </ul>
+    </div>
+  </div>
+
+</section>
+
+<section class="gray">
+  <div class="row">
+    <h3><%= markitdown t("capp.cta_bottom.heading_md") %></h3>
+    <br>
+
+    <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.formkeep") %>" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="form" value="<%= t("capp.cta_bottom.formkeep_title") %>">
+      <input type="text" name="name" placeholder="<%= t("form.name") %>">
+      <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
+      <button type="submit"><%= t("actions.make_appointment") %></button>
+    </form>
+
+  </div>
+</section>
+
+<%#= partial "testimonials" %>
+<%= partial "clients" %>
