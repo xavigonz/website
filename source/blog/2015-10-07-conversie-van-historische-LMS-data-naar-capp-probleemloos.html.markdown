@@ -1,5 +1,5 @@
 ---
-title: Conversie van TCG en Edumanager naar CAPP succesvol
+title: Conversie van historische LMS-data naar CAPP probleemloos
 date: 2015-10-07 10:34 CEST
 tags:
 author: Pieter
