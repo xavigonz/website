@@ -38,12 +38,17 @@
 
   .description {
     color: $base-font-color;
+  }
 
-    ul {
-      font-size: 1.5em;
-      list-style-type: disc;
-      text-align: left;
-    }
+  ul {
+    font-size: 1.1em;
+    list-style-type: disc;
+    text-align: left;
+  }
+
+  article, p {
+    font-size: 1.1em;
+    text-align: left;
   }
 }
 
