@@ -1,6 +1,7 @@
 //= require js-cookie
 //= require jquery-placeholder
 //= require bowser
+//= require fitvids
 
 //= require _forms
 //= require _home
@@ -8,6 +9,11 @@
 //= require _menu
 //= require _popup
 //= require _social-share
+
+$(function () {
+  // Fluid video
+  $('article').fitVids();
+});
 
 // Say hi in console :)
 if (console && console.log) {
