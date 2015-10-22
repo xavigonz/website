@@ -1,0 +1,28 @@
+.cta-workshop {
+  background: $dark-gray;
+  color: #ffffff;
+  padding: 2em 0;
+
+  h3 {
+    margin: 0.5em 0.2em;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .phone {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0 0.1em;
+    white-space: nowrap;
+  }
+
+  .appointment-button {
+    font-size: initial;
+    margin: 0.5em 0.2em;
+    vertical-align: middle;
+  }
+
+  form {
+    display: none;
+  }
+}
