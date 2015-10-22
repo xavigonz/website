@@ -14,7 +14,12 @@ sitemap_priority: 1
 </div>
 
 <%= partial "cta_appointment" %>
+<% if I18n.locale == :nl %>
+  <%= partial "cta_workshop" %>
+<% end %>
+
 <%= partial "solutions_overview" %>
+
 <%= partial "product_highlights" %>
 
 <section class="testimonials cols">
