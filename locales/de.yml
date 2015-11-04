@@ -114,46 +114,45 @@ de:
       email_placeholder: "E-Mail"
       form_submit: "vereinbaren Sie einen Termin"
       form_title: "vereinbaren Sie einen Termin"
-      text_html: "Mehr info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306988472</a> oder"
+      text_html: "Mehr Info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306988472</a> oder"
     hero:
       since: "seit 1987"
-      text: "Mehr als 200.000 Menschen nutzen unsere Software zum Lernen und ihre Talente weiter zu entwickeln."
+      text: "Mehr als 200.000 Menschen nutzen unsere Software für die Fort- und Weiterbildung und Entwicklung ihrer Talente."
       title: "Developing People"
     highlights:
       capp:
-        text_html: "%{link} sorgt dafür, dass Ihre Mitarbeiter einfach und zielgerichtet lernen und ihre Talente weiterentwickeln."
+        text_html: "%{link} ist ein Learning Management System, dass Sie beim Talentmanagement unterstützt und eine Übersicht aller Qualifikationen und Zertifizierungen bietet."
       learningspaces:
-        text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform die informelles Lernen und den Wissensaustausch stimuliert."
+        text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform, die informelles Lernen und den Wissensaustausch stimuliert."
     solutions:
       develop:
         keywords:
-          - "360° Feedback"
-          - "Kompetenzen"
-          - "Jahresgespräche"
-        text_html: "Geben Sie Mitarbeitern die richtigen Tools für die Weiterentwicklung und eine Übersicht in das persönliche Portfolio."
+          - "Talentmanagement"
+          - "Kompetenzmanagement"
+          - "E-Portfolio"
+        text_html: "Fördern Sie Ihre Personalentwicklung mit einem übersichtlichen Talentmanagement und Kompetenzmanagement. Geben Sie Mitarbeitern die richtigen Tools für die Weiterentwicklung und ein persönliches E-Portfolio."
         title: "Entwickeln"
-      headline: "Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern"
+      headline: "Defacto hilft Unternehmen beim Bildungsmanagement und der Personalentwicklung von Mitarbeitern"
       informal:
         keywords:
           - "Learning communities"
           - "Schnelles und einfaches E-Learning"
-          - "Wissen produzieren und konsumieren"
-        text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform die informelles Lernen und den Wissensaustausch stimuliert."
+          - "Von- und miteinander lernen"
+        text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform, die informelles Lernen und den Wissensaustausch stimuliert."
         title: "Informelles Lernen"
       learn:
         keywords:
-          - "Bildungsverwaltung"
+          - "Bildungsmanagement"
           - "Lernplattform"
-          - "E-Learning / ELO"
-        text_html: "Ein starker Grundstein für Ihre Bildungsakademie. Sparen Sie Zeit durch effiziente Prozesse. Alle Fortbildungen auf einem Blick mit %{link} Bilden."
+          - "E-Learning"
+        text_html: "Ein starkes Learning Management System, dass neben dem Bildungsmanagement auch eine Lernplattform für Ihre Mitarbeiter bietet. Sparen Sie Zeit durch effiziente Prozesse. Alle Fortbildungen und Weiterbildungen auf einem Blick mit CAPP Bilden."
         title: "Bilden"
       quality:
         keywords:
-          - "Qualitätsmonitor"
-          - "Akkreditierung"
+          - "Übersicht der Qualifikationen"
           - "Zertifizierung"
-          - "Management Informationen"
-        text_html: "Erhalten Sie eine Übersicht in die Qualifikationen Ihrer Organisation, Ihrem Team und sich selbst. Vergleichen Sie den ‘Soll’ und ’Ist’ Zustand und erfüllen Sie Qualitätsanforderungen."
+          - "Qualität sichern"
+        text_html: "Erhalten Sie eine Übersicht in die Qualifikationen Ihrer Organisation, Ihrem Team und sich selbst. Vergleichen Sie den ‘Soll’ und ’Ist’ Zustand, versichern Sie Zertifizierungen und erfüllen Sie externe Qualitätsanforderungen."
         title: "Qualitätspass"
   hosting:
     heading: "Hosting & Sicherheit"
