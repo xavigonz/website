@@ -125,7 +125,7 @@ nl:
           - "Direct aan de slag met Learning Communities"
           - "Snel en eenvoudig kennis delen"
           - "Kennis produceren en consumeren"
-        text_html: "%{link} is een laagdrempelig sociaal leerplatform dat kennisdeling en leren en stimuleert."
+        text_html: "%{link} is een laagdrempelig sociaal leerplatform dat kennisdeling en leren stimuleert."
         title: "Informeel Leren"
       learn:
         keywords:
