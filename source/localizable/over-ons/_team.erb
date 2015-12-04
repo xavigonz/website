@@ -1,7 +1,7 @@
 <section id="team">
   <ol>
 
-    <% data.team.sort { |a, b| a.lastname <=> b.lastname }.each do |person| %>
+    <% data.team.sort_by { |p| p.lastname.downcase }.each do |person| %>
       <li>
         <% if href = team_avatar_url(person) %>
           <%= image_tag href, alt: "#{person.firstname} #{person.lastname}", class: "avatar" %>

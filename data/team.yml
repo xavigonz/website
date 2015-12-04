@@ -41,6 +41,10 @@
   lastname: Hörmann
   email: c.hormann@defacto.nl
 
+- firstname: Celine
+  lastname: Kemp
+  email: c.kemp@defacto.nl
+
 - firstname: Ewoud
   lastname: Veenhuizen
   email: e.veenhuizen@defacto.nl
@@ -113,6 +117,10 @@
   lastname: Joustra
   email: m.joustra@defacto.nl
 
+- firstname: Martina
+  lastname: de Vos
+  email: martina@defacto.nl
+
 - firstname: Matthijs
   lastname: Kuiper
   email: m.kuiper@defacto.nl
@@ -120,10 +128,6 @@
 - firstname: Milda
   lastname: Skladaitytė
   email: milda@defacto.nl
-
-- firstname: Niels
-  lastname: Vermeulen
-  email: n.vermeulen@defacto.nl
 
 - firstname: Peter
   lastname: Van Delden
@@ -133,13 +137,17 @@
   lastname: Kaal
   email: p.kaal@defacto.nl
 
+- firstname: Rick
+  lastname: Littel
+  email: rick@defacto.nl
+
 - firstname: Rob
   lastname: Orsel
   email: r.orsel@defacto.nl
 
-- firstname: Romke
-  lastname: Bon
-  email: r.bon@defacto.nl
+- firstname: Ronald
+  lastname: Dijkstra
+  email: ronald@defacto.nl
 
 - firstname: Steef
   lastname: Sinkeler
