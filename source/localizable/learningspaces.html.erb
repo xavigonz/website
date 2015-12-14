@@ -8,8 +8,17 @@ title: LearningSpaces
       <h1><%= image_tag "logos/learningspaces-white.png", alt: "LearningSpaces" %></h1>
       <%= markitdown t("learningspaces.hero.text_md") %>
     </div>
-    <%= link_to t("actions.try_for_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
-    <%= link_to t("actions.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
+
+    <% if I18n.locale == :nl %>
+       <%= link_to t("actions.try_for_free"), "http://public.learningspaces.nl/accounts/new", class: "button" %>
+       <%= link_to t("actions.visit_website"), "http://learningspaces.nl", target: "_blank", class: "button white outline" %>
+      <% end %>
+      <% if I18n.locale == :de %>
+       <%= link_to t("actions.try_for_free"), "https://public.learningspaces.de/accounts/new", class: "button" %>
+       <%= link_to t("actions.visit_website"), "http://learningspaces.de", target: "_blank", class: "button white outline" %>
+      <% end %>
+
+    
   </div>
 </div>
 

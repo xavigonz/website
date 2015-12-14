@@ -23,7 +23,12 @@
         </p>
       </div>
       <%= locale_link_to t("actions.read_more"), "/learningspaces.html", class: "button white outline" %>
-      <%= link_to t("actions.visit_website"), "http://www.learningspaces.nl", target: "_blank", class: "button white outline" %>
+      <% if I18n.locale == :nl %>
+       <%= link_to t("actions.visit_website"), "http://www.learningspaces.nl", target: "_blank", class: "button white outline" %>
+      <% end %>
+      <% if I18n.locale == :de %>
+       <%= link_to t("actions.visit_website"), "http://www.learningspaces.de", target: "_blank", class: "button white outline" %>
+      <% end %>
     </div>
   </div>
 
