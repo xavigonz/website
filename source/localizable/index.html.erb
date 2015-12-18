@@ -10,11 +10,10 @@ sitemap_priority: 1
       <span class="since"><%= t("home.hero.since") %></span>
       <p><%= t("home.hero.text") %></p>
     </div>
-    <% if I18n.locale == :nl %>
-    <%= partial "cta_workshop" %>
-    <% end %>
+    <%= partial "cta_workshop" if I18n.locale == :nl %>
   </div>
 </div>
+
 <%#= partial "cta_appointment" %>
 <%= partial "solutions_overview" %>
 
