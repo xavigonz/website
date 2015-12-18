@@ -1,0 +1,16 @@
+#german-video {
+	padding: 0;
+  .row { 
+  	
+ 	}
+  .col {
+    @include media($medium-up);
+    //   @include span-columns(6);
+    // 
+   //	max-width: 533px;
+    margin: 0 auto;
+
+  
+
+  }
+}
