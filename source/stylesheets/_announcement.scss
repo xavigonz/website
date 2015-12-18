@@ -1,38 +1,39 @@
 .announcement {
-
   .quote {
+    $avatar-size: 80px;
     $bubble-color: #fff;
     $bubble-shadow-color: #ddd;
     $bubble-shadow-width: 1px;
     $buddle-arrow-size: 16px;
 
     position: relative;
-    max-width: 800px;
+    max-width: 660px;
     margin: 0px auto;
 
     .avatar {
-      position: absolute;
+      height: $avatar-size;
       left: 0;
-      width: 100px;
-      height: 100px;
-
+      position: absolute;
+      width: $avatar-size;
 
       @include media ($small-only) {
         left: auto;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         position: static;
+        height: $avatar-size * 0.75;
+        width: $avatar-size * 0.75;
       }
     }
 
     .bubble {
-      margin-left: 150px;
-      position: relative;
+      background-color: $bubble-color;
       border-radius: 4px;
-      background-color: #FFF;
-      padding: 1.5em;
-      margin-bottom: 3px;
-      text-align: left;
       box-shadow: -$bubble-shadow-width $bubble-shadow-width 0px $bubble-shadow-color;
+      margin-bottom: 3px;
+      margin-left: 40px + $avatar-size;
+      padding: 1.6em;
+      position: relative;
+      text-align: left;
 
       @include media ($small-only) {
         margin-left: 0;
@@ -41,6 +42,10 @@
 
       h2, h3, h4 {
         margin: 0 0 0.6em;
+
+        &:last-child {
+          margin: 0;
+        }
       }
 
       h2 {
@@ -56,25 +61,34 @@
         margin-bottom: 0;
       }
 
+      &:before,
       &:after {
         @include transform(rotate(-45deg));
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        top: 25px;
-        left: -$buddle-arrow-size + 1px;
         border: $buddle-arrow-size solid transparent;
         border-left-color: $bubble-color;
-        box-shadow: -$bubble-shadow-width 0px 0px $bubble-shadow-color;
+        content: "";
+        height: 0;
+        left: -$buddle-arrow-size + 1px;
+        position: absolute;
+        top: 25px;
+        width: 0;
 
         @include media ($small-only) {
           @include transform(rotate(-90deg));
-          top: auto;
           bottom: 100%;
           left: 50%;
           margin-left: -$buddle-arrow-size;
-          box-shadow: none;
+          top: auto;
+        }
+      }
+
+      &:before {
+        border-left-color: $bubble-shadow-color;
+        margin-left: -$bubble-shadow-width;
+        margin-top: $bubble-shadow-width;
+
+        @include media ($small-only) {
+          margin-left: -$bubble-shadow-width - $buddle-arrow-size;
         }
       }
     }
