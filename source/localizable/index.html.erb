@@ -16,6 +16,11 @@ sitemap_priority: 1
   </div>
 </div>
 <%#= partial "cta_appointment" %>
+
+<% if I18n.locale == :de %>
+<%= partial "announcement" =%>
+<% end %>
+
 <%= partial "solutions_overview" %>
 
 <%= partial "product_highlights" %>
