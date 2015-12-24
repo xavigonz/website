@@ -87,6 +87,12 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# deploy
+
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
 ###
 # Ready callback
 ###

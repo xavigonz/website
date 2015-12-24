@@ -21,3 +21,6 @@ gem "rails-assets-js-cookie"
 gem "rails-assets-jquery-placeholder"
 gem "rails-assets-bowser"
 gem "rails-assets-fitvids"
+
+# Deploy
+gem "middleman-deploy", "~> 1.0"
