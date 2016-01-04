@@ -10,12 +10,23 @@
     background-attachment: scroll;
 
     .hero-inner {
-      padding: 7em 1em 0em;
+      padding: 5em 1em 0em;
 
      .cta-big { 
-      font-size: 0.8em;
+      font-size: 1em;
       font-weight: 700;
       }
+    }
+    .hero-copy {
+      font-size: 1em;
+
+      h1 { 
+        font-size: 2.4em;
+        max-width: 80%;
+        margin: 0 auto 1em auto; 
+      }
+     
+      
     }
     
     h1 {
@@ -66,8 +77,9 @@
     li {
       margin-bottom: 1em;
     }
+  
   }
-
+  
   .program {
     
   ul.program-list {
@@ -78,6 +90,8 @@
 
       @include media ($medium-up) {
         padding-top: 1em;
+        width: 70%;
+        margin: 0 auto;
       }
 
       > li {
@@ -88,22 +102,19 @@
 
         ul {
           list-style: disc;
-
         }
 
         @include media ($medium-up) {
-          padding-left: 300px;
+          padding-left: 265px;
         }
       }
 
-      h4 { font-weight: bold;
-
-
+      h4 { 
+        font-weight: 400;
       }
-
       .time {
         color: $blue;
-        font-weight: 700;
+        font-weight: 400;
 
         @include media ($medium-up) {
           left: 0;
@@ -111,7 +122,9 @@
           top: 0;
         }
         @include media ($small-only) { 
-          margin-bottom: 1em; }
+          margin-bottom: 1em; 
+          margin-top: 1em;
+        }
       }
 
       h5 {

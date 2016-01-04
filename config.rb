@@ -35,6 +35,10 @@
 # activate :livereload
 # activate :livereload, host: "127.0.0.1"
 
+# Redirect
+
+redirect "/workshop/", to: "/workshop-convenant-mt/"
+
 # Blog
 Time.zone = "CET"
 
