@@ -1,4 +1,4 @@
-.workshop {
+.workshop-convenant-mt {
   .hero {
     @include radial-gradient(circle at 50%,
         $blue 33%,
@@ -10,20 +10,21 @@
     background-attachment: scroll;
 
     .hero-inner {
-      padding: 7em 1em 3em;
+      padding: 7em 1em 0em;
 
      .cta-big { 
-      font-size: 1.2em;
+      font-size: 0.8em;
       font-weight: 700;
       }
     }
-
+    
     h1 {
       font-family: 'Montserrat', $base-font-family;
-      margin-bottom: 0.5em;
-      font-weight: 700;
+      margin-bottom: 0.3em;
+      font-weight: normal;
+      font-size: 2.4em;
     }
-    
+
   }
   
   section {
@@ -68,56 +69,54 @@
   }
 
   .program {
-    text-align: left;
-    font-size: 1.1em;
-    text-align: center;
-
-    .program-heading {
-      font-weight: 700;
-
-      span {
-        font-weight: 400;
-      }
-    }
-
-    .col {
+    
+  ul.program-list {
+      border-top: 1px solid #dedede;
       text-align: left;
-    }
-
-    ul.program-list {
-      border-bottom: 1px solid #dedede;
-      list-style: none;
+      list-style:none;
       padding: 0;
-      margin: 1em 0;
+
+      @include media ($medium-up) {
+        padding-top: 1em;
+      }
 
       > li {
-        border-top: 1px solid #dedede;
-        padding: 1em 0;
-        text-align:center;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        position: relative;
+
+        ul {
+          list-style: disc;
+
+        }
+
+        @include media ($medium-up) {
+          padding-left: 300px;
+        }
       }
 
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      h4 { font-weight: bold;
+
+
       }
 
-      h4 {
-        font-size: 0.8em;
-        font-weight: 500;
+      .time {
+        color: $blue;
+        font-weight: 700;
+
+        @include media ($medium-up) {
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+        @include media ($small-only) { 
+          margin-bottom: 1em; }
       }
 
       h5 {
-        font-size: 0.8em;
-        font-weight: 500;
-        text-align:center;
+        margin-bottom: 0;
       }
-    }
-
-    .time {
-      color: #79c5d6;
-      font-weight: 700;
-      margin-bottom: 0.5em;
     }
   }
 
@@ -155,7 +154,6 @@
     @include outer-container;
     @include clearfix;
     margin: auto;
-    padding: 1em 1em;
     text-align: center;
 
     input {
@@ -165,13 +163,13 @@
 
     button,
     .button {
-     // margin: 0 0.5em 1.5em;
+     margin: 1.5em 0.5em 1.5em;
+     font-size:0.8em;
     }
   }
   p {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    margin: 0 auto 2em auto;
+    line-height: 1.2em;
+    margin: 0 auto;
     max-width: 500px;
     text-align:center;
 
