@@ -19,16 +19,8 @@ bundle exec middleman build
 
 ##### Deploy
 
-To [Divshot development](http://development.defacto-website.divshot.io):
-
 ```
-divshot push
-```
-
-To [Divshot production](http://defacto-website.divshot.io):
-
-```
-divshot promote development production
+bundle exec middleman deploy
 ```
 
 ##### Useful links for debugging
