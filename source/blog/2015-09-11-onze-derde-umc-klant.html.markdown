@@ -2,7 +2,6 @@
 title: De implementatie bij onze 3e UMC klant is van start gegaan
 date: 2015-09-11 11:58 CEST
 author: Tim
-featured: true
 lang: nl
 ---
 
