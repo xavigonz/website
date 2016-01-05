@@ -1,31 +1,41 @@
-.workshop {
+.workshop-convenant-mt {
   .hero {
     @include radial-gradient(circle at 50%,
-        $blue 33%,
-        rgba($blue, 0.5) 33%,
-        rgba($blue, 0.5) 66%,
-        $blue-alt 66%,
-        $fallback: $blue-alt);
+      $blue 33%,
+      rgba($blue, 0.5) 33%,
+      rgba($blue, 0.5) 66%,
+      $blue-alt 66%,
+      $fallback: $blue-alt);
 
     background-attachment: scroll;
 
     .hero-inner {
-      padding: 7em 1em 3em;
+      padding: 5em 1em 0em;
 
-     .cta-big { 
-      font-size: 1.2em;
-      font-weight: 700;
+      .cta-big {
+        font-size: 1em;
+        font-weight: 700;
+      }
+    }
+
+    .hero-copy {
+      font-size: 1em;
+
+      h1 {
+        font-size: 2.4em;
+        max-width: 80%;
+        margin: 0 auto 1em auto;
       }
     }
 
     h1 {
-      font-family: 'Montserrat', $base-font-family;
-      margin-bottom: 0.5em;
-      font-weight: 700;
+      font-family: "Montserrat", $base-font-family;
+      margin-bottom: 0.3em;
+      font-weight: normal;
+      font-size: 2.4em;
     }
-    
   }
-  
+
   section {
     font-size: 1.1em;
 
@@ -68,56 +78,57 @@
   }
 
   .program {
-    text-align: left;
-    font-size: 1.1em;
-    text-align: center;
-
-    .program-heading {
-      font-weight: 700;
-
-      span {
-        font-weight: 400;
-      }
-    }
-
-    .col {
-      text-align: left;
-    }
 
     ul.program-list {
-      border-bottom: 1px solid #dedede;
+      border-top: 1px solid #dedede;
+      text-align: left;
       list-style: none;
       padding: 0;
-      margin: 1em 0;
 
-      > li {
-        border-top: 1px solid #dedede;
-        padding: 1em 0;
-        text-align:center;
+      @include media ($medium-up) {
+        padding-top: 1em;
+        width: 70%;
+        margin: 0 auto;
       }
 
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      > li {
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        position: relative;
+
+        ul {
+          list-style: disc;
+        }
+
+        @include media ($medium-up) {
+          padding-left: 265px;
+        }
       }
 
       h4 {
-        font-size: 0.8em;
-        font-weight: 500;
+        font-weight: 400;
+      }
+
+      .time {
+        color: $blue;
+        font-weight: 400;
+
+        @include media ($medium-up) {
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        @include media ($small-only) {
+          margin-bottom: 1em;
+          margin-top: 1em;
+        }
       }
 
       h5 {
-        font-size: 0.8em;
-        font-weight: 500;
-        text-align:center;
+        margin-bottom: 0;
       }
-    }
-
-    .time {
-      color: #79c5d6;
-      font-weight: 700;
-      margin-bottom: 0.5em;
     }
   }
 
@@ -134,7 +145,6 @@
       border: 1px solid #dedede;
       border-width: 0 1px;
       padding: 4em 2em;
-      // margin-left: 1px;
 
       &:first-of-type {
         border-left: none;
@@ -150,39 +160,41 @@
       margin: 0;
     }
   }
+
   .register {
     .register-inner {
-    @include outer-container;
-    @include clearfix;
-    margin: auto;
-    padding: 1em 1em;
-    text-align: center;
+      @include outer-container;
+      @include clearfix;
+      margin: auto;
+      text-align: center;
 
-    input {
-      border-color: transparent;
-      box-shadow: none;
+      input {
+        border-color: transparent;
+        box-shadow: none;
+      }
+
+      button,
+      .button {
+        margin: 1.5em 0.5em 1.5em;
+        font-size: 0.8em;
+      }
     }
 
-    button,
-    .button {
-     // margin: 0 0.5em 1.5em;
-    }
-  }
-  p {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    margin: 0 auto 2em auto;
-    max-width: 500px;
-    text-align:center;
+    p {
+      line-height: 1.2em;
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: center;
 
-  @include media($large-up) {
-      font-size: 1.6em;
-      max-width: 720px;
-  }
-  button,
-  .button {
-      margin: 1.5em 0.5em 0.5em 0;
+      @include media($large-up) {
+        font-size: 1.6em;
+        max-width: 720px;
+      }
+
+      button,
+      .button {
+        margin: 1.5em 0.5em 0.5em 0;
+      }
     }
-  }
   }
 }
