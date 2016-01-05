@@ -1,43 +1,41 @@
 .workshop-convenant-mt {
   .hero {
     @include radial-gradient(circle at 50%,
-        $blue 33%,
-        rgba($blue, 0.5) 33%,
-        rgba($blue, 0.5) 66%,
-        $blue-alt 66%,
-        $fallback: $blue-alt);
+      $blue 33%,
+      rgba($blue, 0.5) 33%,
+      rgba($blue, 0.5) 66%,
+      $blue-alt 66%,
+      $fallback: $blue-alt);
 
     background-attachment: scroll;
 
     .hero-inner {
       padding: 5em 1em 0em;
 
-     .cta-big { 
-      font-size: 1em;
-      font-weight: 700;
+      .cta-big {
+        font-size: 1em;
+        font-weight: 700;
       }
     }
+
     .hero-copy {
       font-size: 1em;
 
-      h1 { 
+      h1 {
         font-size: 2.4em;
         max-width: 80%;
-        margin: 0 auto 1em auto; 
+        margin: 0 auto 1em auto;
       }
-     
-      
     }
-    
+
     h1 {
-      font-family: 'Montserrat', $base-font-family;
+      font-family: "Montserrat", $base-font-family;
       margin-bottom: 0.3em;
       font-weight: normal;
       font-size: 2.4em;
     }
-
   }
-  
+
   section {
     font-size: 1.1em;
 
@@ -77,15 +75,14 @@
     li {
       margin-bottom: 1em;
     }
-  
   }
-  
+
   .program {
-    
-  ul.program-list {
+
+    ul.program-list {
       border-top: 1px solid #dedede;
       text-align: left;
-      list-style:none;
+      list-style: none;
       padding: 0;
 
       @include media ($medium-up) {
@@ -109,9 +106,10 @@
         }
       }
 
-      h4 { 
+      h4 {
         font-weight: 400;
       }
+
       .time {
         color: $blue;
         font-weight: 400;
@@ -121,8 +119,9 @@
           position: absolute;
           top: 0;
         }
-        @include media ($small-only) { 
-          margin-bottom: 1em; 
+
+        @include media ($small-only) {
+          margin-bottom: 1em;
           margin-top: 1em;
         }
       }
@@ -146,7 +145,6 @@
       border: 1px solid #dedede;
       border-width: 0 1px;
       padding: 4em 2em;
-      // margin-left: 1px;
 
       &:first-of-type {
         border-left: none;
@@ -162,38 +160,41 @@
       margin: 0;
     }
   }
+
   .register {
     .register-inner {
-    @include outer-container;
-    @include clearfix;
-    margin: auto;
-    text-align: center;
+      @include outer-container;
+      @include clearfix;
+      margin: auto;
+      text-align: center;
 
-    input {
-      border-color: transparent;
-      box-shadow: none;
+      input {
+        border-color: transparent;
+        box-shadow: none;
+      }
+
+      button,
+      .button {
+        margin: 1.5em 0.5em 1.5em;
+        font-size: 0.8em;
+      }
     }
 
-    button,
-    .button {
-     margin: 1.5em 0.5em 1.5em;
-     font-size:0.8em;
-    }
-  }
-  p {
-    line-height: 1.2em;
-    margin: 0 auto;
-    max-width: 500px;
-    text-align:center;
+    p {
+      line-height: 1.2em;
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: center;
 
-  @include media($large-up) {
-      font-size: 1.6em;
-      max-width: 720px;
-  }
-  button,
-  .button {
-      margin: 1.5em 0.5em 0.5em 0;
+      @include media($large-up) {
+        font-size: 1.6em;
+        max-width: 720px;
+      }
+
+      button,
+      .button {
+        margin: 1.5em 0.5em 0.5em 0;
+      }
     }
-  }
   }
 }
