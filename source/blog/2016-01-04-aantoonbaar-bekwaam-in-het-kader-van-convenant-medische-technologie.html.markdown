@@ -34,7 +34,7 @@ Met de applicatie [LearningSpaces van Defacto](/learningspaces) wordt er een pl
 Tijdens de bijeenkomsten bleek dat er nog veel vragen zijn over de implementatie en de borging:
 
 - Hoe regel je nu alles rondom aantoonbare bekwaamheid zodat het nog beheersbaar en betaalbaar is? 
-- Verzanden we niet in een eindeloze registratie en worden medewerkers niet overvoert met scholing? 
+- Verzanden we niet in een eindeloze registratie en worden medewerkers niet overvoerd met scholing? 
 - Heeft het borgen van dit onderdeel van het convenant ook een cultuuraspect? 
 - Overdrijven we niet in het vinken en het verantwoorden waardoor we vergeten dat we in de zorg te maken hebben met professionals die eigen afwegingen en keuzes kunnen maken? 
 - Kunnen we ook streven naar standaardisering op het gebied van risico-inventarisatie en profielen?
