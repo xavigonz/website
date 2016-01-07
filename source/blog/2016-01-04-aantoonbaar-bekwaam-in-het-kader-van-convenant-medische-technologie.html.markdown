@@ -2,7 +2,7 @@
 title: Aantoonbaar bekwaam in het kader van het Convenant Medische Technologie
 date: 2016-01-04 15:30 CET
 tags:
-author: Joep
+author: Marian
 featured: true
 lang: nl
 ---
@@ -43,3 +43,4 @@ Op verzoek van de aanwezige ziekenhuizen heeft Defacto een LearningSpace omgevin
 
 
 #### *Op 28 januari 2016 organiseren we een workshop over het Convenant Medische Technologie, waar we samen met u veel dieper in zullen gaan op het 3 stappen plan en alles dat erbij komt kijken. Meer informatie of aanmelden? Bezoek [de workshop pagina](/workshop-convenant-mt).*
+
