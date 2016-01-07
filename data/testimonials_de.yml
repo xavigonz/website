@@ -53,24 +53,6 @@
     kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.
 
 
-- name: Martina de Vos
-  company: "Fortbildungsbeauftragte, Sint Franciscus Gasthuis"
-  avatar: testimonials/martina_de_vos.jpg
-  featured: true
-  quote: >
-    Wir sagen was wir machen und wir machen was wir sagen, ist das Motto mit dem Defacto arbeitet.
-    Und das ist auch wirklich so, wie wir während unserem prima verlaufenen Implementierungsprojekt erfahren haben.
-    Von beiden Seiten aus, gab es deutliche Absprachen, engen Kontakt, Humor und motivierte Teams mit der Absicht einander zu
-    finden und zu verstärken. Die spontan angebotene extra Hilfe bei einem plötzlichen Ausfall eines Kollegen,
-    hat die Beteiligung von Defacto bei seinen Kunden sehr gut wiedergegeben.
-    Top! Sollte es nochmal nötig sein: wir sind dabei!
-  summary: >
-    Wir sagen was wir machen und wir machen was wir sagen, ist das Motto mit dem Defacto arbeitet.
-    Und das ist auch wirklich so, wie wir während unserem prima verlaufenen Implementierungsprojekt erfahren haben.
-    Von beiden Seiten aus, gab es deutliche Absprachen, engen Kontakt, Humor und motivierte Teams mit der Absicht einander zu
-    finden und zu verstärken.
-
-
 - name: Marieke van Kernebeek
   company: "Office manager, Phoenix Opleidingen"
   avatar: testimonials/marieke_van_kernebeek.jpg
@@ -81,7 +63,6 @@
     In den letzten Jahren haben wir so einen guten Kontakt aufgebaut, dass man das nicht so einfach mal zur Seite schiebt.
     Angenehm ist auch, dass sie an dem Ton der E-Mail oder Telefongespräch bereits merken ob etwas dringend ist oder
     nicht und immer für dich bereit stehen. Kurzum: eine ganz tolle Zusammenarbeit.
-
   summary: >
     Das schönste an der Zusammenarbeit mit den Leuten von Defacto ist, dass wir schon so lange so einen intensiven Kontakt haben,
     dass man weiß das man aufeinander zählen kann. Dieses Vertrauen schafft auch Raum für kritische Anmerkungen.
@@ -91,6 +72,7 @@
 - name: Peter van Overbruggen
   company: "Fortbildungsbeauftragter, ZuidZorg"
   avatar: testimonials/peter_van_overbruggen.jpg
+  featured: true
   quote: >
     <p>Das Projekt mit Defacto ging um die Einführung von CAPP11 in unserer Organisation mit allen drei Teilen
     (Bilden, Entwickeln, Qualitätspass). Der Kontakt mit den Leuten von Defacto verlief super. Sie richten sich auf Zusammenarbeit,
@@ -106,3 +88,8 @@
     Hälfte der Zeit mit beschäftigt.
     Durch die Einführung von CAPP als Learning Management System ist auch die Eigenverantwortlichkeit von Mitarbeitern gewachsen,
     die Übersicht für Vorgesetzte optimalisiert und wir können mehr Lernaktivitäten facilitieren für Mitarbeiter und Kunden.</p>
+  summary: >
+    Das Projekt mit Defacto ging um die Einführung von CAPP11 in unserer Organisation mit allen drei Teilen
+    (Bilden, Entwickeln, Qualitätspass). Der Kontakt mit den Leuten von Defacto verlief super. Sie richten sich auf Zusammenarbeit,
+    sind zugänglich und einfach mit umzugehen. Kurzum: eine tolle Zusammenarbeit.
+    Auch der Servicedesk ist leicht zu erreichen.
