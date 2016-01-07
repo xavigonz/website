@@ -16,9 +16,7 @@ sitemap_priority: 1
 
 <%#= partial "cta_appointment" %>
 
-<% if I18n.locale == :de %>
-<%= partial "announcement" =%>
-<% end %>
+<%= partial "announcement" if I18n.locale == :de -%>
 
 <%= partial "solutions_overview" %>
 
