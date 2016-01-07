@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: /bedankt/
-Disallow: /error.html
+Disallow: /de/danke/
+Disallow: /404.html
+Disallow: /de/404.html
