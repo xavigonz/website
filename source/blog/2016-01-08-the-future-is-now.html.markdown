@@ -1,6 +1,6 @@
 ---
 title: The future is now
-date: 2016-01-08 15:30 CET
+date: 2016-01-08 09:30 CET
 tags:
 author: Joep
 lang: nl
