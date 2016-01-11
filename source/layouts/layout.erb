@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><%= page_title current_page %></title>
     <meta name="description" content="<%= current_page.data.description || t("head.default_description") %>">
-    <link rel="canonical" href="<%= full_url(current_page.url) %>">
+    <link rel="canonical" href="<%= current_page.data.preferred_url || full_url(current_page.url)  %>">
 
     <meta property="og:site_name" content="Defacto - Developing People">
     <meta property="og:title" content="<%= page_title(current_page, false) %>">
