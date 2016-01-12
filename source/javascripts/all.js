@@ -12,7 +12,7 @@
 
 $(function () {
   // Fluid video
-  $('article').fitVids();
+  $('body').fitVids();
 });
 
 // Say hi in console :)
