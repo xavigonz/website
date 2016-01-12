@@ -4,7 +4,8 @@ date: 2015-05-20 14:10 CEST
 author: Matthijs
 lang: nl
 image: images/social/learningspaces-1200x630.jpg
-preferred_url: http://blog.learningspaces.io/animated-loading-indicator-with-isometric-cubes/
+canonical_url: http://blog.learningspaces.io/animated-loading-indicator-with-isometric-cubes/
+description: How to make an animated loading indicator with isometric cubes 
 ---
 
 In general people don't like to wait. And no matter how fast we make our application there will always be something that takes time to process. But in many cases, if the user is informed, they will be more patient.
