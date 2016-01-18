@@ -1,5 +1,9 @@
+Sitemap: http://www.defacto.nl/sitemap.xml
+
 User-agent: *
 Disallow: /bedankt/
+Disallow: /bedankt
 Disallow: /de/danke/
+Disallow: /de/danke
 Disallow: /404.html
 Disallow: /de/404.html
