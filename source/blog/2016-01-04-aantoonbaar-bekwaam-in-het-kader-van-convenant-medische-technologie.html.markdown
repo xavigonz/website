@@ -3,7 +3,6 @@ title: Aantoonbaar bekwaam in het kader van het Convenant Medische Technologie
 date: 2016-01-04 15:30 CET
 tags:
 author: Marian
-featured: true
 lang: nl
 ---
 
