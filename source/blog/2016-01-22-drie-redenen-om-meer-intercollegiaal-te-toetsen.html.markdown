@@ -32,7 +32,7 @@ Iedere verpleegkundige heeft dat in het achterhoofd en niemand wil medeverantwoo
  
 Met een intercollegiale toets op de werkvloer toets je of iemand de werkzaamheden van alledag aankan. Met een e-toets test je of iemand dat *theoretisch* kan. Dit is een groot verschil. Als ik de keuze heb tussen een verpleegkundige aan mijn bed die in de praktijk heeft aangetoond capabel te zijn of een verpleegkundige met een 10 op haar theorie, dan kies ik toch voor de eerste. 
  
-Bovendien zijn de meeste e-toetsen multiple choice. Hierin zit een gokkans. Je kunt theoretisch, dus op puur geluk een toets halen, wat meet je dan nog?  
+Bovendien zijn de meeste e-toetsen multiple choice. Hierin zit een gokkans. Je kunt theoretisch dus op puur geluk een toets halen, wat meet je dan nog?  
  
 Ik heb wel eens een e-toets moeten testen voor een klant. Deze toets ging over cardiovasculaire accidenten en was gemaakt door een van de grote e-learningleveranciers in de zorg. De meeste mensen die dit blog lezen hebben waarschijnlijk moeten zoeken wat een cardiovasculair accident überhaupt is. Ik heb dat voor de toets ook even gegoogled. 
  
