@@ -32,7 +32,7 @@ Iedere verpleegkundige heeft dat in het achterhoofd en niemand wil medeverantwoo
  
 Met een intercollegiale toets op de werkvloer toets je of iemand de werkzaamheden van alledag aankan. Met een e-toets test je of iemand dat *theoretisch* kan. Dit is een groot verschil. Als ik de keuze heb tussen een verpleegkundige aan mijn bed die in de praktijk heeft aangetoond capabel te zijn of een verpleegkundige met een 10 op haar theorie, dan kies ik toch voor de eerste. 
  
-Bovendien zijn de meeste e-toetsen multiple choice. Hierin zit een gokkans. Je kunt theoretisch, dus op puur geluk een toets halen, wat meet je dan nog?  
+Bovendien zijn de meeste e-toetsen multiple choice. Hierin zit een gokkans. Je kunt theoretisch op puur geluk een toets halen, wat meet je dan nog?  
  
 Ik heb wel eens een e-toets moeten testen voor een klant. Deze toets ging over cardiovasculaire accidenten en was gemaakt door een van de grote e-learningleveranciers in de zorg. De meeste mensen die dit blog lezen hebben waarschijnlijk moeten zoeken wat een cardiovasculair accident überhaupt is. Ik heb dat voor de toets ook even gegoogled. 
  
@@ -48,9 +48,8 @@ Misschien een wat minder inhoudelijk argument, maar laten we ook eens praktisch 
 
 Er staan nogal wat bekwaamheden in die moeten worden aangetoond. Als je praktisch gezien een medewerker een half uur toetstijd moet geven om voor elk van deze onderwerpen een toets te maken (en dan heb ik het nog niet over eventuele vergoeding van studietijd) dan is de medewerker in kwestie bijna meer bezig met toetsen dan met de daadwerkelijke beroepspraktijk. 
  
-Wanneer er getoetst kan worden in het werkproces van alledag is de impact veel kleiner. Bovendien heb ik gemerkt dat een werknemer meer open staat voor een dergelijke vorm van toetsing. Iedereen begrijpt dat je moet kunnen aantonen geschikt te zijn voor je werk, zeker wanneer de gezondheid en veiligheid van mensen op het spel staat. De meeste weerstand op scholing ontstaat door de enorme hoeveelheid tijd dat mensen uit de werkplek worden getrokken om bekwaamheden aan te tonen, terwijl het juist om de praktijk op de werkplek gaat!
+Wanneer er getoetst kan worden in het werkproces van alledag is de impact veel kleiner. Bovendien heb ik gemerkt dat een werknemer meer open staat voor een dergelijke vorm van toetsing. Iedereen begrijpt dat je moet kunnen aantonen geschikt te zijn voor je werk, zeker wanneer de gezondheid en veiligheid van mensen op het spel staat. De grootste weerstand tegen scholing ontstaat immers doordat mensen te veel kostbare werktijd aan theorie kwijt zijn, terwijl het juist om de praktijk op de werkplek gaat!  
 
 Ik ben erg benieuwd naar hoe anderen hier tegenaan kijken. **[Stuur mij gerust je visie](mailto:j.lenglet@defacto.nl?subject=Intercollegiaal toetsen)**.
  
-*In mijn volgende blog zal ik een casus bespreken waarin het toetsen mijns inziens erg goed belegd is op de werkvloer, dus houdt ons blog in de gaten!*
-
+*In mijn volgende blog zal ik een casus bespreken waarin het toetsen mijns inziens erg goed belegd is op de werkvloer, dus houd ons blog in de gaten!*
