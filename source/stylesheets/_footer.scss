@@ -24,6 +24,10 @@
       border-bottom: 1px solid #444;
       margin-bottom: 5px;
       padding: 0 0 0.6em;
+
+      a {
+        padding: 0;
+      }
     }
 
     a {
@@ -44,6 +48,7 @@
 
     p:first-of-type {
       margin-top: 0;
+      padding-top: 5px;
     }
   }
 
