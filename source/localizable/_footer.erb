@@ -1,7 +1,7 @@
 <footer id="footer">
   <div class="row">
     <div class="col">
-      <h6><%= t("header.products") %></h6>
+      <h6><%= locale_link_to t("header.products"), "/producten.html" %></h6>
       <ul>
         <li><%= locale_link_to t("footer.capp"), "/capp.html" %></li>
         <li><%= locale_link_to t("kwaliteitspaspoort.name"), "/kwaliteitspaspoort.html" %></li>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="col">
-      <h6><%= t("header.services") %></h6>
+      <h6><%= locale_link_to t("header.services"), "/diensten.html" %></h6>
       <ul>
         <li><%= locale_link_to t("services.services.elearning.name"), "/elearning.html" %></li>
         <li><%= locale_link_to t("services.services.implementaties.name"), "/implementaties.html" %></li>
@@ -22,7 +22,7 @@
     </div>
 
     <div class="col">
-      <h6>Defacto</h6>
+      <h6><%= locale_link_to "Defacto", "/over-ons.html" %></h6>
       <ul>
         <li><%= locale_link_to t("header.about"), "/over-ons.html" %></li>
         <li><%= locale_link_to t("about.testimonials"), "/testimonials.html" %></li>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="col contact">
-      <h6><%= t("header.contact") %></h6>
+      <h6><%= locale_link_to t("header.contact"), "/contact.html" %></h6>
       <%= t("footer.contact") %>
       <ul class="social-links">
         <li><a href="https://twitter.com/DefactoSoftware" target="_blank" title="Twitter" class="icon-twitter"></a></li>
