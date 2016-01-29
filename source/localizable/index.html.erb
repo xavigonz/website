@@ -12,32 +12,30 @@ sitemap_priority: 1
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= t("home.hero.title") %></h1>
-      <span class="since"><%= t("home.hero.since") %></span>
-      <p><%= t("home.hero.text") %></p>
+      <h1><%= t("home.hero.text") %></h1>
     </div>
   </div>
 </div>
 
-<%#= partial "cta_appointment" %>
 <%= partial "solutions_overview" %>
-<%= partial "product_highlights" %>
 
-<section class="testimonials cols">
+<section class="testimonials">
   <div class="headline">
     <h2><%= t("testimonials.title") %></h2>
   </div>
   <div class="row">
 
     <%= partial "testimonials", locals: {
-      count: 2,
+      count: 1,
       featured: true,
       summary: true
     } %>
 
   </div>
+  <div class="row">
+    <%= nav_link_to t("testimonials.more_testimonials"), "/testimonials.html", class: "button blue outline" %>
+  </div>
 </section>
 
 <%= partial "german_news" if I18n.locale == :de  %>
-<%= partial "blog/featured" %>
 <%= partial "clients" %>

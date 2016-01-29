@@ -114,6 +114,13 @@ article {
     }
   }
 }
+.checklist-green {
+  li { 
+    &:before {
+      background-color: $green;
+    }
+  }
+}
 
 
 /*

@@ -1,6 +1,10 @@
 .clients {
   $background-color: #fcfcfc;
 
+  h2 { 
+    font-size: 1.8em;
+  }
+
   @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
   text-align: center;
 
