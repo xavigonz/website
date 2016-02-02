@@ -1,8 +1,32 @@
-
 .german-video {
-	text-align: center;
 
-	.row { 
-		max-width: 640px; 
-	}
+	.col {
+    padding-bottom: 4em;
+    padding-top: 4em;
+    .inner {
+    margin: 0 auto;
+    padding: 0 1em;
+
+    @include media($medium-up) {
+      max-width: 700px;
+      padding: 0;
+      width: 90%;
+    }
+  }
+  }
+   @include media($medium-up) {
+    .col {
+      @include span-columns(6);
+    }
+  }
+  th.when { 
+    width: 25%; 
+  }
+  th.event { 
+    width: 60%; 
+  }
+  th.where { 
+    width: 15%;
+  }
+
 }
