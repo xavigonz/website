@@ -30,8 +30,6 @@ Rapportages zijn output-gericht. De enige standaardisatie die daarvoor nodig is 
 
 Door het inrichten van een informele leeromgeving waarin je als organisatie per onderwerp je content aan de lerende presenteert helpt hierin sterk mee. De lerende wordt losgelaten en kan zelf op zoek naar die zaken die hij of zij nodig heeft om zich bekwaam genoeg te voelen om zich te laten toetsen. Of dit nou gebeurd via de links naar protocollen, een e-learning module die beschikbaar is gesteld, die klinische les van een andere afdeling of gewoon zoeken op het internet, zou niets moeten uitmaken. 
 
-Een open en informeel platform is bijvoorbeeld [LearningSpaces](http://www.learningspaces.nl/). 
-
 ### **2. Iedere medewerker wil zijn werk goed doen**
 
 Dit zou het uitgangspunt moeten zijn bij het maken van beslissingen omtrent onderwijs. De nadruk op controle van processen ontstaat doorgaans vanuit het idee dat *‘als het niet gecontroleerd wordt gebeurt het niet’*.
