@@ -13,9 +13,17 @@ $medium-screen: 640px;
 $large-screen: 860px;
 $xlarge-screen: 1200px;
 
-$small-only:  new-breakpoint(max-width $medium-screen - 1);
+// Mobile first media queries
 $medium-up:   new-breakpoint(min-width $medium-screen);
-$medium-only: new-breakpoint(min-width $medium-screen max-width $large-screen - 1);
 $large-up:    new-breakpoint(min-width $large-screen);
-$large-only:  new-breakpoint(min-width $large-screen max-width $xlarge-screen - 1);
 $xlarge-up:   new-breakpoint(min-width $xlarge-screen);
+
+// Desktop first media queries
+$medium-down: new-breakpoint(max-width $medium-screen - 1);
+$large-down:  new-breakpoint(max-width $large-screen - 1);
+$xlarge-down: new-breakpoint(max-width $xlarge-screen - 1);
+
+// Isolated media queries
+$small-only:  new-breakpoint(max-width $medium-screen - 1);
+$medium-only: new-breakpoint(min-width $medium-screen max-width $large-screen - 1);
+$large-only:  new-breakpoint(min-width $large-screen max-width $xlarge-screen - 1);

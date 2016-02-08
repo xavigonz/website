@@ -14,9 +14,7 @@ sitemap_priority: 1
 </div>
 
 <%#= partial "cta_appointment" %>
-
 <%= partial "solutions_overview" %>
-
 <%= partial "product_highlights" %>
 
 <section class="testimonials cols">
@@ -34,5 +32,6 @@ sitemap_priority: 1
   </div>
 </section>
 
+<%= partial "german_news" if I18n.locale == :de  %>
 <%= partial "blog/featured" %>
 <%= partial "clients" %>

@@ -1,0 +1,41 @@
+.german-news {
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    @include media($large-down) {
+      text-align: center;
+    }
+  }
+
+	.col {
+    margin-bottom: 3em;
+    margin-top: 3em;
+
+    &.video {
+      @include media($large-down) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+      }
+    }
+
+    @include media($large-up) {
+      @include span-columns(6);
+      padding: 0 1em;
+    }
+  }
+
+  th {
+    &.when {
+      width: 25%;
+    }
+    &.event {
+      width: 60%;
+    }
+    &.where {
+      width: 15%;
+    }
+  }
+}
