@@ -3,7 +3,6 @@ title: Snelkookpanimplementatie bij de gemeente Den Haag - in twee weken uit en 
 date: 2016-02-01 17:33 UTC
 author: Joost
 lang: nl
-featured: true
 ---
 
 ### *De afgelopen twee weken zijn we met een team van Defacto keihard bezig geweest om de Gemeente Den Haag Dienst OCW aan te laten sluiten op onze reeds bestaande CAPP-omgeving bij de Dienst SZW.* 
