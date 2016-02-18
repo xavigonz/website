@@ -5,7 +5,6 @@ tags:
 author: Joep
 lang: nl
 image: images/social/van-controleren-naar-faciliteren-1200x630.png
-featured: true
 ---
 
 ### *In [mijn vorige blog](/blog/drie-redenen-om-meer-intercollegiaal-te-toetsen/) heb ik gepleit voor het terugbrengen van toetsen naar de werkvloer. Het maken van deze beweging met uw organisatie betekent niet alleen een verandering van toetsingsprocedure, maar eveneens het terugleggen van de verantwoordelijkheid van deze procedure bij de medewerkers zelf.*
