@@ -26,5 +26,8 @@
 
   h2 { 
     font-size: 2em; 
+  }
+  #contact-person { 
+    @include span-columns(12);
   } 
 }
