@@ -27,12 +27,15 @@
 
   h2 { 
     font-size: 2em; 
-
   }
   
   .know-more { 
     max-width: 50%;
     margin: 0 auto;
+  }
+  
+  #contact-person { 
+    @include span-columns(12);
   } 
 
 }
