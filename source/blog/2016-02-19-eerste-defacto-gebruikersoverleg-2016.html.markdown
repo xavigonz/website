@@ -8,25 +8,25 @@ featured: true
 image: images/social/gebruikersoverleg-1200x630.png
 ---
 
-**Afgelopen donderdag 11 februari was het eerste Defacto Gebruikersoverleg van 2016, dit keer in het Spoorwegmuseum in Utrecht. Inclusief de delegatie van Defacto waren er zo’n 60 mensen aanwezig om kennis te maken en kennis te delen. Michel van Zandvoort van het MUMC hield een keynote en er werd in kleinere kring gesproken over onderwerpen op het gebied van leren, opleiden en ontwikkelen.**
+**Afgelopen donderdag 11 februari was het eerste Defacto Gebruikersoverleg van 2016, dit keer in het Spoorwegmuseum in Utrecht. Er waren zo’n 60 mensen aanwezig om kennis te maken en kennis te delen. Michel van Zandvoort van het MUMC hield een keynote en er werd in kleinere kring gesproken over onderwerpen op het gebied van leren, opleiden en ontwikkelen.**
 
 Defacto is eind 2014 gestart met het organiseren van Gebruikersoverleggen op verzoek van haar klanten en inmiddels heeft het zijn toegevoegde waarde bewezen. 
 
 ![Hans Veeger introduceert de keynote speaker](/images/blog/gebruikersoverleg-11022016-01.jpg)
 
-### Keynote door Michel van Zandvoort
+## Keynote door Michel van Zandvoort
 
-Na een goed verzorgde lunch introduceerde onze directeur Hans Veeger de keynote speaker van een relatief nieuwe klant van Defacto, eentje waar we trots op zijn: het MUMC.  
+Na een goed verzorgde lunch introduceerde onze directeur Hans Veeger de keynote speaker van een nieuwe klant van Defacto, eentje waar we trots op zijn: het MUMC.  
 
-Michel van Zandvoort, manager van de MUMC+ academie, werkt samen met zo’n 30 medewerkers aan een nieuwe, effectieve manier van opleiden en leren. Hoe combineer je verplichtingen in het kader van bevoegd en bekwaam in het dagelijkse werk met medewerkers die gemotiveerd zijn en professioneel blijven? 
-
-![Keynote speaker Michel van Zandvoort](/images/blog/gebruikersoverleg-11022016-02.jpg)
+Michel van Zandvoort, manager van de MUMC+ Academie, werkt samen met zo’n 30 medewerkers aan een nieuwe, effectieve manier van opleiden en leren. Hoe combineer je verplichtingen in het kader van bevoegd en bekwaam in het dagelijkse werk met medewerkers die gemotiveerd zijn en professioneel blijven? 
 
 Door op andere manieren naar professionalisering te kijken, los van de vaste reflex “het gaat mis, iedereen op cursus!”. Zo lukt het de MUMC+ academie om medewerkers actief, op de werkplek en op basis van persoonlijke intercollegiale feedback vakbekwaam te houden. In de kern komt zijn verhaal erop neer dat je het in organisaties niet moet hebben over leren maar over presteren. Als motto hanteert het MUMC hiervoor: "zorg dat leren voor je werkt". 
 
 De keynote is opgenomen en zal binnenkort worden gepubliceerd. 
 
-### 'Vierkante' tafelsessies
+![Keynote speaker Michel van Zandvoort](/images/blog/gebruikersoverleg-11022016-02.jpg)
+
+## 'Vierkante' tafelsessies
 
 Na de pauze en tijd om even door het museum te lopen werden ‘vierkante’ tafelsessies gehouden. Verschillende onderwerpen werden besproken, met als doel van en met elkaar te leren. Zo werd er doorgepraat over de meer strategische aanpak van het MUMC+ met Michel van Zandvoort. Consultant Bastiaan informeerde geïnteresseerden over de voortgang van het Kwaliteitspaspoort 3.0, een doorontwikkeling waarin meer ruimte is voor het aangeven van team- en individueel specifieke vereisten. 
 
