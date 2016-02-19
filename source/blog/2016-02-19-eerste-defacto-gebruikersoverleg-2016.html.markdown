@@ -1,13 +1,14 @@
 ---
 title: Eerste Defacto Gebruikersoverleg 2016
-date: 2016-02-18 9:30 CET
+date: 2016-02-19 7:30 CET
 tags:
 author: Jesse   
 lang: nl
 featured: true
+image: images/social/gebruikersoverleg-1200x630.png
 ---
 
-## Afgelopen donderdag 11 februari was het eerste Defacto Gebruikersoverleg van 2016, dit keer in het Spoorwegmuseum in Utrecht. Inclusief de delegatie van Defacto waren er zo’n 60 mensen aanwezig om kennis te maken en kennis te delen. Michel van Zandvoort van het MUMC hield een keynote en er werd in kleinere kring gesproken over onderwerpen op het gebied van leren, opleiden en ontwikkelen.
+**Afgelopen donderdag 11 februari was het eerste Defacto Gebruikersoverleg van 2016, dit keer in het Spoorwegmuseum in Utrecht. Inclusief de delegatie van Defacto waren er zo’n 60 mensen aanwezig om kennis te maken en kennis te delen. Michel van Zandvoort van het MUMC hield een keynote en er werd in kleinere kring gesproken over onderwerpen op het gebied van leren, opleiden en ontwikkelen.**
 
 Defacto is eind 2014 gestart met het organiseren van Gebruikersoverleggen op verzoek van haar klanten en inmiddels heeft het zijn toegevoegde waarde bewezen. 
 
@@ -18,6 +19,8 @@ Defacto is eind 2014 gestart met het organiseren van Gebruikersoverleggen op ver
 Na een goed verzorgde lunch introduceerde onze directeur Hans Veeger de keynote speaker van een relatief nieuwe klant van Defacto, eentje waar we trots op zijn: het MUMC.  
 
 Michel van Zandvoort, manager van de MUMC+ academie, werkt samen met zo’n 30 medewerkers aan een nieuwe, effectieve manier van opleiden en leren. Hoe combineer je verplichtingen in het kader van bevoegd en bekwaam in het dagelijkse werk met medewerkers die gemotiveerd zijn en professioneel blijven? 
+
+![Keynote speaker Michel van Zandvoort](/images/blog/gebruikersoverleg-11022016-02.jpg)
 
 Door op andere manieren naar professionalisering te kijken, los van de vaste reflex “het gaat mis, iedereen op cursus!”. Zo lukt het de MUMC+ academie om medewerkers actief, op de werkplek en op basis van persoonlijke intercollegiale feedback vakbekwaam te houden. In de kern komt zijn verhaal erop neer dat je het in organisaties niet moet hebben over leren maar over presteren. Als motto hanteert het MUMC hiervoor: "zorg dat leren voor je werkt". 
 
