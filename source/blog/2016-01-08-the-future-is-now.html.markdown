@@ -15,6 +15,4 @@ Visies kunnen vluchtig zijn. Als morgen een nieuwe visionair opstaat kan een oud
 
 Daarom wil ik het in 2016 graag met je hebben over leren en ontwikkelen in het ziekenhuis van 2016. We gaan dit jaar aan de slag, praktisch en concreet. Op basis van ervaringen, praktijkcases en inzichten uit wetenschap *(en natuurlijk ook de inspiratie van visionairs!)* wil ik met u toewerken naar een **haalbare kwaliteitsslag** in leren en ontwikkelen. Vandaag uitvoerbaar, maar flexibel genoeg om ook door te groeien naar 20XX. Ga je met mij deze uitdaging aan?
 
-### The future is now, let’s create it.
-
 *Meer weten? Neem contact met me op, via 050 3144832 of [j.lenglet@defacto.nl](mailto:j.lenglet@defacto.nl).*
