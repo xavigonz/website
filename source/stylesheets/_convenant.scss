@@ -1,0 +1,35 @@
+.convenant-medische-technologie {
+  .hero {
+    @include radial-gradient(circle at 50%,
+      $blue 33%,
+      rgba($blue, 0.5) 33%,
+      rgba($blue, 0.5) 66%,
+      $blue-alt 66%,
+      $fallback: $blue-alt);
+
+    background-attachment: scroll;
+
+    .hero-inner {
+      padding: 5em 1em 0em;
+    }
+
+    .hero-copy {
+      font-size: 1em;
+
+      h1 {
+        font-size: 2.4em;
+        max-width: 80%;
+        margin: 0 auto 2em auto;
+      }
+    }
+  }
+
+  h2 { 
+    font-size: 2em; 
+  }
+  .know-more { 
+    max-width: 50%;
+    margin: 0 auto;
+  }
+    
+}
