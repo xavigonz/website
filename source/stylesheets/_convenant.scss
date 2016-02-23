@@ -32,6 +32,10 @@
   .know-more { 
     max-width: 50%;
     margin: 0 auto;
+
+    @include media ($large-down) { 
+      max-width: 100%; 
+    }
   }
   
   #contact-person { 
