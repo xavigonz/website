@@ -1,5 +1,10 @@
 .convenant-medische-technologie {
-  
+  h1 {
+      font-size: 1.8em;
+      margin: 0 auto 2em;
+      max-width: 70%;
+    }
+
   .hero {
     @include radial-gradient(circle at 50%,
       $blue 33%,
@@ -8,34 +13,23 @@
       $blue-alt 66%,
       $fallback: $blue-alt);
 
-    background-attachment: scroll;
-
-    .hero-inner {
-      padding: 3em 1em 0em;
+      background-attachment: scroll;
     }
 
-    .hero-copy {
+  .hero-inner {
+      padding: 3em 1em 0;
+    }
+
+  .hero-copy {
       font-size: 1em;
-
-      h1 {
-        font-size: 1.8em;
-        max-width: 70%;
-        margin: 0 auto 2em auto;
-      }
     }
   }
 
-  h2 { 
-    font-size: 1.3em; 
+  h2 {
+    font-size: 1.3em;
   }
-  
-  .know-more { 
+
+  .know-more {
     max-width: 50%;
     margin: 0 auto;
   }
-  
-  #contact-person { 
-    @include span-columns(12);
-  } 
-
-}
