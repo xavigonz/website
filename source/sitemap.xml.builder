@@ -10,6 +10,7 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     !(page.path =~ /de\/danke/) &&
     !(page.path =~ /404\.html/) &&
     !(page.path =~ /de\/404\.html/) &&
+    !(page.path =~ /workshop-convenant-mt\.html/) &&
     !page.data.noindex == true }.each do |page|
       xml.url do
         xml.loc "http://www.defacto.nl#{page.url}"
