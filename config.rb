@@ -55,6 +55,8 @@ page "blog/feed.xml", layout: false
 
 activate :directory_indexes
 
+redirect 'workshop-convenant-mt.html', to: 'convenant-medische-technologie.html'
+
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
