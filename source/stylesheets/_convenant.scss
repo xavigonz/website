@@ -13,7 +13,7 @@
       $blue-alt 66%,
       $fallback: $blue-alt);
 
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
 
   .hero-inner {
@@ -29,7 +29,7 @@
   }
 
   .know-more {
-    max-width: 50%;
     margin: 0 auto;
+    max-width: 50%;
   }
 }
