@@ -4,6 +4,9 @@
     margin: 0 auto 2em;
     max-width: 70%;
   }
+  ul {
+    margin-left: 1em;
+  }
 
   .hero {
     @include radial-gradient(circle at 50%,
@@ -22,6 +25,10 @@
 
   .hero-copy {
     font-size: 1em;
+  }
+
+  .referenties_index {
+    padding: 0;
   }
 
   h2 {
