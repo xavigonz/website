@@ -7,3 +7,4 @@ Disallow: /de/danke/
 Disallow: /de/danke
 Disallow: /404.html
 Disallow: /de/404.html
+Disallow: /workshop-convenant-mt
