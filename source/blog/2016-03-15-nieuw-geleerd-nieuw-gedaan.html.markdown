@@ -22,7 +22,7 @@ Vanuit mijn baan als consultant bij Defacto is het interessant om te kijken wat 
 Wat betekent dit concreet? Eigenlijk heel simpel: wij mensen hebben allemaal ons eigen denkbeeld, gebaseerd op de context en kennis die wij hebben. Toen de samenleving steeds digitaler werd, probeerden wij onze kennis en ideeën te integreren met die digitale mogelijkheden. Het resultaat? Een replica van het analoge proces in een digitale uitvoering.
 
 ![Encyclopedie](/images/blog/encyclopedie.jpg)
-<p class="caption">Een oldschool encyclopedie</p>
+<p class="caption">Een 'oldschool' encyclopedie</p>
 
 Brief werd e-mail, de encyclopedie werd vervangen door een cd-rom van Encarta en ga zo maar door. Sec gezien zijn dit dezelfde zaken. Een brief en een e-mail hebben dezelfde functionaliteit en in Encarta vind je dezelfde artikelen als in de Winkler Prins Encyclopedie. Uiteraard sneller en digitaal, maar in principe 'meer van hetzelfde in een nieuw jasje'. Voor een digitaal tijdperk, maar *analoog* bedacht.
 
@@ -30,7 +30,7 @@ Dit wil niet zeggen dat dit geen belangrijke stappen zijn geweest om te zetten, 
 
 E-mail werd Facebook, [Yammer](https://www.yammer.com/){:target="_blank"} of [HipChat](https://www.hipchat.com/){:target="_blank"}. Encarta werd Wikipedia. Dit zijn in mijn ogen de echte revoluties. Apps als Facebook en websites als Wikipedia hebben weliswaar nog steeds voor een groot deel **hetzelfde doel als hun voorgangers, maar gebruiken de mogelijkheden van de digitale wereld** die in de analoge wereld niet bestonden. Zo zetten ze een volgende stap.
 
-Waar de encyclopedie bij een auteur lag en per wijziging opnieuw uitgegeven diende te worden om kennis naar de mens te brengen gebruikt Wikipedia de mogelijkheid om iedereen toegang te geven om kennis te halen, maar ook te brengen, *up-to-date* te houden en te reviewen. In plaats van drie experts in een kamertje heb je nu de totale wereldpopulatie aan kennis tot je beschikking op een plaats.
+Waar de encyclopedie per wijziging opnieuw uitgegeven diende te worden, gebruikt Wikipedia de mogelijkheid om iedereen toegang te geven om kennis te halen, maar ook te brengen, *up-to-date* te houden en te reviewen. In plaats van drie experts in een kamertje heb je nu dus de totale wereldpopulatie aan kennis tot je beschikking, op een plaats.
 
 <hr>
 
