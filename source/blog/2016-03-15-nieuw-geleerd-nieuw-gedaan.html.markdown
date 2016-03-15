@@ -26,9 +26,9 @@ Wat betekent dit concreet? Eigenlijk heel simpel: wij mensen hebben allemaal ons
 
 Brief werd e-mail, de encyclopedie werd vervangen door een cd-rom van Encarta en ga zo maar door. Sec gezien zijn dit dezelfde zaken. Een brief en een e-mail hebben dezelfde functionaliteit en in Encarta vind je dezelfde artikelen als in de Winkler Prins Encyclopedie. Uiteraard sneller en digitaal, maar in principe 'meer van hetzelfde in een nieuw jasje'. Voor een digitaal tijdperk, maar *analoog* bedacht.
 
-Dit wil niet zeggen dat dit geen belangrijke stappen zijn geweest om te zetten, maar dit is niet de revolutie waar ik naar zoek. De echte revolutie begint pas **wanneer analoge processen worden aangepast aan de mogelijkheden die een digitale wereld biedt**.
+Dit wil niet zeggen dat dit geen belangrijke stappen zijn geweest om te zetten, maar dit is niet de revolutie waar ik naar zoek. De echte revolutie begint pas wanneer analoge processen worden aangepast aan de mogelijkheden die een digitale wereld biedt.
 
-E-mail werd Facebook, [Yammer](https://www.yammer.com/){:target="_blank"} of [HipChat](https://www.hipchat.com/){:target="_blank"}. Encarta werd Wikipedia. Dit zijn in mijn ogen de echte revoluties. Apps als Facebook en websites als Wikipedia hebben weliswaar nog steeds voor een groot deel **hetzelfde doel als hun voorgangers, maar gebruiken de mogelijkheden van de digitale wereld** die in de analoge wereld niet bestonden. Zo zetten ze een volgende stap.
+E-mail werd Facebook, [Yammer](https://www.yammer.com/){:target="_blank"} of [HipChat](https://www.hipchat.com/){:target="_blank"}. Encarta werd Wikipedia. Dit zijn in mijn ogen de echte revoluties. Apps als Facebook en websites als Wikipedia hebben weliswaar nog steeds voor een groot deel hetzelfde doel als hun voorgangers, maar gebruiken de mogelijkheden van de digitale wereld die in de analoge wereld niet bestonden. Zo zetten ze een volgende stap.
 
 Waar de encyclopedie per wijziging opnieuw uitgegeven diende te worden, gebruikt Wikipedia de mogelijkheid om iedereen toegang te geven om kennis te halen, maar ook te brengen, *up-to-date* te houden en te reviewen. In plaats van drie experts in een kamertje heb je nu dus de totale wereldpopulatie aan kennis tot je beschikking, op een plaats.
 
