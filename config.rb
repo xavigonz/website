@@ -185,6 +185,13 @@ helpers do
     "Defacto - Developing People"
   end
 
+  # Use frontmatter for meta description
+  def meta_description(page=current_page)
+    return current_page.data.description if current_page.data.description
+    return Nokogiri::HTML(current_page.summary(250)).text if is_blog_article?
+    return t("head.default_description")
+  end
+
   # Localize page_classes
   def page_classes(path=current_path.dup, options={})
     # Prevent page classes from being translated

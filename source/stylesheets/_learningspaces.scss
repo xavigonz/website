@@ -4,13 +4,11 @@
     background-color: $green;
     background-image: url(../images/learningspaces-pattern.svg);
     background-position: center;
+  }
 
-
-    h1 {
-      // @include media($large-up) {
-      //   font-size: 4em;
-      // }
-    }
+  img {
+    width: 100%;
+    max-width: 400px;
   }
 
   .capp-steps {
