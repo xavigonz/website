@@ -187,8 +187,10 @@ helpers do
 
   # Use frontmatter for meta description
   def meta_description(page=current_page)
-    return current_page.data.description if current_page.data.description
-    return Nokogiri::HTML(current_page.summary(250)).text if is_blog_article?
+    return page.data.description.send(I18n.locale) if
+      page.data.description.is_a?(Hash) && page.data.description[I18n.locale]
+    return page.data.description if page.data.description
+    return Nokogiri::HTML(page.summary(250)).text if is_blog_article?
     return t("head.default_description")
   end
 
