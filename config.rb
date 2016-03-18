@@ -59,6 +59,10 @@ page "/*.txt", layout: false
 ignore "/fonts/icons/selection.json"
 
 redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
+redirect "elearning.html", to: "e-learning.html"
+redirect "elearning-starterkit.html", to: "e-learning-starterkit.html"
+redirect "hosting.html", to: "hosting-security.html"
+redirect "capp.html", to: "capp-lms.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {

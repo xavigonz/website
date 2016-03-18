@@ -33,7 +33,7 @@ Waar de encyclopedie per wijziging opnieuw uitgegeven diende te worden, gebruikt
 
 <hr>
 
-Vanuit de gedachte: *“Wat kan de digitale wereld toevoegen aan de door ons ooit bedachte processen”* ontstaat dus ware innovatie. Daarom is dat de basis vanuit waar wij ons [learning management systeem](/capp) onder de loep hebben genomen. Want laten we eerlijk zijn, een LMS is op zich niet veel meer dan een gedigitaliseerde vorm van cursusadministratie, 'het automatisch vinken'.
+Vanuit de gedachte: *“Wat kan de digitale wereld toevoegen aan de door ons ooit bedachte processen”* ontstaat dus ware innovatie. Daarom is dat de basis vanuit waar wij ons [learning management systeem](/capp-lms/) onder de loep hebben genomen. Want laten we eerlijk zijn, een LMS is op zich niet veel meer dan een gedigitaliseerde vorm van cursusadministratie, 'het automatisch vinken'.
 
 Ons inziens is hierin nog een grote stap te maken. En natuurlijk hebben wij een goed idee hoe.
 

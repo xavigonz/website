@@ -29,7 +29,7 @@ De keynote is opgenomen en zal binnenkort worden gepubliceerd.
 
 Na de pauze en tijd om even door het museum te lopen werden ‘vierkante’ tafelsessies gehouden. Verschillende onderwerpen werden besproken, met als doel van en met elkaar te leren. Zo werd er doorgepraat over de meer strategische aanpak van het MUMC+ met Michel van Zandvoort. Consultant Bastiaan informeerde geïnteresseerden over de voortgang van het Kwaliteitspaspoort 3.0, een doorontwikkeling waarin meer ruimte is voor het aangeven van team- en individueel specifieke vereisten.
 
-Verder werd er vanwege de aanwezigheid van liefst zes nieuwe klanten ingegaan op de harde-technische en zachte-strategische uitdagingen van de implementatie van ons **[learning management systeem](/capp)** CAPP11. Voor veel klanten is het een uitdaging om medewerkers in het systeem te krijgen en te houden. *Last but not least*, de LearningSpaces tafel. Dit **[social learning platform](http://www.learningspaces.nl)** wordt door een aantal klanten van ons gebruikt om van bestaande kennis content te creëren, te delen of over te communiceren.
+Verder werd er vanwege de aanwezigheid van liefst zes nieuwe klanten ingegaan op de harde-technische en zachte-strategische uitdagingen van de implementatie van ons **[learning management systeem](/capp-lms/)** CAPP11. Voor veel klanten is het een uitdaging om medewerkers in het systeem te krijgen en te houden. *Last but not least*, de LearningSpaces tafel. Dit **[social learning platform](http://www.learningspaces.nl)** wordt door een aantal klanten van ons gebruikt om van bestaande kennis content te creëren, te delen of over te communiceren.
 
 ![Kennis uitwisselen in kleinere kring](/images/blog/gebruikersoverleg-11022016-03.jpg)
 
