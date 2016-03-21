@@ -82,6 +82,7 @@ nl:
       </p>
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Werken bij Defacto"
+    cmt: "Convenant Medische Technologie"
   form:
     email: E-mail
     message: "Wat kunnen we voor je betekenen?"

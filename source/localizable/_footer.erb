@@ -32,7 +32,13 @@
         <li><%= locale_link_to t("services.services.implementaties.name"), "/implementaties.html" %></li>
         <li><%= locale_link_to t("services.services.hosting.name"), "/hosting-security.html" %></li>
         <li><%= locale_link_to t("services.services.koppelingen.name"), "/koppelingen.html" %></li>
+<<<<<<< 6b05e0721087553c6be875b51c60cf1f2b307882
 >>>>>>> some nicer urls
+=======
+        <% if I18n.locale == :nl %>
+          <li><%= locale_link_to t("footer.cmt"), "convenant-medische-technologie.html" %></li>
+        <% end %>
+>>>>>>> add links to CMT page
       </ul>
     </div>
 
