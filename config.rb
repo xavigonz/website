@@ -190,7 +190,7 @@ helpers do
   end
 
   # Use frontmatter for meta description
-  def meta_description(page=current_page)
+  def meta_description(page = current_page)
     return page.data.description.send(I18n.locale) if
       page.data.description.is_a?(Hash) && page.data.description[I18n.locale]
     return page.data.description if page.data.description
