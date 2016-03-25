@@ -29,10 +29,6 @@
   lastname: Thie
   email: a.thie@defacto.nl
 
-- firstname: Alexander
-  lastname: Jeurissen
-  email: a.jeurissen@defacto.nl
-
 - firstname: Bastiaan
   lastname: Barelds
   email: b.barelds@defacto.nl
@@ -45,9 +41,17 @@
   lastname: Kemp
   email: c.kemp@defacto.nl
 
+- firstname: Ewald
+  lastname: van Kampen
+  email: e.van.kampen@defacto.nl
+
 - firstname: Ewoud
   lastname: Veenhuizen
   email: e.veenhuizen@defacto.nl
+
+- firstname: Frits
+  lastname: Ypeij
+  email: f.ypeij@defacto.nl
 
 - firstname: Gerwin
   lastname: Veenstra
@@ -130,12 +134,16 @@
   email: milda@defacto.nl
 
 - firstname: Peter
-  lastname: Van Delden
+  lastname: van Delden
   email: p.van.delden@defacto.nl
 
 - firstname: Pieter
   lastname: Kaal
   email: p.kaal@defacto.nl
+
+- firstname: Pieter
+  lastname: Nomden
+  email: p.nomden@defacto.nl
 
 - firstname: Rick
   lastname: Littel
