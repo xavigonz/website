@@ -6,6 +6,8 @@
 
   ga('create', 'UA-6700447-1', 'auto');
   ga('require', 'linkid');
+  ga('require', 'linker');
+  ga('linker:autoLink', ['www.defacto.nl', 'jobs.defacto.nl']);
   <% if current_page.data.track_conversion %>
     var regex = new RegExp("[\\?&]form=([^&#]*)");
     var results = regex.exec(location.search);
