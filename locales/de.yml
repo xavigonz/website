@@ -13,7 +13,9 @@ de:
     testimonials: kundenreferenzen
     referenties: referenzen
   urls:
-    formkeep: https://formkeep.com/f/bfad79e126e9
+    contact: https://formkeep.com/f/bfad79e126e9
+    productsheet: https://formkeep.com/f/bfad79e126e9
+    ebook: https://formkeep.com/f/bfad79e126e9
   about:
     about_defacto: "Über Defacto"
     contact: "Kontakt"
