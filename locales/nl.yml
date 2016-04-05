@@ -1,7 +1,9 @@
 ---
 nl:
   urls:
-    formkeep: https://formkeep.com/f/aff54030c202
+    contact: https://formkeep.com/f/aff54030c202
+    productsheet: https://formkeep.com/f/eb01a315df5e
+    ebook: https://formkeep.com/f/15eb7434fd49
   about:
     about_defacto: Over Defacto
     contact: Contact
@@ -53,6 +55,7 @@ nl:
     heading: "Met Defacto als ervaren en technisch onderlegde partner, wordt de toepassing van E-Learning in jouw organisatie onherroepelijk een succes."
   elearning_ebook:
     formkeep_title: "E-book download"
+    formkeep_title_popup: "E-book download popup"
     heading_html: "Download gratis ons <span class=\"pre\">E-Learning</span> Handboek"
     image_alt: "E-Learning Handboek Leren & Laten Leren"
   elearning_starterkit:

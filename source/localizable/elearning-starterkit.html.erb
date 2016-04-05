@@ -8,7 +8,7 @@ title: E-Learning starterkit
       <h1><%= t("elearning_starterkit.hero.title") %></h1>
       <%= markitdown t("elearning_starterkit.hero.text_md") %>
 
-      <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.formkeep") %>" method="POST">
+      <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.contact") %>" method="POST">
         <input type="hidden" name="utf8" value="✓">
         <input type="hidden" name="form" value="<%= t("elearning_starterkit.hero.formkeep_title") %>">
         <input type="text" name="name" placeholder="<%= t("form.name") %>">
@@ -36,7 +36,7 @@ title: E-Learning starterkit
       <%= image_tag "book-#{I18n.locale.to_s}.png", alt: t("elearning_ebook.image_alt") %>
     </label>
 
-    <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.formkeep") %>" method="POST">
+    <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.ebook") %>" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="form" value="<%= t("elearning_ebook.formkeep_title") %>">
       <input type="email" name="email" id="ebook-email" placeholder="<%= t("form.email") %>" required>
