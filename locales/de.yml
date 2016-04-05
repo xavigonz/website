@@ -67,6 +67,7 @@ de:
     heading: "Mit Defacto als erfahrenem und technisch geschultem Partner wird E-Learning in Ihrer Organisation unwiderruflich zum Erfolg."
   elearning_ebook:
     formkeep_title: "E-book download"
+    formkeep_title_popup: "E-book download popup"
     heading_html: "Unser <span class=\"pre\">E-Learning</span> Buch gratis herunterladen"
     image_alt: "Handbuch Abenteuer E-Learning"
   elearning_starterkit:

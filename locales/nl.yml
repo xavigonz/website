@@ -55,6 +55,7 @@ nl:
     heading: "Met Defacto als ervaren en technisch onderlegde partner, wordt de toepassing van E-Learning in jouw organisatie onherroepelijk een succes."
   elearning_ebook:
     formkeep_title: "E-book download"
+    formkeep_title_popup: "E-book download popup"
     heading_html: "Download gratis ons <span class=\"pre\">E-Learning</span> Handboek"
     image_alt: "E-Learning Handboek Leren & Laten Leren"
   elearning_starterkit:
