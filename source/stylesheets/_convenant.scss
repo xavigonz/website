@@ -6,10 +6,6 @@
     max-width: 70%;
   }
 
-  ul {
-    margin-left: 1em;
-  }
-
   .hero {
     @include radial-gradient(circle at 50%,
       $blue 33%,
