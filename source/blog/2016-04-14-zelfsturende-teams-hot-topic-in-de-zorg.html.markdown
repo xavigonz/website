@@ -22,19 +22,3 @@ Defacto heeft met een aantal zorginstellingen het [CAPP Kwaliteitspaspoort](/kwa
 **Zelf sturen lukt alleen met inzicht en overzicht binnen heldere kaders!**
 
 Meer weten en nieuwsgierig hoe andere organisaties hiermee omgaan, neem contact op met het accountteam Zorg van Defacto via 050 3144832.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
