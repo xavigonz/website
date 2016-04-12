@@ -195,7 +195,6 @@ helpers do
       page.data.description.is_a?(Hash) && page.data.description[I18n.locale]
     return page.data.description if page.data.description
     return Nokogiri::HTML(page.summary(250)).text if is_blog_article?
-    return t("head.default_description")
   end
 
   # Localize page_classes
