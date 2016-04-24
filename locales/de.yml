@@ -1,5 +1,8 @@
 ---
 de:
+  # CNAME: defactolearning.de
+  CNAME: tempde.defacto.nl
+
   # Path translations
   paths:
     bedankt: danke

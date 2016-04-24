@@ -2,6 +2,20 @@
 # Compass
 ###
 
+# Check build/deploy language
+root_lang = ENV["TARGET"]
+
+if root_lang
+  root_lang = root_lang.to_sym
+  activate :i18n, mount_at_root: root_lang, langs: [:nl, :de]
+else
+  activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
+end
+
+# Store `root_lang` as config variable so it's available
+# in helpers as `root_lang` or templates as `config[:root_lang]`
+set :root_lang, root_lang
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -28,6 +42,8 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
+redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -38,7 +54,7 @@
 # Blog
 Time.zone = "CET"
 
-activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
+# activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -55,12 +71,10 @@ page "blog/feed.xml", layout: false
 
 activate :directory_indexes
 
-redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
-
+set :relative_links, true
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
-set :relative_links, true
 
 # Middleman syntax (https://github.com/middleman/middleman-syntax)
 activate :syntax #, line_numbers: true
@@ -71,7 +85,10 @@ set :markdown, input: "GFM", auto_ids: false
 #set :markdown_engine, :redcarpet
 #set :markdown, fenced_code_blocks: true, smartypants: true
 
-# Build-specific configuration
+###
+# Build
+###
+
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -89,10 +106,22 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-# deploy
+###
+# Deploy
+###
 
-activate :deploy do |deploy|
-  deploy.method = :git
+# Deploy for each locale
+case root_lang
+when :nl
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.remote = "git@github.com:DefactoSoftware/website-nl.git"
+  end
+when :de
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.remote = "git@github.com:DefactoSoftware/website-de.git"
+  end
 end
 
 ###
@@ -102,6 +131,11 @@ end
 ready do
   # validate data/downloads.yml
   validate_downloads(data.downloads)
+end
+
+after_build do
+  # rename CNAME for gh-pages after build
+  File.rename "build/CNAME.html", "build/CNAME"
 end
 
 ###

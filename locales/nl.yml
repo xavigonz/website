@@ -1,5 +1,7 @@
 ---
 nl:
+  CNAME: tempnl.defacto.nl
+
   urls:
     contact: https://formkeep.com/f/aff54030c202
     productsheet: https://formkeep.com/f/eb01a315df5e
