@@ -1,17 +1,39 @@
+## Serve
+namespace :serve do
+  def serve(env)
+    puts "*"*50
+    puts "* Serving #{env.upcase}"
+    puts "*"*50
+    system "LOCALE=#{env} bundle exec middleman"
+  end
+
+  desc "Serve NL"
+  task :nl do
+    serve :nl
+  end
+
+  desc "Serve DE"
+  task :de do
+    serve :de
+  end
+end
+
 ## Build
 namespace :build do
   def build(env)
     puts "*"*50
-    puts "* Building #{env}"
+    puts "* Building #{env.upcase}"
     puts "*"*50
-    system "TARGET=#{env} bundle exec middleman build --clean"
+    system "LOCALE=#{env} bundle exec middleman build --clean"
   end
 
+  desc "Build NL"
   task :nl do
     build :nl
     FileUtils.rm_rf("build/de", verbose: true)
   end
 
+  desc "Build DE"
   task :de do
     build :de
     FileUtils.rm_rf("build/nl", verbose: true)
@@ -21,21 +43,23 @@ end
 ## Deploy
 namespace :deploy do
   def deploy(env)
-    system "bundle exec rake build:#{env}"
+    Rake::Task["build:#{env}"].invoke
     puts "*"*50
-    puts "* Deploying #{env}"
+    puts "* Deploying #{env.upcase}"
     puts "*"*50
-    system "TARGET=#{env} bundle exec middleman deploy"
+    system "LOCALE=#{env} bundle exec middleman deploy"
   end
 
+  desc "Deploy NL"
   task :nl do
     deploy :nl
   end
 
+  desc "Deploy DE"
   task :de do
     deploy :de
   end
 end
 
-## Default task
+desc "Deploy all locales"
 task :deploy => ["deploy:nl", "deploy:de"]

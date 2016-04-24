@@ -2,19 +2,12 @@
 # Compass
 ###
 
-# Check build/deploy language
-root_lang = ENV["TARGET"]
+# Determine root locale
+root_locale = (ENV["LOCALE"] ? ENV["LOCALE"].to_sym : :nl)
+# Accessible as `root_locale` in helpers and `config[:root_locale]` in templates
+set :root_locale, root_locale
 
-if root_lang
-  root_lang = root_lang.to_sym
-  activate :i18n, mount_at_root: root_lang, langs: [:nl, :de]
-else
-  activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
-end
-
-# Store `root_lang` as config variable so it's available
-# in helpers as `root_lang` or templates as `config[:root_lang]`
-set :root_lang, root_lang
+activate :i18n, mount_at_root: root_locale, langs: [:nl, :de]
 
 # Change Compass configuration
 # compass_config do |config|
@@ -53,8 +46,6 @@ redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
 
 # Blog
 Time.zone = "CET"
-
-# activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -111,7 +102,7 @@ end
 ###
 
 # Deploy for each locale
-case root_lang
+case root_locale
 when :nl
   activate :deploy do |deploy|
     deploy.method = :git
@@ -170,11 +161,10 @@ helpers do
   # Localize page_classes
   def page_classes(path=current_path.dup, options={})
     # Prevent page classes from being translated
-    unless is_default_locale?
+    unless I18n.locale == :nl
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
-          # resource.metadata[:options][:lang] == extensions[:i18n].options.mount_at_root
-          resource.metadata[:options][:lang] == :nl # Force :nl classes
+          resource.metadata[:options][:lang] == :nl
       end.first
       path = default_path.destination_path.dup if default_path
     end
@@ -186,11 +176,6 @@ helpers do
     classes.prepend("#{I18n.locale} ")
   end
 
-  # Check if locale is default aka mount_at_root
-  def is_default_locale?(locale=I18n.locale)
-    # Force :nl as default locale when building or deploying
-    locale == (root_lang ? :nl : extensions[:i18n].options.mount_at_root)
-  end
 
   # Localized link_to
   def locale_link_to(*args, &block)
