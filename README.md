@@ -6,21 +6,24 @@ The sourcecode for our [website](http://www.defacto.nl). More detailed informati
 
 Start [Middleman](https://middlemanapp.com) server and browse to [http://localhost:4567](http://localhost:4567):
 
-
-```
-./serve
+```bash
+rake serve:nl
+rake serve:de
 ```
 
 ##### Build
 
-```
-bundle exec middleman build
+```bash
+rake build:nl
+rake build:de
 ```
 
-##### Deploy
+##### Deploy (and build before)
 
-```
-bundle exec middleman deploy
+```bash
+rake deploy:nl
+rake deploy:de
+rake deploy # Deploy all locales
 ```
 
 ##### Useful links for debugging
