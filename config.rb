@@ -176,7 +176,6 @@ helpers do
     classes.prepend("#{I18n.locale} ")
   end
 
-
   # Localized link_to
   def locale_link_to(*args, &block)
     url_arg_index = block_given? ? 0 : 1
@@ -189,20 +188,23 @@ helpers do
 
   # Localized url_for
   def locale_url_for(url, options={})
-    locale = options[:locale] || ::I18n.locale
+    locale = options[:locale] || I18n.locale
     options[:relative] = false
     url_parts = url.split("#")
     url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) || url_parts[0]
     url = url_parts.join("#")
-    url_for(url, options)
+    url = url_for(url, options)
+    # Replace leading locale url segment with domain
+    url.sub("/#{locale}/", "http://#{I18n.t("CNAME", locale: locale)}/")
   end
 
-  # Localized link_to with active class if current_page
+
+  # Link_to with active class if current_page
   def nav_link_to(text, url, options={})
-    is_active = locale_url_for(url.split("#")[0]) == url_for(current_page.url, relative: false)
+    is_active = url_for(url.split("#")[0], relative: false) == url_for(current_page.url, relative: false)
     options[:class] ||= ""
     options[:class] << " active" if is_active
-    locale_link_to(text, url, options)
+    link_to(text, url, options)
   end
 
   # Country flags
@@ -212,7 +214,7 @@ helpers do
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
       locale_root_path = current_page.locale_root_path
-      url = locale_root_path && locale_root_path != "/error.html" ? locale_root_path : "/"
+      url = locale_root_path ? locale_root_path : "/"
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html

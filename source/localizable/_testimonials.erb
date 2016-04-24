@@ -20,7 +20,7 @@ end
 
     if summary
       quote = testimonial.summary? ? testimonial.summary : testimonial.quote
-      quote_html = locale_link_to(quote, "/testimonials.html##{quote_id}", class: "quote")
+      quote_html = link_to(quote, "/testimonials.html##{quote_id}", class: "quote")
     else
       quote = testimonial.quote
       quote_html = content_tag(:div, quote, class: "quote")

@@ -116,6 +116,7 @@ nl:
         text_html: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
       learningspaces:
         text_html: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+        url: "http://www.learningspaces.nl"
     solutions:
       develop:
         keywords:

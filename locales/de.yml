@@ -130,6 +130,7 @@ de:
         text_html: "%{link} ist ein Learning Management System, dass Sie beim Talentmanagement unterstützt und eine Übersicht aller Qualifikationen und Zertifizierungen bietet."
       learningspaces:
         text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform, die informelles Lernen und den Wissensaustausch stimuliert."
+        url: "http://www.learningspaces.de"
     solutions:
       develop:
         keywords:
