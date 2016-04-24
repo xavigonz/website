@@ -1,6 +1,5 @@
 <%
-testimonials = data[is_default_locale? ? "testimonials" : "testimonials_" + I18n.locale.to_s]
-testimonials ||= data.testimonials
+testimonials = data["testimonials_" + I18n.locale.to_s]
 
 summary ||= false
 

@@ -164,7 +164,7 @@ helpers do
     return page.data.title.send(I18n.locale) + appendTitle if
       page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
     return page.data.title + appendTitle if page.data.title
-    return "Defacto - Developing People"
+    "Defacto - Developing People"
   end
 
   # Localize page_classes
@@ -173,7 +173,8 @@ helpers do
     unless is_default_locale?
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
-          resource.metadata[:options][:lang] == extensions[:i18n].options.mount_at_root
+          # resource.metadata[:options][:lang] == extensions[:i18n].options.mount_at_root
+          resource.metadata[:options][:lang] == :nl # Force :nl classes
       end.first
       path = default_path.destination_path.dup if default_path
     end
@@ -187,7 +188,8 @@ helpers do
 
   # Check if locale is default aka mount_at_root
   def is_default_locale?(locale=I18n.locale)
-    locale == extensions[:i18n].options.mount_at_root
+    # Force :nl as default locale when building or deploying
+    locale == (root_lang ? :nl : extensions[:i18n].options.mount_at_root)
   end
 
   # Localized link_to
@@ -245,7 +247,7 @@ helpers do
     return avatar if avatar
     avatar = "/images/team/#{person.firstname.downcase}.jpg"
     return avatar if sitemap.find_resource_by_path(avatar)
-    return false
+    false
   end
 
   # Email to gravatar
@@ -257,7 +259,7 @@ helpers do
     http = Net::HTTP.new(uri.host, uri.port)
     request = Net::HTTP::Get.new(uri.request_uri)
     response = http.request(request)
-    return response.code.to_i == 404 ? false : url
+    response.code.to_i == 404 ? false : url
   end
 
   # Get blog author
