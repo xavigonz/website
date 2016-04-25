@@ -1,5 +1,6 @@
 <%
-testimonials = data["testimonials_" + I18n.locale.to_s]
+all_testimonials = data["testimonials_" + I18n.locale.to_s]
+testimonials = all_testimonials.clone
 
 summary ||= false
 
@@ -15,12 +16,12 @@ end
 <ul class="testimonial-list">
   <% testimonials.each do |testimonial|
 
-    quote_index = testimonials.index(testimonial)
+    quote_index = all_testimonials.index(testimonial)
     quote_id = "testimonial-#{quote_index}"
 
     if summary
       quote = testimonial.summary? ? testimonial.summary : testimonial.quote
-      quote_html = link_to(quote, "/testimonials.html##{quote_id}", class: "quote")
+      quote_html = locale_link_to(quote, "/testimonials.html##{quote_id}", class: "quote")
     else
       quote = testimonial.quote
       quote_html = content_tag(:div, quote, class: "quote")

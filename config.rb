@@ -191,17 +191,18 @@ helpers do
     locale = options[:locale] || I18n.locale
     options[:relative] = false
     url_parts = url.split("#")
-    url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) || url_parts[0]
+    url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) ||
+                   url_parts[0]
     url = url_parts.join("#")
     url = url_for(url, options)
     # Replace leading locale url segment with domain
-    url.sub("/#{locale}/", "http://#{I18n.t("CNAME", locale: locale)}/")
+    url.sub("/#{locale}/", "http://#{I18n.t('CNAME', locale: locale)}/")
   end
-
 
   # Link_to with active class if current_page
   def nav_link_to(text, url, options={})
-    is_active = url_for(url.split("#")[0], relative: false) == url_for(current_page.url, relative: false)
+    is_active = url_for(url.split("#")[0], relative: false) ==
+                url_for(current_page.url, relative: false)
     options[:class] ||= ""
     options[:class] << " active" if is_active
     link_to(text, url, options)
