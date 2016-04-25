@@ -1,6 +1,6 @@
 ---
 title: Zelfsturende teams ondersteunen met het CAPP Kwaliteitspaspoort
-date: 2016-04-22 7:30 CET
+date: 2016-04-25 7:30 CET
 tags:
 author: Gerwin
 lang: nl
@@ -23,12 +23,12 @@ Een Leer Management Systeem als CAPP wordt in de regel gevoed door het HR systee
 
 Maar hoe gaat dat met teams die niet vastliggen in een HR systeem of teamleiders die niet als zodanig zijn aangemerkt? En wisselende samenstellingen van teams, hoe ga je dat vormgeven? Grote uitdagingen voor ons als softwareleverancier.
 
-## Verantwoordelijkheid bij teams zelf neerleggen
+![CAPP Kwaliteitspaspoort 2016](/images/blog/kwaliteitspaspoort-small.jpg)
+
+## Verantwoordelijkheid bij teams zelf leggen
 Bij Defacto proberen we uit het oogpunt van de gebruiker onze software te ontwikkelen. We vragen onszelf af:
 
 >#### *Wie weet binnen zelfsturende teams het beste met wie ze samenwerken? Wanneer er teamwisselingen zijn en of er een andere teamleider is?*
-
-De leden van het team zelf.
 
 Een lijnmanager kan niet van alle 100 medewerkers bijhouden wie in welk team zit en welke wisselingen daar plaatsvinden. Een afdeling P&O heeft hier ook niet altijd zicht op. Het bijhouden hiervan in een systeem is daardoor een lastig proces. In de praktijk is het uiteindelijk de medewerker zelf die het beste weet wie er in zijn team werkzaam is, wie teamleider is en wanneer er wijzigingen plaatsvinden. Waarom de verantwoordelijkheid daarvoor dan ook niet bij de teams zelf neerleggen?
 
@@ -38,7 +38,3 @@ Een lijnmanager kan niet van alle 100 medewerkers bijhouden wie in welk team zit
 Denk bijvoorbeeld aan bekwaamheden die 6 personen in een team onder de knie moeten hebben en daardoor voor de overige teamleden niet van toepassing zijn. Hier heeft het team zelf controle over.
 
 Door inzicht in het eigen team kan bekeken worden waar eventuele hiaten zitten in benodigde kennis en vaardigheden en kan iedereen elkaar aanspreken op zijn of haar verantwoordelijkheden.
-
-### Meer weten over het CAPP Kwaliteitspaspoort?
-
-Meer weten en nieuwsgierig hoe onze software werkt, neem contact op met het accountteam Zorg van Defacto via 050 3144832.
