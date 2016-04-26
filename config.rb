@@ -22,20 +22,24 @@ activate :i18n, mount_at_root: root_locale, langs: [:nl, :de]
 #
 # With no layout
 # page "/path/to/file.html", layout: false
-#
-# With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-#
+
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
 # end
 
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+
+ignore "/fonts/icons/selection.json"
+
+redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
+
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
-
-redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -145,8 +149,8 @@ helpers do
   end
 
   # Get full url
-  def full_url(url)
-    URI.join("http://www.defacto.nl", url)
+  def full_url(url, locale=I18n.locale)
+    URI.join("http://#{I18n.t('CNAME', locale: locale)}", url).to_s
   end
 
   # Use frontmatter for I18n titles
@@ -196,7 +200,7 @@ helpers do
     url = url_parts.join("#")
     url = url_for(url, options)
     # Replace leading locale url segment with domain
-    url.sub("/#{locale}/", "http://#{I18n.t('CNAME', locale: locale)}/")
+    url.sub("/#{locale}/", full_url("/", locale))
   end
 
   # Link_to with active class if current_page
