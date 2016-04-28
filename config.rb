@@ -29,6 +29,22 @@ activate :i18n, mount_at_root: root_locale, langs: [:nl, :de]
 #   page "/admin/*"
 # end
 
+if root_locale == :nl
+  # Redirect :de pages
+  with_layout :redirect do
+    page "/de/*"
+  end
+  # Prevent other locales from building
+  (langs - [root_locale, :de]).each do |locale|
+    ignore "/#{locale}/*"
+  end
+else
+  # Prevent other locales from building
+  (langs - [root_locale]).each do |locale|
+    ignore "/#{locale}/*"
+  end
+end
+
 page "/*.xml", layout: false
 page "/*.json", layout: false
 page "/*.txt", layout: false
