@@ -34,16 +34,18 @@ if root_locale == :nl
   with_layout :redirect do
     page "/de/*"
   end
-  # Prevent other locales from building
-  (langs - [root_locale, :de]).each do |locale|
-    ignore "/#{locale}/*"
-  end
-else
-  # Prevent other locales from building
-  (langs - [root_locale]).each do |locale|
-    ignore "/#{locale}/*"
-  end
 end
+
+# # Prevent other locales from building (breaks page_classes)
+# if root_locale == :nl
+#   (langs - [root_locale, :de]).each do |locale|
+#     ignore "/#{locale}/*"
+#   end
+# else
+#   (langs - [root_locale]).each do |locale|
+#     ignore "/#{locale}/*"
+#   end
+# end
 
 page "/*.xml", layout: false
 page "/*.json", layout: false

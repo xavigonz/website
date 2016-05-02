@@ -30,11 +30,13 @@ namespace :build do
   desc "Build NL"
   task :nl do
     build :nl
+    FileUtils.rm_rf("build/de", verbose: true)
   end
 
   desc "Build DE"
   task :de do
     build :de
+    FileUtils.rm_rf("build/de", verbose: true)
   end
 end
 
