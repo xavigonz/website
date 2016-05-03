@@ -194,7 +194,7 @@ helpers do
     return page.data.description.send(I18n.locale) if
       page.data.description.is_a?(Hash) && page.data.description[I18n.locale]
     return page.data.description if page.data.description
-    return Nokogiri::HTML(page.summary(250)).text if is_blog_article?
+    return Nokogiri::HTML(page.summary(160)).text if is_blog_article?
     t("head.default_description")
   end
 
