@@ -26,10 +26,12 @@ rake deploy:de
 rake deploy # Deploy all locales
 ```
 
+`:nl` is deployed to [website/tree/gh-pages](https://github.com/DefactoSoftware/website/tree/gh-pages). `:de` is deployed to [website-de/tree/gh-pages](https://github.com/DefactoSoftware/website-de/tree/gh-pages).
+
 ##### Useful links for debugging
 
-- [http://localhost:4567/__middleman/config/](http://localhost:4567/__middleman/config/)
-- [http://localhost:4567/__middleman/sitemap/](http://localhost:4567/__middleman/sitemap/)
+- http://localhost:4567/__middleman/config/
+- http://localhost:4567/__middleman/sitemap/
 
 ##### Dependencies
 

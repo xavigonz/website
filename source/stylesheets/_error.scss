@@ -1,6 +1,7 @@
 body.x404 {
   .gray {
     @include radial-gradient(#fbfbfb, #dfdfdf, $fallback: #fbfbfb);
+    text-align: center;
   }
 
   .header-icon {

@@ -1,7 +1,6 @@
 ---
 de:
-  # CNAME: defactolearning.de
-  CNAME: tempde.defacto.nl
+  CNAME: www.defactolearning.de
 
   # Path translations
   paths:

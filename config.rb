@@ -133,7 +133,7 @@ case root_locale
 when :nl
   activate :deploy do |deploy|
     deploy.method = :git
-    deploy.remote = "git@github.com:DefactoSoftware/website-nl.git"
+    deploy.remote = "git@github.com:DefactoSoftware/website.git"
   end
 when :de
   activate :deploy do |deploy|
@@ -232,7 +232,7 @@ helpers do
                 url_for(current_page.url, relative: false)
     options[:class] ||= ""
     options[:class] << " active" if is_active
-    link_to(text, url, options)
+    locale_link_to(text, url, options)
   end
 
   # Country flags
