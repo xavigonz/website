@@ -12,6 +12,7 @@ nl:
     heading: "Wij zijn Defacto"
     heading2: "Leren en ontwikkelen sinds 1987"
     references: Referenties
+    press: In de media
     team:
       work_with_us: Werken bij
       you: jij?
@@ -50,6 +51,8 @@ nl:
     heading2: "We maken graag kennis, bij jullie, of bij ons in Groningen."
     phone: "050 3144832"
     phone_link: "+31503144832"
+  press:
+    heading: "Defacto - In de media"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
