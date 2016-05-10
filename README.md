@@ -6,27 +6,32 @@ The sourcecode for our [website](http://www.defacto.nl). More detailed informati
 
 Start [Middleman](https://middlemanapp.com) server and browse to [http://localhost:4567](http://localhost:4567):
 
-
-```
-./serve
+```bash
+rake serve:nl
+rake serve:de
 ```
 
 ##### Build
 
-```
-bundle exec middleman build
+```bash
+rake build:nl
+rake build:de
 ```
 
-##### Deploy
+##### Deploy (and build before)
 
+```bash
+rake deploy:nl
+rake deploy:de
+rake deploy # Deploy all locales
 ```
-bundle exec middleman deploy
-```
+
+`:nl` is deployed to [website/tree/gh-pages](https://github.com/DefactoSoftware/website/tree/gh-pages). `:de` is deployed to [website-de/tree/gh-pages](https://github.com/DefactoSoftware/website-de/tree/gh-pages).
 
 ##### Useful links for debugging
 
-- [http://localhost:4567/__middleman/config/](http://localhost:4567/__middleman/config/)
-- [http://localhost:4567/__middleman/sitemap/](http://localhost:4567/__middleman/sitemap/)
+- http://localhost:4567/__middleman/config/
+- http://localhost:4567/__middleman/sitemap/
 
 ##### Dependencies
 

@@ -1,0 +1,91 @@
+#
+# TESTIMONIALS
+#####################################################################################################
+#
+# Note:
+#
+# Testimonials are displayed from top to bottom. So the first in this file will be on top.
+# Same goes for featured testimonials (on homepage): the first two with featured:true will show.
+#
+# Example:
+#
+# - name: Martina de Vos
+#   company: "Opleidingsadviseur, Sint Franciscus Gasthuis"
+#   avatar: testimonials/martina_de_vos.jpg
+#   featured: true
+#   quote: "This is the full version of the quote"
+#   summary: "This is the short version of the quote (optional, only used when summary:true)"
+#
+# Usage:
+#
+# <%= partial "testimonials", locals: {
+#   count: 2,         # amount of testimonials to show (optional)
+#   featured: true,   # only show featured (optional)
+#   summary: true     # show summary if present, otherwise the full quote (optional)
+# } %>
+#
+#####################################################################################################
+
+- name: Kristel Vissers
+  company: "Projectleider Kwaliteitspaspoort, Máxima Medisch Centrum"
+  quote: >
+    <p>Binnen Máxima Medisch Centrum (MMC) was behoefte aan een systeem waarin de MMC-(zorg)professional gestimuleerd wordt om
+    continu zijn of haar bevoegd- en bekwaamheden bij te houden, zodat de beste zorg met een herkenbaar profiel kan worden geboden.
+    Samen met Defacto is hiervoor het Kwaliteitspaspoort geïmplementeerd.</p>
+    <p>Vooraf aan de implementatie van het Kwaliteitspaspoort is door verschillende afdelingen, waaronder Afdeling HRM en afdeling
+    Kwaliteit & Veiligheid, hard gewerkt om de basis op orde te krijgen. We hebben gekozen voor een duurzame oplossing waarin realtime
+    de actuele personeelsgegevens en het daaraan gekoppelde profiel beschikbaar is.<br>
+    Daarnaast vraagt het Kwaliteitspaspoort een cultuur met als uitgangspunt dat de medewerker zelf de regie neemt over de eigen deskundigheid.
+    Van belang is dat managers en afdelingshoofden een cultuur bekrachtigen waarin men elkaar kan aanspreken en ook aanspreekbaar is op het
+    volgen van protocollen zodat men met elkaar zorg van topkwaliteit biedt.</p>
+    <p>Tijdens de implementatie van het Kwaliteitspaspoort merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat
+    er speelt in de organisatie en kunnen daardoor constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons
+    geholpen om de basis op orde te krijgen. Samen met Defacto werken we aan continue verbetering van het Kwaliteitspaspoort, zowel technisch
+    als functioneel.</p>
+    <p>Zo zijn onze medewerkers nu aantoonbaar bekwaam. Voorbehouden- en risicovolle handelingen worden nu door assessoren op de werkvloer
+    getoetst. Dit is efficiënt en biedt enorm veel inzicht. Met behulp van Defacto beschikken leidinggevenden over (stuur)informatie en
+    zijn onze (zorg)professionals bewust bezig met hun eigen ontwikkeling en nemen zij hierin nu zelf de verantwoordelijkheid.</p>
+  summary: >
+    Tijdens de implementatie van het Kwaliteitspaspoort merk je dat Defacto een hechte samenwerkingsrelatie aangaat. Zij willen weten wat
+    er speelt in de organisatie en kunnen daardoor constructief met ons meedenken. Het samenwerken met de mensen van Defacto heeft ons
+    geholpen om de basis op orde te krijgen. Samen met Defacto werken we aan continue verbetering van het Kwaliteitspaspoort, zowel technisch
+    als functioneel.
+    
+
+- name: Marieke van Kernebeek
+  company: "Office manager, Phoenix Opleidingen"
+  avatar: testimonials/marieke_van_kernebeek.jpg
+  featured: true
+  quote: >
+    Het fijnste aan de samenwerking met de mensen van Defacto is dat we al zo lang zulk intensief contact hebben,
+    dat je weet dat je van elkaar op aan kunt. Door dit vertrouwen is er ook ruimte voor een kritische noot.
+    In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet.
+    Heel prettig is het ook dat de mensen aan de toon van een mailtje of telefoontje al aanvoelen of iets dringend
+    is of niet en ze staan daarmee altijd voor je klaar. Kortom: een hele plezierige samenwerking.
+  summary: >
+    Het fijnste aan de samenwerking met de mensen van Defacto is dat we al zo lang zulk intensief contact hebben,
+    dat je weet dat je van elkaar op aan kunt. Door dit vertrouwen is er ook ruimte voor een kritische noot.
+    In de loop van de jaren hebben we zo’n goed contact opgebouwd dat je dat niet zomaar even aan de kant zet.
+
+
+- name: Peter van Overbruggen
+  company: "Opleidingsadviseur, ZuidZorg"
+  avatar: testimonials/peter_van_overbruggen.jpg
+  featured: true
+  quote: >
+    <p>Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
+    (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
+    toegankelijk en makkelijk in de omgang. Kortom: een prettige samenwerking.</p>
+    <p>Ook de servicedesk is makkelijk te bereiken. Zij nemen de tijd voor je en proberen altijd duidelijkheid te bieden,
+    ook als iets niet mogelijk is. Onderscheidend vond ik ook dat de mensen altijd probeerden mee te denken over wat specifiek
+    voor onze organisatie van belang is. ZuidZorg heeft hiernaast ook een webshop door Defacto laten ontwikkelen.
+    Deze webshop is een belangrijke aanwinst voor onze cursusadministratie van de cliënten-cursussen. Cliënten krijgen direct
+    duidelijkheid over de planning en de mogelijkheden van de door hun gewenste cursus. Daarnaast levert dit ons enorme tijdwinst op.
+    Daar waar eerst meerdere medewerkers betrokken waren bij de administratieve verwerking, is er nu nog maar één persoon een
+    gedeelte van haar tijd mee bezig. Door de invoering van CAPP als leermanagementsysteem is daarnaast de eigen
+    verantwoordelijkheid van medewerkers vergroot, de inzichtelijkheid voor leidinggevenden geoptimaliseerd en kunnen we meer
+    leeractiviteiten faciliteren voor medewerkers en cliënten.</p>
+  summary: > 
+    Het project met Defacto betrof de invoering van CAPP11 in onze organisatie voor alle drie de onderdelen
+    (opleiden, ontwikkelen en kwaliteit). Het contact met de mensen van Defacto verliep prima. Zij zijn samenwerkingsgericht,
+    toegankelijk en makkelijk in de omgang. Kortom: een prettige samenwerking.

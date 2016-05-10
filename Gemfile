@@ -5,11 +5,13 @@ source "https://rails-assets.org"
 
 gem "middleman", "~> 3.4.0"
 gem "middleman-blog", "~> 3.5.3"
+gem "middleman-deploy", "~> 1.0"
 # gem "middleman-livereload", "~> 3.4.2"
 gem "middleman-syntax"
 # gem "redcarpet"
 gem "nokogiri"
 gem "builder" # For feed.xml.builder
+gem "rake"
 
 # Bitters, Bourbon, Neat
 # gem "bitters"
@@ -21,6 +23,3 @@ gem "rails-assets-js-cookie"
 gem "rails-assets-jquery-placeholder"
 gem "rails-assets-bowser"
 gem "rails-assets-fitvids"
-
-# Deploy
-gem "middleman-deploy", "~> 1.0"

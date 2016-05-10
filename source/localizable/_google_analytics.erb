@@ -7,11 +7,11 @@
   ga('create', 'UA-6700447-1', 'auto', {'allowLinker': true});
   ga('require', 'linkid');
   ga('require', 'linker');
-  ga('linker:autoLink', ['jobs.defacto.nl']);
+  ga('linker:autoLink', ['www.defacto.nl', 'jobs.defacto.nl', 'www.defactolearning.de']);
   <% if current_page.data.track_conversion %>
     var regex = new RegExp("[\\?&]form=([^&#]*)");
     var results = regex.exec(location.search);
-    var form = results === null ? "" : results[1].toLowerCase();
+    var form = results === null ? '' : results[1].toLowerCase();
     ga('send', 'pageview', '/bedankt/' + form);
   <% else %>
     ga('send', 'pageview');

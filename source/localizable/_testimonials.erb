@@ -1,6 +1,6 @@
 <%
-testimonials = data[is_default_locale? ? "testimonials" : "testimonials_" + I18n.locale.to_s]
-testimonials ||= data.testimonials
+all_testimonials = data["testimonials_" + I18n.locale.to_s]
+testimonials = all_testimonials.clone
 
 summary ||= false
 
@@ -16,7 +16,7 @@ end
 <ul class="testimonial-list">
   <% testimonials.each do |testimonial|
 
-    quote_index = testimonials.index(testimonial)
+    quote_index = all_testimonials.index(testimonial)
     quote_id = "testimonial-#{quote_index}"
 
     if summary

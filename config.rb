@@ -2,6 +2,13 @@
 # Compass
 ###
 
+# Determine root locale
+root_locale = (ENV["LOCALE"] ? ENV["LOCALE"].to_sym : :nl)
+# Accessible as `root_locale` in helpers and `config[:root_locale]` in templates
+set :root_locale, root_locale
+
+activate :i18n, mount_at_root: root_locale, langs: [:nl, :de]
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
@@ -15,14 +22,43 @@
 #
 # With no layout
 # page "/path/to/file.html", layout: false
-#
-# With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
-#
+
 # A path which all have the same layout
 # with_layout :admin do
 #   page "/admin/*"
 # end
+
+if root_locale == :nl
+  # Redirect :de pages
+  with_layout :redirect do
+    page "/de/*"
+  end
+end
+
+# Ignore blog for other languages other than :nl
+if root_locale != :nl
+  ignore "/blog/*"
+end
+
+# # Prevent other locales from building (breaks page_classes)
+# if root_locale == :nl
+#   (langs - [root_locale, :de]).each do |locale|
+#     ignore "/#{locale}/*"
+#   end
+# else
+#   (langs - [root_locale]).each do |locale|
+#     ignore "/#{locale}/*"
+#   end
+# end
+
+page "/*.xml", layout: false
+page "/*.json", layout: false
+page "/*.txt", layout: false
+
+ignore "/fonts/icons/selection.json"
+
+redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
@@ -37,8 +73,6 @@
 
 # Blog
 Time.zone = "CET"
-
-activate :i18n, mount_at_root: :nl, langs: [:nl, :de]
 
 activate :blog do |blog|
   blog.prefix = "blog"
@@ -55,12 +89,10 @@ page "blog/feed.xml", layout: false
 
 activate :directory_indexes
 
-redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
-
+set :relative_links, true
 set :css_dir, "stylesheets"
 set :js_dir, "javascripts"
 set :images_dir, "images"
-set :relative_links, true
 
 # Middleman syntax (https://github.com/middleman/middleman-syntax)
 activate :syntax #, line_numbers: true
@@ -71,7 +103,10 @@ set :markdown, input: "GFM", auto_ids: false
 #set :markdown_engine, :redcarpet
 #set :markdown, fenced_code_blocks: true, smartypants: true
 
-# Build-specific configuration
+###
+# Build
+###
+
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
@@ -89,10 +124,22 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-# deploy
+###
+# Deploy
+###
 
-activate :deploy do |deploy|
-  deploy.method = :git
+# Deploy for each locale
+case root_locale
+when :nl
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.remote = "git@github.com:DefactoSoftware/website.git"
+  end
+when :de
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.remote = "git@github.com:DefactoSoftware/website-de.git"
+  end
 end
 
 ###
@@ -102,6 +149,11 @@ end
 ready do
   # validate data/downloads.yml
   validate_downloads(data.downloads)
+end
+
+after_build do
+  # rename CNAME for gh-pages after build
+  File.rename "build/CNAME.html", "build/CNAME"
 end
 
 ###
@@ -120,8 +172,8 @@ helpers do
   end
 
   # Get full url
-  def full_url(url)
-    URI.join("http://www.defacto.nl", url)
+  def full_url(url, locale=I18n.locale)
+    URI.join("http://#{I18n.t('CNAME', locale: locale)}", url).to_s
   end
 
   # Use frontmatter for I18n titles
@@ -130,16 +182,16 @@ helpers do
     return page.data.title.send(I18n.locale) + appendTitle if
       page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
     return page.data.title + appendTitle if page.data.title
-    return "Defacto - Developing People"
+    "Defacto - Developing People"
   end
 
   # Localize page_classes
   def page_classes(path=current_path.dup, options={})
     # Prevent page classes from being translated
-    unless is_default_locale?
+    unless I18n.locale == :nl
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
-          resource.metadata[:options][:lang] == extensions[:i18n].options.mount_at_root
+          resource.metadata[:options][:lang] == :nl
       end.first
       path = default_path.destination_path.dup if default_path
     end
@@ -149,11 +201,6 @@ helpers do
     classes += " blog_article" if is_blog_article?
     # Prepend language class
     classes.prepend("#{I18n.locale} ")
-  end
-
-  # Check if locale is default aka mount_at_root
-  def is_default_locale?(locale=I18n.locale)
-    locale == extensions[:i18n].options.mount_at_root
   end
 
   # Localized link_to
@@ -168,17 +215,21 @@ helpers do
 
   # Localized url_for
   def locale_url_for(url, options={})
-    locale = options[:locale] || ::I18n.locale
+    locale = options[:locale] || I18n.locale
     options[:relative] = false
     url_parts = url.split("#")
-    url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) || url_parts[0]
+    url_parts[0] = extensions[:i18n].localized_path(url_parts[0], locale) ||
+                   url_parts[0]
     url = url_parts.join("#")
-    url_for(url, options)
+    url = url_for(url, options)
+    # Replace leading locale url segment with domain
+    url.sub("/#{locale}/", full_url("/", locale))
   end
 
-  # Localized link_to with active class if current_page
+  # Link_to with active class if current_page
   def nav_link_to(text, url, options={})
-    is_active = locale_url_for(url.split("#")[0]) == url_for(current_page.url, relative: false)
+    is_active = url_for(url.split("#")[0], relative: false) ==
+                url_for(current_page.url, relative: false)
     options[:class] ||= ""
     options[:class] << " active" if is_active
     locale_link_to(text, url, options)
@@ -191,7 +242,7 @@ helpers do
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
       locale_root_path = current_page.locale_root_path
-      url = locale_root_path && locale_root_path != "/error.html" ? locale_root_path : "/"
+      url = locale_root_path ? locale_root_path : "/"
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html
@@ -211,7 +262,7 @@ helpers do
     return avatar if avatar
     avatar = "/images/team/#{person.firstname.downcase}.jpg"
     return avatar if sitemap.find_resource_by_path(avatar)
-    return false
+    false
   end
 
   # Email to gravatar
@@ -223,7 +274,7 @@ helpers do
     http = Net::HTTP.new(uri.host, uri.port)
     request = Net::HTTP::Get.new(uri.request_uri)
     response = http.request(request)
-    return response.code.to_i == 404 ? false : url
+    response.code.to_i == 404 ? false : url
   end
 
   # Get blog author

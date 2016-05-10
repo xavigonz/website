@@ -4,23 +4,8 @@ title:
   de: 404 - Seite nicht gefunden
   en: 404 - Page not found
 directory_index: false
+robots: noindex,nofollow
 ---
-
-<% if is_default_locale?
-  # Redirect to localized error page when needed
-  error_pages = {}
-  (langs - [I18n.locale]).each do |lang|
-    error_pages[lang] = locale_url_for(current_path, locale: lang)
-  end
-  %>
-  <script>
-  try {
-    var error_pages = JSON.parse('<%= error_pages.to_json.html_safe %>');
-    var lang = window.location.pathname.replace(/^\//, '').split('/')[0];
-    error_pages[lang] && window.location.replace(error_pages[lang]);
-  } catch (error) {}
-  </script>
-<% end %>
 
 <section class="gray">
   <div class="row">
