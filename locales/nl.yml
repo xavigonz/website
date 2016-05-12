@@ -12,7 +12,7 @@ nl:
     heading: "Wij zijn Defacto"
     heading2: "Leren en ontwikkelen sinds 1987"
     references: Referenties
-    press: In de media
+    press: Media
     team:
       work_with_us: Werken bij
       you: jij?
@@ -52,7 +52,7 @@ nl:
     phone: "050 3144832"
     phone_link: "+31503144832"
   press:
-    heading: "Defacto - In de media"
+    heading: "Media"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"

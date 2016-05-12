@@ -14,7 +14,7 @@ de:
     koppelingen: schnittstellen
     testimonials: kundenreferenzen
     referenties: referenzen
-    in-de-media: presse
+    media: presse
   urls:
     contact: https://formkeep.com/f/bfad79e126e9
     productsheet: https://formkeep.com/f/bfad79e126e9
@@ -65,7 +65,7 @@ de:
     phone: "040 306988472"
     phone_link: "+4940306988472"
   press:
-    heading: "Defacto - Presse"
+    heading: "Presse"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
