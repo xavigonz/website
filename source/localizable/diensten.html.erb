@@ -3,22 +3,25 @@ title:
   nl: Diensten
   de: Service
   en: Services
+description:
+  nl: Defacto Software levert e-learning, implementatietrajecten, veilige hosting en security en koppelingen met vele andere (HR) systemen.
+  de: Defacto Software bietet E-Learning, Implementierungen, safe Hosting und Security und Verbindungen zu vielen anderen (Quell-)Systemen.
 ---
 
 <section class="gray">
   <div class="row">
-    <h2><%= t("services.title") %></h2>
+    <h1><%= t("services.title") %></h1>
     <br>
 
     <ul class="solitions-list">
 
       <li class="elearning">
-        <% link_to "/elearning.html", class: "col left" do %>
+        <% link_to "/e-learning.html", class: "col left" do %>
           <h2><%= t("services.services.elearning.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.elearning.desc", link: link_to(t("services.services.elearning.name"), "/elearning.html")) %></p>
-          <%= link_to t("actions.read_more"), "/elearning.html", class: "button blue outline" %>
+          <p><%= t("services.services.elearning.desc", link: link_to(t("services.services.elearning.name"), "/e-learning.html")) %></p>
+          <%= link_to t("actions.read_more"), "/e-learning.html", class: "button blue outline" %>
         </div>
       </li>
 
@@ -33,12 +36,12 @@ title:
       </li>
 
       <li class="hosting">
-        <% link_to "/hosting.html", class: "col left" do %>
+        <% link_to "/hosting-security.html", class: "col left" do %>
           <h2><%= t("services.services.hosting.name") %></h2>
         <% end %>
         <div class="col right">
-          <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting.html")) %></p>
-          <%= link_to t("actions.read_more"), "/hosting.html", class: "button red outline" %>
+          <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting-security.html")) %></p>
+          <%= link_to t("actions.read_more"), "/hosting-security.html", class: "button red outline" %>
         </div>
       </li>
 
@@ -55,4 +58,3 @@ title:
     </ul>
   </div>
 </section>
-

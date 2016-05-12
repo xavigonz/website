@@ -8,8 +8,7 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     page.path =~ /\.html/ &&
     page.metadata[:options][:lang] == I18n.locale &&
     !(page.data.robots && page.data.robots.include?("noindex")) &&
-    !(page.path =~ /CNAME.html/) &&
-    !(page.path =~ /workshop-convenant-mt\.html/)
+    !(page.path =~ /CNAME.html/)
     }.each do |page|
       xml.url do
         xml.loc full_url(page.url)

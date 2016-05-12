@@ -59,6 +59,10 @@ page "/*.txt", layout: false
 ignore "/fonts/icons/selection.json"
 
 redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
+redirect "elearning.html", to: "e-learning.html"
+redirect "elearning-starterkit.html", to: "e-learning-starterkit.html"
+redirect "hosting.html", to: "hosting-security.html"
+redirect "capp.html", to: "capp-lms.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
@@ -183,6 +187,15 @@ helpers do
       page.data.title.is_a?(Hash) && page.data.title[I18n.locale]
     return page.data.title + appendTitle if page.data.title
     "Defacto - Developing People"
+  end
+
+  # Use frontmatter for meta description
+  def meta_description(page = current_page)
+    return page.data.description.send(I18n.locale) if
+      page.data.description.is_a?(Hash) && page.data.description[I18n.locale]
+    return page.data.description if page.data.description
+    return Nokogiri::HTML(page.summary(160)).text if is_blog_article?
+    t("head.default_description")
   end
 
   # Localize page_classes
