@@ -14,6 +14,7 @@ de:
     koppelingen: schnittstellen
     testimonials: kundenreferenzen
     referenties: referenzen
+    media: presse
   urls:
     contact: https://formkeep.com/f/bfad79e126e9
     productsheet: https://formkeep.com/f/bfad79e126e9
@@ -24,6 +25,7 @@ de:
     heading: "Wir sind Defacto"
     heading2: "Bilden und Entwickeln seit 1987"
     references: "Referenzen"
+    press: Presse
     team:
       work_with_us: "Arbeiten bei"
       you: "Sie?"
@@ -62,6 +64,8 @@ de:
     heading2: "Wir lernen Sie gerne kennen, bei Ihnen, oder bei uns in Groningen."
     phone: "040 306988472"
     phone_link: "+4940306988472"
+  press:
+    heading: "Presse"
   elearning:
     cta_bottom:
       formkeep_title: "E-Learning: meer informatie"
