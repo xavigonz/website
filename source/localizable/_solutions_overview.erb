@@ -8,50 +8,44 @@
   <div class="row">
     <div class="solution">
       <div class="solution-icon">
-        <%= link_to image_tag("icons/leren-blue.png", alt: t("home.solutions.learn.title")), "/capp-lms.html" %>
+        <%= locale_link_to image_tag("icons/leren-blue.png", alt: t("home.solutions.learn.title")), "/capp-lms.html" %>
       </div>
-      <h3><%= link_to t("home.solutions.learn.title"), "/capp.html" %></h3>
-      <p><%= t("home.solutions.learn.text_html", link: link_to("CAPP", "/capp-lms.html")) %></p>
-      <div class="solution-checklist">
-        <ul class="checklist">
-           <% t("home.solutions.learn.keywords").each do |keyword| %>
-            <li><%= keyword %></li>
-          <% end %>
-        </ul>
-      </div>
-      <%= link_to t("actions.read_more"), "/capp-lms.html", class: "button blue" %>
+      <h3><%= locale_link_to t("home.solutions.learn.title"), "/capp.html" %></h3>
+      <p><%= t("home.solutions.learn.text_html", link: locale_link_to("CAPP", "/capp-lms.html")) %></p>
+      <ul class="keywords">
+         <% t("home.solutions.learn.keywords").each do |keyword| %>
+          <li><%= keyword %></li>
+        <% end %>
+      </ul>
+      <%= locale_link_to t("actions.read_more"), "/capp-lms.html", class: "button blue" %>
     </div>
 
     <div class="solution">
       <div class="solution-icon">
-        <%= link_to image_tag("icons/borging-blue.png", alt: t("home.solutions.quality.title")), "/kwaliteitspaspoort.html" %>
+        <%= locale_link_to image_tag("icons/borging-blue.png", alt: t("home.solutions.quality.title")), "/kwaliteitspaspoort.html" %>
       </div>
-      <h3><%= link_to t("home.solutions.quality.title"), "/kwaliteitspaspoort.html" %></h3>
+      <h3><%= locale_link_to t("home.solutions.quality.title"), "/kwaliteitspaspoort.html" %></h3>
       <p><%= t("home.solutions.quality.text_html") %></p>
-      <div class="solution-checklist">
-        <ul class="checklist">
-          <% t("home.solutions.quality.keywords").each do |keyword| %>
-            <li><%= keyword %></li>
-          <% end %>
-        </ul>
-      </div>
-      <%= link_to t("actions.read_more"), "/kwaliteitspaspoort.html", class: "button blue" %>
+      <ul class="keywords">
+        <% t("home.solutions.quality.keywords").each do |keyword| %>
+          <li><%= keyword %></li>
+        <% end %>
+      </ul>
+      <%= locale_link_to t("actions.read_more"), "/kwaliteitspaspoort.html", class: "button blue" %>
     </div>
 
     <div class="solution">
       <div class="solution-icon">
-        <%= link_to image_tag("icons/informeel-green.png", alt: t("home.solutions.informal.title")), "/learningspaces.html" %>
+        <%= locale_link_to image_tag("icons/informeel-green.png", alt: t("home.solutions.informal.title")), "/learningspaces.html" %>
       </div>
-      <h3><%= link_to t("home.solutions.informal.title"), "/learningspaces.html" %></h3>
-      <p><%= t("home.solutions.informal.text_html", link: link_to("LearningSpaces", "/learningspaces.html")) %></p>
-      <div class="solution-checklist">
-        <ul class="checklist checklist-green">
-           <% t("home.solutions.informal.keywords").each do |keyword| %>
-            <li><%= keyword %></li>
-          <% end %>
-        </ul>
-      </div>
-      <%= link_to t("actions.read_more"), "/learningspaces.html", class: "button green" %>
+      <h3><%= locale_link_to t("home.solutions.informal.title"), "/learningspaces.html" %></h3>
+      <p><%= t("home.solutions.informal.text_html", link: locale_link_to("LearningSpaces", "/learningspaces.html")) %></p>
+      <ul class="keywords">
+         <% t("home.solutions.informal.keywords").each do |keyword| %>
+          <li><%= keyword %></li>
+        <% end %>
+      </ul>
+      <%= locale_link_to t("actions.read_more"), "/learningspaces.html", class: "button green" %>
     </div>
   </div>
 
