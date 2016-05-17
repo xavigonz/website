@@ -101,10 +101,6 @@
   lastname: Akkerman
   email: k.akkerman@defacto.nl
 
-- firstname: Linda
-  lastname: Buitenkamp
-  email: l.buitenkamp@defacto.nl
-
 - firstname: Lizette
   lastname: Weening
   email: l.weening@defacto.nl
@@ -164,3 +160,7 @@
 - firstname: Tim
   lastname: Bakker
   email: t.bakker@defacto.nl
+
+- firstname: Bert
+  lastname: van Kalker
+  email: b.van.kalker@defacto.nl
