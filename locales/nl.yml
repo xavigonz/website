@@ -122,7 +122,7 @@ nl:
       capp:
         text_html: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
       learningspaces:
-        text_html: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+        text_html: "%{link} is de centrale plek voor kennis binnen teams."
         url: "http://www.learningspaces.nl"
     solutions:
       develop:
@@ -173,10 +173,10 @@ nl:
     name: Kwaliteitspaspoort
   learningspaces:
     cta_bottom:
-      heading_md: "Vandaag nog beginnen met een gratis trial?"
-    desc: "%{link} is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+      heading_md: "Direct beginnen met een gratis trial?"
+    desc: "%{link} is de centrale plek voor kennis binnen teams."
     hero:
-      text_md: "__LearningSpaces__ is een laagdrempelig social-learning platform dat leren en kennisdeling stimuleert."
+      text_md: "__LearningSpaces__ is de centrale plek voor kennis binnen teams."
     logo: logos/learningspaces-white.png
     name: LearningSpaces
     start_now: "Begin nu met LearningSpaces"
