@@ -1,10 +1,10 @@
 ---
 title:
-  nl: Kwaliteitspaspoort
-  de: Qualitaetspass
+  nl: CAPP Kwaliteitspaspoort
+  de: CAPP Qualitaetspass
   en: Quality Portfolio
 description:
-  nl: Aantoonbaar vakbekwaam met het CAPP Kwaliteitspaspoort van Defacto.
+  nl: Elke medewerker aantoonbaar bekwaam met het CAPP Kwaliteitspaspoort van Defacto. Maak kwaliteit transparant.
   de: Compliance mit dem CAPP Qualitätspass von Defacto.
 ---
 
@@ -13,15 +13,6 @@ description:
     <div class="hero-copy">
       <h1><%= t("kwaliteitspaspoort.hero.title") %></h1>
       <%= markitdown t("kwaliteitspaspoort.hero.text_md") %>
-
-      <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.contact") %>" method="POST">
-        <input type="hidden" name="utf8" value="✓">
-        <input type="hidden" name="form" value="<%= t("kwaliteitspaspoort.hero.formkeep_title") %>">
-        <input type="text" name="name" placeholder="<%= t("form.name") %>">
-        <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
-        <button type="submit"><%= t("actions.tell_me_more") %></button>
-      </form>
-
     </div>
   </div>
 </div>
