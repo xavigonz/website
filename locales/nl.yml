@@ -187,21 +187,21 @@ nl:
   services:
     services:
       elearning:
-        desc: "Met Defacto als ervaren en technisch onderlegde partner, wordt de %{link} in jouw organisatie onherroepelijk een succes."
+        desc: "Met Defacto als ervaren en technisch onderlegde partner, wordt de e-learning in jouw organisatie een succes."
         name: E-Learning
       hosting:
-        desc: "Met 25 jaar ervaring in ICT-implementaties bij grote (overheids) instanties weten wij bij uitstek dat gedegen %{link} van essentieel belang is."
+        desc: "Met 25 jaar ervaring in ICT-implementaties bij grote (overheids) instanties weten wij bij uitstek dat gedegen hosting en informatiebeveiliging van essentieel belang is."
         link: "hosting en informatiebeveiliging"
         name: "Hosting & Security"
       implementaties:
-        desc: "Defacto heeft een eigen %{link} ontwikkeld waarin onze projectleider en consultants samen met uw management team de strategie en uitvoering waarborgen."
+        desc: "Defacto heeft een eigen %{link} ontwikkeld waarin onze projectleider en consultants samen met jouw managementteam de strategie en uitvoering waarborgen."
         link: implementatiemethodiek
         name: Implementaties
       koppelingen:
-        desc: "Onze software kan %{link} worden met verschillende systemen."
-        link: geintegreerd
+        desc: "CAPP LMS kan naadloos %{link} worden met andere systemen zoals personeel informatiesystemen, toetsenbanken, e-learning leveranciers en nog vele andere."
+        link: geïntegreerd
         name: Koppelingen
-    title: "Diensten waar we trots op zijn."
+    title: "Met de onderstaande dienstverlening zorgen we voor een succesvolle implementatie van CAPP LMS"
   testimonials:
     title: "Wat anderen zeggen"
   thanks:
