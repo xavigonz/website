@@ -11,12 +11,64 @@
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
-      margin-bottom: 0.5em;
+      font-size: 2.2em;
       font-weight: 700;
+      margin-bottom: 1em;
+      text-align: center;
+
+      @include media($large-up) {
+        text-align: left;
+      }
+    }
+
+    h2 {
+      font-family: 'Montserrat', $base-font-family;
+      font-size: 2.2em;
+      font-weight: 700;
+      margin-bottom: 1em;
+      text-align: center;
+
+      @include media($large-up) {
+        text-align: left;
+      }
+    }
+
+    .hero-inner {
+      padding: 4em 0;
+    }
+
+    .hero-copy {
+      width: 100%;
+      padding: 1em;
+
+      @include media($large-up) {
+        width: 60%;
+        float: left;
+      }
+    }
+
+    .hero-image {
+      width: 100%;
+
+      @include media($large-up) {
+        width: 40%;
+        float: left;
+      }
     }
   }
 
-  .gray {
-    text-align: center;
+  .featured {
+    background: $blue-alt;
+    padding: 1em 1em 1em 4em;
+    position: relative;
+    color: $white;
+  }
+
+  .star {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    font-size: 4em;
+    color: $white;
   }
 }
