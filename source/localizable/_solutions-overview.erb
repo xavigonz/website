@@ -12,12 +12,7 @@
       </div>
       <h3><%= locale_link_to t("home.solutions.learn.title"), "/capp.html" %></h3>
       <p><%= t("home.solutions.learn.text_html", link: locale_link_to("CAPP", "/capp-lms.html")) %></p>
-      <ul class="keywords">
-         <% t("home.solutions.learn.keywords").each do |keyword| %>
-          <li><%= keyword %></li>
-        <% end %>
-      </ul>
-      <%= locale_link_to t("actions.read_more"), "/capp-lms.html", class: "button blue" %>
+      <%= locale_link_to t("actions.read_more"), "/capp-lms.html", class: "button small blue" %>
     </div>
 
     <div class="solution">
@@ -26,12 +21,7 @@
       </div>
       <h3><%= locale_link_to t("home.solutions.quality.title"), "/kwaliteitspaspoort.html" %></h3>
       <p><%= t("home.solutions.quality.text_html") %></p>
-      <ul class="keywords">
-        <% t("home.solutions.quality.keywords").each do |keyword| %>
-          <li><%= keyword %></li>
-        <% end %>
-      </ul>
-      <%= locale_link_to t("actions.read_more"), "/kwaliteitspaspoort.html", class: "button blue" %>
+      <%= locale_link_to t("actions.read_more"), "/kwaliteitspaspoort.html", class: "button small blue" %>
     </div>
 
     <div class="solution">
@@ -40,13 +30,7 @@
       </div>
       <h3><%= locale_link_to t("home.solutions.informal.title"), "/learningspaces.html" %></h3>
       <p><%= t("home.solutions.informal.text_html", link: locale_link_to("LearningSpaces", "/learningspaces.html")) %></p>
-      <ul class="keywords">
-         <% t("home.solutions.informal.keywords").each do |keyword| %>
-          <li><%= keyword %></li>
-        <% end %>
-      </ul>
-      <%= locale_link_to t("actions.read_more"), "/learningspaces.html", class: "button green" %>
+      <%= locale_link_to t("actions.read_more"), "/learningspaces.html", class: "button small green" %>
     </div>
   </div>
-
 </section>

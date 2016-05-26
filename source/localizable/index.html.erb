@@ -17,16 +17,16 @@ sitemap_priority: 1
   </div>
 </div>
 
-<%= partial "solutions_overview" %>
+<%= partial "solutions-overview" %>
 
-<section class="testimonials">
+<section class="testimonials cols">
   <div class="headline">
     <h2><%= t("testimonials.title") %></h2>
   </div>
   <div class="row">
 
     <%= partial "testimonials", locals: {
-      count: 1,
+      count: 2,
       featured: true,
       summary: true
     } %>
@@ -38,4 +38,5 @@ sitemap_priority: 1
 </section>
 
 <%= partial "german_news" if I18n.locale == :de  %>
+<%= partial "blog/featured" %>
 <%= partial "clients" %>

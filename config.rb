@@ -211,7 +211,7 @@ helpers do
     # Create classes from path
     classes = super(path.sub(/^[a-z]{2}\//, ""), options)
     # Add class if blog post
-    classes += " blog_article" if is_blog_article?
+    classes += " blog-article" if is_blog_article?
     # Prepend language class
     classes.prepend("#{I18n.locale} ")
   end

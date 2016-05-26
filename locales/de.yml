@@ -128,7 +128,6 @@ de:
       form_title: "vereinbaren Sie einen Termin"
       text_html: "Mehr Info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306988472</a> oder"
     hero:
-      since: "seit 1987"
       text: "Mehr als 200.000 Menschen nutzen unsere Software für die Fort- und Weiterbildung und Entwicklung ihrer Talente."
       title: "Developing People"
     highlights:
@@ -138,33 +137,14 @@ de:
         text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform, die informelles Lernen und den Wissensaustausch stimuliert."
         url: "http://www.learningspaces.de"
     solutions:
-      develop:
-        keywords:
-          - "Talentmanagement"
-          - "Kompetenzmanagement"
-          - "E-Portfolio"
-        text_html: "Fördern Sie Ihre Personalentwicklung mit einem übersichtlichen Talentmanagement und Kompetenzmanagement. Geben Sie Mitarbeitern die richtigen Tools für die Weiterentwicklung und ein persönliches E-Portfolio."
-        title: "Entwickeln"
       headline: "Defacto hilft Unternehmen beim Bildungsmanagement und der Personalentwicklung von Mitarbeitern"
       informal:
-        keywords:
-          - "Learning communities"
-          - "Schnelles und einfaches E-Learning"
-          - "Von- und miteinander lernen"
         text_html: "%{link} ist eine spielerische und einfach zu bedienende Plattform, die informelles Lernen und den Wissensaustausch stimuliert."
         title: "Informelles Lernen"
       learn:
-        keywords:
-          - "Bildungsmanagement"
-          - "Lernplattform"
-          - "E-Learning"
         text_html: "Ein starkes Learning Management System, dass neben dem Bildungsmanagement auch eine Lernplattform für Ihre Mitarbeiter bietet. Alle Fortbildungen und Weiterbildungen auf einem Blick mit CAPP Bilden."
         title: "Bilden"
       quality:
-        keywords:
-          - "Übersicht der Qualifikationen"
-          - "Zertifizierung"
-          - "Qualität sichern"
         text_html: "Erhalten Sie eine Übersicht in die Qualifikationen Ihrer Organisation, Ihrem Team und sich selbst. Vergleichen Sie den ‘Soll’ und ’Ist’ Zustand, versichern Sie Zertifizierungen und erfüllen Sie externe Qualitätsanforderungen."
         title: "Qualitätspass"
   hosting:
