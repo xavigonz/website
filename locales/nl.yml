@@ -116,9 +116,8 @@ nl:
       form_title: "Maak een afspraak"
       text_html: "Meer weten? Bel <a href=\"tel:+31503144832\" class=\"phone\">050 314 48 32</a> of"
     hero:
-      since: "sinds 1987"
-      text: "Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen."
-      title: "Developing People"
+      text: "Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen"
+      title: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
     highlights:
       capp:
         text_html: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
@@ -126,35 +125,16 @@ nl:
         text_html: "%{link} is de centrale plek voor kennis binnen teams."
         url: "http://www.learningspaces.nl"
     solutions:
-      develop:
-        keywords:
-          - "360° Feedback"
-          - Compententies
-          - Jaargesprekken
-        text_html: "Geef medewerkers efficiënte tools voor hun ontwikkelprocessen en een overzichtelijk persoonlijk portfolio."
-        title: Ontwikkelen
       headline: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
       informal:
-        keywords:
-          - "Direct aan de slag met Learning Communities"
-          - "Snel en eenvoudig kennis delen"
-          - "Kennis produceren en consumeren"
         text_html: "%{link} is een laagdrempelig sociaal leerplatform dat kennisdeling en leren stimuleert."
-        title: "Informeel Leren"
+        title: "LearningSpaces"
       learn:
-        keywords:
-          - Opleidingsadministratie
-          - Leermanagament
-          - "E-Learning / ELO"
-        text_html: "De stille, krachtige motor van uw academie. Stroomlijn processen en bespaar tijd. Creëer inzicht met %{link} Leren."
-        title: Leren
+        text_html: "Geef medewerkers efficiënte tools voor hun ontwikkelprocessen en een overzichtelijk persoonlijk portfolio. Creëer inzicht met %{link} Leren & Ontwikkelen."
+        title: CAPP Leren & Ontwikkelen
       quality:
-        keywords:
-          - Verplichte opleiding en praktijkervaring vastleggen
-          - Bewaken certificering
-          - Kwaliteitsmonitor voor accreditatie van NIAZ, ISO, WFT, Wet BIO, JSI, etc.
         text_html: "Real-time inzicht in vakbevoegdheid van uzelf, uw team en uw organisatie. Voldoe permanent en zichtbaar aan de (formele) kwaliteitseisen."
-        title: Kwaliteitspaspoort
+        title: CAPP Kwaliteitspaspoort
   hosting:
     heading: "Hosting & Security"
   implementaties:
@@ -205,6 +185,7 @@ nl:
     title: "Met de onderstaande dienstverlening zorgen we voor een succesvolle implementatie van CAPP LMS"
   testimonials:
     title: "Wat anderen zeggen"
+    more_testimonials: "Meer testimonials"
   thanks:
     heading: Bedankt!
     message: Je hoort zo snel mogelijk van ons.

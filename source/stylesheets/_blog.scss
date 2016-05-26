@@ -143,8 +143,6 @@
 
   .post-header {
     h2 {
-      font-size: 1.5em;
-      font-weight: 500;
       font-size: 1.6em;
       font-weight: 600;
     }
@@ -152,7 +150,7 @@
 }
 
 // Blog article
-.blog_article {
+.blog-article {
   .post-header {
     $background-color: #fcfcfc;
     @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
@@ -180,20 +178,22 @@
 
   article {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
   }
 
   .post-header {
+    text-align: left;
+
     h3 {
-      margin-bottom: 0.5em;
       font-size: 1.6em;
       font-weight: 600;
+      margin-bottom: 0.5em;
     }
   }
 
   .post-body {
     color: $medium-gray;
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-top: 1em;
     text-align: left;
   }

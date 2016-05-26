@@ -12,16 +12,12 @@ sitemap_priority: 1
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= t("home.hero.title") %></h1>
-      <span class="since"><%= t("home.hero.since") %></span>
-      <p><%= t("home.hero.text") %></p>
+      <h1><%= t("home.hero.text") %></h1>
     </div>
   </div>
 </div>
 
-<%#= partial "cta_appointment" %>
-<%= partial "solutions_overview" %>
-<%= partial "product_highlights" %>
+<%= partial "solutions-overview" %>
 
 <section class="testimonials cols">
   <div class="headline">
@@ -35,6 +31,9 @@ sitemap_priority: 1
       summary: true
     } %>
 
+  </div>
+  <div class="row">
+    <%= nav_link_to t("testimonials.more_testimonials"), "/testimonials.html", class: "button blue outline" %>
   </div>
 </section>
 
