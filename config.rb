@@ -261,6 +261,18 @@ helpers do
     html
   end
 
+  # Href langs
+  def href_langs
+    html = ""
+      langs.each do |lang|
+      locale_root_path = current_page.locale_root_path
+      url = locale_root_path ? locale_root_path : "/"
+      url = full_url locale_url_for(url, locale: lang)
+      html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
+    end
+    html
+  end
+
   # String to markdown
   def markitdown(string)
     # Kramdown::Document.new(string, config[:markdown]).to_html
