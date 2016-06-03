@@ -89,3 +89,15 @@ select {
 .placeholder {
   color: #aaa;
 }
+
+.required-message {
+  color: $red;
+}
+
+.required {
+  @include placeholder {
+    &::after {
+      content: " *";
+    }
+  }
+}
