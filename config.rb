@@ -211,7 +211,7 @@ helpers do
     # Create classes from path
     classes = super(path.sub(/^[a-z]{2}\//, ""), options)
     # Add class if blog post
-    classes += " blog_article" if is_blog_article?
+    classes += " blog-article" if is_blog_article?
     # Prepend language class
     classes.prepend("#{I18n.locale} ")
   end
@@ -257,6 +257,18 @@ helpers do
       locale_root_path = current_page.locale_root_path
       url = locale_root_path ? locale_root_path : "/"
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
+    end
+    html
+  end
+
+  # Href langs
+  def href_langs
+    html = ""
+    langs.each do |lang|
+      locale_root_path = current_page.locale_root_path
+      url = locale_root_path ? locale_root_path : "/"
+      url = full_url locale_url_for(url, locale: lang)
+      html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
     end
     html
   end

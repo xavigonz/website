@@ -1,25 +1,13 @@
 .index {
+  h1 {
+    font-size: 2.8em;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
   .hero {
     $hero-image: '../images/mood3.jpg';
-
-    // background-color: #324766; // dark blue
-    // background-color: #83ccd3; // light blue
-    // background-color: #73bbcb; // blue
-    // background-color: #E6EFC2; // light green
-    // background-color: #40b383; // medium green
-    // background-color: #95a105; // lime green
-
     background-image: url($hero-image);
-    // background-position: 0 -100px;
-    // background-size: 1729px 700px;
-  }
-
-  .solutions-overview {
-    padding-bottom: 0;
-
-    .col {
-      margin-bottom: 1em;
-    }
   }
 }
-

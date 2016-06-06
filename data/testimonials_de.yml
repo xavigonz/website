@@ -26,6 +26,23 @@
 #
 #####################################################################################################
 
+- name: Alke Stade
+  company: "Referentin Personalentwicklung, Evangelisches Krankenhaus Oldenburg"
+  avatar: testimonials/alke_stade.jpg
+  featured: true
+  quote: >
+    <p>Die Einführung eines softwaregestützten Personalentwicklungssystems wie CAPP mit seinen vielfältigen Modulen, stellt hohe
+    Anforderungen an eine Organisation wie unser Krankenhaus. In verschiedenen Arbeitsgruppen werden bisherige Prozesse überdacht
+    und neue Prozesse entwickelt.</p>
+    <p>Die Einführung eines E-Learningsystems bedeutet für uns einen regelrechten Kulturwandel. Für die Umsetzung dieser verschiedenen
+    Aufgaben ist ein verlässlicher Partner erforderlich, der bereit ist, auch um die Ecke zu denken und die Prozessveränderung im
+    Unternehmen zu begleiten.</p>
+    <p>Die Berater von Defacto haben uns dabei sehr engmaschig begleitet und gemeinsam mit uns passende Lösungen entwickelt. Dabei
+    werden wir immer wieder neu inspiriert und erhalten so ganz frische Denkansätze -weg von unseren bisherigen Ansätzen und hin zu
+    innovativen Lösungen. Die Zusammenarbeit mit den Kollegen von Defacto empfinden wir durchgängig als befruchtend, unterstützend und eng.</p>
+  summary: >
+   Die Einführung eines E-Learningsystems bedeutet für uns einen regelrechten Kulturwandel. Für die Umsetzung dieser verschiedenen Aufgaben ist ein verlässlicher Partner erforderlich, der bereit ist, auch um die Ecke zu denken und die Prozessveränderung im Unternehmen zu begleiten. Die Zusammenarbeit mit den Kollegen von Defacto empfinden wir durchgängig als befruchtend, unterstützend und eng.
+
 - name: Kristel Vissers
   company: "Projektleiter Qualitätspass, Máxima Medisch Centrum"
   quote: >
@@ -72,7 +89,6 @@
 - name: Peter van Overbruggen
   company: "Fortbildungsbeauftragter, ZuidZorg"
   avatar: testimonials/peter_van_overbruggen.jpg
-  featured: true
   quote: >
     <p>Das Projekt mit Defacto ging um die Einführung von CAPP11 in unserer Organisation mit allen drei Teilen
     (Bilden, Entwickeln, Qualitätspass). Der Kontakt mit den Leuten von Defacto verlief super. Sie richten sich auf Zusammenarbeit,

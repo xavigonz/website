@@ -153,14 +153,10 @@
   lastname: Dijkstra
   email: ronald@defacto.nl
 
-- firstname: Steef
-  lastname: Sinkeler
-  email: steef@defacto.nl
-
 - firstname: Tim
   lastname: Bakker
   email: t.bakker@defacto.nl
 
-- firstname: Bert
-  lastname: van Kalker
-  email: b.van.kalker@defacto.nl
+- firstname: Joke
+  lastname: Coens
+  email: j.coens@defacto.nl

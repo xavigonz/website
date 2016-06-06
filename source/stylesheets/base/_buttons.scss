@@ -47,6 +47,11 @@
     opacity: 0.5;
   }
 
+  &.small {
+    font-size: $base-font-size * 1.1;
+    padding: $base-spacing / 4 $base-spacing / 2;
+  }
+
   &.big {
     font-size: 1.3em;
   }

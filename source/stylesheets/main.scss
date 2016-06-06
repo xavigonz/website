@@ -15,8 +15,6 @@
 @import "clients";
 @import "team";
 @import "feature_list";
-@import "product_highlights";
-@import "cta_appointment";
 
 @import "home";
 @import "producten";
@@ -30,14 +28,17 @@
 @import "blog";
 @import "error";
 @import "bedankt";
-@import "workshop";
-@import "cta_workshop";
-@import "announcement";
 @import "german_news";
 @import "convenant";
-
+@import "solutions";
 
 .gray {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  margin: 1em;
   text-align: center;
 }
 
