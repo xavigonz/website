@@ -19,7 +19,7 @@
 
     h2 {
       font-family: 'Montserrat', $base-font-family;
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: 300;
       margin-bottom: 1em;
       text-align: center;
@@ -34,22 +34,7 @@
     }
 
     .hero-copy {
-      padding: 4em 2em;
-      width: 100%;
-
-      @include media($large-up) {
-        float: left;
-        width: 60%;
-      }
-    }
-
-    .hero-image {
-      width: 100%;
-
-      @include media($large-up) {
-        float: left;
-        width: 40%;
-      }
+      padding: 3em 2em;
     }
   }
 
@@ -71,9 +56,21 @@
 
   .row {
     padding: 0;
+
+    @include media($large-down) {
+      padding: 0 1em;
+    }
   }
 
   .col {
-    @include span-columns(6);
+    @include media($large-up) {
+      @include span-columns(6);
+    }
+  }
+
+  figure {
+    @include media($large-down) {
+      text-align: center;
+    }
   }
 }

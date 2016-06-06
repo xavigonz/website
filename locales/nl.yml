@@ -41,13 +41,17 @@ nl:
       linkedin: Deel op LinkedIn
   capp:
     cta_bottom:
-      formkeep_title: "CAPP: afpraak maken"
-      heading_md: "Samen een business case maken over hoeveel je kunt besparen met CAPP Leren?"
+      formkeep_title: "CAPP: afspraak maken"
+      heading_md: "Meer informatie over opleiden & leren met **CAPP LMS**?"
+      subheading: "Download de CAPP LMS Productsheet"
     desc: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
     hero:
       formkeep_title: "CAPP: download productsheet"
       text_md: "__CAPP LMS Software__ helpt uw medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen."
       title: "Opleiden & Leren met CAPP LMS"
+      subtitle_1: "Kennisintensieve organisaties kunnen niet zonder goed opgeleide medewerkers."
+      subtitle_2: "Maak medewerkers aantoonbaar vakbevoegd en vakbekwaam met CAPP LMS."
+      image: capp-lms-nl.png
     name: CAPP
   contact:
     form_title: "Wat kunnen we voor je betekenen?"

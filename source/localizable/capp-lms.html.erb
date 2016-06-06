@@ -1,31 +1,29 @@
 ---
 title:
-  nl: Opleiden, leren en ontwikkelen met CAPP LMS
+  nl: Opleiden, Leren en Ontwikkelen met CAPP LMS
   de: Ausbildung, Lernen und Entwicklung mit CAPP LMS
 description:
-  nl: CAPP LMS Software helpt medewerkers of klanten op optimale wijze op te leiden en hun vakmanschap te bevorderen.
+  nl: Maak medewerkers aantoonbaar vakbevoegd en vakbekwaam met CAPP LMS.
   de: CAPP LMS Software unterstützt Sie dabei das Können und Wissen Ihrer Mitarbeiter oder Kunden zu fördern.
 ---
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-header">
 
-      <h1>Opleiden &amp; Leren met CAPP LMS</h1>
-
+    <div class="row">
+      <div class="hero-header">
+        <h1><%= t("capp.hero.title") %></h1>
+      </div>
     </div>
 
-    <div class="hero-copy">
-
-      <h2>Kennisintensieve organisaties kunnen niet zonder goed opgeleide medewerkers.</h2>
-
-      <h2>Maak uw medewerkers aantoonbaar vakbevoegd en vakbekwaam met CAPP LMS.</h2>
-
-    </div>
-    <div class="hero-image">
-
-      <%= image_tag "ipad.png", title: "CAPP LMS", alt: "CAPP LMS" %>
-
+    <div class="row">
+      <div class="hero-copy col">
+        <h2><%= t("capp.hero.subtitle_1") %></h2>
+        <h2><%= t("capp.hero.subtitle_2") %></h2>
+      </div>
+      <div class="hero-image col">
+        <%= image_tag t("capp.hero.image"), title: "CAPP LMS", alt: "CAPP LMS" %>
+      </div>
     </div>
   </div>
 </div>
@@ -34,9 +32,8 @@ description:
 
 <section class="gray">
   <div class="row">
-    <h2>Meer informatie over opleiden &amp; leren met CAPP LMS?</h2>
-
-    <h3>Download de CAPP LMS Productsheet</h3>
+    <h2><%= markitdown t("capp.cta_bottom.heading_md") %></h2>
+    <h3><%= t("capp.cta_bottom.subheading") %></h3>
     <br>
 
     <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.productsheet") %>" method="POST">
