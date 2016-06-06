@@ -54,13 +54,17 @@ de:
       linkedin: Teile auf LinkedIn
   capp:
     cta_bottom:
-      formkeep_title: "CAPP: afpraak maken"
-      heading_md: "Zusammen einen Business Case erstellen um zu sehen wie viel Sie mit CAPP einsparen können?"
+      formkeep_title: "CAPP: afspraak maken"
+      heading_md: "Mehr Informationen über Fort- und Weiterbilden mit CAPP LMS?"
+      subheading: "Produktblatt CAPP LMS herunterladen"
     desc: "%{link} sorgt dafür das Ihre Mitarbeiter einfach und zielgerichtet lernen und ihre Talente weiterentwickeln."
     hero:
       formkeep_title: "CAPP: download productsheet"
       text_md: "__CAPP LMS__ unterstützt Sie dabei das Können und Wissen Ihrer Mitarbeiter oder Kunden zu fördern."
-      title: "Fortbilden und Lernen mit CAPP LMS"
+      title: "Fort- und Weiterbilden mit CAPP LMS"
+      subtitle_1: "Wissensintensive Organisationen brauchen gut ausgebildete Mitarbeiter."
+      subtitle_2: "Befähigen und qualifizieren Sie Ihre Mitarbeiter nachweislich mit CAPP LMS."
+      image: capp-lms-de.png
     name: CAPP LMS
   contact:
     form_title: "Wie können wir Ihnen helfen?"

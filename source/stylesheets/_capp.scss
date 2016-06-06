@@ -11,12 +11,66 @@
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
-      margin-bottom: 0.5em;
+      font-size: 3em;
       font-weight: 700;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Montserrat', $base-font-family;
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 1em;
+      text-align: center;
+
+      @include media($large-up) {
+        text-align: left;
+      }
+    }
+
+    .hero-inner {
+      padding: 4em 0;
+    }
+
+    .hero-copy {
+      padding: 3em 2em;
     }
   }
 
-  .gray {
-    text-align: center;
+  .featured {
+    background: $blue-alt;
+    color: $white;
+    padding: 1em 1em 1em 4em;
+    position: relative;
+  }
+
+  .star {
+    color: $white;
+    font-size: 4em;
+    font-weight: bold;
+    left: 20px;
+    position: absolute;
+    top: 0;
+  }
+
+  .row {
+    padding: 0;
+
+    @include media($large-down) {
+      padding: 0 1em;
+    }
+  }
+
+  .col {
+    @include media($large-up) {
+      @include span-columns(6);
+    }
+  }
+
+  figure {
+    @include media($large-down) {
+      text-align: center;
+    }
   }
 }
