@@ -268,6 +268,7 @@ helpers do
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
       end
+      #url = sitemap.find_resource_by_path(url) ? url : "/"
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html
