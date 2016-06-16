@@ -13,14 +13,39 @@
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
-      font-size: 3em;
+      font-size: 2.4em;
       font-weight: 700;
       margin: 0 auto 0.5em;
       max-width: 800px;
+
+      @include media($large-down) {
+        font-size: 2em;
+      }
     }
 
     p {
+      font-style: italic;
       margin: 0 auto;
+
+      @include media($large-down) {
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  .row {
+    padding: 0;
+
+    @include media($large-down) {
+      padding: 1em;
+    }
+  }
+
+  .kpp-list {
+    .col {
+      @include media($large-up) {
+        @include span-columns(6);
+      }
     }
   }
 
@@ -34,9 +59,5 @@
     img {
       max-height: 160px;
     }
-  }
-
-  .gray {
-    text-align: center;
   }
 }
