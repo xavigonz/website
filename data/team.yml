@@ -41,10 +41,6 @@
   lastname: Kemp
   email: c.kemp@defacto.nl
 
-- firstname: Ewald
-  lastname: van Kampen
-  email: e.van.kampen@defacto.nl
-
 - firstname: Ewoud
   lastname: Veenhuizen
   email: e.veenhuizen@defacto.nl
@@ -84,10 +80,6 @@
 - firstname: Janine
   lastname: Veenker
   email: j.veenker@defacto.nl
-
-- firstname: Jesse
-  lastname: Terpstra
-  email: j.terpstra@defacto.nl
 
 - firstname: Joep
   lastname: Lenglet
