@@ -148,12 +148,12 @@ nl:
   kwaliteitspaspoort:
     cta_bottom:
       formkeep_title: "Kwaliteitspaspoort: afspraak maken"
-      heading_md: "Nu beginnen met het behalen van je accreditaties met het Kwaliteitspaspoort?"
+      heading_md: "Nu beginnen met het behalen van je accreditaties met het CAPP Kwaliteitspaspoort?"
     desc: "Garandeer kwaliteit binnen uw organisatie door te werken aan bevoegdheden en bekwaamheden van uw medewerkers. Maak uw organisatie toekomstbestendig met het %{link}."
     hero:
       formkeep_title: "Kwaliteitspaspoort: meer informatie"
-      text_md: "Aantoonbaar vakbekwaam met CAPP Kwaliteitspaspoort"
-      title: Kwaliteitspaspoort
+      text_md: "Maak kwaliteit transparant"
+      title: Elke medewerker aantoonbaar bekwaam met het CAPP Kwaliteitspaspoort
     logo: logos/kwaliteitspaspoort-white.png
     name: Kwaliteitspaspoort
   learningspaces:

@@ -1,7 +1,5 @@
 .kwaliteitspaspoort {
   .hero {
-    // $hero-image: '../images/mood3.jpg';
-
     @include radial-gradient(circle at 50%,
       $blue 33%,
       rgba($blue, 0.5) 33%,
@@ -10,19 +8,43 @@
       $fallback: $blue-alt);
 
     background-attachment: scroll;
-    // background-size: auto;
-    // background-image: url($hero-image);
-    // background-position: 0 -150px;
-    // background-size: 1729px 700px;
+    padding-bottom: 0;
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
-      margin-bottom: 0.5em;
+      font-size: 2.4em;
       font-weight: 700;
+      margin: 0 auto 0.5em;
+      max-width: 800px;
 
-      // @include media($large-up) {
-      //   font-size: 4em;
-      // }
+      @include media($large-down) {
+        font-size: 2em;
+      }
+    }
+
+    p {
+      font-style: italic;
+      margin: 0 auto;
+
+      @include media($large-down) {
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  .row {
+    padding: 0;
+
+    @include media($large-down) {
+      padding: 1em;
+    }
+  }
+
+  .kpp-list {
+    .col {
+      @include media($large-up) {
+        @include span-columns(6);
+      }
     }
   }
 
@@ -36,9 +58,5 @@
     img {
       max-height: 160px;
     }
-  }
-
-  .gray {
-    text-align: center;
   }
 }
