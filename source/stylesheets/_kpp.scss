@@ -1,7 +1,5 @@
 .kwaliteitspaspoort {
   .hero {
-    padding-bottom: 0em;
-
     @include radial-gradient(circle at 50%,
       $blue 33%,
       rgba($blue, 0.5) 33%,
@@ -10,6 +8,7 @@
       $fallback: $blue-alt);
 
     background-attachment: scroll;
+    padding-bottom: 0;
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
