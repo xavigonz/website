@@ -36,11 +36,6 @@ if root_locale == :nl
   end
 end
 
-# Ignore blog for other languages other than :nl
-if root_locale != :nl
-  ignore "/blog/*"
-end
-
 # # Prevent other locales from building (breaks page_classes)
 # if root_locale == :nl
 #   (langs - [root_locale, :de]).each do |locale|
@@ -81,6 +76,12 @@ Time.zone = "CET"
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
+  case root_locale
+  when :nl
+    blog.sources = "/nl/{year}-{month}-{day}-{title}.html"
+  when :de
+    blog.sources = "/de/{year}-{month}-{day}-{title}.html"
+  end
   # blog.tag_template = "blog/tag.html"
   # blog.calendar_template = "blog/calendar.html"
   blog.paginate = false
@@ -201,7 +202,7 @@ helpers do
   # Localize page_classes
   def page_classes(path=current_path.dup, options={})
     # Prevent page classes from being translated
-    unless I18n.locale == :nl
+    unless I18n.locale == :nl || current_page.url == "/blog/" || is_blog_article?
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
           resource.metadata[:options][:lang] == :nl
