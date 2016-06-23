@@ -36,6 +36,15 @@ if root_locale == :nl
   end
 end
 
+# Ignore blog for other languages
+if root_locale == :de
+  ignore "/blog/nl/*"
+end
+
+if root_locale == :nl
+  ignore "/blog/de/*"
+end
+
 # # Prevent other locales from building (breaks page_classes)
 # if root_locale == :nl
 #   (langs - [root_locale, :de]).each do |locale|
