@@ -264,14 +264,12 @@ helpers do
     html = ""
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-
       if (current_page.url == "/blog/")
         url = full_url("/blog", lang)
       else
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
       end
-
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html
@@ -281,9 +279,15 @@ helpers do
   def href_langs
     html = ""
     langs.each do |lang|
-      locale_root_path = current_page.locale_root_path
-      url = locale_root_path ? locale_root_path : "/"
-      url = full_url locale_url_for(url, locale: lang)
+      if (current_page.url == "/blog/")
+        url = full_url("/blog", lang)
+      else
+        locale_root_path = current_page.locale_root_path
+        url = locale_root_path ? locale_root_path : "/"
+      end
+      # locale_root_path = current_page.locale_root_path
+      # url = locale_root_path ? locale_root_path : "/"
+      # url = full_url locale_url_for(url, locale: lang)
       html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
     end
     html
