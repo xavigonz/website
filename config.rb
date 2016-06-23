@@ -39,9 +39,7 @@ end
 # Ignore blog for other languages
 if root_locale == :de
   ignore "/blog/nl/*"
-end
-
-if root_locale == :nl
+elsif root_locale == :nl
   ignore "/blog/de/*"
 end
 
@@ -264,7 +262,7 @@ helpers do
     html = ""
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-      if (current_page.url == "/blog/")
+      if current_page.url == "/blog/"
         url = full_url("/blog", lang)
       else
         locale_root_path = current_page.locale_root_path
@@ -279,15 +277,12 @@ helpers do
   def href_langs
     html = ""
     langs.each do |lang|
-      if (current_page.url == "/blog/")
+      if current_page.url == "/blog/"
         url = full_url("/blog", lang)
       else
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
       end
-      # locale_root_path = current_page.locale_root_path
-      # url = locale_root_path ? locale_root_path : "/"
-      # url = full_url locale_url_for(url, locale: lang)
       html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
     end
     html

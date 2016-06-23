@@ -1,6 +1,6 @@
 ---
 title: Hauptstadt Kongress Berlin 2016
-date: 2016-06-20 11:58 CEST
+date: 2016-06-23 11:58 CEST
 tags:
 author: Martina
 lang: de
@@ -14,3 +14,11 @@ Mit 25 Jahren Erfahrung in dem Markt können wir unseren Teil zu diesem Thema be
 Das große Thema für Krankenhäuser dieses Jahr: E-Learning. Wir möchten unsere Erfahrungen gerne teilen. Schließlich haben wir genügend Erfahrung, weil wir mindestens 10 Krankenhäuser in diesem Prozess begleitet und überwacht haben. Unsere Fortbildungsberater helfen Ihnen bei diesem Prozess und unsere E-Learning Experten helfen Ihnen beim Erstellen von Ihrem eigenen E-Learning-Material. Möchten Sie mehr über unsere Prozesse wissen, erkundigen Sie sich ruhig bei unseren Kunden, wir bringen Sie gerne mit ihnen in Kontakt.
 
 Durch die interessanten Gespräche sind wir die langen Tage, die wunden Füße und Rückenschmerzen vergessen. Wir haben das Leuchten der Gesichter bei dem Gespräch der gemeinsamen Nutzung von unserem Produkt gesehen, sahen aber auch Stirnrunzeln wenn nicht alle Probleme gelöst wurden, die Möglichkeiten kurz oder lang diskutiert und ausgiebig gesprochen über Innovation und E-Learning. Es hat uns Spaß gemacht und wir haben gerne unsere Gedanken mit Ihnen geteilt. Wir sind sicher im nächsten Jahr wieder mit dabei. Sie auch?
+
+![Hauptstadt Kongress Berlin 2016](/images/blog/de/01.jpg)
+
+![Hauptstadt Kongress Berlin 2016](/images/blog/de/03.jpg)
+
+![Hauptstadt Kongress Berlin 2016](/images/blog/de/04.jpg)
+
+![Hauptstadt Kongress Berlin 2016](/images/blog/de/05.jpg)
