@@ -36,9 +36,11 @@ if root_locale == :nl
   end
 end
 
-# Ignore blog for other languages other than :nl
-if root_locale != :nl
-  ignore "/blog/*"
+# Ignore blog for other languages
+if root_locale == :de
+  ignore "/blog/nl/*"
+elsif root_locale == :nl
+  ignore "/blog/de/*"
 end
 
 # # Prevent other locales from building (breaks page_classes)
@@ -81,6 +83,12 @@ Time.zone = "CET"
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.permalink = ":title"
+  case root_locale
+  when :nl
+    blog.sources = "/nl/{year}-{month}-{day}-{title}.html"
+  when :de
+    blog.sources = "/de/{year}-{month}-{day}-{title}.html"
+  end
   # blog.tag_template = "blog/tag.html"
   # blog.calendar_template = "blog/calendar.html"
   blog.paginate = false
@@ -201,7 +209,7 @@ helpers do
   # Localize page_classes
   def page_classes(path=current_path.dup, options={})
     # Prevent page classes from being translated
-    unless I18n.locale == :nl
+    unless I18n.locale == :nl || current_page.url == "/blog/" || is_blog_article?
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
           resource.metadata[:options][:lang] == :nl
@@ -254,8 +262,12 @@ helpers do
     html = ""
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-      locale_root_path = current_page.locale_root_path
-      url = locale_root_path ? locale_root_path : "/"
+      if current_page.url == "/blog/"
+        url = full_url("/blog", lang)
+      else
+        locale_root_path = current_page.locale_root_path
+        url = locale_root_path ? locale_root_path : "/"
+      end
       html << locale_link_to(img, url, title: flag_titles[lang], locale: lang)
     end
     html
@@ -265,9 +277,12 @@ helpers do
   def href_langs
     html = ""
     langs.each do |lang|
-      locale_root_path = current_page.locale_root_path
-      url = locale_root_path ? locale_root_path : "/"
-      url = full_url locale_url_for(url, locale: lang)
+      if current_page.url == "/blog/"
+        url = full_url("/blog", lang)
+      else
+        locale_root_path = current_page.locale_root_path
+        url = locale_root_path ? locale_root_path : "/"
+      end
       html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
     end
     html
