@@ -264,6 +264,8 @@ helpers do
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
       if current_page.url == "/blog/"
         url = full_url("/blog", lang)
+      elsif current_page.url == "/convenant-medische-technologie/"
+        url = full_url("", lang)
       else
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
