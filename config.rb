@@ -284,6 +284,7 @@ helpers do
       else
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
+        url = full_url locale_url_for(url, locale: lang)
       end
       html << tag(:link, rel: "alternate", href: url, hreflang: "#{lang}-#{lang}") + "\n    "
     end
