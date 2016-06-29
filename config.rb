@@ -91,8 +91,9 @@ activate :blog do |blog|
   end
   # blog.tag_template = "blog/tag.html"
   # blog.calendar_template = "blog/calendar.html"
-  blog.paginate = false
-  # blog.per_page = 10
+  blog.paginate = true
+  blog.page_link = "{num}"
+  blog.per_page = 10
 end
 
 page "blog/*", layout: :blog_post_layout

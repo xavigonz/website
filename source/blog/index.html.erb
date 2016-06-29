@@ -3,19 +3,11 @@ title: Blog
 description:
   nl: Ons blog staat vol met trends en verhalen over onze producten.
   de: Unser Blog ist voll von Trends und Geschichten über unsere Produkte.
-#pageable: true
-#per_page: 2
+pageable: true
 ---
 
 <section class="row">
   <div class="col">
-
-    <% if paginate && num_pages > 1 %>
-      <p>Page <%= page_number %> of <%= num_pages %></p>
-      <% if prev_page %>
-        <p><%= link_to 'Previous page', prev_page %></p>
-      <% end %>
-    <% end %>
 
     <ol>
       <% page_articles.each_with_index do |article, i| %>
@@ -50,6 +42,13 @@ description:
     <% if paginate %>
       <% if next_page %>
         <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>
+
+    <% if paginate && num_pages > 1 %>
+      <p>Page <%= page_number %> of <%= num_pages %></p>
+      <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
       <% end %>
     <% end %>
 
