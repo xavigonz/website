@@ -51,6 +51,18 @@ $popup-mobile-mode: max-width 400px;
     @include animation(popup-hide 0.4s ease-in);
   }
 
+  input {
+    @include media($medium-down) {
+      padding: 0.5em;
+    }
+  }
+
+  button {
+    @include media($medium-down) {
+      padding: 0.5em;
+    }
+  }
+
   .close {
     background-color: #fff;
     border-radius: 30px;
@@ -80,6 +92,15 @@ $popup-mobile-mode: max-width 400px;
 
   img {
     margin: auto;
+  }
+
+  .popup-img {
+    display: block;
+
+    @include media ($medium-down) {
+      margin: 0 auto;
+      width: 40%;
+    }
   }
 
   .pre {

@@ -69,7 +69,7 @@ nl:
   elearning_ebook:
     formkeep_title: "E-book download"
     formkeep_title_popup: "E-book download popup"
-    heading_html: "Download gratis ons <span class=\"pre\">E-Learning</span> Handboek"
+    heading_html: "Ontvang gratis ons <span class=\"pre\">E-Learning</span> Handboek"
     image_alt: "E-Learning Handboek Leren & Laten Leren"
   elearning_starterkit:
     desc: "Maak je eigen content met de %{link}. Zo bespaar je geld en sluit je content beter aan bij je behoeften. De E-Learning Starterkit bevat alles wat je nodig hebt om meteen van start te gaan."
