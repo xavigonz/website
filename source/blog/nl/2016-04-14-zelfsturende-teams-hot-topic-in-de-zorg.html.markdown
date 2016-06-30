@@ -4,7 +4,6 @@ date: 2016-04-14 7:30 CET
 tags:
 author: Marian
 lang: nl
-featured: true
 image: images/social/zelfsturende-teams-1200x630.png
 ---
 
