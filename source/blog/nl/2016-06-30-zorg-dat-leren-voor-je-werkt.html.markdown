@@ -4,7 +4,6 @@ date: 2016-06-30 10:58 CEST
 tags:
 author: Marian
 lang: nl
-featured: true
 image: images/social/zorg-dat-leren-voor-je-werkt-1200x630.png
 ---
 
