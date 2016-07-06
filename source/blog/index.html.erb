@@ -39,17 +39,28 @@ pageable: true
       <% end %>
     </ol>
 
-    <% if paginate %>
-      <% if next_page %>
-        <p><%= link_to 'Next page', next_page %></p>
-      <% end %>
-    <% end %>
-
     <% if paginate && num_pages > 1 %>
-      <p>Page <%= page_number %> of <%= num_pages %></p>
-      <% if prev_page %>
-        <p><%= link_to 'Previous page', prev_page %></p>
-      <% end %>
+      <div class="text-center">
+        <ul class="pagination">
+          <% if prev_page %>
+            <li><%= link_to '<i class="icon-arrow-left">&laquo;</i> Vorige', prev_page, class: 'page-step prev' %></li>
+          <% end %>
+
+          <% for p in 1..num_pages %>
+            <% if p == page_number %>
+              <li class="current"><%= p %></li>
+            <% elsif p == 1 %>
+              <li><%= link_to p, "/blog/" %></li>
+            <% else %>
+              <li><%= link_to p, "/blog/#{p}/" %></li>
+            <% end %>
+          <% end %>
+
+          <% if next_page %>
+            <li><%= link_to 'Volgende <i class="icon-arrow-right">&raquo;</i>', next_page, class: 'page-step next' %></li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
 
   </div>

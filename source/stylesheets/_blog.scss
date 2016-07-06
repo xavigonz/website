@@ -21,6 +21,24 @@
       padding: 3em 1em;
     }
 
+    .page-step {
+      background-color: $orange;
+      color: $white;
+
+      &:hover {
+        background-color: darken($orange, 10%);
+        color: $white;
+      }
+    }
+
+    .prev {
+      margin-right: 3em;
+    }
+
+    .next {
+      margin-left: 3em;
+    }
+
     .col {
       @include span-columns(12);
 
@@ -147,6 +165,36 @@
       font-weight: 600;
     }
   }
+}
+
+// Pagination
+.text-center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 2em 0;
+  padding: 0;
+
+  li {
+    display: inline;
+  }
+
+  .current {
+    background-color: $blue;
+    color: $white;
+    padding: 0.5em 1em;
+  }
+
+  a {
+    padding: 0.5em 1em;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+
 }
 
 // Blog article
