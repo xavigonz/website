@@ -35,6 +35,8 @@
     <meta property="og:image" content="<%= full_url(asset_url(current_page.data.image || "images/social/defacto-1200x630.png")) %>">
     <meta property="og:locale" content="<%= full_locale %>">
 
+    <link href="https://plus.google.com/101736158500234596266" rel="publisher">
+
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "main" %>
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
