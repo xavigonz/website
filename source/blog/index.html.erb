@@ -46,13 +46,12 @@ pageable: true
             <li><%= link_to t("blog.prev"), prev_page, class: 'page-step prev' %></li>
           <% end %>
 
-          <% for p in 1..num_pages %>
-            <% if p == page_number %>
-              <li class="current"><%= p %></li>
-            <% elsif p == 1 %>
-              <li><%= link_to p, "/blog/" %></li>
+          <% for page in 1..num_pages %>
+            <% if page == page_number %>
+              <li class="current"><%= page %></li>
             <% else %>
-              <li><%= link_to p, "/blog/#{p}/" %></li>
+              <% append = page == 1 ? nil : "#{page}/" %>
+              <li><%= link_to page, "/blog/#{append}" %></li>
             <% end %>
           <% end %>
 
