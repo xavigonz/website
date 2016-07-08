@@ -31,14 +31,6 @@
       }
     }
 
-    .prev {
-      margin-right: 3em;
-    }
-
-    .next {
-      margin-left: 3em;
-    }
-
     .col {
       @include span-columns(12);
 
@@ -194,8 +186,24 @@ body[class*="_index"] {
     &:hover {
       background-color: $light-gray;
     }
+
   }
 
+  .prev {
+    margin-right: 3em;
+
+    &::before {
+      content: "« ";
+    }
+  }
+
+  .next {
+    margin-left: 3em;
+
+    &::after {
+      content: " »";
+    }
+  }
 }
 
 // Blog article

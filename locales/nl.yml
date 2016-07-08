@@ -39,6 +39,8 @@ nl:
       facebook: Deel op Facebook
       google_plus: Deel op Google+
       linkedin: Deel op LinkedIn
+    next: "Volgende"
+    prev: "Vorige"
   capp:
     cta_bottom:
       formkeep_title: "CAPP: afspraak maken"

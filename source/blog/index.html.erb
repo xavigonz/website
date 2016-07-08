@@ -43,7 +43,7 @@ pageable: true
       <div class="text-center">
         <ul class="pagination">
           <% if prev_page %>
-            <li><%= link_to '<i class="icon-arrow-left">&laquo;</i> Vorige', prev_page, class: 'page-step prev' %></li>
+            <li><%= link_to t("blog.prev"), prev_page, class: 'page-step prev' %></li>
           <% end %>
 
           <% for p in 1..num_pages %>
@@ -57,7 +57,7 @@ pageable: true
           <% end %>
 
           <% if next_page %>
-            <li><%= link_to 'Volgende <i class="icon-arrow-right">&raquo;</i>', next_page, class: 'page-step next' %></li>
+            <li><%= link_to t("blog.next"), next_page, class: 'page-step next' %></li>
           <% end %>
         </ul>
       </div>

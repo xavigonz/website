@@ -98,7 +98,6 @@ end
 
 page "blog/*", layout: :blog_post_layout
 page "blog/index.html", layout: :blog_layout
-page "blog/*/index.html", layout: :blog_layout
 page "blog/feed.xml", layout: false
 
 activate :directory_indexes
