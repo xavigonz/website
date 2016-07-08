@@ -25,7 +25,12 @@
       background-color: $orange;
       color: $white;
 
-      &:hover {
+      @include media($large-down) {
+        display: none;
+      }
+
+      &:hover,
+      &:active {
         background-color: darken($orange, 10%);
         color: $white;
       }
@@ -186,11 +191,13 @@ body[class*="_index"] {
     &:hover {
       background-color: $light-gray;
     }
-
   }
 
   .prev {
-    margin-right: 3em;
+
+    @include media($medium-up) {
+      margin-right: 3em;
+    }
 
     &::before {
       content: "« ";
@@ -198,7 +205,10 @@ body[class*="_index"] {
   }
 
   .next {
-    margin-left: 3em;
+
+    @include media($medium-up) {
+      margin-left: 3em;
+    }
 
     &::after {
       content: " »";
