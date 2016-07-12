@@ -21,6 +21,21 @@
       padding: 3em 1em;
     }
 
+    .page-step {
+      background-color: $orange;
+      color: $white;
+
+      @include media($large-down) {
+        display: none;
+      }
+
+      &:hover,
+      &:active {
+        background-color: darken($orange, 10%);
+        color: $white;
+      }
+    }
+
     .col {
       @include span-columns(12);
 
@@ -117,7 +132,8 @@
 }
 
 // Blog index
-.blog_index {
+body[class^="blog_"],
+body[class*="_index"] {
   article {
     border-bottom: #ebf2f6 1px solid;
     padding: 2.4em 0;
@@ -145,6 +161,58 @@
     h2 {
       font-size: 1.6em;
       font-weight: 600;
+    }
+  }
+}
+
+// Pagination
+.text-center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+  margin: 2em 0;
+  padding: 0;
+
+  li {
+    display: inline;
+  }
+
+  .current {
+    background-color: $blue;
+    color: $white;
+    padding: 0.5em 1em;
+  }
+
+  a {
+    padding: 0.5em 1em;
+
+    &:hover {
+      background-color: $light-gray;
+    }
+
+  }
+
+  .prev {
+
+    @include media($medium-up) {
+      margin-right: 3em;
+    }
+
+    &::before {
+      content: "« ";
+    }
+  }
+
+  .next {
+
+    @include media($medium-up) {
+      margin-left: 3em;
+    }
+
+    &::after {
+      content: " »";
     }
   }
 }
