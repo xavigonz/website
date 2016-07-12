@@ -20,10 +20,12 @@ Op mijn allereerste werkdag bij Defacto kom ik keurig op tijd - lees: veel te vr
 
 ![lunch](/images/blog/20160712-01.jpg)
 
+![lunch](/images/blog/20160712-02.jpg)
+
 ### Geen standaard bedrijfsuitje
 Mijn angsten voor een standaard bedrijfsuitje blijken ongegrond. Er worden geen 'ouwe jongen krentenbrood'-verhalen verteld, ik hoor weinig tot geen inside jokes en ik zie geen enkel dronken persoon die denkt dat naaktloperij en daarbij hard brullen een sport is. Wat ik wél zie? In niet chronologische volgorde: Een leuke groep spontane, vriendelijke mensen die me met open armen hebben ontvangen (ik heb minstens 35 mini-interviews afgelegd). Eigenzinnige, markante types (op precies de goede manier). Een lekkere kookworkshop, barbecue, wijnproeverij. En als klap op de vuurpijl Hans, onze directeur, die samen met zijn band Neil Young speelt, maar daarna soepeltjes overschakelt naar het FC Groningen lied.
 
-![optreden Hans](/images/blog/20160712-02.jpg)
+![optreden Hans](/images/blog/20160712-03.jpg)
 
 *'Iwanna schrijf jij even een blog over ons uitje?'*, vraagt Hans me op mijn tweede werkdag. Maar natuurlijk!
 
