@@ -4,7 +4,6 @@ date: 2016-07-05 08:00 CEST
 tags:
 author: Joep
 lang: nl
-featured: true
 image: images/social/bevoegd-is-niet-bewkaam-1200x630.png
 ---
 

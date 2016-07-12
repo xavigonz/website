@@ -18,8 +18,12 @@ Ik maak gauw een lijstje met voors en tegens. De voors: Je leert je collega's op
 ### 'De Zeven Zaligheden'
 Op mijn allereerste werkdag bij Defacto kom ik keurig op tijd - lees: veel te vroeg - aan bij het historische pand. Ik bel aan, een collega doet open en Joke vangt me op. Ze geeft me een kleine tour door het gebouw. Ik ontmoet nieuwe collega's, hun namen onthoud ik niet. De tijd lijkt te vliegen en ineens is het twaalf uur. De poolauto's worden verdeeld en we rijden richting het pittoreske Den Ham, op naar '[De Zeven Zaligheden](http://www.dezevenzaligheden.nl/){:target="_blank"}'. Hier worden we hartelijk ontvangen door Martina, ook een collega. Naast haar werk als consultant voor de Duitse markt bij Defacto runt zij samen met haar partner óók nog eens deze leuke kookstudio slash camping. Martina is geen uitzondering op mijn nieuwe werkplek. Zo hebben we ook een DJ in het gezelschap die na het uitje nog 'eventjes' in Paradiso draait en weer iemand anders heeft een eigen bedrijf als designer ernaast.
 
+![lunch](/images/blog/20160712-01.jpg)
+
 ### Geen standaard bedrijfsuitje
 Mijn angsten voor een standaard bedrijfsuitje blijken ongegrond. Er worden geen 'ouwe jongen krentenbrood'-verhalen verteld, ik hoor weinig tot geen inside jokes en ik zie geen enkel dronken persoon die denkt dat naaktloperij en daarbij hard brullen een sport is. Wat ik wél zie? In niet chronologische volgorde: Een leuke groep spontane, vriendelijke mensen die me met open armen hebben ontvangen (ik heb minstens 35 mini-interviews afgelegd). Eigenzinnige, markante types (op precies de goede manier). Een lekkere kookworkshop, barbecue, wijnproeverij. En als klap op de vuurpijl Hans, onze directeur, die samen met zijn band Neil Young speelt, maar daarna soepeltjes overschakelt naar het FC Groningen lied.
+
+![optreden Hans](/images/blog/20160712-02.jpg)
 
 *'Iwanna schrijf jij even een blog over ons uitje?'*, vraagt Hans me op mijn tweede werkdag. Maar natuurlijk!
 
