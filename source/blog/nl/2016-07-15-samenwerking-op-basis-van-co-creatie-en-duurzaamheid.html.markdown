@@ -4,8 +4,8 @@ date: 2016-07-15 11:13 CEST
 tags:
 author: Marian
 lang: nl
-featured: true
-image: images/blog/bevoegd-is-niet-bekwaam.jpg
+featured: false
+image: images/blog/bevoegd-is-niet-bekwaam.png
 ---
 
 ***We zien een ontwikkeling in de manier waarop organisaties denken over duurzaam investeren in de relatie met hun (software)leveranciers. Er is een groeiend besef dat het succesvol gebruik maken van softwaresystemen minder te maken heeft met tekortkomingen in het systeem.***
