@@ -20,6 +20,5 @@ Die aktuelle Sprache für E-Learning-Module ist SCORM 2004. Es kann Videos, Webl
 Derzeit haben wir von verschiedenen Häusern Module in unserem Ausbildungskatalog. Dadurch können Sie unabhängig die Wahl treffen, wer Ihr Lieblingslieferant ist. Wir freuen uns über Ihre freie Wahl und möchten Ihnen eine neutrale Plattform anbieten.
 
 ---
-Ihre Martina de Vos
-(Content Solution Spezialist Defacto Software)
+Spricht Sie dieses Thema an? Schreiben Sie uns unter [Deutschland@defacto.nl](mailto:Deutschland@defacto.nl) oder rufen Sie uns an unter 040-306988472
 
