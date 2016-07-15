@@ -8,9 +8,9 @@ featured: true
 image: images/blog/bevoegd-is-niet-bekwaam.png
 ---
 
-### Gebruikersoverleg
 ***We zien een ontwikkeling in de manier waarop organisaties denken over duurzaam investeren in de relatie met hun (software)leveranciers. Er is een groeiend besef dat het succesvol gebruik maken van softwaresystemen minder te maken heeft met tekortkomingen in het systeem.***
 
+### Gebruikersoverleg
 Het ligt volgens de nieuwe denkwijze aan een gebrek aan draagvlak, borging en structurele aandacht binnen de betreffende organisatie. Naast het ondersteunen van organisaties bij deze strategische implementatie en gedegen technisch-functionele ondersteuning, faciliteren we in dit kader ook zogenaamde gebruikersoverleggen.
 
 De opbrengst voor de klant is dat ze de gelegenheid krijgt om kennis en ervaring te delen. Hoe koppel je een (leer)strategie en gewenste resultaten aan de inrichting en het gebruik van het systeem? Maar ook: Hoe krijg je medewerkers inclusief leidinggevenden actief aan het werk in het systeem? En, hoe richt je werkprocessen in, in relatie met het systeem? Immers, in de regel kan een systeem 80% van de gewenste opbrengsten ondersteunen. De andere 20% is afhankelijk van de workflow die je eromheen organiseert.
