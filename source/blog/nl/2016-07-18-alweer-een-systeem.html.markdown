@@ -5,7 +5,7 @@ tags:
 author: Bastiaan
 lang: nl
 featured: true
-image:
+image: images/social/alweer-een-systeem-1200x630.png
 ---
 
 ***We zijn ons ervan bewust dat de aanschaf van een Leer Managementsysteem (LMS) veel gevolgen heeft voor een organisatie. Zo’n systeem heeft op zich al een behoorlijke impact, maar ook komt er simpelweg nog een nieuw ‘computersysteem’ bij.***
@@ -26,4 +26,3 @@ Ook na een implementatie ondersteunen we bij de borging, toepassing en gebruik v
 ---------------------------------------------------------------------------------------------------------------------------
 
 Wil je meer weten over het verantwoord en succesvol implementeren van software-systemen? Neem dan contact op met [Bastiaan](b.barelds@defacto.nl) of [Marian](m.joustra@defacto.nl). Of bel met Defacto op 050-3144832.
-
