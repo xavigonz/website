@@ -5,7 +5,7 @@ tags:
 author: Marian
 lang: nl
 featured: false
-image: images/blog/bevoegd-is-niet-bekwaam.png
+image: images/social/samenwerking-op-basis-van-co-creatie-1024.png
 ---
 
 ***We zien een ontwikkeling in de manier waarop organisaties denken over duurzaam investeren in de relatie met hun (software)leveranciers. Er is een groeiend besef dat het succesvol gebruik maken van softwaresystemen minder te maken heeft met tekortkomingen in het systeem.***
