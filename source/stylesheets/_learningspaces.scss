@@ -1,4 +1,8 @@
 .learningspaces {
+  $browserbackground: #e9edf0;
+  $browserbuttons: #d4dbdf;
+  $browsershadow: #d9dee1;
+
   .hero {
     background-attachment: scroll;
     background-color: $green;
@@ -13,18 +17,18 @@
   }
 
   .browser {
-    background: #e9edf0;
-    border: 1px solid #d9dee1;
-    border-radius: 5px 5px 0 0;
+    background: $browserbackground;
+    border: 1px solid $browsershadow;
+    border-radius: 5px 5px 0;
     box-sizing: border-box;
     padding-top: 24px;
     position: relative;
 
     .browser-ooo {
       &, &:before, &:after {
-        background: #d4dbdf;
+        background: $browserbuttons;
         border-radius: 50%;
-        content: "";
+        content: " ";
         float: left;
         height: 8px;
         position: absolute;
@@ -48,7 +52,7 @@
     }
 
     img {
-      box-shadow: 0 0 0 1px #d9dee1;
+      box-shadow: 0 0 0 1px $browsershadow;
       display: block;
       max-width: 100%;
     }
@@ -73,7 +77,7 @@
 
   .hero-inner {
     @include media($large-up) {
-      padding: 5em 0 0 0;
+      padding: 5em 0 0;
     }
   }
 
@@ -113,7 +117,7 @@
       padding: 4em;
 
       &:last-of-type {
-        border-bottom: none;
+        border-bottom: 0;
       }
     }
 
