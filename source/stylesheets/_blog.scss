@@ -132,8 +132,19 @@
 }
 
 // Blog index
-body[class^="blog_"],
-body[class$="_index"] {
+// todo - find more clean solution for blog indexes!
+.blog_index,
+.blog_2_index,
+.blog_3_index,
+.blog_4_index,
+.blog_5_index,
+.blog_6_index,
+.blog_7_index,
+.blog_8_index,
+.blog_9_index,
+.blog_10_index,
+.blog_11_index,
+.blog_12_index {
   article {
     border-bottom: #ebf2f6 1px solid;
     padding: 2.4em 0;
