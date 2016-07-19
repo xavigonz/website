@@ -7,12 +7,28 @@ description:
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-copy">
-      <h1><%= image_tag "logos/learningspaces-white.png", alt: "Logo LearningSpaces" %></h1>
-      <%= markitdown t("learningspaces.hero.text_md") %>
+
+    <div class="row">
+      <div class="hero-copy col">
+        <h1><%= image_tag "logos/learningspaces-white.png", alt: "Logo LearningSpaces", class: "logo-ls" %></h1>
+        <%= markitdown t("learningspaces.hero.text_md") %>
+        <%= link_to t("actions.try_for_free"), t("urls.ls_registration"), class: "button" %>
+        <%= link_to t("actions.visit_website"), t("urls.ls_website"), target: "_blank", class: "button white outline" %>
+      </div>
+      <div class="hero-image col">
+
+        <div class="browser intrinsic-ratio">
+          <div class="browser-ooo"></div>
+          <div class="browser-viewport">
+
+             <%= image_tag ("ls-spaces.png"), title: "LearningSpaces", alt: "LearningSpaces" %>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-      <%= link_to t("actions.try_for_free"), t("urls.ls_registration"), class: "button" %>
-      <%= link_to t("actions.visit_website"), t("urls.ls_website"), target: "_blank", class: "button white outline" %>
+
   </div>
 </div>
 

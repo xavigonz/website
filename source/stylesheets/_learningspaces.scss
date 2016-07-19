@@ -6,26 +6,120 @@
     background-position: center;
   }
 
-  img {
-    max-width: 400px;
-    width: 100%;
+  .col {
+    @include media($large-up) {
+      @include span-columns(6);
+    }
   }
 
-  .capp-steps {
-    .col {
-      @include media($medium-only) {
-        @include span-columns(6);
-        @include omega(2n);
+  .browser {
+    background: #e9edf0;
+    border: 1px solid #d9dee1;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+    padding-top: 24px;
+    position: relative;
+
+    .browser-ooo {
+      &, &:before, &:after {
+        background: #d4dbdf;
+        border-radius: 50%;
+        content: "";
+        float: left;
+        height: 8px;
+        position: absolute;
+        width: 8px;
       }
 
-      @include media($large-up) {
-        @include span-columns(4);
-        @include omega(3n);
+      left: 8px;
+      top: 8px;
+
+      &:before {
+        left: 13px;
+      }
+
+      &:after {
+        left: 26px;
+      }
+    }
+
+    .browser-viewport {
+      position: relative;
+    }
+
+    img {
+      box-shadow: 0 0 0 1px #d9dee1;
+      display: block;
+      max-width: 100%;
+    }
+
+    &.intrinsic-ratio {
+      .browser-viewport {
+        &::before {
+          content: "";
+          display: block;
+          padding-bottom: 71%;
+        }
+      }
+
+      img {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
       }
     }
   }
 
-  .gray {
+  .hero-inner {
+    @include media($large-up) {
+      padding: 5em 0 0 0;
+    }
+  }
+
+  .logo-ls {
+    max-width: 320px;
+    width: 100%;
+
+    @include media($medium-down) {
+      margin: 0 auto;
+    }
+  }
+
+  .hero-copy {
     text-align: center;
+
+    @include media($large-up) {
+      padding: 3em 0;
+      text-align: left;
+    }
+
+    .button {
+      @include media($large-up) {
+        margin: 0 0.5em 0 0;
+      }
+    }
+  }
+
+  .features {
+    text-align: center;
+
+    @include media ($medium-up) {
+      text-align: left;
+    }
+
+    .row {
+      border-bottom: $base-border;
+      padding: 4em;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: 700;
+    }
   }
 }
