@@ -1,4 +1,4 @@
-.learningspaces {
+.learningspaces_index {
   $browserbackground: #e9edf0;
   $browserbuttons: #d4dbdf;
   $browsershadow: #d9dee1;
@@ -6,7 +6,7 @@
   .hero {
     background-attachment: scroll;
     background-color: $green;
-    background-image: url(../images/learningspaces-pattern.svg);
+    background-image: url("../images/learningspaces-pattern.svg");
     background-position: center;
   }
 
@@ -25,7 +25,12 @@
     position: relative;
 
     .browser-ooo {
-      &, &:before, &:after {
+      left: 8px;
+      top: 8px;
+
+      &,
+      &::before,
+      &::after {
         background: $browserbuttons;
         border-radius: 50%;
         content: " ";
@@ -35,14 +40,11 @@
         width: 8px;
       }
 
-      left: 8px;
-      top: 8px;
-
-      &:before {
+      &::before {
         left: 13px;
       }
 
-      &:after {
+      &::after {
         left: 26px;
       }
     }
@@ -116,7 +118,7 @@
       border-bottom: $base-border;
       padding: 4em;
 
-      &:last-of-type {
+      &::last-of-type {
         border-bottom: 0;
       }
     }
