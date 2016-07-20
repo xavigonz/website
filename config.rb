@@ -185,7 +185,7 @@ helpers do
   end
 
   # Get full url
-  def full_url(url, locale=I18n.locale)
+  def full_url(url, locale = I18n.locale)
     URI.join("http://#{I18n.t('CNAME', locale: locale)}", url).to_s
   end
 
@@ -207,20 +207,27 @@ helpers do
     t("head.default_description")
   end
 
-  # Localize page_classes
-  def page_classes(path=current_path.dup, options={})
+  # Page body classes
+  def page_classes(path = current_path.dup, options = {})
     # Prevent page classes from being translated
-    unless I18n.locale == :nl || current_page.url == "/blog/" || is_blog_article?
+    unless I18n.locale == :nl || is_blog?
       default_path = sitemap.resources.select do |resource|
         resource.proxied_to == current_page.proxied_to &&
           resource.metadata[:options][:lang] == :nl
       end.first
       path = default_path.destination_path.dup if default_path
     end
+
     # Create classes from path
     classes = super(path.sub(/^[a-z]{2}\//, ""), options)
-    # Add class if blog post
-    classes += " blog-article" if is_blog_article?
+
+    if is_blog_index?
+      # Replace `blog_#_index` with `blog_index`
+      classes.sub!(/blog_\d+_index/, "blog_index")
+    elsif is_blog_article?
+      classes += " blog-article"
+    end
+
     # Prepend language class
     classes.prepend("#{I18n.locale} ")
   end
@@ -249,7 +256,7 @@ helpers do
   end
 
   # Link_to with active class if current_page
-  def nav_link_to(text, url, options={})
+  def nav_link_to(text, url, options = {})
     is_active = url_for(url.split("#")[0], relative: false) ==
                 url_for(current_page.url, relative: false)
     options[:class] ||= ""
@@ -263,8 +270,8 @@ helpers do
     html = ""
     (langs - [I18n.locale]).each do |lang|
       img = image_tag("flags/#{lang}.gif", alt: flag_titles[lang])
-      if current_page.url == "/blog/"
-        url = full_url("/blog", lang)
+      if is_blog_index?
+        url = full_url("/blog/", lang)
       elsif current_page.url == "/convenant-medische-technologie/"
         url = full_url("", lang)
       else
@@ -280,8 +287,8 @@ helpers do
   def href_langs
     html = ""
     langs.each do |lang|
-      if current_page.url == "/blog/"
-        url = full_url("/blog", lang)
+      if is_blog_index?
+        url = full_url("/blog/", lang)
       else
         locale_root_path = current_page.locale_root_path
         url = locale_root_path ? locale_root_path : "/"
@@ -319,6 +326,16 @@ helpers do
     request = Net::HTTP::Get.new(uri.request_uri)
     response = http.request(request)
     response.code.to_i == 404 ? false : url
+  end
+
+  # Is blog?
+  def is_blog?(page = current_page)
+    page.url.start_with?("/blog/")
+  end
+
+  # Is blog index?
+  def is_blog_index?(page = current_page)
+    (page.url =~ %r{^\/blog\/(\d+\/)?$}).present?
   end
 
   # Get blog author
