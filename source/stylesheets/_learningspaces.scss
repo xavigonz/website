@@ -33,7 +33,7 @@
       &::after {
         background: $browserbuttons;
         border-radius: 50%;
-        content: " ";
+        content: "";
         float: left;
         height: 8px;
         position: absolute;
@@ -118,7 +118,7 @@
       border-bottom: $base-border;
       padding: 4em;
 
-      &::last-of-type {
+      &:last-of-type {
         border-bottom: 0;
       }
     }
