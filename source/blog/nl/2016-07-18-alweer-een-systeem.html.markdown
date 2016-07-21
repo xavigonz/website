@@ -4,7 +4,6 @@ date: 2016-07-18 08:00 CEST
 tags:
 author: Bastiaan
 lang: nl
-featured: true
 image: images/social/alweer-een-systeem-1200x630.png
 ---
 

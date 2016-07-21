@@ -4,7 +4,6 @@ date: 2016-07-12 08:00 CEST
 tags:
 author: iwanna
 lang: nl
-featured: true
 image: images/social/bedrijfsuitje-defacto-2016-1200x630.png
 ---
 
