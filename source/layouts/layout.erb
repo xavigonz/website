@@ -51,7 +51,7 @@
     </div>
     <%= partial "footer" %>
 
-    <% if data.downloads.ebook[I18n.locale] && current_page.url != "/blog/" && !is_blog_article? %>
+    <% if data.downloads.ebook[I18n.locale] && !is_blog? %>
       <%= partial "popup-ebook" %>
     <% end %>
 
