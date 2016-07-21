@@ -4,7 +4,6 @@ date: 2016-07-15 14:05 CEST
 tags:
 author: martina
 lang: de
-featured: true
 ---
 
 ***Wir von Defacto stehen für eine offene Lernplattform, damit Sie als Kunde die völlige Freiheit haben in der Wahl Ihrer E-Learning Module. Aber was bedeutet diese Aussage wirklich.***
