@@ -24,7 +24,7 @@ Analysieren Sie, in welchem der Bestandteile das Problem liegt. Im Grunde ist da
 
 ![drei Faktore](/images/blog/drei-faktore.png)
 
-- Ihre Lernplattform (im Folgenden LMS), in dem das E-Learning  abgespielt wird
+- Ihre Lernplattform (im Folgenden LMS), in dem das E-Learning abgespielt wird
 - das E-Learning Modul selbst
 - der Webbrowser/die ICT-Umgebung in der Sie E-Learning abspielen
 
