@@ -4,7 +4,6 @@ date: 2016-06-23 11:58 CEST
 tags:
 author: Martina
 lang: de
-featured: true
 image: images/social/hauptstadt-kongress-berlin-2016.png
 ---
 
