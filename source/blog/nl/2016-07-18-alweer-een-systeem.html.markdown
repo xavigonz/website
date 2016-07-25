@@ -24,4 +24,4 @@ Ook na een implementatie ondersteunen we bij de borging, toepassing en gebruik v
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-Wil je meer weten over het verantwoord en succesvol implementeren van software-systemen? Neem dan contact op met [Bastiaan](b.barelds@defacto.nl) of [Marian](m.joustra@defacto.nl). Of bel met Defacto op 050-3144832.
+Wil je meer weten over het verantwoord en succesvol implementeren van software-systemen? Neem dan contact op met [Bastiaan](mailto:b.barelds@defacto.nl) of [Marian](mailto:m.joustra@defacto.nl). Of bel met Defacto op 050-3144832.
