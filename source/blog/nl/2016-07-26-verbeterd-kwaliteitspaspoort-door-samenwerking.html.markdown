@@ -14,7 +14,7 @@ In 2012 start Defacto als eerste softwarebedrijf met het [digitale Kwaliteitspas
 Het blijkt in de praktijk dat de regie op bevoegd- en bekwaamheid meer en meer bij de afdelingen en teams zelf ligt. De verantwoordelijkheid lígt er vaak zelfs al, maar de tools om dit te faciliteren ontbreken vaak nog. Daar zijn we dan ook meteen op ingesprongen. Leidinggevenden kunnen hun eigen afdelingsprofielen maken en koppelen aan die van hun medewerkers. Dit was eerst voornamelijk een centrale taak. Ook kunnen ze vrijstellingen geven en bepaalde vereisten voor een medewerker op 'niet van toepassing' zetten wanneer deze bepaalde vereiste niet nodig is. Hierdoor zijn afdelingen en teams veel meer in staat om zelf de regie te pakken.
 
 ## Het Kwaliteitspaspoort delen met collega's
-Nóg iets moois dat hieruit voortgekomen is; gebruikers kunnen hun eigen Kwaliteitspaspoort delen met die van collega's. De medewerker die het systeem gebruikt, heeft zelf de controle over het delen. De gebruiker kan kiezen met welke collega's er gedeeld wordt en kan het delen ook stoppen. Hierin kan ook aangegeven worden wie zijn of haar teamleider is.
+Nóg iets moois dat hieruit voortgekomen is; gebruikers kunnen hun eigen Kwaliteitspaspoort delen met die van collega's. De medewerker die het systeem gebruikt, heeft zelf de controle over het delen. De gebruiker kan kiezen met welke collega's er gedeeld wordt en kan het delen ook stoppen. In het systeem kan meteen aangegeven worden wie zijn of haar teamleider is.
 
 ## Intuïtiever
 Het paspoort is ook intuïtiever gemaakt, waardoor de gebruiker veel gemakkelijker leerpaden kan inzien, praktijkervaring kan invoeren en inschrijvingen op cursussen kan doen.
