@@ -4,7 +4,6 @@ date: 2016-07-21 08:00 CEST
 tags:
 author: Marian
 lang: nl
-featured: true
 image: images/social/talentmanagement-met-capp-1200x630.png
 ---
 
