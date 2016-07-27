@@ -1,13 +1,7 @@
 # Default application configuration that all configurations inherit from.
 
 scss_files: "**/*.scss"
-plugin_directories: ['.scss-linters']
 
-# List of gem names to load custom linters from (make sure they are already
-# installed)
-plugin_gems: []
-
-# Default severity of all linters.
 severity: warning
 
 linters:
@@ -68,7 +62,7 @@ linters:
     present: true
 
   HexLength:
-    enabled: false
+    enabled: true
     style: short # or 'long'
 
   HexNotation:
@@ -92,12 +86,12 @@ linters:
   Indentation:
     enabled: true
     allow_non_nested_indentation: false
-    character: space # or 'tab'
+    character: space
     width: 2
 
   LeadingZero:
     enabled: true
-    style: include_zero # or 'exclude_zero'
+    style: include_zero
 
   MergeableSelector:
     enabled: true
@@ -106,11 +100,11 @@ linters:
   NameFormat:
     enabled: true
     allow_leading_underscore: true
-    convention: hyphenated_lowercase # or 'camel_case', or 'snake_case', or a regex pattern
+    convention: hyphenated_lowercase
 
   NestingDepth:
     enabled: true
-    max_depth: 4
+    max_depth: 5
     ignore_parent_selectors: false
 
   PlaceholderInExtend:
@@ -160,7 +154,7 @@ linters:
 
   SelectorDepth:
     enabled: true
-    max_depth: 2
+    max_depth: 5
 
   SelectorFormat:
     enabled: true
@@ -168,7 +162,7 @@ linters:
 
   Shorthand:
     enabled: true
-    allowed_shorthands: [1, 2, 3]
+    allowed_shorthands: [1, 2, 3, 4]
 
   SingleLinePerProperty:
     enabled: true
