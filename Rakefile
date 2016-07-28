@@ -22,9 +22,9 @@ end
 namespace :build do
   def build(env)
     puts "*"*50
-    puts "* Building #{env.upcase}"
+    puts "* Building #{env.upcase} ..."
     puts "*"*50
-    system "LOCALE=#{env} bundle exec middleman build --clean"
+    system "LOCALE=#{env} bundle exec middleman build --clean" or exit(1)
   end
 
   desc "Build NL"
@@ -42,9 +42,17 @@ end
 ## Deploy
 namespace :deploy do
   def deploy(env)
-    Rake::Task["build:#{env}"].invoke
+    begin
+      Rake::Task["build:#{env}"].invoke
+    rescue SystemExit => e
+      puts "*"*50
+      puts "* Build failed, skipping deployment (locale #{env.upcase})"
+      puts "*"*50
+      exit(e.status)
+    end
+
     puts "*"*50
-    puts "* Deploying #{env.upcase}"
+    puts "* Build successful, Deploying #{env.upcase} ... "
     puts "*"*50
     system "LOCALE=#{env} bundle exec middleman deploy"
   end
