@@ -41,7 +41,16 @@
 
     <div class="col contact">
       <h6><%= link_to t("header.contact"), "/contact.html" %></h6>
-      <%= t("footer.contact") %>
+      <p>
+        Zuiderpark 3<br>
+        9724 AD Groningen<br>
+        <% if I18n.locale == :de %>
+          Niederlande
+        <% end %>
+      </p><p>
+        T&nbsp;&nbsp;<a href="tel:<%= t("footer.tellink") %>" class="phone"><%= t("footer.tel") %></a><br>
+        E&nbsp;&nbsp;<a href="mailto:<%= t("footer.email") %>"><%= t("footer.email") %></a>
+      </p>
       <ul class="social-links">
         <li><a href="https://twitter.com/DefactoSoftware" target="_blank" title="Twitter" class="icon-twitter"></a></li>
         <li><a href="https://www.linkedin.com/company/489640" target="_blank" title="LinkedIn" class="icon-linkedin"></a></li>

@@ -86,14 +86,9 @@ nl:
     text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
   footer:
     capp: "CAPP Leren & Ontwikkelen"
-    contact: >
-      <p>
-        Zuiderpark 3<br>
-        9724 AD Groningen
-      </p><p>
-        T&nbsp;&nbsp;<a href="tel:+31503144832" class="phone">050 3144832</a><br>
-        E&nbsp;&nbsp;<a href="mailto:info@defacto.nl">info@defacto.nl</a>
-      </p>
+    tel: 050 3144832
+    tellink: +0503144832
+    email: info@defacto.nl
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Werken bij Defacto"
     cmt: "Convenant Medische Technologie"
