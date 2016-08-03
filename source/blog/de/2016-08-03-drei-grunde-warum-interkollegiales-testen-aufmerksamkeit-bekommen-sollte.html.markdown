@@ -8,7 +8,7 @@ featured: true
 image: images/social/drei-grunde-1200x630.png
 ---
 
-Die Fachliteratur boomt: Lernen nach dem '70-20-10-Prinzip', zurück zum direkten ’Lernen am Arbeitsplatz’, mehr Eigenverantwortung, soziales Lernen stimulieren und vieles mehr.
+**Die Fachliteratur boomt: Lernen nach dem '70-20-10-Prinzip', zurück zum direkten ’Lernen am Arbeitsplatz’, mehr Eigenverantwortung, soziales Lernen stimulieren und vieles mehr.**
 
 Im Grunde ist die Botschaft simpel: Menschen lernen am meisten, wenn sie voneinander lernen. Wenn ich an meine persönliche Situation denke, kann ich dem nur zustimmen. Deshalb freut es mich natürlich umso mehr, dass immer mehr meiner Kunden die Methode des arbeitsplatzorientierten Lernens in ihrem Betrieb anwenden.
 
