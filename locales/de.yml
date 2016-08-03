@@ -100,15 +100,9 @@ de:
     text_md: "Dies bedeutet nicht, dass Sie einen Fehler gemacht haben. Es kann sein, dass wir die Seite umbenannt oder bewegt haben."
   footer:
     capp: "CAPP Bilden & Entwickeln"
-    contact: >
-      <p>
-        Zuiderpark 3<br>
-        9724 AD Groningen<br>
-        Niederlande
-      </p><p>
-        T&nbsp;&nbsp;<a href="tel:+4940306988472" class="phone">040 306988472</a><br>
-        E&nbsp;&nbsp;<a href="mailto:info@defacto.nl">info@defacto.nl</a>
-      </p>
+    tel: 040 306988472
+    tellink: +4940306988472
+    email: info@defactolearning.de
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Arbeiten bei Defacto"
   form:
