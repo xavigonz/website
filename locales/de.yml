@@ -103,6 +103,7 @@ de:
     capp: "CAPP Bilden & Entwickeln"
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Arbeiten bei Defacto"
+    country: "Niederlande"
   form:
     email: "E-Mail"
     message: "Wie können wir Ihnen helfen?"

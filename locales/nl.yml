@@ -89,6 +89,7 @@ nl:
     capp: "CAPP Leren & Ontwikkelen"
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Werken bij Defacto"
+    country: ""
     cmt: "Convenant Medische Technologie"
   form:
     email: E-mail
