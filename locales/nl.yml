@@ -60,6 +60,7 @@ nl:
     form_title: "Wat kunnen we voor je betekenen?"
     heading: Aangenaam
     heading2: "We maken graag kennis, bij jullie, of bij ons in Groningen."
+    email: info@defacto.nl
     phone: "050 3144832"
     phone_link: "+31503144832"
   press:
@@ -86,11 +87,9 @@ nl:
     text_md: "Dit betekent niet dat je iets verkeerd hebt gedaan, het kan zijn dat we de pagina hernoemd of verplaatst hebben."
   footer:
     capp: "CAPP Leren & Ontwikkelen"
-    tel: 050 3144832
-    tellink: +0503144832
-    email: info@defacto.nl
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Werken bij Defacto"
+    country: ""
     cmt: "Convenant Medische Technologie"
   form:
     email: E-mail

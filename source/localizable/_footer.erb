@@ -44,12 +44,10 @@
       <p>
         Zuiderpark 3<br>
         9724 AD Groningen<br>
-        <% if I18n.locale == :de %>
-          Niederlande
-        <% end %>
+        <%= t("footer.country") %>
       </p><p>
-        T&nbsp;&nbsp;<a href="tel:<%= t("footer.tellink") %>" class="phone"><%= t("footer.tel") %></a><br>
-        E&nbsp;&nbsp;<a href="mailto:<%= t("footer.email") %>"><%= t("footer.email") %></a>
+        T&nbsp;&nbsp;<a href="tel:<%= t("contact.phone_link") %>" class="phone"><%= t("contact.phone") %></a><br>
+        E&nbsp;&nbsp;<a href="mailto:<%= t("contact.email") %>"><%= t("contact.email") %></a>
       </p>
       <ul class="social-links">
         <li><a href="https://twitter.com/DefactoSoftware" target="_blank" title="Twitter" class="icon-twitter"></a></li>
