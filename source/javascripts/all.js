@@ -10,6 +10,7 @@
 //= require _popup
 //= require _social-share
 //= require _vimeo.ga
+//= require _youtube.ga
 
 $(function () {
   // Fluid video
