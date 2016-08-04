@@ -11,6 +11,7 @@
 //= require _social-share
 //= require _vimeo.ga
 //= require _youtube.ga
+//= require _events.ga
 
 $(function () {
   // Fluid video

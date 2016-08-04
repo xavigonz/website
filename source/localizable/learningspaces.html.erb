@@ -12,8 +12,9 @@ description:
       <div class="hero-copy col">
         <h1><%= image_tag "logos/learningspaces-white.png", alt: "Logo LearningSpaces", class: "logo-ls" %></h1>
         <%= markitdown t("learningspaces.hero.text_md") %>
-        <%= link_to t("actions.try_for_free"), t("urls.ls_registration"), class: "button" %>
-        <%= link_to t("actions.visit_website"), t("urls.ls_website"), target: "_blank", class: "button white outline" %>
+
+        <%= link_to t("actions.try_for_free"), t("urls.ls_registration"), "data-event": "hero_try", class: "button" %>
+        <%= link_to t("actions.visit_website"), t("urls.ls_website"), target: "_blank", "data-event": "hero_website", class: "button white outline" %>
       </div>
       <div class="hero-image col">
 
@@ -38,7 +39,7 @@ description:
   <div class="row">
     <h3><%= markitdown t("learningspaces.cta_bottom.heading_md") %></h3>
     <p>
-      <%= link_to t("learningspaces.start_now"), t("urls.ls_registration"), target: "_blank", class: "button" %>
+      <%= link_to t("learningspaces.start_now"), t("urls.ls_registration"), target: "_blank", "data-event": "footer_try",class: "button" %>
     </p>
   </div>
 </section>
