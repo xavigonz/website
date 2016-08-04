@@ -9,6 +9,7 @@
 //= require _menu
 //= require _popup
 //= require _social-share
+//= require _vimeo.ga
 
 $(function () {
   // Fluid video
