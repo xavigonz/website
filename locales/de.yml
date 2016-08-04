@@ -74,6 +74,7 @@ de:
     form_title: "Wie können wir Ihnen helfen?"
     heading: "Freut mich!"
     heading2: "Wir lernen Sie gerne kennen, bei Ihnen, oder bei uns in Groningen."
+    email: info@defactolearning.de
     phone: "040 306988472"
     phone_link: "+4940306988472"
   press:
@@ -100,9 +101,6 @@ de:
     text_md: "Dies bedeutet nicht, dass Sie einen Fehler gemacht haben. Es kann sein, dass wir die Seite umbenannt oder bewegt haben."
   footer:
     capp: "CAPP Bilden & Entwickeln"
-    tel: 040 306988472
-    tellink: +4940306988472
-    email: info@defactolearning.de
     copyright_html: "© 1987 - %{year} Defacto"
     jobs: "Arbeiten bei Defacto"
   form:
