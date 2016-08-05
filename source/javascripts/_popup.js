@@ -49,6 +49,7 @@ Defacto.popup = {
         setTimeout(function () {
           $('.popup').addClass('popup-show');
           Defacto.popup.popupsShown = true;
+          ga('send', 'event', 'popup', 'show', window.location.pathname);
         }, Defacto.popup.showDelay);
       }
     });
@@ -58,6 +59,7 @@ Defacto.popup = {
       event.preventDefault();
       var $popup = $(this).closest('.popup');
       Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
+      ga('send', 'event', 'popup', 'close', window.location.pathname);
     });
   }
 };

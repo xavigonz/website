@@ -11,8 +11,8 @@ description:
       <h1><%= t("threesixty.hero.title") %></h1>
       <%= markitdown t("threesixty.hero.text_md") %>
     </div>
-    <a href="https://www.360feedback.io/app/register" target="_blank" class="button"><%= t("actions.try_for_free") %></a>
-    <a href="https://www.360feedback.io" target="_blank" class="button white outline"><%= t("actions.visit_website") %></a>
+    <a href="https://www.360feedback.io/app/register" target="_blank" class="button" data-event="hero_try"><%= t("actions.try_for_free") %></a>
+    <a href="https://www.360feedback.io" target="_blank" class="button white outline" data-event="hero_website"><%= t("actions.visit_website") %></a>
   </div>
 </div>
 
@@ -21,7 +21,7 @@ description:
 <section class="gray">
   <div class="row">
     <h3><%= markitdown t("threesixty.cta_bottom.heading_md") %></h3>
-    <%= link_to t("actions.try_for_free"), "https://www.360feedback.io/app/register", target: "_blank", class: "button" %>
+    <%= link_to t("actions.try_for_free"), "https://www.360feedback.io/app/register", target: "_blank", "data-event": "footer_try", class: "button" %>
   </div>
 </section>
 
