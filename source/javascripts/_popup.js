@@ -46,9 +46,9 @@ Defacto.popup = {
     // Show popup after scroll
     this.$window.on('scroll', function () {
       if (!Defacto.popup.popupsShown && Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
+        Defacto.popup.popupsShown = true;
         setTimeout(function () {
           $('.popup').addClass('popup-show');
-          Defacto.popup.popupsShown = true;
           ga('send', 'event', 'popup', 'show', window.location.pathname);
         }, Defacto.popup.showDelay);
       }
