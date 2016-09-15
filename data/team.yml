@@ -77,10 +77,6 @@
   lastname: Lulof
   email: j.lulof@defacto.nl
 
-- firstname: Janine
-  lastname: Veenker
-  email: j.veenker@defacto.nl
-
 - firstname: Joep
   lastname: Lenglet
   email: j.lenglet@defacto.nl
@@ -160,3 +156,15 @@
 - firstname: Anne
   lastname: Neumann-Holbeck
   email: anne@defacto.nl
+
+- firstname: Jesse
+  lastname: Dijkstra
+  email: j.dijkstra@defacto.nl
+
+- firstname: Esther
+  lastname: Joosten
+  email: e.joosten@defacto.nl
+
+- firstname: Wilma
+  lastname: Keil
+  email: w.keil@defacto.nl
