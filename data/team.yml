@@ -69,10 +69,6 @@
   lastname: Wojtowicz
   email: i.wojtowicz@defacto.nl
 
-- firstname: Ismay
-  lastname: Wolff
-  email: ismay@defacto.nl
-
 - firstname: Jan
   lastname: Lulof
   email: j.lulof@defacto.nl
@@ -132,10 +128,6 @@
 - firstname: Rick
   lastname: Littel
   email: rick@defacto.nl
-
-- firstname: Rob
-  lastname: Orsel
-  email: r.orsel@defacto.nl
 
 - firstname: Ronald
   lastname: Dijkstra
