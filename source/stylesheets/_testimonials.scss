@@ -14,18 +14,6 @@
     }
   }
 
-  &.cols .testimonial-list {
-    margin: 0;
-    max-width: none;
-
-    li {
-      @include media($large-up) {
-        @include span-columns(6);
-        @include omega(2n);
-      }
-    }
-  }
-
   .button {
     margin-top: 3em;
   }
@@ -64,8 +52,6 @@
       @include transform(rotate(45deg));
       background-color: $quote-background;
       border: $quote-border;
-      border-left: 0;
-      border-top: 0;
       bottom: -$arrow-size / 2;
       content: "";
       display: block;
@@ -123,5 +109,12 @@
     color: #999;
     display: block;
     font-size: 0.8em;
+  }
+}
+
+.featured-testimonial {
+  .testimonial-list {
+    margin: 0 auto;
+    max-width: 800px;
   }
 }

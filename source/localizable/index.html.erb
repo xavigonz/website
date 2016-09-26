@@ -19,14 +19,14 @@ sitemap_priority: 1
 
 <%= partial "solutions-overview" %>
 
-<section class="testimonials cols">
+<section class="testimonials featured-testimonial cols">
   <div class="headline">
     <h2><%= t("testimonials.title") %></h2>
   </div>
   <div class="row">
 
     <%= partial "testimonials", locals: {
-      count: 2,
+      count: 1,
       featured: true,
       summary: true
     } %>
