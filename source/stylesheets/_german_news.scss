@@ -3,39 +3,22 @@
     text-align: center;
   }
 
-  h3 {
-    @include media($large-down) {
-      text-align: center;
-    }
-  }
+  .agenda {
+    margin: 0 auto;
+    max-width: 900px;
 
-	.col {
-    margin-bottom: 3em;
-    margin-top: 3em;
-
-    &.video {
-      @include media($large-down) {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 600px;
+    th {
+      &.when {
+        width: 25%;
       }
-    }
 
-    @include media($large-up) {
-      @include span-columns(6);
-      padding: 0 1em;
-    }
-  }
+      &.event {
+        width: 60%;
+      }
 
-  th {
-    &.when {
-      width: 25%;
-    }
-    &.event {
-      width: 60%;
-    }
-    &.where {
-      width: 15%;
+      &.where {
+        width: 15%;
+      }
     }
   }
 }
