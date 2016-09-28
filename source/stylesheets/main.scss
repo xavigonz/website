@@ -46,6 +46,22 @@ figcaption {
   text-align: center;
 }
 
+.featured {
+  background: $blue;
+  color: $white;
+  padding: 1em 1em 1em 4em;
+  position: relative;
+}
+
+.star {
+  color: $white;
+  font-size: 3em;
+  font-weight: bold;
+  left: 20px;
+  position: absolute;
+  top: 0;
+}
+
 // Fluid video wrapper
 .fluid-width-video-wrapper {
   margin-bottom: 1em;
@@ -54,10 +70,10 @@ figcaption {
 // Hide Google Conversion iframe
 iframe[name="google_conversion_frame"] {
   display: none !important;
-  height: 0 !important;
-  width: 0 !important;
-  line-height: 0 !important;
-  font-size: 0 !important;
-  margin-top: -13px;
   float: left;
+  font-size: 0 !important;
+  height: 0 !important;
+  line-height: 0 !important;
+  margin-top: -13px;
+  width: 0 !important;
 }

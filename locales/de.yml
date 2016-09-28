@@ -161,7 +161,7 @@ de:
     desc: "Sichern Sie die Qualität in Ihrer Organisation in dem Sie an den Qualifikationen und Fähigkeiten Ihrer Mitarbeiter arbeiten. Schaffen Sie eine zukunftssichere Organisation mit dem %{link}."
     hero:
       formkeep_title: "Kwaliteitspaspoort: meer informatie"
-      text_md: "Compliance mit dem CAPP Qualitätspass"
+      text_md: "Überblick aller Qualifikationen und Kompetenzen"
       title: "Qualitätspass"
     logo: logos/qualitatspass-white.png
     name: "Qualitätspass"
