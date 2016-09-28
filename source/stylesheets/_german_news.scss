@@ -9,16 +9,20 @@
 
     th {
       &.when {
-        width: 25%;
+        width: 15%;
       }
 
       &.event {
-        width: 60%;
+        width: 65%;
       }
 
       &.where {
-        width: 15%;
+        width: 20%;
       }
+    }
+
+    td {
+      padding-right: 1em;
     }
   }
 }
