@@ -4,7 +4,6 @@ date: 2016-08-03 08:00 CEST
 tags:
 author: Joep
 lang: de
-featured: true
 image: images/social/drei-grunde-1200x630.png
 ---
 
