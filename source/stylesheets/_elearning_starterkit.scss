@@ -2,6 +2,47 @@
   $color: lighten($red, 15);
 
   .hero {
+    background-attachment: scroll;
     background-color: $color;
+    background-image: linear-gradient(90deg, rgba($white, 0.08) 50%, transparent 50%),
+                      linear-gradient(rgba($white, 0.08) 50%, transparent 50%);
+    background-repeat: repeat;
+    background-size: 150px 150px;
+
+    .hero-inner {
+      margin: 0 auto;
+
+      h1 {
+        font-size: 2.4em;
+        margin: 0 0 1em;
+      }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.6em;
+      }
+
+      button {
+        margin: 0;
+      }
+    }
+
+    .col {
+      @include media($large-up) {
+        @include span-columns(6);
+        padding: 0 3em;
+      }
+    }
+  }
+
+  .hero-copy {
+    text-align: center;
+
+    @include media($large-up) {
+      text-align: left;
+    }
   }
 }
