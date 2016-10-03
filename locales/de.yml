@@ -207,10 +207,10 @@ de:
     back: Zurück zur vorherigen Seite.
   threesixty:
     cta_bottom:
-      heading_md: "Guck in den Spiegel mit 360 Feedback."
+      heading_md: "Testen Sie 360° Feedback jetzt gratis!"
     desc: "Das Tool für eine effiziente Personalentwicklung. %{link} schafft Transparenz zwischen dem Vorgesetzten und seinen Mitarbeitern und hilft dabei Entwicklungsziele zu setzen."
     hero:
-      text_md: "Evaluationen mühelos ausführen in einem nutzerfreundlichen Cloudservice."
+      text_md: "Die Sichtweisen der anderen kennen um sich selbst weiterzuentwickeln"
       title: "360° Feedback"
     logo: logos/360feedback.svg
     name: "360° Feedback"
