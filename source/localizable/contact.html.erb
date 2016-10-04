@@ -11,7 +11,9 @@ description:
 <section class="gray">
   <div class="row">
     <h1><%= t("contact.heading") %></h1>
-    <h3><%= t("contact.heading2") %></h3>
+    <% if root_locale == :nl %>
+      <h3><%= t("contact.heading2") %></h3>
+    <% end %>
   </div>
 </section>
 
