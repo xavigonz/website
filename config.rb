@@ -63,7 +63,8 @@ ignore "/fonts/icons/selection.json"
 redirect "workshop-convenant-mt.html", to: "convenant-medische-technologie.html"
 redirect "elearning.html", to: "e-learning.html"
 redirect "elearning-starterkit.html", to: "e-learning-starterkit.html"
-redirect "hosting.html", to: "hosting-security.html"
+redirect "hosting.html", to: "hosting-security.html" if root_locale == :nl
+redirect "hosting-security.html", to: "hosting.html" if root_locale == :de
 redirect "capp.html", to: "capp-lms.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)

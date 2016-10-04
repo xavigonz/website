@@ -35,15 +35,27 @@ description:
         </div>
       </li>
 
-      <li class="hosting">
-        <% link_to "/hosting-security.html", class: "col left" do %>
-          <h2><%= t("services.services.hosting.name") %></h2>
-        <% end %>
-        <div class="col right">
-          <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting-security.html")) %></p>
-          <%= link_to t("actions.read_more"), "/hosting-security.html", class: "button red outline" %>
-        </div>
-      </li>
+      <% if root_locale == :nl %>
+        <li class="hosting">
+          <% link_to "/hosting-security.html", class: "col left" do %>
+            <h2><%= t("services.services.hosting.name") %></h2>
+          <% end %>
+          <div class="col right">
+            <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting-security.html")) %></p>
+            <%= link_to t("actions.read_more"), "/hosting-security.html", class: "button red outline" %>
+          </div>
+        </li>
+      <% elsif root_locale == :de %>
+        <li class="hosting">
+          <% link_to "/hosting.html", class: "col left" do %>
+            <h2><%= t("services.services.hosting.name") %></h2>
+          <% end %>
+          <div class="col right">
+            <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting.html")) %></p>
+            <%= link_to t("actions.read_more"), "/hosting.html", class: "button red outline" %>
+          </div>
+        </li>
+      <% end %>
 
       <li class="koppelingen">
         <% link_to "/koppelingen.html", class: "col left" do %>

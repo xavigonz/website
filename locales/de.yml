@@ -150,7 +150,7 @@ de:
         text_html: "Erhalten Sie eine Übersicht in die Qualifikationen Ihrer Organisation, Ihrem Team und sich selbst. Vergleichen Sie den ‘Soll’ und ’Ist’ Zustand, versichern Sie Zertifizierungen und erfüllen Sie externe Qualitätsanforderungen."
         title: "Qualitätspass"
   hosting:
-    heading: "Hosting & Sicherheit"
+    heading: "Hosting"
   implementaties:
     heading: "Implementierungen müssen nicht kompliziert sein."
   koppelingen:
@@ -186,8 +186,8 @@ de:
         name: E-Learning
       hosting:
         desc: "Durch 25 Jahre Erfahrung mit IT-Implementierungen bei großen (behördlichen) Institutionen wissen wir ganz besonders, dass solides %{link} Grundvoraussetzungen sind."
-        link: "Hosting und Informationssicherheit"
-        name: "Hosting & Sicherheit"
+        link: "Hosting"
+        name: "Hosting"
       implementaties:
         desc: "Defacto hat eine eigene %{link} entwickelt wobei unsere Projektleiter und Berater gemeinsam mit Ihrem Management Team die Strategie und Ausführung gewährleisten."
         link: Implementierungsmethodik
