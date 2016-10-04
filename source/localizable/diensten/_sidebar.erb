@@ -4,7 +4,11 @@
     <ul>
       <li><%= nav_link_to t("services.services.elearning.name"), "/e-learning.html" %></li>
       <li><%= nav_link_to t("services.services.implementaties.name"), "/implementaties.html" %></li>
-      <li><%= nav_link_to t("services.services.hosting.name"), "/hosting-security.html" %></li>
+      <% if I18n.locale == :de %>
+        <li><%= link_to t("services.services.hosting.name"), "/hosting.html" %></li>
+      <% elsif root_locale == :nl %>
+        <li><%= link_to t("services.services.hosting.name"), "/hosting-security.html" %></li>
+      <% end %>
       <li><%= nav_link_to t("services.services.koppelingen.name"), "/koppelingen.html" %></li>
     </ul>
   </nav>
