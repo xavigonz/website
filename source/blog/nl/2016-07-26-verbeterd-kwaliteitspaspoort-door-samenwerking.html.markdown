@@ -4,7 +4,6 @@ date: 2016-07-26 08:00 CEST
 tags:
 author: Gerwin
 lang: nl
-featured: true
 image: images/social/verbeterd-kpp-1200x630.png
 ---
 
