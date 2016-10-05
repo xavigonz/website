@@ -18,3 +18,5 @@
 
 # Ignore Divshot cache
 /.divshot-cache
+
+npm-debug.log
