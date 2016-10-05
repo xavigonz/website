@@ -27,6 +27,16 @@
 
       button {
         margin: 0;
+
+        @include media($large-down) {
+          width: 100%;
+        }
+      }
+
+      .hero-image {
+        @include media($large-down) {
+          padding-top: 3em;
+        }
       }
     }
 
