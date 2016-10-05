@@ -45,6 +45,11 @@
   </head>
 
   <body class="<%= page_classes %>">
+
+  <% if current_page.url == "/" %>
+    <div class="homepage">
+  <% end %>
+
     <%= partial "header" %>
     <div id="main" role="main">
       <%= yield %>

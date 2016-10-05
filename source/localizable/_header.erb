@@ -1,8 +1,15 @@
 <header id="header">
   <div class="header-wrapper">
     <div class="logo">
-      <%= link_to image_tag("logos/defacto.svg", alt: "Defacto",
+
+      <% if current_page.url == "/" %>
+        <%= link_to image_tag("logos/defacto-invert.svg", alt: "Defacto",
+         onerror: "this.src='/images/logos/defacto-wit.png'; this.onerror=null;"), "/" %>
+      <% else %>
+        <%= link_to image_tag("logos/defacto.svg", alt: "Defacto",
          onerror: "this.src='/images/logos/defacto.png'; this.onerror=null;"), "/" %>
+      <% end %>
+
     </div>
     <button type="button" class="header-menu-button" id="mobile-menu-toggle">
       <span class="bar"></span><span class="bar"></span><span class="bar"></span>

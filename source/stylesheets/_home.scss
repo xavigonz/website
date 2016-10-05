@@ -1,3 +1,13 @@
+.de .homepage {
+  $hero-image: "../images/mood-health.jpg";
+  background-image: url($hero-image);
+}
+
+.nl .homepage {
+  $hero-image: "../images/mood3.jpg";
+  background-image: url($hero-image);
+}
+
 .index {
   h1 {
     font-size: 2.8em;
@@ -6,8 +16,44 @@
     max-width: 900px;
   }
 
-  .hero {
-    $hero-image: '../images/mood3.jpg';
-    background-image: url($hero-image);
+  .homepage {
+    background-position: no-repeat center fixed;
+    background-size: cover;
+
+    #header {
+      background: transparent;
+
+      @include media($large-up) {
+
+        #header-menu {
+
+          a {
+            color: $white;
+
+            @include media($large-down) {
+              color: $gray-menu;
+            }
+
+            &:visited {
+              color: $white;
+            }
+
+            &.active {
+              color: $orange;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      background: transparent;
+    }
   }
 }
