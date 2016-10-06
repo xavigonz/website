@@ -36,7 +36,10 @@
     <div class="hero">
       <div class="hero-inner">
         <div class="hero-copy">
-          <h1><%= t("home.hero.text") %></h1>
+          <h1><%= t("home.hero.title") %></h1>
+          <h2><%= t("home.hero.text") %></h2>
+          <%= nav_link_to t("actions.home.demo"), "/demo-aanvragen.html", "data-event": "home_demo", class: "button" %>
+          <%= nav_link_to t("actions.home.productsheet"), "/productsheet-downloaden.html", "data-event": "home_produktblatt", class: "button white outline" %>
         </div>
       </div>
     </div>

@@ -38,6 +38,9 @@ nl:
     tell_me_more: "Vertel me meer"
     try_for_free: "Probeer gratis"
     visit_website: "Bezoek de website"
+    home:
+      demo: "Demo aanvragen"
+      productsheet: "Productsheet downloaden"
   blog:
     more_on_our_blog: "Meer op ons blog"
     more_articles: "Meer artikelen"
@@ -108,6 +111,8 @@ nl:
     organization: "Bedrijf of organisatie"
     phone: Telefoon
     submit: Verstuur
+    quality: "Kwaliteitspaspoort"
+    product: "Kies een product"
   head:
     default_description: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
     default_title: Defacto
@@ -128,7 +133,7 @@ nl:
       text_html: "Meer weten? Bel <a href=\"tel:+31503144832\" class=\"phone\">050 314 48 32</a> of"
     hero:
       text: "Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen"
-      title: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
+      title: "Developing People"
     solutions:
       informal:
         text_html: "%{link} is een laagdrempelig sociaal leerplatform dat op eenvoudige wijze kennisdeling en leren stimuleert binnen organisaties."
@@ -204,3 +209,11 @@ nl:
       title: "360° Feedback"
     logo: logos/360feedback.svg
     name: "360° Feedback"
+  demo_request:
+    title: "Demo aanvragen"
+    heading: "Vraag een demo aan"
+    formkeep_title: "Demo request"
+  productsheet_download:
+    title: "CAPP Productsheet downloaden"
+    heading: "Meer informatie over opleiden & leren met CAPP LMS?"
+    formkeep_title: "CAPP download productsheet page"

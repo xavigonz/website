@@ -15,6 +15,8 @@ de:
     testimonials: kundenreferenzen
     referenties: referenzen
     media: presse
+    demo-aanvragen: "demo-anfragen"
+    productsheet-downloaden: "produktblatt-herunterladen"
   urls:
     contact: https://formkeep.com/f/bfad79e126e9
     productsheet: https://formkeep.com/f/bfad79e126e9
@@ -57,6 +59,9 @@ de:
     tell_me_more: "Erzähl mir mehr"
     try_for_free: "Gratis testen"
     visit_website: "Besuche die Website"
+    home:
+      demo: "Demo anfragen"
+      productsheet: "Produktblatt herunterladen"
   blog:
     more_on_our_blog: "Mehr dazu auf unseren Blog"
     more_articles: "Mehr Artikel"
@@ -138,6 +143,11 @@ de:
     organization: "Betrieb oder Organisation"
     phone: "Telefon"
     submit: "Versenden"
+    capp: "CAPP"
+    learn: "CAPP Bilden"
+    develop: "CAPP Entwickeln"
+    quality: "Qualitätspass"
+    product: "Ein Produkt wählen"
   head:
     default_description: "Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern"
     default_title: "Defacto"
@@ -157,8 +167,8 @@ de:
       form_title: "vereinbaren Sie einen Termin"
       text_html: "Mehr Info? Rufen Sie uns an unter <a href=\"tel:+4940306988472\" class=\"phone\">040 306988472</a> oder"
     hero:
-      text: "Mehr als 200.000 Menschen nutzen unsere Software für die Fort- und Weiterbildung und Entwicklung ihrer Talente."
-      title: "Developing People"
+      title: "Gemeinsam Qualität im Gesundheitswesen sichern"
+      text: "Die Software für Bildungsmanagement und Personalentwicklung"
     solutions:
       informal:
         text_html: "Führen Sie Regie über Ihren Lernprozess und unterstützen Sie gleichzeitig den Fortschritt der anderen, indem Sie Wissen teilen und gemeinsam weiterentwickeln. "
@@ -237,3 +247,11 @@ de:
       title: "360° Feedback"
     logo: logos/360feedback.svg
     name: "360° Feedback"
+  demo_request:
+    title: "Demo anfragen"
+    heading: "Senden Sie uns ihre Details und fragen Sie eine Demo an! Wir freuen uns!"
+    formkeep_title: "Demo request"
+  productsheet_download:
+    title: "Mehr Informationen über Fort- und Weiterbilden mit CAPP LMS?"
+    heading: "CAPP Produktblatt herunterladen"
+    formkeep_title: "CAPP: download productsheet page"

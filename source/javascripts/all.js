@@ -4,6 +4,7 @@
 //= require fitvids
 
 //= require _forms
+//= require _select
 //= require _home
 //= require _map
 //= require _menu
