@@ -1,0 +1,51 @@
+---
+title:
+  de: CAPP Bilden
+description:
+  de: CAPP Bilden ist eine Software für das Bildungsmanagement im Gesundheitswesen, mit der jegliche Veranstaltungen organisiert und verwaltet werden können. 
+unique_for_locale: true
+---
+
+<div class="hero">
+  <div class="hero-inner">
+
+    <div class="row">
+      <div class="hero-header">
+        <h1><%= t("capp.hero.learn.title") %></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="hero-copy col">
+        <h2><%= t("capp.hero.learn.heading_1") %></h2>
+        <h2><%= t("capp.hero.learn.heading_2") %></h2>
+      </div>
+      <div class="hero-image col">
+        <%= image_tag ("hero-capp-bilden.png"), title: "CAPP Bilden", alt: "CAPP Bilden" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= partial "capp/capp-bilden" %>
+
+<section class="gray">
+  <div class="row">
+    <h2><%= markitdown t("capp.cta_bottom.heading_md") %></h2>
+    <h3><%= t("capp.cta_bottom.subheading") %></h3>
+    <br>
+
+    <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.productsheet") %>" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="form" value="<%= t("capp.hero.formkeep_title") %>">
+      <input type="text" name="name" placeholder="<%= t("form.name") %>">
+      <input type="text" name="organization" placeholder="<%= t("form.organization") %>">
+      <input class="required" type="email" name="email" placeholder="<%= t("form.email") %>" required>
+      <input type="hidden" name="download" value="<%= full_url(data.downloads.capp_productsheet[I18n.locale]) %>">
+      <button type="submit"><%= t("actions.download_productsheet") %>&nbsp;&nbsp;<span class="icon-pdf"></span></button>
+    </form>
+
+  </div>
+</section>
+
+<%= partial "clients/clients" %>

@@ -1,0 +1,63 @@
+<ul class="solitions-list">
+
+  <li class="capp">
+    <% link_to "/capp-bilden.html", class: "col left" do %>
+      <h2><%= t("capp.name.learn") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("capp.desc.learn", link: link_to(t("capp.name.learn"), "/capp-bilden.html")) %></p>
+      <%= link_to t("actions.read_more"), "/capp-bilden.html", class: "button blue outline" %>
+    </div>
+  </li>
+
+  <li class="capp">
+    <% link_to "/capp-entwickeln.html", class: "col left" do %>
+      <h2><%= t("capp.name.develop") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("capp.desc.develop", link: link_to(t("capp.name.develop"), "capp-entwickeln.html")) %></p>
+      <%= link_to t("actions.read_more"), "/capp-entwickeln.html", class: "button blue outline" %>
+    </div>
+  </li>
+
+  <li class="kwaliteitspaspoort">
+    <% link_to "/kwaliteitspaspoort.html", class: "col left" do %>
+      <h2><%= image_tag t("kwaliteitspaspoort.logo"), alt: t("kwaliteitspaspoort.name") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("kwaliteitspaspoort.desc", link: link_to(t("kwaliteitspaspoort.name"), "/kwaliteitspaspoort.html")) %></p>
+      <%= link_to t("actions.read_more"), "/kwaliteitspaspoort.html", class: "button turquoise outline" %>
+    </div>
+  </li>
+
+  <li class="learningspaces">
+    <% link_to "/learningspaces.html", class: "col left" do %>
+      <h2><%= image_tag t("learningspaces.logo"), alt: t("learningspaces.name") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("learningspaces.desc", link: link_to(t("learningspaces.name"), "/learningspaces.html")) %></p>
+      <%= link_to t("actions.read_more"), "/learningspaces.html", class: "button green outline" %>
+    </div>
+  </li>
+
+  <li class="starterkit">
+    <% link_to "/e-learning-starterkit.html", class: "col left" do %>
+      <h2><%= t("elearning_starterkit.name") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("elearning_starterkit.desc", link: link_to(t("elearning_starterkit.name"), "/e-learning-starterkit.html")) %></p>
+      <%= link_to t("actions.read_more"), "/e-learning-starterkit.html", class: "button red outline" %>
+    </div>
+  </li>
+
+  <li class="threesixty">
+    <% link_to "/360-feedback.html", class: "col left" do %>
+      <h2><%= image_tag t("threesixty.logo"), alt: t("threesixty.name") %></h2>
+    <% end %>
+    <div class="col right">
+      <p><%= t("threesixty.desc", link: link_to(t("threesixty.name"), "/360-feedback.html")) %></p>
+      <%= link_to t("actions.read_more"), "/360-feedback.html", class: "button orange outline" %>
+    </div>
+  </li>
+
+</ul>

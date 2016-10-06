@@ -219,8 +219,9 @@ figcaption {
 }
 
 .featured {
-  background: $blue;
+  background: $blue-alt;
   color: $white;
+  font-size: 1.2em;
   padding: 1em 1em 1em 4em;
   position: relative;
 }
@@ -232,4 +233,16 @@ figcaption {
   left: 20px;
   position: absolute;
   top: 0;
+}
+
+.featured-transparant {
+  border: 1px solid $blue-alt;
+  margin: 0 auto 2em;
+  max-width: 640px;
+  padding: 2em;
+  position: relative;
+
+  p {
+    margin: 0;
+  }
 }
