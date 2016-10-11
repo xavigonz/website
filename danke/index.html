@@ -19,18 +19,18 @@
     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Hosting - Defacto</title>
-    <meta name="description" content="Defacto bietet die Möglichkeit, CAPP LMS mit zuverlässiger Sicherheit zu hosten. Updates werden von Defacto installiert und aktualisiert.">
+    <title>Danke Schön - Defacto</title>
+    <meta name="description" content="Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern">
 
-        
-    <link rel="alternate" href="http://www.defactolearning.de/hosting.de.html" hreflang="nl-nl" />
-    <link rel="alternate" href="http://www.defactolearning.de/hosting/" hreflang="de-de" />
+    <meta name="robots" content="noindex,nofollow" />    
+    <link rel="alternate" href="http://www.defacto.nl/bedankt/" hreflang="nl-nl" />
+    <link rel="alternate" href="http://www.defactolearning.de/danke/" hreflang="de-de" />
     
     <meta property="og:site_name" content="Defacto - Developing People">
-    <meta property="og:title" content="Hosting - Defacto">
-    <meta property="og:url" content="http://www.defactolearning.de/hosting/">
+    <meta property="og:title" content="Danke Schön - Defacto">
+    <meta property="og:url" content="http://www.defactolearning.de/danke/">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Defacto bietet die Möglichkeit, CAPP LMS mit zuverlässiger Sicherheit zu hosten. Updates werden von Defacto installiert und aktualisiert.">
+    <meta property="og:description" content="Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern">
     <meta property="og:image" content="http://www.defactolearning.de/images/social/defacto-1200x630-7d5c1795.png">
     <meta property="og:locale" content="de_DE">
 
@@ -49,13 +49,16 @@
   ga('require', 'linkid');
   ga('require', 'linker');
   ga('linker:autoLink', ['www.defacto.nl', 'jobs.defacto.nl', 'www.defactolearning.de']);
-    ga('send', 'pageview');
+    var regex = new RegExp("[\\?&]form=([^&#]*)");
+    var results = regex.exec(location.search);
+    var form = results === null ? '' : results[1].toLowerCase();
+    ga('send', 'pageview', '/bedankt/' + form);
 </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
 
-  <body class="de hosting hosting_index">
+  <body class="de bedankt bedankt_index">
     <header id="header">
   <div class="header-wrapper">
     <div class="logo">
@@ -73,7 +76,7 @@
         <li><a class="" href="/blog/">Blog</a></li>
         <li><a class="" href="/kontakt/">Kontakt</a></li>
         <li class="flags">
-          <a title="Nederlands" href="/hosting.de.html"><img alt="Nederlands" src="/images/flags/nl-9bdbe43e.gif" /></a>
+          <a title="Nederlands" href="http://www.defacto.nl/bedankt/"><img alt="Nederlands" src="/images/flags/nl-9bdbe43e.gif" /></a>
           <a target="_blank" href="http://en.defacto.nl"><img alt="English" src="/images/flags/en-3a5d3c5c.gif" /></a>
         </li>
       </ul>
@@ -84,45 +87,48 @@
     <div id="main" role="main">
       <section class="gray">
   <div class="row">
-    <h1>Hosting</h1>
+    <img class="header-icon" src="/images/smile-470d7276.gif" />
+    <h1>Vielen Dank.</h1>
+    <h3>
+      <p class="thanks-message">Wir melden uns so schnell wie möglich bei Ihnen.</p>
+    </h3>
+    <p>
+      <b><a href="javascript:history.back()">Zurück zur vorherigen Seite.</a></b>
+    </p>
   </div>
 </section>
 
-<section>
+<script>
+  // Get URL parameters
+  var urlParams = {};
+  window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    urlParams[key] = decodeURIComponent(value);
+  });
+
+  // Replace message with download message if it was a download form
+  if (urlParams.download) {
+    var downloadMessage = 'Das Herunterladen sollte jetzt automatisch starten...<br>Wenn nicht, klicke <a target="_blank">hier</a>.';
+    $('body.bedankt .thanks-message')
+      .html(downloadMessage)
+      .find('a').attr('href', urlParams.download);
+  }
+</script>
+
+<section class="contact-info">
   <div class="row">
-    <article class="sidebar-content">
-      <p>Unsere Software/Produkte ist eine SaaS Lösung und daher vollständig webbasiert und ist immer und überall erreichbar. Auf diese Weise belasten Sie Ihre Systemverwaltung kaum und Updates werden von Defacto für Sie installiert und aktualisiert.</p>
-
-<p>Zusätzlich bieten wir Ihnen ein Standard Single Sign On (SSO Integration). Dadurch ist es für Ihre Mitarbeiter möglich, direkt aus Ihrer Website oder aus ihrem System, ohne sich nochmals anmelden zu müssen, zu CAPP zu gelangen.</p>
-
-<p>Alle Produkte erhalten Sie in deutscher, englischer und niederlänischer Sprache.</p>
-
-    </article>
-    <div class="sidebar">
-  <h3>Service</h3>
-  <nav>
-    <ul>
-      <li><a class="" href="/e-learning/">E-Learning</a></li>
-      <li><a class="" href="/implementierungen/">Implementierungen</a></li>
-        <li><a href="./">Hosting</a></li>
-      <li><a class="" href="/schnittstellen/">Schnittstellen</a></li>
-    </ul>
-  </nav>
-</div>
-
+    <div class="col">
+      <span class="icon-location"></span>
+      <span>Zuiderpark 3, 9724 AD Groningen (NL)</span>
+    </div>
+    <div class="col">
+      <span class="icon-phone"></span>
+      <a href="tel://+4940306988472">040 306988472</a>
+    </div>
+    <div class="col">
+      <span class="icon-mail"></span>
+      <a href="mailto:info@defactolearning.de">info@defactolearning.de</a>
+    </div>
   </div>
-</section>
-
-<section class="gray clients">
-
-  <div class="logos">
-    <a href="http://www.berendsohn.de/" target="_blank"><img alt="Berendsohn" src="/images/clients/berendsohn-cebb94fd.gif" /></a>
-    <a href="http://www.evangelischeskrankenhaus.de/" target="_blank"><img alt="Evangelisches Krankenhaus Oldenburg" src="/images/clients/evangelisches-krankenhaus-oldenburg-0b523d40.gif" /></a>
-    <a href="http://www.friedrich-ebert-krankenhaus.de/" target="_blank"><img alt="Friedrich-Ebert-Krankenhaus" src="/images/clients/fek-f81bd9ad.gif" /></a>
-    <a href="http://www.tui.com" target="_blank"><img alt="TUI" src="/images/clients/tui-a4d8a75a.gif" /></a>
-    <a href="http://www.mumc.nl" target="_blank"><img alt="MUMC+" src="/images/clients/mumc-4bd42ad4.gif" /></a>
-  </div>
-
 </section>
 
 
@@ -145,7 +151,7 @@
       <ul>
         <li><a href="../e-learning/">E-Learning</a></li>
         <li><a href="../implementierungen/">Implementierungen</a></li>
-          <li><a href="./">Hosting</a></li>
+          <li><a href="../hosting/">Hosting</a></li>
         <li><a href="../schnittstellen/">Schnittstellen</a></li>
       </ul>
     </div>
