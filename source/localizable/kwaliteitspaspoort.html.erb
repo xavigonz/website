@@ -11,8 +11,10 @@ description:
 <div class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <h1><%= t("kwaliteitspaspoort.hero.title") %></h1>
-      <%= markitdown t("kwaliteitspaspoort.hero.text_md") %>
+      <h1><%= image_tag t("kwaliteitspaspoort.logo"), alt: t("kwaliteitspaspoort.name") %></h1>
+      <h2><%= t("kwaliteitspaspoort.hero.text_md") %></h2>
+      <%= image_tag "hero-qualitatspass.png", title: "CAPP Qualitätspass", alt: "CAPP Qualitätspass" if I18n.locale == :de %>
+      <%= image_tag "hero-kwaliteitspaspoort.png", title: "CAPP Kwaliteitspaspoort", alt: "CAPP Kwaliteitspaspoort" if I18n.locale == :nl %>
     </div>
   </div>
 </div>

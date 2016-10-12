@@ -1,14 +1,34 @@
 .kwaliteitspaspoort {
+  $color: lighten($turquoise, 5);
+
   .hero {
     @include radial-gradient(circle at 50%,
-      $blue 33%,
-      rgba($blue, 0.5) 33%,
-      rgba($blue, 0.5) 66%,
-      $blue-alt 66%,
-      $fallback: $blue-alt);
+      lighten($color, 10) 33%,
+      rgba($color, 0.3) 33%,
+      rgba($color, 0.3) 66%,
+      lighten($color, 5) 66%,
+      $fallback: lighten($color, 10));
 
     background-attachment: scroll;
     padding-bottom: 0;
+
+    + section {
+      box-shadow: 0 -20px 20px -20px rgba($black, 0.2);
+      position: relative;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    .hero-inner {
+      padding: 5em 1em 0;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
