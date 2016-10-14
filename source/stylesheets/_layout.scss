@@ -3,7 +3,9 @@
 // Layout
 // ------------------------------------------------------------
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -15,7 +17,7 @@ section {
   }
 
   &.gray {
-    background-color: #fbfbfb;
+    background-color: $lightest-gray;
   }
 }
 
@@ -27,20 +29,19 @@ section {
 
 .sidebar {
   @include span-columns(12);
+  background-color: $light-gray-two;
+  padding: 1em;
 
   @include media($medium-up) {
     @include span-columns(4);
   }
 
-  background-color: #f9f9f9;
-  padding: 1em;
-
   nav {
     li {
-      border-bottom: 2px solid #eaeaea;
+      border-bottom: 2px solid $gray;
 
       &:last-child {
-        border: none;
+        border: 0;
       }
     }
 
@@ -50,7 +51,6 @@ section {
       padding: 0.5em 0;
     }
 
-    // temp link placeholder
     span {
       color: darken($light-gray, 15);
       display: block;
@@ -76,6 +76,14 @@ article {
 
   li {
     list-style-type: disc;
+
+    ul {
+      margin: 0 $base-spacing;
+
+      li {
+        list-style-type: circle;
+      }
+    }
   }
 }
 
@@ -94,15 +102,15 @@ article {
   text-align: left;
 
   li {
-    margin: 0 0 0.8em 0;
+    margin: 0 0 0.8em;
     padding: 0 0 0 30px;
     position: relative;
 
     &::before {
       background-color: $blue;
       border-radius: 50%;
-      color: #fff;
-      content: '✔';
+      color: $white;
+      content: "✔";
       font-size: 13px;
       height: 20px;
       left: 0;
@@ -119,75 +127,10 @@ article {
   background-color: $green;
 }
 
-
-/*
-Highlights
-*/
-
-#highlights {
-  background-color: #fbfbfb;
-  padding: 0;
-
-  .wrap {
-    border-top: $base-border;
-  }
-
-  .col {
-    @include span-columns(6);
-    padding: 45px;
-    position: relative;
-
-    h1 {
-      font-size: 1.8em;
-      font-weight: 400;
-      line-height: 1.3;
-      margin-top: 0;
-    }
-
-    p {
-      color: #666;
-      font-size: 1.1em;
-    }
-  }
-
-  .image {
-    padding: 0;
-  }
-}
-
-
-/*
-Vision
-*/
-
-#vision {
-  background: url("../images/slider-back.jpg") center top;
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-
-  h2 {
-    font-size: 5em;
-    margin: 0 0 40px;
-  }
-
-  h3 {
-    font-size: 1.6em;
-    font-weight: 100;
-    line-height: 1.4em;
-    margin: 0 0 60px;
-  }
-}
-
-
-/*
-Map
-*/
-
 #map {
   $desktop-mode: $medium-up;
 
-  background: #fbfaf8;
+  background: $gray;
   border-top: $base-border;
   clear: both;
   position: relative;
@@ -202,11 +145,6 @@ Map
   }
 }
 
-
-/*
-Contact info
-*/
-
 .contact-info {
   $desktop-mode: $medium-up;
 
@@ -216,6 +154,23 @@ Contact info
   padding: 0;
   position: relative;
   text-align: center;
+
+  @include media ($desktop-mode) {
+    .row {
+      @include fill-parent();
+      @include row(table);
+    }
+
+    .col {
+      @include span-columns(4);
+      border-bottom: 0;
+      border-right: $base-border;
+
+      &:last-child {
+        @include reset-display;
+      }
+    }
+  }
 
   .row {
     padding: 0;
@@ -238,30 +193,43 @@ Contact info
       vertical-align: middle;
     }
   }
-
-  @include media ($desktop-mode) {
-    .row {
-      @include fill-parent();
-      @include row(table);
-    }
-
-    .col {
-      @include span-columns(4);
-      border-bottom: 0;
-      border-right: $base-border;
-
-      &:last-child {
-        @include reset-display;
-      }
-    }
-  }
 }
 
 .screenshot {
-  border: 10px solid rgb(251, 251, 251);
+  border: 10px solid $lightest-gray;
 }
 
 .center {
   display: block;
   margin: 0 auto;
+}
+
+.gray {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  margin: 1em;
+  text-align: center;
+}
+
+.featured {
+  background: $blue;
+  color: $white;
+  padding: 1em 1em 1em 4em;
+  position: relative;
+}
+
+.star {
+  color: $white;
+  font-size: 3em;
+  font-weight: bold;
+  left: 20px;
+  position: absolute;
+  top: 0;
 }
