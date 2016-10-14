@@ -9,31 +9,20 @@ description:
 
 <div class="hero">
   <div class="hero-inner">
+    <div class="hero-copy">
+      <h1><%= t("elearning_starterkit.hero.title") %></h1>
+      <%= markitdown t("elearning_starterkit.hero.text_md") %>
 
-    <div class="row">
-      <div class="hero-copy col">
+      <form class="form-inline" accept-charset="UTF-8" action="<%= t("urls.contact") %>" method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="form" value="<%= t("elearning_starterkit.hero.formkeep_title") %>">
+        <input type="text" name="name" placeholder="<%= t("form.name") %>">
+        <input type="text" name="organization" placeholder="<%= t("form.organization") %>">
+        <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
+        <button type="submit" class="green"><%= t("actions.tell_me_more") %></button>
+      </form>
 
-        <h1><%= t("elearning_starterkit.hero.title") %></h1>
-
-        <%= markitdown t("elearning_starterkit.hero.text_md") %>
-
-        <h2><%= t("actions.tell_me_more") %></h2>
-
-        <form class="form" accept-charset="UTF-8" action="<%= t("urls.contact") %>" method="POST">
-          <input type="hidden" name="utf8" value="✓">
-          <input type="hidden" name="form" value="<%= t("elearning_starterkit.hero.formkeep_title") %>">
-          <input type="text" name="name" placeholder="<%= t("form.name") %>">
-          <input type="text" name="organization" placeholder="<%= t("form.organization") %>">
-          <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
-          <button type="submit" class="green"><%= t("actions.tell_me_more") %></button>
-        </form>
-      </div>
-
-      <div class="hero-image col">
-        <%= image_tag ("e-learning-starterkit-box.png"), title: "E-learning Starterkit", alt: "E-learning Starterkit" %>
-      </div>
     </div>
-
   </div>
 </div>
 
