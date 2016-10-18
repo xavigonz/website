@@ -32,36 +32,6 @@
 @import "convenant";
 @import "solutions";
 
-.gray {
-  text-align: center;
-}
-
-.text-center {
-  text-align: center;
-}
-
-figcaption {
-  font-style: italic;
-  margin: 1em;
-  text-align: center;
-}
-
-.featured {
-  background: $blue;
-  color: $white;
-  padding: 1em 1em 1em 4em;
-  position: relative;
-}
-
-.star {
-  color: $white;
-  font-size: 3em;
-  font-weight: bold;
-  left: 20px;
-  position: absolute;
-  top: 0;
-}
-
 // Fluid video wrapper
 .fluid-width-video-wrapper {
   margin-bottom: 1em;
