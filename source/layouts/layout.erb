@@ -25,7 +25,7 @@
     <%= tag(:meta, name: "robots", content: current_page.data.robots) if current_page.data.robots -%>
     <%= tag(:link, rel: "canonical", href: current_page.data.canonical_url) if current_page.data.canonical_url -%>
 
-    <%= href_langs unless is_blog_article? || current_page.url == "/convenant-medische-technologie/" -%>
+    <%= href_langs unless is_blog_article? || current_page.data.unique_for_locale == true -%>
 
     <meta property="og:site_name" content="Defacto - Developing People">
     <meta property="og:title" content="<%= page_title(current_page, false) %> - Defacto">
