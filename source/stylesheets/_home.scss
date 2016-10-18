@@ -6,8 +6,58 @@
     max-width: 900px;
   }
 
-  .hero {
-    $hero-image: '../images/mood3.jpg';
-    background-image: url($hero-image);
+  .header-image {
+    background-position: no-repeat center fixed;
+    background-size: cover;
+
+    #header {
+      background: transparent;
+
+      @include media($large-up) {
+
+        #header-menu {
+
+          a {
+            color: $white;
+
+            @include media($large-down) {
+              color: $gray-menu;
+            }
+
+            &:visited {
+              color: $white;
+            }
+
+            &.active {
+              color: $orange;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+              color: $orange;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      background: transparent;
+    }
+  }
+
+  &.nl {
+    .header-image {
+      $hero-image: "../images/mood3.jpg";
+      background-image: url($hero-image);
+    }
+  }
+
+  &.de {
+    .header-image {
+      $hero-image: "../images/mood-health.jpg";
+      background-image: url($hero-image);
+    }
   }
 }
