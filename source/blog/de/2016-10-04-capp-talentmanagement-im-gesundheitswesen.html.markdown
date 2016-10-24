@@ -4,7 +4,6 @@ date: 2016-10-04 09:00 CEST
 tags:
 author: Marian
 lang: de
-featured: true
 image: images/social/CAPP-talentmanagement-im-gesundheitswesen-1200x630.png
 ---
 
