@@ -119,16 +119,9 @@ nl:
     hero:
       text: "Meer dan 200.000 professionals gebruiken onze software om te leren en hun talenten te ontwikkelen"
       title: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
-    highlights:
-      capp:
-        text_html: "%{link} zorgt er voor dat uw medewerkers op eenvoudige en doeltreffende wijze leren en hun talenten ontwikkelen."
-      learningspaces:
-        text_html: "%{link} is de centrale plek voor kennis binnen teams."
-        url: "http://www.learningspaces.nl"
     solutions:
-      headline: "Defacto helpt organisaties bij het ontwikkelen en certificeren van hun medewerkers"
       informal:
-        text_html: "%{link} is een laagdrempelig sociaal leerplatform dat kennisdeling en leren stimuleert."
+        text_html: "%{link} is een laagdrempelig sociaal leerplatform dat op eenvoudige wijze kennisdeling en leren stimuleert binnen organisaties."
         title: "LearningSpaces"
       learn:
         text_html: "Geef medewerkers efficiënte tools voor hun ontwikkelprocessen en een overzichtelijk persoonlijk portfolio. Creëer inzicht met %{link} Leren & Ontwikkelen."

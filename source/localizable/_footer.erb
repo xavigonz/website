@@ -3,7 +3,13 @@
     <div class="col">
       <h6><%= link_to t("header.products"), "/producten.html" %></h6>
       <ul>
-        <li><%= link_to t("footer.capp"), "/capp-lms.html" %></li>
+        <% if root_locale == :nl %>
+          <li><%= link_to t("footer.capp"), "/capp-lms.html" %></li>
+        <% end %>
+        <% if root_locale == :de %>
+          <li><%= link_to t("footer.capp.learn"), "/capp-bilden.html" %></li>
+          <li><%= link_to t("footer.capp.develop"), "/capp-entwickeln.html" %></li>
+        <% end %>
         <li><%= link_to t("kwaliteitspaspoort.name"), "/kwaliteitspaspoort.html" %></li>
         <li><%= link_to t("elearning_starterkit.name"), "/e-learning-starterkit.html" %></li>
         <li><%= link_to t("learningspaces.name"), "/learningspaces.html" %></li>
