@@ -21,7 +21,7 @@ description:
         <% end %>
         <div class="col right">
           <p><%= t("services.services.elearning.desc", link: link_to(t("services.services.elearning.name"), "/e-learning.html")) %></p>
-          <%= link_to t("actions.read_more"), "/e-learning.html", class: "button blue outline" %>
+          <%= link_to t("actions.more_about.elearning"), "/e-learning.html", class: "button blue outline" %>
         </div>
       </li>
 
@@ -31,7 +31,7 @@ description:
         <% end %>
         <div class="col right">
           <p><%= t("services.services.implementaties.desc", link: link_to(t("services.services.implementaties.link"), "/implementaties.html")) %></p>
-          <%= link_to t("actions.read_more"), "/implementaties.html", class: "button orange outline" %>
+          <%= link_to t("actions.more_about.implementaties"), "/implementaties.html", class: "button orange outline" %>
         </div>
       </li>
 
@@ -42,7 +42,7 @@ description:
           <% end %>
           <div class="col right">
             <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting-security.html")) %></p>
-            <%= link_to t("actions.read_more"), "/hosting-security.html", class: "button red outline" %>
+            <%= link_to t("actions.more_about.hosting"), "/hosting-security.html", class: "button red outline" %>
           </div>
         </li>
       <% elsif root_locale == :de %>
@@ -52,7 +52,7 @@ description:
           <% end %>
           <div class="col right">
             <p><%= t("services.services.hosting.desc", link: link_to(t("services.services.hosting.link"), "/hosting.html")) %></p>
-            <%= link_to t("actions.read_more"), "/hosting.html", class: "button red outline" %>
+            <%= link_to t("actions.more_about.hosting"), "/hosting.html", class: "button red outline" %>
           </div>
         </li>
       <% end %>
@@ -63,7 +63,7 @@ description:
         <% end %>
         <div class="col right">
           <p><%= t("services.services.koppelingen.desc", link: link_to(t("services.services.koppelingen.link"), "/koppelingen.html")) %></p>
-          <%= link_to t("actions.read_more"), "/koppelingen.html", class: "button green outline" %>
+          <%= link_to t("actions.more_about.koppelingen"), "/koppelingen.html", class: "button green outline" %>
         </div>
       </li>
 
