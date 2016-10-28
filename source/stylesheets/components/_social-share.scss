@@ -3,7 +3,7 @@
   text-align: center;
 
   .title {
-    color: #9eabb3;
+    color: $blog-meta;
     margin-bottom: 5px;
   }
 
@@ -20,25 +20,26 @@
   }
 
   a {
-    color: #bbc7cc !important;
+    color: $social-link;
 
     &.icon-twitter2:hover {
-      color: #55acee !important;
+      color: $social-twitter;
     }
 
     &.icon-facebook:hover {
-      color: #3b5998 !important;
+      color: $social-facebook;
     }
 
     &.icon-google-plus:hover {
-      color: #dd4b39 !important;
+      color: $social-google-plus;
     }
 
     &.icon-linkedin2:hover {
-      color: #00a0dc !important;
+      color: $social-linkedin;
     }
+
     &.icon-xing:hover {
-      color: #026466 !important;
+      color: $social-xing;
     }
   }
 

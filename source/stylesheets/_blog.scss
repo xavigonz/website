@@ -1,6 +1,6 @@
-.blog #main,
-.blog-featured {
-  $blog-link-color: darken($blue, 10);
+.blog-featured,
+.post-header,
+.post-body {
 
   a {
     @include transition(color 0.1s linear);
@@ -54,7 +54,7 @@
   }
 
   .post-meta {
-    color: #9eabb3;
+    color: $blog-meta;
     display: block;
     font-size: 0.9em;
 
@@ -64,8 +64,8 @@
       white-space: nowrap;
 
       &::before {
+        color: $blog-meta;
         content: "–";
-        color: #9eabb3;
         display: inline;
         margin: 0 0.5em 0 0.4em;
       }
@@ -84,9 +84,9 @@
 
   .post-footer {
     .author {
-      border-top: #ebf2f6 1px solid;
+      border-top: $blog-border 1px solid;
+      padding: 3em 0 0;
       position: relative;
-      padding: 3em 0 0 0;
       text-align: center;
     }
 
@@ -94,8 +94,8 @@
       $avatar-size: 80px;
 
       @include avatar-size($avatar-size);
-      background-color: #fff;
-      box-shadow: #e7eef2 0 0 0 1px;
+      background-color: $white;
+      box-shadow: $blog-shadow 0 0 0 1px;
       box-sizing: border-box;
       display: block;
       left: 50%;
@@ -106,7 +106,7 @@
       z-index: 2;
 
       &.no-image {
-        background-color: #fbfbfb;
+        background-color: $lightest-gray;
       }
     }
   }
@@ -120,7 +120,16 @@
       padding: 1em 0;
 
       a {
+        @include transition(color 0.1s linear);
+        color: $blog-link-color;
         font-weight: 700;
+        text-decoration: none;
+
+        &:active,
+        &:focus,
+        &:hover {
+          color: darken($blog-link-color, 15%);
+        }
       }
     }
 
@@ -134,7 +143,7 @@
 // Blog index
 .blog_index {
   article {
-    border-bottom: #ebf2f6 1px solid;
+    border-bottom: $blog-border 1px solid;
     padding: 2.4em 0;
   }
 
@@ -185,6 +194,7 @@
   }
 
   a {
+    color: $blog-link-color;
     padding: 0.5em 1em;
 
     &:hover {

@@ -128,7 +128,7 @@
       }
 
       &.flags {
-        margin-right: 10px !important;
+        margin-right: 10px;
 
         a {
           @include transition(opacity 0.3s);

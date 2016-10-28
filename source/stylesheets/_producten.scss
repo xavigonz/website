@@ -59,7 +59,6 @@
         }
 
         img {
-          width: 240px;
           max-width: 100%;
           vertical-align: text-top;
         }
@@ -115,6 +114,12 @@
       background-color: $green;
       background-image: url(../images/learningspaces-pattern.svg);
       background-position: center;
+
+      h2 {
+        img {
+          width: 240px;
+        }
+      }
     }
   }
 
@@ -143,8 +148,10 @@
         rgba($color, 0.3) 240px,
         $fallback: #fff);
 
-      img {
-        width: 150px !important;
+      h2 {
+        img {
+          width: 150px;
+        }
       }
     }
   }
