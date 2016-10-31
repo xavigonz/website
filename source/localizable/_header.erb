@@ -1,5 +1,5 @@
 <div class="header-image">
-  <header id="header">
+  <header class="header">
     <div class="header-wrapper">
       <div class="logo">
 
@@ -12,11 +12,11 @@
         <% end %>
 
       </div>
-      <button type="button" class="header-menu-button" id="mobile-menu-toggle">
+      <button type="button" class="header-menu-button" id="js-header-menu-toggle">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <nav class="nav">
-        <ul id="header-menu">
+        <ul class="header-menu" id="js-header-menu">
           <li><%= nav_link_to t("header.home"), "/" %></li>
           <li><%= nav_link_to t("header.products"), "/producten.html" %></li>
           <li><%= nav_link_to t("header.services"), "/diensten.html" %></li>
@@ -31,6 +31,7 @@
       </nav>
     </div>
   </header>
+
   <% if current_page.url == "/" %>
     <div class="hero">
       <div class="hero-inner">
@@ -38,6 +39,6 @@
           <h1><%= t("home.hero.text") %></h1>
         </div>
       </div>
-    </div> 
+    </div>
   <% end %>
 </div>

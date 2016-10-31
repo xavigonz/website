@@ -2,8 +2,9 @@ $(function () {
   'use strict';
 
   // Mobile navigation
-  var $menu = $('#header-menu');
-  var $menuToggle = $('#mobile-menu-toggle');
+  var $menu = $('#js-header-menu');
+  var $menuToggle = $('#js-header-menu-toggle');
+
   $menuToggle.on('click', function (event) {
     event.preventDefault();
     $menu.slideToggle(200, function () {

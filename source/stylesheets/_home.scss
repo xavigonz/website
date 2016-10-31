@@ -10,33 +10,29 @@
     background-position: no-repeat center fixed;
     background-size: cover;
 
-    #header {
+    .header {
       background: transparent;
 
       @include media($large-up) {
+        .header-menu a {
+          color: $white;
 
-        #header-menu {
+          @include media($large-down) {
+            color: $gray-menu;
+          }
 
-          a {
+          &:visited {
             color: $white;
+          }
 
-            @include media($large-down) {
-              color: $gray-menu;
-            }
+          &.active {
+            color: $orange;
+          }
 
-            &:visited {
-              color: $white;
-            }
-
-            &.active {
-              color: $orange;
-            }
-
-            &:hover,
-            &:focus,
-            &:active {
-              color: $orange;
-            }
+          &:hover,
+          &:focus,
+          &:active {
+            color: $orange;
           }
         }
       }
