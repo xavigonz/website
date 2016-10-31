@@ -1,4 +1,4 @@
-#header {
+.header {
   $desktop-mode: $large-up;
 
   @include clearfix;
@@ -64,7 +64,7 @@
     }
   }
 
-  #header-menu {
+  .header-menu {
     background: #fff;
     clear: both;
     display: none;
