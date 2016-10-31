@@ -127,7 +127,7 @@ article {
   background-color: $green;
 }
 
-#map {
+.map {
   $desktop-mode: $medium-up;
 
   background: $gray;
@@ -135,7 +135,7 @@ article {
   clear: both;
   position: relative;
 
-  #map-canvas {
+  .map-canvas {
     height: 300px;
     width: 100%;
 

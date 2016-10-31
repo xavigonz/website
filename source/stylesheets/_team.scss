@@ -1,4 +1,4 @@
-#team {
+.team {
   background-color: #f6f6f6;
   text-align: center;
 
@@ -24,7 +24,7 @@
     .avatar {
       @include transition(background 0.1s linear);
       background-color: $blue-alt;
-      color: #fff;
+      color: $white;
     }
 
     a:hover .avatar {

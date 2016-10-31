@@ -2,8 +2,8 @@ if (window.google && window.google.maps) {
   var map;
   var mapLocation = new google.maps.LatLng(53.212124, 6.57214);
 
-  function mapInit () {
-    var mapCanvas = document.getElementById('map-canvas');
+  function mapInit() {
+    var mapCanvas = document.getElementById('js-map-canvas');
 
     if (mapCanvas) {
       var mapOptions = {
@@ -11,7 +11,7 @@ if (window.google && window.google.maps) {
         center: mapLocation,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false,
-        draggable: true
+        draggable: true,
       };
 
       map = new google.maps.Map(mapCanvas, mapOptions);
@@ -20,7 +20,7 @@ if (window.google && window.google.maps) {
         position: mapLocation,
         clickable: false,
         map: map,
-        icon: '/images/marker-orange.svg'
+        icon: '/images/marker-orange.svg',
       });
 
       mapCenter();
@@ -28,7 +28,7 @@ if (window.google && window.google.maps) {
     }
   }
 
-  function mapCenter () {
+  function mapCenter() {
     map.setCenter(mapLocation);
   }
 

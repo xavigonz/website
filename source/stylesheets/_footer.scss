@@ -1,7 +1,7 @@
-#footer {
-  background-color: #333;
-  color: #666;
+.footer {
+  background-color: $dark-gray;
   clear: both;
+  color: $medium-gray;
   padding-top: 2em;
   position: relative;
   text-align: center;
@@ -21,7 +21,7 @@
     }
 
     h6 {
-      border-bottom: 1px solid #444;
+      border-bottom: 1px solid $gray-menu;
       margin-bottom: 5px;
       padding: 0 0 0.6em;
 
@@ -31,14 +31,14 @@
     }
 
     a {
-      color: #999;
+      color: $footer-gray;
       display: inline-block;
       padding: 5px 0;
 
       &:active,
       &:focus,
       &:hover {
-        color: lighten(#999, 30%);
+        color: lighten($footer-gray, 30%);
       }
 
       @include media($medium-only) {
@@ -54,7 +54,7 @@
 
   .contact {
     a {
-      padding: 0
+      padding: 0;
     }
   }
 
@@ -72,7 +72,7 @@
   }
 
   .copyright {
-    border-top: 1px solid #444;
+    border-top: 1px solid $gray-menu;
     margin-top: 1em;
     padding: 1em 0;
   }
