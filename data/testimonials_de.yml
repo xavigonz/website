@@ -45,6 +45,7 @@
 
 - name: Kristel Vissers
   company: "Projektleiter Qualitätspass, Máxima Medisch Centrum"
+  featured: true
   quote: >
     <p>Im Máxima Medisch Centrum (MMC) brauchten wir ein System, welches das MMC-(Pflege)Personal stimuliert um kontinuierlich seine oder
     ihre Kompetenzen und Fähigkeiten einzusehen und weiter zu entwickeln, sodass die beste Pflege mit einem erkennbaren Profil geboten
@@ -63,12 +64,7 @@
     auf dem Arbeitsplatz getestet. Dies ist effizient und bietet enorm viel Einsicht. Mit Hilfe von Defacto verfügen Vorgesetzte über
     (Leitungs-)Informationen und beschäftigt sich unser (Pflege)Personal bewusst mit seiner eigenen Entwicklung und übernimmt hier nun
     uch selbst die Verantwortung für.</p>
-  summary: >
-    Während der Implementierung des Qualitätspasses ist uns aufgefallen, dass Defacto eine enge Beziehung der Zusammenarbeit anstrebt.
-    Sie sind interessiert an der Organisation und deren Prozesse und können daher konstruktiv mit uns mitdenken. Die Zusammenarbeit mit
-    den Menschen von Defacto hat uns geholfen um die Basis des Qualitätspasses zu erstellen. Gemeinsam mit Defacto arbeiten wir an der
-    kontinuierlichen Verbesserung des Qualitätspasses, sowohl technisch als auch funktionell.
-
+  summary: Gemeinsam mit Defacto arbeiten wir an der kontinuierlichen Verbesserung.
 
 - name: Marieke van Kernebeek
   company: "Office manager, Phoenix Opleidingen"
