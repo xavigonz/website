@@ -4,7 +4,6 @@ date: 2016-10-25 08:00 CEST
 tags:
 author: Isabela
 lang: de
-featured: true
 image: images/social/qualitat-sichern-durch-bildungsmanagement-1200x630.png
 ---
 
