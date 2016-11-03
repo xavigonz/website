@@ -1,0 +1,34 @@
+---
+title:
+  nl: CAPP Productsheet downloaden
+  de: CAPP Productsheet Anfrage
+  en: CAPP Productsheet download
+description:
+  nl: Download een CAPP Productsheet
+  de: Fragen Sie hier ein CAPP Produktblatt mit weiteren Informationen an und laden Sie es herunter!
+---
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1><%= t("productsheet_download.title") %></h1>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="row">
+    <article>
+      <h2><%= t("productsheet_download.heading") %></h2>
+      <form class="form-conversion" accept-charset="UTF-8" action="<%= t("urls.productsheet") %>" method="POST">
+        <input type="hidden" name="utf8" value="✓">
+        <input type="hidden" name="form" value="<%= t("productsheet_download.formkeep_title") %>">
+        <input type="text" name="name" placeholder="<%= t("form.name") %>">
+        <input type="text" name="organization" placeholder="<%= t("form.organization") %>">
+        <input class="required" type="email" name="email" placeholder="<%= t("form.email") %>" required>
+        <input type="hidden" name="download" value="<%= full_url(data.downloads.capp_productsheet[I18n.locale]) %>">
+        <button type="submit"><%= t("actions.download_productsheet") %>&nbsp;&nbsp;<span class="icon-pdf"></span></button>
+      </form>
+    </article>
+  </div>
+</section>

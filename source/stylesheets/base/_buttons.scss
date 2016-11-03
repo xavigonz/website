@@ -1,22 +1,23 @@
 @mixin button($color) {
   background-color: $color;
   border: 2px solid $color;
-  color: #fff;
+  color: $white;
 
   &:hover,
   &:focus {
     background-color: darken($color, 10%);
     border-color: darken($color, 10%);
-    color: #fff;
+    color: $white;
   }
 
   &.outline {
-    background-color: transparent !important;
+    background-color: transparent;
     border-color: $color;
     color: $color;
 
     &:hover,
     &:focus {
+      background-color: rgba($white, 0.1);
       border-color: darken($color, 10%);
       color: darken($color, 15%);
     }
@@ -28,13 +29,13 @@
   @include appearance(none);
   @include button($action-color);
   @include transition(all 0.15s ease-out);
-  -webkit-font-smoothing: antialiased;
   background-color: $action-color;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
   font-size: $base-font-size * 1.2;
+  -webkit-font-smoothing: antialiased;
   font-weight: 600;
   padding: $base-spacing / 2;
   text-decoration: none;
@@ -73,20 +74,20 @@
   }
 
   &.white {
-    @include button(#fff);
+    @include button($white);
     color: lighten($base-font-color, 15);
 
     &:hover,
     &:focus {
-      background-color: #fff;
+      background-color: $white;
       color: $base-font-color;
     }
 
     &.outline {
       &:hover,
       &:focus {
-        border-color: #fff;
-        color: #fff;
+        border-color: $white;
+        color: $white;
       }
     }
   }
@@ -100,8 +101,8 @@
   [class*=" icon-"] {
     display: inline-block;
     font-size: 1.6em;
-    margin-top: -12px;
     margin-bottom: -8px;
+    margin-top: -12px;
     vertical-align: middle;
   }
 }
