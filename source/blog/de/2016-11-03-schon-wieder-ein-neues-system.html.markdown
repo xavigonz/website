@@ -5,7 +5,7 @@ tags:
 author: Anne
 lang: de
 featured: true
-image: images/social/qualitat-sichern-durch-bildungsmanagement-1200x630.png
+image: images/social/ein-neues-system-1200x630.png
 ---
 
 ***Wir sind uns bewusst über die Tatsache, dass die Einführung eines [Lernmanagentsystems (LMS)](/capp-bilden) viele Veränderungen in einer Organisation mit sich bringt. Ein solches System hat an sich schon einiges an Gewicht, aber dann kommt auch noch ein neues „Computersystem“ dazu.***
@@ -15,7 +15,7 @@ Oft kommt die Frage auf, ob eine solche Umstellung nicht auf Kosten des Patiente
 ## Die richtige Implementierung
 Die Software allein reicht nicht, denn ohne die richtige Implementierung funktioniert ein solches System nicht. Defacto verwendet ein System namens Technology Acceptance Model (TAMII), um Mitarbeiter mit einem neuen System vertraut zu machen. Die Anwendung haben wir übersetzt und an die kontinuierliche Entwicklung unseres CAPP-systems angepasst. Das TAMII-Model ist sehr gut dafür geeignet, eine gute Analyse zu machen. Wir haben genau erklärt, wie Defacto Sie sowohl in der Implementierungsphase als auch in der Akzeptanzphase unterstützt. In der Infografik hierunter finden Sie eine vereinfachte Wiedergabe mit einigen Beispielen.
 
-[![Implementierung neues System](/images/blog/de/implementierung-neues-system.png)](/images/blog/de/implementierung-neues-system-gross.png){:target="_blank"}
+![Implementierung neues System](/images/blog/de/implementierung-neues-system.png)
 
 ## Unterstützung
 Auch nach der Implementierungsphase unterstützen wir Sie bei Themen wie Sicherheit, Anwendung und Gebrauch unseres LMS. Im Maxima Medisch Centrum in den Niederlanden haben wir zum Beispiel viele Erfahrungen in unterschiedlichen Bereichen sammeln können. Dazu gehören Key-user Trainings, Prozessoptimierung, Managementpräsentationen und die Unterstützung des Servicedesks. Konkrete Beispiele hierfür sind digitale Anleitungen mit unterstützenden Screenshots. Uns ist auch die Art der Kommunikation nach der aktiven Unterstützungsphase sehr wichtig. Zusätzlich haben wir dem Servicedesk dabei geholfen, FAQs aufzustellen, in denen Mitarbeiter auf viel gestellte Fragen antworten.
