@@ -9,6 +9,7 @@ description:
   <div class="hero-inner">
 
     <div class="row">
+
       <div class="hero-copy col">
         <h1><%= image_tag "logos/learningspaces-white.png", alt: "Logo LearningSpaces", class: "logo-ls" %></h1>
         <%= markitdown t("learningspaces.hero.text_md") %>
@@ -16,15 +17,25 @@ description:
         <%= link_to t("actions.try_for_free"), t("urls.ls_registration"), "data-event": "hero_try", class: "button" %>
         <%= link_to t("actions.visit_website"), t("urls.ls_website"), target: "_blank", "data-event": "hero_website", class: "button white outline" %>
       </div>
-      <div class="hero-image col">
 
-        <div class="browser intrinsic-ratio">
-          <div class="browser-ooo"></div>
-          <div class="browser-viewport">
+      <div class="hero-video col">
 
-             <%= image_tag ("ls-spaces.png"), title: "LearningSpaces", alt: "LearningSpaces" %>
-
+        <div class="video-fluid">
+            <iframe src="https://player.vimeo.com/video/184984381?api=1&player_id=vimeo-player&title=0&portrait=0&byline=0&badge=0"
+                id="vimeo-player"
+                width="640"
+                height="360"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+                data-progress="true"
+                data-seek="true"
+                data-bounce="true"
+                data-title="video">
+              </iframe>
           </div>
+
         </div>
 
       </div>

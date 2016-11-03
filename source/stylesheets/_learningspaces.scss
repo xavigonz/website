@@ -1,13 +1,16 @@
-.learningspaces_index {
-  $browserbackground: #e9edf0;
-  $browserbuttons: #d4dbdf;
-  $browsershadow: #d9dee1;
+body.learningspaces_index {
 
   .hero {
     background-attachment: scroll;
     background-color: $green;
     background-image: url("../images/learningspaces-pattern.svg");
     background-position: center;
+
+    p {
+      @include media($large-down) {
+        font-size: 1.4em;
+      }
+    }
   }
 
   .col {
@@ -16,78 +19,21 @@
     }
   }
 
-  .browser {
-    background: $browserbackground;
-    border: 1px solid $browsershadow;
-    border-radius: 5px 5px 0;
-    box-sizing: border-box;
-    padding-top: 24px;
-    position: relative;
-
-    .browser-ooo {
-      left: 8px;
-      top: 8px;
-
-      &,
-      &::before,
-      &::after {
-        background: $browserbuttons;
-        border-radius: 50%;
-        content: "";
-        float: left;
-        height: 8px;
-        position: absolute;
-        width: 8px;
-      }
-
-      &::before {
-        left: 13px;
-      }
-
-      &::after {
-        left: 26px;
-      }
-    }
-
-    .browser-viewport {
-      position: relative;
-    }
-
-    img {
-      box-shadow: 0 0 0 1px $browsershadow;
-      display: block;
-      max-width: 100%;
-    }
-
-    &.intrinsic-ratio {
-      .browser-viewport {
-        &::before {
-          content: "";
-          display: block;
-          padding-bottom: 71%;
-        }
-      }
-
-      img {
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-      }
-    }
-  }
-
   .hero-inner {
     @include media($large-up) {
-      padding: 5em 0 0;
+      padding: 6em 0;
+    }
+
+    @include media($medium-down) {
+      padding: 2em 0 1em;
     }
   }
 
   .logo-ls {
-    max-width: 320px;
+    max-width: 340px;
     width: 100%;
 
-    @include media($medium-down) {
+    @include media($large-down) {
       margin: 0 auto;
     }
   }
@@ -96,7 +42,6 @@
     text-align: center;
 
     @include media($large-up) {
-      padding: 3em 0;
       text-align: left;
     }
 
@@ -104,6 +49,20 @@
       @include media($large-up) {
         margin: 0 0.5em 0 0;
       }
+
+      @include media($xlarge-down) {
+        font-size: 1.1em;
+      }
+    }
+  }
+
+  .hero-video {
+    @include media($large-down) {
+      padding: 2em 2em 0;
+    }
+
+    @include media($medium-down) {
+      padding: 0;
     }
   }
 
