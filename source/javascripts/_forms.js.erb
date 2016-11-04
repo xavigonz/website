@@ -13,6 +13,14 @@
 $(function () {
   var $forms = $('form');
 
+  // Change option color on select
+  var demoSelect = document.getElementById('demo-select');
+  if (demoSelect) {
+    demoSelect.onchange = function () {
+      demoSelect.className = this.options[this.selectedIndex].className;
+    }
+  }
+
   // Placeholder polyfill
   $('input, textarea').placeholder();
 
@@ -31,11 +39,13 @@ $(function () {
     $form.find('input:visible').each(function () {
       var $input = $(this).removeClass('invalid');
       var value = $.trim($input.val());
+
       // validate required
       if ($input.attr('required') && value.length < 1) {
         $invalidInputs = $invalidInputs.add($input);
         return true;
       }
+
       // validate type
       switch ($input.attr('type')) {
         case 'email':
@@ -58,8 +68,10 @@ $(function () {
     // Download forms
     var $downloadInput = $form.find('input[name=download]');
     if ($downloadInput.length) {
+
       // Open download
       window.open($downloadInput.val(), '_blank');
+
       // Hide ebook popup
       if (downloadUrl === '<%= full_url(data.downloads.ebook[I18n.locale]) %>') {
         Defacto.popup.hide($('#popup-ebook'), Defacto.popup.cookieExpiresOnSubmit);
