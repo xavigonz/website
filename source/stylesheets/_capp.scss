@@ -42,17 +42,19 @@ body.capp-entwickeln {
     }
   }
 
-  .row {
-    padding: 0;
+  .main {
+    .row {
+      padding: 0;
 
-    @include media($large-down) {
-      padding: 0 1em;
-    }
-  }
+      @include media($large-down) {
+        padding: 0 1em;
+      }
 
-  .col {
-    @include media($large-up) {
-      @include span-columns(6);
+      .col {
+        @include media($large-up) {
+          @include span-columns(6);
+        }
+      }
     }
   }
 

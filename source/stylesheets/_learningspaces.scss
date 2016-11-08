@@ -11,11 +11,11 @@ body.learningspaces_index {
         font-size: 1.4em;
       }
     }
-  }
 
-  .col {
-    @include media($large-up) {
-      @include span-columns(6);
+    .col {
+      @include media($large-up) {
+        @include span-columns(6);
+      }
     }
   }
 
@@ -79,6 +79,12 @@ body.learningspaces_index {
 
       &:last-of-type {
         border-bottom: 0;
+      }
+
+      .col {
+        @include media($large-up) {
+          @include span-columns(6);
+        }
       }
     }
 
