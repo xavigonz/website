@@ -4,7 +4,6 @@ date: 2016-10-05 08:00 CEST
 tags:
 author: Joke
 lang: nl
-featured: true
 image: images/social/gebruikersoverleg-september-2016-1200x630.png
 ---
 
