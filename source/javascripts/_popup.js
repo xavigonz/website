@@ -36,8 +36,15 @@ Defacto.popup = {
   },
 
   init: function () {
+    var $popups = $('.popup');
+
+    // Check if a popup is present
+    if ($popups.length === 0) {
+      return false;
+    }
+
     // Remove popups the user has closed
-    $('.popup').each(function () {
+    $popups.each(function () {
       if (this.id && Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id] === Defacto.popup.cookieValue) {
         $(this).remove();
       }
@@ -47,6 +54,7 @@ Defacto.popup = {
     this.$window.on('scroll', function () {
       if (!Defacto.popup.popupsShown && Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
         Defacto.popup.popupsShown = true;
+
         setTimeout(function () {
           $('.popup').addClass('popup-show');
           ga('send', 'event', 'popup', 'show', window.location.pathname);
