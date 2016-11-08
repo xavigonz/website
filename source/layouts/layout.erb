@@ -52,9 +52,7 @@
     </div>
     <%= partial "footer" %>
 
-    <% if data.downloads.ebook[I18n.locale] && !is_blog? %>
-      <%= partial "popup-ebook" %>
-    <% end %>
+    <%= partial "popup-ebook" if !is_blog? && current_page.data.popup != false && data.downloads.ebook[I18n.locale] %>
 
     <%= javascript_include_tag "all" %>
 
