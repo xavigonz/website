@@ -243,13 +243,13 @@ de:
       heading_md: "Testen Sie 360° Feedback jetzt gratis!"
     desc: "%{link} ist ein effizientes Tool für eine transparente Personalentwicklung und motivierte Entwicklung Ihrer Mitarbeiter."
     hero:
-      text_md: "Die Sichtweisen der anderen kennen um sich selbst weiterzuentwickeln"
+      text_md: "Die Sichtweisen der anderen kennen um sich selbst weiterzuentwickeln!"
       title: "360° Feedback"
     logo: logos/360feedback.svg
     name: "360° Feedback"
   demo_request:
     title: "Demo anfragen"
-    heading: "Senden Sie uns ihre Details und fragen Sie eine Demo an! Wir freuen uns!"
+    heading: "Senden Sie uns Ihre Details und fragen Sie eine Demo an! Wir freuen uns!"
     formkeep_title: "Demo request"
   productsheet_download:
     title: "Mehr Informationen über Fort- und Weiterbilden mit CAPP LMS?"
