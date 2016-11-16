@@ -4,13 +4,13 @@
     <% data.team.sort_by { |p| p.lastname.downcase }.each do |person| %>
       <li>
         <% if href = team_avatar_url(person) %>
-          <%= image_tag href, alt: "#{person.firstname} #{person.lastname}", class: "avatar" %>
+          <%= image_tag href, alt: "#{person.firstname} #{person.prefix} #{person.lastname}", class: "avatar" %>
         <% else %>
           <div class="avatar no-image"></div>
         <% end %>
         <h5>
           <span><%= person.firstname %></span>
-          <span><%= person.lastname %></span>
+          <span><%= person.prefix %> <%= person.lastname %></span>
         </h5>
       </li>
     <% end %>
@@ -27,6 +27,3 @@
 
   </ol>
 </section>
-
-
-
