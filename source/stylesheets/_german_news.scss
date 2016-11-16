@@ -1,28 +1,21 @@
 .german-news {
   h2 {
+    color: $medium-gray;
     text-align: center;
   }
 
-  .agenda {
+  h3 {
+    color: $medium-gray;
+  }
+
+  .agenda-item {
+    border-bottom: $post-border 1px solid;
     margin: 0 auto;
     max-width: 900px;
+    padding: 2.8em 0;
 
-    th {
-      &.when {
-        width: 15%;
-      }
-
-      &.event {
-        width: 65%;
-      }
-
-      &.where {
-        width: 20%;
-      }
-    }
-
-    td {
-      padding-right: 1em;
+    .info {
+      color: $post-meta;
     }
   }
 }
