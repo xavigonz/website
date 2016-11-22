@@ -16,7 +16,7 @@ Defacto.popup = {
   // console.log(Cookies.get()); // show all coockies
   // Cookies.remove('defacto_popup-ebook', { path: '/' }); // remove ebook cookie
 
-  // Hide hightlight
+  // Hide highlight
   hide: function ($popup, cookieExpires) {
     if ($popup.length === 0) {
       return false;
@@ -44,15 +44,17 @@ Defacto.popup = {
     }
 
     // Remove popups the user has closed
+    var popupCookie = Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id];
     $popups.each(function () {
-      if (this.id && Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id] === Defacto.popup.cookieValue) {
+      if (this.id && popupCookie === Defacto.popup.cookieValue) {
         $(this).remove();
       }
     });
 
     // Show popup after scroll
     this.$window.on('scroll', function () {
-      if (!Defacto.popup.popupsShown && Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
+      if (!Defacto.popup.popupsShown &&
+        Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
         Defacto.popup.popupsShown = true;
 
         setTimeout(function () {
@@ -62,14 +64,24 @@ Defacto.popup = {
       }
     });
 
-    // Close popup button
+    // Close popup on clicking on close button
     $(document).on('click', '.popup .close', function (event) {
       event.preventDefault();
       var $popup = $(this).closest('.popup');
       Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
       ga('send', 'event', 'popup', 'close', window.location.pathname);
     });
-  }
+
+    // Close popup on clicking anywhere else
+    $(document).on('click', function (event) {
+      if (!$(event.target).parents().addBack().is('#js-popup-ebook') &&
+          !$(event.target).parents().addBack().is('a')) {
+        var $popup = $('#js-popup-ebook');
+        Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
+        ga('send', 'event', 'popup', 'close', window.location.pathname);
+      }
+    });
+  },
 };
 
 Defacto.popup.init();
