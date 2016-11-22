@@ -19,11 +19,12 @@
 
     button,
     .button {
-      margin: 0 0.5em 1.5em;
+      display: block;
+      margin: 0 0 1.5em;
 
-      @include media($medium-down) {
-        margin: 0 0 1.5em;
-        width: 100%;
+      @include media($medium-up) {
+        display: inline-block;
+        margin: 0 0.5em 1.5em;
       }
     }
   }
