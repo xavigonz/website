@@ -4,7 +4,7 @@
   </a>
 
   <div class="popup-header">
-    <label for="popup-ebook-email">
+    <label for="popup-ebook-name">
       <h2 class="popup-title"><%= t("elearning_ebook.heading_html") %></h2>
       <%= image_tag "book-#{I18n.locale.to_s}.png", class: "popup-img", alt: t("elearning_ebook.image_alt") %>
     </label>
@@ -14,9 +14,9 @@
     <form accept-charset="UTF-8" action="<%= t("urls.ebook") %>" method="POST">
       <input type="hidden" name="utf8" value="✓">
       <input type="hidden" name="form" value="<%= t("elearning_ebook.formkeep_title_popup") %>">
-      <input type="text" name="name" placeholder="<%= t("form.name") %>">
+      <input type="text" name="name" id="popup-ebook-name" placeholder="<%= t("form.name") %>">
       <input type="text" name="organization" placeholder="<%= t("form.organization") %>">
-      <input type="email" name="email" id="popup-ebook-email" placeholder="<%= t("form.email") %>" required>
+      <input type="email" name="email" placeholder="<%= t("form.email") %>" required>
       <input type="hidden" name="download" value="<%= full_url(data.downloads.ebook[I18n.locale]) %>">
       <button type="submit"><%= t("actions.download") %></button>
     </form>
