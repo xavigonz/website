@@ -1,0 +1,49 @@
+.cases-overview,
+.other-cases {
+  $background: #f2f2f2;
+  background-color: $background;
+
+  .row {
+    @include display(flex);
+    @include flex-flow(row wrap);
+    @include justify-content(space-around);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .case-item {
+    background: $white;
+    margin: 0 auto 1em;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 360px;
+
+    a {
+      color: $base-font-color;
+    }
+
+    .button {
+      color: $white;
+    }
+
+    .case-info {
+      padding: 1em 1em 1.8em;
+    }
+  }
+}
+
+.cases_zinn {
+  .hero {
+    background-image: url("../images/cases/zinn-bg.jpg");
+    background-position: center;
+  }
+}
+
+.other-cases {
+  .row {
+    max-width: 860px;
+  }
+}
