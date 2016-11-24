@@ -62,14 +62,6 @@ $popup-mobile-mode: max-width 400px;
     width: 100%;
   }
 
-  .popup-header {
-    padding-bottom: $popup-padding / 2;
-
-    @include media($popup-mobile-mode) {
-      padding-bottom: $popup-padding / 4;
-    }
-  }
-
   .close {
     background-color: $white;
     border-radius: 30px;
@@ -96,7 +88,7 @@ $popup-mobile-mode: max-width 400px;
   .popup-img {
     display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
   }
 
   .pre {
@@ -113,10 +105,14 @@ $popup-mobile-mode: max-width 400px;
     }
   }
 
+  .popup-header {
+    padding-bottom: $popup-padding / 2;
+  }
+
   .popup-title {
     font-size: 1.4em;
     font-weight: 300;
-    margin: 0;
+    margin-bottom: 0.6em;
   }
 
   .popup-bottom {
