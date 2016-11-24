@@ -1,9 +1,8 @@
 .hero {
-  $hero-color: #fff;
 
   background: $orange-alt no-repeat center fixed;
   background-size: cover;
-  color: $hero-color;
+  color: $white;
 
   .hero-inner {
     @include outer-container;
@@ -19,7 +18,13 @@
 
     button,
     .button {
-      margin: 0 0.5em 1.5em;
+      display: block;
+      margin: 0 0 1.5em;
+
+      @include media($medium-up) {
+        display: inline-block;
+        margin: 0 0.5em 1.5em;
+      }
     }
   }
 
@@ -33,67 +38,25 @@
     font-weight: 700;
     margin-bottom: 1em;
 
-    img {
-      max-width: 400px;
-    }
-
     @include media($large-up) {
       font-size: 4em;
       margin-bottom: 0.6em;
+    }
+
+    img {
+      max-width: 400px;
     }
   }
 
   p {
     font-size: 1.1em;
     line-height: 1.4em;
-    margin: 0 auto 2em auto;
+    margin: 0 auto 2em;
     max-width: 500px;
 
     @include media($large-up) {
       font-size: 1.6em;
       max-width: 720px;
-    }
-  }
-
-  .modal {
-    .modal-inner {
-      button,
-      .button {
-        font-size: 1em;
-        margin: 0;
-      }
-    }
-  }
-
-  .since {
-    display: inline-block;
-    font-size: 0.7em;
-    font-weight: 400;
-    letter-spacing: 3px;
-    line-height: .3;
-    padding: 0 0.8em;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    top: -20px;
-
-    @include media($large-up) {
-      font-size: 0.9em;
-    }
-
-    &:before,
-    &:after {
-      border-bottom: 1px solid #eee;
-      box-shadow: 1px 1px 3px rgba(#000, .3);
-      content: "";
-      left: 100%;
-      position: absolute;
-      width: 40px;
-    }
-
-    &:after {
-      left: auto;
-      right: 100%;
     }
   }
 }
