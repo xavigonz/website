@@ -16,26 +16,6 @@ Defacto.popup = {
   // console.log(Cookies.get()); // show all coockies
   // Cookies.remove('defacto_popup-ebook', { path: '/' }); // remove ebook cookie
 
-  // Hide highlight
-  hide: function ($popup, cookieExpires) {
-    if ($popup.length === 0) {
-      return false;
-    }
-
-    var id = $popup[0].id;
-    if (cookieExpires && id) {
-      Cookies.set(this.cookiePrefix + id, this.cookieValue,
-        { expires: this.cookieExpires, path: this.cookiePath });
-    }
-
-    $popup.addClass('popup-hide');
-    $(document).off('click.popup');
-
-    setTimeout(function () {
-      $popup.remove();
-    }, 400);
-  },
-
   init: function () {
     var $popups = $('.popup');
 
@@ -44,9 +24,10 @@ Defacto.popup = {
       return false;
     }
 
-    // Remove popups the user has closed
-    var popupCookie = Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id];
+    // Remove popups the user has closed before
     $popups.each(function () {
+      var popupCookie = Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id];
+
       if (this.id && popupCookie === Defacto.popup.cookieValue) {
         $(this).remove();
       }
@@ -59,18 +40,8 @@ Defacto.popup = {
         Defacto.popup.popupsShown = true;
 
         setTimeout(function () {
-          $('.popup').addClass('popup-show');
-          ga('send', 'event', 'popup', 'show', window.location.pathname);
-
-          // Close popup on clicking anywhere else
-          $(document).on('click.popup', function (event) {
-            console.log(1);
-            if (!$(event.target).parents().addBack().is('#js-popup-ebook') &&
-                !$(event.target).parents().addBack().is('a')) {
-              var $popup = $('#js-popup-ebook');
-              Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
-              ga('send', 'event', 'popup', 'close', window.location.pathname);
-            }
+          $popups.each(function () {
+            Defacto.popup.show($(this));
           });
         }, Defacto.popup.showDelay);
       }
@@ -83,6 +54,43 @@ Defacto.popup = {
       Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
       ga('send', 'event', 'popup', 'close', window.location.pathname);
     });
+  },
+
+  // Show highlight
+  show: function ($popup) {
+    $('.popup').addClass('popup-show');
+    ga('send', 'event', 'popup', 'show', window.location.pathname);
+
+    // Close popup on clicking anywhere else
+    $(document).on('click.popup', function (event) {
+      var target = event.target;
+
+      if (!$popup.has(target).length && target.tagName.toLowerCase() !== 'a') {
+        Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
+        ga('send', 'event', 'popup', 'close', window.location.pathname);
+      }
+    });
+  },
+
+  // Hide highlight
+  hide: function ($popup, cookieExpires) {
+    if ($popup.length === 0) {
+      return false;
+    }
+
+    $(document).off('click.popup');
+
+    var id = $popup[0].id;
+    if (cookieExpires && id) {
+      Cookies.set(this.cookiePrefix + id, this.cookieValue,
+        { expires: this.cookieExpires, path: this.cookiePath });
+    }
+
+    $popup.addClass('popup-hide');
+
+    setTimeout(function () {
+      $popup.remove();
+    }, 400);
   },
 };
 
