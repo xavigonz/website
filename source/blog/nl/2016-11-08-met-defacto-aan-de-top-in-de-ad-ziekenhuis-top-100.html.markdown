@@ -4,7 +4,6 @@ date: 2016-11-08 08:00 CEST
 tags:
 author: Joke
 lang: nl
-featured: true
 image: images/social/defacto-top-ziekenhuis-top100-1200x630.png
 ---
 
