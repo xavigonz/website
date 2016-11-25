@@ -1,7 +1,7 @@
 <% wrap_layout :layout do %>
   <%
   author = blog_author(current_article)
-  author_name = author ? "#{author.firstname} #{author.lastname}" : current_article.data.author
+  author_name = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : current_article.data.author
   %>
 
   <article>
