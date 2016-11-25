@@ -1,6 +1,6 @@
 ---
 title: LearningSpaces op Websummit
-date: 2016-11-25 08:00 CEST
+date: 2016-11-28 08:00 CEST
 tags:
 author: Iwanna
 lang: nl
@@ -11,9 +11,6 @@ image: images/social/learningspaces-op-websummit-1200x630.png
 **WebSummit, Europa's grootste technologie top vond plaats van 7 tot en met 11 november in Lissabon Portugal. [LearningSpaces](http://www.learningspaces.nl){:target="_blank"} was erbij om daar met mensen te praten over ons product, success cases, activiteiten en om feedback te krijgen.**
 
 Lissabon werd gekozen voor dit enorme evenement als gevolg van de sterk ondernemende tech scene, die exponentiële groei heeft doorgemaakt in de afgelopen jaren. CEO's, key wereldleiders, culturele iconen, start-ups, investeerders, leidende academici en de meest iconische bedrijven werden allemaal verzameld op één plek: Lissabon. Er waren meer dan 20 podia en workshops, ook waren er tal van lezingen en discussies. De Summit gaat bijna 24 uur per dag door, er is de Summit overdag, SunSet Summit en Night Summit.
-
-## Video LearningSpaces op WebSummit
-<iframe src="https://www.youtube.com/embed/DrthVboEENE" frameborder="0" allowfullscreen></iframe>
 
 Dit zegt WebSummit zelf over het evenement:
 
@@ -49,3 +46,6 @@ Op onze standdag komt niet iedereen voor de inmiddels legendarische pakken langs
 ---
 
 Hoe gebrekkig het ook was, we moeten toegeven dat WebSummit een mooie kans is om te netwerken, veel advies te krijgen en nieuwe contacten op te doen. Het is wat je er zelf van maakt. WebSummit gaat niet om de organisatie, het zijn de start ups en bezoekers die samen zoeken naar de beste toekomstige oplossingen.
+
+## Video LearningSpaces op WebSummit
+<iframe src="https://www.youtube.com/embed/DrthVboEENE" frameborder="0" allowfullscreen></iframe>
