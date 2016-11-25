@@ -27,7 +27,7 @@ pageable: true
               <div class="post-meta">
                 <%
                 author = blog_author(article)
-                author_name = author ? "#{author.firstname} #{author.lastname}" : article.data.author
+                author_name = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : article.data.author
                 %>
                 <span class="author-name"><%= author_name %></span>
                 <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>

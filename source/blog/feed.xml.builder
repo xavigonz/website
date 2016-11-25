@@ -19,7 +19,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       # Try to get author for team.yml
       if article.data.author
         author = blog_author(article)
-        author = author ? "#{author.firstname} #{author.lastname}" : article.data.author
+        author = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : article.data.author
         xml.author { xml.name author }
       end
 
