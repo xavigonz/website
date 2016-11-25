@@ -12,6 +12,9 @@ image: images/social/learningspaces-op-websummit-1200x630.png
 
 Lissabon werd gekozen voor dit enorme evenement als gevolg van de sterk ondernemende tech scene, die exponentiële groei heeft doorgemaakt in de afgelopen jaren. CEO's, key wereldleiders, culturele iconen, start-ups, investeerders, leidende academici en de meest iconische bedrijven werden allemaal verzameld op één plek: Lissabon. Er waren meer dan 20 podia en workshops, ook waren er tal van lezingen en discussies. De Summit gaat bijna 24 uur per dag door, er is de Summit overdag, SunSet Summit en Night Summit.
 
+## Video LearningSpaces op WebSummit
+<iframe src="https://www.youtube.com/embed/DrthVboEENE" frameborder="0" allowfullscreen></iframe>
+
 Dit zegt WebSummit zelf over het evenement:
 
 > *'WebSummit is Europa's grootste en meest belangrijke marktplaats voor technologie geworden. Een niet te evenaren ontmoetingsplaats voor bedrijven die impact maken vanuit elke hoek van de wereld en de mensen die geïnteresseerd zijn hoe dit impact kan maken op hun éigen leven.'*  
