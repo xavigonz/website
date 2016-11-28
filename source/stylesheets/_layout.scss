@@ -251,7 +251,7 @@ figcaption {
   padding: 2em;
   position: relative;
 
-  p {
+  p:last-child {
     margin: 0;
   }
 }
