@@ -44,9 +44,6 @@ Onze mannen Tim Bakker en Marcel Horlings krijgen veel aandacht in hun prachtige
 
 Op onze standdag komt niet iedereen voor de inmiddels legendarische pakken langs. Bezoekers waren er echt op uit om [de visie achter LearningSpaces](http://blog.learningspaces.io/what-is-learningspaces/){:target="_blank"} te horen. Voor de mensen die onze pitch nog niet gehoord hebben: bel of mail ons en we maken het goed! We deelden ook onze eigen gemaakte boekjes over e-learning uit. Als je geïnteresseerd bent in het in elkaar zetten van e-learning en het is je niet gelukt om een boek mee te nemen: neem dan contact op en we zorgen er alsnog voor dat je één toegestuurd krijgt.
 
-## Video LearningSpaces op WebSummit
-<iframe src="https://www.youtube.com/embed/DrthVboEENE" frameborder="0" allowfullscreen></iframe>
-
 ---
 Hoe gebrekkig het begin ook was, we moeten toegeven dat WebSummit een mooie kans is om te netwerken, veel adviezen te ontvangen en nieuwe contacten op te doen. WebSummit gaat niet om de organisatie, het zijn de start-ups en bezoekers die samen zoeken naar de beste oplossingen voor de toekomst.
 
