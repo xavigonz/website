@@ -2,7 +2,7 @@
 title: Gebruikersoverleg 22 september 2016
 date: 2016-10-05 08:00 CEST
 tags:
-author: Joke
+author: Joke Coens
 lang: nl
 image: images/social/gebruikersoverleg-september-2016-1200x630.png
 ---

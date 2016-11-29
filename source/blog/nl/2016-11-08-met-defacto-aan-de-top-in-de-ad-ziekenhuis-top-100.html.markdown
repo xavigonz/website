@@ -2,7 +2,7 @@
 title: Met Defacto aan de top in de AD Ziekenhuis Top 100
 date: 2016-11-08 08:00 CEST
 tags:
-author: Joke
+author: Joke Coens
 lang: nl
 image: images/social/defacto-top-ziekenhuis-top100-1200x630.png
 ---
