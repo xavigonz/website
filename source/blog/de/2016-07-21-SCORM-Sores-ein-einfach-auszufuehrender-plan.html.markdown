@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: de
 image: images/social/mein-e-learning-modul-1200x630.png
+featured_image: images/blog/featured/20160721-hilfe-scorm.png
 ---
 
 ### - SCORM Sores – ein einfach auszuführender Plan für Ihre Problemanalyse -

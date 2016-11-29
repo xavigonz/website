@@ -5,6 +5,7 @@ tags:
 author: Cathrin
 lang: de
 image: images/social/deutschland-niederlanden-1200x630.png
+featured_image: images/blog/featured/20150713-unterschiede-deutschland-niederlanden.png
 ---
 
 In den letzten Monaten haben wir enthusiastisch mit einem CAPP-Projekt im Evangelischen Krankenhaus Oldenburg begonnen. Sofort zeigten sich witzige Unterschiede zwischen Deutschland und den Niederlanden.

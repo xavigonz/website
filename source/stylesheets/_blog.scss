@@ -35,15 +35,6 @@
         color: $white;
       }
     }
-
-    .col {
-      @include span-columns(12);
-
-      @include media($large-up) {
-        @include span-columns(8);
-        @include shift(2);
-      }
-    }
   }
 
   article {
@@ -60,12 +51,11 @@
 
     time {
       display: inline-block;
-      // text-transform: uppercase;
       white-space: nowrap;
 
       &::before {
-        content: "–";
         color: #9eabb3;
+        content: "–";
         display: inline;
         margin: 0 0.5em 0 0.4em;
       }
@@ -79,31 +69,6 @@
       left: 50%;
       padding: 0.6em 0;
       position: relative;
-    }
-  }
-
-  .post-footer {
-    .author {
-      border-top: #ebf2f6 1px solid;
-      position: relative;
-      padding: 3em 0 0 0;
-      text-align: center;
-    }
-
-    .avatar {
-      $avatar-size: 80px;
-
-      @include avatar-size($avatar-size);
-      background-color: #fff;
-      box-shadow: #e7eef2 0 0 0 1px;
-      box-sizing: border-box;
-      display: block;
-      left: 50%;
-      margin-left: -$avatar-size / 2;
-      padding: 6px;
-      position: absolute;
-      top: -$avatar-size / 2;
-      z-index: 2;
     }
   }
 
@@ -129,14 +94,6 @@
 
 // Blog index
 .blog_index {
-  article {
-    border-bottom: #ebf2f6 1px solid;
-    padding: 2.4em 0;
-  }
-
-  li:first-child article {
-    padding-top: 0;
-  }
 
   .blog-header {
     $background-color: #fcfcfc;
@@ -148,14 +105,76 @@
     }
   }
 
-  .post-body {
-    margin: 1em 0;
-  }
+  .blog-list {
 
-  .post-header {
-    h2 {
-      font-size: 1.6em;
-      font-weight: 600;
+    li:first-child article {
+      padding-top: 0;
+    }
+
+    li {
+      border-bottom: #ebf2f6 1px solid;
+      padding: 3em 0;
+
+      @include media($medium-up) {
+        @include fill-parent();
+        @include row(table);
+      }
+
+      article {
+        margin: 0;
+        max-width: 100%;
+      }
+
+      .post-body {
+        margin: 1em 0;
+        padding: 0 6em 0 0;
+      }
+
+      .post-header {
+        h2 {
+          font-size: 1.6em;
+          font-weight: 600;
+        }
+      }
+
+      .avatar {
+        height: 40px;
+        margin-right: 0.5em;
+        width: 40px;
+      }
+    }
+
+    .col {
+      vertical-align: top;
+
+      &.left {
+        background-position: center;
+        display: table;
+        margin-bottom: 1em;
+
+        @include media($medium-up) {
+          @include span-columns(2);
+        }
+
+        img {
+          display: block;
+          margin: 0;
+          width: 100%;
+        }
+      }
+
+      &.right {
+        padding: 0;
+        text-align: left;
+        vertical-align: middle;
+
+        @include media($medium-up) {
+          @include span-columns(6);
+          @include reset-display;
+
+          padding-left: 4em;
+        }
+      }
     }
   }
 }
@@ -167,7 +186,7 @@
 
 .pagination {
   display: inline-block;
-  margin: 2em 0;
+  margin: 4em 0;
   padding: 0;
 
   li {
@@ -186,7 +205,6 @@
     &:hover {
       background-color: $light-gray;
     }
-
   }
 
   .prev {
@@ -214,28 +232,62 @@
 
 // Blog article
 .blog-article {
-  .post-header {
-    $background-color: #fcfcfc;
-    @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+  #main {
+    .col {
+      @include span-columns(12);
 
-    h1 {
-      margin-bottom: 0.5em;
-    }
-  }
-
-  .post-body {
-    h2 {
-      font-size: 1.8em;
+      @include media($large-up) {
+        @include span-columns(8);
+        @include shift(2);
+      }
     }
 
-    h3 {
-      font-size: 1.4em;
-    }
-  }
+    .post-header {
+      $background-color: #fcfcfc;
+      @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
 
-  .post-footer {
-    .author-name {
-      font-weight: 700;
+      h1 {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    .post-body {
+      h2 {
+        font-size: 1.8em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+
+    .post-footer {
+      .author {
+        border-top: #ebf2f6 1px solid;
+        padding: 3em 0 0;
+        position: relative;
+        text-align: center;
+      }
+
+      .author-name {
+        font-weight: 700;
+      }
+
+      .avatar {
+        $avatar-size: 80px;
+
+        @include avatar-size($avatar-size);
+        background-color: #fff;
+        box-shadow: #e7eef2 0 0 0 1px;
+        box-sizing: border-box;
+        display: block;
+        left: 50%;
+        margin-left: -$avatar-size / 2;
+        padding: 6px;
+        position: absolute;
+        top: -$avatar-size / 2;
+        z-index: 2;
+      }
     }
   }
 }

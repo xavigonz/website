@@ -5,6 +5,7 @@ tags:
 author: Joke Coens
 lang: nl
 image: images/social/gebruikersoverleg-september-2016-1200x630.png
+featured_image: images/blog/featured/20161005-gebruikersoverleg.jpg
 ---
 
 **In het mooie auditorium van het Gelre Ziekenhuis hebben Gerwin, Bastiaan en Joep presentaties gehouden over het Kwaliteitspaspoort, onze applicatie 360˚Feedback en over ons product LearningSpaces.**

@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: de
 image: images/social/drei-grunde-1200x630.png
+featured_image: images/blog/featured/20160803-interkollegiales-testen.jpg
 ---
 
 **Die Fachliteratur boomt: Lernen nach dem '70-20-10-Prinzip', zurück zum direkten ’Lernen am Arbeitsplatz’, mehr Eigenverantwortung, soziales Lernen stimulieren und vieles mehr.**

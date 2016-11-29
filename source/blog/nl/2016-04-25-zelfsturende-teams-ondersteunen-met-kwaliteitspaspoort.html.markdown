@@ -5,6 +5,7 @@ tags:
 author: Gerwin
 lang: nl
 image: images/social/zelfsturende-teams-ondersteunen-kwaliteitspaspoort.png
+featured_image: images/blog/featured/20160726-kpp.jpg
 ---
 
 **Mijn collega Marian schreef recent over [zelfsturende teams in de zorg](/blog/zelfsturende-teams-hot-topic-in-de-zorg) en hoe het *CAPP Kwaliteitspaspoort* daarbij kan ondersteunen.**

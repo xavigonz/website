@@ -5,6 +5,7 @@ tags:
 author: Marian
 lang: nl
 image: images/social/gebruikersoverleg-1200x630.png
+featured_image: images/blog/featured/20160219-eerste-gebruikersoverleg.jpg
 ---
 
 **Afgelopen donderdag 11 februari was het eerste Defacto Gebruikersoverleg van 2016, dit keer in het Spoorwegmuseum in Utrecht. Er waren zo’n 60 mensen aanwezig om kennis te maken en kennis te delen. Michel van Zandvoort van het MUMC hield een keynote en er werd in kleinere kring gesproken over onderwerpen op het gebied van leren, opleiden en ontwikkelen.**

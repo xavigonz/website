@@ -4,6 +4,7 @@ date: 2015-12-14 15:30 CET
 tags:
 author: Joep
 lang: nl
+featured_image: images/blog/featured/20151214-innovatie.jpg
 ---
 
 ### *‘We moeten ons opleidingsprogramma innoveren, jij mag dit project leiden. Denk er echter wel aan dat we geen nieuwe ICT voorzieningen kunnen aanschaffen en dat we moeten blijven voldoen aan de huidige regelgeving’*
@@ -25,5 +26,3 @@ Een daadwerkelijke structurele verandering wordt dan ook niet bewerkstelligd met
 __Echte verandering begint bij mensen.__
 
 *Defacto denkt en helpt graag mee in het verkrijgen van draagvlak bij innovatie. Meer weten? Neem contact met me op, via 050 3144832 of [j.lenglet@defacto.nl](mailto:j.lenglet@defacto.nl).*
-
-

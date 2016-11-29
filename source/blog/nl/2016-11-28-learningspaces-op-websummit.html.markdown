@@ -6,6 +6,7 @@ author: Iwanna
 lang: nl
 featured: true
 image: images/social/learningspaces-op-websummit-1200x630.png
+featured_image: images/blog/featured/20161128-websummit.jpg
 ---
 
 **WebSummit, Europa's grootste technologiebeurs, vond plaats van 7 tot en met 11 november in Lissabon Portugal. [LearningSpaces](http://www.learningspaces.nl){:target="_blank"} was één van de uitgenodigde start-ups om daar met mensen te praten over het product, onze activiteiten en om feedback te krijgen.**

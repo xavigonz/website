@@ -4,6 +4,7 @@ date: 2015-08-12 10:55 CEST
 author: Glenn
 featured: false
 lang: nl
+featured_image: images/blog/featured/20150812-prototype.jpg
 ---
 
 Een jaar geleden heb ik een [360-graden feedback](http://360feedback.io) evaluatie gedaan met als doel te kijken waar ik op dat moment stond en in welk vakgebied ik me zou willen ontwikkelen. In deze feedback ronde werd gehint naar een functie als functioneel ontwerper of __[UX](https://en.wikipedia.org/wiki/User_experience_design)__ (User eXperience) ontwerper. Een half jaar geleden heb ik daar werk van gemaakt door bij [Anne Vroegop](https://twitter.com/annevroegop) een cursus te volgen op het gebied van interaction design.

@@ -4,11 +4,12 @@ date: 2016-07-15 14:05 CEST
 tags:
 author: martina
 lang: de
+featured_image: images/blog/featured/20160715-e-learning.png
 ---
 
 ***Wir von Defacto stehen für eine offene Lernplattform, damit Sie als Kunde die völlige Freiheit haben in der Wahl Ihrer E-Learning Module. Aber was bedeutet diese Aussage wirklich.***
 
-Eine offene Plattform ist, wenn man darüber nachdenkt ein ganz unglücklicher Begriff. Die Plattform ist selbstverständlich alles andere als offen. Ihre Datensicherheit ist für uns extrem wichtig. Wenn man mit Daten von unterschiedlichen Menschen interagiert, kann man nicht offen sein. Wir sind durch verschiedene Sicherheitszertifikate, u.a.  ISO und NEN zertifiziert.
+Eine offene Plattform ist, wenn man darüber nachdenkt ein ganz unglücklicher Begriff. Die Plattform ist selbstverständlich alles andere als offen. Ihre Datensicherheit ist für uns extrem wichtig. Wenn man mit Daten von unterschiedlichen Menschen interagiert, kann man nicht offen sein. Wir sind durch verschiedene Sicherheitszertifikate, u.a. ISO und NEN zertifiziert.
 
  Diese Sicherheitszertifikate werden jährlich auf den neuesten Stand gebracht und bilden die Grundlage für die Sicherheit Ihrer Daten.
 
@@ -20,4 +21,3 @@ Derzeit haben wir von verschiedenen Häusern Module in unserem Ausbildungskatalo
 
 ---
 Spricht Sie dieses Thema an? Schreiben Sie uns unter [Deutschland@defacto.nl](mailto:Deutschland@defacto.nl) oder rufen Sie uns an unter 040-306988472
-

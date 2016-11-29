@@ -2,9 +2,10 @@
 title: Wetswijziging meldplicht datalekken
 date: 2016-02-22 7:30 CET
 tags:
-author: Koos 
+author: Koos
 lang: nl
 image: images/social/meldplicht-datalekken-1200x630.png
+featured_image: images/blog/featured/20160222-nieuwe-datawet.jpg
 ---
 
 Per 1 januari 2016 heeft [een wetswijziging](http://www.mitopics.nl/weblog/forse-verandering-in-privacywetgeving-per-1-januari-2016-8564){:target="_blank"}  de meldplicht datalekken strenger gemaakt. In het kort houdt het in dat u verplicht bent om bij inbreuk op de beveiliging (de zogeheten datalekken) deze te melden bij de Autoriteit Persoonsgegevens (tot vorig jaar nog College Bescherming Persoonsgegevens geheten). Het gaat hier bijvoorbeeld om diefstal, verlies of misbruik van persoonsgegevens. Het niet melden van deze ‘lekken’ kan leiden tot hoge boetes.

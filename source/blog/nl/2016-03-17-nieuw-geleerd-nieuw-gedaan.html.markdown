@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: nl
 image: images/social/nieuw-geleerd-nieuw-gedaan-1200x630.jpg
+featured_image: images/blog/featured/20160317-nieuw-geleerd.jpg
 ---
 
 **We doen het allemaal: meegaan met de trends van vandaag de dag. Je moet natuurlijk wel een beetje bij blijven. Om hierin mee te gaan ervaar ik een continu veranderende voorkeur in het gebruik van apps, programma's en multimedia.**

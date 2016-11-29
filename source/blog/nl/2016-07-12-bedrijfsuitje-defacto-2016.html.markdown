@@ -5,6 +5,7 @@ tags:
 author: iwanna
 lang: nl
 image: images/social/bedrijfsuitje-defacto-2016-1200x630.png
+featured_image: images/blog/featured/20160712-bedrijfsuitje.jpg
 ---
 
 ***'Hi Iwanna, vrijdag hebben we een personeelsuitje. Ga je mee?'*, Is het eerste appje dat ik van mijn aanstaande collega Joke krijg. Vrijdag is mijn eerste dag [bij Defacto](/over-ons/), er flitsen meerdere gedachten door mijn hoofd. Ik zie voor me hoe alle mensen die elkaar al jaren kennen dronken worden, inside jokes vertellen en oude strijdverhalen met elkaar delen.**
@@ -30,5 +31,3 @@ Mijn angsten voor een standaard bedrijfsuitje blijken ongegrond. Er worden geen 
 
 ---
 Heb je deze blog met plezier gelezen en wil je de gezichten achter Defacto zien? Dat kan, aarzel niet en klik gauw hierboven op de YouTube-link. Ben je enthousiast geworden en wil je ook [werken bij Defacto](http://jobs.defacto.nl)? Kijk dan gauw of er vacatures openstaan waarin jij jouw eigenzinnigheid kwijt kunt.
-
-

@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: nl
 image: images/social/van-controleren-naar-faciliteren-1200x630.png
+featured_image: images/blog/featured/20160208-controleren-faciliteren.png
 ---
 
 ### *In [mijn vorige blog](/blog/drie-redenen-om-meer-intercollegiaal-te-toetsen/) heb ik gepleit voor het terugbrengen van toetsen naar de werkvloer. Het maken van deze beweging met uw organisatie betekent niet alleen een verandering van toetsingsprocedure, maar eveneens het terugleggen van de verantwoordelijkheid van deze procedure bij de medewerkers zelf.*
@@ -13,7 +14,7 @@ Voor veel organisaties is dit een lastige transitie, aangezien dit jarenlang nie
 
 Mijns inziens is dit niet de rol die een academie moet hebben. Ik zie de academies en leerhuizen in de zorg als **facilitators** van leren en ontwikkelen. De academie is in mijn ogen een centrum waar expertise op het gebied van onderwijs en ontwikkeling wordt samen gebracht met de vraag naar kennis en kunde van de werkvloer. Op basis van deze vraag kunnen opleidingsprogramma's worden afgestemd op de daadwerkelijke behoefte van de lerende.
 
-In de afgelopen jaren is dit niet altijd wat er daadwerkelijk is gebeurd. Dit komt door de tweede verantwoordelijkheid van elke academie: stuurinformatie leveren aan het hoger management van de organisatie. De nadruk van de taak van de academie heeft zover ik kan zien meer in deze hoek gelegen. Het kwantificeren van leren, het beheersbaar maken van leerprocessen en het inzichtelijk maken van de resultaten. 
+In de afgelopen jaren is dit niet altijd wat er daadwerkelijk is gebeurd. Dit komt door de tweede verantwoordelijkheid van elke academie: stuurinformatie leveren aan het hoger management van de organisatie. De nadruk van de taak van de academie heeft zover ik kan zien meer in deze hoek gelegen. Het kwantificeren van leren, het beheersbaar maken van leerprocessen en het inzichtelijk maken van de resultaten.
 
 Het resultaat: in plaats van het faciliteren van leren en ontwikkelen zijn academies een manier van leren gaan **voorschrijven**. Een LMS werd gekozen, geïmplementeerd en voorzien van een catalogus met leeractiviteiten waarbij alles vooraf was uitgedacht. Een lerende had niet meer de keuze om zijn eigen ontwikkelroute te kiezen maar werd exact voorgeschreven wat en hoe hij zaken moest aantonen.
 
@@ -27,7 +28,7 @@ Het LMS is en blijft een feestje van management en rapportages. Gezien de huidig
 
 Rapportages zijn output-gericht. De enige standaardisatie die daarvoor nodig is ligt bij de toetsing (die we op de werkvloer gaan doen toch?). Het leren zelf staat hier in principe los van. Iedereen weet dat elke persoon een andere voorkeursmanier van leren heeft. Laten we dus zorgen dat de lerende in ieder geval de aanloop naar de toets zelf kan bepalen.
 
-Door het inrichten van een informele leeromgeving waarin je als organisatie per onderwerp je content aan de lerende presenteert helpt hierin sterk mee. De lerende wordt losgelaten en kan zelf op zoek naar die zaken die hij of zij nodig heeft om zich bekwaam genoeg te voelen om zich te laten toetsen. Of dit nou gebeurd via de links naar protocollen, een e-learning module die beschikbaar is gesteld, die klinische les van een andere afdeling of gewoon zoeken op het internet, zou niets moeten uitmaken. 
+Door het inrichten van een informele leeromgeving waarin je als organisatie per onderwerp je content aan de lerende presenteert helpt hierin sterk mee. De lerende wordt losgelaten en kan zelf op zoek naar die zaken die hij of zij nodig heeft om zich bekwaam genoeg te voelen om zich te laten toetsen. Of dit nou gebeurd via de links naar protocollen, een e-learning module die beschikbaar is gesteld, die klinische les van een andere afdeling of gewoon zoeken op het internet, zou niets moeten uitmaken.
 
 ### **2. Iedere medewerker wil zijn werk goed doen**
 

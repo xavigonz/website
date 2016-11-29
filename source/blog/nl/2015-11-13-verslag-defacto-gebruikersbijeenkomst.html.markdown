@@ -4,6 +4,7 @@ date: 2015-11-13 16:05 CET
 tags:
 author: Cas Paauwe
 lang: nl
+featured_image: images/blog/featured/20151113-gebruikersbijeenkomst.jpg
 ---
 
 *Blog verzorgd door Cas Paauwe, Docent en LMS beheerder van het Gelre Ziekenhuis te Apeldoorn.*

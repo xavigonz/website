@@ -5,6 +5,7 @@ tags:
 author: Marian
 lang: nl
 image: images/social/zelfsturende-teams-1200x630.png
+featured_image: images/blog/featured/20160414-zelfsturende-teams.png
 ---
 
 **Zelfsturende teams bepalen zelf hun eigen doelen, werkwijze en de bijdragen van de leden. Teamleden zijn samen verantwoordelijk voor de taken en activiteiten en het coördineren ervan. Een direct leidinggevende staat op afstand. De gemiddelde span of control van een huidige lijnmanager in de zorg is 100 medewerkers!**
