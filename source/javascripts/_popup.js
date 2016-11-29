@@ -16,11 +16,59 @@ Defacto.popup = {
   // console.log(Cookies.get()); // show all coockies
   // Cookies.remove('defacto_popup-ebook', { path: '/' }); // remove ebook cookie
 
-  // Hide hightlight
+  init: function () {
+    var $popups = $('.popup');
+
+    // Check if a popup is present
+    if ($popups.length === 0) {
+      return false;
+    }
+
+    // Remove popups the user has closed before
+    $popups.each(function () {
+      var popupCookie = Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id];
+
+      if (this.id && popupCookie === Defacto.popup.cookieValue) {
+        $(this).remove();
+      }
+    });
+
+    // Show popup after scroll
+    this.$window.on('scroll', function () {
+      if (!Defacto.popup.popupsShown &&
+        Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
+        Defacto.popup.popupsShown = true;
+
+        setTimeout(function () {
+          $popups.each(function () {
+            Defacto.popup.show($(this));
+          });
+        }, Defacto.popup.showDelay);
+      }
+    });
+
+    // Close popup on clicking on close button
+    $(document).on('click', '.popup .close', function (event) {
+      event.preventDefault();
+      var $popup = $(this).closest('.popup');
+      Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
+      ga('send', 'event', 'popup', 'close', window.location.pathname);
+    });
+  },
+
+  // Show highlight
+  show: function ($popup) {
+    $('.popup').addClass('popup-show');
+    ga('send', 'event', 'popup', 'show', window.location.pathname);
+  },
+
+  // Hide highlight
   hide: function ($popup, cookieExpires) {
     if ($popup.length === 0) {
       return false;
     }
+
+    $(document).off('click.popup');
 
     var id = $popup[0].id;
     if (cookieExpires && id) {
@@ -34,42 +82,6 @@ Defacto.popup = {
       $popup.remove();
     }, 400);
   },
-
-  init: function () {
-    var $popups = $('.popup');
-
-    // Check if a popup is present
-    if ($popups.length === 0) {
-      return false;
-    }
-
-    // Remove popups the user has closed
-    $popups.each(function () {
-      if (this.id && Defacto.popup.cookies[Defacto.popup.cookiePrefix + this.id] === Defacto.popup.cookieValue) {
-        $(this).remove();
-      }
-    });
-
-    // Show popup after scroll
-    this.$window.on('scroll', function () {
-      if (!Defacto.popup.popupsShown && Defacto.popup.$window.scrollTop() > Defacto.popup.showScrollTop) {
-        Defacto.popup.popupsShown = true;
-
-        setTimeout(function () {
-          $('.popup').addClass('popup-show');
-          ga('send', 'event', 'popup', 'show', window.location.pathname);
-        }, Defacto.popup.showDelay);
-      }
-    });
-
-    // Close popup button
-    $(document).on('click', '.popup .close', function (event) {
-      event.preventDefault();
-      var $popup = $(this).closest('.popup');
-      Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
-      ga('send', 'event', 'popup', 'close', window.location.pathname);
-    });
-  }
 };
 
 Defacto.popup.init();
