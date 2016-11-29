@@ -31,7 +31,6 @@ Waardevol advies over de internationale markt en onboarding krijgen we van Maria
 ![Foto met ZKH Prins Constantijn](/images/blog/websummit-2016-01.jpg)
 <p class="caption">v.l.n.r. ZKH Prins Constantijn, techblogger Omar Saberi en ik (Iwanna)</p>
 
-## Was het 't avontuur waard?
 WebSummit is de grootste tech marktplaats van Europa: mee eens. Maar, het is absoluut niet dé plek voor de 'bedrijven met de meeste impact'. Het is volgens ons meer een plek om ideeën uit te wisselen, dan een plek waar je bij elkaar komt om bepaalde markten te innoveren. WebSummit is uiteindelijk wat je er zelf van maakt. Voor LearningSpaces is het de perfecte plek geweest om gelijkgestemden te ontmoeten en goede adviezen te krijgen.
 
 ![Team LearningSpaces op de foto](/images/blog/websummit-2016-02.jpg)
@@ -43,7 +42,9 @@ Onze mannen Tim Bakker en Marcel Horlings krijgen veel aandacht in hun prachtige
 
 Op onze standdag komt niet iedereen voor de inmiddels legendarische pakken langs. Bezoekers waren er echt op uit om [de visie achter LearningSpaces](http://blog.learningspaces.io/what-is-learningspaces/){:target="_blank"} te horen. Voor de mensen die onze pitch nog niet gehoord hebben: bel of mail ons en we maken het goed! We deelden ook onze eigen gemaakte boekjes over e-learning uit. Als je geïnteresseerd bent in het in elkaar zetten van e-learning en het is je niet gelukt om een boek mee te nemen: neem dan contact op en we zorgen er alsnog voor dat je één toegestuurd krijgt.
 
----
+## Was het 't avontuur waard?
 Hoe gebrekkig het begin ook was, we moeten toegeven dat WebSummit een mooie kans is om te netwerken, veel adviezen te ontvangen en nieuwe contacten op te doen. WebSummit gaat niet om de organisatie, het zijn uiteindelijk de start-ups en bezoekers die samen zoeken naar de beste oplossingen voor de toekomst.
+
+---
 
 Wil je meer weten over LearningSpaces? Kijk dan eens op [de LearningSpaces website](http://www.learningspaces.nl){:target="_blank"} of bel met Defacto op 050 3144832.
