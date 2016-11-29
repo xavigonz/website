@@ -33,7 +33,7 @@ body.capp-entwickeln {
     }
 
     .hero-copy {
-      padding: 3em 2em;
+      padding: 2em;
 
       h2 {
         @include media($large-up) {
@@ -44,11 +44,7 @@ body.capp-entwickeln {
   }
 
   .row {
-    padding: 0;
-
-    @include media($large-down) {
-      padding: 0 1em;
-    }
+    padding: 0 2em;
   }
 
   .col {
