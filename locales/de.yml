@@ -92,9 +92,11 @@ de:
       subtitle_2: "Befähigen und qualifizieren Sie Ihre Mitarbeiter nachweislich mit CAPP LMS."
       image: capp-lms-de.png
       learn:
-        title: Software für ein effizientes Bildungsmanagement und E-Learning
+        title: CAPP Bilden
+        sub_title: Software für ein effizientes Bildungsmanagement und E-Learning
       develop:
-        title: Software für eine effektive Personalentwicklung
+        title: CAPP Entwickeln
+        sub_title: Software für eine effektive Personalentwicklung
     name:
       learn: Bilden
       develop: Entwickeln
