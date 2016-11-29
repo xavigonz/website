@@ -60,16 +60,6 @@ Defacto.popup = {
   show: function ($popup) {
     $('.popup').addClass('popup-show');
     ga('send', 'event', 'popup', 'show', window.location.pathname);
-
-    // Close popup on clicking anywhere else
-    $(document).on('click.popup', function (event) {
-      var target = event.target;
-
-      if (!$popup.has(target).length && target.tagName.toLowerCase() !== 'a') {
-        Defacto.popup.hide($popup, Defacto.popup.cookieExpiresOnClose);
-        ga('send', 'event', 'popup', 'close', window.location.pathname);
-      }
-    });
   },
 
   // Hide highlight

@@ -24,6 +24,7 @@
 
 $popup-padding: 30px;
 $popup-mobile-mode: max-width 400px;
+$popup-hide-mode: max-height 570px;
 
 .popup {
   background-color: $white;
@@ -38,6 +39,10 @@ $popup-mobile-mode: max-width 400px;
   text-align: left;
   width: 100%;
   z-index: 9999999999;
+
+  @include media($popup-hide-mode) {
+    display: none !important;
+  }
 
   @include media($popup-mobile-mode) {
     left: 3%;
