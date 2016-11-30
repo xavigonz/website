@@ -25,13 +25,12 @@
 
     <footer class="row post-footer">
       <div class="col">
+
         <div class="author">
           <% if author && href = team_avatar_url(author) %>
             <%= image_tag href, alt: author_name, class: "avatar" %>
-          <% else %>
-            <div class="avatar no-image"></div>
+            <h4 class="author-name"><%= author_name %></h4>
           <% end %>
-          <h4 class="author-name"><%= author_name %></h4>
         </div>
 
         <%= partial "social-share" %>
