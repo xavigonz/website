@@ -27,8 +27,8 @@
       <div class="col">
 
         <div class="author">
-          <% if author && href = team_avatar_url(author) %>
-            <%= image_tag href, alt: author_name, class: "avatar" %>
+          <% if author && src = team_avatar_url(author) %>
+            <%= image_tag src, alt: author_name, class: "avatar" %>
             <h4 class="author-name"><%= author_name %></h4>
           <% end %>
         </div>

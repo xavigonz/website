@@ -34,8 +34,8 @@ pageable: true
                   author = blog_author(article)
                   author_name = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : article.data.author
                   %>
-                  <% if author && href = team_avatar_url(author) %>
-                    <%= image_tag href, alt: author_name, class: "avatar" %>
+                  <% if author && src = team_avatar_url(author) %>
+                    <%= image_tag src, alt: author_name, class: "avatar" %>
                   <% end %>
                   <span class="author-name"><%= author_name %></span>
                   <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
