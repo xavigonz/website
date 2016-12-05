@@ -35,10 +35,14 @@ pageable: true
                   author_name = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : article.data.author
                   %>
                   <% if author && src = team_avatar_url(author) %>
-                    <%= image_tag src, alt: author_name, class: "avatar" %>
+                    <div class="author-avatar">
+                      <%= image_tag src, alt: author_name, class: "avatar" %>
+                    </div>
                   <% end %>
-                  <span class="author-name"><%= author_name %></span>
-                  <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
+                  <div class="author">
+                    <span class="author-name"><%= author_name %></span>
+                    <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
+                  </div>
                 </div>
               </footer>
             </article>
