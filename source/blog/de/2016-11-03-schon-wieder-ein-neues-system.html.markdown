@@ -4,7 +4,6 @@ date: 2016-11-03 08:00 CEST
 tags:
 author: Anne
 lang: de
-featured: true
 image: images/social/ein-neues-system-1200x630.png
 ---
 
