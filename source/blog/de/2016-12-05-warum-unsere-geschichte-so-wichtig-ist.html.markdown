@@ -26,6 +26,6 @@ Wenn man länger überlegt, merkt man, dass dies nur ein Bruchteil der Fragen si
 
 Erfahrung lehrt, dass bei der Anschaffung eines neuen Lernmanagementsystems viele Fragen bezüglich des vorigen Aus- und Weiterbildungsverfahrens aufkommen. Eine Kernfrage ist natürlich die folgende: **Ist es möglich, die Geschichte der Mitarbeiter in Form von Zertifikaten oder anderen Belegen in ein neues System zu integrieren?**
 
-Die Antwort darauf lautet ganz klar **ja!** Hierfür bieten wir Ihnen mit unserem LMS CAPP verschiedene Möglichkeiten. Da die Geschichte Ihrer Mitarbeiter ein so wertvolles Gut Ihres Unternehmens ist, sollte sie auch einen sicheren Platz bekommen!
+Die Antwort darauf lautet ganz klar **ja!** Hierfür bieten wir Ihnen mit unserem [LMS CAPP](/capp-bilden/) verschiedene Möglichkeiten. Da die Geschichte Ihrer Mitarbeiter ein so wertvolles Gut Ihres Unternehmens ist, sollte sie auch einen sicheren Platz bekommen!
 
 Lassen Sie uns gemeinsam über Ihre Fragen nachdenken und eine für Sie passende Lösung finden!
