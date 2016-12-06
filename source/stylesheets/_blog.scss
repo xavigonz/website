@@ -202,12 +202,10 @@
       vertical-align: top;
 
       &.left {
-        background-position: center;
-        display: table;
         margin-bottom: 1em;
 
         @include media($medium-up) {
-          @include span-columns(2);
+          @include span-columns(3);
         }
 
         img {
@@ -223,10 +221,9 @@
         vertical-align: middle;
 
         @include media($medium-up) {
-          @include span-columns(6);
+          @include span-columns(9);
           @include reset-display;
-
-          padding-left: 4em;
+          padding-left: 4%;
         }
       }
     }
