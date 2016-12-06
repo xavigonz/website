@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: nl
 image: images/social/scorm-sores-1200x630.png
+featured_image: images/blog/featured/20160620-help-scorm.png
 ---
 
 ### SCORM Sores – een eenvoudig stappenplan op je probleemanalyse

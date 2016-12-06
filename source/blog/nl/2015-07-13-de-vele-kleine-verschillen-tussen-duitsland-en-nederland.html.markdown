@@ -4,6 +4,7 @@ date: 2015-07-13 14:34 CEST
 tags:
 author: Cathrin
 lang: nl
+featured_image: images/blog/featured/20150713-verschillen-duitsland-nederland.png
 ---
 
 Afgelopen maand zijn wij enthousiast begonnen aan een CAPP-project in het Evangelisches Krankenhaus Oldenburg. Meteen kwamen er grappige verschillen tussen Nederland en Duitsland aan het licht. In Duitsland is het bijvoorbeeld gebruikelijk om als je trouwt de achternaam van je partner aan te nemen en je meisjesnaam te laten vervallen. Je vraagt dan direct een nieuw paspoort en rijbewijs aan waar je nieuwe naam op staat. De Duitsers begrepen dan ook niet waarom je in CAPP naast je eigen naam de naam van je partner kunt opgeven. Verder kwamen er verschillen aan het licht betreft de aanhef. Duitsers hechten veel waarde aan titels. Daarom is er een nieuwe Duitse aanhef mét titel in CAPP gebouwd. Daarnaast is het in Duitsland ongebruikelijk de initialen in de aanhef te gebruiken. In het Duits spreek je iemand heel formeel aan zonder de voornaam of voorletters te gebruiken. Dus met 'Herr' of 'Frau', de titel en achternaam.

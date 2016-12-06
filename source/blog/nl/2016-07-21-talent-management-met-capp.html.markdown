@@ -5,6 +5,7 @@ tags:
 author: Marian
 lang: nl
 image: images/social/talentmanagement-met-capp-1200x630.png
+featured_image: images/blog/featured/20160721-capp.png
 ---
 
 **Werknemers motiveren tot leren en talent beter managen? Dat lukt! Hoe? Dat leggen we je uit in deze blog. Waarom is het managen van talent zo belangrijk? Organisaties die erin slagen het aanwezige talent te ontwikkelen, kunnen over het algemeen rekenen op meer motivatie van hun mensen. Persoonlijke ontwikkeling wordt hoog gewaardeerd. Bovendien leidt hoogwaardiger personeel ook tot betere bedrijfsresultaten.**
@@ -20,4 +21,3 @@ Eén van de dingen die je met CAPP Ontwikkelen, onderdeel van het Kwaliteitspasp
 ---
 
 Wil je meer informatie over ons Kwaliteitspaspoort? Neem dan contact op met [Marian](mailto:m.joustra@defacto.nl) of [Bastiaan](mailto:b.barelds@defacto.nl). Of bel ons op 050-3144832.
-

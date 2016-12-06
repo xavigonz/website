@@ -4,6 +4,7 @@ date: 2015-06-29 12:35 CEST
 author: Margreet Twijnstra
 featured: false
 lang: nl
+featured_image: images/blog/featured/20150629-learningspaces.jpg
 ---
 
 _(Dit blog werd eerder gepubliceerd op de [website van Magreet Twijnstra](http://twijnstra.nu/learningspaces-een-veilige-ruimte-om-te-leren-van-elkaar/))_.
@@ -19,4 +20,3 @@ Het platform daagt uit tot experimenteren, delen en ontwikkelen van relevante ke
 Deze manier van leren, die door vertrouwen en veiligheid wordt geïnspireerd, en uitgaat van de vrijheid en intrinsieke creativiteit van mensen lijkt mij een heerlijke aanvulling op de verplichte nummers: de boekenwijsheid; de accreditatie punten; de kwaliteits-lijstjes en registraties van bekwaamheden. Zo’n platform werkt als een vliegdekschip: mensen worden uitgenodigd om er van op te stijgen en er op te landen, en er hun persoonlijke ontwikkeling te slijpen in het samenspel met anderen.
 Defacto sluit hiermee aan op de theorie van Charles Jennings, die ervan uitgaat dat slechts 10% van het leren plaats vindt in formele situaties, 20 % door netwerken en gesprekken, en 70 % in het werken zelf! (het 70-20-10 model).
 Dat geeft vertrouwen in de mogelijkheden van ontwikkeling in de zorg, waarbij mensen elkaar informeel aanspreken en uitdagen om te leren van elkaar.
-

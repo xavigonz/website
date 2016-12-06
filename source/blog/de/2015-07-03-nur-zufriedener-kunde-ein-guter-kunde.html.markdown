@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: de
 image: images/social/zufriedener-kunde-1200x630.png
+featured_image: images/blog/featured/20150703-kunde.jpg
 ---
 
 Ein geflügelter Satz, den ich direkt an einem meiner ersten Arbeitstage bei Defacto von Tim, unserem Senior Sales, hörte. Er hat absolut Recht. Wir bewegen uns in einem Markt wo nur das Liefern einer Software nicht ausreicht. Das Installieren von einem LMS und dafür sorgen, dass ein LMS auch effektiv in einer Organisation genutzt wird, sind zwei völlig unterschiedliche Dinge. Darum versuchen wir bei Defacto nicht nur Kunden zu haben, sondern mit diesen Kunden im engen Kontakt zu stehen und kontinuierlich zusammenzuarbeiten.

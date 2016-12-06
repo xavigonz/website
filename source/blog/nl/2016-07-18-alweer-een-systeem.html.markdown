@@ -5,6 +5,7 @@ tags:
 author: Bastiaan
 lang: nl
 image: images/social/alweer-een-systeem-1200x630.png
+featured_image: images/blog/featured/20160718-systeem.png
 ---
 
 ***We zijn ons ervan bewust dat de aanschaf van een Leer Managementsysteem (LMS) veel gevolgen heeft voor een organisatie. Zo’n systeem heeft op zich al een behoorlijke impact, maar ook komt er simpelweg nog een nieuw ‘computersysteem’ bij.***

@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: nl
 image: images/social/the-future-is-now-1200x630.png
+featured_image: images/blog/featured/20160108-future.png
 ---
 
 ### Ik ben geen visionair. Visionairs denken ver vooruit. Ze denken na over hoe de wereld *zou kunnen zijn*, nog voordat hij zo is. Visionairs inspireren ons. In al deze inspiratie schuilt echter het risico dat we gaan zitten wachten totdat deze toekomst naar ons toekomt: we gaan stilzitten totdat de randvoorwaarden voor ons Utopia geregeld zijn.

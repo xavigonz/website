@@ -4,6 +4,7 @@ date: 2016-01-04 15:30 CET
 tags:
 author: Marian
 lang: nl
+featured_image: images/blog/featured/20160104-convenant.jpg
 ---
 
 ### *Samen met onze klanten Ziekenhuis Rivierenland Tiel en het Leids Universitair Medisch Centrum (LUMC) hebben we een tweetal ´ronde tafel´-bijeenkomsten georganiseerd in het kader van het Convenant Medische Technologie (CMT). Het convenant regelt een veilige toepassing van medische technologie in ziekenhuizen. Dit betekent een veilig product in handen van een opgeleide gebruiker, in een omgeving die veilig gebruik garandeert.*
@@ -42,4 +43,3 @@ Op verzoek van de aanwezige ziekenhuizen heeft Defacto een LearningSpace omgevin
 
 
 #### *Op 28 januari 2016 organiseren we een workshop over het Convenant Medische Technologie, waar we samen met u veel dieper in zullen gaan op het 3 stappen plan en alles dat erbij komt kijken. Meer informatie of aanmelden? Bezoek [de workshop pagina](/workshop-convenant-mt).*
-

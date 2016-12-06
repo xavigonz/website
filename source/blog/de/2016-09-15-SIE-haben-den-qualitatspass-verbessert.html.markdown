@@ -5,6 +5,7 @@ tags:
 author: Gerwin
 lang: de
 image: images/social/sie-haben-qualitatspass-1200x630.png
+featured_image: images/blog/featured/20160915-qualitatspass.png
 ---
 
 Im Jahr 2012 hat [Defacto](/) als erstes (niederländisches) Softwareunternehmen mit dem [digitalen Qualitätspass](/qualitatspass/) begonnen. Bis 2015 haben wir den Qualitätspass stets in kleinen Schritten durch Anregungen unserer Kunden verbessert. Im Jahr 2015 haben wir mit einer Gruppe von Kunden, von denen wir besonders viel Input bekommen haben, angefangen, Funktionalitätsverbesserungen zu entwickeln um dichter am Puls unserer Kunden zu sein.

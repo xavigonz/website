@@ -5,6 +5,7 @@ tags:
 author: Joep
 lang: nl
 image: images/social/bevoegd-is-niet-bewkaam-1200x630.png
+featured_image: images/blog/featured/20160705-bevoegd.png
 ---
 
 **Aantoonbaar maken dat je personeel bekwaam is. Dat is de eis die vanuit accrediterende instanties en de Inspectie voor Gezondheidszorg (IGZ) aan de zorginstellingen in Nederland gesteld wordt. Het is de eis die voor mij als consultant van [Defacto](/) brood op de plank verzorgt. Maar aantoonbaar bekwaam, wat is dat nou eigenlijk? En hoe krijg je aantoonbare bekwaamheid voor elkaar?**

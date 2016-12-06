@@ -5,6 +5,7 @@ tags:
 author: Isabela
 lang: de
 image: images/social/qualitat-sichern-durch-bildungsmanagement-1200x630.png
+featured_image: images/blog/featured/20161025-workshop.jpg
 ---
 
 Unser Workshop mit dem 6K-Verbund in Neumünster war ein voller Erfolg!

@@ -5,6 +5,7 @@ tags:
 author: Gerwin
 lang: nl
 image: images/social/verbeterd-kpp-1200x630.png
+featured_image: images/blog/featured/20160726-kpp.jpg
 ---
 
 In 2012 start Defacto als eerste softwarebedrijf met het [digitale Kwaliteitspaspoort (KPP)](/kwaliteitspaspoort/). Tot 2015 verbeteren we het paspoort steeds met kleine stappen op basis van klantvragen. In 2015 stellen we een groep klanten, waarvan we input hebben gekregen, samen. Vanuit deze klantgroep krijgen we vragen die voor ons erg interessant zijn voor de verbeteringen van de functionaliteiten van ons product. Door naar alle input van onze klanten te luisteren laten we ons product zo goed mogelijk aansluiten bij wat er door 'de markt' van ons gevraagd wordt.

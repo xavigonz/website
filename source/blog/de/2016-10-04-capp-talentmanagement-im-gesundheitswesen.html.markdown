@@ -5,6 +5,7 @@ tags:
 author: Marian
 lang: de
 image: images/social/CAPP-talentmanagement-im-gesundheitswesen-1200x630.png
+featured_image: images/blog/featured/20161004-capp.png
 ---
 
 **Mitarbeiter zum Lernen motivieren und ihr Talent besser managen? Das ist möglich! Fragen Sie sich wie? Genau das erklären wir in diesem Blog.**

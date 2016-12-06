@@ -5,6 +5,7 @@ tags:
 author: Martina
 lang: de
 image: images/social/hauptstadt-kongress-berlin-2016.png
+featured_image: images/blog/featured/20160623-hauptstadtkongress-2016.png
 ---
 
 Sie sind wieder vorbei. Drei Tage Hauptstadt-Kongress in Berlin. Drei Tage mit vielen Eindrücken auf der Hauptmesse des Gesundheitswesens. Der Kongress hat schon zum 19. Mal stattgefunden und wir waren zum ersten Mal mit dabei und fanden es schön dort zu sein. Es gab mehr als 8.000 Besucher. Das Hauptthema dieses Jahr: Innovation.

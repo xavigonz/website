@@ -3,6 +3,7 @@ title: Drie redenen om meer intercollegiaal te toetsen
 date: 2016-01-22 10:33 UTC
 author: Joep
 lang: nl
+featured_image: images/blog/featured/20160122-intercollegiaal-toetsen.jpg
 ---
 
 ### *De afgelopen anderhalf jaar staat de vakliteratuur er bol van; 70-20-10, terug naar werkplekleren, de professional zelf verantwoordelijk, social learning...het gaat maar door.*

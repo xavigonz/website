@@ -5,6 +5,7 @@ tags:
 author: Anne
 lang: de
 image: images/social/ein-neues-system-1200x630.png
+featured_image: images/blog/featured/20161103-system.png
 ---
 
 ***Wir sind uns bewusst über die Tatsache, dass die Einführung eines [Lernmanagentsystems (LMS)](/capp-bilden) viele Veränderungen in einer Organisation mit sich bringt. Ein solches System hat an sich schon einiges an Gewicht, aber dann kommt auch noch ein neues „Computersystem“ dazu.***

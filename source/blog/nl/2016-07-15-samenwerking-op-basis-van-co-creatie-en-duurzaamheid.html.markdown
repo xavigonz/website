@@ -6,6 +6,7 @@ author: Marian
 lang: nl
 featured: false
 image: images/social/samenwerking-op-basis-van-co-creatie-1024.png
+featured_image: images/blog/featured/20160715-cocreatie.png
 ---
 
 ***We zien een ontwikkeling in de manier waarop organisaties denken over duurzaam investeren in de relatie met hun (software)leveranciers. Er is een groeiend besef dat het succesvol gebruik maken van softwaresystemen minder te maken heeft met tekortkomingen in het systeem.***
@@ -26,4 +27,3 @@ Tijdens een aantal rondetafelgesprekken hebben we gesproken over de uitdagingen 
 ---
 
 Wil je meer weten over deze vorm van samenwerken? Neem dan contact op met [Marian](mailto:%20m.joustra@defacto.nl) (accountmanager) of bel naar 050-3144832.
-
