@@ -1,4 +1,4 @@
-.blog #main,
+.blog .main,
 .blog-featured {
   $blog-link-color: darken($blue, 10);
 
@@ -16,7 +16,7 @@
 }
 
 .blog {
-  #main {
+  .main {
     .row {
       padding: 3em 1em;
     }
@@ -283,7 +283,7 @@
 
 // Blog article
 .blog-article {
-  #main {
+  .main {
     .col {
       @include span-columns(12);
 
