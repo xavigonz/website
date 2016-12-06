@@ -12,7 +12,7 @@ de:
     kwaliteitspaspoort: qualitatspass
     implementaties: implementierungen
     koppelingen: schnittstellen
-    testimonials: kundenreferenzen
+    testimonials: kundenstimmen
     referenties: referenzen
     media: presse
     demo-aanvragen: "demo-anfragen"
@@ -36,7 +36,7 @@ de:
     team:
       work_with_us: "Arbeiten bei"
       you: "Sie?"
-    testimonials: "Kundenreferenzen"
+    testimonials: "Kundenstimmen"
   actions:
     download: "Herunterladen"
     download_productsheet: "Produktblatt herunterladen"

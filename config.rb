@@ -67,6 +67,7 @@ redirect "hosting.html", to: "hosting-security.html" if root_locale == :nl
 redirect "hosting-security.html", to: "hosting.html" if root_locale == :de
 redirect "capp.html", to: "capp-lms.html"
 redirect "capp-lms.html", to: "capp-bilden.html" if root_locale == :de
+redirect "kundenreferenzen.html", to: "kundenstimmen.html"
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
