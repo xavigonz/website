@@ -6,6 +6,7 @@ description:
 pageable: true
 ---
 
+
 <section class="row">
 
     <ol class="blog-list">
@@ -30,10 +31,12 @@ pageable: true
 
               <footer class="post-footer">
                 <div class="post-meta">
+
                   <%
                   author = blog_author(article)
-                  author_name = author ? "#{author.firstname} #{author.prefix} #{author.lastname}" : article.data.author
+                  author_name = author ? blog_author_name(author) : article.data.author
                   %>
+
                   <% if author && src = team_avatar_url(author) %>
                     <div class="author-avatar">
                       <%= image_tag src, alt: author_name, class: "avatar" %>

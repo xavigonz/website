@@ -347,6 +347,11 @@ helpers do
     data.team.find{ |person| person[:firstname] == author }
   end
 
+  # Get blog author name
+  def blog_author_name(author)
+    "#{author.firstname} #{author.prefix} #{author.lastname}"
+  end
+
   # Used to validate data/downloads.yml
   def validate_downloads(hash)
     hash.each do |key, value|
