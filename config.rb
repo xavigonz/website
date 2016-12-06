@@ -131,7 +131,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash #, ignore: [%r{^blog}]
+  activate :asset_hash, ignore: "images/blog/featured"
 
   # Use relative URLs
   # activate :relative_assets
