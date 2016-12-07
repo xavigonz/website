@@ -37,14 +37,3 @@
 .fluid-width-video-wrapper {
   margin-bottom: 1em;
 }
-
-// Hide Google Conversion iframe
-iframe[name="google_conversion_frame"] {
-  display: none !important;
-  float: left;
-  font-size: 0 !important;
-  height: 0 !important;
-  line-height: 0 !important;
-  margin-top: -13px;
-  width: 0 !important;
-}
