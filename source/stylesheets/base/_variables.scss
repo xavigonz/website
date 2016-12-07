@@ -42,6 +42,7 @@ $dark-gray: #333;
 
 $post-meta: #9eabb3;
 $post-border: #ebf2f6;
+$post-shadow: #e7eef2;
 
 $placeholder: #aaa;
 
@@ -55,5 +56,5 @@ $base-border-color: $light-gray;
 $base-border: 1px solid $base-border-color;
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);

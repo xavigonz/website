@@ -1,4 +1,4 @@
-.blog #main,
+.blog .main,
 .blog-featured {
   $blog-link-color: darken($blue, 10);
 
@@ -16,7 +16,7 @@
 }
 
 .blog {
-  #main {
+  .main {
     .row {
       padding: 3em 1em;
     }
@@ -45,7 +45,7 @@
   }
 
   .post-meta {
-    color: #9eabb3;
+    color: $post-meta;
     display: block;
     font-size: 0.9em;
 
@@ -54,7 +54,7 @@
       white-space: nowrap;
 
       &::before {
-        color: #9eabb3;
+        color: $post-meta;
         content: "–";
         display: inline;
         margin: 0 0.5em 0 0.4em;
@@ -111,7 +111,7 @@
     }
 
     li {
-      border-bottom: #ebf2f6 1px solid;
+      border-bottom: $post-border 1px solid;
       padding: 3em 0;
 
       @include media($medium-up) {
@@ -283,7 +283,7 @@
 
 // Blog article
 .blog-article {
-  #main {
+  .main {
     .col {
       @include span-columns(12);
 
@@ -314,7 +314,7 @@
 
     .post-footer {
       .author {
-        border-top: #ebf2f6 1px solid;
+        border-top: $post-border 1px solid;
         padding: 3em 0 0;
         position: relative;
         text-align: center;
@@ -329,7 +329,7 @@
 
         @include avatar-size($avatar-size);
         background-color: $white;
-        box-shadow: #e7eef2 0 0 0 1px;
+        box-shadow: $post-shadow 0 0 0 1px;
         box-sizing: border-box;
         display: block;
         left: 50%;
