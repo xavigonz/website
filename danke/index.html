@@ -19,18 +19,18 @@
     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Blog - Defacto</title>
-    <meta name="description" content="Unser Blog ist voll von Trends und Geschichten über unsere Produkte.">
+    <title>Danke Schön - Defacto</title>
+    <meta name="description" content="Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern">
 
-        
-    <link rel="alternate" href="http://www.defacto.nl/blog/" hreflang="nl-nl" />
-    <link rel="alternate" href="http://www.defactolearning.de/blog/" hreflang="de-de" />
+    <meta name="robots" content="noindex,nofollow" />    
+    <link rel="alternate" href="http://www.defacto.nl/bedankt/" hreflang="nl-nl" />
+    <link rel="alternate" href="http://www.defactolearning.de/danke/" hreflang="de-de" />
     
     <meta property="og:site_name" content="Defacto - Developing People">
-    <meta property="og:title" content="Blog - Defacto">
-    <meta property="og:url" content="http://www.defactolearning.de/blog/2/">
+    <meta property="og:title" content="Danke Schön - Defacto">
+    <meta property="og:url" content="http://www.defactolearning.de/danke/">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Unser Blog ist voll von Trends und Geschichten über unsere Produkte.">
+    <meta property="og:description" content="Defacto hilft Unternehmen bei der Personalentwicklung und Zertifizierung von Mitarbeitern">
     <meta property="og:image" content="http://www.defactolearning.de/images/social/defacto-1200x630-7d5c1795.png">
     <meta property="og:locale" content="de_DE">
 
@@ -49,20 +49,23 @@
   ga('require', 'linkid');
   ga('require', 'linker');
   ga('linker:autoLink', ['www.defacto.nl', 'jobs.defacto.nl', 'www.defactolearning.de']);
-    ga('send', 'pageview');
+    var regex = new RegExp("[\\?&]form=([^&#]*)");
+    var results = regex.exec(location.search);
+    var form = results === null ? '' : results[1].toLowerCase();
+    ga('send', 'pageview', '/bedankt/' + form);
 </script>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
 
-  <body class="de blog blog_2 blog_index">
+  <body class="de bedankt bedankt_index">
 
     <div class="header-image">
   <header class="header">
     <div class="header-wrapper">
       <div class="logo">
 
-          <a href="../../"><img alt="Defacto" onerror="this.src='/images/logos/defacto-0b0a5ba9.png'; this.onerror=null;" src="/images/logos/defacto-16a6a805.svg" /></a>
+          <a href="../"><img alt="Defacto" onerror="this.src='/images/logos/defacto-0b0a5ba9.png'; this.onerror=null;" src="/images/logos/defacto-16a6a805.svg" /></a>
 
       </div>
       <button type="button" class="header-menu-button" id="js-header-menu-toggle">
@@ -70,14 +73,14 @@
       </button>
       <nav class="nav">
         <ul class="header-menu" id="js-header-menu">
-          <li><a class="" href="../../">Home</a></li>
+          <li><a class="" href="../">Home</a></li>
           <li><a class="" href="/produkte/">Produkte</a></li>
           <li><a class="" href="/service/">Service</a></li>
           <li><a class="" href="/uber-uns/">Über uns</a></li>
           <li><a class="" href="/blog/">Blog</a></li>
           <li><a class="" href="/kontakt/">Kontakt</a></li>
           <li class="flags">
-            <a title="Nederlands" href="http://www.defacto.nl/blog/"><img alt="Nederlands" src="/images/flags/nl-9bdbe43e.gif" /></a>
+            <a title="Nederlands" href="http://www.defacto.nl/bedankt/"><img alt="Nederlands" src="/images/flags/nl-9bdbe43e.gif" /></a>
             <a target="_blank" href="http://en.defacto.nl"><img alt="English" src="/images/flags/en-3a5d3c5c.gif" /></a>
           </li>
         </ul>
@@ -88,109 +91,93 @@
 </div>
 
     <div class="main" role="main">
-      
-  <section class="blog-header">
-    <div class="row">
-      <div class="col">
-        <h1>Blog - Was uns beschäftigt</h1>
-      </div>
-    </div>
-  </section>
-
-  <section class="row">
-
-    <ol class="blog-list">
-        <li>
-
-          <div class="col left">
-            <a href="/blog/nur-zufriedener-kunde-ein-guter-kunde/"><img alt="Nur ein zufriedener Kunde ist ein guter Kunde" src="/images/blog/featured/20150703-kunde.jpg" /></a>
-          </div>
-
-          <div class="col right">
-
-            <article>
-              <header class="post-header">
-                <h2><a href="/blog/nur-zufriedener-kunde-ein-guter-kunde/">Nur ein zufriedener Kunde ist ein guter Kunde</a></h2>
-              </header>
-
-              <div class="post-body">
-                Ein geflügelter Satz, den ich direkt an einem meiner ersten Arbeitstage bei Defacto von Tim, unserem Senior Sales, hörte. Er hat absolut Recht. Wir bewegen uns in einem Markt wo nur das Liefern einer Software nicht ausreicht. Das Installieren von einem...
-                <a class="read-more" href="/blog/nur-zufriedener-kunde-ein-guter-kunde/">Weiter lesen</a>
-              </div>
-
-              <footer class="post-footer">
-                <div class="post-meta">
-
-
-                    <div class="author-avatar">
-                      <img alt="Joep  Lenglet" class="avatar" src="http://www.gravatar.com/avatar/28e4eb751c5deee216185974fc1b5b56.png?d=404" />
-                    </div>
-                  <div class="author">
-                    <span class="author-name">Joep  Lenglet</span>
-                    <time datetime="2015-07-03"> 3 Juli 2015</time>
-                  </div>
-                </div>
-              </footer>
-            </article>
-
-          </div>
-        </li>
-    </ol>
-
-      <div class="text-center">
-        <ul class="pagination">
-            <li><a class="page-step prev" href="../">Vorherige Seite</a></li>
-
-              <li><a href="/blog/">1</a></li>
-              <li class="current">2</li>
-
-        </ul>
-      </div>
-
+      <section class="gray">
+  <div class="row">
+    <img class="header-icon" src="/images/smile-470d7276.gif" />
+    <h1>Vielen Dank.</h1>
+    <h3>
+      <p class="thanks-message">Wir melden uns so schnell wie möglich bei Ihnen.</p>
+    </h3>
+    <p>
+      <b><a href="javascript:history.back()">Zurück zur vorherigen Seite.</a></b>
+    </p>
+  </div>
 </section>
 
+<script>
+  // Get URL parameters
+  var urlParams = {};
+  window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    urlParams[key] = decodeURIComponent(value);
+  });
+
+  // Replace message with download message if it was a download form
+  if (urlParams.download) {
+    var downloadMessage = 'Das Herunterladen sollte jetzt automatisch starten...<br>Wenn nicht, klicke <a target="_blank">hier</a>.';
+    $('body.bedankt .thanks-message')
+      .html(downloadMessage)
+      .find('a').attr('href', urlParams.download);
+  }
+</script>
+
+<section class="contact-info">
+  <div class="row">
+    <div class="col">
+      <span class="icon-location"></span>
+      <span>Zuiderpark 3, 9724 AD Groningen (NL)</span>
+    </div>
+    <div class="col">
+      <span class="icon-phone"></span>
+      <a href="tel://+4940306988472">040 306988472</a>
+    </div>
+    <div class="col">
+      <span class="icon-mail"></span>
+      <a href="mailto:info@defactolearning.de">info@defactolearning.de</a>
+    </div>
+  </div>
+</section>
 
 
     </div>
     <footer id="footer">
   <div class="row">
     <div class="col">
-      <h6><a href="../../produkte/">Produkte</a></h6>
+      <h6><a href="../produkte/">Produkte</a></h6>
       <ul>
-          <li><a href="../../capp-bilden/">Bilden</a></li>
-          <li><a href="../../capp-entwickeln/">Entwickeln</a></li>
-        <li><a href="../../qualitatspass/">Qualitätspass</a></li>
-        <li><a href="../../e-learning-starterkit/">E-Learning Starterkit</a></li>
-        <li><a href="../../learningspaces/">LearningSpaces</a></li>
-        <li><a href="../../360-feedback/">360° Feedback</a></li>
+          <li><a href="../capp-bilden/">Bilden</a></li>
+          <li><a href="../capp-entwickeln/">Entwickeln</a></li>
+        <li><a href="../qualitatspass/">Qualitätspass</a></li>
+        <li><a href="../e-learning-starterkit/">E-Learning Starterkit</a></li>
+        <li><a href="../learningspaces/">LearningSpaces</a></li>
+        <li><a href="../360-feedback/">360° Feedback</a></li>
       </ul>
     </div>
 
     <div class="col">
-      <h6><a href="../../service/">Service</a></h6>
+      <h6><a href="../service/">Service</a></h6>
       <ul>
-        <li><a href="../../e-learning/">E-Learning</a></li>
-        <li><a href="../../implementierungen/">Implementierungen</a></li>
-          <li><a href="../../hosting/">Hosting</a></li>
-        <li><a href="../../schnittstellen/">Schnittstellen</a></li>
+        <li><a href="../e-learning/">E-Learning</a></li>
+        <li><a href="../implementierungen/">Implementierungen</a></li>
+          <li><a href="../hosting/">Hosting</a></li>
+        <li><a href="../schnittstellen/">Schnittstellen</a></li>
       </ul>
     </div>
 
     <div class="col">
-      <h6><a href="../../uber-uns/">Defacto</a></h6>
+      <h6><a href="../uber-uns/">Defacto</a></h6>
       <ul>
-        <li><a href="../../uber-uns/">Über uns</a></li>
-        <li><a href="../../kundenstimmen/">Kundenstimmen</a></li>
-        <li><a href="../../referenzen/">Referenzen</a></li>
-        <li><a href="../../presse/">Presse</a></li>
+        <li><a href="../uber-uns/">Über uns</a></li>
+        <li><a href="../kundenstimmen/">Kundenstimmen</a></li>
+        <li><a href="../referenzen/">Referenzen</a></li>
+        <li><a href="../presse/">Presse</a></li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="http://jobs.defacto.nl">Arbeiten bei Defacto</a></li>
-        <li><a href="../../kontakt/">Kontakt</a></li>
+        <li><a href="../kontakt/">Kontakt</a></li>
       </ul>
     </div>
 
     <div class="col contact">
-      <h6><a href="../../kontakt/">Kontakt</a></h6>
+      <h6><a href="../kontakt/">Kontakt</a></h6>
       <p>
         Zuiderpark 3<br>
         9724 AD Groningen<br>
@@ -218,7 +205,31 @@
 
 
 
-    
+    <div class="popup" id="js-popup-ebook">
+  <a href="#" class="close">
+    <img src="/images/close-fca9efcb.svg" />
+  </a>
+
+  <div class="popup-header">
+    <label for="popup-ebook-name">
+      <h2 class="popup-title">Unser <span class="pre">E-Learning</span> Buch gratis herunterladen</h2>
+      <img class="popup-img" alt="Handbuch Abenteuer E-Learning" src="/images/book-de-5aa3a1f8.png" />
+    </label>
+  </div>
+
+  <div class="popup-bottom">
+    <form accept-charset="UTF-8" action="https://formkeep.com/f/bfad79e126e9" method="POST">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="form" value="E-book download popup">
+      <input type="text" name="name" id="popup-ebook-name" placeholder="Name">
+      <input type="text" name="organization" placeholder="Betrieb oder Organisation">
+      <input type="email" name="email" placeholder="E-Mail" required>
+      <input type="hidden" name="download" value="http://www.defactolearning.de/pdf/Handbuch_Abenteuer_E-Learning.pdf">
+      <button type="submit">Herunterladen</button>
+    </form>
+  </div>
+</div>
+
 
     <script src="/javascripts/all-5d212b01.js"></script>
 
