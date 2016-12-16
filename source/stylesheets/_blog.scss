@@ -42,23 +42,23 @@
     margin: 0;
     max-width: none;
     width: 100%;
-  }
 
-  .post-meta {
-    color: $post-meta;
-    display: block;
-    font-size: 0.9em;
-  }
-
-  time {
-    display: inline-block;
-    white-space: nowrap;
-
-    &::before {
+    .post-meta {
       color: $post-meta;
-      content: "–";
-      display: inline;
-      margin: 0 0.5em 0 0.4em;
+      display: block;
+      font-size: 0.9em;
+    }
+
+    time {
+      display: inline-block;
+      white-space: nowrap;
+
+      &::before {
+        color: $post-meta;
+        content: "–";
+        display: inline;
+        margin: 0 0.5em 0 0.4em;
+      }
     }
   }
 
@@ -78,7 +78,7 @@
 
     li {
       border-top: $light-gray 1px solid;
-      padding: 1em 0;
+      padding: 3em 0;
 
       a {
         font-weight: 700;
@@ -171,60 +171,64 @@
 // Blog article
 .blog-article {
   .main {
-    .col {
-      @include span-columns(12);
+    article {
+      &.post {
+        .col {
+          @include span-columns(12);
 
-      @include media($large-up) {
-        @include span-columns(8);
-        @include shift(2);
-      }
-    }
+          @include media($large-up) {
+            @include span-columns(8);
+            @include shift(2);
+          }
+        }
 
-    .post-header {
-      $background-color: #fcfcfc;
-      @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
+        .post-header {
+          $background-color: #fcfcfc;
+          @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
 
-      h1 {
-        margin-bottom: 0.5em;
-      }
-    }
+          h1 {
+            margin-bottom: 0.5em;
+          }
+        }
 
-    .post-body {
-      h2 {
-        font-size: 1.8em;
-      }
+        .post-body {
+          h2 {
+            font-size: 1.8em;
+          }
 
-      h3 {
-        font-size: 1.4em;
-      }
-    }
+          h3 {
+            font-size: 1.4em;
+          }
+        }
 
-    .post-footer {
-      .author {
-        border-top: $post-border 1px solid;
-        padding: 3em 0 0;
-        position: relative;
-        text-align: center;
-      }
+        .post-footer {
+          .author {
+            border-top: $post-border 1px solid;
+            padding: 3em 0 0;
+            position: relative;
+            text-align: center;
+          }
 
-      .author-name {
-        font-weight: 700;
-      }
+          .author-name {
+            font-weight: 700;
+          }
 
-      .avatar {
-        $avatar-size: 80px;
+          .avatar {
+            $avatar-size: 80px;
 
-        @include avatar-size($avatar-size);
-        background-color: $white;
-        box-shadow: $post-shadow 0 0 0 1px;
-        box-sizing: border-box;
-        display: block;
-        left: 50%;
-        margin-left: -$avatar-size / 2;
-        padding: 6px;
-        position: absolute;
-        top: -$avatar-size / 2;
-        z-index: 2;
+            @include avatar-size($avatar-size);
+            background-color: $white;
+            box-shadow: $post-shadow 0 0 0 1px;
+            box-sizing: border-box;
+            display: block;
+            left: 50%;
+            margin-left: -$avatar-size / 2;
+            padding: 6px;
+            position: absolute;
+            top: -$avatar-size / 2;
+            z-index: 2;
+          }
+        }
       }
     }
   }
