@@ -10,47 +10,9 @@ pageable: true
 <section class="row">
 
     <ol class="blog-list">
-      <% page_articles.each_with_index do |article, i| %>
+      <% page_articles.each do |article| %>
         <li>
-
-          <div class="col left">
-            <%= link_to image_tag(article.data.featured_image, alt: article.title), article.url %>
-          </div>
-
-          <div class="col right">
-
-            <article>
-              <header class="post-header">
-                <h2><%= link_to article.title, article.url %></h2>
-              </header>
-
-              <div class="post-body">
-                <%= Nokogiri::HTML(article.summary).text %>
-                <%= link_to t("blog.read_more"), article.url, class: "read-more" %>
-              </div>
-
-              <footer class="post-footer">
-                <div class="post-meta">
-
-                  <%
-                  author = blog_author(article)
-                  author_name = author ? blog_author_name(author) : article.data.author
-                  %>
-
-                  <% if author && src = team_avatar_url(author) %>
-                    <div class="author-avatar">
-                      <%= image_tag src, alt: author_name, class: "avatar" %>
-                    </div>
-                  <% end %>
-                  <div class="author">
-                    <span class="author-name"><%= author_name %></span>
-                    <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
-                  </div>
-                </div>
-              </footer>
-            </article>
-
-          </div>
+          <%= partial "blog/blog-article-preview", locals: { article: article } %>
         </li>
       <% end %>
     </ol>

@@ -1,11 +1,4 @@
 <%
-# # Get all featured posts
-# featured = blog.articles.select{ |item| item.metadata[:page]["featured"] rescue false }
-# featured.each_with_index do |article, i|
-#   concat article.title
-# end
-
-# Get single featured post
 featured = blog.local_articles.find { |item| item.metadata[:page]["featured"] rescue false }
 
 if featured
@@ -19,20 +12,7 @@ if featured
       <h2><%= t("blog.title") %></h2>
     </div>
 
-    <article>
-      <header class="post-header">
-        <h3><%= link_to featured.title, featured.url %></h3>
-        <div class="post-meta">
-          <span class="author-name"><%= author_name %></span>
-          <time datetime="<%= featured.date.strftime('%F') %>"><%= I18n.l(featured.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
-        </div>
-      </header>
-
-      <div class="post-body">
-        <%= Nokogiri::HTML(featured.summary(400)).text %>
-        <%= link_to t("blog.read_more"), featured.url, class: "read-more" %>
-      </div>
-    </article>
+    <%= partial "blog/blog-article-preview", locals: { article: featured } %>
 
     <%= link_to t("blog.more_on_our_blog"), "/blog/", class: "button blue outline" %>
   </div>
