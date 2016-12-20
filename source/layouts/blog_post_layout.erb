@@ -4,7 +4,7 @@
   author_name = author ? blog_author_name(author) : current_article.data.author
   %>
 
-  <article>
+  <article class="post">
     <header class="post-header">
       <div class="row">
         <div class="col">
@@ -38,23 +38,21 @@
       </div>
     </footer>
   </article>
+</section>
 
-  <section class="gray post-related">
-    <div class="row">
-      <div class="col">
-        <h3><%= t("blog.more_articles") %></h3>
-        <ol>
-          <% (blog.articles - [current_article])[0...10].each do |article| %>
-            <li>
-              <%= link_to article.title, article %>
-              <div class="post-meta">
-                <time datetime="<%= article.date.strftime('%F') %>"><%= I18n.l(article.date, format: "%e %B %Y", locale: I18n.locale.to_s) %></time>
-              </div>
-            </li>
-          <% end %>
-        </ol>
-      </div>
-    </div>
-  </section>
+<section class="post-related gray">
+  <div class="row">
+    <h3><%= t("blog.more_articles") %></h3>
+
+    <ol class="blog-list">
+      <% (blog.articles - [current_article])[0...5].each do |article| %>
+        <li>
+          <%= partial "blog/blog-article-preview", locals: {article: article} %>
+        </li>
+      <% end %>
+    </ol>
+
+  </div>
+</section>
 
 <% end %>

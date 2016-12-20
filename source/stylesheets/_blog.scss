@@ -42,23 +42,23 @@
     margin: 0;
     max-width: none;
     width: 100%;
-  }
 
-  .post-meta {
-    color: $post-meta;
-    display: block;
-    font-size: 0.9em;
-  }
-
-  time {
-    display: inline-block;
-    white-space: nowrap;
-
-    &::before {
+    .post-meta {
       color: $post-meta;
-      content: "–";
-      display: inline;
-      margin: 0 0.5em 0 0.4em;
+      display: block;
+      font-size: 0.9em;
+    }
+
+    time {
+      display: inline-block;
+      white-space: nowrap;
+
+      &::before {
+        color: $post-meta;
+        content: "–";
+        display: inline;
+        margin: 0 0.5em 0 0.4em;
+      }
     }
   }
 
@@ -76,18 +76,13 @@
     padding: 0;
     text-align: left;
 
-    li {
-      border-top: $light-gray 1px solid;
-      padding: 1em 0;
-
-      a {
-        font-weight: 700;
-      }
+    h3 {
+      border-bottom: $post-border 1px solid;
+      padding-bottom: 1em;
     }
 
-    .post-meta {
-      display: inline-block;
-      white-space: nowrap;
+    li:last-child {
+      border: 0;
     }
   }
 }
@@ -103,17 +98,17 @@
       margin: 0;
     }
   }
+}
 
-  .blog-list {
+.blog-list {
 
-    li:first-child article {
-      padding-top: 0;
-    }
+  li:first-child article {
+    padding-top: 0;
+  }
 
-    li {
-      border-bottom: $post-border 1px solid;
-      padding: 3em 0;
-    }
+  li {
+    border-bottom: $post-border 1px solid;
+    padding: 3em 0;
   }
 }
 
@@ -170,61 +165,63 @@
 
 // Blog article
 .blog-article {
-  .main {
-    .col {
-      @include span-columns(12);
+  article {
+    &.post {
+      .col {
+        @include span-columns(12);
 
-      @include media($large-up) {
-        @include span-columns(8);
-        @include shift(2);
-      }
-    }
-
-    .post-header {
-      $background-color: #fcfcfc;
-      @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
-
-      h1 {
-        margin-bottom: 0.5em;
-      }
-    }
-
-    .post-body {
-      h2 {
-        font-size: 1.8em;
+        @include media($large-up) {
+          @include span-columns(8);
+          @include shift(2);
+        }
       }
 
-      h3 {
-        font-size: 1.4em;
-      }
-    }
+      .post-header {
+        $background-color: #fcfcfc;
+        @include linear-gradient(darken($background-color, 2), $background-color 120px, $fallback: $background-color);
 
-    .post-footer {
-      .author {
-        border-top: $post-border 1px solid;
-        padding: 3em 0 0;
-        position: relative;
-        text-align: center;
+        h1 {
+          margin-bottom: 0.5em;
+        }
       }
 
-      .author-name {
-        font-weight: 700;
+      .post-body {
+        h2 {
+          font-size: 1.8em;
+        }
+
+        h3 {
+          font-size: 1.4em;
+        }
       }
 
-      .avatar {
-        $avatar-size: 80px;
+      .post-footer {
+        .author {
+          border-top: $post-border 1px solid;
+          padding: 3em 0 0;
+          position: relative;
+          text-align: center;
+        }
 
-        @include avatar-size($avatar-size);
-        background-color: $white;
-        box-shadow: $post-shadow 0 0 0 1px;
-        box-sizing: border-box;
-        display: block;
-        left: 50%;
-        margin-left: -$avatar-size / 2;
-        padding: 6px;
-        position: absolute;
-        top: -$avatar-size / 2;
-        z-index: 2;
+        .author-name {
+          font-weight: 700;
+        }
+
+        .avatar {
+          $avatar-size: 80px;
+
+          @include avatar-size($avatar-size);
+          background-color: $white;
+          box-shadow: $post-shadow 0 0 0 1px;
+          box-sizing: border-box;
+          display: block;
+          left: 50%;
+          margin-left: -$avatar-size / 2;
+          padding: 6px;
+          position: absolute;
+          top: -$avatar-size / 2;
+          z-index: 2;
+        }
       }
     }
   }
