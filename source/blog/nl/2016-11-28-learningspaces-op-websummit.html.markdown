@@ -4,7 +4,6 @@ date: 2016-11-28 08:00 CEST
 tags:
 author: Iwanna
 lang: nl
-featured: true
 image: images/social/learningspaces-op-websummit-1200x630.png
 featured_image: images/blog/featured/20161128-websummit.jpg
 ---
