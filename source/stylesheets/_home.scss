@@ -36,18 +36,8 @@
     }
   }
 
-  &.nl {
-    .header-image {
-      $hero-image: "../images/mood3.jpg";
-      background-image: url($hero-image);
-    }
-  }
-
-  &.de {
-    .header-image {
-      $hero-image: "../images/mood-health.jpg";
-      background-image: url($hero-image);
-    }
+  .header-image {
+    @include linear-gradient(45deg, #584ebd 0%, #4ebdb1 80%);
   }
 
   h1 {

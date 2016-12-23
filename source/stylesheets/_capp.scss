@@ -2,14 +2,14 @@ body.capp-lms,
 body.capp-bilden,
 body.capp-entwickeln {
   .hero {
-    @include radial-gradient(circle at 50%,
-      $blue 33%,
-      rgba($blue, 0.5) 33%,
-      rgba($blue, 0.5) 66%,
-      $blue-alt 66%,
-      $fallback: $blue-alt);
+    // @include radial-gradient(circle at 50%,
+    //   $blue 33%,
+    //   rgba($blue, 0.5) 33%,
+    //   rgba($blue, 0.5) 66%,
+    //   $blue-alt 66%,
+    //   $fallback: $blue-alt);
 
-    background-attachment: scroll;
+    @include linear-gradient(45deg, #73bbcb 0%, #79c5d6 100%);
 
     h1 {
       font-family: 'Montserrat', $base-font-family;
